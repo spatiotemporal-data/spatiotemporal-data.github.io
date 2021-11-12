@@ -1,7 +1,7 @@
 /* Default css file for jemdoc. */
 
 table#tlayout {
-    width:1150px;
+    width:90%;
     border: none;
     border-collapse: separate;
     background: #b2h2h2;
@@ -15,7 +15,6 @@ body {
 	font-family: Georgia, serif;
 	padding-bottom: 0px;
 	margin: 0;
-        background-image:url('lanting.jpg');
 	background-repeat:repeat;
 	background-position:right top;
 
@@ -24,15 +23,14 @@ body {
 #layout-menu {
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
+	padding-top: 2.5em;
+	padding-left: 15px;
+	padding-right: 50px;
 	font-size: 1.0em;
 	width: auto;
 	white-space: nowrap;
     	text-align: left;
     	vertical-align: top;
-        background-image:url('xishanxinglvtu.jpg');
 	background-repeat:repeat;
 	background-position:left top;
 
