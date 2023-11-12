@@ -1,10 +1,5 @@
 
----
-layout: page
-title:  Chicago taxi data
-cover:  false
-menu:   false
----
+# Chicago taxi data
 
 - **Trip amounts (Million)**
   - 2013: **27.2**
