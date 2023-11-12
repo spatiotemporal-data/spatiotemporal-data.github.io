@@ -5,8 +5,9 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 
 - Urban science
 - Human mobility modeling
-- Intelligent transportation systems
 - Geospatial data analysis
+- Intelligent and sustainable transportation systems
+- Optimization & decision making
 
 Researchers contributed to this project include:
 
