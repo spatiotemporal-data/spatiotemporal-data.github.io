@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 # Chicago taxi data
 
