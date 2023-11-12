@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-This project aims at supporting research for all aspects of spatiotemporal data modeling with machine learning and solving many scientific, mathematical, and engineering problems.
+This project aims at supporting research for all aspects of spatiotemporal data modeling with machine learning and solving many scientific, mathematical, and engineering problems in:
+
+- Urban science
+- Human mobility modeling
+- Intelligent transportation systems
+- Geospatial data analysis
 
 Researchers contributed to this project include:
 
