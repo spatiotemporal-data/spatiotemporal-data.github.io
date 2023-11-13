@@ -13,14 +13,3 @@ Researchers contributed to this project include:
 
 - [Xinyu Chen](https://xinychen.github.io)
 
-<br>
-
-<font color = gray>
-<span id = "busuanzi_container_site_uv">
-  <span id = "busuanzi_value_site_uv"></span> <span>vistors</span>
-</span>
-&
-<span id = "busuanzi_container_site_pv">
-  <span id = "busuanzi_value_site_pv"></span> <span>views since November 2023</span>
-</span>
-</font>
