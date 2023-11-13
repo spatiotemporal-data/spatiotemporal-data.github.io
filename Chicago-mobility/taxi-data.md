@@ -4,7 +4,7 @@ layout: default
 
 # Chicago Taxi Data Processing & Analysis
 
-<p align="center"><a href="https://xinychen.github.io/">Xinyu Chen</a></p>
+<p align="center"><a href="https://xinychen.github.io/">Xinyu Chen (陈新宇)</a></p>
 <p align="center">Released on November 12, 2023.</p>
 
 
