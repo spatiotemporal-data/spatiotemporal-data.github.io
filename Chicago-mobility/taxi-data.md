@@ -4,7 +4,8 @@ layout: default
 
 # Chicago Taxi Data Processing & Analysis
 
-#### Release on November 12, 2023
+<p align="center">Released on November 12, 2023. By <a href="https://xinychen.github.io/">Xinyu Chen</a></p>
+
 
 - **Trip amounts (Million)**
   - 2013: **27.2**
