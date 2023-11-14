@@ -11,7 +11,7 @@ layout: default
 
 <h2 align="right">Boundaries of Community Areas in Chicago</h2>
 
-The data can be viewed on the Chicago Data Portal with a web browser, see [community areas](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6). To use these data, one can export and download the data in the Shapefile (or `.shp`) format.
+The data can be viewed on the Chicago Data Portal with a web browser, see [77 community areas](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6). To use these data, one can export and download the data in the Shapefile (or `.shp`) format.
 
 
 
