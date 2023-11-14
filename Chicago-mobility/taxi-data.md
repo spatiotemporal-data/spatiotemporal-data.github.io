@@ -2,10 +2,9 @@
 layout: default
 ---
 
-# Chicago Taxi Data Processing & Analysis
+# Analyzing 200 Million Taxi Trips (2013-2022) in the City of Chicago
 
-<p align="center"><a href="https://xinychen.github.io/">Xinyu Chen (陈新宇)</a></p>
-<p align="center">Released on November 12, 2023.</p>
+<p align="center"><a href="https://xinychen.github.io/">Xinyu Chen</a>, released on November 12, 2023.</p>
 
 
 - **Trip amounts (Million)**
