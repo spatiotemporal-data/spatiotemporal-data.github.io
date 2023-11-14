@@ -19,6 +19,8 @@ Featured blog posts:
 
 <br>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 <div align="center">
 <font color = gray>
 <span id = "busuanzi_container_site_uv">
