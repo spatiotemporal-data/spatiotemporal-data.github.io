@@ -20,7 +20,7 @@ The data can be viewed on the Chicago Data Portal with a web browser, see [77 co
 
 within the folder `Boundaries_Community_Areas`.
 
-Then it is not hard to use `geopandas` and `matplotlib` packages to visualize the boundaries of community areas.
+Then it is not hard to use `geopandas` and `matplotlib` packages in Python to visualize the boundaries of community areas.
 
 ```python
 import geopandas as gpd
