@@ -35,6 +35,7 @@ plt.yticks([])
 for _, spine in ax.spines.items():
     spine.set_visible(False)
 plt.show()
+fig.savefig("boundaries_community_areas_chicago.png", bbox_inches = "tight")
 ```
 
 <br>
