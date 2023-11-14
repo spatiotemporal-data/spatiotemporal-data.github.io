@@ -13,3 +13,6 @@ Researchers contributed to this project include:
 
 - [Xinyu Chen](https://xinychen.github.io)
 
+Latest blog posts:
+
+- [Analyzing 200 million taxi trips (2013-2022) in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
