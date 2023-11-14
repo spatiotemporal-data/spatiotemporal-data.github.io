@@ -9,7 +9,7 @@ layout: default
 
 > [The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew), [TNP rideshare trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p), [Divvy bikeshare trips](https://divvybikes.com/system-data), and [E-scooter trips](https://catalog.data.gov/dataset/e-scooter-trips). 
 
-<h2 align="left">Boundaries of Community Areas in Chicago</h2>
+<h2 align="right">Boundaries of Community Areas in Chicago</h2>
 
 
 
