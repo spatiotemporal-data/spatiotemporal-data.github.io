@@ -19,16 +19,3 @@ Featured blog posts:
 
 <br>
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-<div align="center">
-<font color = gray>
-<span id = "busuanzi_container_site_uv">
-  <span id = "busuanzi_value_site_uv"></span> <span>vistors</span>
-</span>
-&
-<span id = "busuanzi_container_site_pv">
-  <span id = "busuanzi_value_site_pv"></span> <span>views</span>
-</span>
-</font>
-</div>
