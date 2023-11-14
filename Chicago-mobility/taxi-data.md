@@ -38,7 +38,7 @@ fig.savefig("boundaries_community_areas_chicago.png", bbox_inches = "tight")
 
 <br>
 
-Figure 1 shows the boundaries of community areas in the City of Chicago. Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
+Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/boundaries_community_areas_chicago.png" width="300" />
