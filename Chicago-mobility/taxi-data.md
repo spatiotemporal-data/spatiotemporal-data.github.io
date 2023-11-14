@@ -18,6 +18,26 @@ The data can be viewed on the Chicago Data Portal with a web browser, see [77 co
 - `areas.shp`
 - `areas.shx`
 
+within the folder `Boundaries_Community_Areas`.
+
+Then it is not hard to use `geopandas` and `matplotlib` packages to visualize the boundaries of community areas.
+
+```python
+import geopandas as gpd
+import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize = (14, 8))
+ax = fig.subplots(1)
+shape = gpd.read_file("Boundaries _Community_Areas/areas.shp")
+shape.plot(cmap = 'RdYlBu_r', ax = ax)
+plt.xticks([])
+plt.yticks([])
+for _, spine in ax.spines.items():
+    spine.set_visible(False)
+plt.show()
+```
+
+Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
 
 
 
