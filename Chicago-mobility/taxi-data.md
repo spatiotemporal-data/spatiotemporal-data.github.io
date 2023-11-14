@@ -37,6 +37,8 @@ for _, spine in ax.spines.items():
 plt.show()
 ```
 
+<br>
+
 Figure 1 shows the boundaries of community areas in the City of Chicago. Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
 
 <p align="center">
