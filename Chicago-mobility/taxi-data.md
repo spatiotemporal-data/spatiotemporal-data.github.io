@@ -67,4 +67,4 @@ Figure 1 shows the boundaries of community areas in the City of Chicago. Note th
 
 <br>
 <br>
-<p align="left">(<a href="https://xinychen.github.io/">Xinyu Chen</a>, published on November 12, 2023.)</p>
+<p align="left">(By <a href="https://xinychen.github.io/">Xinyu Chen</a>, published on November 12, 2023.)</p>
