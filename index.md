@@ -16,3 +16,17 @@ Researchers contributed to this project include:
 Featured blog posts:
 
 - [Analyzing 200 million taxi trips (2013-2022) in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
+
+<br>
+
+<div align="center">
+<font color = gray>
+<span id = "busuanzi_container_site_uv">
+  <span id = "busuanzi_value_site_uv"></span> <span>vistors</span>
+</span>
+&
+<span id = "busuanzi_container_site_pv">
+  <span id = "busuanzi_value_site_pv"></span> <span>views</span>
+</span>
+</font>
+</div>
