@@ -37,7 +37,17 @@ for _, spine in ax.spines.items():
 plt.show()
 ```
 
-Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
+Figure 1 shows the boundaries of community areas in the City of Chicago. Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/boundaries_community_areas_chicago.png" width="300" />
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> Boundaries of community areas in the City of Chicago, USA.
+</p>
+
+
 
 
 
