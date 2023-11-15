@@ -7,6 +7,21 @@ layout: default
 
 > [The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew), [TNP rideshare trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p), [Divvy bikeshare trips](https://divvybikes.com/system-data), and [E-scooter trips](https://catalog.data.gov/dataset/e-scooter-trips).
 
+
+| Year    | Taxi trips | Rideshare trips |
+| ------- | ---------- | --------------- |
+| 2013    | 27.2M      |                 |
+| 2014    | 37.4M      |                 |
+| 2015    | 32.4M      |                 |
+| 2016    | 31.8M      |                 |
+| 2017    | 25M        |                 |
+| 2018    | 20.7M      |                 |
+| 2019    | 16.5M      | 112M            |
+| 2020    | 3.89M      | 50M             |
+| 2021    | 3.95M      | 51.2M           |
+| 2022    | 6.38M      | 69.1M           |
+
+
 <h2 align="left">Visualizing Boundaries of Community Areas in Chicago</h2>
 
 The data can be viewed on the Chicago Data Portal with a web browser, see [77 community areas in Chicago](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6). To use these data, one can export and download the data in the Shapefile format. In this post, we rename four files of the Shapefile data as follows,
