@@ -7,6 +7,7 @@ layout: default
 
 > [The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew), [TNP rideshare trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p), [Divvy bikeshare trips](https://divvybikes.com/system-data), and [E-scooter trips](https://catalog.data.gov/dataset/e-scooter-trips).
 
+<br>
 
 | Year    | Taxi trips | Rideshare trips |
 | ------- | ---------- | --------------- |
@@ -21,6 +22,7 @@ layout: default
 | 2021    | 3.95M      | 51.2M           |
 | 2022    | 6.38M      | 69.1M           |
 
+<br>
 
 <h2 align="left">Visualizing Boundaries of Community Areas in Chicago</h2>
 
