@@ -67,10 +67,25 @@ Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note
 
 ## Matching Taxi Trips with Community Areas
 
+There are three basic steps to follow for processing taxi trip data:
 - Download [taxi trips in 2022](https://data.cityofchicago.org/Transportation/Taxi-Trips-2022/npd7-ywjz) in the `.csv` format, e.g., `Taxi_Trips_-_2022.csv`.
 - Use the `pandas` package in Python to process the raw trip data.
 - Match trip orgin/destination with boundaries of the community area.
 
+```python
+import pandas as pd
+
+data = pd.read_csv('Taxi_Trips_-_2022.csv')
+data.head()
+# data = data.drop(['Trip ID', 'Taxi ID', 'Payment Type', 'Company'], axis = 1)
+```
+
+For each taxi trip, one can select some important information:
+- `Trip Start Timestamp`: When the trip started, rounded to the nearest 15 minutes.
+- `Trip Seconds`: Time of the trip in seconds.
+- `Trip Miles`: Distance of the trip in miles.
+- `Pickup Community Area`: The Community Area where the trip began. This column will be blank for locations ourside Chicago.
+- `Dropoff Community Area`: The Community Area where the trip ended. This column will be blank for locations outside Chicago.
 
 
 
