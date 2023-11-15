@@ -123,7 +123,14 @@ df
 
 <br>
 
-By doing so, there are 4,763,961 remaining taxi trips in the dataframe.
+By doing so, there are 4,763,961 remaining taxi trips in the dataframe. If you want to aggregate the trip counts of each pickup/dropoff community area, the simplest way to get row counts per pickup/dropoff community area is by calling `.groupby().size()`.
+
+```python
+pickup_df = df.groupby(['Pickup Community Area']).size().reset_index(name = 'pickup_counts')
+dropoff_df = df.groupby(['Dropoff Community Area']).size().reset_index(name = 'dropoff_counts')
+```
+
+
 
 
 <br>
