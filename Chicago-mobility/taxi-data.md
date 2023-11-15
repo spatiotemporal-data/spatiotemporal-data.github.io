@@ -37,6 +37,8 @@ and place these files at the folder `Boundaries_Community_Areas`.
 
 Then it is not hard to use the `geopandas` and `matplotlib` packages in Python to visualize the boundaries of community areas.
 
+<br>
+
 ```python
 import geopandas as gpd
 import matplotlib.pyplot as plt
@@ -72,6 +74,8 @@ There are three basic steps to follow for processing taxi trip data:
 - Use the `pandas` package in Python to process the raw trip data.
 - Match trip orgin/destination with boundaries of the community area.
 
+<br>
+
 ```python
 import pandas as pd
 
@@ -80,6 +84,8 @@ data.head()
 # data = data.drop(['Trip ID', 'Taxi ID', 'Payment Type', 'Company'], axis = 1)
 ```
 
+<br>
+
 For each taxi trip, one can select some important information:
 - `Trip Start Timestamp`: When the trip started, rounded to the nearest 15 minutes.
 - `Trip Seconds`: Time of the trip in seconds.
@@ -87,6 +93,19 @@ For each taxi trip, one can select some important information:
 - `Pickup Community Area`: The Community Area where the trip began. This column will be blank for locations ourside Chicago.
 - `Dropoff Community Area`: The Community Area where the trip ended. This column will be blank for locations outside Chicago.
 
+<br>
+
+```python
+df = pd.DataFrame()
+df['Trip Start Timestamp'] = data['Trip Start Timestamp']
+df['Trip Seconds'] = data['Trip Seconds']
+df['Trip Miles'] = data['Trip Miles']
+df['Pickup Community Area'] = data['Pickup Community Area']
+df['Dropoff Community Area'] = data['Dropoff Community Area']
+df
+```
+
+<br>
 
 
 <br>
