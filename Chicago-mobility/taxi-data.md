@@ -117,6 +117,7 @@ By doing so, there are 6,382,425 rows in this new dataframe. For the following a
 df = df.dropna() # Remove rows with NaN
 df = df.drop(df[df['Trip Seconds'] == 0].index)
 df = df.drop(df[df['Trip Miles'] == 0].index)
+df = df.reset_index()
 df
 ```
 
