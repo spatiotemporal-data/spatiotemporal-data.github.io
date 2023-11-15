@@ -175,7 +175,7 @@ fig.savefig("pickup_dropoff_trips_chicago_2022.png", bbox_inches = "tight")
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2022.png" width="300" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2022.png" width="600" />
 </p>
 
 <p align = "center">
