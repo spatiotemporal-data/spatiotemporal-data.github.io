@@ -24,7 +24,7 @@ layout: default
 
 <br>
 
-<h2 align="left">Visualizing Boundaries of Community Areas in Chicago</h2>
+## Visualizing Boundaries of Community Areas in Chicago
 
 The data can be viewed on the Chicago Data Portal with a web browser, see [77 community areas in Chicago](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6). To use these data, one can export and download the data in the Shapefile format. In this post, we rename four files of the Shapefile data as follows,
 
@@ -35,7 +35,7 @@ The data can be viewed on the Chicago Data Portal with a web browser, see [77 co
 
 and place these files at the folder `Boundaries_Community_Areas`.
 
-Then it is not hard to use `geopandas` and `matplotlib` packages in Python to visualize the boundaries of community areas.
+Then it is not hard to use the `geopandas` and `matplotlib` packages in Python to visualize the boundaries of community areas.
 
 ```python
 import geopandas as gpd
@@ -65,7 +65,11 @@ Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note
 <b>Figure 1.</b> Boundaries of community areas in the City of Chicago, USA.
 </p>
 
+## Matching Taxi Trips with Community Areas
 
+- Download [taxi trips in 2022](https://data.cityofchicago.org/Transportation/Taxi-Trips-2022/npd7-ywjz) in the `.csv` format, e.g., `Taxi_Trips_-_2022.csv`.
+- Use the `pandas` package in Python to process the raw trip data.
+- Match trip orgin/destination with boundaries of the community area.
 
 
 
