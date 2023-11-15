@@ -136,7 +136,7 @@ dropoff_df = df.groupby(['Dropoff Community Area']).size().reset_index(name = 'd
 
 ## Visualizing Pickup and Dropoff Trips in 2022
 
-It is ...
+It is not hard to first use the `geopandas` package to merge pickup/dropoff trip counts into the `.shp` data and then visualize the trip data with the `matplotlib` package.
 
 <br>
 
@@ -173,6 +173,8 @@ fig.savefig("pickup_dropoff_trips_chicago_2022.png", bbox_inches = "tight")
 ```
 
 <br>
+
+Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chicago.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2022.png" width="600" />
