@@ -67,6 +67,8 @@ Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note
 <b>Figure 1.</b> Boundaries of community areas in the City of Chicago, USA.
 </p>
 
+<br>
+
 ## Matching Taxi Trips with Community Areas
 
 There are three basic steps to follow for processing taxi trip data:
