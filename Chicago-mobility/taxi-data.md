@@ -107,7 +107,7 @@ df
 
 <br>
 
-As can be seen, there are 6,382,425 rows in this new dataframe. For the following analysis, one should remove the trips whose pickup/dropoff locations outside Chicago. In addition, one should clean the outliers that are with `0` (trip) seconds or `0` (trip) miles.
+By doing so, there are 6,382,425 rows in this new dataframe. For the following analysis, one should remove the trips whose pickup/dropoff locations outside Chicago. In addition, one should clean the outliers that are with `0` (trip) seconds or `0` (trip) miles.
 
 <br>
 
@@ -120,7 +120,7 @@ df
 
 <br>
 
-As can be seen, there are 4,763,961 remaining taxi trips in the dataframe.
+By doing so, there are 4,763,961 remaining taxi trips in the dataframe.
 
 
 <br>
