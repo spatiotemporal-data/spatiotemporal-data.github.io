@@ -72,7 +72,7 @@ Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note
 There are three basic steps to follow for processing taxi trip data:
 - Download [taxi trips in 2022](https://data.cityofchicago.org/Transportation/Taxi-Trips-2022/npd7-ywjz) in the `.csv` format, e.g., `Taxi_Trips_-_2022.csv`.
 - Use the `pandas` package in Python to process the raw trip data.
-- Match trip orgin/destination with boundaries of the community area.
+- Match trip pickup/dropoff locations with boundaries of the community area.
 
 <br>
 
@@ -107,6 +107,23 @@ df
 
 <br>
 
+As can be seen, there are 6,382,425 rows in this new dataframe. For the following analysis, one should remove the trips whose pickup/dropoff locations outside Chicago. In addition, one should clean the outliers that are with `0` (trip) seconds or `0` (trip) miles.
+
+<br>
+
+```python
+df = df.dropna() # Remove rows with NaN
+df = df.drop(df[df['Trip Seconds'] == 0].index)
+df = df.drop(df[df['Trip Miles'] == 0].index)
+df
+```
+
+<br>
+
+As can be seen, there are 4,763,961 remaining taxi trips in the dataframe.
+
+
+<br>
 
 <br>
 <br>
