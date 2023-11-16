@@ -187,7 +187,7 @@ Figure 2 shows taxi pickup and dropoff trips (2022) on 77 community areas in Chi
 </p>
 
 <p align = "center">
-<b>Figure 2.</b> Taxi pickup and dropoff trips (2022) in the City of Chicago, USA.
+<b>Figure 2.</b> Taxi pickup and dropoff trips (2022) in the City of Chicago, USA. There are 4,763,961 remaining trips after the data processing.
 </p>
 
 <br>
@@ -199,7 +199,7 @@ For comparison, Figure 3 shows taxi pickup and dropoff trips (2019) on 77 commun
 </p>
 
 <p align = "center">
-<b>Figure 3.</b> Taxi pickup and dropoff trips (2019) in the City of Chicago, USA.
+<b>Figure 3.</b> Taxi pickup and dropoff trips (2019) in the City of Chicago, USA. There are 12,484,572 remaining trips after the data processing.
 </p>
 
 
@@ -212,7 +212,7 @@ In addition, one can analyze the trips of other travel modes in the City of Chic
 </p>
 
 <p align = "center">
-<b>Figure 4.</b> E-scooter pickup and dropoff trips (2022) in the City of Chicago, USA.
+<b>Figure 4.</b> E-scooter pickup and dropoff trips (2022) in the City of Chicago, USA. There are remaining trips after the data processing.
 </p>
 
 
