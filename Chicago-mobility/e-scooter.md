@@ -2,6 +2,8 @@
 layout: default
 ---
 
+# Processing and Visualizing E-Scooter Trips in the City of Chicago
+
 - Download data
 
 ```python
