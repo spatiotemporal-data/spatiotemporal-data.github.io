@@ -5,22 +5,22 @@ layout: default
 # Analyzing 200 Million Taxi Trips (2013-2022) in the City of Chicago
 
 
-> [The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew), [TNP rideshare trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p), [Divvy bikeshare trips](https://divvybikes.com/system-data), and [E-scooter trips](https://catalog.data.gov/dataset/e-scooter-trips).
+[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew), [TNP rideshare trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p), [Divvy bikeshare trips](https://divvybikes.com/system-data), and [E-scooter trips](https://catalog.data.gov/dataset/e-scooter-trips).
 
 <br>
 
-| Year    | Taxi trips | Rideshare trips |
-| ------- | :--------: | :-------------: |
-| 2013    | 27.2M      |                 |
-| 2014    | 37.4M      |                 |
-| 2015    | 32.4M      |                 |
-| 2016    | 31.8M      |                 |
-| 2017    | 25M        |                 |
-| 2018    | 20.7M      |                 |
-| 2019    | 16.5M      | 112M            |
-| 2020    | 3.89M      | 50M             |
-| 2021    | 3.95M      | 51.2M           |
-| 2022    | 6.38M      | 69.1M           |
+| Year    | Taxi trips | Rideshare trips | E-Scooter trips |
+| ------- | :--------: | :-------------: | :-------------: |
+| 2013    | 27.2M      |                 |                 |
+| 2014    | 37.4M      |                 |                 |
+| 2015    | 32.4M      |                 |                 |
+| 2016    | 31.8M      |                 |                 |
+| 2017    | 25M        |                 |                 |
+| 2018    | 20.7M      |                 |                 |
+| 2019    | 16.5M      | 112M            |  711K           |
+| 2020    | 3.89M      | 50M             |  631K           |
+| 2021    | 3.95M      | 51.2M           |     |
+| 2022    | 6.38M      | 69.1M           |     |
 
 <br>
 
@@ -187,7 +187,6 @@ Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chic
 <br>
 
 
-<br>
 
 <br>
 <br>
