@@ -65,11 +65,11 @@ for i in [1, 2]:
     if i == 1:
         pickup.plot('pickup_counts', cmap = 'YlOrRd', legend = True,
                     legend_kwds = {'shrink': 0.618, 'label': 'Pickup trip count'},
-                    vmin = 0, vmax = 1e+5, ax = ax)
+                    vmin = 0, vmax = 2.5e+5, ax = ax)
     elif i == 2:
         dropoff.plot('dropoff_counts', cmap = 'YlOrRd', legend = True, 
                      legend_kwds = {'shrink': 0.618, 'label': 'Dropoff trip count'},
-                     vmin = 0, vmax = 1e+5, ax = ax)
+                     vmin = 0, vmax = 2.5e+5, ax = ax)
     plt.xticks([])
     plt.yticks([])
 plt.show()
