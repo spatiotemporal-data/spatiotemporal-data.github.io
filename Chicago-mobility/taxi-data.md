@@ -103,8 +103,6 @@ df['Trip Seconds'] = data['Trip Seconds']
 df['Trip Miles'] = data['Trip Miles']
 df['Pickup Community Area'] = data['Pickup Community Area']
 df['Dropoff Community Area'] = data['Dropoff Community Area']
-df = df.drop(['index'], axis = 1)
-df.to_csv('taxi_trip_2022.csv', index = False)
 df
 ```
 
@@ -119,7 +117,13 @@ df = df.dropna() # Remove rows with NaN
 df = df.drop(df[df['Trip Seconds'] == 0].index)
 df = df.drop(df[df['Trip Miles'] == 0].index)
 df = df.reset_index()
-df
+df = df.drop(['index'], axis = 1)
+df.to_csv('taxi_trip_2022.csv', index = False)
+
+import numpy as np
+
+print(np.mean(df['Trip Seconds'].values))
+print(np.mean(df['Trip Miles'].values))
 ```
 
 <br>
