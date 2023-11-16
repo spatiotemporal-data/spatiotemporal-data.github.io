@@ -200,5 +200,7 @@ Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chic
 </p>
 
 
+$$y=x^2+z$$
+
 <br>
 <p align="left">(By <a href="https://xinychen.github.io/">Xinyu Chen</a>, published on November 12, 2023.)</p>
