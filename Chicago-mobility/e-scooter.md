@@ -59,4 +59,5 @@ for i in [1, 2]:
     plt.xticks([])
     plt.yticks([])
 plt.show()
+fig.savefig("E_scooter_pickup_dropoff_trips_chicago_2022.png", bbox_inches = "tight")
 ```
