@@ -205,7 +205,7 @@ For comparison, Figure 3 shows taxi pickup and dropoff trips (2019) on 77 commun
 
 <br>
 
-One can also follow the above-mentioned Python codes to analyze trips of other travel modes. Figure 4 shows E-scooter pickup and dropoff trips on 77 community areas in Chicago, see [how to process and visualize E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/). Note that the average trip duration is **913.18 seconds** and the average trip distance is **2448.60 meters**.
+In addition, one can also analyze the trips of other travel modes in the City of Chicago. Figure 4 shows E-scooter pickup and dropoff trips on 77 community areas in Chicago, see [how to process and visualize E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/). Note that the average trip duration is **913.18 seconds** and the average trip distance is **2448.60 meters**.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/E_scooter_pickup_dropoff_trips_chicago_2022.png" width="600" />
