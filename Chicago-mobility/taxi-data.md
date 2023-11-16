@@ -179,7 +179,7 @@ fig.savefig("pickup_dropoff_trips_chicago_2022.png", bbox_inches = "tight")
 
 <br>
 
-Figure 2 shows both pickup and dropoff trips on 77 community areas in Chicago. Note that the average trip duration is **1207.75** seconds and the average trip distance is **6.16 miles**.
+Figure 2 shows both pickup and dropoff trips on 77 community areas in Chicago. Note that the average trip duration is **1207.75 seconds** and the average trip distance is **6.16 miles**.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2022.png" width="600" />
