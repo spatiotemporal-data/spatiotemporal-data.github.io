@@ -2,6 +2,7 @@
 layout: default
 ---
 
+- Download data
 
 ```python
 import pandas as pd
@@ -9,6 +10,8 @@ import pandas as pd
 data = pd.read_csv('E-Scooter_Trips.csv')
 data.head()
 ```
+
+- Extract trip information
 
 ```python
 df = pd.DataFrame()
@@ -21,6 +24,8 @@ df['Year'] = pd.to_datetime(df['Start Time'], errors='coerce').dt.year
 df
 ```
 
+- Drop trips
+
 ```python
 df = df.dropna() # Remove rows with NaN
 df = df.drop(df[df['Year'] == 2022].index)
@@ -29,6 +34,8 @@ df = df.drop(df[df['Trip Duration'] == 0].index)
 df = df.reset_index()
 df
 ```
+
+- Visualize trips
 
 ```python
 import geopandas as gpd
