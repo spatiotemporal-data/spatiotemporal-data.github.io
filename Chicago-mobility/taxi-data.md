@@ -189,6 +189,8 @@ Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chic
 
 <br>
 
+[Processing and visualizing E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/)
+
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/E_scooter_pickup_dropoff_trips_chicago_2022.png" width="600" />
 </p>
