@@ -83,7 +83,6 @@ import pandas as pd
 
 data = pd.read_csv('Taxi_Trips_-_2022.csv')
 data.head()
-# data = data.drop(['Trip ID', 'Taxi ID', 'Payment Type', 'Company'], axis = 1)
 ```
 
 <br>
@@ -104,6 +103,8 @@ df['Trip Seconds'] = data['Trip Seconds']
 df['Trip Miles'] = data['Trip Miles']
 df['Pickup Community Area'] = data['Pickup Community Area']
 df['Dropoff Community Area'] = data['Dropoff Community Area']
+df = df.drop(['index'], axis = 1)
+df.to_csv('taxi_trip_2022.csv', index = False)
 df
 ```
 
@@ -174,7 +175,7 @@ fig.savefig("pickup_dropoff_trips_chicago_2022.png", bbox_inches = "tight")
 
 <br>
 
-Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chicago. 
+Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chicago. Note that the average trip duration is 1207.75 seconds and the average trip distance is 6.16 miles.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2022.png" width="600" />
