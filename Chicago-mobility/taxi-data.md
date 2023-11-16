@@ -174,14 +174,14 @@ fig.savefig("pickup_dropoff_trips_chicago_2022.png", bbox_inches = "tight")
 
 <br>
 
-Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chicago.
+Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chicago. 
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2022.png" width="600" />
 </p>
 
 <p align = "center">
-<b>Figure 2.</b> Taxi pickup and dropoff trips in the City of Chicago, USA.
+<b>Figure 2.</b> Taxi pickup and dropoff trips (2022) in the City of Chicago, USA.
 </p>
 
 
@@ -189,14 +189,14 @@ Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chic
 
 <br>
 
-[Processing and visualizing E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/)
+[Processing and visualizing E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/). Note that the average trip duration is 858.74 seconds and the average trip distance is 2349.47 meters.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/E_scooter_pickup_dropoff_trips_chicago_2022.png" width="600" />
 </p>
 
 <p align = "center">
-<b>Figure 3.</b> E-scooter pickup and dropoff trips in the City of Chicago, USA.
+<b>Figure 3.</b> E-scooter pickup and dropoff trips (2022) in the City of Chicago, USA.
 </p>
 
 
