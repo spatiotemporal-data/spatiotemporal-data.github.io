@@ -28,11 +28,18 @@ df
 
 ```python
 df = df.dropna() # Remove rows with NaN
-df = df.drop(df[df['Year'] == 2022].index)
+df = df.drop(df[df['Year'] == 2023].index)
 df = df.drop(df[df['Trip Distance'] == 0].index)
 df = df.drop(df[df['Trip Duration'] == 0].index)
 df = df.reset_index()
-df
+
+import numpy as np
+
+print(np.mean(df['Trip Duration'].values))
+print(np.mean(df['Trip Distance'].values))
+
+df = df.drop(['index'], axis = 1)
+df.to_csv('e_scooter_trip_2022.csv', index = False)
 ```
 
 - Visualize trips
