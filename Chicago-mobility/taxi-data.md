@@ -188,5 +188,15 @@ Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chic
 
 
 <br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/E_scooter_pickup_dropoff_trips_chicago_2022.png" width="600" />
+</p>
+
+<p align = "center">
+<b>Figure 3.</b> E-scooter pickup and dropoff trips in the City of Chicago, USA.
+</p>
+
+
 <br>
 <p align="left">(By <a href="https://xinychen.github.io/">Xinyu Chen</a>, published on November 12, 2023.)</p>
