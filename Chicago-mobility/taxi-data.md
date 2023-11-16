@@ -103,6 +103,7 @@ df['Trip Seconds'] = data['Trip Seconds']
 df['Trip Miles'] = data['Trip Miles']
 df['Pickup Community Area'] = data['Pickup Community Area']
 df['Dropoff Community Area'] = data['Dropoff Community Area']
+del data
 df
 ```
 
