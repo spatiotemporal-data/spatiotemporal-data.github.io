@@ -184,7 +184,6 @@ Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chic
 <b>Figure 2.</b> Taxi pickup and dropoff trips in the City of Chicago, USA.
 </p>
 
-<br>
 
 
 
