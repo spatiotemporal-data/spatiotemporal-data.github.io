@@ -39,7 +39,7 @@ print(np.mean(df['Trip Duration'].values))
 print(np.mean(df['Trip Distance'].values))
 
 df = df.drop(['index'], axis = 1)
-df.to_csv('e_scooter_trip_2022.csv', index = False)
+df.to_csv('E_scooter_trip_2022.csv', index = False)
 ```
 
 - Visualize trips
