@@ -194,7 +194,7 @@ Figure 2 shows both pickup trips and dropoff trips on 77 community areas in Chic
 
 <br>
 
-[Processing and visualizing E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/). Note that the average trip duration is 858.74 seconds and the average trip distance is 2349.47 meters.
+[Processing and visualizing E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/). Note that the average trip duration is 913.18 seconds and the average trip distance is 2448.60 meters.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/E_scooter_pickup_dropoff_trips_chicago_2022.png" width="600" />
