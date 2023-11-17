@@ -199,7 +199,7 @@ For comparison, Figure 3 shows taxi pickup and dropoff trips (2019) on 77 commun
 </p>
 
 <p align = "center">
-<b>Figure 3.</b> Taxi pickup and dropoff trips (2019) in the City of Chicago, USA. There are 12,484,572 remaining trips after the data processing.
+<b>Figure 3.</b> Taxi pickup and dropoff trips (2019) in the City of Chicago, USA. There are 12,484,572 remaining trips after the data processing. See <a href = "https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data-appendix/">the data processing codes</a>.
 </p>
 
 
