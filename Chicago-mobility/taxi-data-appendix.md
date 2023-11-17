@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 - Download Chicago taxi dataset in 2019.
 
