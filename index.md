@@ -15,7 +15,7 @@ Researchers contributed to this project include:
 
 Featured blog posts:
 
-- [Analyzing million of taxi trips in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
+- [Analyzing millions of taxi trips in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
 
 <br>
 
