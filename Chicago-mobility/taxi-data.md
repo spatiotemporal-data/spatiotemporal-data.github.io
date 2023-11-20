@@ -217,4 +217,4 @@ In addition, one can analyze the trips of other travel modes in the City of Chic
 
 
 <br>
-<p align="left">(By <a href="https://xinychen.github.io/">Xinyu Chen</a>, released on November 12, 2023.)</p>
+<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a>, released on November 12, 2023.)</p>
