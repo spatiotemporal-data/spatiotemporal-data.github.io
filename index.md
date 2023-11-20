@@ -9,11 +9,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Intelligent and sustainable transportation systems
 - Optimization & decision making
 
-Researchers contributed to this project include:
-
-- [Xinyu Chen](https://xinychen.github.io)
-
-Featured blog posts:
+Featured posts:
 
 - [Analyzing millions of taxi trips in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
 
