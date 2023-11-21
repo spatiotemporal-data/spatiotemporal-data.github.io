@@ -215,6 +215,5 @@ In addition, one can analyze the trips of other travel modes in the City of Chic
 <b>Figure 4.</b> E-scooter pickup and dropoff trips (2022) in the City of Chicago, USA. There are 1,476,028 remaining trips after the data processing.
 </p>
 
-
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on November 12, 2023.)</p>
