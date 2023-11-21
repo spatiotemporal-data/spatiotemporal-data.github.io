@@ -20,4 +20,4 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\n
 - [What is the difference between projected gradient descent and ordinary gradient descent?](https://math.stackexchange.com/q/571068)
 
 <br>
-<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a>, released on November 20, 2023.)</p>
+<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on November 20, 2023.)</p>
