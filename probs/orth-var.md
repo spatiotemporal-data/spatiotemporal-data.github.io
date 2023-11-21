@@ -15,4 +15,9 @@ To capture interpretable modes/patterns, one can use tensor factorization formul
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}\in\mathbb{R}^{N\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{X}\in\mathbb{R}^{(T-1)\times R}"/> refer to as the spatial modes and the temporal modes, respectively.
 
 <br>
+
+**Material:**
+- [What is the difference between projected gradient descent and ordinary gradient descent?](https://math.stackexchange.com/q/571068)
+
+<br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a>, released on November 20, 2023.)</p>
