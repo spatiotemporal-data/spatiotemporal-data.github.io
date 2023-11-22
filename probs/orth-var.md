@@ -19,9 +19,5 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\n
 **Material:**
 - [What is the difference between projected gradient descent and ordinary gradient descent?](https://math.stackexchange.com/q/571068)
 
-**Reference:**
-
-- [*Chen et al., 2023*] Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2023). Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression. IEEE Transactions on Knowledge and Data Engineering. Early access.
-
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on November 20, 2023.)</p>
