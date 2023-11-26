@@ -301,6 +301,16 @@ In what follows, we visualize the average travel time and speed from area 8 (i.e
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/travel_time_plus_speed_pickup_32_dropoff_76.png" width="650" />
+</p>
+
+<p align = "center">
+<b>Figure 5.</b> Average travel time and speed from area 32 to area 76 in both 2019 and 2022.
+</p>
+
+<br>
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
