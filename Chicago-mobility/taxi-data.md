@@ -269,7 +269,6 @@ data22['hour'] = pd.to_datetime(data22['Trip Start Timestamp'],
 **From Area 8 to Area 76**
 
 When analyzing taxi travel times and movement speeds, one should remove some outliers (e.g., anomalies in trip seconds/miles).
-
 <br>
 
 ```python
@@ -288,8 +287,96 @@ df2 = df2.drop(df2[df2['Trip Miles'] < 10].index)
 df2 = df2.drop(df2[df2['Trip Miles'] > 25].index)
 ```
 
+<br>
 
+In what follows, we visualize the average travel time and speed from area 8 to area 76 in both 2019 and 2022. Figure 
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/travel_time_plus_speed_pickup_8_dropoff_76.png" width="600" />
+</p>
+
+<p align = "center">
+<b>Figure 5.</b> xxxx.
+</p>
+
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize = (8, 2.5))
+ax = fig.add_subplot(1, 2, 1)
+# Average travel time in 2019
+m1 = df1.groupby(['hour'])['Trip Seconds'].mean().values
+s1 = df1.groupby(['hour'])['Trip Seconds'].std().values
+plt.plot(m1, color = 'blue', linewidth = 1.8, label = '2019')
+upper = m1 + s1
+lower = m1 - s1
+x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)), 
+                              np.array([24 - 1, 24 - 1])), np.arange(24 - 1, -1, -1))
+y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower), 
+                              np.array([lower[-1], upper[-1]])), np.flip(upper))
+plt.fill(x_bound, y_bound, color = 'blue', alpha = 0.05)
+
+# Average travel time in 2022
+m1 = df2.groupby(['hour'])['Trip Seconds'].mean().values
+s1 = df2.groupby(['hour'])['Trip Seconds'].std().values
+plt.plot(m1, color = 'red', linewidth = 1.8, label = '2022')
+upper = m1 + s1
+lower = m1 - s1
+x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)), 
+                              np.array([24 - 1, 24 - 1])), np.arange(24 - 1, -1, -1))
+y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower), 
+                              np.array([lower[-1], upper[-1]])), np.flip(upper))
+plt.fill(x_bound, y_bound, color = 'red', alpha = 0.05)
+
+plt.xticks(np.arange(0, 24 + 1, 2))
+plt.xlabel('Time (hour)')
+plt.ylabel('Average travel time (s)')
+plt.grid(axis = 'both', linestyle='dashed', linewidth = 0.1, color = 'gray')
+ax.tick_params(direction = "in")
+ax.set_xlim([-1, 24])
+plt.legend()
+
+ax = fig.add_subplot(1, 2, 2)
+# Average speed in 2019
+df1['speed'] = df1['Trip Miles'].values / (df1['Trip Seconds'] / 3600)
+m1 = df1.groupby(['hour'])['speed'].mean().values
+s1 = df1.groupby(['hour'])['speed'].std().values
+plt.plot(m1, color = 'blue', linewidth = 1.8, label = '2019')
+upper = m1 + s1
+lower = m1 - s1
+x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)), 
+                              np.array([24 - 1, 24 - 1])), np.arange(24 - 1, -1, -1))
+y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower), 
+                              np.array([lower[-1], upper[-1]])), np.flip(upper))
+plt.fill(x_bound, y_bound, color = 'blue', alpha = 0.05)
+
+# Average speed in 2022
+df2['speed'] = df2['Trip Miles'].values / (df2['Trip Seconds'] / 3600)
+m1 = df2.groupby(['hour'])['speed'].mean().values
+s1 = df2.groupby(['hour'])['speed'].std().values
+plt.plot(m1, color = 'red', linewidth = 1.8, label = '2022')
+upper = m1 + s1
+lower = m1 - s1
+x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)), 
+                              np.array([24 - 1, 24 - 1])), np.arange(24 - 1, -1, -1))
+y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower), 
+                              np.array([lower[-1], upper[-1]])), np.flip(upper))
+plt.fill(x_bound, y_bound, color = 'red', alpha = 0.05)
+
+plt.xticks(np.arange(0, 24 + 1, 2))
+plt.xlabel('Time (hour)')
+plt.ylabel('Average speed (mph)')
+plt.grid(axis = 'both', linestyle='dashed', linewidth = 0.1, color = 'gray')
+ax.tick_params(direction = "in")
+ax.set_xlim([-1, 24])
+plt.legend()
+
+plt.savefig("travel_time_plus_speed_pickup_8_dropoff_76.png", bbox_inches = "tight")
+plt.show()
+```
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on November 12, 2023.)</p>
