@@ -235,6 +235,23 @@ The pickup trips in these four areas are about 69% of all trips in 2022. For com
 
 It seems to be 81.72% of all trips in 2019.
 
+<br>
+
+```python
+import pandas as pd
+
+data19 = pd.read_csv('taxi_trip_2019.csv')
+data22 = pd.read_csv('taxi_trip_2022.csv')
+
+# Extract the most popular pickup areas
+df19 = data19.groupby(['Pickup Community Area']).size().reset_index(name = 'pickup_counts')
+df19 = df19.sort_values(by = ['pickup_counts'], ascending = False)
+df22 = data22.groupby(['Pickup Community Area']).size().reset_index(name = 'pickup_counts')
+df22 = df22.sort_values(by = ['pickup_counts'], ascending = False)
+```
+
+<br>
+
 
 
 <br>
