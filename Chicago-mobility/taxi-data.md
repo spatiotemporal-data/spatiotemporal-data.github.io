@@ -252,6 +252,20 @@ df22 = df22.sort_values(by = ['pickup_counts'], ascending = False)
 
 <br>
 
+In what follows, one can choose some pickup-dropoff pairs to analyze taxi travel times.
+
+<br>
+
+```python
+# Return hour from datetime column
+data19['hour'] = pd.to_datetime(data19['Trip Start Timestamp'], 
+                                errors = 'coerce').dt.hour
+data22['hour'] = pd.to_datetime(data22['Trip Start Timestamp'], 
+                                errors = 'coerce').dt.hour
+```
+
+<br>
+
 
 
 <br>
