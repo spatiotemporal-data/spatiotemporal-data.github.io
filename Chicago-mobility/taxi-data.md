@@ -266,6 +266,28 @@ data22['hour'] = pd.to_datetime(data22['Trip Start Timestamp'],
 
 <br>
 
+**From Area 8 to Area 76**
+
+When analyzing taxi travel times and movement speeds, one should remove some outliers (e.g., anomalies in trip seconds/miles).
+
+<br>
+```python
+# From Area 8 to Area 76 in 2019
+df1 = data19[(data19['Pickup Community Area'] == 8) & (data19['Dropoff Community Area'] == 76)]
+df1 = df1.drop(df1[df1['Trip Seconds'] < 600].index)
+df1 = df1.drop(df1[df1['Trip Seconds'] > 7200].index)
+df1 = df1.drop(df1[df1['Trip Miles'] < 10].index)
+df1 = df1.drop(df1[df1['Trip Miles'] > 25].index)
+
+# From Area 8 to Area 76 in 2022
+df2 = data22[(data22['Pickup Community Area'] == 8) & (data22['Dropoff Community Area'] == 76)]
+df2 = df2.drop(df2[df2['Trip Seconds'] < 600].index)
+df2 = df2.drop(df2[df2['Trip Seconds'] > 7200].index)
+df2 = df2.drop(df2[df2['Trip Miles'] < 10].index)
+df2 = df2.drop(df2[df2['Trip Miles'] > 25].index)
+```
+
+
 
 
 <br>
