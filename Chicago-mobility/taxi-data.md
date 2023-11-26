@@ -271,6 +271,7 @@ data22['hour'] = pd.to_datetime(data22['Trip Start Timestamp'],
 When analyzing taxi travel times and movement speeds, one should remove some outliers (e.g., anomalies in trip seconds/miles).
 
 <br>
+
 ```python
 # From Area 8 to Area 76 in 2019
 df1 = data19[(data19['Pickup Community Area'] == 8) & (data19['Dropoff Community Area'] == 76)]
