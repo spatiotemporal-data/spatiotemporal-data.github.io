@@ -306,7 +306,7 @@ In what follows, we visualize the average travel time and speed from area 8 (i.e
 </p>
 
 <p align = "center">
-<b>Figure 5.</b> Average travel time and speed from area 32 to area 76 in both 2019 and 2022.
+<b>Figure 6.</b> Average travel time and speed from area 32 to area 76 in both 2019 and 2022.
 </p>
 
 <br>
