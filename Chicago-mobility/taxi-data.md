@@ -217,7 +217,7 @@ In addition, one can analyze the trips of other travel modes in the City of Chic
 
 <br>
 
-## Taxi Travel Time Changes of Popular OD Pairs between 2019 and 2022
+## Taxi Travel Time Changes of Popular Pickup-Dropoff Pairs between 2019 and 2022
 
 As shown in Figure 2 and Figure 3, there are some most popular pickup community areas, e.g., see left panel of Figure 2:
 
