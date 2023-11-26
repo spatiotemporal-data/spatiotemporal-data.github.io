@@ -221,17 +221,17 @@ In addition, one can analyze the trips of other travel modes in the City of Chic
 
 As shown in Figure 2 and Figure 3, there are some most popular pickup community areas, e.g., see left panel of Figure 2:
 
-- Community area #8: 1,261,696 trips
-- Community area #32: 888,724 trips
-- Community area #76: 688,553 trips
-- Community area #28: 448,476 trips
+- Community area **8**: 1,261,696 trips
+- Community area **32**: 888,724 trips
+- Community area **76**: 688,553 trips
+- Community area **28**: 448,476 trips
 
 The pickup trips in these four areas are about 69% of all trips in 2022. For comparison, the left panel of Figure 3 shows that these four areas are also the most popular pickup areas. Specifically, we have
 
-- Community area #8: 4,006,793 trips
-- Community area #32: 3,647,522 trips
-- Community area #28: 1,451,411 trips
-- Community area #76: 1,096,552 trips
+- Community area **8**: 4,006,793 trips
+- Community area **32**: 3,647,522 trips
+- Community area **28**: 1,451,411 trips
+- Community area **76**: 1,096,552 trips
 
 It seems to be 81.72% of all trips in 2019.
 
