@@ -9,7 +9,7 @@ layout: default
 
 <br>
 
-| Year    | Taxi trips | Rideshare trips | Divvy trips | E-Scooter trips |
+| Year    | Taxi trips | Rideshare trips | Divvy trips | E-scooter trips |
 | ------- | :--------: | :-------------: | :---------: | :-------------: |
 | 2013    | 27.2M      |                 |  760K       |                 |
 | 2014    | 37.4M      |                 |  2.45M      |                 |
