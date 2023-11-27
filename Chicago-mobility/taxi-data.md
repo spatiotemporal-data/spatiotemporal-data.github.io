@@ -289,7 +289,7 @@ df2 = df2.drop(df2[df2['Trip Miles'] > 25].index)
 
 <br>
 
-In what follows, we visualize the average travel time and speed from area 8 (i.e., Downtown) to area 76 (i.e., Airport) in both 2019 and 2022. Figure 5 shows average travel time curves and movement speed curves. It is not hard to see the remarkable reduction of average travel time in 2022 when comparing to 2019. The results of average speed demonstrates that the paths/routes from area 8 to area 76 is less congested in 2022 when comparing to 2019.
+In what follows, we visualize the average travel time and speed from area 8 (i.e., Downtown) to area 76 (i.e., Airport) in both 2019 and 2022. Figure 5 shows average travel time curves and movement speed curves. It is not hard to see the remarkable reduction of average travel time in 2022 when comparing to 2019. The results of average speed demonstrate that the paths/routes from area 8 to area 76 is less congested in 2022 when comparing to 2019.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/travel_time_plus_speed_pickup_8_dropoff_76.png" width="650" />
