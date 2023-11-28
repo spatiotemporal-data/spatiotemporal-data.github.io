@@ -121,3 +121,5 @@ plt.show()
 </p>
 
 <br>
+
+If you prefer to visualize the areas in aforementioned figures, please check out our GitHub repository: [https://github.com/xinychen/climate-tensor](https://github.com/xinychen/climate-tensor). We represent only a fraction of data as samples for analysis. Each data file is in the .npz format and can be easily processed with NumPy package in Python.
