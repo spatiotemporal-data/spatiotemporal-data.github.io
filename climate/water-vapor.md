@@ -52,6 +52,11 @@ pip install GDAL
 
 Check out the data at [https://doi.org/10.5281/zenodo.8226283](https://doi.org/10.5281/zenodo.8226283) and view/download some data files. Below show three subsets that corresponding to the months of May, June, and July.
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/vapor_dataset_1.png" width="600" />
+</p>
+
+
 ### Generating Water Vapor Heatmaps
 
 To generate heatmaps, we can use some basic Python packages for data visualization, e.g., matplotlib and seaborn. We can represent the data as a numpy array for inputing seaborn heatmaps.
@@ -81,4 +86,8 @@ for month in [5, 6]:
     i += 1
 plt.show()
 ```
+<br>
+
+Running these codes, we have the following heatmaps:
+
 
