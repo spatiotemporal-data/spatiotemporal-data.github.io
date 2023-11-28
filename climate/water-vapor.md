@@ -10,7 +10,7 @@ In the realm of Earth observation, the power of data is truly remarkable. One da
 
 ## About the Dataset
 
-Imagine having the ability to observe water vapor behavior on a global scale, month by month, over a span of more than two decades. Thanks to the dedicated work of Leandro Parente, Rolf Simoes, and Tomislav Hengl, such a dataset exists. The Monthly Aggregated Water Vapor MODIS MCD19A2 (1 km) dataset takes us on an illuminating journey into Earth’s water vapor patterns from 2000 to 2022.
+Imagine having the ability to observe water vapor behavior on a global scale, month by month, over a span of more than two decades. Thanks to the dedicated work of Leandro Parente, Rolf Simoes, and Tomislav Hengl, such a dataset exists. The dataset takes us on an illuminating journey into Earth’s water vapor patterns from 2000 to 2022.
 
 ### The Power of Water Vapor Data
 
@@ -22,7 +22,7 @@ Derived from MCD19A2 v061 and utilizing MODIS near-IR bands at 0.94μm, this dat
 
 2. **Yearly Time-Series**: Zooming out, the yearly time-series present aggregated statistics of the monthly data. This zoomed-out perspective offers a bird’s-eye view of water vapor trends over the course of a year.
 
-3. **Long-Term Insights**: The real gem lies in the long-term data. Derived from monthly time-series, it offers aggregated statistics that encapsulate the entire spectrum of observations from 2000 to 2022. It’s like looking at the evolution of Earth’s breath over two decades.
+3. **Long-Term Insights**: The real gem lies in the long-term data. Derived from monthly time-series, it offers aggregated statistics that encapsulate the entire spectrum of observations from 2000 to 2022. It is like looking at the evolution of Earth’s breath over two decades.
 
 ### Behind the Scenes
 
@@ -30,7 +30,7 @@ The data’s journey from raw observations to insightful statistics is a testame
 
 ### Limitations and Spatial Details
 
-No dataset is without its boundaries. This dataset doesn’t cover Antarctica, and its geographic scope is defined by the bounding box `(-180.00000, -62.00081, 179.99994, 87.37000)`. With a spatial resolution of 1km, the image size is an impressive <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;43200\times 17924"/> pixels. To keep up with the latest technological trends, the dataset is available in Cloud Optimized Geotiff (COG) format.
+No dataset is without its boundaries. This dataset does not cover Antarctica, and its geographic scope is defined by the bounding box `(-180.00000, -62.00081, 179.99994, 87.37000)`. With a spatial resolution of 1km, the image size is an impressive <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;43200\times 17924"/> pixels. To keep up with the latest technological trends, the dataset is available in Cloud Optimized Geotiff (COG) format.
 
 ## Step-By-Step Data Visualization
 
@@ -156,7 +156,7 @@ plt.show()
 
 ## Conclusion
 
-The Monthly Aggregated Water Vapor MODIS MCD19A2 (1 km) dataset is a testament to the power of data-driven insights. It is a treasure trove for scientists, researchers, and enthusiasts eager to understand the intricate dance of water vapor across our planet. As we analyze its patterns and trends, we are reminded once again of the beauty and complexity of Earth’s natural systems.
+The global water vapor dataset is a testament to the power of data-driven insights. It is a treasure trove for scientists, researchers, and enthusiasts eager to understand the intricate dance of water vapor across our planet. As we analyze its patterns and trends, we are reminded once again of the beauty and complexity of Earth’s natural systems.
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on November 27, 2023.)</p>
