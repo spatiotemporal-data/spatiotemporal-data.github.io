@@ -157,3 +157,6 @@ plt.show()
 ## Conclusion
 
 The Monthly Aggregated Water Vapor MODIS MCD19A2 (1 km) dataset is a testament to the power of data-driven insights. It’s a treasure trove for scientists, researchers, and enthusiasts eager to understand the intricate dance of water vapor across our planet. As we analyze its patterns and trends, we are reminded once again of the beauty and complexity of Earth’s natural systems.
+
+<br>
+<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on November 27, 2023.)</p>
