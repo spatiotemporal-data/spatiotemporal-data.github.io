@@ -50,7 +50,7 @@ pip install GDAL
 
 ### Download Dataset
 
-Check out the data at [https://doi.org/10.5281/zenodo.8226283](https://doi.org/10.5281/zenodo.8226283) and view/download some data files. Below show three subsets that corresponding to the months of May, June, and July.
+Check out [the data](https://doi.org/10.5281/zenodo.8226283) and view/download some data files. Below show three subsets that corresponding to the months of May, June, and July.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/vapor_dataset_1.png" width="500" />
