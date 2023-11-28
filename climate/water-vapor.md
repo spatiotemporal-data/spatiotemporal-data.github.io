@@ -53,7 +53,7 @@ pip install GDAL
 Check out the data at [https://doi.org/10.5281/zenodo.8226283](https://doi.org/10.5281/zenodo.8226283) and view/download some data files. Below show three subsets that corresponding to the months of May, June, and July.
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/vapor_dataset_1.png" width="600" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/vapor_dataset_1.png" width="500" />
 </p>
 
 <br>
@@ -123,3 +123,37 @@ plt.show()
 <br>
 
 If you prefer to visualize the areas in aforementioned figures, please check out our GitHub repository: [https://github.com/xinychen/climate-tensor](https://github.com/xinychen/climate-tensor). We represent only a fraction of data as samples for analysis. Each data file is in the .npz format and can be easily processed with NumPy package in Python.
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/vapor_dataset_2.png" width="500" />
+</p>
+
+<br>
+
+We processed water vapor data in 12 months for the selected areas. You can check out the following codes to generate the water vapor heatmap.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+fig = plt.figure(figsize = (14, 3))
+i = 0
+for month in [5, 6]:
+    mat = np.load('water_vapor_month_0{}.npz'.format(month))['arr_0']
+    ax = fig.add_subplot(1, 2, i + 1)
+    ax = sns.heatmap(mat,  cmap = "Spectral_r", vmin = 0, vmax = 4500,
+                     cbar_kws = {"shrink": 0.5, 'label': r'Water vapor ($10^{-3}$cm)'})
+    plt.axis('off')
+    if month == 5:
+        plt.title('May (2000-2022)')
+    elif month == 6:
+        plt.title('June (2000-2022)')
+    i += 1
+plt.show()
+```
+
+<br>
+
+## Conclusion
+
+The Monthly Aggregated Water Vapor MODIS MCD19A2 (1 km) dataset is a testament to the power of data-driven insights. It’s a treasure trove for scientists, researchers, and enthusiasts eager to understand the intricate dance of water vapor across our planet. As we analyze its patterns and trends, we are reminded once again of the beauty and complexity of Earth’s natural systems.
