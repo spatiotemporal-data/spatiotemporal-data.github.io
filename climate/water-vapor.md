@@ -60,7 +60,7 @@ Check out [the data](https://doi.org/10.5281/zenodo.8226283) and view/download s
 
 ### Generating Water Vapor Heatmaps
 
-To generate heatmaps, we can use some basic Python packages for data visualization, e.g., `matplotlib` and `seaborn`. We can represent the data as a numpy array for inputing seaborn heatmaps.
+To generate heatmaps, we can use some basic Python packages for data visualization, e.g., `matplotlib` and `seaborn`. We can represent the data as a `numpy` array for inputing `seaborn` heatmaps.
 
 <br>
 
