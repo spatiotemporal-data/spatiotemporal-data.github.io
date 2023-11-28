@@ -6,7 +6,7 @@ layout: default
 
 ### Exploring Water Vapor Patterns Across Time with High-Resolution Monthly Aggregated Datasets
 
-In the realm of Earth observation, the power of data is truly remarkable. One dataset that has been making waves in the scientific community is the Monthly Aggregated Water Vapor MODIS MCD19A2 (1 km) dataset. The part of this dataset is available on Zenodo (check out this link: https://doi.org/10.5281/zenodo.8226283). In this blog post, we will dive into this dataset’s significance, applications, and how it’s shaping our understanding of water vapor dynamics across the globe. For an intuitive demonstration, we will tell how to visualize the dataset by Python as a sequence of heatmps.
+In the realm of Earth observation, the power of data is truly remarkable. One dataset that has been making waves in the scientific community is the Monthly Aggregated Water Vapor MODIS MCD19A2 (1 km) dataset. The part of this dataset is available on Zenodo (check out this link: [https://doi.org/10.5281/zenodo.8226283](https://doi.org/10.5281/zenodo.8226283)). In this blog post, we will dive into this dataset’s significance, applications, and how it’s shaping our understanding of water vapor dynamics across the globe. For an intuitive demonstration, we will tell how to visualize the dataset by Python as a sequence of heatmps.
 
 ## About the Dataset
 
@@ -50,4 +50,35 @@ pip install GDAL
 
 ### Download Dataset
 
-Check out the data at https://doi.org/10.5281/zenodo.8226283 and view/download some data files. Below show three subsets that corresponding to the months of May, June, and July.
+Check out the data at [https://doi.org/10.5281/zenodo.8226283](https://doi.org/10.5281/zenodo.8226283) and view/download some data files. Below show three subsets that corresponding to the months of May, June, and July.
+
+### Generating Water Vapor Heatmaps
+
+To generate heatmaps, we can use some basic Python packages for data visualization, e.g., matplotlib and seaborn. We can represent the data as a numpy array for inputing seaborn heatmaps.
+
+<br>
+
+```python
+import numpy as np
+from osgeo import gdal
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+fig = plt.figure(figsize = (14, 3))
+i = 0
+for month in [5, 6]:
+    dataset = gdal.Open(r'wv_mcd19a2v061.seasconv.m.m0{}_p50_1km_s_20000101_20221231_go_epsg.4326_v20230619.tif'.format(month))
+    mat = np.array(dataset.GetRasterBand(1).ReadAsArray()[4500 : 8000, 6600 : 13100]).astype(float)
+    mat[mat == -1] = np.nan
+    ax = fig.add_subplot(1, 2, i + 1)
+    ax = sns.heatmap(mat,  cmap = "Spectral_r", vmin = 0, vmax = 4500,
+                     cbar_kws = {"shrink": 0.5, 'label': r'Water vapor ($10^{-3}$cm)'})
+    plt.axis('off')
+    if month == 5:
+        plt.title('May (2000-2022)')
+    elif month == 6:
+        plt.title('June (2000-2022)')
+    i += 1
+plt.show()
+```
+
