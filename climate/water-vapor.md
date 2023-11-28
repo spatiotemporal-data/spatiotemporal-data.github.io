@@ -97,3 +97,27 @@ Running these codes, we have the following heatmaps:
 
 <br>
 
+```python
+import numpy as np
+from osgeo import gdal
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+dataset = gdal.Open(r'wv_mcd19a2v061.seasconv.m.m06_p50_1km_s_20000101_20221231_go_epsg.4326_v20230619.tif')
+mat = np.array(dataset.GetRasterBand(1).ReadAsArray()[4500 : 8000, 6600 : 13100]).astype(float)
+mat[mat == -1] = np.nan
+fig = plt.figure(figsize = (6.5, 3))
+ax = sns.heatmap(mat,  cmap = "Spectral_r", vmin = 0, vmax = 4500,
+                  cbar_kws = {"shrink": 0.5, 'label': r'Water vapor ($10^{-3}$cm)'})
+plt.axis('off')
+plt.title('June (2000-2022)')
+plt.show()
+```
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/vapor_dataset_june.png" width="350" />
+</p>
+
+<br>
