@@ -6,7 +6,7 @@ layout: default
 
 ### Exploring Water Vapor Patterns Across Time with High-Resolution Monthly Aggregated Datasets
 
-In the realm of Earth observation, the power of data is truly remarkable. One dataset that has been making waves in the scientific community is the Monthly Aggregated Water Vapor MODIS MCD19A2 (1 km) dataset. The part of this dataset is available on Zenodo (check out this link: [https://doi.org/10.5281/zenodo.8226283](https://doi.org/10.5281/zenodo.8226283)). In this blog post, we will dive into this dataset’s significance, applications, and how it’s shaping our understanding of water vapor dynamics across the globe. For an intuitive demonstration, we will tell how to visualize the dataset by Python as a sequence of heatmps.
+In the realm of Earth observation, the power of data is truly remarkable. One dataset that has been making waves in the scientific community is the [Monthly Aggregated Water Vapor MODIS MCD19A2 (1 km) dataset](https://doi.org/10.5281/zenodo.8226283). In this post, we will dive into this dataset’s significance, applications, and how it’s shaping our understanding of water vapor dynamics across the globe. For an intuitive demonstration, we will tell how to visualize the dataset by Python as a sequence of heatmps.
 
 ## About the Dataset
 
