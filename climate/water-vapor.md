@@ -56,6 +56,7 @@ Check out the data at [https://doi.org/10.5281/zenodo.8226283](https://doi.org/1
 <img align="middle" src="https://spatiotemporal-data.github.io/images/vapor_dataset_1.png" width="600" />
 </p>
 
+<br>
 
 ### Generating Water Vapor Heatmaps
 
@@ -90,4 +91,9 @@ plt.show()
 
 Running these codes, we have the following heatmaps:
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/vapor_dataset_may_june.png" width="650" />
+</p>
+
+<br>
 
