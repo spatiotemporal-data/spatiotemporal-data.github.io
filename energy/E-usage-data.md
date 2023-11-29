@@ -121,6 +121,11 @@ plt.show()
 
 <br>
 
+Notably, to merge the energy consumption data to the geospatial data, we need to use `pandas` to construct the `DataFrame`.
+
+## Conclusion
+
+This is a short story for introducing how to process and visualize the Germany energy consumption dataset. We provide a Python implementation for these visualization cases.
 
 
 <br>
