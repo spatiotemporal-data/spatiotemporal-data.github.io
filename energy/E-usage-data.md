@@ -6,8 +6,6 @@ layout: default
 
 The analysis of energy consumption for future energy systems requires appropriate data. In the latest [JERICHO-E-usage dataset](https://www.nature.com/articles/s41597-021-00907-w), comprehensive data on useful energy consumption patterns for heat, cold, mechanical energy, information and communication, and light in high spatial and temporal resolution are available. The data are aggregated to the NUTS2 level, consisting of 38 regions in Germany.
 
-<br>
-
 ## Download `.shp` File in the NUTS2 Level
 
 Germany energy consumption data is a publicly available dataset. To visualize geographical distribution of these energy consumption data, we need to find appropriate .shp file and project data on it. We download the .shp from [GISCO statistical unit dataset](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts). In the download page, we set the following options:
