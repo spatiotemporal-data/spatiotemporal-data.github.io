@@ -8,7 +8,7 @@ The analysis of energy consumption for future energy systems requires appropriat
 
 ## Download Shapefile in the NUTS2 Level
 
-Germany energy consumption data is a publicly available dataset. To visualize geographical distribution of these energy consumption data, we need to find appropriate .shp file and project data on it. We download the .shp from [GISCO statistical unit dataset](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts). In the download page, we set the following options:
+Germany energy consumption data is a publicly available dataset. To visualize geographical distribution of these energy consumption data, we need to find appropriate `.shp` file and project data on it. We download the `.shp` from [GISCO statistical unit dataset](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts). In the download page, we set the following options:
 
 - Year: `NUTS 2016`
 - File format: `SHP`
