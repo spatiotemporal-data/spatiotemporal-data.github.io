@@ -49,6 +49,8 @@ for _, spine in ax.spines.items():
 plt.show()
 ```
 
+<br>
+
 ## About the Dataset
 
 The JERICHO-E-usage dataset provides the energy consumption of Germany in the whole year of 2019 ([Priesmann et al., 2021](https://doi.org/10.1038/s41597-021-00907-w)). The dataset is spatially resolved at the NUTS2 level comprising 38 regions and temporally resolved in hours. The dataset distinguished among four sectors, namely, the residential, the industrial, the commerce, and the mobility sectors. Useful energy types comprise space heating, warm water, process heating, space cooling, process cooling, mechanical energy, information and communication technology, and lightning.
