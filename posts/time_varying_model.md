@@ -306,4 +306,36 @@ fig.savefig("fluid_mode_trvar.png", bbox_inches = "tight")
 
 
 <br>
+
+```python
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+
+plt.rcParams['font.size'] = 14
+plt.rcParams['mathtext.fontset'] = 'cm'
+fig = plt.figure(figsize = (7, 9))
+for t in range(7):
+    ax = fig.add_subplot(7, 1, t + 1)
+    plt.plot(np.arange(1, 101, 1), X[:, t], linewidth = 2, alpha = 0.8, color = 'red')
+    plt.xlim([1, 100])
+    plt.xticks(np.arange(0, 101, 10))
+    if t < 6:
+        ax.tick_params(labelbottom = False)
+    ax.tick_params(direction = "in")
+    rect = patches.Rectangle((0, -1), 50, 2, linewidth=2,
+                             edgecolor='gray', facecolor='red', alpha = 0.1)
+    ax.add_patch(rect)
+    rect = patches.Rectangle((50, -1), 50, 2, linewidth=2,
+                             edgecolor='gray', facecolor='yellow', alpha = 0.1)
+    ax.add_patch(rect)
+plt.xlabel('$t$')
+plt.show()
+fig.savefig("fluid_temporal_mode.pdf", bbox_inches = "tight")
+```
+
+<br>
+
+
+
+<br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
