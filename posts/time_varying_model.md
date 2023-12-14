@@ -77,7 +77,7 @@ We can use the alternating minimization method to solve this optimization proble
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\left\{\begin{aligned} \boldsymbol{W}:&=\{\boldsymbol{W}\mid\frac{\partial f}{\partial\boldsymbol{W}}=\boldsymbol{0}\}\quad\text{\color{gray}(least squares)} \\ \boldsymbol{G}:&=\{\boldsymbol{G}\mid\frac{\partial f}{\partial\boldsymbol{G}}=\boldsymbol{0}\}\quad\text{\color{gray}(least squares)} \\ \boldsymbol{V}:&=\{\boldsymbol{V}\mid\frac{\partial f}{\partial\boldsymbol{V}}=\boldsymbol{0}\}\quad\text{\color{gray}(conjugate gradient)} \\ \boldsymbol{x}_{t}:&=\{\boldsymbol{x}_{t}\mid\frac{\partial f}{\partial\boldsymbol{x}_{t}}=\boldsymbol{0}\}\quad\text{\color{gray}(least squares)} \end{aligned} \right."/></p>
 
 
-The Python implementation with `numpy` is given as follows.
+The Python implementation with `numpy` is given as follows. We plan to give some examples on spatiotemporal data for discovering interpretable patterns.
 
 <br>
 
