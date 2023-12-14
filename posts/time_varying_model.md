@@ -301,6 +301,8 @@ fig.savefig("fluid_mode_trvar.png", bbox_inches = "tight")
 
 <br>
 
+Figure 3 shows the spatial modes of the fluid flow revealed by our model. It demonstrates that the spatial mode 1 corresponds to a background mode that is not changing over time because it is consistent with the mean vorticity. The other dominant spatial modes essentially show the waves of fluid flow. With the increase of rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R"/>, the spatial modes can be more detailed.
+
 **Temporal Modes**
 
 In this case, the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{X}"/> has 7 columns, which can visualized as 7 signals to see the dynamic patterns of the fluid flow.
