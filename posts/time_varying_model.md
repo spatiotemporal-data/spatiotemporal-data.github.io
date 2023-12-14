@@ -339,7 +339,7 @@ fig.savefig("fluid_temporal_mode.pdf", bbox_inches = "tight")
 <img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_mode_trvar.png" alt="drawing" width="300">
 </p>
 
-<p align="center"><b>Figure 4</b>: Mean vorticity field and spatial modes of the fluid flow. Spatial modes are plotted by the columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R=7"/>. Note that the colorbars of all modes are on the same scale.</p>
+<p align="center"><b>Figure 4</b>: Temporal modes of the fluid flow in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{X}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R=7"/>.</p>
 
 <br>
 
