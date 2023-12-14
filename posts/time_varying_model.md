@@ -238,6 +238,8 @@ for rank in [7]:
 
 <br>
 
+**Spatial Modes**
+
 In this case, the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}\in\mathbb{R}^{89351\times 7}"/> has 7 columns, corresponding to the 7 spatial modes. To analyze these spatial modes, one needs to first reshape each column vector as the 199-by-449 matrix and then use the packages `seaborn` and `matplotlib`.
 
 <br>
@@ -297,8 +299,11 @@ fig.savefig("fluid_mode_trvar.png", bbox_inches = "tight")
 
 <p align="center"><b>Figure 3</b>: Mean vorticity field and spatial modes of the fluid flow. Spatial modes are plotted by the columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R=7"/>. Note that the colorbars of all modes are on the same scale.</p>
 
-
 <br>
+
+**Temporal Modes**
+
+
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
