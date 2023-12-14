@@ -13,7 +13,7 @@ Dynamic mechanisms that drive nonlinear systems are universally complex. Straigh
 The scientific question in our study is how to discover interpretable dynamic patterns from spatiotemporal data. We utilize the vector autoregression as a basic tool to explore the spatiotemporal data in real-world applications.
 
 
-- Chen, X., Zhang, C., Chen, X., Saunier, N., & Sun, L. (2023). Discovering Dynamic Patterns from Spatiotemporal Data with Time-Varying Low-Rank Autoregression. IEEE Transactions on Knowledge and Data Engineering. Early access.
+- Chen, X., Zhang, C., Chen, X., Saunier, N., & Sun, L. (2023). [Discovering Dynamic Patterns from Spatiotemporal Data with Time-Varying Low-Rank Autoregression](https://doi.org/10.1109/TKDE.2023.3294440). IEEE Transactions on Knowledge and Data Engineering. Early access.
 
 or
 
