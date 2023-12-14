@@ -295,7 +295,7 @@ fig.savefig("fluid_mode_trvar.png", bbox_inches = "tight")
 <img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_mode_trvar.png" alt="drawing" width="300">
 </p>
 
-<p align="center"><b>Figure 3</b>: Heatmaps (snapshots) of the fluid flow at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=5,10,\ldots,40"/>. It shows that the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=5"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=35"/> are even same, and the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=10"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=40"/> are also even same, implying the seasonality as 30 for the first 50 snapshots.</p>
+<p align="center"><b>Figure 3</b>: Mean vorticity field and spatial modes of the fluid flow. Spatial modes are plotted by the columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R=7"/>. Note that the colorbars of all modes are on the same scale.</p>
 
 
 <br>
