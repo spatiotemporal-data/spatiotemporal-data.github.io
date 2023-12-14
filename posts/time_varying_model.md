@@ -59,6 +59,12 @@ As the data pair <img style="display: inline;" src="https://latex.codecogs.com/s
 
 As shown in Figure 1, the coefficient matrices can be viewed as a coefficient tensor whose parameters are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;dN^2(T-d)"/>. Since there are only <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;NT"/> time series observations, one technical challenge for solving the optimization problem would arise as the **over-parameterization** issue in the modeling process.
 
+<br>
+
+## Tensor Factorization on the Coefficient Tensor
+
+To compress the coefficient tensors in the time-varying autoregression and capture spatiotemporal patterns simultaneously, we factorize the coefficient tensors into a sequence of components via the use of Tucker tensor decomposition.
+
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
