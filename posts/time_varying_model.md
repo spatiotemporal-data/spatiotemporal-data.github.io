@@ -40,7 +40,7 @@ Typically, time-varying vector autoregression takes a sequence of vector autoreg
 
 with the data pair:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\begin{aligned} \boldsymbol{y}_{t}&\triangleq \boldsymbol{s}_{t}\in\mathbb{R}^{N} \\ \boldsymbol{z}_{t}&\triangleq\begin{bmatrix} \boldsymbol{s}_{t-1} \\ \vdots \\ \boldsymbol{s}_{t-d} \\ \end{bmatrix} \end{aligned}\in\mathbb{R}^{dN}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\begin{aligned} \boldsymbol{y}_{t}&\triangleq \boldsymbol{s}_{t}\in\mathbb{R}^{N} \\ \boldsymbol{z}_{t}&\triangleq\begin{bmatrix} \boldsymbol{s}_{t-1} \\ \vdots \\ \boldsymbol{s}_{t-d} \\ \end{bmatrix}\in\mathbb{R}^{dN} \end{aligned}"/></p>
 
 As the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\{\boldsymbol{y}_t,\boldsymbol{z}_t\}"/> is readily available, one can learn the coefficient matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{A}_t\in\mathbb{R}^{N\times (dN)}"/>.
 
@@ -211,6 +211,34 @@ fig.savefig('fluid_flow_heatmap.png', bbox_inches = 'tight')
 We manually build a synthetic dataset based on fluid dynamics observations to test the proposed model. First, we can reshape the data as a high-dimensional multivariate time series matrix of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;89351\times 150"/>. Then, to manually generate a multi-resolution system in which the fluid flow takes time-varying system behaviors, we concatenate two phases of data with different frequencies, namely, putting the first 50 time snapshots (of original frequency) together with the uniformly sampled 50 time snapshots from the last 100 time snapshots (of double frequency). As a consequence, the newly-built fluid flow dataset for evaluation has 100 time snapshots in total but with a frequency transition in its system behaviors, i.e., posing different frequencies in two phases.
 
 In our model, rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R"/> is a key parameter, which directly determines the number of dominant spatial/temporal modes. In practice, a lower rank may only reveal a few low-frequency dominant modes, but a higher rank would bring some complicated and less interpretable modes, usually referring to high-frequency information. This is consistent with the law that nature typically follows---noise is usually dominant at high frequencies and the system signal is more dominant at lower frequencies. On this dataset, we set the rank of our model as 7.
+
+<br>
+
+```python
+import numpy as np
+import time
+
+tensor = np.load('tensor.npz')['arr_0']
+tensor = tensor[:, :, : 150]
+M, N, T = tensor.shape
+mat = np.zeros((M * N, 100))
+mat[:, : 50] = np.reshape(tensor[:, :, : 50], (M * N, 50), order = 'F')
+for t in range(50):
+    mat[:, t + 50] = np.reshape(tensor[:, :, 50 + 2 * t + 1], (M * N), order = 'F')
+
+for rank in [7]:
+    for d in [1]:
+        start = time.time()
+        W, G, V, X = trvar(mat, d, rank)
+        print('rank R = {}'.format(rank))
+        print('Order d = {}'.format(d))
+        end = time.time()
+        print('Running time: %d seconds'%(end - start))
+```
+
+<br>
+
+
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
