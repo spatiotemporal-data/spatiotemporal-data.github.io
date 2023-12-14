@@ -27,6 +27,10 @@ or
 }
 ```
 
+## Revisit Vector Autoregression
+
+As a simple yet efficient and classical method for time series modeling, vector autoregression allows one to explicitly find the linear relationship among a sequence of time series (i.e., multivariate time series) changing over time, which can also successfully describe the dynamic behavior of time series.
+
 
 
 <br>
