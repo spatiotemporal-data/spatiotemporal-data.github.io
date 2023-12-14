@@ -72,6 +72,80 @@ Putting this tensor factorization with time-varying autoregression together, we 
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\min_{\boldsymbol{W},\boldsymbol{G},\boldsymbol{V},\boldsymbol{X}}~\frac{1}{2}\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}^\top\otimes\boldsymbol{V})^\top\boldsymbol{z}_{t}\right\|_2^2"/></p>
 
+We can use the alternating minimization method to solve this optimization problem. The Python implementation with `numpy` is given as follows.
+
+<br>
+
+```python
+import numpy as np
+
+def update_cg(w, r, q, Aq, rold):
+    alpha = rold / np.inner(q, Aq)
+    w = w + alpha * q
+    r = r - alpha * Aq
+    rnew = np.inner(r, r)
+    q = r + (rnew / rold) * q
+    return w, r, q, rnew
+
+def ell_v(Y, Z, W, G, V_transpose, X, temp2, d, T):
+    rank, dN = V_transpose.shape
+    temp = np.zeros((rank, dN))
+    for t in range(d, T):
+        temp3 = np.outer(X[t, :], Z[:, t - d])
+        Pt = temp2 @ np.kron(X[t, :].reshape([rank, 1]), V_transpose) @ Z[:, t - d]
+        temp += np.reshape(Pt, [rank, rank], order = 'F') @ temp3
+    return temp
+
+def conj_grad_v(Y, Z, W, G, V_transpose, X, d, T, maxiter = 5):
+    rank, dN = V_transpose.shape
+    temp1 = W @ G
+    temp2 = temp1.T @ temp1
+    v = np.reshape(V_transpose, -1, order = 'F')
+    temp = np.zeros((rank, dN))
+    for t in range(d, T):
+        temp3 = np.outer(X[t, :], Z[:, t - d])
+        Qt = temp1.T @ Y[:, t - d]
+        temp += np.reshape(Qt, [rank, rank], order = 'F') @ temp3
+    r = np.reshape(temp - ell_v(Y, Z, W, G, V_transpose, X, temp2, d, T), -1, order = 'F')
+    q = r.copy()
+    rold = np.inner(r, r)
+    for it in range(maxiter):
+        Q = np.reshape(q, (rank, dN), order = 'F')
+        Aq = np.reshape(ell_v(Y, Z, W, G, Q, X, temp2, d, T), -1, order = 'F')
+        v, r, q, rold = update_cg(v, r, q, Aq, rold)
+    return np.reshape(v, (rank, dN), order = 'F')
+
+def trvar(mat, d, rank, maxiter = 50):
+    N, T = mat.shape
+    Y = mat[:, d : T]
+    Z = np.zeros((d * N, T - d))
+    for k in range(d):
+        Z[k * N : (k + 1) * N, :] = mat[:, d - (k + 1) : T - (k + 1)]
+    u, _, v = np.linalg.svd(Y, full_matrices = False)
+    W = u[:, : rank]
+    u, _, _ = np.linalg.svd(Z, full_matrices = False)
+    V = u[:, : rank]
+    u, _, _ = np.linalg.svd(mat.T, full_matrices = False)
+    X = u[:, : rank]
+    del u
+    loss = np.zeros(maxiter)
+    for it in range(maxiter):
+        temp1 = np.zeros((N, rank * rank))
+        temp2 = np.zeros((rank * rank, rank * rank))
+        for t in range(d, T):
+            temp = np.kron(X[t, :].reshape([rank, 1]), V.T) @ Z[:, t - d]
+            temp1 += np.outer(Y[:, t - d], temp)
+            temp2 += np.outer(temp, temp)
+        G = np.linalg.pinv(W) @ temp1 @ np.linalg.inv(temp2)
+        W = temp1 @ G.T @ np.linalg.inv(G @ temp2 @ G.T)
+        V = conj_grad_v(Y, Z, W, G, V.T, X, d, T).T
+        temp3 = W @ G
+        for t in range(d, T):
+            X[t, :] = np.linalg.pinv(temp3 @ np.kron(np.eye(rank), (V.T @ Z[:, t - d]).reshape([rank, 1]))) @ Y[:, t - d]
+    return W, G, V, X
+```
+
+<br>
 
 
 <br>
