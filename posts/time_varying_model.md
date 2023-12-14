@@ -65,7 +65,7 @@ As shown in Figure 1, the coefficient matrices can be viewed as a coefficient te
 
 To compress the coefficient tensors in the time-varying autoregression and capture spatiotemporal patterns simultaneously, we factorize the coefficient tensors into a sequence of components via the use of Tucker tensor decomposition:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\begin{aligned} \boldsymbol{\mathcal{A}}&=\boldsymbol{\mathcal{G}}\times_1\boldsymbol{W}\times_2\boldsymbol{V}\times_3\boldsymbol{X} \\ \Rightarrow\quad\boldsymbol{A}_{t}&=\boldsymbol{\mathcal{G}}\times_1\boldsymbol{W}\times_2\boldsymbol{V}\times_3\boldsymbol{x}_{t}^\top \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\begin{aligned} \boldsymbol{\mathcal{A}}&=\boldsymbol{\mathcal{G}}\times_1\underbrace{\boldsymbol{W}}_{\text{spatial modes}}\times_2\boldsymbol{V}\times_3\underbrace{\boldsymbol{X}}_{\text{temporal modes}} \\ \Rightarrow\quad\boldsymbol{A}_{t}&=\boldsymbol{\mathcal{G}}\times_1\boldsymbol{W}\times_2\boldsymbol{V}\times_3\boldsymbol{x}_{t}^\top \end{aligned}"/></p>
 
 
 
