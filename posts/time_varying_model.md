@@ -238,7 +238,67 @@ for rank in [7]:
 
 <br>
 
+In this case, the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}\in\mathbb{R}^{89351\times 7}"/> has 7 columns, corresponding to the 7 spatial modes. To analyze these spatial modes, one needs to first reshape each column vector as the 199-by-449 matrix and then use the packages `seaborn` and `matplotlib`.
 
+<br>
+
+```python
+import seaborn as sns
+import scipy.io
+import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
+color = scipy.io.loadmat('CCcool.mat')
+cc = color['CC']
+newcmp = LinearSegmentedColormap.from_list('', cc)
+
+plt.rcParams['font.size'] = 12
+fig = plt.figure(figsize = (7, 8))
+ax = fig.add_subplot(4, 2, 1)
+sns.heatmap(np.mean(tensor, axis = 2),
+            cmap = newcmp, vmin = -5, vmax = 5, cbar = False)
+ax.contour(np.linspace(0, N, N), np.linspace(0, M, M), np.mean(tensor, axis = 2),
+            levels = np.linspace(0.15, 15, 20), colors = 'k', linewidths = 0.7)
+ax.contour(np.linspace(0, N, N), np.linspace(0, M, M), np.mean(tensor, axis = 2),
+            levels = np.linspace(-15, -0.15, 20), colors = 'k', linestyles = 'dashed', linewidths = 0.7)
+plt.xticks([])
+plt.yticks([])
+plt.title('Mean vorticity field')
+for _, spine in ax.spines.items():
+    spine.set_visible(True)
+for t in range(7):
+    if t == 0:
+        ax = fig.add_subplot(4, 2, t + 2)
+    else:
+        ax = fig.add_subplot(4, 2, t + 2)
+    ax = sns.heatmap(W[:, t].reshape((199, 449), order = 'F'),
+                     cmap = newcmp, vmin = -0.03, vmax = 0.03, cbar = False)
+    if t < 3:
+        num = 20
+    else:
+        num = 10
+    ax.contour(np.linspace(0, N, N), np.linspace(0, M, M), W[:, t].reshape((199, 449), order = 'F'),  
+               levels = np.linspace(0.0005, 0.05, num), colors = 'k', linewidths = 0.7)
+    ax.contour(np.linspace(0, N, N), np.linspace(0, M, M), W[:, t].reshape((199, 449), order = 'F'),
+               levels = np.linspace(-0.05, -0.0005, num), colors = 'k', linestyles = 'dashed', linewidths = 0.7)
+    plt.xticks([])
+    plt.yticks([])
+    plt.title('Spatial mode {}'.format(t + 1))
+    for _, spine in ax.spines.items():
+        spine.set_visible(True)
+plt.show()
+fig.savefig("fluid_mode_trvar.png", bbox_inches = "tight")
+```
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_mode_trvar.png" alt="drawing" width="300">
+</p>
+
+<p align="center"><b>Figure 3</b>: Heatmaps (snapshots) of the fluid flow at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=5,10,\ldots,40"/>. It shows that the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=5"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=35"/> are even same, and the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=10"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=40"/> are also even same, implying the seasonality as 30 for the first 50 snapshots.</p>
+
+
+<br>
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
