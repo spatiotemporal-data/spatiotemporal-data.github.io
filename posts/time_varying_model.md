@@ -210,7 +210,7 @@ fig.savefig('fluid_flow_heatmap.png', bbox_inches = 'tight')
 
 We manually build a synthetic dataset based on fluid dynamics observations to test the proposed model. First, we can reshape the data as a high-dimensional multivariate time series matrix of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;89351\times 150"/>. Then, to manually generate a multi-resolution system in which the fluid flow takes time-varying system behaviors, we concatenate two phases of data with different frequencies, namely, putting the first 50 time snapshots (of original frequency) together with the uniformly sampled 50 time snapshots from the last 100 time snapshots (of double frequency). As a consequence, the newly-built fluid flow dataset for evaluation has 100 time snapshots in total but with a frequency transition in its system behaviors, i.e., posing different frequencies in two phases.
 
-
+In our model, rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R"/> is a key parameter, which directly determines the number of dominant spatial/temporal modes. In practice, a lower rank may only reveal a few low-frequency dominant modes, but a higher rank would bring some complicated and less interpretable modes, usually referring to high-frequency information. This is consistent with the law that nature typically follows---noise is usually dominant at high frequencies and the system signal is more dominant at lower frequencies. On this dataset, we set the rank of our model as 7.
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
