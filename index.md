@@ -11,7 +11,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
-- 
+- <span style="color:blue">(Chen et al.'23')</span> Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2023). Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression. IEEE Transactions on Knowledge and Data Engineering. Early access.
 
 This project handles various spatiotemporal data:
 
