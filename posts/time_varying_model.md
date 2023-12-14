@@ -68,6 +68,9 @@ To compress the coefficient tensors in the time-varying autoregression and captu
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}\in\mathbb{R}^{N\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{X}\in\mathbb{R}^{(T-d)\times R}"/> can be interpreted as spatial modes/patterns and temporal modes/patterns, respectively.
 
+Putting this tensor factorization with time-varying autoregression together, we have the following time-varying reduced-rank vector autoregression problem:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\min_{\boldsymbol{W},\boldsymbol{G},\boldsymbol{V},\boldsymbol{X}}~\frac{1}{2}"/></p>
 
 
 
