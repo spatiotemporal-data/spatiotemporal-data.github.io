@@ -303,7 +303,7 @@ fig.savefig("fluid_mode_trvar.png", bbox_inches = "tight")
 
 **Temporal Modes**
 
-
+In this case, the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{X}"/> has 7 columns, which can visualized as 7 signals to see dynamic patterns of the fluid flow.
 
 <br>
 
@@ -335,6 +335,13 @@ fig.savefig("fluid_temporal_mode.pdf", bbox_inches = "tight")
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_mode_trvar.png" alt="drawing" width="300">
+</p>
+
+<p align="center"><b>Figure 4</b>: Mean vorticity field and spatial modes of the fluid flow. Spatial modes are plotted by the columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R=7"/>. Note that the colorbars of all modes are on the same scale.</p>
+
+<br>
 
 
 <br>
