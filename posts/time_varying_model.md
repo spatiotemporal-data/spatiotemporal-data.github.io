@@ -330,7 +330,8 @@ for t in range(7):
     ax.add_patch(rect)
 plt.xlabel('$t$')
 plt.show()
-fig.savefig("fluid_temporal_mode.pdf", bbox_inches = "tight")
+fig.savefig("fluid_temporal_mode.png", bbox_inches = "tight")
+# fig.savefig("fluid_temporal_mode.pdf", bbox_inches = "tight")
 ```
 
 <br>
