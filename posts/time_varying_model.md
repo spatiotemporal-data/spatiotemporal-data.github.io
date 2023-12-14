@@ -4,7 +4,7 @@ layout: default
 
 # Time-Varying Autoregression
 
-### Discovering Dynamic Patterns from Spatiotemporal Data with Time-Varying Low-Rank Autoregression
+#### Discovering Dynamic Patterns from Spatiotemporal Data with Time-Varying Low-Rank Autoregression
 
 <br>
 
