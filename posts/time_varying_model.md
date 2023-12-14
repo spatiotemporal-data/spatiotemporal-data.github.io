@@ -344,6 +344,9 @@ fig.savefig("fluid_temporal_mode.png", bbox_inches = "tight")
 
 <br>
 
+Figure 4 shows the temporal modes of the fluid flow achieved by our model. As can be seen, the frequency of all temporal modes is changed at the time <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=50"/>, and all temporal modes can identify the time series with different frequencies of oscillation. The dynamics of fluid flow essentially consist of the phases of two frequencies. Thus, we can emphasize the model's ability for identifying the time-evolving patterns from multi-resolution fluid flow.
+
+The temporal mode 1 is the most dominant pattern of the fluid flow, corresponding to the spatial mode 1. Observing the harmonic frequencies of temporal modes, the corresponding spatial modes 4 and 5 are more complicated than the spatial modes 2 and 3, while the spatial modes 6 and 7 are more complicated than the spatial modes 4 and 5. 
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
