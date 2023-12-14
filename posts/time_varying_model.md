@@ -39,7 +39,7 @@ One great challenge of modeling time series with vector autoregression is identi
 
 Typically, time-varying vector autoregression takes a sequence of vector autoregressive processes at different times, and it is capable of handling the time-varying system behaviors. For any observed spatiotemporal data in the form of multivariate time series, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, our model considers a time-varying linear system as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\min_{\color{red}\{\boldsymbol{A}_{t}\}}~\frac{1}{2}\underbrace{\left\|\boldsymbol{y}_{t}-{\color{red}\boldsymbol{A}_{t}}\boldsymbol{z}_{t}\right\|_2^2}_{\text{time-varying autoregression}}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\min_{\color{red}\{\boldsymbol{A}_{t}\}}~\frac{1}{2}\underbrace{\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-{\color{red}\boldsymbol{A}_{t}}\boldsymbol{z}_{t}\right\|_2^2}_{\text{time-varying autoregression}}"/></p>
 
 with the data pair:
 
