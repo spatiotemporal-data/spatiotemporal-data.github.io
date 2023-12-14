@@ -9,6 +9,10 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Intelligent & Sustainable Transportation Systems
 - Optimization & Decision Making
 
+This project presents some spatiotemporal methods with data-driven machine learning:
+
+- 
+
 This project handles various spatiotemporal data:
 
 - [Analyzing millions of taxi trips in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
