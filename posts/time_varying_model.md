@@ -50,7 +50,7 @@ As the data pair <img style="display: inline;" src="https://latex.codecogs.com/s
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/tensor_Atd.png" width="250" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/tensor_Atd.png" width="220" />
 </p>
 
 <p align = "center">
