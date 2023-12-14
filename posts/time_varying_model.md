@@ -197,7 +197,7 @@ fig.savefig('fluid_flow_heatmap.png', bbox_inches = 'tight')
 <br>
 
 <p align="center">
-<img align="middle" src="graphics/fluid_flow_heatmap.png" alt="drawing" width="300">
+<img align="middle" src="images/fluid_flow_heatmap.png" alt="drawing" width="300">
 </p>
 
 <p align="center"><b>Figure 2</b>: Heatmaps (snapshots) of the fluid flow at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=5,10,\ldots,40"/>. It shows that the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=5"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=35"/> are even same, and the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=10"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=40"/> are also even same, implying the seasonality as 30 for the first 50 snapshots.</p>
