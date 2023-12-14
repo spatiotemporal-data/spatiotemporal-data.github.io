@@ -47,6 +47,14 @@ with the data pair:
 
 As the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\{\boldsymbol{y}_t,\boldsymbol{z}_t\}"/> is readily available, one can learn the coefficient matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{A}_t\in\mathbb{R}^{N\times (dN)}"/>.
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/tensor_Atd.png" width="300" />
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> Coefficient tensor.
+</p>
+
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
