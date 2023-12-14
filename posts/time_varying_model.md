@@ -204,6 +204,7 @@ fig.savefig('fluid_flow_heatmap.png', bbox_inches = 'tight')
 
 <br>
 
+We manually build a synthetic dataset based on fluid dynamics observations to test the proposed model. First, we can reshape the data as a high-dimensional multivariate time series matrix of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;89351\times 150"/>. Then, to manually generate a multiresolution system in which the fluid flow takes time-varying system behaviors, we concatenate two parts of data with different frequencies--
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 13, 2023.)</p>
