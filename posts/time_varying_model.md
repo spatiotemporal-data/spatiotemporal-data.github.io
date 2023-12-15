@@ -36,23 +36,23 @@ Dynamic mechanisms that drive nonlinear systems are universally complex. Straigh
 
 As a simple yet efficient and classical method for time series modeling, vector autoregression allows one to explicitly find the linear relationship among a sequence of time series (i.e., multivariate time series) changing over time, which can also successfully describe the dynamic behaviors of time series.
 
-Given any stationary time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;d"/>th-order vector autoregression takes a linear formula as
+Given any stationary time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;d"/>th-order vector autoregression takes a linear formula as
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{s}_{t}=\sum_{k=1}^{d}{\color{red}\boldsymbol{A}_{k}}\boldsymbol{s}_{t-k}+\underbrace{\boldsymbol{\epsilon}_{t}}_{\text{error}},\,\forall t"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{A}_1,\boldsymbol{A}_2,\ldots,\boldsymbol{A}_{d}\in\mathbb{R}^{N\times N}"/> are the coefficient matrices, which can capture the temporal correlations of the multivariate time series.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{A}_1,\boldsymbol{A}_2,\ldots,\boldsymbol{A}_{d}\in\mathbb{R}^{N\times N}"/> are the coefficient matrices, which can capture the temporal correlations of the multivariate time series.
 
 One great challenge of modeling time series with vector autoregression is identifying the time-varying system behaviors in the analysis, which is often associated with the nonstationarity issue. Although the nonstationarity and time-varying system behaviors are pretty clear to verify, the problem of discovering underlying data patterns from time-varying systems is challenging and still demands further exploration.
 
-Typically, time-varying vector autoregression takes a sequence of vector autoregressive processes at different times, and it is capable of handling the time-varying system behaviors. For any observed spatiotemporal data in the form of multivariate time series, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, our model considers a time-varying linear system as follows,
+Typically, time-varying vector autoregression takes a sequence of vector autoregressive processes at different times, and it is capable of handling the time-varying system behaviors. For any observed spatiotemporal data in the form of multivariate time series, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, our model considers a time-varying linear system as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\min_{\color{red}\{\boldsymbol{A}_{t}\}}~\frac{1}{2}\underbrace{\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-{\color{red}\boldsymbol{A}_{t}}\boldsymbol{z}_{t}\right\|_2^2}_{\text{time-varying autoregression}}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\min_{\color{red}\{\boldsymbol{A}_{t}\}}~\frac{1}{2}\underbrace{\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-{\color{red}\boldsymbol{A}_{t}}\boldsymbol{z}_{t}\right\|_2^2}_{\text{time-varying autoregression}}"/></p>
 
 with the data pair:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\begin{aligned} \boldsymbol{y}_{t}&\triangleq \boldsymbol{s}_{t}\in\mathbb{R}^{N} \\ \boldsymbol{z}_{t}&\triangleq\begin{bmatrix} \boldsymbol{s}_{t-1} \\ \vdots \\ \boldsymbol{s}_{t-d} \\ \end{bmatrix}\in\mathbb{R}^{dN} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{aligned} \boldsymbol{y}_{t}&\triangleq \boldsymbol{s}_{t}\in\mathbb{R}^{N} \\ \boldsymbol{z}_{t}&\triangleq\begin{bmatrix} \boldsymbol{s}_{t-1} \\ \vdots \\ \boldsymbol{s}_{t-d} \\ \end{bmatrix}\in\mathbb{R}^{dN} \end{aligned}"/></p>
 
-As the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\{\boldsymbol{y}_t,\boldsymbol{z}_t\}"/> is readily available, one can learn the coefficient matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{A}_t\in\mathbb{R}^{N\times (dN)}"/>.
+As the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\{\boldsymbol{y}_t,\boldsymbol{z}_t\}"/> is readily available, one can learn the coefficient matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{A}_t\in\mathbb{R}^{N\times (dN)}"/>.
 
 <br>
 
@@ -61,12 +61,12 @@ As the data pair <img style="display: inline;" src="https://latex.codecogs.com/s
 </p>
 
 <p align = "center">
-<b>Figure 1.</b> A collection of coefficient matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{A}_t,\forall t"/> can be represented as a coefficient tensor <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{\mathcal{A}}"/> of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;N\times (dN)\times (T-d)"/>, showing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;dN^2(T-d)"/> parameters for estimation.
+<b>Figure 1.</b> A collection of coefficient matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{A}_t,\forall t"/> can be represented as a coefficient tensor <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{\mathcal{A}}"/> of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;N\times (dN)\times (T-d)"/>, showing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;dN^2(T-d)"/> parameters for estimation.
 </p>
 
 <br>
 
-As shown in Figure 1, the coefficient matrices can be viewed as a coefficient tensor whose parameters are of number <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\color{blue}dN^2(T-d)"/>. Since there are only <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\color{blue}NT"/> time series observations, one technical challenge for solving the optimization problem would arise as the **over-parameterization** issue in the modeling process.
+As shown in Figure 1, the coefficient matrices can be viewed as a coefficient tensor whose parameters are of number <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\color{blue}dN^2(T-d)"/>. Since there are only <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\color{blue}NT"/> time series observations, one technical challenge for solving the optimization problem would arise as the **over-parameterization** issue in the modeling process.
 
 <br>
 
@@ -74,17 +74,17 @@ As shown in Figure 1, the coefficient matrices can be viewed as a coefficient te
 
 To compress the coefficient tensor in the time-varying autoregression and capture spatiotemporal patterns simultaneously, we factorize the coefficient tensors into a sequence of components via the use of Tucker tensor decomposition:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\begin{aligned} {\color{red}\boldsymbol{\mathcal{A}}}&=\boldsymbol{\mathcal{G}}\times_1\underbrace{\color{red}\boldsymbol{W}}_{\text{spatial modes}}\times_2\boldsymbol{V}\times_3\underbrace{\color{red}\boldsymbol{X}}_{\text{temporal modes}} \\ \Rightarrow\quad{\color{red}\boldsymbol{A}_{t}}&=\boldsymbol{\mathcal{G}}\times_1{\boldsymbol{W}}\times_2\boldsymbol{V}\times_3{\boldsymbol{x}_{t}^\top} \\ &=\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}^\top\otimes\boldsymbol{V})^\top \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{aligned} {\color{red}\boldsymbol{\mathcal{A}}}&=\boldsymbol{\mathcal{G}}\times_1\underbrace{\color{red}\boldsymbol{W}}_{\text{spatial modes}}\times_2\boldsymbol{V}\times_3\underbrace{\color{red}\boldsymbol{X}}_{\text{temporal modes}} \\ \Rightarrow\quad{\color{red}\boldsymbol{A}_{t}}&=\boldsymbol{\mathcal{G}}\times_1{\boldsymbol{W}}\times_2\boldsymbol{V}\times_3{\boldsymbol{x}_{t}^\top} \\ &=\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}^\top\otimes\boldsymbol{V})^\top \end{aligned}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}\in\mathbb{R}^{N\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{X}\in\mathbb{R}^{(T-d)\times R}"/> can be interpreted as spatial modes/patterns and temporal modes/patterns, respectively.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{W}\in\mathbb{R}^{N\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{X}\in\mathbb{R}^{(T-d)\times R}"/> can be interpreted as spatial modes/patterns and temporal modes/patterns, respectively.
 
 Putting this tensor factorization with time-varying autoregression together, we have the following time-varying low-rank vector autoregression problem (also see [the optimization with orthogonal constraints](https://spatiotemporal-data.github.io/probs/orth-var/)):
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\min_{\boldsymbol{W},\boldsymbol{G},\boldsymbol{V},\boldsymbol{X}}~\frac{1}{2}\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}^\top\otimes\boldsymbol{V})^\top\boldsymbol{z}_{t}\right\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\min_{\boldsymbol{W},\boldsymbol{G},\boldsymbol{V},\boldsymbol{X}}~\frac{1}{2}\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}^\top\otimes\boldsymbol{V})^\top\boldsymbol{z}_{t}\right\|_2^2"/></p>
 
-We can use the alternating minimization method to solve this optimization problem. Let <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;f"/> be the objective function of the optimization problem, the scheme can be summarized as follows,
+We can use the alternating minimization method to solve this optimization problem. Let <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;f"/> be the objective function of the optimization problem, the scheme can be summarized as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\left\{\begin{aligned} \boldsymbol{W}:&=\{\boldsymbol{W}\mid\frac{\partial f}{\partial\boldsymbol{W}}=\boldsymbol{0}\} & {\color{blue}\text{(least squares)}} \\ \boldsymbol{G}:&=\{\boldsymbol{G}\mid\frac{\partial f}{\partial\boldsymbol{G}}=\boldsymbol{0}\} & {\color{blue}\text{(least squares)}} \\ \boldsymbol{V}:&=\{\boldsymbol{V}\mid\frac{\partial f}{\partial\boldsymbol{V}}=\boldsymbol{0}\} & {\color{blue}\text{(conjugate gradient)}} \\ \boldsymbol{x}_{t}:&=\{\boldsymbol{x}_{t}\mid\frac{\partial f}{\partial\boldsymbol{x}_{t}}=\boldsymbol{0}\},\,\forall t & {\color{blue}\text{(least squares)}} \end{aligned} \right."/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\left\{\begin{aligned} \boldsymbol{W}:&=\{\boldsymbol{W}\mid\frac{\partial f}{\partial\boldsymbol{W}}=\boldsymbol{0}\} & {\color{blue}\text{(least squares)}} \\ \boldsymbol{G}:&=\{\boldsymbol{G}\mid\frac{\partial f}{\partial\boldsymbol{G}}=\boldsymbol{0}\} & {\color{blue}\text{(least squares)}} \\ \boldsymbol{V}:&=\{\boldsymbol{V}\mid\frac{\partial f}{\partial\boldsymbol{V}}=\boldsymbol{0}\} & {\color{blue}\text{(conjugate gradient)}} \\ \boldsymbol{x}_{t}:&=\{\boldsymbol{x}_{t}\mid\frac{\partial f}{\partial\boldsymbol{x}_{t}}=\boldsymbol{0}\},\,\forall t & {\color{blue}\text{(least squares)}} \end{aligned} \right."/></p>
 
 
 The Python implementation with `numpy` is given as follows. We plan to give some spatiotemporal data examples such as fluid flow, sea surface temperature, and human mobility for discovering interpretable patterns.
@@ -166,7 +166,7 @@ def trvar(mat, d, rank, maxiter = 50):
 
 Investigating fluid dynamic systems is of great interest for uncovering large-scale spatiotemporal coherent structures because dominant patterns exist in the flow field. The data-driven models, such as proper orthogonal decomposition and dynamic mode decomposition, have become an important paradigm. To analyze the underlying spatiotemporal patterns of fluid dynamics, we consider the cylinder wake dataset in which the flow shows a supercritical Hopf bifurcation.
 
-[The cylinder wake dataset](http://dmdbook.com/) is collected from the fluid flow passing a circular cylinder with laminar vortex shedding at Reynolds number Re = 100, which is larger than the critical Reynolds number, using direct numerical simulations of the Navier-Stokes equations. This is a representative three-dimensional flow dataset in fluid dynamics, consisting of matrix-variate time series of vorticity field snapshots for the wake behind a cylinder (see Figure 2). The dataset is of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;199\times 449\times 150"/>, representing 199-by-449 vorticity fields with 150 time snapshots. The adapted dataset is available at [our GitHub repository](https://github.com/xinychen/vars/tree/main/datasets/fluid-flow), including two data files:
+[The cylinder wake dataset](http://dmdbook.com/) is collected from the fluid flow passing a circular cylinder with laminar vortex shedding at Reynolds number Re = 100, which is larger than the critical Reynolds number, using direct numerical simulations of the Navier-Stokes equations. This is a representative three-dimensional flow dataset in fluid dynamics, consisting of matrix-variate time series of vorticity field snapshots for the wake behind a cylinder (see Figure 2). The dataset is of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;199\times 449\times 150"/>, representing 199-by-449 vorticity fields with 150 time snapshots. The adapted dataset is available at [our GitHub repository](https://github.com/xinychen/vars/tree/main/datasets/fluid-flow), including two data files:
 
 - `CCcool.mat`
 - `tensor.npz`
@@ -214,13 +214,13 @@ fig.savefig('fluid_flow_heatmap.png', bbox_inches = 'tight')
 <img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_flow_heatmap.png" alt="drawing" width="300">
 </p>
 
-<p align="center"><b>Figure 2</b>: Heatmaps (snapshots) of the fluid flow at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=5,10,\ldots,40"/>. It shows that the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=5"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=35"/> are even same, and the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=10"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=40"/> are also even same, implying the seasonality as 30 for the first 50 snapshots.</p>
+<p align="center"><b>Figure 2</b>: Heatmaps (snapshots) of the fluid flow at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;t=5,10,\ldots,40"/>. It shows that the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;t=5"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;t=35"/> are even same, and the snapshots at times <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;t=10"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;t=40"/> are also even same, implying the seasonality as 30 for the first 50 snapshots.</p>
 
 <br>
 
-We manually build a synthetic dataset based on fluid dynamics observations to test the proposed model. First, we can reshape the data as a high-dimensional multivariate time series matrix of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;89351\times 150"/>. Then, to manually generate a multi-resolution system in which the fluid flow takes time-varying system behaviors, we concatenate two phases of data with different frequencies, namely, putting the first 50 time snapshots (of original frequency) together with the uniformly sampled 50 time snapshots from the last 100 time snapshots (of double frequency). As a consequence, the newly-built fluid flow dataset for evaluation has 100 time snapshots in total but with a frequency transition in its system behaviors, i.e., posing different frequencies in two phases.
+We manually build a synthetic dataset based on fluid dynamics observations to test the proposed model. First, we can reshape the data as a high-dimensional multivariate time series matrix of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;89351\times 150"/>. Then, to manually generate a multi-resolution system in which the fluid flow takes time-varying system behaviors, we concatenate two phases of data with different frequencies, namely, putting the first 50 time snapshots (of original frequency) together with the uniformly sampled 50 time snapshots from the last 100 time snapshots (of double frequency). As a consequence, the newly-built fluid flow dataset for evaluation has 100 time snapshots in total but with a frequency transition in its system behaviors, i.e., posing different frequencies in two phases.
 
-In our model, rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R"/> is a key parameter, which directly determines the number of dominant spatial/temporal modes. In practice, a lower rank may only reveal a few low-frequency dominant modes, but a higher rank would bring some complicated and less interpretable modes, usually referring to high-frequency information. This is consistent with the law that nature typically follows---noise is usually dominant at high frequencies and the system signal is more dominant at lower frequencies. On this dataset, we set the rank of our model as 7.
+In our model, rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;R"/> is a key parameter, which directly determines the number of dominant spatial/temporal modes. In practice, a lower rank may only reveal a few low-frequency dominant modes, but a higher rank would bring some complicated and less interpretable modes, usually referring to high-frequency information. This is consistent with the law that nature typically follows---noise is usually dominant at high frequencies and the system signal is more dominant at lower frequencies. On this dataset, we set the rank of our model as 7.
 
 <br>
 
@@ -250,7 +250,7 @@ for rank in [7]:
 
 **Spatial Modes**
 
-In this case, the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}\in\mathbb{R}^{89351\times 7}"/> has 7 columns, corresponding to the 7 spatial modes. To analyze these spatial modes, one needs to first reshape each column vector as the 199-by-449 matrix and then use the packages `seaborn` and `matplotlib`.
+In this case, the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{W}\in\mathbb{R}^{89351\times 7}"/> has 7 columns, corresponding to the 7 spatial modes. To analyze these spatial modes, one needs to first reshape each column vector as the 199-by-449 matrix and then use the packages `seaborn` and `matplotlib`.
 
 <br>
 
@@ -307,15 +307,15 @@ fig.savefig("fluid_mode_trvar.png", bbox_inches = "tight")
 <img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_mode_trvar.png" alt="drawing" width="300">
 </p>
 
-<p align="center"><b>Figure 3</b>: Mean vorticity field and spatial modes of the fluid flow. Spatial modes are plotted by the columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{W}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R=7"/>. Note that the colorbars of all modes are on the same scale.</p>
+<p align="center"><b>Figure 3</b>: Mean vorticity field and spatial modes of the fluid flow. Spatial modes are plotted by the columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{W}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;R=7"/>. Note that the colorbars of all modes are on the same scale.</p>
 
 <br>
 
-Figure 3 shows the spatial modes of the fluid flow revealed by our model. It demonstrates that the spatial mode 1 corresponds to a background mode that is not changing over time because it is consistent with the mean vorticity. The other dominant spatial modes essentially show the waves of fluid flow. With the increase of rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R"/>, the spatial modes can be more detailed.
+Figure 3 shows the spatial modes of the fluid flow revealed by our model. It demonstrates that the spatial mode 1 corresponds to a background mode that is not changing over time because it is consistent with the mean vorticity. The other dominant spatial modes essentially show the waves of fluid flow. With the increase of rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;R"/>, the spatial modes can be more detailed.
 
 **Temporal Modes**
 
-In this case, the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{X}"/> has 7 columns, which can visualized as 7 signals to see the dynamic patterns of the fluid flow.
+In this case, the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{X}"/> has 7 columns, which can visualized as 7 signals to see the dynamic patterns of the fluid flow.
 
 <br>
 
@@ -352,11 +352,11 @@ fig.savefig("fluid_temporal_mode.png", bbox_inches = "tight")
 <img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_temporal_mode.png" alt="drawing" width="300">
 </p>
 
-<p align="center"><b>Figure 4</b>: Temporal modes of the fluid flow in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\boldsymbol{X}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;R=7"/>.</p>
+<p align="center"><b>Figure 4</b>: Temporal modes of the fluid flow in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{X}"/> in which seven panels correspond to the rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;R=7"/>.</p>
 
 <br>
 
-Figure 4 shows the temporal modes of the fluid flow achieved by our model. As can be seen, the frequency of all temporal modes is changed at the time <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;t=50"/>, and all temporal modes can identify the time series with different frequencies of oscillation. The dynamics of fluid flow essentially consist of the phases of two frequencies. Thus, we can emphasize the model's ability for identifying the time-evolving patterns from multi-resolution fluid flow.
+Figure 4 shows the temporal modes of the fluid flow achieved by our model. As can be seen, the frequency of all temporal modes is changed at the time <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;t=50"/>, and all temporal modes can identify the time series with different frequencies of oscillation. The dynamics of fluid flow essentially consist of the phases of two frequencies. Thus, we can emphasize the model's ability for identifying the time-evolving patterns from multi-resolution fluid flow.
 
 The temporal mode 1 is the most dominant pattern of the fluid flow, corresponding to the spatial mode 1. Observing the harmonic frequencies of temporal modes, the corresponding spatial modes 4 and 5 are more complicated than the spatial modes 2 and 3, while the spatial modes 6 and 7 are more complicated than the spatial modes 4 and 5. With higher rank, the frequency of harmonic cycles increases, implying that the importance of the latter modes are secondary and the last spatial/temporal modes represent high-frequency information. Therefore, we can tell that our model can discover both spatial and temporal modes from the spatiotemporal data with time-varying system behaviors.
 
@@ -396,7 +396,7 @@ np.savez_compressed('sst_lastw.npz', data[1000 :, :, :])
 <br>
 
 
-There are three critical variables that will be used for visualization, including `lon` (longitude), `lat` (latitude), and `sst` (sea surface temperature data tensor of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;1565\times 180\times 360"/>). Let `mask` be the land-sea mask, we need to let the zero values be `np.nan`.
+There are three critical variables that will be used for visualization, including `lon` (longitude), `lat` (latitude), and `sst` (sea surface temperature data tensor of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;1565\times 180\times 360"/>). Let `mask` be the land-sea mask, we need to let the zero values be `np.nan`.
 
 <br>
 
