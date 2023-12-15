@@ -358,7 +358,12 @@ The oceans play an important role in the global climate system. Exploiting the t
 
 **Open SST Dataset**
 
-With the advent of satellite retrievals of SST beginning in the early of 1980s, it is possible to access the high-resolution SST data in both spatial and temporal dimensions. [NOAA Optimum Interpolation (OI) SST V2](https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html) is a well-document SST dataset, attracting a lot of attention. Opening that download page, we can check out both description of the data and download information.
+With the advent of satellite retrievals of SST beginning in the early of 1980s, it is possible to access the high-resolution SST data in both spatial and temporal dimensions. [NOAA Optimum Interpolation (OI) SST V2](https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html) is a well-document SST dataset, attracting a lot of attention. Opening that download page, we can check out the data description:
+
+- `err.wkmean.1990-present.nc`
+- `lsmask.nc`
+
+
 
 
 <br>
