@@ -356,14 +356,14 @@ The temporal mode 1 is the most dominant pattern of the fluid flow, correspondin
 
 The oceans play an important role in the global climate system. Exploiting the temperature of sea surface allows one to sense the climate and understand the dynamical processes of energy exchange at the sea surface. Sea surface temperature (SST) data is therefore crucial to many research and analysis.
 
-**Open SST Dataset**
+**SST Dataset**
 
 With the advent of satellite retrievals of SST beginning in the early of 1980s, it is possible to access the high-resolution SST data in both spatial and temporal dimensions. [NOAA Optimum Interpolation (OI) SST V2](https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html) is a well-document SST dataset, attracting a lot of attention. Opening the download page, we can check out the data files as follows,
 
 - `err.wkmean.1990-present.nc`
 - `lsmask.nc`
 
-
+As can be seen, these data files are with `.nc` format. This format is `NetCDF`, which stands for Network Common Data Form. The climate data has multiple dimensions, including latitude, longitude, and SST (usually in the form of multi-dimensional arrays). As we have an SST data file and a land-sea mask data file, 
 
 
 <br>
