@@ -22,7 +22,7 @@ Dynamic mechanisms that drive nonlinear systems are universally complex. Straigh
 
 <br>
 
-**Outline**:
+**Content**:
 
 - Revisit vector autoregression
 - Tensor factorization on the coefficient tensor
