@@ -74,7 +74,7 @@ Putting this tensor factorization with time-varying autoregression together, we 
 
 We can use the alternating minimization method to solve this optimization problem. Let <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;f"/> be the objective function of the optimization problem, the scheme can be summarized as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\left\{\begin{aligned} \boldsymbol{W}:&=\{\boldsymbol{W}\mid\frac{\partial f}{\partial\boldsymbol{W}}=\boldsymbol{0}\} & {\color{blue}(least squares)} \\ \boldsymbol{G}:&=\{\boldsymbol{G}\mid\frac{\partial f}{\partial\boldsymbol{G}}=\boldsymbol{0}\} \\ \boldsymbol{V}:&=\{\boldsymbol{V}\mid\frac{\partial f}{\partial\boldsymbol{V}}=\boldsymbol{0}\} \\ \boldsymbol{x}_{t}:&=\{\boldsymbol{x}_{t}\mid\frac{\partial f}{\partial\boldsymbol{x}_{t}}=\boldsymbol{0}\},\,\forall t \end{aligned} \right."/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\normalsize&space;\left\{\begin{aligned} \boldsymbol{W}:&=\{\boldsymbol{W}\mid\frac{\partial f}{\partial\boldsymbol{W}}=\boldsymbol{0}\} & {\color{blue}\text{(least squares)}} \\ \boldsymbol{G}:&=\{\boldsymbol{G}\mid\frac{\partial f}{\partial\boldsymbol{G}}=\boldsymbol{0}\} \\ \boldsymbol{V}:&=\{\boldsymbol{V}\mid\frac{\partial f}{\partial\boldsymbol{V}}=\boldsymbol{0}\} \\ \boldsymbol{x}_{t}:&=\{\boldsymbol{x}_{t}\mid\frac{\partial f}{\partial\boldsymbol{x}_{t}}=\boldsymbol{0}\},\,\forall t \end{aligned} \right."/></p>
 
 
 The Python implementation with `numpy` is given as follows. We plan to give some spatiotemporal data examples such as fluid flow, sea surface temperature, and human mobility for discovering interpretable patterns.
@@ -365,14 +365,22 @@ With the advent of satellite retrievals of SST beginning in the early of 1980s, 
 
 As can be seen, these data files are with `.nc` format. This format is `NetCDF`, which stands for Network Common Data Form. The climate data has multiple dimensions, including latitude, longitude, and SST (usually in the form of multi-dimensional arrays). As we have an SST data file and a land-sea mask data file, we can use the package `numpy` to convert the data into arrays.
 
+<br>
+
 ```python
 from scipy.io import netcdf
 import numpy as np
 
 # weekly SST data
 temp = netcdf.NetCDFFile('sst.wkmean.1990-present.nc', 'r').variables
-
+data = temp['sst'].data[:, :, :] / 100
+np.savez_compressed('sst_200w.npz', data[:, :, : 200])
+np.savez_compressed('sst_400w.npz', data[:, :, 200 : 400])
+np.savez_compressed('sst_lastw.npz', data[:, :, 400 : 486])
 ```
+
+<br>
+
 
 
 <br>
