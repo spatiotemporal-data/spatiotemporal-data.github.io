@@ -363,7 +363,7 @@ With the advent of satellite retrievals of SST beginning in the early of 1980s, 
 - `sst.wkmean.1990-present.nc`
 - `lsmask.nc`
 
-As can be seen, these data files are with `.nc` format. This format is `NetCDF`, which stands for Network Common Data Form. The climate data has multiple dimensions, including latitude, longitude, and SST (usually in the form of multi-dimensional arrays). As we have an SST data file and a land-sea mask data file, we can use the package `numpy` to convert the data into arrays and save the SST data as follows,
+As can be seen, these data files are with `.nc` format. This format is `NetCDF`, which stands for Network Common Data Form. The climate data has multiple dimensions, including latitude, longitude, and SST (usually in the form of multi-dimensional arrays). As we have an SST data file and a land-sea mask data file, we can use the package `numpy` to convert the data into arrays and save the SST data as follows (see [our GitHub repository](https://github.com/xinychen/vars/tree/main/datasets/SST)),
 
 - `sst_500w.npz` (the data in the first 500 weeks)
 - `sst_1000w.npz` (the data from the 500th week to the 1000th week)
