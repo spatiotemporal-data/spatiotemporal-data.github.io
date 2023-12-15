@@ -441,7 +441,7 @@ fig.savefig("mean_temperature.png", bbox_inches = "tight")
 
 <br>
 
-Figure 4 shows the geographical distribution of the SST dataset. By using these visualization results, it is possible to analyze the climate change and identify anomalies in the last 30+ years.
+Figure 5 shows the geographical distribution of the SST dataset. By using these visualization results, it is possible to analyze the climate change and identify anomalies in the last 30+ years.
 
 <br>
 
