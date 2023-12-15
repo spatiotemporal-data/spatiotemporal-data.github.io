@@ -374,9 +374,9 @@ import numpy as np
 # weekly SST data
 temp = netcdf.NetCDFFile('sst.wkmean.1990-present.nc', 'r').variables
 data = temp['sst'].data[:, :, :] / 100
-np.savez_compressed('sst_200w.npz', data[:, :, : 200])
-np.savez_compressed('sst_400w.npz', data[:, :, 200 : 400])
-np.savez_compressed('sst_lastw.npz', data[:, :, 400 : 486])
+np.savez_compressed('sst_500w.npz', data[: 500, :, :])
+np.savez_compressed('sst_1000w.npz', data[500 : 1000, :, :])
+np.savez_compressed('sst_lastw.npz', data[1000 :, :, :])
 ```
 
 <br>
