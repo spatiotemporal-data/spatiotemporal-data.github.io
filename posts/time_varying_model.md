@@ -22,6 +22,16 @@ Dynamic mechanisms that drive nonlinear systems are universally complex. Straigh
 
 <br>
 
+**Outline**:
+
+- Revisit vector autoregression
+- Tensor factorization on the coefficient tensor
+- Fluid flow data
+- Sea surface temperature
+- Conclusion
+
+<br>
+
 ## Revisit Vector Autoregression
 
 As a simple yet efficient and classical method for time series modeling, vector autoregression allows one to explicitly find the linear relationship among a sequence of time series (i.e., multivariate time series) changing over time, which can also successfully describe the dynamic behaviors of time series.
