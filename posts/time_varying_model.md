@@ -352,6 +352,17 @@ The temporal mode 1 is the most dominant pattern of the fluid flow, correspondin
 
 <br>
 
+## Sea Surface Temperature
+
+The oceans play an important role in the global climate system. Exploiting the temperature of sea surface allows one to sense the climate and understand the dynamical processes of energy exchange at the sea surface. Sea surface temperature (SST) data is therefore crucial to many research and analysis.
+
+**Open SST Dataset**
+
+With the advent of satellite retrievals of SST beginning in the early of 1980s, it is possible to access the high-resolution SST data in both spatial and temporal dimensions. [NOAA Optimum Interpolation (OI) SST V2](https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.html) is a well-document SST dataset, attracting a lot of attention. Opening that download page, we can check out both description of the data and download information.
+
+
+<br>
+
 ## Conclusion
 
 This post presents a time-varying low-rank vector autoregression model for discovering interpretable modes from time series, providing insights into modeling real-world time-varying spatiotemporal systems. Experiments demonstrate that the model can reveal meaningful spatial and temporal patterns underlying the time series through interpretable modes.
