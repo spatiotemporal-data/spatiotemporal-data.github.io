@@ -433,6 +433,20 @@ fig.savefig("mean_temperature.png", bbox_inches = "tight")
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/mean_temperature.png" alt="drawing" width="500">
+</p>
+
+<p align="center"><b>Figure 5</b>: Long-term mean of the SST dataset from 1990 to 2019.</p>
+
+<br>
+
+<br>
+
+
+
+<br>
+
 ## Conclusion
 
 This post presents a time-varying low-rank vector autoregression model for discovering interpretable modes from time series, providing insights into modeling real-world time-varying spatiotemporal systems. Experiments demonstrate that the model can reveal meaningful spatial and temporal patterns underlying the time series through interpretable modes.
