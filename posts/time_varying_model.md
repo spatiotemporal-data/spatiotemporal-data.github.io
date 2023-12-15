@@ -363,7 +363,11 @@ With the advent of satellite retrievals of SST beginning in the early of 1980s, 
 - `sst.wkmean.1990-present.nc`
 - `lsmask.nc`
 
-As can be seen, these data files are with `.nc` format. This format is `NetCDF`, which stands for Network Common Data Form. The climate data has multiple dimensions, including latitude, longitude, and SST (usually in the form of multi-dimensional arrays). As we have an SST data file and a land-sea mask data file, we can use the package `numpy` to convert the data into arrays.
+As can be seen, these data files are with `.nc` format. This format is `NetCDF`, which stands for Network Common Data Form. The climate data has multiple dimensions, including latitude, longitude, and SST (usually in the form of multi-dimensional arrays). As we have an SST data file and a land-sea mask data file, we can use the package `numpy` to convert the data into arrays and save the SST data as follows,
+
+- `sst_500w.npz` (the data in the first 500 weeks)
+- `sst_1000w.npz` (the data from the 500th week to the 1000th week)
+- `sst_1000w.npz` (the data from the 1000th week to present)
 
 <br>
 
@@ -382,6 +386,50 @@ np.savez_compressed('sst_lastw.npz', data[1000 :, :, :])
 <br>
 
 
+There are three critical variables that will be used for visualization, including `lon` (longitude), `lat` (latitude), and `sst` (sea surface temperature data tensor of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\normalsize&space;1565\times 180\times 360"/>). Let `mask` be the land-sea mask, we need to let the zero values be `np.nan`.
+
+<br>
+
+```python
+from scipy.io import netcdf
+import numpy as np
+
+tensor = np.load('sst_500w.npz')['arr_0']
+tensor = np.append(tensor, np.load('sst_1000w.npz')['arr_0'], axis = 0)
+tensor = np.append(tensor, np.load('sst_lastw.npz')['arr_0'], axis = 0)
+tensor = tensor[: 1565, :, :] # A 30-year period from 1990 to 2019
+
+# land-sea mask
+mask = netcdf.NetCDFFile('lsmask.nc', 'r').variables['mask'].data[0, :, :]
+mask = mask.astype(float)
+mask[mask == 0] = np.nan
+```
+
+<br>
+
+The SST dataset covers the weekly data over 1,565 weeks from 1990 to 2019, i.e., a 30-year period. We can visualize the historical averages of long-term SST. First, we define the colormap (colors changing from blue, cyan, yellow to red) for the heatmap. Then, we use the function `contourf` in `matplotlib.pyplot` to draw the long-term mean of weekly SST data.
+
+<br>
+
+```python
+import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
+
+levs = np.arange(16, 29, 0.05)
+jet = ["blue", "#007FFF", "cyan","#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"]
+cm = LinearSegmentedColormap.from_list('my_jet', jet, N = len(levs))
+
+plt.rcParams['font.size'] = 12
+fig = plt.figure(figsize = (7, 4))
+plt.contourf(np.flip(np.mean(tensor, axis = 0) * mask, axis = 0),
+             levels = 20, linewidths = 1, vmin = 0, cmap = cm)
+plt.xticks(np.arange(60, 360, 60), ['60E', '120E', '180', '120W', '60W'])
+plt.yticks(np.arange(30, 180, 30), ['60S', '30S', 'EQ', '30N', '60N'])
+cbar = plt.colorbar(fraction = 0.022)
+plt.show()
+fig.savefig("mean_temperature.png", bbox_inches = "tight")
+# fig.savefig("mean_temperature.pdf", bbox_inches = "tight")
+```
 
 <br>
 
