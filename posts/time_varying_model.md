@@ -522,6 +522,48 @@ for rank in [6]:
 
 For visualization, one needs to convert CuPy arrays as NumPy arrays, e.g., `W = np.asnumpy(W)` and `X = np.asnumpy(X)`. Using our model with rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;R=6"/>, we plot the spatial modes of the SST data as shown in Figure 7. As shown in the spatial mode 5, our model can identify the phenomenon of El Nino Southern Oscillation (with both of El Nino and La Nina), as well as the Pacific Decadal Oscillation.
 
+<br>
+
+```python
+import numpy as np
+import seaborn as sns
+import scipy.io
+import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
+
+levs = np.arange(16, 29, 0.05)
+jet=["blue", "#007FFF", "cyan","#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"]
+cm = LinearSegmentedColormap.from_list('my_jet', jet, N=len(levs))
+
+mask = netcdf.NetCDFFile('lsmask.nc', 'r').variables['mask'].data[0, :, :]
+mask = mask.astype(float)
+mask[mask == 0] = np.nan
+
+fig = plt.figure(figsize = (8, 6))
+for t in range(6):
+    ax = fig.add_subplot(3, 2, t + 1)
+    plt.contourf(np.flip(W[:, t].reshape((M, N)) * mask, axis = 0),
+                 levels = 20, linewidths = 1,
+                 vmin = -0.015, vmax = 0.015, cmap = cm)
+    plt.xticks([])
+    plt.yticks([])
+    plt.title('Spatial mode {}'.format(t + 1))
+    for _, spine in ax.spines.items():
+        spine.set_visible(True)
+plt.show()
+fig.savefig("temperature_mode_trvar.png", bbox_inches = "tight")
+```
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/temperature_mode_trvar.png" alt="drawing" width="500">
+</p>
+
+<p align="center"><b>Figure 7</b>: Time series of the mean temperature on the SST dataset from 1990 to 2019.</p>
+
+<br>
+
 
 ## Conclusion
 
