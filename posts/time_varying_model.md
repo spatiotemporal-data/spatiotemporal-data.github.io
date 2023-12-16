@@ -451,7 +451,7 @@ fig.savefig("mean_temperature.png", bbox_inches = "tight")
 
 <br>
 
-Figure 5 shows the geographical distribution of the SST dataset. By using these visualization results, it is possible to analyze the climate change and identify anomalies in the last 30+ years.
+Figure 5 shows the geographical distribution of the SST dataset. By using these visualization results, it is possible to analyze the climate change and identify anomalies in the last 30+ years. Figure 6 shows the yearly cycle (about 52 weeks) of time series of the mean temperature.
 
 <br>
 
@@ -486,7 +486,34 @@ fig.savefig("mean_temperature_time_series.png", bbox_inches = "tight")
 
 <br>
 
-Figure 6 shows the yearly cycle (about 52 weeks) of time series of the mean temperature.
+For evaluating our model, one can use GPU sources to accelerate the computing processing. Instead of `numpy` in CPU implementation, the package `cupy` shows a great toolbox for reproducing any Python codes with `numpy` and supports the GPU computing environment. The only change would be replacing `import numpy as np` as `import cupy as np`.
+
+<br>
+
+```python
+import cupy as np
+from scipy.io import netcdf
+import time
+
+tensor = np.load('sst_500w.npz')['arr_0']
+tensor = np.append(tensor, np.load('sst_1000w.npz')['arr_0'], axis = 0)
+tensor = np.append(tensor, np.load('sst_lastw.npz')['arr_0'], axis = 0)
+tensor = tensor[: 1565, :, :] # A 30-year period from 1990 to 2019
+T, M, N = tensor.shape
+mat = np.zeros((M * N, T))
+for t in range(T):
+    mat[:, t] = tensor[t, :, :].reshape([M * N])
+
+for rank in [6]:
+    for d in [1]:
+        start = time.time()
+        W, G, V, X = trvar(mat, d, rank)
+        print('rank R = {}'.format(rank))
+        print('Order d = {}'.format(d))
+        end = time.time()
+        print('Running time: %d seconds'%(end - start))
+```
+
 
 <br>
 
