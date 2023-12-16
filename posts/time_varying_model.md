@@ -482,7 +482,7 @@ fig.savefig("mean_temperature_time_series.png", bbox_inches = "tight")
 <img align="middle" src="https://spatiotemporal-data.github.io/images/mean_temperature_time_series.png" alt="drawing" width="600">
 </p>
 
-<p align="center"><b>Figure 6</b>: Long-term mean of the SST dataset from 1990 to 2019.</p>
+<p align="center"><b>Figure 6</b>: Time series of the mean temperature on the SST dataset from 1990 to 2019.</p>
 
 <br>
 
