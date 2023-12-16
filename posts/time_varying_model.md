@@ -486,7 +486,7 @@ fig.savefig("mean_temperature_time_series.png", bbox_inches = "tight")
 
 <br>
 
-
+Figure 6 shows the yearly cycle (about 52 weeks) of time series of the mean temperature.
 
 <br>
 
