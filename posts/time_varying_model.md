@@ -27,7 +27,7 @@ Dynamic mechanisms that drive nonlinear systems are universally complex. Straigh
 - Revisit vector autoregression
 - Tensor factorization on the coefficient tensor
 - Fluid flow data
-- Sea surface temperature
+- Sea surface temperature data
 - Conclusion
 
 <br>
@@ -364,7 +364,7 @@ The temporal mode 1 is the most dominant pattern of the fluid flow, correspondin
 
 <br>
 
-## Sea Surface Temperature
+## Sea Surface Temperature Data
 
 The oceans play an important role in the global climate system. Exploiting the temperature of sea surface allows one to sense the climate and understand the dynamical processes of energy exchange at the sea surface. Sea surface temperature (SST) data is therefore crucial to many research and analysis.
 
