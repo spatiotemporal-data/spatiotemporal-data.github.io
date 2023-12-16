@@ -19,4 +19,3 @@ This project handles various spatiotemporal data:
 - [Visualizing global water vapor patterns in Python](https://spatiotemporal-data.github.io/climate/water-vapor/)
 - [Visualizing Germany energy consumption data in Python](https://spatiotemporal-data.github.io/energy/E-usage-data/)
 
-<br>
