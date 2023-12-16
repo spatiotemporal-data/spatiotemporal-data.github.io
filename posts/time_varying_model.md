@@ -560,7 +560,7 @@ fig.savefig("temperature_mode_trvar.png", bbox_inches = "tight")
 <img align="middle" src="https://spatiotemporal-data.github.io/images/temperature_mode_trvar.png" alt="drawing" width="500">
 </p>
 
-<p align="center"><b>Figure 7</b>: Time series of the mean temperature on the SST dataset from 1990 to 2019.</p>
+<p align="center"><b>Figure 7</b>: Geographical distribution of spatial modes of the SST data achieved by our model.</p>
 
 <br>
 
