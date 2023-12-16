@@ -486,6 +486,8 @@ fig.savefig("mean_temperature_time_series.png", bbox_inches = "tight")
 
 <br>
 
+**Model Evaluation**
+
 For evaluating our model, one can use GPU sources to accelerate the computing processing. Instead of `numpy` in the CPU computing environment, the package `cupy` shows to be a great toolbox for reproducing any Python codes with `numpy` and supporting the GPU computing environment. The only change in our algorithm implementation would be replacing `import numpy as np` by `import cupy as np`.
 
 <br>
@@ -513,7 +515,6 @@ for rank in [6]:
         end = time.time()
         print('Running time: %d seconds'%(end - start))
 ```
-
 
 <br>
 
