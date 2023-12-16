@@ -455,6 +455,37 @@ Figure 5 shows the geographical distribution of the SST dataset. By using these 
 
 <br>
 
+```python
+import matplotlib.pyplot as plt
+
+T, M, N = tensor.shape
+mat = np.zeros((M * N, T))
+for t in range(T):
+    mat[:, t] = tensor[t, :, :].reshape([M * N])
+
+plt.rcParams['font.size'] = 11
+fig = plt.figure(figsize = (8, 0.8))
+ax = fig.add_subplot(1, 1, 1)
+plt.plot(np.mean(mat, axis = 0), color = 'red', linewidth = 2, alpha = 0.6)
+plt.axhline(y = np.mean(np.mean(mat)), color = 'gray', alpha = 0.5, linestyle='dashed')
+plt.xticks(np.arange(1, 1565 + 1, 52 * 2), np.arange(1990, 2020 + 1, 2))
+plt.grid(axis = 'both', linestyle='dashed', linewidth = 0.1, color = 'gray')
+ax.tick_params(direction = "in")
+ax.set_xlim([0, 1565])
+plt.show()
+fig.savefig("mean_temperature_time_series.png", bbox_inches = "tight")
+```
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/mean_temperature_time_series.png" alt="drawing" width="600">
+</p>
+
+<p align="center"><b>Figure 6</b>: Long-term mean of the SST dataset from 1990 to 2019.</p>
+
+<br>
+
 
 
 <br>
