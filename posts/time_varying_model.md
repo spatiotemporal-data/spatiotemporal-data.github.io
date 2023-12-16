@@ -486,7 +486,7 @@ fig.savefig("mean_temperature_time_series.png", bbox_inches = "tight")
 
 <br>
 
-For evaluating our model, one can use GPU sources to accelerate the computing processing. Instead of `numpy` in CPU implementation, the package `cupy` shows a great toolbox for reproducing any Python codes with `numpy` and supports the GPU computing environment. The only change would be replacing `import numpy as np` by `import cupy as np`.
+For evaluating our model, one can use GPU sources to accelerate the computing processing. Instead of `numpy` in the CPU computing environment, the package `cupy` shows to be a great toolbox for reproducing any Python codes with `numpy` and supporting the GPU computing environment. The only change in our algorithm implementation would be replacing `import numpy as np` by `import cupy as np`.
 
 <br>
 
