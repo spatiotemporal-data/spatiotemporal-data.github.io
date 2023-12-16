@@ -24,10 +24,10 @@ Dynamic mechanisms that drive nonlinear systems are universally complex. Straigh
 
 **Content**:
 
-- Revisit vector autoregression
-- Tensor factorization on the coefficient tensor
-- Fluid flow data
-- Sea surface temperature data
+- Revisit Vector Autoregression
+- Tensor Factorization on the Coefficient Tensor
+- Fluid Flow Data
+- Sea Surface Temperature Data
 - Conclusion
 
 <br>
