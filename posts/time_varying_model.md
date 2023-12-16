@@ -520,6 +520,9 @@ for rank in [6]:
 
 <br>
 
+For visualization, one needs to convert CuPy arrays as NumPy arrays, e.g., `W = np.asnumpy(W)` and `X = np.asnumpy(X)`. Using our model with rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;R=6"/>, we plot the spatial modes of the SST data as shown in Figure 7. As shown in the spatial mode 5, our model can identify the phenomenon of El Nino Southern Oscillation (with both of El Nino and La Nina), as well as the Pacific Decadal Oscillation.
+
+
 ## Conclusion
 
 This post presents a time-varying low-rank vector autoregression model for discovering interpretable modes from time series, providing insights into modeling real-world time-varying spatiotemporal systems. Experiments demonstrate that the model can reveal meaningful spatial and temporal patterns underlying the time series through interpretable modes.
