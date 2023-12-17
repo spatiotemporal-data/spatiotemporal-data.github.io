@@ -17,3 +17,14 @@ The data description is not readily available.
 Too much data files for each day, e.g., 1024 files on October 1st. The naming system shows differences by the `part-xxxxx-tid...` (e.g., `xxxxx` as the number `00000`) and the `-xxxx-1-c000.snappy.parquet` (e.g., `xxxx` as the number `908` or `1931`). What is the difference among these data files?
 
 **Trajectory data**
+
+The data format `.snappy.parquet` can be processed with the data processing package `pandas`. In what follows, we have tried to analyze some data files.
+
+```python
+import pandas as pd
+
+df = pd.read_parquet('part-00000-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-908-1-c000.snappy.parquet')
+df.head()
+```
+
+corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to many scatters on the map (see Figure 1), 
