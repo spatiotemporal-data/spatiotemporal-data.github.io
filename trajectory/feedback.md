@@ -27,4 +27,39 @@ df = pd.read_parquet('part-00000-tid-9141560157573588789-586e403e-f6f8-4385-8507
 df.head()
 ```
 
-corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to many scatters on the map (see Figure 1), 
+corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to many scatters on the map (see Figure 1),
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/oct1_00001_scatters.png" width="400" />
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> The scatters of the first data file on the map.
+</p>
+
+<br>
+
+For reproducing Figure 1, please use the following Python codes.
+
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+lng = np.array(df['longitude'], dtype = float)
+lat = np.array(df['latitude'], dtype = float)
+
+fig = plt.figure(figsize = (6, 3))
+plt.plot(lng, lat, 'r.', markersize = 1)
+plt.xlim([103.6, 104.1])
+plt.ylim([1.22, 1.47])
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.savefig('oct1_00001_scatters.png', bbox_inches = 'tight')
+plt.show()
+```
+
+<br>
