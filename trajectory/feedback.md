@@ -56,7 +56,7 @@ corresponding to the first data file with `21161 rows × 10 columns`. The column
 </p>
 
 <p align = "center">
-<b>Figure 1.</b> The scatters of the first data file (i.e., on the file `part-00001-tid....snappy.parquet`) on the map.
+<b>Figure 2.</b> The scatters of the second data file (i.e., on the file `part-00001-tid....snappy.parquet`) on the map.
 </p>
 
 <br>
