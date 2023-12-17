@@ -37,7 +37,7 @@ df.head()
 
 <br>
 
-corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to many scatters on the map (see Figure 1 and Figure 2). What is the difference between two figures?
+corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to be many scatters on the map (see Figure 1 and Figure 2). What is the difference between two figures?
 
 <br>
 
