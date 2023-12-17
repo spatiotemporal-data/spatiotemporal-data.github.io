@@ -27,12 +27,12 @@ df = pd.read_parquet('part-00000-tid-9141560157573588789-586e403e-f6f8-4385-8507
 df.head()
 ```
 
-corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to many scatters on the map (see Figure 1),
+corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to many scatters on the map (see Figure 1).
 
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/oct1_00001_scatters.png" width="400" />
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/oct1_00000_scatters.png" width="400" />
 </p>
 
 <p align = "center">
