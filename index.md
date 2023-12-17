@@ -13,7 +13,7 @@ This project presents some spatiotemporal methods with data-driven machine learn
 
 - **(Chen et al., 2023)** [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). IEEE Transactions on Knowledge and Data Engineering. Early access. [[Blog post](https://spatiotemporal-data.github.io/posts/time_varying_model/)]
 
-To advance the development of spatiotemporal data modeling, this project handles various spatiotemporal data:
+To advance the development of spatiotemporal data modeling in the research communities, this project handles various spatiotemporal data:
 
 - [Analyzing millions of taxi trips in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
 
