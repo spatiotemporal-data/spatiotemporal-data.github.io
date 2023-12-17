@@ -42,7 +42,7 @@ corresponding to the first data file with `21161 rows × 10 columns`. The column
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/oct1_00000_scatters.png" width="500" />
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/oct1_00000_scatters.png" width="600" />
 </p>
 
 <p align = "center">
@@ -52,7 +52,7 @@ corresponding to the first data file with `21161 rows × 10 columns`. The column
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/oct1_00001_scatters.png" width="500" />
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/oct1_00001_scatters.png" width="600" />
 </p>
 
 <p align = "center">
