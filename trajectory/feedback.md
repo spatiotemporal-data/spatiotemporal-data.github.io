@@ -141,3 +141,30 @@ plt.show()
 ```
 
 <br>
+
+## Appendix
+
+**On October 2nd**
+
+<br>
+
+```python
+import pandas as pd
+
+df = pd.read_parquet('part-00000-tid-8628706099891964741-56053e11-e575-4138-bfd8-237ddcb6e634-3980-1-c000.snappy.parquet')
+for i in range(1, 1024):
+    ticker = list([i, 3980+i])
+    if i < 10:
+        df = df.append(pd.read_parquet('part-0000{}-tid-8628706099891964741-56053e11-e575-4138-bfd8-237ddcb6e634-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 10 and i < 100:
+        df = df.append(pd.read_parquet('part-000{}-tid-8628706099891964741-56053e11-e575-4138-bfd8-237ddcb6e634-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 100 and i < 1000:
+        df = df.append(pd.read_parquet('part-00{}-tid-8628706099891964741-56053e11-e575-4138-bfd8-237ddcb6e634-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 1000:
+        df = df.append(pd.read_parquet('part-0{}-tid-8628706099891964741-56053e11-e575-4138-bfd8-237ddcb6e634-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+```
+
+<br>
+
+
+<br>
