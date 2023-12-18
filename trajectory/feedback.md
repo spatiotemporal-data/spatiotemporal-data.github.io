@@ -22,7 +22,7 @@ We tried to read these data files on October 1st with the `for` loop as follows.
 import pandas as pd
 
 df = pd.read_parquet('part-00000-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-908-1-c000.snappy.parquet')
-for i in range(1, 1025):
+for i in range(1, 1024):
     ticker = list([i, 908+i])
     if i < 10:
         df = df.append(pd.read_parquet('part-0000{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
@@ -41,7 +41,7 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 
 <br>
 
-By running these codes (sorry, only finished 800 data files due to the limitation of computing environment), there are **14,398,910** data samples and **188,131** unique ID in total on October 1st. Therefore, we have **76.54** data samples for each unique ID.
+By running these codes, there are **18,050,633** data samples and **193,215** unique ID in total on October 1st. Therefore, we have **93.42** data samples for each unique ID.
 
 <br>
 
