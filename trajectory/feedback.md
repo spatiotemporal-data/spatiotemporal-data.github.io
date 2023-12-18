@@ -152,9 +152,7 @@ plt.show()
 
 ## Appendix
 
-**On October 2nd**
-
-<br>
+- On October 2nd
 
 ```python
 import pandas as pd
