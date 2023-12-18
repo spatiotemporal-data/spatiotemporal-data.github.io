@@ -51,6 +51,8 @@ By running these codes, there are **18,050,633** data samples and **193,215** un
 
 Are these data only subsamples of the whole data? Will we have more samples (> 193,215 unique IDs)? How many IDs will we have on the whole data?
 
+How about the time resolution (e.g., 15 minutes) of the movement of each person?
+
 <br>
 
 **Trajectory data**
@@ -68,7 +70,7 @@ df.head()
 
 <br>
 
-corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to be many scatters on the map (see Figure 1 and Figure 2). What is the difference between two figures?
+corresponding to the first data file with `21161 rows × 10 columns`. The columns include `utc_timestamp`, `latitude`, `longitude` as critical information of the spatiotemporal data. But what is the meaning of the column `caid`, corresponding to unique persons? Using the visualization tools, there seem to be many scatters on the map (see Figure 1 and Figure 2).
 
 <br>
 
