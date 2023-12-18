@@ -2,11 +2,11 @@
 layout: default
 ---
 
-Couple of issues confused me:
+Content:
 
 - Data files
-- Data samples
 - Trajectory data
+- Data samples
 
 <br>
 
@@ -14,52 +14,7 @@ Couple of issues confused me:
 
 **1024 data files** (~1MB for each file) for each day. The naming system shows differences by the `part-xxxxx-tid...` (e.g., `xxxxx` as the number `00000`) and the `-xxxx-1-c000.snappy.parquet` (e.g., `xxxx` as the number `908` or `1931`).
 
-What is the difference among these data files? Because these data files are not too large, it is not necessary to have so many data files.
-
-<br>
-
-**Data samples**
-
-We tried to read these data files on October 1st with the `for` loop as follows.
-
-<br>
-
-```python
-import pandas as pd
-
-df = pd.read_parquet('part-00000-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-908-1-c000.snappy.parquet')
-for i in range(1, 1024):
-    ticker = list([i, 908+i])
-    if i < 10:
-        df = df.append(pd.read_parquet('part-0000{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
-    elif i >= 10 and i < 100:
-        df = df.append(pd.read_parquet('part-000{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
-    elif i >= 100 and i < 1000:
-        df = df.append(pd.read_parquet('part-00{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
-    elif i >= 1000:
-        df = df.append(pd.read_parquet('part-0{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
-a = df.shape[0]
-b = df['caid'].unique().size
-print('The number of data samples: {}'.format(a))
-print('The number of unique id: {}'.format(b))
-print('The average data sample number of each unique id: {}'.format(a / b))
-```
-
-<br>
-
-By running these codes, there are **18,050,633** data samples and **193,215** unique IDs in total on October 1st. Therefore, we have **93.42** data samples for each unique ID.
-
-<!-- Are these data only subsamples of the whole data? Will we have more samples (> 193,215 unique IDs)? How many IDs will we have on the whole data? -->
-
-<!-- How about the time resolution (e.g., 15 minutes) of the movement of each person? -->
-
-<br>
-
-| Day        | Total data samples | Unique ID | Average samples of each ID |
-| ---------- | :----------------: | :-------: | :------------------------: |
-| Oct. 1st   | 18,050,633         | 193,215   |  93.42                     |
-| Oct. 2nd   | 14,398,910         | 188,131   |  76.54                     |
-
+<!-- What is the difference among these data files? Because these data files are not too large, it is not necessary to have so many data files. -->
 
 <br>
 
@@ -147,6 +102,51 @@ plt.ylabel('Latitude')
 plt.savefig('oct1_00001_scatters.png', bbox_inches = 'tight')
 plt.show()
 ```
+
+<br>
+
+**Data samples**
+
+We tried to read these data files on October 1st with the `for` loop as follows.
+
+<br>
+
+```python
+import pandas as pd
+
+df = pd.read_parquet('part-00000-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-908-1-c000.snappy.parquet')
+for i in range(1, 1024):
+    ticker = list([i, 908+i])
+    if i < 10:
+        df = df.append(pd.read_parquet('part-0000{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 10 and i < 100:
+        df = df.append(pd.read_parquet('part-000{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 100 and i < 1000:
+        df = df.append(pd.read_parquet('part-00{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 1000:
+        df = df.append(pd.read_parquet('part-0{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+a = df.shape[0]
+b = df['caid'].unique().size
+print('The number of data samples: {}'.format(a))
+print('The number of unique id: {}'.format(b))
+print('The average data sample number of each unique id: {}'.format(a / b))
+```
+
+<br>
+
+By running these codes, there are **18,050,633** data samples and **193,215** unique IDs in total on October 1st. Therefore, we have **93.42** data samples for each unique ID.
+
+<!-- Are these data only subsamples of the whole data? Will we have more samples (> 193,215 unique IDs)? How many IDs will we have on the whole data? -->
+
+<!-- How about the time resolution (e.g., 15 minutes) of the movement of each person? -->
+
+<br>
+
+| Day        | Total data samples | Unique ID | Average samples of each ID |
+| ---------- | :----------------: | :-------: | :------------------------: |
+| Oct. 1st   | 18,050,633         | 193,215   |  93.42                     |
+| Oct. 2nd   | 14,398,910         | 188,131   |  76.54                     |
+
 
 <br>
 
