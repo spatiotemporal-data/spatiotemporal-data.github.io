@@ -14,6 +14,27 @@ Couple of issues confused me:
 
 Too much data files (~1MB for each file) for each day, e.g., 1024 files on October 1st. The naming system shows differences by the `part-xxxxx-tid...` (e.g., `xxxxx` as the number `00000`) and the `-xxxx-1-c000.snappy.parquet` (e.g., `xxxx` as the number `908` or `1931`). What is the difference among these data files?
 
+We tried to read these data files with the `for` loop as follows.
+
+<br>
+
+```python
+import pandas as pd
+
+df = pd.read_parquet('part-00000-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-908-1-c000.snappy.parquet')
+for i in range(1, 1025):
+    ticker = list([i, 908+i])
+    if i < 10:
+        df = df.append(pd.read_parquet('part-0000{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 10 and i < 100:
+        df = df.append(pd.read_parquet('part-000{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 100 and i < 1000:
+        df = df.append(pd.read_parquet('part-00{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 1000:
+        df = df.append(pd.read_parquet('part-0{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+df
+```
+
 <br>
 
 **Trajectory data**
