@@ -41,6 +41,10 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 
 <br>
 
+As can be seen, there are xx data samples and xx unique ID in total on October 1st. Therefore, we have xx data samples for each unique ID.
+
+<br>
+
 **Trajectory data**
 
 The data format `.snappy.parquet` can be processed with the data processing package `pandas`. In what follows, we have tried to analyze some data files.
