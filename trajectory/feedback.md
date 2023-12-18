@@ -12,7 +12,11 @@ Couple of issues confused me:
 
 **Data file**
 
-Too many data files (~1MB for each file) for each day, e.g., 1024 files on October 1st. The naming system shows differences by the `part-xxxxx-tid...` (e.g., `xxxxx` as the number `00000`) and the `-xxxx-1-c000.snappy.parquet` (e.g., `xxxx` as the number `908` or `1931`). What is the difference among these data files?
+Too many data files (~1MB for each file) for each day, e.g., 1024 files on October 1st. The naming system shows differences by the `part-xxxxx-tid...` (e.g., `xxxxx` as the number `00000`) and the `-xxxx-1-c000.snappy.parquet` (e.g., `xxxx` as the number `908` or `1931`).
+
+What is the difference among these data files?
+
+**Data samples**
 
 We tried to read these data files on October 1st with the `for` loop as follows.
 
@@ -42,6 +46,8 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 <br>
 
 By running these codes, there are **18,050,633** data samples and **193,215** unique ID in total on October 1st. Therefore, we have **93.42** data samples for each unique ID.
+
+Are these data only subsamples of the whole data? Will we have more samples (> 193,215 unique IDs)?
 
 <br>
 
