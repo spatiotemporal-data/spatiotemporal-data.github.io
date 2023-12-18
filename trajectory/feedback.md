@@ -12,7 +12,7 @@ Couple of issues confused me:
 
 **Data file**
 
-Too much data files for each day, e.g., 1024 files on October 1st. The naming system shows differences by the `part-xxxxx-tid...` (e.g., `xxxxx` as the number `00000`) and the `-xxxx-1-c000.snappy.parquet` (e.g., `xxxx` as the number `908` or `1931`). What is the difference among these data files?
+Too much data files (~1MB for each file) for each day, e.g., 1024 files on October 1st. The naming system shows differences by the `part-xxxxx-tid...` (e.g., `xxxxx` as the number `00000`) and the `-xxxx-1-c000.snappy.parquet` (e.g., `xxxx` as the number `908` or `1931`). What is the difference among these data files?
 
 <br>
 
