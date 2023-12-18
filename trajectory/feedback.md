@@ -57,8 +57,8 @@ By running these codes, there are **18,050,633** data samples and **193,215** un
 
 | Day        | Total data samples | Unique ID | Average samples of each ID |
 | ---------- | :----------------: | :-------: | :------------------------: |
-| Oct. 1st   | 18,050,633         | 193,215   |  93                        |
-| Oct. 2nd   | 18,050,633         | 193,215   |  93                        |
+| Oct. 1st   | 18,050,633         | 193,215   |  93.42                     |
+| Oct. 2nd   | 14,398,910         | 188,131   |  76.54                     |
 
 
 <br>
@@ -172,5 +172,24 @@ for i in range(1, 1024):
 
 <br>
 
+- On October 3rd
+
+```python
+import pandas as pd
+
+df = pd.read_parquet('part-00000-tid-8345537549904831215-54a7c61d-1b8c-4ce5-b6b3-1cd2b70178b2-1932-1-c000.snappy.parquet')
+for i in range(1, 1024):
+    ticker = list([i, 1932+i])
+    if i < 10:
+        df = df.append(pd.read_parquet('part-0000{}-tid-8345537549904831215-54a7c61d-1b8c-4ce5-b6b3-1cd2b70178b2-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 10 and i < 100:
+        df = df.append(pd.read_parquet('part-000{}-tid-8345537549904831215-54a7c61d-1b8c-4ce5-b6b3-1cd2b70178b2-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 100 and i < 1000:
+        df = df.append(pd.read_parquet('part-00{}-tid-8345537549904831215-54a7c61d-1b8c-4ce5-b6b3-1cd2b70178b2-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+    elif i >= 1000:
+        df = df.append(pd.read_parquet('part-0{}-tid-8345537549904831215-54a7c61d-1b8c-4ce5-b6b3-1cd2b70178b2-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
+```
+
+<br>
 
 <br>
