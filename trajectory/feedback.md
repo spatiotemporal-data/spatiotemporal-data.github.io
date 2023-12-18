@@ -32,7 +32,8 @@ for i in range(1, 1025):
         df = df.append(pd.read_parquet('part-00{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
     elif i >= 1000:
         df = df.append(pd.read_parquet('part-0{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
-df
+print('The number of data samples: {}'.format(df.shape[0]))
+print('The average data sample number of each unique id: {}'.format(df['caid'].unique().size))
 ```
 
 <br>
