@@ -49,9 +49,17 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 
 By running these codes, there are **18,050,633** data samples and **193,215** unique IDs in total on October 1st. Therefore, we have **93.42** data samples for each unique ID.
 
-Are these data only subsamples of the whole data? Will we have more samples (> 193,215 unique IDs)? How many IDs will we have on the whole data?
+<!-- Are these data only subsamples of the whole data? Will we have more samples (> 193,215 unique IDs)? How many IDs will we have on the whole data? -->
 
-How about the time resolution (e.g., 15 minutes) of the movement of each person?
+<!-- How about the time resolution (e.g., 15 minutes) of the movement of each person? -->
+
+<br>
+
+| Day        | Total data samples | Unique ID | Average samples of each ID |
+| ---------- | :----------------: | :-------: | :------------------------: |
+| Oct. 1st   | 18,050,633         | 193,215   |  93                        |
+| Oct. 2nd   | 18,050,633         | 193,215   |  93                        |
+
 
 <br>
 
