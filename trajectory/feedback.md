@@ -41,7 +41,7 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 
 <br>
 
-As can be seen, there are **xx** data samples and **xx** unique ID in total on October 1st. Therefore, we have **xx** data samples for each unique ID.
+By running these codes (sorry, only finished 800 data files due to the limitation of computing environment), there are **14,398,910** data samples and **188,131** unique ID in total on October 1st. Therefore, we have **76.54** data samples for each unique ID.
 
 <br>
 
