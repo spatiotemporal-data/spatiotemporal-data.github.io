@@ -4,9 +4,9 @@ layout: default
 
 Couple of issues confused me:
 
-- Data description is unclear (resolved)
-- Should rename data files
-- Trajectory data itself
+- Data files
+- Data samples
+- Trajectory data
 
 <br>
 
