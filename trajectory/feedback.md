@@ -101,7 +101,6 @@ By running these codes, there are **18,050,633** data samples and **193,215** un
 | Oct. 3rd   | 17,679,260         | 183,776   | 96                         |
 | Oct. 4th   | 31,815,354         | 267,392   | 119                        |
 
-
 <br>
 
 During the first 4 days, there are 483,082 unique IDs.
