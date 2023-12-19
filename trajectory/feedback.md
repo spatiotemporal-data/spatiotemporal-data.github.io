@@ -97,7 +97,7 @@ By running these codes, there are **18,050,633** data samples and **193,215** un
 | Day        | Total data samples | Unique ID | Average samples of each ID |
 | ---------- | :----------------: | :-------: | :------------------------: |
 | Oct. 1st   | 18,050,633         | 193,215   | 93                         |
-| Oct. 2nd   | 14,398,910         | 188,131   | 76                         |
+| Oct. 2nd   | 15,255,154         | 242,068   | 63                         |
 | Oct. 3rd   | 17,679,260         | 183,776   | 96                         |
 | Oct. 4th   | 31,815,354         | 267,392   | 119                        |
 
