@@ -104,6 +104,10 @@ By running these codes, there are **18,050,633** data samples and **193,215** un
 
 <br>
 
+During the first 4 days, there are 483,082 unique IDs.
+
+<br>
+
 ## Appendix
 
 For reproducing Figure 1, please use the following Python codes.
