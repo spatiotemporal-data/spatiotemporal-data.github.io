@@ -57,54 +57,6 @@ corresponding to the first data file with `21161 rows × 10 columns`. The column
 
 <br>
 
-For reproducing Figure 1, please use the following Python codes.
-
-<br>
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-lng = np.array(df['longitude'], dtype = float)
-lat = np.array(df['latitude'], dtype = float)
-
-fig = plt.figure(figsize = (6, 3))
-plt.plot(lng, lat, 'r.', markersize = 1)
-plt.xlim([103.6, 104.1])
-plt.ylim([1.22, 1.47])
-plt.xlabel('Longitude')
-plt.ylabel('Latitude')
-plt.savefig('oct1_00001_scatters.png', bbox_inches = 'tight')
-plt.show()
-```
-
-<br>
-
-For reproducing Figure 2, please use the following Python codes.
-
-<br>
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-
-df = pd.read_parquet('part-00001-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-909-1-c000.snappy.parquet')
-lng = np.array(df['longitude'], dtype = float)
-lat = np.array(df['latitude'], dtype = float)
-
-fig = plt.figure(figsize = (6, 3))
-plt.plot(lng, lat, 'r.', markersize = 1)
-plt.xlim([103.6, 104.1])
-plt.ylim([1.22, 1.47])
-plt.xlabel('Longitude')
-plt.ylabel('Latitude')
-plt.savefig('oct1_00001_scatters.png', bbox_inches = 'tight')
-plt.show()
-```
-
-<br>
-
 **Data samples**
 
 We tried to read these data files on October 1st with the `for` loop as follows.
@@ -153,6 +105,54 @@ By running these codes, there are **18,050,633** data samples and **193,215** un
 <br>
 
 ## Appendix
+
+For reproducing Figure 1, please use the following Python codes.
+
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+lng = np.array(df['longitude'], dtype = float)
+lat = np.array(df['latitude'], dtype = float)
+
+fig = plt.figure(figsize = (6, 3))
+plt.plot(lng, lat, 'r.', markersize = 1)
+plt.xlim([103.6, 104.1])
+plt.ylim([1.22, 1.47])
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.savefig('oct1_00001_scatters.png', bbox_inches = 'tight')
+plt.show()
+```
+
+<br>
+
+For reproducing Figure 2, please use the following Python codes.
+
+<br>
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+df = pd.read_parquet('part-00001-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-909-1-c000.snappy.parquet')
+lng = np.array(df['longitude'], dtype = float)
+lat = np.array(df['latitude'], dtype = float)
+
+fig = plt.figure(figsize = (6, 3))
+plt.plot(lng, lat, 'r.', markersize = 1)
+plt.xlim([103.6, 104.1])
+plt.ylim([1.22, 1.47])
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.savefig('oct1_00001_scatters.png', bbox_inches = 'tight')
+plt.show()
+```
+
+<br>
 
 - On October 2nd
 
