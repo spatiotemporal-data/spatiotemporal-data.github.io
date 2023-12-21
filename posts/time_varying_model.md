@@ -66,7 +66,7 @@ As the data pair <img style="display: inline;" src="https://latex.codecogs.com/s
 
 <br>
 
-As shown in Figure 1, the coefficient matrices can be viewed as a coefficient tensor whose parameters are of number <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\color{blue}dN^2(T-d)"/>. Since there are only <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\color{blue}NT"/> time series observations, one technical challenge for solving the optimization problem would arise as the **over-parameterization** issue in the modeling process.
+As shown in Figure 1, the coefficient matrices can be viewed as a coefficient tensor whose parameters are of number <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\color{red}dN^2(T-d)"/>. Since there are only <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\color{red}NT"/> time series observations, one technical challenge for solving the optimization problem would arise as the **over-parameterization** issue in the modeling process.
 
 <br>
 
