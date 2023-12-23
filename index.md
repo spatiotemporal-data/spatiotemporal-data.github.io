@@ -6,7 +6,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Urban Science
 - Human Mobility Modeling
 - Geospatial Data Analysis
-- Intelligent & Sustainable Transportation Systems
+- Intelligent & Sustainable Urban Systems
 - Optimization & Decision Making
 
 This project presents some spatiotemporal methods with data-driven machine learning:
