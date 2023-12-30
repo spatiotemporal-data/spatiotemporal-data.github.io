@@ -24,7 +24,7 @@ In the algorithm, the soft-thresholding operator is defined as
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;[\mathcal{S}_{\lambda}(\boldsymbol{x})]_{i}=\begin{cases} x_{i}-\lambda, & \text{if}~~x_{i}>t \\ x_{i}+\lambda, & \text{if}~~x_{i}<-t \\ 0, & \text{otherwise} \end{cases}"/></p>
 
-for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;i\in\{1,2,\ldots,n\}"/>.
+for all <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;i\in\{1,2,\ldots,n\}"/>.
 
 <br>
 
