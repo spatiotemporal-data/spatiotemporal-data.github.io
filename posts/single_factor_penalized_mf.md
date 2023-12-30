@@ -31,7 +31,11 @@ for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\lar
 **References**
 
 - (**Deng et al., 2021**) Correlation tensor decomposition
-and its application in spatial imaging data. Journal of the American Statistical Association. [[**DOI**](https://doi.org/10.1080/01621459.2021.1938083)]
+and its application in spatial imaging data. Journal of the American Statistical Association. [[**DOI**](https://doi.org/10.1080/01621459.2021.1938083)] (see Algorithm 2)
+
+- (**Witten et al., 2009**) A penalized matrix
+decomposition, with applications to sparse principal components and
+canonical correlation analysis. Biostatistics. [[**DOI**](https://doi.org/10.1093/biostatistics/kxp008)]
 
 <br>
 
