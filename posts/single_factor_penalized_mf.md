@@ -15,11 +15,16 @@ can be solved by the following algorithm:
   - Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{x}:=\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})/\|\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})\|_2"/> (Denote <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\mathcal{S}_{\lambda}(\cdot)"/> as the soft-thresholding operator)
 
   <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{x}:=\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})/\|\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})\|_2"/></p>
-  
+
 - Until convergence
 - Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;d=\boldsymbol{x}^{\top}\boldsymbol{Y}\boldsymbol{x}"/>
 - Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{x}:=\sqrt{d}\boldsymbol{x}"/>
 
+In the algorithm, the soft-thresholding operator is defined as
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;[\mathcal{S}_{\lambda}(\boldsymbol{x})]_{i}=\begin{cases} x_{i}-\lambda, & \text{if}~~x_{i}>t \\ x_{i}+\lambda, & \text{if}~~x_{i}<-t \\ 0, & \text{otherwise} \end{cases}"/></p>
+
+for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;i\in\{1,2,\ldots,n\}"/>.
 
 <br>
 
