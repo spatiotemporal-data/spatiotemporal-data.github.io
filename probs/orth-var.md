@@ -12,7 +12,13 @@ To capture interpretable modes/patterns, one can use tensor factorization formul
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{aligned} \min_{\boldsymbol{W},\boldsymbol{G},\boldsymbol{V},\boldsymbol{X}}~&\frac{1}{2}\sum_{t=2}^{T}\left\|\boldsymbol{y}_t-\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_t^\top\otimes\boldsymbol{V})^\top\boldsymbol{y}_{t-1}\right\|_2^2 \\ \text{s.t.}~~&\begin{cases} \boldsymbol{W}^\top\boldsymbol{W}=\boldsymbol{I}_R \\ \boldsymbol{V}^\top\boldsymbol{V}=\boldsymbol{I}_R \\ \boldsymbol{X}^\top\boldsymbol{X}=\boldsymbol{I}_R \\ \end{cases} \end{aligned}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{W}\in\mathbb{R}^{N\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{X}\in\mathbb{R}^{(T-1)\times R}"/> refer to as the spatial modes and the temporal modes, respectively.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{W}\in\mathbb{R}^{N\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{X}\in\mathbb{R}^{(T-1)\times R}"/> refer to as the spatial modes and the temporal modes, respectively. This model can discover urban mobility transition patterns.
+
+<br>
+
+**References**
+
+- (**Chen et al., 2023**) Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression. IEEE Transactions on Knowledge and Data Engineering. Early access.
 
 <br>
 
