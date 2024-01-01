@@ -19,7 +19,7 @@ can be solved by the following algorithm:
   <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{x}:=\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})/\|\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})\|_2"/></p>
 
 - Until convergence
-- Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;d=\boldsymbol{x}^{\top}\boldsymbol{Y}\boldsymbol{x}"/>;
+- Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;d=\boldsymbol{x}^{\top}\boldsymbol{Y}\boldsymbol{x}"/> (referring to the singular value);
 - Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{x}:=\sqrt{d}\boldsymbol{x}"/>.
 
 In the algorithm, the soft-thresholding operator is defined as
