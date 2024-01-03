@@ -135,6 +135,32 @@ for i in list(ids1):
 
 <br>
 
+Visualize the time resolutions of the first 4,299 IDs.
+
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+plt.rcParams['font.size'] = 13
+
+fig, axes = plt.subplots()
+sns.histplot(time_resolution[: 4299], color = 'red', alpha = 0.35, ax = axes)
+plt.xlabel('Average time resolution (min)')
+plt.ylabel('Count')
+plt.xlim([0, 15])
+fig.savefig("veraset_time_resolution_dist.png", bbox_inches = "tight")
+plt.show()
+```
+
+
+The average time resolution is 3.50 minutes.
+
+<br>
+
+<br>
+
 ```python
 data = pd.DataFrame(['caid', 'average_time_resolution_in_min'])
 data['caid'] = list(ids1)
@@ -238,7 +264,7 @@ for i in range(1, 1024):
         df = df.append(pd.read_parquet('part-0{}-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids1 = df['caid'].unique()
-pd.DataFrame({'card': list(ids1)}).to_csv('caid_01.csv', index = False)
+pd.DataFrame({'caid': list(ids1)}).to_csv('caid_01.csv', index = False)
 
 ## Oct. 2nd
 df = pd.read_parquet('part-00000-tid-8628706099891964741-56053e11-e575-4138-bfd8-237ddcb6e634-3980-1-c000.snappy.parquet')
@@ -255,7 +281,7 @@ for i in range(1, 1024):
         df = df.append(pd.read_parquet('part-0{}-tid-8628706099891964741-56053e11-e575-4138-bfd8-237ddcb6e634-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids2 = df['caid'].unique()
-pd.DataFrame({'card': list(ids2)}).to_csv('caid_02.csv', index = False)
+pd.DataFrame({'caid': list(ids2)}).to_csv('caid_02.csv', index = False)
 
 ## Oct. 3rd
 df = pd.read_parquet('part-00000-tid-8345537549904831215-54a7c61d-1b8c-4ce5-b6b3-1cd2b70178b2-1932-1-c000.snappy.parquet')
@@ -272,7 +298,7 @@ for i in range(1, 1024):
         df = df.append(pd.read_parquet('part-0{}-tid-8345537549904831215-54a7c61d-1b8c-4ce5-b6b3-1cd2b70178b2-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids3 = df['caid'].unique()
-pd.DataFrame({'card': list(ids3)}).to_csv('caid_03.csv', index = False)
+pd.DataFrame({'caid': list(ids3)}).to_csv('caid_03.csv', index = False)
 
 ## Oct. 4th
 df = pd.read_parquet('part-00000-tid-7676566896644138887-7d3e3480-b84c-44c6-a30a-78d0e1cc5709-2956-1-c000.snappy.parquet')
@@ -289,7 +315,7 @@ for i in range(1, 1024):
         df = df.append(pd.read_parquet('part-0{}-tid-7676566896644138887-7d3e3480-b84c-44c6-a30a-78d0e1cc5709-{}-1-c000.snappy.parquet'.format(*ticker)), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids4 = df['caid'].unique()
-pd.DataFrame({'card': list(ids4)}).to_csv('caid_04.csv', index = False)
+pd.DataFrame({'caid': list(ids4)}).to_csv('caid_04.csv', index = False)
 
 ## Oct. 5th
 df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
@@ -297,7 +323,7 @@ for file in glob.glob("part*.snappy.parquet"):
     df = df.append(pd.read_parquet(file), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids5 = df['caid'].unique()
-pd.DataFrame({'card': list(ids5)}).to_csv('caid_05.csv', index = False)
+pd.DataFrame({'caid': list(ids5)}).to_csv('caid_05.csv', index = False)
 
 ## Oct. 6th
 df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
@@ -305,7 +331,7 @@ for file in glob.glob("part*.snappy.parquet"):
     df = df.append(pd.read_parquet(file), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids6 = df['caid'].unique()
-pd.DataFrame({'card': list(ids6)}).to_csv('caid_06.csv', index = False)
+pd.DataFrame({'caid': list(ids6)}).to_csv('caid_06.csv', index = False)
 
 ## Oct. 7th
 df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
@@ -313,7 +339,7 @@ for file in glob.glob("part*.snappy.parquet"):
     df = df.append(pd.read_parquet(file), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids7 = df['caid'].unique()
-pd.DataFrame({'card': list(ids7)}).to_csv('caid_07.csv', index = False)
+pd.DataFrame({'caid': list(ids7)}).to_csv('caid_07.csv', index = False)
 
 ## Oct. 8th
 df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
@@ -321,7 +347,15 @@ for file in glob.glob("part*.snappy.parquet"):
     df = df.append(pd.read_parquet(file), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids8 = df['caid'].unique()
-pd.DataFrame({'card': list(ids8)}).to_csv('caid_08.csv', index = False)
+pd.DataFrame({'caid': list(ids8)}).to_csv('caid_08.csv', index = False)
+
+## Oct. 9th
+df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
+for file in glob.glob("part*.snappy.parquet"):
+    df = df.append(pd.read_parquet(file), ignore_index = True)
+    df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
+ids9 = df['caid'].unique()
+pd.DataFrame({'caid': list(ids9)}).to_csv('caid_09.csv', index = False)
 
 ```
 
