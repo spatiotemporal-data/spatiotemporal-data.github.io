@@ -238,8 +238,9 @@ pd.DataFrame({'card': list(ids4)}).to_csv('caid_04.csv', index = False)
 import glob
 
 ## Oct. 5th
+df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
 for file in glob.glob("part*.snappy.parquet"):
-    df = pd.read_parquet(file)
+    df = df.append(pd.read_parquet(file), ignore_index = True)
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids5 = df['caid'].unique()
 pd.DataFrame({'card': list(ids5)}).to_csv('caid_05.csv', index = False)
