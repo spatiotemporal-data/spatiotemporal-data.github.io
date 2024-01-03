@@ -233,6 +233,35 @@ for i in range(1, 1024):
 ids4 = df['caid'].unique()
 pd.DataFrame({'card': list(ids4)}).to_csv('caid_04.csv', index = False)
 
+import glob
+
+## Oct. 5th
+for file in glob.glob("part*.snappy.parquet"):
+    df = pd.read_parquet(file)
+    df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
+ids5 = df['caid'].unique()
+pd.DataFrame({'card': list(ids5)}).to_csv('caid_05.csv', index = False)
+
 ```
+
+<br>
+
+- Processing Unique IDs of Each Day
+
+```python
+import pandas as pd
+
+caid_01 = pd.read_csv('caid_01.csv')
+caid_02 = pd.read_csv('caid_02.csv')
+caid_03 = pd.read_csv('caid_03.csv')
+len(set(list(caid_01['caid']) + list(caid_02['caid']) + list(caid_03['caid'])))
+
+```
+
+<br>
+
+**References**
+
+-[How to read a CSV file that starts with a specific substring in Python pandas?](https://stackoverflow.com/a/44522400/11731946)
 
 <br>
