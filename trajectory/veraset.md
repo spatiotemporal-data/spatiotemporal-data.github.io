@@ -119,6 +119,49 @@ We compute the time differences between two data points and filter the time diff
 
 <br>
 
+```python
+import numpy as np
+
+ids1 = df['caid'].unique()
+df['utc_timestamp'] = pd.to_datetime(df.utc_timestamp)
+time_resolution = np.zeros(len(ids1))
+t = 0
+for i in list(ids1):
+    x = (df[df['caid'] == i]).sort_values(by = 'utc_timestamp')['utc_timestamp'].diff().values[1 :] / (1e+9 * 60)
+    x = x.astype(float)
+    time_resolution[t] = x[x < 15].mean()
+    t += 1
+```
+
+<br>
+
+```python
+data = pd.DataFrame(['caid', 'average_time_resolution_in_min'])
+data['caid'] = list(ids1)
+data['average_time_resolution_in_min'] = time_resolution
+data.to_csv('caid_plus_resolution.csv', index = False)
+```
+
+<br>
+
+```python
+import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize = (4, 3))
+i = 7
+x = (df[df['caid'] == ids1[i]]).sort_values(by = 'utc_timestamp')['utc_timestamp'].diff().values[1 :] / (1e+9 * 60)
+x = x.astype(float)
+plt.plot(x)
+plt.ylim([-2, 60])
+plt.xlabel('Data point (#)')
+plt.ylabel('Time resolution (min)')
+plt.show()
+```
+
+<br>
+
+<br>
+
 ## Appendix
 
 For reproducing Figure 1, please use the following Python codes.
