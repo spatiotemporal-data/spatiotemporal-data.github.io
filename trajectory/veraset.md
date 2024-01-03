@@ -167,6 +167,7 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 import pandas as pd
+import glob
 
 ## Oct. 1st
 df = pd.read_parquet('part-00000-tid-9141560157573588789-586e403e-f6f8-4385-8507-8a0d7c4c91d7-908-1-c000.snappy.parquet')
@@ -235,8 +236,6 @@ for i in range(1, 1024):
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids4 = df['caid'].unique()
 pd.DataFrame({'card': list(ids4)}).to_csv('caid_04.csv', index = False)
-
-import glob
 
 ## Oct. 5th
 df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
