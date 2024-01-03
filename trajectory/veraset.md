@@ -157,7 +157,9 @@ plt.show()
 
 <br>
 
-- Searching Unique IDs
+- **Searching Unique IDs**
+
+<br>
 
 ```python
 import warnings
@@ -246,7 +248,9 @@ pd.DataFrame({'card': list(ids5)}).to_csv('caid_05.csv', index = False)
 
 <br>
 
-- Processing Unique IDs of Each Day
+- **Processing Unique IDs of Each Day**
+
+<br>
 
 ```python
 import pandas as pd
