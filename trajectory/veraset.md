@@ -157,7 +157,7 @@ plt.show()
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/veraset_time_resolution_dist.png" width="400" />
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/veraset_time_resolution_dist.png" width="500" />
 </p>
 
 <p align = "center">
