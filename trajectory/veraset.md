@@ -267,6 +267,6 @@ len(set(list(caid_01['caid']) + list(caid_02['caid']) + list(caid_03['caid'])))
 
 **References**
 
--[How to read a CSV file that starts with a specific substring in Python pandas?](https://stackoverflow.com/a/44522400/11731946)
+- [How to read a CSV file that starts with a specific substring in Python pandas?](https://stackoverflow.com/a/44522400/11731946)
 
 <br>
