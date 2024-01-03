@@ -110,6 +110,14 @@ During the first 4 days, there are **483,082 unique IDs**.
 
 <br>
 
+**Time resolution**
+
+The time resolution for collecting instant position information is a little random.
+
+We compute the time differences between two data points and filter the time differences that are greater than 15 minutes.
+
+<br>
+
 ## Appendix
 
 For reproducing Figure 1, please use the following Python codes.
