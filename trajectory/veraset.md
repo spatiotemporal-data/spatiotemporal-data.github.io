@@ -168,7 +168,7 @@ plt.show()
 
 <br>
 
-- **Searching Unique IDs**
+**Searching Unique IDs**
 
 <br>
 
@@ -271,11 +271,19 @@ for file in glob.glob("part*.snappy.parquet"):
 ids7 = df['caid'].unique()
 pd.DataFrame({'card': list(ids7)}).to_csv('caid_07.csv', index = False)
 
+## Oct. 8th
+df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
+for file in glob.glob("part*.snappy.parquet"):
+    df = df.append(pd.read_parquet(file), ignore_index = True)
+    df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
+ids8 = df['caid'].unique()
+pd.DataFrame({'card': list(ids8)}).to_csv('caid_08.csv', index = False)
+
 ```
 
 <br>
 
-- **Processing Unique IDs of Each Day**
+**Processing Unique IDs of Each Day**
 
 <br>
 
