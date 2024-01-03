@@ -154,6 +154,7 @@ fig.savefig("veraset_time_resolution_dist.png", bbox_inches = "tight")
 plt.show()
 ```
 
+<br>
 
 The average time resolution is 3.50 minutes.
 
