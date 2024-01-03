@@ -164,7 +164,30 @@ plt.show()
 <b>Figure 3.</b> The average time resolution is <b>3.50 minutes</b>.
 </p>
 
+```python
+import matplotlib.pyplot as plt
 
+fig = plt.figure(figsize = (6, 3))
+i = 5
+x = (df[df['caid'] == ids1[i]]).sort_values(by = 'utc_timestamp')['utc_timestamp'].diff().values[1 :] / (1e+9 * 60)
+x = x.astype(float)
+plt.plot(x)
+plt.ylim([-2, 60])
+plt.xlabel('Data point (#)')
+plt.ylabel('Time resolution (min)')
+fig.savefig("atime_resolution_{}.png".format(i), bbox_inches = "tight")
+plt.show()
+```
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_0.png" width="600" />
+</p>
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_5.png" width="600" />
+</p>
 
 
 <br>
