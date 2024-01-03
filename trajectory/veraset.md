@@ -156,7 +156,16 @@ plt.show()
 
 <br>
 
-The average time resolution is 3.50 minutes.
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/veraset_time_resolution_dist.png" width="400" />
+</p>
+
+<p align = "center">
+<b>Figure 3.</b> The average time resolution is <b>3.50 minutes</b>.
+</p>
+
+
+
 
 <br>
 
