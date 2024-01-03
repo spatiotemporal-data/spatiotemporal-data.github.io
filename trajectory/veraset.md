@@ -180,13 +180,13 @@ plt.show()
 ```
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_0.png" width="600" />
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_0.png" width="550" />
 </p>
 
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_5.png" width="600" />
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_5.png" width="550" />
 </p>
 
 
