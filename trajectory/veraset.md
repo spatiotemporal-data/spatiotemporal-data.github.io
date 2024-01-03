@@ -100,6 +100,7 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 | Oct. 2nd   | 15,255,154         | 242,068   | 63                         |
 | Oct. 3rd   | 17,679,260         | 183,776   | 96                         |
 | Oct. 4th   | 31,815,354         | 267,392   | 119                        |
+| Oct. 5th   | 21,137,118         | 241,984   | 87                         |
 
 <br>
 
@@ -244,6 +245,22 @@ for file in glob.glob("part*.snappy.parquet"):
     df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
 ids5 = df['caid'].unique()
 pd.DataFrame({'card': list(ids5)}).to_csv('caid_05.csv', index = False)
+
+## Oct. 6th
+df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
+for file in glob.glob("part*.snappy.parquet"):
+    df = df.append(pd.read_parquet(file), ignore_index = True)
+    df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
+ids6 = df['caid'].unique()
+pd.DataFrame({'card': list(ids6)}).to_csv('caid_06.csv', index = False)
+
+## Oct. 7th
+df = pd.DataFrame(['utc_timestamp', 'caid', 'latitude', 'longitude', 'horizontal_accuracy'])
+for file in glob.glob("part*.snappy.parquet"):
+    df = df.append(pd.read_parquet(file), ignore_index = True)
+    df = df.drop(['id_type', 'iso_country_code', 'quality_fields', 'geo_fields', 'ip_address'], axis = 1)
+ids7 = df['caid'].unique()
+pd.DataFrame({'card': list(ids7)}).to_csv('caid_07.csv', index = False)
 
 ```
 
