@@ -7,6 +7,7 @@ Content:
 - Data files
 - Trajectory data
 - Data samples
+- Time resolution
 
 <br>
 
