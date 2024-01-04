@@ -157,33 +157,6 @@ Visualize the time resolutions of the first 4,299 IDs.
 
 <br>
 
-```python
-data = pd.DataFrame(['caid', 'average_time_resolution_in_min'])
-data['caid'] = list(ids1)
-data['average_time_resolution_in_min'] = time_resolution
-data.to_csv('caid_plus_resolution.csv', index = False)
-```
-
-<br>
-
-```python
-import matplotlib.pyplot as plt
-
-fig = plt.figure(figsize = (4, 3))
-i = 7
-x = (df[df['caid'] == ids1[i]]).sort_values(by = 'utc_timestamp')['utc_timestamp'].diff().values[1 :] / (1e+9 * 60)
-x = x.astype(float)
-plt.plot(x)
-plt.ylim([-2, 60])
-plt.xlabel('Data point (#)')
-plt.ylabel('Time resolution (min)')
-plt.show()
-```
-
-<br>
-
-<br>
-
 ## Appendix
 
 For reproducing Figure 1, please use the following Python codes.
