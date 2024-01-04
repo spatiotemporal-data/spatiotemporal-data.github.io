@@ -135,23 +135,12 @@ Visualize the time resolutions of the first 4,299 IDs.
 
 <br>
 
-```python
-import matplotlib.pyplot as plt
-
-fig = plt.figure(figsize = (6, 3))
-i = 5
-x = (df[df['caid'] == ids1[i]]).sort_values(by = 'utc_timestamp')['utc_timestamp'].diff().values[1 :] / (1e+9 * 60)
-x = x.astype(float)
-plt.plot(x)
-plt.ylim([-2, 60])
-plt.xlabel('Data point (#)')
-plt.ylabel('Time resolution (min)')
-fig.savefig("atime_resolution_{}.png".format(i), bbox_inches = "tight")
-plt.show()
-```
-
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_0.png" width="550" />
+</p>
+
+<p align = "center">
+<b>Figure 4.</b> The time resolution curve changed over time on the first example ID (`i = 0`).
 </p>
 
 <br>
@@ -160,6 +149,9 @@ plt.show()
 <img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_5.png" width="550" />
 </p>
 
+<p align = "center">
+<b>Figure 5.</b> The time resolution curve changed over time on the second example ID (`i = 5`).
+</p>
 
 <br>
 
@@ -418,6 +410,27 @@ plt.xlabel('Average time resolution (min)')
 plt.ylabel('Count')
 plt.xlim([0, 15])
 fig.savefig("veraset_time_resolution_dist.png", bbox_inches = "tight")
+plt.show()
+```
+
+<br>
+
+For reproducing Figure 4 and 5, please use the following Python codes.
+
+<br>
+
+```python
+import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize = (6, 3))
+i = 5
+x = (df[df['caid'] == ids1[i]]).sort_values(by = 'utc_timestamp')['utc_timestamp'].diff().values[1 :] / (1e+9 * 60)
+x = x.astype(float)
+plt.plot(x)
+plt.ylim([-2, 60])
+plt.xlabel('Data point (#)')
+plt.ylabel('Time resolution (min)')
+fig.savefig("atime_resolution_{}.png".format(i), bbox_inches = "tight")
 plt.show()
 ```
 
