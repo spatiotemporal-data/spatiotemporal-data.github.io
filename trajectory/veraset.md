@@ -113,7 +113,7 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 
 <br>
 
-During the first 9 days, there are **775,758 unique IDs**.
+During the first two weeks, there are **775,758 unique IDs**.
 
 <br>
 
@@ -410,6 +410,8 @@ import pandas as pd
 unique_id = pd.read_csv('caid_01.csv')['caid']
 for i in range(2, 10):
     unique_id = set(list(unique_id) + list(pd.read_csv('caid_0{}.csv'.format(i))['caid']))
+for i in range(10, 14):
+    unique_id = set(list(unique_id) + list(pd.read_csv('caid_{}.csv'.format(i))['caid']))
 len(unique_id)
 ```
 
