@@ -105,6 +105,7 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 | Oct. 6th   | 18,479,719         | 245,583   | 75                         |
 | Oct. 7th   | 21,299,472         | 235,557   | 90                         |
 | Oct. 8th   | 21,496,798         | 264,891   | 81                         |
+| Oct. 9th   | 16,698,300         | 151,961   | 110                        |
 
 <br>
 
