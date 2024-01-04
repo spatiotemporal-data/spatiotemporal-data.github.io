@@ -135,6 +135,10 @@ Visualize the time resolutions of the first 4,299 IDs.
 
 <br>
 
+As shown in Figure 4 and 5, the time resolution curves show some "outliers" which refers to the change point of different trajectories.
+
+<br>
+
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_0.png" width="500" />
 </p>
