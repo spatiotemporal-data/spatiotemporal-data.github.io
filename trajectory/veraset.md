@@ -403,11 +403,10 @@ pd.DataFrame({'caid': list(ids9)}).to_csv('caid_09.csv', index = False)
 ```python
 import pandas as pd
 
-caid_01 = pd.read_csv('caid_01.csv')
-caid_02 = pd.read_csv('caid_02.csv')
-caid_03 = pd.read_csv('caid_03.csv')
-len(set(list(caid_01['caid']) + list(caid_02['caid']) + list(caid_03['caid'])))
-
+unique_id = pd.read_csv('caid_01.csv')['caid']
+for i in range(2, 10):
+    unique_id = set(list(unique_id) + list(pd.read_csv('caid_0{}.csv'.format(i))['caid']))
+len(unique_id)
 ```
 
 <br>
