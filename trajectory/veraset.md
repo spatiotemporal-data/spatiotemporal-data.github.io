@@ -11,7 +11,7 @@ Content:
 
 <br>
 
-**Data files**
+**Data Files**
 
 **1024 data files** (~1MB for each file) for each day. The naming system shows differences by the `part-xxxxx-tid...` (e.g., `xxxxx` as the number `00000`) and the `-xxxx-1-c000.snappy.parquet` (e.g., `xxxx` as the number `908` or `1931`).
 
@@ -19,7 +19,7 @@ Content:
 
 <br>
 
-**Trajectory data**
+**Trajectory Data**
 
 The data format `.snappy.parquet` can be processed with the data processing package `pandas`. In what follows, we have tried to analyze some data files.
 
@@ -58,7 +58,7 @@ corresponding to the first data file with `21161 rows × 10 columns`. The column
 
 <br>
 
-**Data samples**
+**Pre-Processing Data Samples**
 
 We tried to read these data files on October 1st with the `for` loop as follows.
 
@@ -117,48 +117,11 @@ During the first two weeks, there are **775,758 unique IDs**.
 
 <br>
 
-**Time resolution**
+**Time Resolution**
 
-The time resolution for collecting instant position information is a little random.
-
-We compute the time differences between two data points and filter the time differences that are greater than 15 minutes.
-
-<br>
-
-```python
-import numpy as np
-
-ids1 = df['caid'].unique()
-df['utc_timestamp'] = pd.to_datetime(df.utc_timestamp)
-time_resolution = np.zeros(len(ids1))
-t = 0
-for i in list(ids1):
-    x = (df[df['caid'] == i]).sort_values(by = 'utc_timestamp')['utc_timestamp'].diff().values[1 :] / (1e+9 * 60)
-    x = x.astype(float)
-    time_resolution[t] = x[x < 15].mean()
-    t += 1
-```
-
-<br>
+The time resolution for collecting instant position information is a little random. We compute the time differences between two data points and filter the time differences that are greater than 15 minutes.
 
 Visualize the time resolutions of the first 4,299 IDs.
-
-<br>
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-plt.rcParams['font.size'] = 13
-
-fig, axes = plt.subplots()
-sns.histplot(time_resolution[: 4299], color = 'red', alpha = 0.35, ax = axes)
-plt.xlabel('Average time resolution (min)')
-plt.ylabel('Count')
-plt.xlim([0, 15])
-fig.savefig("veraset_time_resolution_dist.png", bbox_inches = "tight")
-plt.show()
-```
 
 <br>
 
@@ -169,6 +132,8 @@ plt.show()
 <p align = "center">
 <b>Figure 3.</b> The average time resolution is <b>3.50 minutes</b>.
 </p>
+
+<br>
 
 ```python
 import matplotlib.pyplot as plt
@@ -277,7 +242,7 @@ plt.show()
 
 <br>
 
-**Searching Unique IDs**
+Searching unique IDs and saving the `DataFrame` as the `.csv` file (e.g., `caid_01.csv`).
 
 <br>
 
@@ -400,7 +365,7 @@ pd.DataFrame({'caid': list(ids9)}).to_csv('caid_09.csv', index = False)
 
 <br>
 
-**Processing Unique IDs of Each Day**
+Processing unique IDs of each day (only cover the first two weeks in this case) and returning the number of unique IDs.
 
 <br>
 
@@ -413,6 +378,47 @@ for i in range(2, 10):
 for i in range(10, 15):
     unique_id = set(list(unique_id) + list(pd.read_csv('caid_{}.csv'.format(i))['caid']))
 len(unique_id)
+```
+
+<br>
+
+Computing the average time resolution (in minute).
+
+<br>
+
+```python
+import numpy as np
+
+ids1 = df['caid'].unique()
+df['utc_timestamp'] = pd.to_datetime(df.utc_timestamp)
+time_resolution = np.zeros(len(ids1))
+t = 0
+for i in list(ids1):
+    x = (df[df['caid'] == i]).sort_values(by = 'utc_timestamp')['utc_timestamp'].diff().values[1 :] / (1e+9 * 60)
+    x = x.astype(float)
+    time_resolution[t] = x[x < 15].mean()
+    t += 1
+```
+
+<br>
+
+For reproducing Figure 3, please use the following Python codes.
+
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+plt.rcParams['font.size'] = 13
+
+fig, axes = plt.subplots()
+sns.histplot(time_resolution[: 4299], color = 'red', alpha = 0.35, ax = axes)
+plt.xlabel('Average time resolution (min)')
+plt.ylabel('Count')
+plt.xlim([0, 15])
+fig.savefig("veraset_time_resolution_dist.png", bbox_inches = "tight")
+plt.show()
 ```
 
 <br>
