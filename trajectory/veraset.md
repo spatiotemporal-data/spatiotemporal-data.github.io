@@ -95,6 +95,10 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 
 <br>
 
+<p align = "center">
+<b>Table 1.</b> The number of data samples and unique IDs in the first two weeks. The last row shows the total data samples and the total unique IDs (already removed the overlap).
+</p>
+
 | Day        | Total data samples | Unique ID | Average samples of each ID |
 | ---------- | :----------------: | :-------: | :------------------------: |
 | Oct. 1st   | 18,050,633         | 193,215   | 93                         |
