@@ -119,7 +119,7 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 
 <br>
 
-During the first two weeks, there are **268 million data samples** and **1 million unique IDs**.
+During the first two weeks, there are **268 million data samples** and **1 million unique IDs**, see Table 1.
 
 <br>
 
