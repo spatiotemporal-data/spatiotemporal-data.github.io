@@ -121,9 +121,7 @@ During the first two weeks, there are **268 million data samples** and **775,758
 
 **Time Resolution**
 
-The time resolution for collecting instant position information is a little random. We compute the time differences between two data points and filter the time differences that are greater than 15 minutes.
-
-Visualize the time resolutions of the first 4,299 IDs.
+The time resolution for collecting instant position information is a little random. We compute the time differences between two data points and filter the time differences that are greater than 15 minutes. In Figure 3, we visualize the distribution of individual time resolutions of the first 4,299 IDs.
 
 <br>
 
