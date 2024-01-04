@@ -110,10 +110,12 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 | Oct. 11th  | 17,375,801         | 218,536   | 80                         |
 | Oct. 12th  | 11,428,466         | 136,568   | 84                         |
 | Oct. 13th  | 11,380,990         | 161,129   | 71                         |
+| Oct. 14th  | 14,277,287         | 177,437   | 80                         |
+| Total      | 268,410,576        | 177,437   | -                         |
 
 <br>
 
-During the first two weeks, there are **775,758 unique IDs**.
+During the first two weeks, there are **268 million data samples** and **775,758 unique IDs**.
 
 <br>
 
