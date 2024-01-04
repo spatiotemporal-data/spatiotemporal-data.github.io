@@ -109,7 +109,7 @@ print('The average data sample number of each unique id: {}'.format(a / b))
 
 <br>
 
-During the first 4 days, there are **483,082 unique IDs**.
+During the first 9 days, there are **775,758 unique IDs**.
 
 <br>
 
