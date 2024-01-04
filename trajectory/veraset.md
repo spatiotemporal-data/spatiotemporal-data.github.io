@@ -136,7 +136,7 @@ Visualize the time resolutions of the first 4,299 IDs.
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_0.png" width="550" />
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_0.png" width="500" />
 </p>
 
 <p align = "center">
@@ -146,7 +146,7 @@ Visualize the time resolutions of the first 4,299 IDs.
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_5.png" width="550" />
+<img align="middle" src="https://spatiotemporal-data.github.io/trajectory/time_resolution_5.png" width="500" />
 </p>
 
 <p align = "center">
