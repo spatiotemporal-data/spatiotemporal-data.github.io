@@ -410,7 +410,7 @@ import pandas as pd
 unique_id = pd.read_csv('caid_01.csv')['caid']
 for i in range(2, 10):
     unique_id = set(list(unique_id) + list(pd.read_csv('caid_0{}.csv'.format(i))['caid']))
-for i in range(10, 14):
+for i in range(10, 15):
     unique_id = set(list(unique_id) + list(pd.read_csv('caid_{}.csv'.format(i))['caid']))
 len(unique_id)
 ```
