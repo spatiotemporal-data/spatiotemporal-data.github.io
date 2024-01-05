@@ -8,6 +8,7 @@ Content:
 - Trajectory data
 - Data samples
 - Time resolution
+- Geographical coverage
 
 <br>
 
