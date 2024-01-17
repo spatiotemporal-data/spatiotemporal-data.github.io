@@ -88,7 +88,7 @@ We can use the alternating minimization method to solve this optimization proble
 
 Notably, the partial derivative of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;f"/> with respect to the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{V}"/> can also be written as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\frac{\partial f}{\partial\boldsymbol{V}}=\sum_{t=d+1}^{T}\boldsymbol{z}_{t}()\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}\otimes\boldsymbol{I}_{R})"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\frac{\partial f}{\partial\boldsymbol{V}}=\sum_{t=d+1}^{T}\boldsymbol{z}_{t}(\boldsymbol{y}_{t}^{\top}-\boldsymbol{z}_{t}^{\top}(\boldsymbol{x}_{t}^{\top}\otimes\boldsymbol{V})\boldsymbol{G}^\top\boldsymbol{W}^\top)\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}\otimes\boldsymbol{I}_{R})"/></p>
 
 
 The Python implementation with `numpy` is given as follows. We plan to give some spatiotemporal data examples such as fluid flow, sea surface temperature, and human mobility for discovering interpretable patterns.
