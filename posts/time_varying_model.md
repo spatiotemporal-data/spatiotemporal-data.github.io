@@ -86,6 +86,10 @@ We can use the alternating minimization method to solve this optimization proble
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\left\{\begin{aligned} \boldsymbol{W}:&=\{\boldsymbol{W}\mid\frac{\partial f}{\partial\boldsymbol{W}}=\boldsymbol{0}\} & {\color{blue}\text{(least squares)}} \\ \boldsymbol{G}:&=\{\boldsymbol{G}\mid\frac{\partial f}{\partial\boldsymbol{G}}=\boldsymbol{0}\} & {\color{blue}\text{(least squares)}} \\ \boldsymbol{V}:&=\{\boldsymbol{V}\mid\frac{\partial f}{\partial\boldsymbol{V}}=\boldsymbol{0}\} & {\color{blue}\text{(conjugate gradient)}} \\ \boldsymbol{x}_{t}:&=\{\boldsymbol{x}_{t}\mid\frac{\partial f}{\partial\boldsymbol{x}_{t}}=\boldsymbol{0}\},\,\forall t & {\color{blue}\text{(least squares)}} \end{aligned} \right."/></p>
 
+Notably, the partial derivative of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;f"/> with respect to the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{V}"/> can also be written as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\min_{\boldsymbol{W},\boldsymbol{G},\boldsymbol{V},\boldsymbol{X}}~\frac{1}{2}\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}^\top\otimes\boldsymbol{V})^\top\boldsymbol{z}_{t}\right\|_2^2"/></p>
+
 
 The Python implementation with `numpy` is given as follows. We plan to give some spatiotemporal data examples such as fluid flow, sea surface temperature, and human mobility for discovering interpretable patterns.
 
