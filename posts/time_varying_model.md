@@ -91,7 +91,7 @@ Notably, the partial derivative of <img style="display: inline;" src="https://la
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\frac{\partial f}{\partial\boldsymbol{V}}=\sum_{t=d+1}^{T}\boldsymbol{z}_{t}(\boldsymbol{y}_{t}^{\top}-\boldsymbol{z}_{t}^{\top}(\boldsymbol{x}_{t}^{\top}\otimes\boldsymbol{V})\boldsymbol{G}^\top\boldsymbol{W}^\top)\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}\otimes\boldsymbol{I}_{R})"/></p>
 
 
-The Python implementation with `numpy` is given as follows. We plan to give some spatiotemporal data examples such as fluid flow, sea surface temperature, and human mobility for discovering interpretable patterns.
+To reproduce the time-varying model, the Python implementation with `numpy` is given as follows. We plan to give some spatiotemporal data examples such as fluid flow, sea surface temperature, and human mobility for discovering interpretable patterns.
 
 <br>
 
