@@ -8,7 +8,8 @@ layout: default
 - Trajectory data
 - Data samples
 - Time resolution
-- Geographical coverage
+<!-- - Geographical coverage -->
+- Challenges
 
 <br>
 
@@ -163,6 +164,12 @@ As shown in Figure 4 and 5, the time resolution curves show some "outliers" whic
 </p>
 
 <br>
+
+**Challenges**
+
+1. Identify activity modes (e.g., home, work, and commuting) from pings of each ID.
+
+2. Identify mobility from trajectories of each ID.
 
 <br>
 
