@@ -12,11 +12,11 @@ layout: default
 
 One question confused me a lot: What is the difference among state space model (SSM), dynamic factor model (DFM), and temporal matrix factorization (TMF)?
 
-- SSM & DFM:
+- SSM & DFM (linear time-invariant systems):
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{cases} \boldsymbol{y}_{t}=\boldsymbol{W}\boldsymbol{x}_{t}+\boldsymbol{\epsilon}_{t}\quad\text{(Observation equation)} \\ \boldsymbol{x}_{t+1}=\boldsymbol{A}\boldsymbol{x}_{t}+\boldsymbol{\eta}_{t}\quad\text{(State transition equation)} \end{cases}"/></p>
 
-- TMF:
+- TMF (linear time-invariant systems):
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{cases} \mathcal{P}_{\Omega_{t}}(\boldsymbol{y}_{t})=\mathcal{P}_{\Omega_{t}}(\boldsymbol{W}\boldsymbol{x}_{t})+\boldsymbol{\epsilon}_{t}\quad\text{(Matrix factorization)} \\ \boldsymbol{x}_{t+1}=\boldsymbol{A}\boldsymbol{x}_{t}+\boldsymbol{\eta}_{t}\quad\quad\quad\text{(Vector autoregression)} \end{cases}"/></p>
 whose optimization problem is given by
