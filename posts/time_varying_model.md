@@ -36,7 +36,7 @@ Dynamic mechanisms that drive nonlinear systems are universally complex. Straigh
 
 As a simple yet efficient and classical method for time series modeling, vector autoregression allows one to explicitly find the linear relationship among a sequence of time series (i.e., multivariate time series) changing over time, which can also successfully describe the dynamic behaviors of time series.
 
-Given any stationary time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;d"/>th-order vector autoregression takes a linear formula as
+Given any stationary time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;d"/>th-order vector autoregression takes a linear time-invariant formula as
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{s}_{t}=\sum_{k=1}^{d}{\color{red}\boldsymbol{A}_{k}}\boldsymbol{s}_{t-k}+\underbrace{\boldsymbol{\epsilon}_{t}}_{\text{error}},\,\forall t"/></p>
 
