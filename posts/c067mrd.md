@@ -6,7 +6,7 @@ layout: default
 
 <br>
 
-- (**Stock & Watson**) Dynamic Factor Models, Factor-Augmented Vector Autoregressions, and Structural Vector Autoregressions in Macroeconomics.
+- (**Stock & Watson**) Dynamic factor models, factor-augmented vector autoregressions, and structural vector autoregressions in macroeconomics. 2016.
 
 <br>
 
