@@ -84,7 +84,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\l
 
 Putting this tensor factorization with time-varying autoregression together, we have the following time-varying low-rank vector autoregression problem (also see [the optimization with orthogonal constraints](https://spatiotemporal-data.github.io/probs/orth-var/)):
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{cases} \boldsymbol{y}_t=\boldsymbol{A}_{t}\boldsymbol{z}_t+\boldsymbol{\epsilon}_t \quad\quad\quad\text{(Vector autoregression)} \\ \boldsymbol{A}_t=\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_t^\top\otimes\boldsymbol{V})^\top\quad\text{(Tensor factorization)} \end{cases}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{cases} \boldsymbol{y}_t=\boldsymbol{A}_{t}\boldsymbol{z}_t+\boldsymbol{\epsilon}_t \quad\quad\quad\quad\text{(Vector autoregression)} \\ \boldsymbol{A}_t=\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_t^\top\otimes\boldsymbol{V})^\top\quad\text{(Tensor factorization)} \end{cases}"/></p>
 
 or see the optimization problem as follows,
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\min_{\boldsymbol{W},\boldsymbol{G},\boldsymbol{V},\boldsymbol{X}}~\frac{1}{2}\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}^\top\otimes\boldsymbol{V})^\top\boldsymbol{z}_{t}\right\|_2^2"/></p>
