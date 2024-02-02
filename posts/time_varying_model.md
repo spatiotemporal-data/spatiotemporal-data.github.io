@@ -44,7 +44,11 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\l
 
 One great challenge of modeling time series with vector autoregression is identifying the time-varying system behaviors in the analysis, which is often associated with the nonstationarity issue. Although the nonstationarity and time-varying system behaviors are pretty clear to verify, the problem of discovering underlying data patterns from time-varying systems is challenging and still demands further exploration.
 
-Typically, time-varying vector autoregression takes a sequence of vector autoregressive processes at different times, and it is capable of handling the time-varying system behaviors. For any observed spatiotemporal data in the form of multivariate time series, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, our model considers a time-varying linear system as follows,
+Typically, time-varying vector autoregression takes a sequence of vector autoregressive processes at different times, and it is capable of handling the time-varying system behaviors. For any observed spatiotemporal data in the form of multivariate time series, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{s}_1,\boldsymbol{s}_2,\ldots,\boldsymbol{s}_{T}\in\mathbb{R}^{N}"/>, our model considers a **linear time-varying system** as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{cases} \boldsymbol{y}_t=\boldsymbol{A}_{t}\boldsymbol{z}_t+\boldsymbol{\epsilon}_t \end{cases}"/></p>
+
+whose optimization problem is given by
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\min_{\color{red}\{\boldsymbol{A}_{t}\}}~\frac{1}{2}\underbrace{\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-{\color{red}\boldsymbol{A}_{t}}\boldsymbol{z}_{t}\right\|_2^2}_{\text{time-varying autoregression}}"/></p>
 
@@ -80,6 +84,9 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\l
 
 Putting this tensor factorization with time-varying autoregression together, we have the following time-varying low-rank vector autoregression problem (also see [the optimization with orthogonal constraints](https://spatiotemporal-data.github.io/probs/orth-var/)):
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{cases} \boldsymbol{y}_t=\boldsymbol{A}_{t}\boldsymbol{z}_t+\boldsymbol{\epsilon}_t \\ \boldsymbol{A}_t=\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_t^\top\otimes\boldsymbol{V})^\top \end{cases}"/></p>
+
+or see the optimization problem as follows,
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\min_{\boldsymbol{W},\boldsymbol{G},\boldsymbol{V},\boldsymbol{X}}~\frac{1}{2}\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-\boldsymbol{W}\boldsymbol{G}(\boldsymbol{x}_{t}^\top\otimes\boldsymbol{V})^\top\boldsymbol{z}_{t}\right\|_2^2"/></p>
 
 We can use the alternating minimization method to solve this optimization problem. Let <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;f"/> be the objective function of the optimization problem, the scheme can be summarized as follows,
