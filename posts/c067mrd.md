@@ -18,7 +18,7 @@ One question confused me a lot: What is the difference among state space model (
 
 - TMF:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{cases} \mathcal{P}_{\Omega_t}(\boldsymbol{y}_{t})=\mathcal{P}_{\Omega_t}(\boldsymbol{W}\boldsymbol{x}_{t}}+\boldsymbol{\eta}_{t}\quad\text{(Matrix factorization)} \\ \boldsymbol{x}_{t+1}=\boldsymbol{A}\boldsymbol{x}_{t}+\boldsymbol{e}_{t}\quad\text{(Latent vector autoregression)} \end{cases}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\begin{cases} \mathcal{P}_{\Omega_{t}}(\boldsymbol{y}_{t})=\mathcal{P}_{\Omega_{t}}(\boldsymbol{W}\boldsymbol{x}_{t}})+\boldsymbol{\eta}_{t}\quad\text{(Matrix factorization)} \\ \boldsymbol{x}_{t+1}=\boldsymbol{A}\boldsymbol{x}_{t}+\boldsymbol{e}_{t}\quad\text{(Latent vector autoregression)} \end{cases}"/></p>
 
 
 <br>
