@@ -10,7 +10,7 @@ layout: default
 
 <br>
 
-One question confused me a lot: What is the difference among state space model (SSM), dynamic factor model (DFM), and temporal matrix factorization (TMF).
+One question confused me a lot: What is the difference among state space model (SSM), dynamic factor model (DFM), and temporal matrix factorization (TMF)?
 
 - SSM & DFM:
 
