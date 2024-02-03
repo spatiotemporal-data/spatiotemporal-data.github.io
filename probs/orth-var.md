@@ -18,7 +18,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\l
 
 **References**
 
-- (**Chen et al., 2023**) Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression. IEEE Transactions on Knowledge and Data Engineering. Early access. [[DOI](https://doi.org/10.1109/TKDE.2023.3294440)]
+- (**Chen et al., 2024**) Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression. IEEE Transactions on Knowledge and Data Engineering. 2024, 36 (2): 504-517. [[DOI](https://doi.org/10.1109/TKDE.2023.3294440)] [[PDF](https://xinychen.github.io/papers/time_varying_model.pdf)] [[Blog post](https://spatiotemporal-data.github.io/posts/time_varying_model/)]
 
 <br>
 
