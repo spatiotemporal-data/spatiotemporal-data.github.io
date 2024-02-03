@@ -13,3 +13,7 @@ layout: default
 - (**Chen et al., 2024**) Constructing custom thermodynamics using deep learning. Nature Computational Science. 2024, 4, 66-85. [[DOI](https://doi.org/10.1038/s43588-023-00581-5)]
 
 - (**Liu et al., 2024**) Quantifying spatial under-reporting disparities in resident crowdsourcing. Nature Computational Science. 2024, 4: 57-65. [[DOI](https://doi.org/10.1038/s43588-023-00572-6)]
+
+- (**Chen et al., 2023**) ContiFormer: Continuous-time transformer for irregular time series modeling. NeurIPS 2023. [[PDF](https://openreview.net/pdf?id=YJDz4F2AZu)]
+
+- (**Zeng et al., 2023**) Are Transformers Effective for Time Series Forecasting? AAAI 2023. [[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/26317)]
