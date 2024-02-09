@@ -17,3 +17,7 @@ layout: default
 - (**Chen et al., 2023**) ContiFormer: Continuous-time transformer for irregular time series modeling. NeurIPS 2023. [[PDF](https://openreview.net/pdf?id=YJDz4F2AZu)]
 
 - (**Zeng et al., 2023**) Are Transformers Effective for Time Series Forecasting? AAAI 2023. [[PDF](https://ojs.aaai.org/index.php/AAAI/article/view/26317)]
+
+- Miles Stoudenmire. Tensor networks for machine learning and applications. IPAM. [[YouTube](https://www.youtube.com/watch?v=q8UTwdjS95k)]
+
+- (**Zhang et al., 2019**) Greedy orthogonal pivoting algorithm for non-negative matrix factorization. ICML 2019. [[PDF](https://proceedings.mlr.press/v97/zhang19r/zhang19r.pdf)]
