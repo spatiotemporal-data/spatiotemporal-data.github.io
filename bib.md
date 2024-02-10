@@ -21,3 +21,5 @@ layout: default
 - Miles Stoudenmire. Tensor networks for machine learning and applications. IPAM. [[YouTube](https://www.youtube.com/watch?v=q8UTwdjS95k)]
 
 - (**Zhang et al., 2019**) Greedy orthogonal pivoting algorithm for non-negative matrix factorization. ICML 2019. [[PDF](https://proceedings.mlr.press/v97/zhang19r/zhang19r.pdf)]
+
+- (**Mirzal, 2014**) A convergent algorithm for orthogonal nonnegative matrix factorization. Journal of Computational and Applied Mathematics. 2014, 260: 149-166. [[DOI](https://doi.org/10.1016/j.cam.2013.09.022)]
