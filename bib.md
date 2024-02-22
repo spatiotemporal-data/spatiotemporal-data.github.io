@@ -31,3 +31,10 @@ layout: default
 - (**Zhang et al., 2019**) Greedy orthogonal pivoting algorithm for non-negative matrix factorization. ICML 2019. [[PDF](https://proceedings.mlr.press/v97/zhang19r/zhang19r.pdf)]
 
 - (**Mirzal, 2014**) A convergent algorithm for orthogonal nonnegative matrix factorization. Journal of Computational and Applied Mathematics. 2014, 260: 149-166. [[DOI](https://doi.org/10.1016/j.cam.2013.09.022)]
+
+
+**Machine Learning Material**
+
+- [Understanding Deep Learning (book)](http://udlbook.com/?trk=public_post-text) [[Linkedin](https://www.linkedin.com/posts/simon-prince-615bb9165_phew-finally-finished-all-68-python-notebook-activity-7130190400266330112-5n_X?utm_source=share&utm_medium=member_ios)]
+
+- [Blog post (Gregory Gundersen)](https://gregorygundersen.com/blog/)
