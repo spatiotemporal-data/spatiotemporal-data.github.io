@@ -18,6 +18,17 @@ layout: default
 
 - (**Greenhill et al., 2024**) Machine learning predicts which rivers, streams, and wetlands the Clean Water Act regulates. Science. 2024, 383: 406-412. [[DOI](https://doi.org/10.1126/science.adi3794)]
 
+- (**Ravuri et al., 2021**) Skilful precipitation nowcasting using deep generative models of radar. Nature. 2021, 597: 672–677. [[DOI](https://doi.org/10.1038/s41586-021-03854-z)]
+
+- (**Bi et al., 2023**) Accurate medium-range global weather forecasting with 3D neural networks. Nature. 2023, 619: 533–538. [[DOI](https://doi.org/10.1038/s41586-023-06185-3)]
+
+- (**Zhang et al., 2023**) Skilful nowcasting of extreme precipitation with NowcastNet. Nature. 2023, 619: 526–532. [[DOI](https://doi.org/10.1038/s41586-023-06184-4)]
+
+- (**Andersson et al., 2021**) Seasonal Arctic sea ice forecasting with probabilistic deep learning. Nature Communications. 2021, 12: 5124. [[DOI](https://doi.org/10.1038/s41467-021-25257-4)]
+
+- (**Mondini et al., 2023**) Deep learning forecast of rainfall-induced shallow landslides. Nature Communications. 2023, 14: 2466. [[DOI](https://doi.org/10.1038/s41467-023-38135-y)]
+
+
 <br>
 
 **Time Series**
