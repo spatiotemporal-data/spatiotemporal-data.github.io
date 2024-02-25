@@ -5,7 +5,7 @@ layout: default
 # Analyzing Millions of Taxi Trips in the City of Chicago
 
 
-[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew), [TNP rideshare trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p), [Divvy bikeshare trips](https://divvybikes.com/system-data), and [E-scooter trips](https://catalog.data.gov/dataset/e-scooter-trips). There is a brief summary of annual trips of these travel modes in the City of Chicago, depending on the data availability.
+[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew), [TNP rideshare trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p), [Divvy bikeshare trips](https://divvybikes.com/system-data), and [E-scooter trips](https://catalog.data.gov/dataset/e-scooter-trips). There is a brief summary of annual trips of these travel modes in the City of Chicago, depending on the data availability. More detailed statistical analysis of taxi and ridehailing usage in Chicago can be found in [this post](https://toddwschneider.com/dashboards/chicago-taxi-ridehailing-data/).
 
 <br>
 
@@ -169,7 +169,7 @@ for i in [1, 2]:
                     legend_kwds = {'shrink': 0.618, 'label': 'Pickup trip count'},
                     vmin = 0, vmax = 1.4e+6, ax = ax)
     elif i == 2:
-        dropoff.plot('dropoff_counts', cmap = 'YlOrRd', legend = True, 
+        dropoff.plot('dropoff_counts', cmap = 'YlOrRd', legend = True,
                      legend_kwds = {'shrink': 0.618, 'label': 'Dropoff trip count'},
                      vmin = 0, vmax = 1.4e+6, ax = ax)
     plt.xticks([])
@@ -258,9 +258,9 @@ In what follows, one can choose some pickup-dropoff pairs to analyze taxi travel
 
 ```python
 # Return hour from datetime column
-data19['hour'] = pd.to_datetime(data19['Trip Start Timestamp'], 
+data19['hour'] = pd.to_datetime(data19['Trip Start Timestamp'],
                                 errors = 'coerce').dt.hour
-data22['hour'] = pd.to_datetime(data22['Trip Start Timestamp'], 
+data22['hour'] = pd.to_datetime(data22['Trip Start Timestamp'],
                                 errors = 'coerce').dt.hour
 ```
 
@@ -323,9 +323,9 @@ s1 = df1.groupby(['hour'])['Trip Seconds'].std().values / 30
 plt.plot(m1, color = 'blue', linewidth = 1.8, label = '2019')
 upper = m1 + s1
 lower = m1 - s1
-x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)), 
+x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)),
                               np.array([24 - 1, 24 - 1])), np.arange(24 - 1, -1, -1))
-y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower), 
+y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower),
                               np.array([lower[-1], upper[-1]])), np.flip(upper))
 plt.fill(x_bound, y_bound, color = 'blue', alpha = 0.05)
 
@@ -335,9 +335,9 @@ s1 = df2.groupby(['hour'])['Trip Seconds'].std().values / 30
 plt.plot(m1, color = 'red', linewidth = 1.8, label = '2022')
 upper = m1 + s1
 lower = m1 - s1
-x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)), 
+x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)),
                               np.array([24 - 1, 24 - 1])), np.arange(24 - 1, -1, -1))
-y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower), 
+y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower),
                               np.array([lower[-1], upper[-1]])), np.flip(upper))
 plt.fill(x_bound, y_bound, color = 'red', alpha = 0.05)
 
@@ -357,9 +357,9 @@ s1 = df1.groupby(['hour'])['speed'].std().values
 plt.plot(m1, color = 'blue', linewidth = 1.8, label = '2019')
 upper = m1 + s1
 lower = m1 - s1
-x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)), 
+x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)),
                               np.array([24 - 1, 24 - 1])), np.arange(24 - 1, -1, -1))
-y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower), 
+y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower),
                               np.array([lower[-1], upper[-1]])), np.flip(upper))
 plt.fill(x_bound, y_bound, color = 'blue', alpha = 0.05)
 
@@ -370,9 +370,9 @@ s1 = df2.groupby(['hour'])['speed'].std().values
 plt.plot(m1, color = 'red', linewidth = 1.8, label = '2022')
 upper = m1 + s1
 lower = m1 - s1
-x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)), 
+x_bound = np.append(np.append(np.append(np.array([0, 0]), np.arange(0, 24)),
                               np.array([24 - 1, 24 - 1])), np.arange(24 - 1, -1, -1))
-y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower), 
+y_bound = np.append(np.append(np.append(np.array([upper[0], lower[0]]), lower),
                               np.array([lower[-1], upper[-1]])), np.flip(upper))
 plt.fill(x_bound, y_bound, color = 'red', alpha = 0.05)
 
