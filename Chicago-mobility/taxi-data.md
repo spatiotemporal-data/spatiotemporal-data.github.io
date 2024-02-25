@@ -24,6 +24,11 @@ layout: default
 
 <br>
 
+Taxi data is available since 1/1/2013, TNP rideshare data since 11/1/2018. As of 2019 there are three licensed TNPs in Chicago: Uber, Lyft, and Via. The TNP dataset does not identify which company provided each trip.
+
+
+<br>
+
 ## Visualizing Boundaries of Community Areas in Chicago
 
 The data can be viewed on the Chicago Data Portal with a web browser, see [77 community areas in Chicago](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6). To use these data, one can export and download the data in the Shapefile format. In this post, we rename four files of the Shapefile data as follows,
