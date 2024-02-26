@@ -24,7 +24,7 @@ layout: default
 
 <br>
 
-Taxi data is available since 1/1/2013, TNP rideshare data since 11/1/2018. As of 2019 there are three licensed TNPs in Chicago: Uber, Lyft, and Via. The TNP dataset does not identify which company provided each trip.
+Taxi data is available since January 2013, TNP rideshare data since November 2018. As of 2019 there are three licensed TNPs in Chicago: Uber, Lyft, and Via. The TNP dataset does not identify which company provided each trip.
 
 
 <br>
