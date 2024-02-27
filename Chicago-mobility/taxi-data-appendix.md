@@ -111,3 +111,63 @@ data.to_csv('rideshare_trip_2022.csv', index = False)
 <br>
 
 - Process the raw data.
+
+<br>
+
+```python
+import pandas as pd
+
+df = pd.read_csv('rideshare_trip_2022.csv')
+df = df.dropna() # Remove rows with NaN
+df = df.drop(df[df['Trip Seconds'] == 0].index)
+df = df.drop(df[df['Trip Miles'] == 0].index)
+df = df.reset_index()
+df = df.drop(['index'], axis = 1)
+
+import numpy as np
+
+print(np.mean(df['Trip Seconds'].values))
+print(np.mean(df['Trip Miles'].values))
+pickup_df = df.groupby(['Pickup Community Area']).size().reset_index(name = 'pickup_counts')
+dropoff_df = df.groupby(['Dropoff Community Area']).size().reset_index(name = 'dropoff_counts')
+```
+
+<br>
+
+- Visualize pickup and dropoff trips.
+
+<br>
+
+```python
+import geopandas as gpd
+import matplotlib.pyplot as plt
+plt.rcParams['font.size'] = 14
+
+chicago = gpd.read_file("Boundaries _Community_Areas/areas.shp")
+pickup_df = df.groupby(['Pickup Community Area']).size().reset_index(name = 'pickup_counts')
+dropoff_df = df.groupby(['Dropoff Community Area']).size().reset_index(name = 'dropoff_counts')
+pickup_df['area_numbe'] = pickup_df['Pickup Community Area']
+dropoff_df['area_numbe'] = dropoff_df['Dropoff Community Area']
+chicago['area_numbe'] = chicago.area_numbe.astype(float)
+
+pickup = chicago.set_index('area_numbe').join(pickup_df.set_index('area_numbe')).reset_index()
+dropoff = chicago.set_index('area_numbe').join(dropoff_df.set_index('area_numbe')).reset_index()
+
+fig = plt.figure(figsize = (14, 8))
+for i in [1, 2]:
+    ax = fig.add_subplot(1, 2, i)
+    if i == 1:
+        pickup.plot('pickup_counts', cmap = 'YlOrRd', legend = True,
+                    legend_kwds = {'shrink': 0.618, 'label': 'Pickup trip count'},
+                    vmin = 0, vmax = 1e+7,
+                    ax = ax)
+    elif i == 2:
+        dropoff.plot('dropoff_counts', cmap = 'YlOrRd', legend = True,
+                     legend_kwds = {'shrink': 0.618, 'label': 'Dropoff trip count'},
+                     vmin = 0, vmax = 1e+7,
+                     ax = ax)
+    plt.xticks([])
+    plt.yticks([])
+plt.show()
+fig.savefig("tnp_pickup_dropoff_trips_chicago_2022.png", bbox_inches = "tight")
+```
