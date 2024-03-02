@@ -157,7 +157,7 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 plt.rcParams['font.size'] = 14
 
-chicago = gpd.read_file("Boundaries _Community_Areas/areas.shp")
+chicago = gpd.read_file("Boundaries_Community_Areas/areas.shp")
 pickup_df = df.groupby(['Pickup Community Area']).size().reset_index(name = 'pickup_counts')
 dropoff_df = df.groupby(['Dropoff Community Area']).size().reset_index(name = 'dropoff_counts')
 pickup_df['area_numbe'] = pickup_df['Pickup Community Area']
