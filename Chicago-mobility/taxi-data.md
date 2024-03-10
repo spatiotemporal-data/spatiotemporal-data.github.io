@@ -210,7 +210,7 @@ Figure 3 shows rideshare pickup and dropoff trips (2022) on 77 community areas i
 
 <br>
 
-For comparison, Figure 4 shows taxi pickup and dropoff trips (2019) on 77 community areas in the City of Chicago. Note that the average trip duration is **915.62 seconds** and the average trip distance is **3.93 miles**.
+For comparison, Figure 4 shows taxi pickup and dropoff trips (2019) on 77 community areas in the City of Chicago. Note that the average trip duration is **915.62 seconds** and the average trip distance is **3.93 miles**. Figure 5 shows rideshare pickup and dropoff trips (2019) on 77 community areas in the City of Chicago. Note that the average trip duration is **987.51 seconds** and the average trip distance is **4.88 miles**.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2019.png" width="600" />
@@ -220,17 +220,26 @@ For comparison, Figure 4 shows taxi pickup and dropoff trips (2019) on 77 commun
 <b>Figure 4.</b> Taxi pickup and dropoff trips (2019) in the City of Chicago, USA. There are 12,484,572 remaining trips after the data processing. See <a href = "https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data-appendix/">the data processing codes</a>.
 </p>
 
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/tnp_pickup_dropoff_trips_chicago_2019.png" width="600" />
+</p>
+
+<p align = "center">
+<b>Figure 5.</b> Rideshare pickup and dropoff trips (2019) in the City of Chicago, USA. There are 96,642,881 remaining trips after the data processing.
+</p>
 
 <br>
 
-In addition, one can analyze the trips of other travel modes in the City of Chicago. Figure 5 shows E-scooter pickup and dropoff trips on 77 community areas in the City of Chicago, see [how to process and visualize E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/). Note that the average trip duration is **913.18 seconds** and the average trip distance is **2448.60 meters**.
+In addition, one can analyze the trips of other travel modes in the City of Chicago. Figure 6 shows E-scooter pickup and dropoff trips on 77 community areas in the City of Chicago, see [how to process and visualize E-scooter trips](https://spatiotemporal-data.github.io/Chicago-mobility/e-scooter/). Note that the average trip duration is **913.18 seconds** and the average trip distance is **2448.60 meters**.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/E_scooter_pickup_dropoff_trips_chicago_2022.png" width="600" />
 </p>
 
 <p align = "center">
-<b>Figure 5.</b> E-scooter pickup and dropoff trips (2022) in the City of Chicago, USA. There are 1,476,028 remaining trips after the data processing.
+<b>Figure 6.</b> E-scooter pickup and dropoff trips (2022) in the City of Chicago, USA. There are 1,476,028 remaining trips after the data processing.
 </p>
 
 <br>
@@ -307,14 +316,14 @@ df2 = df2.drop(df2[df2['Trip Miles'] > 25].index)
 
 <br>
 
-In what follows, we visualize the average travel time and speed from area 8 (i.e., Downtown) to area 76 (i.e., Airport) in both 2019 and 2022. Figure 6 shows average travel time curves and movement speed curves. It is not hard to see the remarkable reduction of average travel time in 2022 when comparing to 2019. The results of average speed demonstrate that the paths/routes from area 8 to area 76 is less congested in 2022 when comparing to 2019.
+In what follows, we visualize the average travel time and speed from area 8 (i.e., Downtown) to area 76 (i.e., Airport) in both 2019 and 2022. Figure 7 shows average travel time curves and movement speed curves. It is not hard to see the remarkable reduction of average travel time in 2022 when comparing to 2019. The results of average speed demonstrate that the paths/routes from area 8 to area 76 is less congested in 2022 when comparing to 2019.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/travel_time_plus_speed_pickup_8_dropoff_76.png" width="650" />
 </p>
 
 <p align = "center">
-<b>Figure 6.</b> Average travel time and speed from area 8 (i.e., Downtown) to area 76 (i.e., Airport) in both 2019 and 2022.
+<b>Figure 7.</b> Average travel time and speed from area 8 (i.e., Downtown) to area 76 (i.e., Airport) in both 2019 and 2022.
 </p>
 
 <br>
@@ -324,7 +333,7 @@ In what follows, we visualize the average travel time and speed from area 8 (i.e
 </p>
 
 <p align = "center">
-<b>Figure 7.</b> Average travel time and speed from area 32 (i.e., Downtown) to area 76 (i.e., Airport) in both 2019 and 2022.
+<b>Figure 8.</b> Average travel time and speed from area 32 (i.e., Downtown) to area 76 (i.e., Airport) in both 2019 and 2022.
 </p>
 
 <br>
