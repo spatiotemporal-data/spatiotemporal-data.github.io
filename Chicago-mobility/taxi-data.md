@@ -210,7 +210,7 @@ Figure 3 shows rideshare pickup and dropoff trips (2022) on 77 community areas i
 
 <br>
 
-For comparison, Figure 4 shows taxi pickup and dropoff trips (2019) on 77 community areas in the City of Chicago. Note that the average trip duration is **915.62 seconds** and the average trip distance is **3.93 miles**. Figure 5 shows rideshare pickup and dropoff trips (2019) on 77 community areas in the City of Chicago. Note that the average trip duration is **987.51 seconds** and the average trip distance is **4.88 miles**.
+For comparison, Figure 4 shows taxi pickup and dropoff trips (2019) on 77 community areas in the City of Chicago. Note that the average trip duration is **915.62 seconds** and the average trip distance is **3.93 miles**. Figure 5 shows rideshare pickup and dropoff trips (2019) in which the average trip duration is **987.51 seconds** and the average trip distance is **4.88 miles**.
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2019.png" width="600" />
