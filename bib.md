@@ -6,7 +6,7 @@ layout: default
 
 <br>
 
-**AI4Science** (knowledge, vision, insight)
+**AI for Science** (knowledge, vision, insight)
 
 - (**Liu et al., 2023**) Topological structure of complex predictions. Nature Machine Intelligence. 2023, 5: 1382-1389. [[DOI](https://doi.org/10.1038/s42256-023-00749-8)]
 
@@ -43,6 +43,12 @@ layout: default
 
 - (**Mirzal, 2014**) A convergent algorithm for orthogonal nonnegative matrix factorization. Journal of Computational and Applied Mathematics. 2014, 260: 149-166. [[DOI](https://doi.org/10.1016/j.cam.2013.09.022)]
 
+
+**Reinforcement Learning**
+
+- [Maximum Entropy Inverse Reinforcement Learning](https://cdn.aaai.org/AAAI/2008/AAAI08-227.pdf). AAAI 2008.
+
+- [Learning Robust Rewards with Adversarial Inverse Reinforcement Learning](https://arxiv.org/abs/1710.11248). arXiv: 1710.11248.
 
 **Machine Learning Material**
 
