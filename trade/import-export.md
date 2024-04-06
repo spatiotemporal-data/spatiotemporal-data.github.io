@@ -24,7 +24,7 @@ Content:
 The WTO Stats provides an open database, please check out [https://stats.wto.org](https://stats.wto.org). For the purpose of analyzing international import/export trade, one should first consider select the following items in the download page:
 
 - `Indicators` -> `International trade statistics` -> `Merchandise trade values` (select all 6 items)
-- `Products/Sectors`: 3 main types (i.e., Agricultural products, fuels and mining products, manufactures) and 17 detailed types
+- `Products/Sectors`: 3 main types (i.e., agricultural products, fuels and mining products, manufactures) and 17 detailed types
 - `Years` (select from 2000 to 2023)
 
 Then, one should apply the selection options and download the `.csv` data file. In this post, we make the import/export trade value data available at this [GitHub repository](https://github.com/xinychen/visual-spatial-data).
