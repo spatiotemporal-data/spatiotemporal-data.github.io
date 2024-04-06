@@ -73,11 +73,21 @@ Next, we connect the trade values with the shapefile for visualization. Figure 1
 
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/global_imports.png" width="500" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/global_imports.png" width="600" />
 </p>
 
 <p align = "center">
 <b>Figure 1.</b> The total merchandise trade values of imports from 2000 to 2022.
+</p>
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/global_exports.png" width="600" />
+</p>
+
+<p align = "center">
+<b>Figure 2.</b> The total merchandise trade values of exports from 2000 to 2022.
 </p>
 
 <br>
