@@ -19,6 +19,8 @@ layout: default
 
 ## WTO Stats Data
 
+### Data Preparation
+
 The WTO Stats provides an open database, please check out [https://stats.wto.org](https://stats.wto.org). For the purpose of analyzing international import/export trade, one should first consider select the following items in the download page:
 
 - `Indicators` -> `International trade statistics` -> `Merchandise trade values` (select all 6 items)
@@ -27,27 +29,10 @@ The WTO Stats provides an open database, please check out [https://stats.wto.org
 
 Then, one should apply the selection options and download the `.csv` data file. In this post, we make the import/export trade value data available at this [GitHub repository](https://github.com/xinychen/visual-spatial-data).
 
-<br>
-
-```python
-import geopandas as gpd
-import matplotlib.pyplot as plt
-
-fig = plt.figure(figsize = (14, 8))
-ax = fig.subplots(1)
-shape = gpd.read_file("Boundaries _Community_Areas/areas.shp")
-shape.plot(cmap = 'RdYlBu_r', ax = ax)
-plt.xticks([])
-plt.yticks([])
-for _, spine in ax.spines.items():
-    spine.set_visible(False)
-plt.show()
-fig.savefig("boundaries_community_areas_chicago.png", bbox_inches = "tight")
-```
-
-<br>
-
 In addition, to visualize results, one can download the countries shapefiles and boundaries at [wri/wri-bounds](https://github.com/wri/wri-bounds) on GitHub.
+
+### Total Mechandise Trade Values
+
 
 
 Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
