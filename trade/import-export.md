@@ -50,6 +50,9 @@ fig.savefig("boundaries_community_areas_chicago.png", bbox_inches = "tight")
 
 <br>
 
+In addition, to visualize results, one can download the countries shapefiles and boundaries at [wri/wri-bounds](https://github.com/wri/wri-bounds) on GitHub.
+
+
 Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
 
 <p align="center">
