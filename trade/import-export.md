@@ -38,7 +38,7 @@ In the dataset, one can use the `pandas` package to process the raw data. There 
 - Replace the column name `Reporting Economy ISO3A Code` by `iso_a3`, making it consistent with the `.shp` file
 - Remove the `nan` values in the column `iso_a3`
 - Select `Total merchandise` (the total trades over all product/sector types)
-- Create a 216-by-23 trade matrix with `numpy`, including trade values of 216 countires/regions over the past 23 years from 2000 to 2022
+- Create a 216-by-23 trade matrix with the `numpy` package, including trade values of 216 countires/regions over the past 23 years from 2000 to 2022
 
 <br>
 
@@ -69,16 +69,44 @@ for n in range(df.shape[0]):
 
 <br>
 
+Next, we connect the trade values with the shapefile for visualization. Figure 1 shows the
 
-Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
+
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/boundaries_community_areas_chicago.png" width="300" />
 </p>
 
 <p align = "center">
-<b>Figure 1.</b> Boundaries of community areas in the City of Chicago, USA.
+<b>Figure 1.</b> The total merchandise trade values of imports from 2000 to 2022.
 </p>
+
+<br>
+
+For reproducing Figure 1, please check out the following codes.
+
+<br>
+
+```python
+import geopandas as gpd
+import matplotlib.pyplot as plt
+
+df['Value'] = np.sum(mat, axis = 1)
+shape = gpd.read_file("cn_countries.shp")
+trade = shape.set_index('iso_a3').join(df.set_index('iso_a3')).reset_index()
+
+fig = plt.figure(figsize = (10, 3))
+ax = fig.subplots(1)
+trade.plot('Value', cmap = 'Reds', legend = True,
+           legend_kwds = {'shrink': 0.5,
+                          'label': 'Imports (Million US dollar)'}, ax = ax)
+plt.xticks([])
+plt.yticks([])
+for _, spine in ax.spines.items():
+    spine.set_visible(False)
+plt.show()
+fig.savefig("global_imports.png", bbox_inches = "tight")
+```
 
 <br>
 
