@@ -10,7 +10,7 @@ layout: default
 **Content:**
 
 - Data download and preprocessing.
-- Monthly import/export trade values from 2000 to 2023.
+- Monthly import/export trade values from 2000 to 2022.
 - Sptial heatmap for international trade.
 
 
@@ -24,7 +24,7 @@ The WTO Stats provides an open database, please check out [https://stats.wto.org
 
 - `Indicators` -> `International trade statistics` -> `Merchandise trade values` (select all 6 items)
 - `Products/Sectors`: 3 main types (i.e., agricultural products, fuels and mining products, manufactures) and 17 detailed types
-- `Years` (select from 2000 to 2023)
+- `Years` (select from 2000 to 2022)
 
 Then, one should apply the selection options and download the `.csv` data file. In this post, we make the import/export trade value data available at this [GitHub repository](https://github.com/xinychen/visual-spatial-data).
 
@@ -32,7 +32,42 @@ In addition, to visualize results, one can download the countries shapefiles and
 
 ### Total Mechandise Trade Values (Annual)
 
+In the dataset, one can use the `pandas` package to process the raw data. There are some steps to follow:
 
+- Open the data with `pd.read_csv()` (set `sep` and `encoding`)
+- Replace the column name `Reporting Economy ISO3A Code` by `iso_a3`, making it consistent with the `.shp` file
+- Remove the `nan` values in the column `iso_a3`
+- Select `Total merchandise` (the total trades over all product/sector types)
+- Create a 216-by-23 trade matrix with `numpy`, including trade values of 216 countires/regions over the past 23 years from 2000 to 2022
+
+<br>
+
+```python
+import pandas as pd
+import numpy as np
+
+data = pd.read_csv('WtoData.csv', sep = ',', encoding = 'latin-1')
+data.rename(columns = {"Reporting Economy ISO3A Code": "iso_a3"}, inplace = True)
+data = data[data['iso_a3'].notna()]
+pd.unique(data['Indicator'])
+data = data[data['Indicator'] == 'Merchandise imports by product group \x96 annual']
+data = data[data['Product/Sector'] == 'Total merchandise']
+
+df = data.groupby('iso_a3').sum('Value').reset_index()
+df = df.drop(['Year'], axis = 1)
+
+year = 23
+mat = np.zeros((df.shape[0], year))
+for n in range(df.shape[0]):
+    for t in range(year):
+        mat[n, t] = data[(data['iso_a3'] == df['iso_a3'][n])
+                          & (data['Year'] == 2000 + t)].Value.values.sum()
+
+## Check out the trade values of each country/region
+# data[data['iso_a3'] == df['iso_a3'][n]].sort_values(by = 'Year')
+```
+
+<br>
 
 
 Figure 1 shows the boundaries of 77 community areas in the City of Chicago. Note that we can set the `cmap` as `RdYlBu_r` or `YlOrRd_r`.
