@@ -73,7 +73,7 @@ Next, we connect the trade values with the shapefile for visualization. Figure 1
 
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/global_imports.png" width="650" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/global_imports.png" width="700" />
 </p>
 
 <p align = "center">
@@ -83,7 +83,7 @@ Next, we connect the trade values with the shapefile for visualization. Figure 1
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/global_exports.png" width="650" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/global_exports.png" width="700" />
 </p>
 
 <p align = "center">
