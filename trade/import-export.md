@@ -29,7 +29,7 @@ The WTO Stats provides an open database, please check out [https://stats.wto.org
 
 Then, one should apply the selection options and download the `.csv` data file. In this post, we make the import/export trade value data available at this [GitHub repository](https://github.com/xinychen/visual-spatial-data).
 
-In addition, to visualize results, one can download the countries shapefiles and boundaries at [wri/wri-bounds](https://github.com/wri/wri-bounds) on GitHub.
+In addition, to visualize results, one can download the countries shapefiles and boundaries at [wri/wri-bounds](https://github.com/wri/wri-bounds) on GitHub (or see this [GitHub repository](https://github.com/xinychen/visual-spatial-data/tree/main/international-trade/cn_countries), including `.shp`).
 
 ### Total Mechandise Trade Values (Annual)
 
