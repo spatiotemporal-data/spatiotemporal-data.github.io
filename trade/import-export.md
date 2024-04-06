@@ -4,7 +4,6 @@ layout: default
 
 # Utilizing International Import and Export Trade Data from WTO Stats
 
-<br>
 
 [The WTO Stats data portal](https://data.cityofchicago.org/) contains statistical indicators related to WTO issues. Available time series cover merchandise trade and trade in services statistics (annual, quarterly and monthly), market access indicators (bound, applied & preferential tariffs), non-tariff information as well as other indicators. In this post, we consider the merchandise trade values, including annual, quarterly, and monthly import/export trade data in which the aunnual data has 18 product/sector types.
 
