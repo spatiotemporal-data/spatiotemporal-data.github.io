@@ -74,7 +74,7 @@ Next, we connect the trade values with the shapefile for visualization. Figure 1
 
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/boundaries_community_areas_chicago.png" width="300" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/global_imports.png" width="300" />
 </p>
 
 <p align = "center">
