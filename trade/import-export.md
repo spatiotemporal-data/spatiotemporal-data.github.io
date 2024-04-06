@@ -31,7 +31,8 @@ Then, one should apply the selection options and download the `.csv` data file. 
 
 In addition, to visualize results, one can download the countries shapefiles and boundaries at [wri/wri-bounds](https://github.com/wri/wri-bounds) on GitHub.
 
-### Total Mechandise Trade Values
+### Total Mechandise Trade Values (Annual)
+
 
 
 
