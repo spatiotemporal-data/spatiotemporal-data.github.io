@@ -49,7 +49,7 @@ import numpy as np
 data = pd.read_csv('WtoData.csv', sep = ',', encoding = 'latin-1')
 data.rename(columns = {"Reporting Economy ISO3A Code": "iso_a3"}, inplace = True)
 data = data[data['iso_a3'].notna()]
-pd.unique(data['Indicator'])
+data = data.drop(data[data['iso_a3'] == 'EEC'].index) # Remove EEC
 data = data[data['Indicator'] == 'Merchandise imports by product group \x96 annual']
 data = data[data['Product/Sector'] == 'Total merchandise']
 
