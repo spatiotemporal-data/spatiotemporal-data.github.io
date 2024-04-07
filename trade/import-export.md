@@ -69,7 +69,7 @@ for n in range(df.shape[0]):
 
 <br>
 
-Next, we connect the trade values with the shapefile for visualization. Figure 1 shows the total merchandise trade values of imports reported by 216 countries/regions over the past 23 years from 2000 to 2022.
+Next, we connect the trade values with the shapefile for visualization. Figure 1 shows the total merchandise trade values of imports reported by 215 countries/regions over the past 23 years from 2000 to 2022.
 
 
 <p align="center">
