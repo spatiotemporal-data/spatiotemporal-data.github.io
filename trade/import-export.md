@@ -133,6 +133,26 @@ In the dataset, we hope to analyze the total mechandise trade values changing ov
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/import_export_usa.png" width="450" />
+</p>
+
+<p align = "center">
+<b>Figure 4.</b> The total merchandise trade time series of USA imports from 2000 to 2022.
+</p>
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/import_export_percentage_usa.png" width="450" />
+</p>
+
+<p align = "center">
+<b>Figure 5.</b> The total merchandise trade percentage (in the global trade) time series of USA imports from 2000 to 2022.
+</p>
+
+<br>
+
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 6, 2024.)</p>
