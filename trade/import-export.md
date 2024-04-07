@@ -153,6 +153,26 @@ In the dataset, we hope to analyze the total mechandise trade values changing ov
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/import_export_chn.png" width="450" />
+</p>
+
+<p align = "center">
+<b>Figure 6.</b> The total merchandise trade time series of China imports from 2000 to 2022.
+</p>
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/import_export_percentage_chn.png" width="450" />
+</p>
+
+<p align = "center">
+<b>Figure 7.</b> The total merchandise trade percentage (in the global trade) time series of China imports from 2000 to 2022.
+</p>
+
+<br>
+
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 6, 2024.)</p>
