@@ -123,31 +123,15 @@ fig.savefig("global_imports.png", bbox_inches = "tight")
 
 In the dataset, we hope to analyze the total mechandise trade values changing over time.
 
-<br>
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/global_exports.png" width="450" />
+</p>
 
-```python
-import matplotlib.pyplot as plt
-
-fig = plt.figure(figsize = (6, 2.5))
-ax = fig.add_subplot(1, 1, 1)
-plt.plot(np.sum(mat, axis = 0), color = 'red', linewidth = 1.8) # Imports
-plt.plot(np.sum(mat1, axis = 0), color = 'blue', linewidth = 1.8) # Exports
-plt.xticks(np.arange(0, 23, 1))
-plt.xlabel('Year')
-plt.ylabel('Trade values (Million US dollar)')
-plt.grid(axis = 'both', linestyle='dashed', linewidth = 0.1, color = 'gray')
-ax.tick_params(direction = "in")
-ax.set_xlim([-0.5, 22.5])
-ticks_data = np.arange(2000, 2023, 1)
-plt.xticks(np.arange(23), ticks_data, rotation = 90)
-plt.legend(['Imports', 'Exports'])
-plt.show()
-fig.savefig("import_export_world.png", bbox_inches = "tight")
-```
+<p align = "center">
+<b>Figure 2.</b> The total merchandise trade values of exports from 2000 to 2022.
+</p>
 
 <br>
-
-The 
 
 
 <br>
