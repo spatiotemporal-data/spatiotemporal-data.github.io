@@ -124,11 +124,11 @@ fig.savefig("global_imports.png", bbox_inches = "tight")
 In the dataset, we hope to analyze the total mechandise trade values changing over time.
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/global_exports.png" width="450" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/import_export_world.png" width="450" />
 </p>
 
 <p align = "center">
-<b>Figure 2.</b> The total merchandise trade values of exports from 2000 to 2022.
+<b>Figure 3.</b> The total merchandise trade time series of imports from 2000 to 2022.
 </p>
 
 <br>
