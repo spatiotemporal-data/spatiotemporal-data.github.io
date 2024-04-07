@@ -121,7 +121,7 @@ fig.savefig("global_imports.png", bbox_inches = "tight")
 
 ## International Trade Time Series
 
-In the dataset, we hope to analyze the total mechandise trade values changing over time. Figure 3 shows the whole trend of the international trades from 2000 to 2022, experiencing three periods with significant trade reduction, e.g., 2008-2009, 2014-2016, and 2019-2020. Figure 4-6 present the total merchandise trades of the USA and China, respectively.
+In the dataset, we hope to analyze the total mechandise trade values changing over time. Figure 3 shows the whole trend of the international trades from 2000 to 2022, experiencing three periods with significant trade reduction, e.g., 2008-2009, 2014-2016, and 2019-2020. Figure 4-6 present the total merchandise trades of the USA and China, respectively. Note that these figures can be reproduced by following [these codes](https://spatiotemporal-data.github.io/trade/import-export-codes/).
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/import_export_world.png" width="450" />
