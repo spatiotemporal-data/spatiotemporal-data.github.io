@@ -38,7 +38,7 @@ In the dataset, one can use the `pandas` package to process the raw data. There 
 - Replace the column name `Reporting Economy ISO3A Code` by `iso_a3`, making it consistent with the `.shp` file
 - Remove the `nan` values in the column `iso_a3`
 - Select `Total merchandise` (the total trades over all product/sector types)
-- Create a 216-by-23 trade matrix with the `numpy` package, including trade values of 216 countires/regions over the past 23 years from 2000 to 2022
+- Create a 215-by-23 trade matrix with the `numpy` package, including trade values of 215 countires/regions over the past 23 years from 2000 to 2022
 
 <br>
 
