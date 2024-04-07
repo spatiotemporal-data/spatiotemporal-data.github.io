@@ -121,7 +121,7 @@ fig.savefig("global_imports.png", bbox_inches = "tight")
 
 ## International Trade Time Series
 
-In the dataset, we hope to analyze the total mechandise trade values changing over time.
+In the dataset, we hope to analyze the total mechandise trade values changing over time. Figure 3 shows 
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/import_export_world.png" width="450" />
