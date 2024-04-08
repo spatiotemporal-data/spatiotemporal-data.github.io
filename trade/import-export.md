@@ -238,6 +238,40 @@ As one has such tensor (e.g., `import_tensor.npz` as a compressed array), it is 
 
 <br>
 
+## Big Trade Data
+
+<br>
+
+```python
+import pandas as pd
+
+df = pd.read_csv("trade_i_baci_a_92.tsv.bz2", compression="bz2", sep='\t',
+                 chunksize=1e+6)
+data = df.get_chunk(1e+6)
+data
+```
+
+<br>
+
+```python
+import pandas as pd
+
+data = pd.DataFrame()
+chunksize = 10 ** 6
+for chunk in pd.read_csv("trade_i_baci_a_92.tsv.bz2", compression = "bz2",
+                         sep = '\t', chunksize = chunksize):
+    df = pd.DataFrame()
+    df['exporter_id'] = chunk['exporter_id'] # Exporter
+    df['importer_id'] = chunk['importer_id'] # Importer
+    df['hs_code'] = chunk['hs_code'] # Product
+    df['year'] = chunk['year'] # Year
+    df['value'] = chunk['value'] # Trade value
+    data = data.append(df)
+    del df
+```
+
+<br>
+
 ## Concerns?
 
 Leaving some concerns for advancing this direction:
