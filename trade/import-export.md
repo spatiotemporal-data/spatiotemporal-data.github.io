@@ -173,6 +173,21 @@ In the dataset, we hope to analyze the total mechandise trade values changing ov
 
 <br>
 
+## Trade Tensor
+
+For the annual trade data, one additional dimension is the product/sector type. Despite the total merchandise, we have 17 product types listed as follows,
+
+- Agricultural products
+  - Food
+- Fuels and mining products
+  - Fuels
+- Manufactures
+  - Iron and steel
+  - Chemicals
+    - Pharmaceuticals
+  - Machinery and transport equipment
+
+
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 6, 2024.)</p>
