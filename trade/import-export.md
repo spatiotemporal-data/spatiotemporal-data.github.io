@@ -10,7 +10,7 @@ layout: default
 **Content:**
 
 - Download data from the WTO Stats and preprocessing these data in Python (e.g., `pandas` and `numpy`).
-- Spatial heatmaps for visualizing international import and export trade values.
+- Visualizing international import and export trade values with `geopandas`.
 - Monthly import/export trade values from 2000 to 2022.
 
 
