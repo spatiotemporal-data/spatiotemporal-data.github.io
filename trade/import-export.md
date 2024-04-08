@@ -186,7 +186,14 @@ For the annual trade data, one additional dimension is the product/sector type. 
   - Chemicals
     - Pharmaceuticals
   - Machinery and transport equipment
-
+    - Office and telecom equipment
+      - Electronic data processing and office equipment
+      - Telecommunications equipment
+      - Integrated circuits and electronic components
+    - Transport equipment
+      - Automotive products
+  - Textiles
+  - Clothing
 
 
 <br>
