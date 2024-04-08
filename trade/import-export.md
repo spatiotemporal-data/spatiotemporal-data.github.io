@@ -9,9 +9,9 @@ layout: default
 
 **Content:**
 
-- Downloading data from the WTO Stats and preprocessing these data in Python (e.g., `pandas` and `numpy`).
+- Downloading annual data from the WTO Stats and preprocessing these data in Python (e.g., `pandas` and `numpy`).
 - Visualizing international import and export trade values with `geopandas`.
-- Monthly import/export trade values from 2000 to 2022.
+- Representing the international import and export trade values as time series.
 
 
 <br>
