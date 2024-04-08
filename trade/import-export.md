@@ -234,7 +234,16 @@ np.savez_compressed('import_tensor.npz', tensor)
 
 <br>
 
-As one has such tensor (e.g., `import_tensor.npz` as a compressed array), blabla...
+As one has such tensor (e.g., `import_tensor.npz` as a compressed array), it is possible to identify the spatial modes and product modes.
+
+<br>
+
+## Concerns?
+
+Leaving some concerns for advancing this direction:
+
+- Is the international trade a dynamical system? It seems that the international trade does not show very strong temporal correlations with such an annual time resolution. If the assumption of dynamical systems does not hold in the international trade, can we find an alternative framework instead of time-varying autoregression?
+- 
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 6, 2024.)</p>
