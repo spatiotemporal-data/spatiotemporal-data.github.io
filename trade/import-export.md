@@ -175,7 +175,7 @@ In the dataset, we hope to analyze the total mechandise trade values changing ov
 
 ## Trade Tensor
 
-For the annual trade data, one additional dimension is the product/sector type. Despite the total merchandise, we have 17 product types listed as follows,
+For the annual trade data, one additional dimension is the product/sector type. Despite the total merchandise, we have **17 product types** listed as follows,
 
 - Agricultural products
   - Food
