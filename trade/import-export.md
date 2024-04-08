@@ -12,7 +12,7 @@ layout: default
 - Downloading annual data from the WTO Stats and preprocessing these data in Python (e.g., `pandas` and `numpy`).
 - Visualizing international import and export trade values with `geopandas`.
 - Representing the international import and export trade values as time series.
-
+- Introducing tensor structure for representing the trade data with (economy, product, year) dimensions
 
 <br>
 
@@ -229,11 +229,12 @@ for n in range(df.shape[0]):
             tensor[n, p, t] = data[(data['iso_a3'] == df['iso_a3'][n])
                                     & (data['Product/Sector'] == prod[p])
                                     & (data['Year'] == 2000 + t)].Value.values.sum()
+np.savez_compressed('import_tensor.npz', tensor)
 ```
 
 <br>
 
-As one has such tensor, blabla...
+As one has such tensor (e.g., `import_tensor.npz` as a compressed array), blabla...
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 6, 2024.)</p>
