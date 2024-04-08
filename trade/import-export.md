@@ -195,6 +195,45 @@ For the annual trade data, one additional dimension is the product/sector type. 
   - Textiles
   - Clothing
 
+One can create a tensor for representing trade values of 215 countries/regions, 17 products, and 23 years (i.e., from 2000 to 2022).
+
+<br>
+
+```python
+import pandas as pd
+import numpy as np
+
+data = pd.read_csv('WtoData.csv', sep = ',', encoding = 'latin-1')
+data.rename(columns = {'Reporting Economy ISO3A Code': 'iso_a3'}, inplace = True)
+data = data[data['iso_a3'].notna()]
+data = data.drop(data[data['iso_a3'] == 'EEC'].index)
+data = data[data['Indicator'] == 'Merchandise imports by product group \x96 annual']
+
+prod = np.array(['Agricultural products', 'Food', 'Fuels and mining products',
+                 'Fuels', 'Manufactures', 'Iron and steel', 'Chemicals',
+                 'Pharmaceuticals', 'Machinery and transport equipment',
+                 'Office and telecom equipment',
+                 'Electronic data processing and office equipment',
+                 'Telecommunications equipment',
+                 'Integrated circuits and electronic components',
+                 'Transport equipment', 'Automotive products',
+                 'Textiles', 'Clothing'])
+df = data.groupby('iso_a3').sum('Value').reset_index()
+df = df.drop(['Year'], axis = 1)
+
+year = 23
+tensor = np.zeros((df.shape[0], prod.shape[0], year))
+for n in range(df.shape[0]):
+    for p in range(prod.shape[0]):
+        for t in range(year):
+            tensor[n, p, t] = data[(data['iso_a3'] == df['iso_a3'][n])
+                                    & (data['Product/Sector'] == prod[p])
+                                    & (data['Year'] == 2000 + t)].Value.values.sum()
+```
+
+<br>
+
+As one has such tensor, blabla...
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 6, 2024.)</p>
