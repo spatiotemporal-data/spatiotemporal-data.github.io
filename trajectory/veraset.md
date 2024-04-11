@@ -173,6 +173,12 @@ As shown in Figure 4 and 5, the time resolution curves show some "outliers" whic
 
 <br>
 
+**Other Stuff to Connect**
+
+1. Collect POI data from e.g. Google maps or other platforms.
+
+<br>
+
 ## Appendix
 
 For reproducing Figure 1, please use the following Python codes.
