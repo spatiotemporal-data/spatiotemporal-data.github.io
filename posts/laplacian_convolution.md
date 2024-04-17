@@ -91,8 +91,11 @@ def LCR(y_true, y, lmbda, gamma, tau, maxiter = 50):
     return inv_flip_vec(x)
 ```
 
+<br>
+
 Some simple examples on [this dataset](https://github.com/xinychen/transdim/tree/master/datasets/Portland-data-set).
 
+<br>
 
 ```python
 import numpy as np
