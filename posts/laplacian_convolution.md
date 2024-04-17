@@ -17,7 +17,17 @@ Content:
 
 <br>
 
+## Python Implementation
 
+We implement the LCR model with `numpy`...
+
+<br>
+
+```python
+import numpy as np
+
+
+```
 
 
 - (**Stock & Watson**) Dynamic factor models, factor-augmented vector autoregressions, and structural vector autoregressions in macroeconomics. 2016.
