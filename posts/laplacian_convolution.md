@@ -91,6 +91,62 @@ def LCR(y_true, y, lmbda, gamma, tau, maxiter = 50):
     return inv_flip_vec(x)
 ```
 
+```python
+import numpy as np
+np.random.seed(1)
+import time
+
+missing_rate = 0.1
+print('Missing rate = {}'.format(missing_rate))
+
+dense_mat = np.load('speed.npy')
+d = 3
+vec = dense_mat[0, : 96 * 4]
+dense_vec = dense_mat[0, : 96 * d]
+T = dense_vec.shape[0]
+sparse_vec = dense_vec * np.round(np.random.rand(T) + 0.5 - missing_rate)
+
+dense_vec1 = np.append(dense_vec, np.zeros(96))
+sparse_vec1 = np.append(sparse_vec, np.zeros(96))
+T = dense_vec1.shape[0]
+
+import time
+start = time.time()
+lmbda = 1e-2 * T
+gamma = 5 * lmbda
+tau = 2
+maxiter = 100
+x = LCR(dense_vec1, sparse_vec1, lmbda, gamma, tau, maxiter)
+end = time.time()
+print('Running time: %d seconds.'%(end - start))
+d = 4
+
+import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 13})
+
+fig = plt.figure(figsize = (7.5, 2.2))
+ax = fig.add_subplot(111)
+plt.plot(vec[: 96 * d], 'dodgerblue', linewidth = 1)
+plt.plot(np.arange(0, 96 * d), sparse_vec1[: 96 * d], 'o',
+         markeredgecolor = 'darkblue', alpha = missing_rate,
+         markerfacecolor = 'deepskyblue', markersize = 10)
+plt.plot(x[: 96 * d], 'red', linewidth = 4)
+plt.xlabel('Time')
+plt.ylabel('Speed (mph)')
+plt.xlim([0, 96 * d])
+plt.ylim([54, 65])
+plt.xticks(np.arange(0, 96 * d + 1, 24))
+plt.yticks(np.arange(54, 66, 2))
+plt.grid(linestyle = '-.', linewidth = 0.5)
+ax.tick_params(direction = 'in')
+
+plt.savefig('speeds_{}.pdf'.format(round(missing_rate * 100)),
+            bbox_inches = 'tight')
+plt.show()
+
+```
+
+The data is available at [https://github.com/xinychen/ConvImputation/tree/main/datasets/Portland-data-set](https://github.com/xinychen/ConvImputation/tree/main/datasets/Portland-data-set).
 
 
 <br>
