@@ -26,7 +26,69 @@ We implement the LCR model with `numpy`...
 ```python
 import numpy as np
 
+def compute_mape(var, var_hat):
+    return np.sum(np.abs(var - var_hat) / var) / var.shape[0]
 
+def compute_rmse(var, var_hat):
+    return np.sqrt(np.sum((var - var_hat) ** 2) / var.shape[0])
+
+def laplacian(n, tau):
+    ell = np.zeros(n)
+    ell[0] = 2 * tau
+    for k in range(tau):
+        ell[k + 1] = -1
+        ell[-k - 1] = -1
+    return ell
+
+def prox(z, w, lmbda, denominator):
+    T = z.shape[0]
+    temp1 = np.fft.fft(lmbda * z - w) / denominator
+    temp2 = 1 - T / (denominator * np.abs(temp1))
+    temp2[temp2 <= 0] = 0
+    return np.fft.ifft(temp1 * temp2).real
+
+def update_z(y_train, pos_train, x, w, lmbda, eta):
+    z = x + w / lmbda
+    z[pos_train] = (lmbda / (lmbda + eta) * z[pos_train]
+                    + eta / (lmbda + eta) * y_train)
+    return z
+
+def update_w(x, z, w, lmbda):
+    return w + lmbda * (x - z)
+
+def flip_vec(x):
+    return np.append(x, np.flip(x))
+
+def inv_flip_vec(vec):
+    dim = vec.shape[0]
+    T = int(dim / 2)
+    return (vec[: T] + np.flip(vec[T :])) / 2
+
+def LCR(y_true, y, lmbda, gamma, tau, maxiter = 50):
+    eta = 100 * lmbda
+    data_true = flip_vec(y_true)
+    data = flip_vec(y)
+    T = data.shape
+    pos_train = np.where(data != 0)
+    data_train = data[pos_train]
+    pos_test = np.where((y_true != 0) & (y == 0))
+    y_test = y_true[pos_test]
+    z = data.copy()
+    w = data.copy()
+    ell = np.fft.fft(laplacian(T, tau))
+    denominator = lmbda + gamma * np.abs(ell) ** 2
+    del y_true, y
+    show_iter = 100
+    for it in range(maxiter):
+        x = prox(z, w, lmbda, denominator)
+        z = update_z(data_train, pos_train, x, w, lmbda, eta)
+        w = update_w(x, z, w, lmbda)
+        if (it + 1) % show_iter == 0:
+            print(it + 1)
+            print(compute_mape(y_test, inv_flip_vec(x)[pos_test]))
+            print(compute_rmse(y_test, inv_flip_vec(x)[pos_test]))
+            print()
+    return inv_flip_vec(x)
 ```
 
 
