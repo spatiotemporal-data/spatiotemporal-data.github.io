@@ -91,6 +91,9 @@ def LCR(y_true, y, lmbda, gamma, tau, maxiter = 50):
     return inv_flip_vec(x)
 ```
 
+Some simple examples on [this dataset](https://github.com/xinychen/transdim/tree/master/datasets/Portland-data-set).
+
+
 ```python
 import numpy as np
 np.random.seed(1)
@@ -146,7 +149,6 @@ plt.show()
 
 ```
 
-The data is available at [https://github.com/xinychen/ConvImputation/tree/main/datasets/Portland-data-set](https://github.com/xinychen/ConvImputation/tree/main/datasets/Portland-data-set).
 
 
 <br>
