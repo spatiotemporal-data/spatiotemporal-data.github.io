@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Laplacian Convolutional Representation for Traffic Time Series Imputation
+# Laplacian Convolutional Representation
 
 <br>
 
