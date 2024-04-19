@@ -152,6 +152,49 @@ plt.show()
 
 ```
 
+Example: Next-day passenger flow prediction
+
+<br>
+
+```python
+import numpy as np
+np.random.seed(1)
+import time
+
+dense_mat = np.load('sept_15min_occupancy_dense_mat.npy')
+d = 27
+vec = dense_mat[0, : 96 * (d + 1)]
+dense_vec = dense_mat[0, : 96 * d]
+
+dense_vec1 = np.append(dense_vec, np.zeros(96))
+sparse_vec1 = np.append(dense_vec, np.zeros(96))
+T = dense_vec1.shape[0]
+
+import time
+start = time.time()
+lmbda = 1e-2 * T
+gamma = 5 * lmbda
+tau = 2
+maxiter = 100
+x = LCR(dense_vec1, sparse_vec1, lmbda, gamma, tau, maxiter)
+end = time.time()
+print('Running time: %d seconds.'%(end - start))
+
+import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 13})
+
+fig = plt.figure(figsize = (7.5, 2.2))
+ax = fig.add_subplot(111)
+plt.plot(vec[: 96 * (d + 1)], 'dodgerblue', linewidth = 1)
+plt.plot(x[: 96 * (d + 1)], 'red', linewidth = 2)
+plt.xlabel('Time')
+plt.ylabel('Speed (mph)')
+plt.xlim([96 * (d - 3), 96 * (d + 1)])
+plt.grid(linestyle = '-.', linewidth = 0.5)
+ax.tick_params(direction = 'in')
+
+plt.show()
+```
 
 
 <br>
