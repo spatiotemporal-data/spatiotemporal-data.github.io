@@ -12,7 +12,7 @@ layout: default
 - Downloading annual data from the WTO Stats and preprocessing these data in Python (e.g., `pandas` and `numpy`).
 - Visualizing international import and export trade values with `geopandas`.
 - Representing the international import and export trade values as time series.
-- Introducing tensor structure for representing the trade data with (economy, product, year) dimensions.
+- Introducing tensor structure for representing the trade (quantity) data with (economy, product, year) dimensions.
 
 <br>
 
