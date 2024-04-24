@@ -6,7 +6,7 @@ layout: default
 
 ### April 23, 2024 (Dingyi Zhuang)
 
-In the past decades, machine learning acted as an important data-driven computing paradigm for learning from data. However, real-world data usually demonstrate complicated data behaviors (e.g., uncertainty) or underlying patterns. In this study, we hope to connect machine learning with real-world data problems in transport demand modeling and in the meanwhile highlight the importance of uncertainty quantification in the prediction task. There are three critical challenges as proposed:
+In the past decades, machine learning acted as an important data-driven computing paradigm for learning from data. However, real-world data usually demonstrate complicated data behaviors (e.g., uncertainty) and underlying patterns (e.g., biases in the collection process). In this study, we hope to connect machine learning with real-world data problems in transport demand modeling and in the meanwhile highlight the importance of uncertainty quantification in the prediction task. There are three critical challenges as proposed:
 
 - Robustness: Solving the unexpected data variation that produced by special events or extreme cases.
 - Reliability: Handling the the model's generalization ability to different conditions.
