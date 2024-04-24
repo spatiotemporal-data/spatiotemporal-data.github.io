@@ -19,7 +19,7 @@ In terms of fairness, one meaningful task is how to reduce data and model biases
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/fairness_explained.png" alt="drawing" width="500">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/fairness_explained.png" alt="drawing" width="600">
 </p>
 
 <p align="center"><b>Figure 1</b>: Illustration of fairness modeling in machine learning with the dataset <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>. The dataset is splitted into <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> subsets.</p>
