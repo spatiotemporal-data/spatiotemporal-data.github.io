@@ -24,7 +24,7 @@ In terms of fairness, one meaningful task is how to reduce data and model biases
 
 <br>
 
-References:
+**References**
 
 - Curtis Northcutt, Lu Jiang, Isaac Chuang (2021). [Confident Learning: Estimating Uncertainty in Dataset Labels](https://doi.org/10.1613/jair.1.12125). Journal of Artificial Intelligence Research, 70: 1373-1411.
 
