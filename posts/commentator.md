@@ -22,7 +22,11 @@ In terms of fairness, one meaningful task is how to reduce data and model biases
 
 <p align="center"><b>Figure 1</b>: Illustration of fairness modeling in machine learning with the dataset <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>. The dataset is grouped into <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> subsets.</p>
 
-
 <br>
+
+References:
+
+- Curtis Northcutt, Lu Jiang, Isaac Chuang (2021). [Confident Learning: Estimating Uncertainty in Dataset Labels](https://doi.org/10.1613/jair.1.12125). Journal of Artificial Intelligence Research, 70: 1373-1411.
+
 
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 24, 2024.)</p>
