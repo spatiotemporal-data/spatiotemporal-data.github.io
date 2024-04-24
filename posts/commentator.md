@@ -14,7 +14,7 @@ In the past decades, machine learning acted as an important data-driven computin
 
 Due to the randomness of transport demand data, uncertainty quantification is of great significance in the deep learning based prediction methods, even not mentioning the possible improvement of prediction accuracy. Introducing probabilistic assumptions when modeling the transport demand allows one to produce both point estimates and interval estimates. One recent demand prediction model is the probabilistic spatiotemporal graph neural network (Prob STGNN, see [Zhuang et al.'22](https://dl.acm.org/doi/pdf/10.1145/3534678.3539093)).
 
-In terms of fairness, one meaningful task is how to reduce data and model biases in our machine learning algorithms. As shown in Figure 1, characterizing the fairness on the data is simply implemented by minimizing the differences of model variables on the splitted subsets.
+In terms of fairness, one meaningful task is how to reduce data and model biases in the machine learning algorithms. As shown in Figure 1, characterizing the fairness on the data is simply implemented by minimizing the differences of model variables on the splitted subsets. The shift of learning mechanisms in such case could benefit a lot of transport modeling applications.
 
 <br>
 
