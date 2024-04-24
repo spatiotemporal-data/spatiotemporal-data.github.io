@@ -16,8 +16,6 @@ Due to the randomness of transport demand data, uncertainty quantification is of
 
 In terms of fairness, one meaningful task is how to reduce data and model biases in the machine learning algorithms. As shown in Figure 1, characterizing the fairness on the data is simply implemented by minimizing the differences of model variables on the splitted subsets. The shift of learning mechanisms in such case could benefit a lot of transport modeling applications.
 
-<br>
-
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/fairness_explained.png" alt="drawing" width="600">
 </p>
