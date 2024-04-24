@@ -4,7 +4,7 @@ layout: default
 
 # Commentator
 
-**April 23, 2024 (Dingyi Zhuang)**
+### April 23, 2024 (Dingyi Zhuang)
 
 <br>
 
