@@ -17,7 +17,7 @@ Today, **Eric Plosky** discussed what they have done about "Panel on data standa
 - **Bikeshare**: General Bikeshare Feed Specification (GBFS, see [gbfs](https://github.com/MobilityData/gbfs)). The currently available datasets include:
   - [New York City Citi Bike data](https://citibikenyc.com/system-data)
   - [Chicago Divvy data](https://divvybikes.com/system-data)
-  - [DC Capital Bikeshare data](https://capitalbikeshare.com/system-data)
+  - [Washington D.C. Capital Bikeshare data](https://capitalbikeshare.com/system-data)
   - [Boston Bluebike data](https://bluebikes.com/system-data)
   - [Montreal BIXI data](https://bixi.com/en/open-data/)
   - [Bike Share Toronto ridership data](https://open.toronto.ca/dataset/bike-share-toronto-ridership-data/)
