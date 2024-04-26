@@ -7,9 +7,7 @@ layout: default
 
 ### April 26, 2024
 
-**Speaker: Eric Plosky** ("Panel on data standards", [MobilityData](https://mobilitydata.org/))
-
-Develop and manage open data specifications (new open mobility data stanard/format with [the mobility database](https://mobilitydatabase.org/)):
+Eric Plosky discussed what they have done about"Panel on data standards" at [MobilityData](https://mobilitydata.org/)). The team tried to develop and manage open data specifications around the world. Overall, this is an open mobility data stanard/format as used in [the mobility database](https://mobilitydatabase.org/):
 
 - Transit: General Transit Feed Specification (GTFS, see [GitHub](https://github.com/MobilityData/gtfs-realtime-bindings)). For example, the transit operations system data include:
   - Vehicle location data
@@ -25,6 +23,7 @@ Develop and manage open data specifications (new open mobility data stanard/form
   - [Bike Share Toronto ridership data](https://open.toronto.ca/dataset/bike-share-toronto-ridership-data/)
   - [Austin MetroBike Trip data](https://data.austintexas.gov/Transportation-and-Mobility/Austin-MetroBike-Trips/tyfh-5r8s/about_data) (or see [shared micromobility vehicle trips](https://data.austintexas.gov/Transportation-and-Mobility/Shared-Micromobility-Vehicle-Trips/7d8e-dm7r/about_data) & [data visualization platform](https://public.ridereport.com/austin))
 
+<br>
 
 ## SRL Commentator
 
