@@ -13,7 +13,7 @@ Today, **Eric Plosky** discussed what they have done about"Panel on data standar
   - Vehicle location data
   - Passenger activity data
   - Fare transactions data
-  - Schedule data
+  - Bus schedule data
 - **Bikeshare**: General Bikeshare Feed Specification (GBFS, see [gbfs](https://github.com/MobilityData/gbfs)). The currently available datasets include:
   - [New York City Citi Bike data](https://citibikenyc.com/system-data)
   - [Chicago Divvy data](https://divvybikes.com/system-data)
