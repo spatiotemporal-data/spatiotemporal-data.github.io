@@ -9,12 +9,12 @@ layout: default
 
 Today, **Eric Plosky** discussed what they have done about"Panel on data standards" at [MobilityData](https://mobilitydata.org/)). The team tried to develop and manage open data specifications around the world. Overall, this is an open mobility data stanard/format as used in [the mobility database](https://mobilitydatabase.org/):
 
-- **Transit**: General Transit Feed Specification (GTFS, see [GitHub](https://github.com/MobilityData/gtfs-realtime-bindings)). For example, the transit operations system data include:
+- **Transit**: General Transit Feed Specification (GTFS, see [gtfs-realtime-bindings](https://github.com/MobilityData/gtfs-realtime-bindings)). For example, the transit operations system data include:
   - Vehicle location data
   - Passenger activity data
   - Fare transactions data
   - Schedule data
-- **Bikeshare**: General Bikeshare Feed Specification (GBFS, see [GitHub](https://github.com/MobilityData/gbfs)). The currently available datasets include:
+- **Bikeshare**: General Bikeshare Feed Specification (GBFS, see [gbfs](https://github.com/MobilityData/gbfs)). The currently available datasets include:
   - [New York City Cite Bike data](https://citibikenyc.com/system-data)
   - [Chicago Divvy data](https://divvybikes.com/system-data)
   - [DC Capital Bikeshare data](https://capitalbikeshare.com/system-data)
