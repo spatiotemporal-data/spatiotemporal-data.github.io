@@ -2,7 +2,31 @@
 layout: default
 ---
 
-# SRL Commentator
+
+## JTL - Transit Lab Seminar
+
+### April 26, 2024
+
+**Speaker: Eric Plosky** ("Panel on data standards", [MobilityData](https://mobilitydata.org/))
+
+Develop and manage open data specifications (new open mobility data stanard/format with [the mobility database](https://mobilitydatabase.org/)):
+
+- Transit: General Transit Feed Specification (GTFS, see [GitHub](https://github.com/MobilityData/gtfs-realtime-bindings)). For example, the transit operations system data include:
+  - Vehicle location data
+  - Passenger activity data
+  - Fare transactions data
+  - Schedule data
+- Bikeshare: General Bikeshare Feed Specification (GBFS, see [GitHub](https://github.com/MobilityData/gbfs)). The currently available datasets include:
+  - [New York City Cite Bike data](https://citibikenyc.com/system-data)
+  - [Chicago Divvy data](https://divvybikes.com/system-data)
+  - [DC Capital Bikeshare data](https://capitalbikeshare.com/system-data)
+  - [Boston Bluebike data](https://bluebikes.com/system-data)
+  - [Montreal BIXI data](https://bixi.com/en/open-data/)
+  - [Bike Share Toronto ridership data](https://open.toronto.ca/dataset/bike-share-toronto-ridership-data/)
+  - [Austin MetroBike Trip data](https://data.austintexas.gov/Transportation-and-Mobility/Austin-MetroBike-Trips/tyfh-5r8s/about_data) (or see [shared micromobility vehicle trips](https://data.austintexas.gov/Transportation-and-Mobility/Shared-Micromobility-Vehicle-Trips/7d8e-dm7r/about_data) & [data visualization platform](https://public.ridereport.com/austin))
+
+
+## SRL Commentator
 
 ### April 23, 2024 (Dingyi Zhuang)
 
