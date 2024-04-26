@@ -7,7 +7,7 @@ layout: default
 
 ### April 26, 2024
 
-Today, Eric Plosky discussed what they have done about"Panel on data standards" at [MobilityData](https://mobilitydata.org/)). The team tried to develop and manage open data specifications around the world. Overall, this is an open mobility data stanard/format as used in [the mobility database](https://mobilitydatabase.org/):
+Today, **Eric Plosky** discussed what they have done about"Panel on data standards" at [MobilityData](https://mobilitydata.org/)). The team tried to develop and manage open data specifications around the world. Overall, this is an open mobility data stanard/format as used in [the mobility database](https://mobilitydatabase.org/):
 
 - Transit: General Transit Feed Specification (GTFS, see [GitHub](https://github.com/MobilityData/gtfs-realtime-bindings)). For example, the transit operations system data include:
   - Vehicle location data
@@ -24,6 +24,7 @@ Today, Eric Plosky discussed what they have done about"Panel on data standards" 
   - [Austin MetroBike Trip data](https://data.austintexas.gov/Transportation-and-Mobility/Austin-MetroBike-Trips/tyfh-5r8s/about_data) (or see [shared micromobility vehicle trips](https://data.austintexas.gov/Transportation-and-Mobility/Shared-Micromobility-Vehicle-Trips/7d8e-dm7r/about_data) & [data visualization platform](https://public.ridereport.com/austin))
   - [Los Angeles Metro Bike Share data](https://bikeshare.metro.net/about/data/) (or see [the data portal](https://data.lacity.org/dataset/Metro-Bike-Share-Trip-Data/sii9-rjps/data))
   - [San Francisco Bay Area Bike Share data](https://www.lyft.com/bikes/bay-wheels/system-data)
+  - []()
 
 <br>
 
