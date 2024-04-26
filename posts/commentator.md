@@ -23,6 +23,7 @@ Today, Eric Plosky discussed what they have done about"Panel on data standards" 
   - [Bike Share Toronto ridership data](https://open.toronto.ca/dataset/bike-share-toronto-ridership-data/)
   - [Austin MetroBike Trip data](https://data.austintexas.gov/Transportation-and-Mobility/Austin-MetroBike-Trips/tyfh-5r8s/about_data) (or see [shared micromobility vehicle trips](https://data.austintexas.gov/Transportation-and-Mobility/Shared-Micromobility-Vehicle-Trips/7d8e-dm7r/about_data) & [data visualization platform](https://public.ridereport.com/austin))
   - [Los Angeles Metro Bike Share data](https://bikeshare.metro.net/about/data/) (or see [the data portal](https://data.lacity.org/dataset/Metro-Bike-Share-Trip-Data/sii9-rjps/data))
+  - [San Francisco Bay Area Bike Share data](https://www.lyft.com/bikes/bay-wheels/system-data)
 
 <br>
 
