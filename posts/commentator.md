@@ -28,7 +28,7 @@ Today, **Eric Plosky** discussed what they have done about "Panel on data standa
 
 <br>
 
-## SRL Commentator
+## SRL Meeting
 
 ### April 23, 2024 (Dingyi Zhuang)
 
