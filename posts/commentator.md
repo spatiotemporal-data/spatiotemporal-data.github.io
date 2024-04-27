@@ -7,7 +7,7 @@ layout: default
 
 ### April 26, 2024
 
-Today, **Eric Plosky** discussed what they have done about "Panel on data standards" at [MobilityData](https://mobilitydata.org/). The team tried to develop and manage open data specifications around the world. Overall, this is an open mobility data stanard/format as used in [the mobility database](https://mobilitydatabase.org/):
+Today, **Eric Plosky** discussed what they have done about "Panel on data standards" at [MobilityData](https://mobilitydata.org/). The team tried to develop and manage open data specifications around the world and advance the data standardization. Overall, this is an open mobility data standard/format as used in [the mobility database](https://mobilitydatabase.org/):
 
 - **Transit**: General Transit Feed Specification (GTFS, see [gtfs-realtime-bindings](https://github.com/MobilityData/gtfs-realtime-bindings)). For example, the transit operations system data include:
   - Vehicle location data
