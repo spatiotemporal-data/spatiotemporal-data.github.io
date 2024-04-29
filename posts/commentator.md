@@ -5,7 +5,7 @@ layout: default
 
 ## JTL - Transit Lab Seminar
 
-### April 26, 2024
+### April 26, 2024 (Eric Plosky)
 
 Today, **Eric Plosky** discussed what they have done about "Panel on data standards" at [MobilityData](https://mobilitydata.org/). The team tried to develop and manage open data specifications around the world and advance the data standardization. Overall, this is an open mobility data standard/format as used in [the mobility database](https://mobilitydatabase.org/):
 
