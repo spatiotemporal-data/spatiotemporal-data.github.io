@@ -29,7 +29,7 @@ Note:
 
 **Build Up Ideas**
 
-**1st Application Scenario**
+**1st application scenario**
 
 - International trade
 - Merchandise import/export
