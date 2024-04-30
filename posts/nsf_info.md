@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# NSF Division of Information & Intelligent Systems
+# NSF Funding Information
 
 <br>
 
