@@ -27,7 +27,7 @@ Note:
 
 <br>
 
-**Build up ideas**
+**Build Up Ideas**
 
 1st Application Scenario:
 
@@ -40,8 +40,21 @@ Note:
 
 2nd Application Scenario:
 
-- Urban mobility
+- Urban mobility data
 - Micromobility
-- 
+- Sustainable transport
+- Data standardization & valorization
+- Data-driven decision-making
+- Urban sustainability strategies
+
+(The value of standarized tensor representation for mobility dataset in AI applications)
+
+Computing technologies:
+
+- Tensor factorization
+  - graph information, temporal dynamics, dominant patterns, mode transition, outliers, special events
+  - graph Laplacian matrix, nonconvex optimization, non-negativity, orthogonality, 
+
+
 
 <br>
