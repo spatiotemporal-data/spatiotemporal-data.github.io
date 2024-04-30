@@ -31,6 +31,12 @@ Today, Eric discussed what they have done about "Panel on data standards" at [Mo
 
 ## SRL Meeting
 
+### April 30, 2024 (Awad Abdelhalim)
+
+[Unified Training of Universal Time Series Forecasting Transformers](https://arxiv.org/pdf/2402.02592)
+
+<br>
+
 ### April 23, 2024 (Dingyi Zhuang)
 
 In the past decades, machine learning acted as an important data-driven computing paradigm for learning from data. However, real-world data usually demonstrate complicated data behaviors (e.g., uncertainty) and underlying patterns (e.g., biases in the data collection process). In this study, we hope to connect machine learning with real-world data problems in transport demand modeling and in the meanwhile highlight the importance of uncertainty quantification in the prediction task. There are some critical challenges that stem from the following perspectives:
