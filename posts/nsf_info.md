@@ -21,7 +21,7 @@ The intent is to catalyze advancements on both sides of a virtuous cycle that:
 
 Note:
 
-- Interdisciplinary collaborative research
+- **Interdisciplinary collaborative** research:
   - One group is expected to consist of researchers in computing
   - The other group of researchers are expected to represent another scientific or engineering discipline
 
