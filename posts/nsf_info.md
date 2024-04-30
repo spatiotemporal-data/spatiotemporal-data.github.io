@@ -47,7 +47,7 @@ Note:
 - Data-driven decision-making
 - Urban sustainability strategies
 
-(The value of standarized tensor representation for mobility dataset in AI applications)
+(The value of standarized tensor representation for human mobility datasets in AI applications)
 
 **Computing technologies:**
 
