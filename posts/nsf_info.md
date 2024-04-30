@@ -29,7 +29,7 @@ Note:
 
 **Build Up Ideas**
 
-1st Application Scenario:
+**1st Application Scenario**
 
 - International trade
 - Merchandise import/export
@@ -38,7 +38,7 @@ Note:
 - Multidimensional tensor (import, export, product, year, value, quantity)
 - Graph representation
 
-2nd Application Scenario:
+**2nd application scenario**
 
 - Urban mobility data
 - Micromobility
@@ -49,7 +49,7 @@ Note:
 
 (The value of standarized tensor representation for mobility dataset in AI applications)
 
-Computing technologies:
+**Computing technologies**
 
 - Tensor factorization
   - dynamical systems/networks, graph information, temporal dynamics, dominant patterns, mode transition, outliers, special events
