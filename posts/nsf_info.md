@@ -31,7 +31,7 @@ Note:
 
 **1st application scenario**
 
-- International trade
+- **International trade**
 - Merchandise import/export
 - Pattern discovery
 - Knowledge mining
@@ -40,7 +40,7 @@ Note:
 
 **2nd application scenario**
 
-- Urban mobility data
+- **Urban mobility data**
 - Micromobility
 - Sustainable transport
 - Data standardization & valorization
@@ -54,7 +54,7 @@ Note:
 - Tensor factorization
   - dynamical systems/networks, graph information, temporal dynamics, dominant patterns, mode transition, outliers, special events
   - graph Laplacian matrix (in graph signal processing), nonconvex optimization, non-negativity, orthogonality
-
+- Graph signal processing
 
 
 <br>
