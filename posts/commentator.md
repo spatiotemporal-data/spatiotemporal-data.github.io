@@ -26,6 +26,7 @@ Today, Eric discussed what they have done about "Panel on data standards" at [Mo
   - [Los Angeles Metro Bike Share data](https://bikeshare.metro.net/about/data/) (or see [the data portal](https://data.lacity.org/dataset/Metro-Bike-Share-Trip-Data/sii9-rjps/data))
   - [San Francisco Bay Area Bike Share data](https://www.lyft.com/bikes/bay-wheels/system-data)
 
+For other standards, we would like to mention [the General Modeling Network Specification (GMNS)](https://github.com/zephyr-data-specs/GMNS).
 
 <br>
 
