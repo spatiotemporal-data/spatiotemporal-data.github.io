@@ -29,6 +29,19 @@ Note:
 
 **Build up ideas**
 
+1st Application Scenario:
 
+- International trade
+- Merchandise import/export
+- Pattern discovery
+- Knowledge mining
+- Multidimensional tensor (import, export, product, year, value, quantity)
+- Graph representation
+
+2nd Application Scenario:
+
+- Urban mobility
+- Micromobility
+-
 
 <br>
