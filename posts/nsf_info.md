@@ -53,8 +53,9 @@ Note:
 
 - Tensor factorization
   - dynamical systems/networks, graph information, temporal dynamics, dominant patterns, mode transition, outliers/anomalies, special events
-  - graph Laplacian matrix (in graph signal processing), nonconvex optimization, non-negativity, orthogonality
+  - graph Laplacian matrix (in graph signal processing), nonconvex optimization, non-negativity, orthogonality, initialization
 - Graph signal processing
+  - Relational tensor data
 
 
 <br>
