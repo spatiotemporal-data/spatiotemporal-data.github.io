@@ -33,11 +33,12 @@ Today, Eric discussed what they have done about "Panel on data standards" at [Mo
 
 ### April 30, 2024 (Awad Abdelhalim)
 
-[Unified Training of Universal Time Series Forecasting Transformers](https://arxiv.org/pdf/2402.02592)
 
 As we know, the training data in the large time series model is from different areas, this means that the model training process highly depends on the selected datasets across various areas, so one question is how to reduce the model biases if we consider the forecasting scenario as traffic flow or human mobility? Because I guess time series data in different areas should demonstrate different data behaviors.
 
+**References**
 
+- Gerald Woo, Chenghao Liu, Akshat Kumar, Caiming Xiong, Silvio Savarese, Doyen Sahoo (2024). [Unified Training of Universal Time Series Forecasting Transformers](https://arxiv.org/pdf/2402.02592). arXiv:2402.02592.
 
 <br>
 
