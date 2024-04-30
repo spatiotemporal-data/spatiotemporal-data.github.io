@@ -52,7 +52,7 @@ Note:
 **Computing technologies**
 
 - Tensor factorization
-  - dynamical systems/networks, graph information, temporal dynamics, dominant patterns, mode transition, outliers, special events
+  - dynamical systems/networks, graph information, temporal dynamics, dominant patterns, mode transition, outliers/anomalies, special events
   - graph Laplacian matrix (in graph signal processing), nonconvex optimization, non-negativity, orthogonality
 - Graph signal processing
 
