@@ -6,7 +6,7 @@ layout: default
 
 
 
-### 1st Mile
+### 2nd Mile
 
 The motivation for discussing the value of standards for health datasets is the risk of algorithmic bias, consequently leading to the possible healthcare inequity. The problem arises from the systemic inequalities in the dataset curation and the unequal opportunities to access the data and research. The aim is to expolore the standards, frameworks, and best practices in health datasets. Some discrete insights throughout the whole paper are summarized as follows,
 
@@ -24,6 +24,18 @@ The motivation for discussing the value of standards for health datasets is the 
 - Anmol Arora, Joseph E. Alderman, Joanne Palmer, Shaswath Ganapathi, Elinor Laws, Melissa D. McCradden, Lauren Oakden-Rayner, Stephen R. Pfohl, Marzyeh Ghassemi, Francis McKay, Darren Treanor, Negar Rostamzadeh, Bilal Mateen, Jacqui Gath, Adewole O. Adebajo, Stephanie Kuku, Rubeta Matin, Katherine Heller, Elizabeth Sapey, Neil J. Sebire, Heather Cole-Lewis, Melanie Calvert, Alastair Denniston, Xiaoxuan Liu (2023). [The value of standards for health datasets in artificial intelligence-based applications](https://doi.org/10.1038/s41591-023-02608-w). Nature Medicine, 29, 2929–2938
 
 <br>
+
+### 1st Mile
+
+As we know, the training data in the large time series model is from different areas, this means that the model training process highly depends on the selected datasets across various areas, so one question is how to reduce the model biases if we consider the forecasting scenario as traffic flow or human mobility? Because I guess time series data in different areas should demonstrate different data behaviors. Hopefully, it is interesting to develop domain-specific time series datasets (e.g., [Largest multi-city traffic dataset](https://utd19.ethz.ch/)) and large models.
+
+**References**
+
+- Gerald Woo, Chenghao Liu, Akshat Kumar, Caiming Xiong, Silvio Savarese, Doyen Sahoo (2024). [Unified Training of Universal Time Series Forecasting Transformers](https://arxiv.org/pdf/2402.02592). arXiv:2402.02592.
+
+<br>
+
+
 
 **AI for Science** (knowledge, vision, insight)
 
