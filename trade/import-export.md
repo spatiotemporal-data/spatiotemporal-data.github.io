@@ -270,14 +270,6 @@ for chunk in pd.read_csv("trade_i_baci_a_92.tsv.bz2", compression = "bz2",
     del df
 ```
 
-<br>
-
-## Concerns?
-
-Leaving some concerns for advancing this direction:
-
-- Is the international trade a dynamical system? It seems that the international trade does not show very strong temporal correlations with such an annual time resolution. If the assumption of dynamical systems does not hold in the international trade, can we find an alternative framework instead of time-varying autoregression?
-- For the spatial modes, we need to identify the patterns according to the relative values, how to quantify the mode strength with non-negative values? This may require both orthogonal and non-negative constraints on the latent components.
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 6, 2024.)</p>
