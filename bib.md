@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Step Forward Together on the Prior Literature
+# Step Forward on the Prior Literature
 
 <br>
 
