@@ -5,7 +5,6 @@ layout: default
 ## Step Forward on the Prior Literature
 
 
-<br>
 
 ### 1st Mile
 
