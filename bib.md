@@ -2,9 +2,11 @@
 layout: default
 ---
 
-# Step Forward on the Prior Literature
+## Step Forward on the Prior Literature
 
 <br>
+
+### 1st Mile
 
 The motivation for discussing the value of standards for health datasets is the risk of algorithmic bias, consequently leading to the possible healthcare inequity. The problem arises from the systemic inequalities in the dataset curation and the unequal opportunities to access the data and research. The aim is to expolore the standards, frameworks, and best practices in health datasets. Some discrete insights throughout the whole paper are summarized as follows,
 
@@ -72,3 +74,7 @@ The motivation for discussing the value of standards for health datasets is the 
 - [Understanding Deep Learning (book)](http://udlbook.com/?trk=public_post-text) [[Linkedin](https://www.linkedin.com/posts/simon-prince-615bb9165_phew-finally-finished-all-68-python-notebook-activity-7130190400266330112-5n_X?utm_source=share&utm_medium=member_ios)]
 
 - [Blog post (Gregory Gundersen)](https://gregorygundersen.com/blog/)
+
+<br>
+
+Motivation & Principle: 不积硅步无以至千里。
