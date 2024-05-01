@@ -2,7 +2,24 @@
 layout: default
 ---
 
-# Reading Paper List
+# Step Forward Together on the Prior Literature
+
+<br>
+
+The motivation for discussing the value of standards for health datasets is the risk of algorithmic bias, consequently leading to the possible health inequity. The problem arises from the systemic inequalities in the dataset curation and the unequal opportunities to access the data and research. The aim is to expolore the standards, frameworks, and best practices in health datasets. Some discrete insights throughout the whole paper are summarized as follows,
+
+- AI as a medical device (AIaMD). One concern is the risk of systemic algorithmic bias (well-recognized in the literature) if models are trained on biased training datasets.
+- Less accurate performance in certain patient groups when using the biased algorithms.
+- Data diversity (Mainly discuss "how to improve"):
+  - Challenges: lack of standardization across attribute categories, difficulty in harmonizing several methods of data capture and data-governance restrictions.
+  - Inclusiveness is a core tenet of ethical AI in healthcare.
+  - Guidance on how to apply the principles in the curation (e.g., developing the data collection strategy), aggregation and use of health data.
+- The use of metrics (measuring diversity)
+- Future: Guidelines for data collection, handling missing data and labeling data.
+
+**References**
+
+- Anmol Arora, Joseph E. Alderman, Joanne Palmer, Shaswath Ganapathi, Elinor Laws, Melissa D. McCradden, Lauren Oakden-Rayner, Stephen R. Pfohl, Marzyeh Ghassemi, Francis McKay, Darren Treanor, Negar Rostamzadeh, Bilal Mateen, Jacqui Gath, Adewole O. Adebajo, Stephanie Kuku, Rubeta Matin, Katherine Heller, Elizabeth Sapey, Neil J. Sebire, Heather Cole-Lewis, Melanie Calvert, Alastair Denniston, Xiaoxuan Liu (2023). [The value of standards for health datasets in artificial intelligence-based applications](https://doi.org/10.1038/s41591-023-02608-w). Nature Medicine, 29, 2929–2938
 
 <br>
 
