@@ -15,7 +15,7 @@ The motivation for discussing the value of standards for health datasets is the 
   - Inclusiveness is a core tenet of ethical AI in healthcare.
   - Guidance on how to apply the principles in the curation (e.g., developing the data collection strategy), aggregation and use of health data.
 - The use of metrics (measuring diversity). How to promote diversity and transparency?
-- Future: Guidelines for data collection, handling missing data and labeling data.
+- Future actions: Guidelines for data collection, handling missing data and labeling data.
 
 **References**
 
