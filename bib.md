@@ -6,6 +6,8 @@ layout: default
 
 Research Knowledge & Vision & Insight & Style
 
+<br>
+
 ### 3rd Mile
 
 Graph siginal processing
