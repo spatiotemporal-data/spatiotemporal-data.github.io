@@ -6,6 +6,12 @@ layout: default
 
 Research Knowledge & Vision & Insight & Style
 
+### 3rd Mile
+
+Graph siginal processing
+
+<br>
+
 ### 2nd Mile
 
 The motivation for discussing the value of standards for health datasets is the risk of algorithmic bias, consequently leading to the possible healthcare inequity. The problem arises from the systemic inequalities in the dataset curation and the unequal opportunities to access the data and research. The aim is to expolore the standards, frameworks, and best practices in health datasets. Some discrete insights throughout the whole paper are summarized as follows,
