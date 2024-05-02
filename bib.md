@@ -4,7 +4,7 @@ layout: default
 
 ## Step Forward on the "Prior Knowledge"
 
-Knowledge & Vision & Insight
+Research Knowledge & Vision & Insight & Style
 
 ### 2nd Mile
 
