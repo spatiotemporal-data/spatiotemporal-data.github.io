@@ -2,9 +2,9 @@
 layout: default
 ---
 
-## Step Forward on the Prior Literature
+## Step Forward on the "Prior Knowledge"
 
-
+Knowledge & Vision & Insight
 
 ### 2nd Mile
 
@@ -37,7 +37,7 @@ As we know, the training data in the large time series model is from different a
 
 
 
-**AI for Science** (knowledge, vision, insight)
+**AI for Science**
 
 - (**Liu et al., 2023**) Topological structure of complex predictions. Nature Machine Intelligence. 2023, 5: 1382-1389. [[DOI](https://doi.org/10.1038/s42256-023-00749-8)]
 
@@ -89,4 +89,4 @@ As we know, the training data in the large time series model is from different a
 
 <br>
 
-Motivation & Principle: 不积硅步无以至千里。
+Motivation & Principle: 不积硅步，无以至千里。
