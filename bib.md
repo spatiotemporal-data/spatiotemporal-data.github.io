@@ -10,6 +10,11 @@ Research Knowledge & Vision & Insight & Style
 
 Graph siginal processing
 
+**References**
+
+- Xiaowen Dong, Dorina Thanou, Laura Toni, Michael Bronstein, and Pascal Frossard (2020). [Graph signal processing for machine learning: A review and new perspectives](https://arxiv.org/pdf/2007.16061). arXiv:2007.16061. [[Slides](https://web.media.mit.edu/~xdong/talk/BDI_GSP.pdf)]
+- Antonio Ortega, Pascal Frossard, Jelena Kovacevic, Jose M. F. Moura, Pierre Vandergheynst (2017). [Graph Signal Processing: Overview, Challenges and Applications](https://arxiv.org/pdf/1712.00468). arXiv:1712.00468.
+
 <br>
 
 ### 2nd Mile
