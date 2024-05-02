@@ -89,4 +89,4 @@ As we know, the training data in the large time series model is from different a
 
 <br>
 
-Motivation & Principle: 不积硅步无以至千里。
+Motivation & Principle: 不积硅步，无以至千里。
