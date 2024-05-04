@@ -28,7 +28,7 @@ The causal effect estimation problem is usually defined as a matrix completion o
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{W},\boldsymbol{X},\boldsymbol{u},\boldsymbol{p}}~\frac{1}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{Y}-\boldsymbol{W}^\top\boldsymbol{X}-\boldsymbol{u}\mathbf{1}_{T}^\top-\mathbf{1}_{N}\boldsymbol{p}^\top)\|_F^2"/></p>
 
-where
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{R\times N}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{R\times T}"/> are factor matrices. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{u}\in\mathbb{R}^{N}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{p}\in\mathbb{R}^{T}"/> are bias vectors of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> units 
 
 <br>
 
