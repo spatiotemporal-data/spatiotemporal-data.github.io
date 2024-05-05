@@ -30,7 +30,7 @@ In [Grassmann algebra](https://en.wikipedia.org/wiki/Exterior_algebra), the inne
 
 In contrast, the outer product (usually called as Wedge product) is
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}="/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=\|\vec{x}\| \|\vec{y}\| \sin\theta"/></p>
 
 As a result, they consist of Clifford product such that
 
