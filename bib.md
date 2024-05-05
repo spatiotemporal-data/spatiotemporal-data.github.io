@@ -28,14 +28,19 @@ In Grassmann algebra, the inner product between two vectors <img style="display:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\langle\vec{x},\vec{y}\rangle="/></p>
 
-In contrast, the outer product is
+In contrast, the outer product (usually called as Wedge product) is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}="/></p>
 
-As a result, they consist of Clifford product as follows,
+As a result, they consist of Clifford product such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \vec{x}\cdot\vec{y}=&\langle\vec{x},\vec{y}\rangle+\vec{x}\wedge\vec{y} \\ =&\|\vec{x}\|_2\|\vec{y}\|(\cos\theta +\sin\theta) \end{aligned}"/></p>
 
+In particular, Clifford algebra is important for modeling speed fields, thus demonstrating valuable applications to wind velocity and fluid dynamics (e.g., Navier-Stokes equation).
+
+**References**
+
+-
 
 <br>
 
