@@ -24,7 +24,9 @@ Graph siginal processing
 
 ### 4th Mile
 
-In Grassmann algebra, the inner product between two vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>
+In Grassmann algebra, the inner product between two vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> is given by
+
+
 
 <br>
 
