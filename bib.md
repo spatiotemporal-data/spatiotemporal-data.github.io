@@ -32,6 +32,8 @@ implies to be the multiplication between <img style="display: inline;" src="http
 In contrast, the outer product (usually called as Wedge product) is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta"/></p>
+implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on the orthogonal direction of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>.
+
 
 As a result, they consist of Clifford product such that
 
