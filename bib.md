@@ -8,7 +8,7 @@ Research Knowledge & Vision & Insight & Style
 
 <br>
 
-### 4th Mile
+### 5th Mile
 
 Graph siginal processing
 
@@ -19,6 +19,12 @@ Graph siginal processing
 - Michael M. Bronstein, Joan Bruna, Taco Cohen, Petar Veličković (2021). [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/pdf/2104.13478). arXiv:2104.13478.
 - Wei Hu, Jiahao Pang, Xianming Liu, Dong Tian, Chia-Wen Lin, Anthony Vetro (2022). [Graph Signal Processing for Geometric Data and Beyond: Theory and Applications](https://doi.org/10.1109/TMM.2021.3111440). IEEE Transactions on Multimedia, 24: 3961-3977.
 - Geert Leus, Antonio G. Marques, José M. F. Moura, Antonio Ortega, David I Shuman (2023). [Graph Signal Processing: History, Development, Impact, and Outlook](https://arxiv.org/pdf/2303.12211). arXiv:2303.12211.
+
+<br>
+
+### 4th Mile
+
+In Grassmann algebra, the inner product between two vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>
 
 <br>
 
