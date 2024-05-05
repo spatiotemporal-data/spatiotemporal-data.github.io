@@ -40,7 +40,8 @@ In particular, Clifford algebra is important for modeling speed fields, thus dem
 
 **References**
 
--
+- [](https://www.youtube.com/watch?v=60z_hpEAtD8&t=768s). YouTube.
+- 
 
 <br>
 
