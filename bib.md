@@ -32,6 +32,10 @@ In contrast, the outer product is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}="/></p>
 
+As a result, they consist of Clifford product as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \vec{x}\cdot\vec{y}=&\langle\vec{x},\vec{y}\rangle+\vec{x}\wedge\vec{y} \\ =&\|\vec{x}\|_2\|\vec{y}\|(\cos\theta +\sin\theta) \end{aligned}"/></p>
+
 
 <br>
 
