@@ -40,7 +40,7 @@ In particular, Clifford algebra is important for modeling speed fields, thus dem
 
 **References**
 
-- [](https://www.youtube.com/watch?v=60z_hpEAtD8&t=768s). YouTube.
+- [Spinors](https://www.youtube.com/watch?v=60z_hpEAtD8&t=768s). YouTube.
 - [Learning on Graphs & Geometry](https://portal.valencelabs.com/logg). Weekly reading groups every Monday at 11 am ET.
 - [What's the Clifford algebra?](https://math.stackexchange.com/questions/261509/whats-the-clifford-algebra) Mathematics stackexchange.
 - [Introducing CliffordLayers: Neural Network layers inspired by Clifford / Geometric Algebras](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/articles/introducing-cliffordlayers-neural-network-layers-inspired-by-clifford-geometric-algebras/). Microsoft Research AI4Science.
