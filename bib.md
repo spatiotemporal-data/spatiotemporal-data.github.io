@@ -40,6 +40,7 @@ In particular, Clifford algebra is important for modeling speed fields, thus dem
 
 **References**
 
+- [Spinors for Beginners 11: What is a Clifford Algebra? (and Geometric, Grassmann, Exterior Algebras)](https://www.youtube.com/watch?v=nktgFWLy32U&t=989s). YouTube.
 - [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8&t=768s). YouTube.
 - [Learning on Graphs & Geometry](https://portal.valencelabs.com/logg). Weekly reading groups every Monday at 11 am ET.
 - [What's the Clifford algebra?](https://math.stackexchange.com/questions/261509/whats-the-clifford-algebra) Mathematics stackexchange.
