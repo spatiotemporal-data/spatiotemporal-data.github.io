@@ -31,7 +31,7 @@ implies to be the multiplication between <img style="display: inline;" src="http
 
 In contrast, the outer product (usually called Wedge product) is
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta(\vec{e}_1\wedge\vec{e}_2)"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=(\vec{e}_1\wedge\vec{e}_2)\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta"/></p>
 implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on the orthogonal direction of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>.
 
 
