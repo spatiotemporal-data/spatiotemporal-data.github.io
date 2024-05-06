@@ -33,7 +33,7 @@ implies to be the multiplication between <img style="display: inline;" src="http
 
 In contrast, the outer product (usually called Wedge product) is
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=\underbrace{(\vec{e}_1\wedge\vec{e}_2)}_{\text{\color{blue}orientation}}\underbrace{\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta}_{\text{\color{blue}area/determinant}}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=\underbrace{(\vec{e}_1\wedge\vec{e}_2)}_{\text{\color{red}orientation}}\underbrace{\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta}_{\text{\color{red}area/determinant}}"/></p>
 implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on the orthogonal direction of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>. Here, while <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_1\wedge\vec{e}_2"/> represents the orientation (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;+1"/> or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-1"/>).
 
 As a result, they consist of Clifford product such that
