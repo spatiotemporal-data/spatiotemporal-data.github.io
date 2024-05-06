@@ -23,6 +23,7 @@ Graph siginal processing
 <br>
 
 ### 4th Mile
+#### Clifford Product
 
 In [Grassmann algebra](https://en.wikipedia.org/wiki/Exterior_algebra), the inner product between two vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> is given by
 
@@ -33,7 +34,6 @@ In contrast, the outer product (usually called Wedge product) is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=(\vec{e}_1\wedge\vec{e}_2)\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta"/></p>
 implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on the orthogonal direction of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>. Here, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_1"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_2"/> are the basis vectors, while <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_1\wedge\vec{e}_2"/> represents the orientation (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;+1"/> or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-1"/>).
-
 
 As a result, they consist of Clifford product such that
 
@@ -65,7 +65,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 ### 2nd Mile
-#### Large Time Series Forecasting Models
+#### Data Standardization in Healthcare
 
 The motivation for discussing the value of standards for health datasets is the risk of algorithmic bias, consequently leading to the possible healthcare inequity. The problem arises from the systemic inequalities in the dataset curation and the unequal opportunities to access the data and research. The aim is to expolore the standards, frameworks, and best practices in health datasets. Some discrete insights throughout the whole paper are summarized as follows,
 
@@ -85,6 +85,7 @@ The motivation for discussing the value of standards for health datasets is the 
 <br>
 
 ### 1st Mile
+#### Large Time Series Forecasting Models
 
 As we know, the training data in the large time series model is from different areas, this means that the model training process highly depends on the selected datasets across various areas, so one question is how to reduce the model biases if we consider the forecasting scenario as traffic flow or human mobility? Because I guess time series data in different areas should demonstrate different data behaviors. Hopefully, it is interesting to develop domain-specific time series datasets (e.g., [Largest multi-city traffic dataset](https://utd19.ethz.ch/)) and large models (e.g., [TimeGPT](https://docs.nixtla.io/)).
 
