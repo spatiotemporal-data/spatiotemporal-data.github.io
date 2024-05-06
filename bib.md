@@ -27,7 +27,7 @@ Graph siginal processing
 In [Grassmann algebra](https://en.wikipedia.org/wiki/Exterior_algebra), the inner product between two vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> is given by
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\langle\vec{x},\vec{y}\rangle=\|\vec{x}\|_2 \|\vec{y}\|_2 \cos\theta"/></p>
-implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>. Here, the notation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/> refers to the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/> norm, or say magnitude.
+implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>. Here, the notation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/> refers to the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/> norm, or say the magnitude.
 
 In contrast, the outer product (usually called Wedge product) is
 
