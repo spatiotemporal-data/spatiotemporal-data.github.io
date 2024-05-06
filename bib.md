@@ -29,7 +29,7 @@ In [Grassmann algebra](https://en.wikipedia.org/wiki/Exterior_algebra), the inne
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\langle\vec{x},\vec{y}\rangle=\|\vec{x}\|_2 \|\vec{y}\|_2 \cos\theta"/></p>
 implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>.
 
-In contrast, the outer product (usually called as Wedge product) is
+In contrast, the outer product (usually called Wedge product) is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta"/></p>
 implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on the orthogonal direction of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>.
