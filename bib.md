@@ -40,7 +40,7 @@ As a result, they consist of Clifford product such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \vec{x}\cdot\vec{y}=&\langle\vec{x},\vec{y}\rangle+\vec{x}\wedge\vec{y} \\ =&\|\vec{x}\|_2\|\vec{y}\|_2(\cos\theta +(\vec{e}_1\wedge\vec{e}_2)\sin\theta) \end{aligned}"/></p>
 
-In particular, [Clifford algebra](https://en.wikipedia.org/wiki/Clifford_algebra) is important for modeling speed fields, thus demonstrating valuable applications to wind velocity and fluid dynamics (e.g., Navier-Stokes equation).
+In particular, [Clifford algebra](https://en.wikipedia.org/wiki/Clifford_algebra) is important for modeling vector fields, thus demonstrating valuable applications to wind velocity and fluid dynamics (e.g., Navier-Stokes equation).
 
 **References**
 
