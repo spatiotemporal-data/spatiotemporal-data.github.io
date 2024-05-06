@@ -11,7 +11,16 @@ Research Knowledge & Vision & Insight & Style
 ### 6th Mile
 #### Graph Siginals
 
-For any graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G=\{\mathcal{V},\mathcal{E}\}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}=\{1,2,\ldots,N\}"/>
+For any graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G=\{\mathcal{V},\mathcal{E}\}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}=\{1,2,\ldots,N\}"/> is a finite set of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> vertices, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{E} \subseteq \mathcal{V}\times\mathcal{V}"/> is the set of edges. Graph signals can be formally represented as vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{n}"/> stores the signal value at the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th vertex in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}"/>.
+
+The graph Fourier transform of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is defined as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\hat{\boldsymbol{x}}(k)=\langle\boldsymbol{x},\boldsymbol{\psi}_k\rangle=\sum_{n=1}^{N}\boldsymbol{x}(n)\boldsymbol{\psi}_{k}^{*}(n)"/></p>
+
+**References**
+
+- Santiago Segarra, Weiyu Huang, and Alejandro Ribeiro (2020). [Signal Processing on Graphs](https://www.seas.upenn.edu/~ese2240/labs/1200_ch_9_signal_processing_on_graphs.pdf).
+-
 
 <br>
 
