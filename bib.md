@@ -11,6 +11,8 @@ Research Knowledge & Vision & Insight & Style
 ### 5th Mile
 #### Graph siginal processing
 
+GSP not only focuses on the graph typology (e.g., connection between nodes), but also covers the quantity of nodes with weighted adjacency information.
+
 **References**
 
 - Antonio Ortega, Pascal Frossard, Jelena Kovacevic, Jose M. F. Moura, Pierre Vandergheynst (2017). [Graph Signal Processing: Overview, Challenges and Applications](https://arxiv.org/pdf/1712.00468). arXiv:1712.00468.
