@@ -8,10 +8,17 @@ Research Knowledge & Vision & Insight & Style
 
 <br>
 
+### 6th Mile
+#### Graph Siginals
+
+For any graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G=\{\mathcal{V},\mathcal{E}\}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}=\{1,2,\ldots,N\}"/>
+
+<br>
+
 ### 5th Mile
 #### Graph Siginal Processing
 
-Graph signal processing not only focuses on the graph typology (e.g., connection between nodes), but also covers the quantity of nodes with weighted adjacency information.
+Graph signal processing not only focuses on the graph typology (e.g., connection between nodes), but also covers the quantity of nodes (i.e., graph signals) with weighted adjacency information.
 
 **References**
 
