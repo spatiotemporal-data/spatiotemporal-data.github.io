@@ -54,6 +54,7 @@ In particular, [Clifford algebra](https://en.wikipedia.org/wiki/Clifford_algebra
 <br>
 
 ### 3rd Mile
+#### Causal Effect Estimation/Imputation
 
 The causal effect estimation problem is usually defined as a matrix completion on the partially observed matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}\in\mathbb{R}^{N\times T}"/> in which <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> units and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> periods are involved. The observed index set is denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>. The optimization is from the [classical matrix factorization techniques for recommender systems (see Koren et al.'09)](https://doi.org/10.1109/MC.2009.263):
 
@@ -64,6 +65,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 ### 2nd Mile
+#### Large Time Series Forecasting Models
 
 The motivation for discussing the value of standards for health datasets is the risk of algorithmic bias, consequently leading to the possible healthcare inequity. The problem arises from the systemic inequalities in the dataset curation and the unequal opportunities to access the data and research. The aim is to expolore the standards, frameworks, and best practices in health datasets. Some discrete insights throughout the whole paper are summarized as follows,
 
