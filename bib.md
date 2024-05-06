@@ -9,7 +9,7 @@ Research Knowledge & Vision & Insight & Style
 <br>
 
 ### 5th Mile
-#### Graph siginal processing
+#### Graph Siginal Processing
 
 Graph signal processing not only focuses on the graph typology (e.g., connection between nodes), but also covers the quantity of nodes with weighted adjacency information.
 
