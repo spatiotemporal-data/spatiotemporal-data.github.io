@@ -24,7 +24,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 **References**
 
 - Santiago Segarra, Weiyu Huang, and Alejandro Ribeiro (2020). [Signal Processing on Graphs](https://www.seas.upenn.edu/~ese2240/labs/1200_ch_9_signal_processing_on_graphs.pdf).
-- Matthew Begue. [Fourier analysis on graphs](https://www.norbertwiener.umd.edu/Research/lectures/2014/MBegue_Prelim.pdf).
+- Matthew Begue. [Fourier analysis on graphs](https://www.norbertwiener.umd.edu/Research/lectures/2014/MBegue_Prelim.pdf). Slides.
 
 <br>
 
