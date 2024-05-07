@@ -56,9 +56,9 @@ In contrast, the outer product (usually called Wedge product) is
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=\underbrace{(\vec{e}_1\wedge\vec{e}_2)}_{\text{\color{red}orientation}}\underbrace{\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta}_{\text{\color{red}area/determinant}}"/></p>
 implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on the orthogonal direction of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>. Here, the unit bivector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_1\wedge\vec{e}_2"/> represents the orientation (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;+1"/> or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-1"/>) of the hyperplane of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}"/> (see Section II in [geometric-algebra adaptive filters](https://doi.org/10.1109/TSP.2019.2916028)).
 
-As a result, they consist of Clifford product such that
+As a result, they consist of Clifford product (denoted by the symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\circ"/>) such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \vec{x}\cdot\vec{y}=&\langle\vec{x},\vec{y}\rangle+\vec{x}\wedge\vec{y} \\ =&\|\vec{x}\|_2\|\vec{y}\|_2(\cos\theta +(\vec{e}_1\wedge\vec{e}_2)\sin\theta) \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \vec{x}\circ\vec{y}=&\langle\vec{x},\vec{y}\rangle+\vec{x}\wedge\vec{y} \\ =&\|\vec{x}\|_2\|\vec{y}\|_2(\cos\theta +(\vec{e}_1\wedge\vec{e}_2)\sin\theta) \end{aligned}"/></p>
 
 In particular, [Clifford algebra](https://en.wikipedia.org/wiki/Clifford_algebra) is important for modeling vector fields, thus demonstrating valuable applications to wind velocity and fluid dynamics (e.g., Navier-Stokes equation).
 
