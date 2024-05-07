@@ -17,4 +17,4 @@ layout: default
 
 <br>
 
-<p align="left">本网站由<a href="https://xinychen.github.io/">陈新宇</a>创建</p>
+<p align="left">作者留言：本网站由<a href="https://xinychen.github.io/">陈新宇</a>创建，期待广大读者能够提供反馈与建议，以便改进与更新本教程。</p>
