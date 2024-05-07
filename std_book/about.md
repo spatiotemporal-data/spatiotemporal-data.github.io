@@ -8,7 +8,7 @@ layout: default
 
 如需下载，请点击[电子版PDF](https://xinychen.github.io/books/spatiotemporal_low_rank_models.pdf)（注：唯一下载网址）。
 
-**章节内容**
+### 章节内容
 
 第二章 代数结构与矩阵计算基础
 - 2.1 基本代数结构
