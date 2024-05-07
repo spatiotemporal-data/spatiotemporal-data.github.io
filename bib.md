@@ -19,7 +19,7 @@ or another form such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\hat{\boldsymbol{x}}=\boldsymbol{\Psi}^{\top}\boldsymbol{x}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Psi}"/> consists of the eigenvectors. The notation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{*}"/> is the conjugate of complex values, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{H}"/> is the conjugate transpose.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Psi}"/> consists of the eigenvectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\psi}_k,\,k=1,2,\ldots,N"/>. The notation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{*}"/> is the conjugate of complex values, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{H}"/> is the conjugate transpose.
 
 **References**
 
