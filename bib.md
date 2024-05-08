@@ -17,6 +17,9 @@ Defining graph-aware operator plays an important role for characterizing a signa
 
 The simplest signal operation as multiplication by the adjacency matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> defines graph filters as matrix polynomials of the form
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(\boldsymbol{A})=p_0\boldsymbol{I}_N+p_1\boldsymbol{A}+\cdots+p_1\boldsymbol{A}^{(N-1)}"/></p>
+
+
 
 <br>
 
