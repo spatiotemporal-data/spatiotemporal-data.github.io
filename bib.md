@@ -19,7 +19,11 @@ The simplest signal operation as multiplication by the adjacency matrix <img sty
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(\boldsymbol{A})=p_0\boldsymbol{I}_N+p_1\boldsymbol{A}+\cdots+p_1\boldsymbol{A}^{(N-1)}"/></p>
 
+When applying the polynomial filter to a graph signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/>, the operation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/> takes a local linear combination of the signal values at one-hop neighbors. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}^2\boldsymbol{x}"/> takes a local linear combination of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/>, referring to two-hop neighbors. Consequently, a graph filter <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(\boldsymbol{A})"/> of order <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N-1"/> represents the mixing values that are at most <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N-1"/> hops away.
 
+**References**
+
+- Geert Leus, Antonio G. Marques, José M. F. Moura, Antonio Ortega, David I Shuman (2023). [Graph Signal Processing: History, Development, Impact, and Outlook](https://arxiv.org/pdf/2303.12211). arXiv:2303.12211.
 
 <br>
 
@@ -44,7 +48,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 ### 5th Mile
-#### Graph Siginal Processing
+#### Graph Signal Processing
 
 Graph signal processing not only focuses on the graph typology (e.g., connection between nodes), but also covers the quantity of nodes (i.e., graph signals) with weighted adjacency information.
 
