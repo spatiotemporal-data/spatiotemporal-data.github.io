@@ -4,7 +4,7 @@ layout: default
 
 ## Step Forward on the Prior Knowledge
 
-Building research knowledge & vision & insight & style (Hopefully, connecting discrete ideas with mathematics and machine learning).
+[Xinyu Chen](https://xinychen.github.io/) created this page since early 2024 with the purpose of fostering research knowledge, vision, insight, and style. In the meantime, it aims to connect discrete ideas with mathematics and machine learning.
 
 <br>
 
