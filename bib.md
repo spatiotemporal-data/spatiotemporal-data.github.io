@@ -6,12 +6,14 @@ layout: default
 
 [Xinyu Chen](https://xinychen.github.io/) created this page since early 2024 with the purpose of fostering research knowledge, vision, insight, and style. In the meantime, it aims to connect discrete ideas with mathematics and machine learning.
 
+<br>
 
 ### 7th Mile
 #### Graph Filter
 
 Defining graph-aware operator plays an important role for characterizing a signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> vertices over a graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G"/>. One simple idea is introducing the adjacency matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> so that the operation is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/>. In that case, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> is a simple operator htat accounts for the local connectivity of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G"/>. One example is using the classical unit delay (seems to be time-shift) such that
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} 0 & 0 & 0 & \cdots & 1 \\ 1 & 0 & 0 & \cdots & 0 \\ 0 & 1 & 0 & \cdots & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & 0 & \cdots & 0 \end{bmatrix}"/></p>
 
 
 
