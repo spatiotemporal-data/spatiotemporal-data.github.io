@@ -13,14 +13,15 @@ layout: default
 
 Defining graph-aware operator plays an important role for characterizing a signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> vertices over a graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G"/>. One simple idea is introducing the adjacency matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> so that the operation is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/>. In that case, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> is a simple operator htat accounts for the local connectivity of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G"/>. One example is using the classical unit delay (seems to be time-shift) such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} 0 & 0 & 0 & \cdots & 1 \\ 1 & 0 & 0 & \cdots & 0 \\ 0 & 1 & 0 & \cdots & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & 0 & \cdots & 0 \end{bmatrix}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} 0 & 0 & 0 & \cdots & 1 \\ 1 & 0 & 0 & \cdots & 0 \\ 0 & 1 & 0 & \cdots & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & 0 & \cdots & 0 \end{bmatrix}\in\mathbb{R}^{N\times N}"/></p>
 
+The simplest signal operation as multiplication by the adjacency matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> defines graph filters as matrix polynomials of the form
 
 
 <br>
 
 ### 6th Mile
-#### Graph Siginals
+#### Graph Signals
 
 For any graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G=\{\mathcal{V},\mathcal{E}\}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}=\{1,2,\ldots,N\}"/> is a finite set of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> vertices, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{E} \subseteq \mathcal{V}\times\mathcal{V}"/> is the set of edges. Graph signals can be formally represented as vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{n}"/> (or say <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}(n)"/> in the following) stores the signal value at the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th vertex in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}"/>. The graph Fourier transform of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is element-wise defined as follows,
 
