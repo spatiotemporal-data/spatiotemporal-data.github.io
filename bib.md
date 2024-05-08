@@ -4,7 +4,7 @@ layout: default
 
 ## Step Forward on the Prior Knowledge
 
-Research knowledge & vision & insight & style (Hopefully, connecting discrete ideas with mathematics and machine learning).
+Building research knowledge & vision & insight & style (Hopefully, connecting discrete ideas with mathematics and machine learning).
 
 <br>
 
