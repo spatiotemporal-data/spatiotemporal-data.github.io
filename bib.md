@@ -10,7 +10,7 @@ layout: default
 ### 7th Mile
 #### Graph Filter
 
-
+Defining graph-aware operator plays an important role for characterizing a signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/>
 
 <br>
 
