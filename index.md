@@ -11,6 +11,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Data Standardization & Valorization
 - Signal Processing
 - Network Science
+- Social Learning
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
