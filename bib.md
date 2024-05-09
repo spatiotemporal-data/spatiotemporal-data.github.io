@@ -17,7 +17,7 @@ Defining graph-aware operator plays an important role for characterizing a signa
 
 The simplest signal operation as multiplication by the adjacency matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> defines graph filters as matrix polynomials of the form
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(\boldsymbol{A})=p_0\boldsymbol{I}_N+p_1\boldsymbol{A}+\cdots+p_1\boldsymbol{A}^{(N-1)}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(\boldsymbol{A})=p_0\boldsymbol{I}_N+p_1\boldsymbol{A}+\cdots+p_{N-1}\boldsymbol{A}^{(N-1)}"/></p>
 
 When applying the polynomial filter to a graph signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/>, the operation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/> takes a local linear combination of the signal values at one-hop neighbors. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}^2\boldsymbol{x}"/> takes a local linear combination of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/>, referring to two-hop neighbors. Consequently, a graph filter <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(\boldsymbol{A})"/> of order <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N-1"/> represents the mixing values that are at most <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N-1"/> hops away.
 
