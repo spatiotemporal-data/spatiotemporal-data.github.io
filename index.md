@@ -9,6 +9,8 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Intelligent & Sustainable Urban Systems
 - Optimization & Decision Making
 - Data Standardization & Valorization
+- Signal Processing
+- Network Science
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
