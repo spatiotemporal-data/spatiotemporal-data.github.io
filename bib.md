@@ -24,6 +24,7 @@ When applying the polynomial filter to a graph signal <img style="display: inlin
 **References**
 
 - Geert Leus, Antonio G. Marques, José M. F. Moura, Antonio Ortega, David I Shuman (2023). [Graph Signal Processing: History, Development, Impact, and Outlook](https://arxiv.org/pdf/2303.12211). arXiv:2303.12211.
+- A Sandryhaila, JMF Moura (2013). [Discrete signal processing on graphs: Graph filters](https://users.ece.cmu.edu/~asandryh/papers/icassp13.pdf). Section 3: Graph Filters.
 
 <br>
 
