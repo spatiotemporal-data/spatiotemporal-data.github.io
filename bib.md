@@ -85,7 +85,7 @@ implies to be the multiplication between <img style="display: inline;" src="http
 
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/inner_wedge_prods.png" width="600" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/inner_wedge_prods.png" width="650" />
 </p>
 
 <br>
