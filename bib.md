@@ -83,9 +83,13 @@ In contrast, the outer product (usually called Wedge product) is
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}=\underbrace{(\vec{e}_1\wedge\vec{e}_2)}_{\text{\color{red}orientation}}\underbrace{\|\vec{x}\|_2 \|\vec{y}\|_2 \sin\theta}_{\text{\color{red}area/determinant}}"/></p>
 implies to be the multiplication between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/> and the projection of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}"/> on the orthogonal direction of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}"/>. Here, the unit bivector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_1\wedge\vec{e}_2"/> represents the orientation (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;+1"/> or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-1"/>) of the hyperplane of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}\wedge\vec{y}"/> (see Section II in [geometric-algebra adaptive filters](https://doi.org/10.1109/TSP.2019.2916028)).
 
+<br>
+
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/inner_wedge_prods.png" width="500" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/inner_wedge_prods.png" width="600" />
 </p>
+
+<br>
 
 As a result, they consist of Clifford product (or called geometric product, denoted by the symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot"/>) such that
 
