@@ -8,6 +8,18 @@ layout: default
 
 <br>
 
+### 8th Mile
+#### Higher-Order Graph
+
+Higher-order graph...
+
+**References**
+- [Higher-order organization of complex networks](https://snap.stanford.edu/higher-order/). Stanford University.
+- Quintino Francesco Lotito, Federico Musciotto, Alberto Montresor, Federico Battiston (2022). [Higher-order motif analysis in hypergraphs](https://www.nature.com/articles/s42005-022-00858-7). Communications Physics, volume 5, Article number: 79.
+- Christian Bick, Elizabeth Gross, Heather A. Harrington, and Michael T. Schaub (2023). [What are higher-order networks?](https://doi.org/10.1137/21M1414024). SIAM Review. 65(3).
+
+<br>
+
 ### 7th Mile
 #### Graph Filter
 
