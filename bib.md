@@ -9,7 +9,7 @@ layout: default
 <br>
 
 ### 8th Mile
-#### Higher-Order Graph
+#### Higher-Order Graph & Hypergraph
 
 Higher-order graph...
 
@@ -44,6 +44,7 @@ When applying the polynomial filter to a graph signal <img style="display: inlin
 - Geert Leus, Antonio G. Marques, José M. F. Moura, Antonio Ortega, David I Shuman (2023). [Graph Signal Processing: History, Development, Impact, and Outlook](https://arxiv.org/pdf/2303.12211). arXiv:2303.12211.
 - A Sandryhaila, JMF Moura (2013). [Discrete signal processing on graphs: Graph filters](https://users.ece.cmu.edu/~asandryh/papers/icassp13.pdf). Section 3: Graph Filters.
 - Henry Kenlay, Dorina Thanou, [Xiaowen Dong](https://web.media.mit.edu/~xdong/) (2020). [On The Stability of Polynomial Spectral Graph Filters](https://web.media.mit.edu/~xdong/paper/icassp20.pdf). ICASSP 2020.
+- Eylem Tugçe Güneyi, Berkay Yaldız, Abdullah Canbolat, and Elif Vural (2024). [Learning Graph ARMA Processes From Time-Vertex Spectra](https://doi.org/10.1109/TSP.2023.3329948). IEEE Transactions on Signal Processing, 72: 47 - 56.
 
 
 <br>
