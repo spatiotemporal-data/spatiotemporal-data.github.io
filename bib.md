@@ -8,6 +8,7 @@ layout: default
 
 <br>
 
+
 ### 9th Mile
 #### Higher-Order Graph & Hypergraph
 
@@ -20,6 +21,7 @@ Higher-order graph...
 - Christian Bick, Elizabeth Gross, Heather A. Harrington, and Michael T. Schaub (2023). [What are higher-order networks?](https://doi.org/10.1137/21M1414024) SIAM Review. 65(3).
 
 <br>
+
 
 ### 8th Mile
 #### Eigenvalues of Directed Cycles
@@ -64,6 +66,7 @@ fig.savefig('eigenvalues_directed_cycle.png', bbox_inches = 'tight')
 
 <br>
 
+
 ### 7th Mile
 #### Graph Filter
 
@@ -79,7 +82,6 @@ For instance, we have
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}\quad\quad \boldsymbol{A}^2=\begin{bmatrix} 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \end{bmatrix}"/></p>
 
-
 When applying the polynomial filter to a graph signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/>, the operation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/> takes a local linear combination of the signal values at one-hop neighbors. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}^2\boldsymbol{x}"/> takes a local linear combination of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/>, referring to two-hop neighbors. Consequently, a graph filter <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(\boldsymbol{A})"/> of order <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N-1"/> represents the mixing values that are at most <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N-1"/> hops away.
 
 **References**
@@ -89,8 +91,8 @@ When applying the polynomial filter to a graph signal <img style="display: inlin
 - Henry Kenlay, Dorina Thanou, [Xiaowen Dong](https://web.media.mit.edu/~xdong/) (2020). [On The Stability of Polynomial Spectral Graph Filters](https://web.media.mit.edu/~xdong/paper/icassp20.pdf). ICASSP 2020.
 - Eylem Tugçe Güneyi, Berkay Yaldız, Abdullah Canbolat, and Elif Vural (2024). [Learning Graph ARMA Processes From Time-Vertex Spectra](https://doi.org/10.1109/TSP.2023.3329948). IEEE Transactions on Signal Processing, 72: 47 - 56.
 
-
 <br>
+
 
 ### 6th Mile
 #### Graph Signals
@@ -112,6 +114,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
+
 ### 5th Mile
 #### Graph Signal Processing
 
@@ -126,6 +129,7 @@ Graph signal processing not only focuses on the graph typology (e.g., connection
 - Geert Leus, Antonio G. Marques, José M. F. Moura, Antonio Ortega, David I Shuman (2023). [Graph Signal Processing: History, Development, Impact, and Outlook](https://arxiv.org/pdf/2303.12211). arXiv:2303.12211.
 
 <br>
+
 
 ### 4th Mile
 #### Clifford Product
@@ -166,6 +170,7 @@ In particular, [Clifford algebra](https://en.wikipedia.org/wiki/Clifford_algebra
 
 <br>
 
+
 ### 3rd Mile
 #### Causal Effect Estimation/Imputation
 
@@ -176,6 +181,7 @@ The causal effect estimation problem is usually defined as a matrix completion o
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{R\times N}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{R\times T}"/> are factor matrices, referring to units and periods, respectively. Here, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{u}\in\mathbb{R}^{N}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{p}\in\mathbb{R}^{T}"/> are bias vectors, corresponding to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> units and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> periods, respectively. This idea has also been examined on the tensor factorization (to be honest, performance gains are marginal), see e.g., Bayesian augmented tensor factorization by [Chen et al.'19](https://doi.org/10.1016/j.trc.2019.03.003). In the causal effect imputation, one great challenge is how to handle the structural patterns of missing data as mentioned by [Athey et al.'21](https://doi.org/10.1080/01621459.2021.1891924). The structural missing patterns have been discussed on spatiotemporal data with [autoregressive tensor factorization (for spatiotemporal predictions)](https://doi.org/10.1109/ICDM.2017.146).
 
 <br>
+
 
 ### 2nd Mile
 #### Data Standardization in Healthcare
@@ -196,6 +202,7 @@ The motivation for discussing the value of standards for health datasets is the 
 - Anmol Arora, Joseph E. Alderman, Joanne Palmer, Shaswath Ganapathi, Elinor Laws, Melissa D. McCradden, Lauren Oakden-Rayner, Stephen R. Pfohl, Marzyeh Ghassemi, Francis McKay, Darren Treanor, Negar Rostamzadeh, Bilal Mateen, Jacqui Gath, Adewole O. Adebajo, Stephanie Kuku, Rubeta Matin, Katherine Heller, Elizabeth Sapey, Neil J. Sebire, Heather Cole-Lewis, Melanie Calvert, Alastair Denniston, Xiaoxuan Liu (2023). [The value of standards for health datasets in artificial intelligence-based applications](https://doi.org/10.1038/s41591-023-02608-w). Nature Medicine, 29: 2929–2938.
 
 <br>
+
 
 ### 1st Mile
 #### Large Time Series Forecasting Models
