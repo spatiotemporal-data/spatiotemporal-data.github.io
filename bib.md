@@ -8,7 +8,7 @@ layout: default
 
 <br>
 
-### 8th Mile
+### 9th Mile
 #### Higher-Order Graph & Hypergraph
 
 Higher-order graph...
@@ -22,7 +22,7 @@ Higher-order graph...
 <br>
 
 ### 8th Mile
-#### Eigenvalues of Directed Cycle
+#### Eigenvalues of Directed Cycles
 
 Graph signal processing mentioned an interesting property of directed cycle (see Figure 2 in the [literature](https://arxiv.org/pdf/2303.12211)). The adjacency matrix of an directed cycle has a set of unit eigenvalues as follows.
 
