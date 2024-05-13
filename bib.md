@@ -29,7 +29,7 @@ Higher-order graph...
 The graph signal processing possesses an interesting property of directed cycle (see Figure 2 in the [literature](https://arxiv.org/pdf/2303.12211)). The adjacency matrix of an directed cycle has a set of unit eigenvalues as follows.
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/eigenvalues_directed_cycle.png" width="250" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/eigenvalues_directed_cycle.png" width="300" />
 </p>
 
 <br>
