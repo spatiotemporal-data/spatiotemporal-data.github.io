@@ -21,6 +21,49 @@ Higher-order graph...
 
 <br>
 
+### 8th Mile
+#### Eigenvalues of Directed Cycle
+
+Graph signal processing mentioned an interesting property of directed cycle (see Figure 2 in the [literature](https://arxiv.org/pdf/2303.12211)). The adjacency matrix of an directed cycle has a set of unit eigenvalues as follows.
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/eigenvalues_directed_cycle.png" width="250" />
+</p>
+
+<br>
+
+```python
+import numpy as np
+
+## Construct an adjacency matrix A
+a = np.array([0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+n = a.shape[0]
+A = np.zeros((n, n))
+A[:, 0] = a
+for i in range(1, n):
+    A[:, i] = np.append(a[-i :], a[: -i])
+
+## Perform eigenvalue decomposition on A
+eig_val, eig_vec = np.linalg.eig(A)
+
+## Plot eigenvalues
+import matplotlib.pyplot as plt
+plt.rcParams['font.family'] = 'Helvetica'
+
+fig = plt.figure(figsize = (3, 3))
+ax = fig.add_subplot(1, 1, 1)
+circ = plt.Circle((0, 0), radius = 1, edgecolor = 'b', facecolor = 'None', linewidth = 2)
+ax.add_patch(circ)
+plt.plot(eig_val.real, eig_val.imag, 'rx', markersize = 8)
+ax.set_aspect('equal', adjustable = 'box')
+plt.xlabel('Re')
+plt.ylabel('Im')
+plt.show()
+fig.savefig('eigenvalues_directed_cycle.png', bbox_inches = 'tight')
+```
+
+<br>
+
 ### 7th Mile
 #### Graph Filter
 
