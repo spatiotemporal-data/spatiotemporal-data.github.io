@@ -12,7 +12,7 @@ layout: default
 ### 9th Mile
 #### Higher-Order Graph & Hypergraph
 
-Higher-order graph 
+The concept of a higher-order graph extends the traditional notion of a graph, which consists of nodes and edges, to capture more complex relationships and structures in data. A common formalism for representing higher-order graphs is through hypergraphs, which generalize the concept of a graph to allow for hyperedges connecting multiple nodes. In a hypergraph, each hyperedge connects a subset of nodes, forming higher-order relationships among them.
 
 **References**
 
