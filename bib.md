@@ -12,7 +12,7 @@ layout: default
 ### 9th Mile
 #### Higher-Order Graph & Hypergraph
 
-Higher-order graph...
+Higher-order graph 
 
 **References**
 
