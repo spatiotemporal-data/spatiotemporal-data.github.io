@@ -9,7 +9,7 @@ layout: default
 <br>
 
 
-### 9th Mile
+### 10th Mile
 #### Higher-Order Graph & Hypergraph
 
 The concept of a higher-order graph extends the traditional notion of a graph, which consists of nodes and edges, to capture more complex relationships and structures in data. A common formalism for representing higher-order graphs is through hypergraphs, which generalize the concept of a graph to allow for hyperedges connecting multiple nodes. In a hypergraph, each hyperedge connects a subset of nodes, forming higher-order relationships among them.
@@ -24,7 +24,7 @@ The concept of a higher-order graph extends the traditional notion of a graph, w
 <br>
 
 
-### 8th Mile
+### 9th Mile
 #### Eigenvalues of Directed Cycles
 
 The graph signal processing possesses an interesting property of directed cycle (see Figure 2 in the [literature](https://arxiv.org/pdf/2303.12211)). The adjacency matrix of a directed cycle has a set of unit eigenvalues as follows.
@@ -68,7 +68,7 @@ fig.savefig('eigenvalues_directed_cycle.png', bbox_inches = 'tight')
 <br>
 
 
-### 7th Mile
+### 8th Mile
 #### Graph Filter
 
 Defining graph-aware operator plays an important role for characterizing a signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> vertices over a graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G"/>. One simple idea is introducing the adjacency matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> so that the operation is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/>. In that case, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> is a simple operator that accounts for the local connectivity of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G"/>. One example is using the classical unit delay (seems to be time-shift) such that
@@ -99,7 +99,7 @@ When applying the polynomial filter to a graph signal <img style="display: inlin
 <br>
 
 
-### 6th Mile
+### 7th Mile
 #### Graph Signals
 
 For any graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;G=\{\mathcal{V},\mathcal{E}\}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}=\{1,2,\ldots,N\}"/> is a finite set of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> vertices, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{E} \subseteq \mathcal{V}\times\mathcal{V}"/> is the set of edges. Graph signals can be formally represented as vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{n}"/> (or say <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}(n)"/> in the following) stores the signal value at the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th vertex in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}"/>. The graph Fourier transform of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is element-wise defined as follows,
@@ -120,7 +120,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 
-### 5th Mile
+### 6th Mile
 #### Graph Signal Processing
 
 Graph signal processing not only focuses on the graph typology (e.g., connection between nodes), but also covers the quantity of nodes (i.e., graph signals) with weighted adjacency information.
@@ -136,7 +136,7 @@ Graph signal processing not only focuses on the graph typology (e.g., connection
 <br>
 
 
-### 4th Mile
+### 5th Mile
 #### Clifford Product
 
 In [Grassmann algebra](https://en.wikipedia.org/wiki/Exterior_algebra), the inner product between two vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}=x_1\vec{e}_1+x_2\vec{e}_2"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}=y_1\vec{e}_1+y_2\vec{e}_2"/> (w/ basis vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_1"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_2"/>) is given by
@@ -183,7 +183,7 @@ In genetic fine mapping, one critical problem is the variable selection in linea
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\{\boldsymbol{b}_{\ell}\}_{\ell\in[L]}}~&\frac{1}{2}\Bigl\|\boldsymbol{y}-\boldsymbol{X}\sum_{\ell\in[L]}\boldsymbol{b}_{\ell}\Bigr\|_2^2 \\ \text{s.t.}~&\|\boldsymbol{b}_{\ell}\|_{0}=1,\,\forall \ell\in[L] \end{aligned}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;L"/> is set according to the number of correlated variables.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;L"/> is set according to the number of correlated variables. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}_{\ell},\,\ell\in[L]"/> are the coefficients in this linear regression.
 
 **References**
 - Gao Wang, Abhishek Sarkar, Peter Carbonetto and Matthew Stephens (2020). [A simple new approach to variable selection in regression, with application to genetic fine mapping](https://doi.org/10.1111/rssb.12388). Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(5), 1273-1300.
