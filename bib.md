@@ -188,6 +188,8 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 **References**
 - Gao Wang, Abhishek Sarkar, Peter Carbonetto and Matthew Stephens (2020). [A simple new approach to variable selection in regression, with application to genetic fine mapping](https://doi.org/10.1111/rssb.12388). Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(5), 1273-1300.
 
+<br>
+
 
 ### 3rd Mile
 #### Causal Effect Estimation/Imputation
