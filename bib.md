@@ -177,9 +177,9 @@ In particular, [Clifford algebra](https://en.wikipedia.org/wiki/Clifford_algebra
 
 
 ### 4th Mile
-### Bayesian Variable Selction
+#### Bayesian Variable Selction
 
-In genetic fine mapping, one critical problem is the variable selection in linear regression. There is a Bayesian variable selection that quantifies the uncertainty. The approach is based on the sum of single effects, formally, the vector with one non-zero element. Given any data <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/> (of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> explanatory variables) and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, one can build an optimization problem as follows,
+In genetic fine mapping, one critical problem is the variable selection in linear regression. There is a Bayesian variable selection based on the sum of single effects, i.e., the vector with one non-zero element. Given any data <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/> (of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> explanatory variables) and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, one can build an optimization problem as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\{\boldsymbol{b}_{\ell}\}_{\ell\in[L]}}~&\frac{1}{2}\Bigl\|\boldsymbol{y}-\boldsymbol{X}\sum_{\ell\in[L]}\boldsymbol{b}_{\ell}\Bigr\|_2^2 \\ \text{s.t.}~&\|\boldsymbol{b}_{\ell}\|_{0}=1,\,\forall \ell\in[L] \end{aligned}"/></p>
 
