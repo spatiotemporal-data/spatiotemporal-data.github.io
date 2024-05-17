@@ -183,7 +183,7 @@ In genetic fine mapping, one critical problem is the variable selection in linea
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\{\boldsymbol{b}_{\ell}\}_{\ell\in[L]}}~&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{b}\|_2^2 \\ \text{s.t.}~&\begin{cases} \boldsymbol{b}=\sum_{\ell\in[L]}\boldsymbol{b}_{\ell} \\ \|\boldsymbol{b}_{\ell}\|_{0}=1,\,\forall \ell\in[L] \\ \boldsymbol{b}_{k}^\top\boldsymbol{b}_{\ell}=0,\,k\neq \ell \end{cases} \end{aligned}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;L"/> is set according to the number of correlated variables. The vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}_{\ell},\,\ell\in[L]"/> are the coefficients in this linear regression.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;L\in\mathbb{Z}^{+}"/> is set according to the number of correlated variables. The vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}_{\ell},\,\ell\in[L]"/> are the coefficients in this linear regression.
 
 **References**
 - Gao Wang, Abhishek Sarkar, Peter Carbonetto and Matthew Stephens (2020). [A simple new approach to variable selection in regression, with application to genetic fine mapping](https://doi.org/10.1111/rssb.12388). Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(5), 1273-1300.
