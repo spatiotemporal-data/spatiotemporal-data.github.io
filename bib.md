@@ -176,6 +176,18 @@ In particular, [Clifford algebra](https://en.wikipedia.org/wiki/Clifford_algebra
 <br>
 
 
+### 4th Mile
+### Bayesian Variable Selction
+
+In genetic fine mapping, one critical problem is the variable selection in linear regression. There is a Bayesian variable selection that quantifies the uncertainty. The approach is based on the sum of single effects, formally, the vector with one non-zero element. Given any data <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/> (of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> explanatory variables) and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, one can build an optimization problem as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned}  \end{aligned}"/></p>
+
+
+**References**
+- Gao Wang, Abhishek Sarkar, Peter Carbonetto and Matthew Stephens (2020). [A simple new approach to variable selection in regression, with application to genetic fine mapping](https://doi.org/10.1111/rssb.12388). Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(5), 1273-1300.
+
+
 ### 3rd Mile
 #### Causal Effect Estimation/Imputation
 
