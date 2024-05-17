@@ -20,6 +20,7 @@ The concept of a higher-order graph extends the traditional notion of a graph, w
 - Quintino Francesco Lotito, Federico Musciotto, Alberto Montresor, Federico Battiston (2022). [Higher-order motif analysis in hypergraphs](https://www.nature.com/articles/s42005-022-00858-7). Communications Physics, volume 5, Article number: 79.
 - Christian Bick, Elizabeth Gross, Heather A. Harrington, and Michael T. Schaub (2023). [What are higher-order networks?](https://doi.org/10.1137/21M1414024) SIAM Review. 65(3).
 - Vincent Thibeault, Antoine Allard & Patrick Desrosiers (2024). [The low-rank hypothesis of complex systems](https://www.nature.com/articles/s41567-023-02303-0). Nature Physics. 20: 294-302.
+- Louis Boucherie, Benjamin F. Maier, Sune Lehmann (2024). [Decomposing geographical and universal aspects of human mobility](https://arxiv.org/pdf/2405.08746). arXiv:2405.08746.
 
 <br>
 
