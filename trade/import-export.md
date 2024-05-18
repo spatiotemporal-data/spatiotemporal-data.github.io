@@ -256,7 +256,7 @@ data
 ```python
 import pandas as pd
 
-data = pd.DataFrame()
+data = pd.DataFrame(columns = ['exporter_id', 'importer_id', 'hs_code', 'year', 'value', 'quantity'])
 chunksize = 10 ** 6
 for chunk in pd.read_csv("trade_i_baci_a_92.tsv.bz2", compression = "bz2",
                          sep = '\t', chunksize = chunksize):
@@ -266,7 +266,8 @@ for chunk in pd.read_csv("trade_i_baci_a_92.tsv.bz2", compression = "bz2",
     df['hs_code'] = chunk['hs_code'] # Product
     df['year'] = chunk['year'] # Year
     df['value'] = chunk['value'] # Trade value
-    data = data.append(df)
+    df['quantity'] = chunk['quantity'] # Trade value
+    data = pd.concat([data, df], ignore_index = True)
     del df
 ```
 
