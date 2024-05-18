@@ -95,6 +95,7 @@ When applying the polynomial filter to a graph signal <img style="display: inlin
 - Geert Leus, Antonio G. Marques, José M. F. Moura, Antonio Ortega, David I Shuman (2023). [Graph Signal Processing: History, Development, Impact, and Outlook](https://arxiv.org/pdf/2303.12211). arXiv:2303.12211.
 - A Sandryhaila, JMF Moura (2013). [Discrete signal processing on graphs: Graph filters](https://users.ece.cmu.edu/~asandryh/papers/icassp13.pdf). Section 3: Graph Filters.
 - Henry Kenlay, Dorina Thanou, [Xiaowen Dong](https://web.media.mit.edu/~xdong/) (2020). [On The Stability of Polynomial Spectral Graph Filters](https://web.media.mit.edu/~xdong/paper/icassp20.pdf). ICASSP 2020.
+- Xiaowen Dong, Dorina Thanou, Michael Rabbat, and Pascal Frossard (2019). [Learning Graphs From Data: A signal representation perspective](https://web.media.mit.edu/~xdong/paper/spm19.pdf). IEEE Signal Processing Magazine.
 - Eylem Tugçe Güneyi, Berkay Yaldız, Abdullah Canbolat, and Elif Vural (2024). [Learning Graph ARMA Processes From Time-Vertex Spectra](https://doi.org/10.1109/TSP.2023.3329948). IEEE Transactions on Signal Processing, 72: 47 - 56.
 
 <br>
@@ -112,6 +113,12 @@ or another form such that
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\hat{\boldsymbol{x}}=\boldsymbol{\Psi}^{H}\boldsymbol{x}"/></p>
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Psi}"/> consists of the eigenvectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\psi}_k,\,k=1,2,\ldots,N"/>. The notation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{*}"/> is the conjugate of complex values, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{H}"/> is the conjugate transpose.
+
+The above graph Fourier transform can also be generalized to the graph signals in the form of multivariate time series. For instance, on the data <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{N\times T}"/>, we have
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\hat{\boldsymbol{X}}=\boldsymbol{\Psi}^{H}\boldsymbol{X}"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Psi}"/> consists of the eigenvectors of the graph Laplacian matrix.
 
 **References**
 
