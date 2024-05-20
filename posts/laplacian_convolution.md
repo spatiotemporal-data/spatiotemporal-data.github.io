@@ -6,6 +6,8 @@ layout: default
 
 <br>
 
+The latest version of LCR model is available at [here](https://xinychen.github.io/papers/Laplacian_convolution.pdf).
+
 Content:
 - Motivation
 - Prior art on global trend modeling
