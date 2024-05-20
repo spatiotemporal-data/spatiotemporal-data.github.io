@@ -196,6 +196,117 @@ ax.tick_params(direction = 'in')
 plt.show()
 ```
 
+## LCR-2D with Flipping Operation
+
+```python
+import numpy as np
+
+def compute_mape(var, var_hat):
+    return np.sum(np.abs(var - var_hat) / var) / var.shape[0]
+
+def compute_rmse(var, var_hat):
+    return np.sqrt(np.sum((var - var_hat) ** 2) / var.shape[0])
+
+def laplacian(T, tau):
+    ell = np.zeros(T)
+    ell[0] = 2 * tau
+    for k in range(tau):
+        ell[k + 1] = -1
+        ell[-k - 1] = -1
+    return ell
+
+def prox_2d(z, w, lmbda, denominator):
+    N, T = z.shape
+    temp1 = np.fft.fft2(lmbda * z - w) / denominator
+    temp2 = 1 - N * T / (denominator * np.abs(temp1))
+    temp2[temp2 <= 0] = 0
+    return np.fft.ifft2(temp1 * temp2).real
+
+def update_z(y_train, pos_train, x, w, lmbda, eta):
+    z = x + w / lmbda
+    z[pos_train] = (lmbda / (lmbda + eta) * z[pos_train] 
+                    + eta / (lmbda + eta) * y_train)
+    return z
+
+def update_w(x, z, w, lmbda):
+    return w + lmbda * (x - z)
+
+def LCR_2d(y_true, y, lmbda, gamma, tau_s, tau_t, maxiter = 50):
+    eta = 100 * lmbda
+    if np.isnan(y).any() == False:
+        pos_test = np.where((y_true != 0) & (y == 0))
+    elif np.isnan(y).any() == True:
+        pos_test = np.where((y_true > 0) & (np.isnan(y)))
+        y[np.isnan(y)] = 0
+    y_test = y_true[pos_test]
+    pos_train = np.where(y != 0)
+    y_train = y[pos_train]
+    z = y.copy()
+    w = y.copy()
+    ell_s = np.zeros(N)
+    ell_s[0] = 1
+    # ell_s = laplacian(N, tau_s)
+    ell_t = laplacian(T, tau_t)
+    ell = np.fft.fft2(np.outer(ell_s, ell_t))
+    denominator = lmbda + gamma * np.abs(ell) ** 2
+    del y_true, y
+    show_iter = 10
+    for it in range(maxiter):
+        x = prox_2d(z, w, lmbda, denominator)
+        z = update_z(y_train, pos_train, x, w, lmbda, eta)
+        w = update_w(x, z, w, lmbda)
+        if (it + 1) % show_iter == 0:
+            print(it + 1)
+            print(compute_mape(y_test, x[pos_test]))
+            print(compute_rmse(y_test, x[pos_test]))
+            print()
+    return x
+```
+
+### Large Time Series Imputation
+
+PeMS dataset is available at https://github.com/xinychen/transdim/tree/master/datasets/California-data-set.
+
+Hyperparameters:
+
+- On 30%/50% missing data, $\lambda=10^{-5}NT$, $\gamma=10\lambda$, and $\tau=1$;
+- On 70% missing data, $\lambda=10^{-5}NT$, $\gamma=10\lambda$, and $\tau=2$;
+- On 90% missing data, $\lambda=10^{-5}NT$, $\gamma=10\lambda$, and $\tau=3$.
+
+```python
+import numpy as np
+np.random.seed(1000)
+
+dense_mat = np.load('pems-w1.npz')['arr_0']
+for t in range(2, 5):
+    dense_mat = np.append(dense_mat, np.load('pems-w{}.npz'.format(t))['arr_0'],
+                          axis = 1)
+dim1, dim2 = dense_mat.shape
+
+missing_rate = 0.9
+sparse_mat = dense_mat * np.round(np.random.rand(dim1, dim2) + 0.5 - missing_rate)
+# np.savez_compressed('dense_mat.npz', dense_mat)
+# np.savez_compressed('sparse_mat.npz', sparse_mat)
+
+# import cupy as np
+
+# dense_mat = np.load('dense_mat.npz')['arr_0']
+# sparse_mat = np.load('sparse_mat.npz')['arr_0']
+
+import time
+start = time.time()
+N, T = sparse_mat.shape
+lmbda = 1e-5 * N * T
+gamma = 10 * lmbda
+tau_s = 1
+tau_t = 3
+maxiter = 100
+mat_hat = LCR_2d(dense_mat, sparse_mat, lmbda, gamma, tau_s, tau_t, maxiter)
+end = time.time()
+print('Running time: %d seconds.'%(end - start))
+```
+
+
 
 <br>
 
