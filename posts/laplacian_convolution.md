@@ -196,7 +196,7 @@ ax.tick_params(direction = 'in')
 plt.show()
 ```
 
-## LCR-2D with Flipping Operation
+## LCR-2D without Flipping Operation
 
 ```python
 import numpy as np
