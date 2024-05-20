@@ -198,6 +198,8 @@ ax.tick_params(direction = 'in')
 plt.show()
 ```
 
+<br>
+
 ## LCR-2D without Flipping Operation
 
 ```python
@@ -271,9 +273,11 @@ PeMS dataset is available at https://github.com/xinychen/transdim/tree/master/da
 
 Hyperparameters:
 
-- On 30%/50% missing data, $\lambda=10^{-5}NT$, $\gamma=10\lambda$, and $\tau=1$;
-- On 70% missing data, $\lambda=10^{-5}NT$, $\gamma=10\lambda$, and $\tau=2$;
-- On 90% missing data, $\lambda=10^{-5}NT$, $\gamma=10\lambda$, and $\tau=3$.
+- On 30%/50% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\tau=1"/>;
+- On 70% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\tau=2"/>;
+- On 90% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\tau=3"/>.
+
+<br>
 
 ```python
 import numpy as np
