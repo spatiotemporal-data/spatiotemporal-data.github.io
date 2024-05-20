@@ -267,6 +267,8 @@ def LCR_2d(y_true, y, lmbda, gamma, tau_s, tau_t, maxiter = 50):
     return x
 ```
 
+<br>
+
 ### Large Time Series Imputation
 
 PeMS dataset is available at [our GitHub repository](https://github.com/xinychen/transdim/tree/master/datasets/California-data-set).
