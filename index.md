@@ -29,4 +29,4 @@ and provides a series of tutorials on visualizing spatiotemporal data in Python:
 - [Germany energy consumption](https://spatiotemporal-data.github.io/energy/E-usage-data/)
 - Service-level mobile traffic data
 
-For those who are interested in machine learning papers, we would like to recommend our [reading notes](https://spatiotemporal-data.github.io/bib/).
+For those who are interested in broad areas within the scope, we would like to recommend a series of [reading notes](https://spatiotemporal-data.github.io/bib/).
