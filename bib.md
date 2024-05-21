@@ -8,6 +8,16 @@ layout: default
 
 <br>
 
+### 11th Mile
+#### Time-Varying Autoregressive Models
+
+Vector autoregression (VAR) has a key assumption that the coeffcients are invariant across time, but it is not always true for accounting for psychological phenomena such as the phase transition from a healthy to unhealthy state (or vice versa). Consequently, time-varying vector autoregressive models are of great significance for capturing the parameter changes in response to interventions. From the statistical perspective, there are two types of lagged effects between pairs of variables: **autocorrelations** (e.g., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}\to\boldsymbol{x}_{t+1}"/>) and **cross-lagged effects** (e.g., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}\to\boldsymbol{y}_{t+1}"/>). The time-varying autoregressive models can be solved by using generalized additive model and kernel smoothing estimation.
+
+**References**
+
+- Haslbeck, J. M., Bringmann, L. F., & Waldorp, L. J. (2021). [A tutorial on estimating time-varying vector autoregressive models](https://doi.org/10.1080/00273171.2020.1743630). Multivariate Behavioral Research, 56(1), 120-149.
+
+<br>
 
 ### 10th Mile
 #### Higher-Order Graph & Hypergraph
