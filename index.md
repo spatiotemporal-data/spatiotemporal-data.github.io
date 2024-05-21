@@ -12,6 +12,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Signal Processing
 - Network Science
 - Social Learning
+- Cyber-Physical Systems
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
@@ -27,3 +28,5 @@ and provides a series of tutorials on visualizing spatiotemporal data in Python:
 - [Global water vapor patterns](https://spatiotemporal-data.github.io/climate/water-vapor/)
 - [Germany energy consumption](https://spatiotemporal-data.github.io/energy/E-usage-data/)
 - Service-level mobile traffic data
+
+For those who are interested in machine learning papers, we would like to recommend our [reading notes](https://spatiotemporal-data.github.io/bib/).
