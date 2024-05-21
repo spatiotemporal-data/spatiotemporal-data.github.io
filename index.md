@@ -12,6 +12,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Signal Processing
 - Network Science
 - Social Learning
+- Causal Inference
 - Cyber-Physical Systems
 
 This project presents some spatiotemporal methods with data-driven machine learning:
