@@ -12,6 +12,7 @@ layout: default
 #### Economic Complexity
 
 **References**
+
 - César A. Hidalgo (2021). [Economic complexity theory and applications](https://doi.org/10.1038/s42254-020-00275-1). Nature Reviews Physics. 3: 92-113.
 
 <br>
