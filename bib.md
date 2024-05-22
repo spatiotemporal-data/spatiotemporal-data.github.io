@@ -8,6 +8,14 @@ layout: default
 
 <br>
 
+### 12th Mile
+#### Economic Complexity
+
+**References**
+- César A. Hidalgo (2021). [Economic complexity theory and applications](https://doi.org/10.1038/s42254-020-00275-1). Nature Reviews Physics. 3: 92-113.
+
+<br>
+
 ### 11th Mile
 #### Time-Varying Autoregressive Models
 
@@ -31,6 +39,7 @@ The concept of a higher-order graph extends the traditional notion of a graph, w
 - Christian Bick, Elizabeth Gross, Heather A. Harrington, and Michael T. Schaub (2023). [What are higher-order networks?](https://doi.org/10.1137/21M1414024) SIAM Review. 65(3).
 - Vincent Thibeault, Antoine Allard & Patrick Desrosiers (2024). [The low-rank hypothesis of complex systems](https://www.nature.com/articles/s41567-023-02303-0). Nature Physics. 20: 294-302.
 - Louis Boucherie, Benjamin F. Maier, Sune Lehmann (2024). [Decomposing geographical and universal aspects of human mobility](https://arxiv.org/pdf/2405.08746). arXiv:2405.08746.
+- Raissa M. D’Souza, Mario di Bernardo & Yang-Yu Liu (2023). [Controlling complex networks with complex nodes](https://doi.org/10.1038/s42254-023-00566-3). Nature Reviews Physics. 5: 250–262.
 
 <br>
 
