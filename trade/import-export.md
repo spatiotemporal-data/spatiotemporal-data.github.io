@@ -257,7 +257,7 @@ data
 import pandas as pd
 
 data = pd.DataFrame(columns = ['exporter_id', 'importer_id', 'hs_code', 'year', 'value', 'quantity'])
-chunksize = 10 ** 6
+chunksize = 10 ** 8
 for chunk in pd.read_csv("trade_i_baci_a_92.tsv.bz2", compression = "bz2",
                          sep = '\t', chunksize = chunksize):
     df = pd.DataFrame()
@@ -270,6 +270,51 @@ for chunk in pd.read_csv("trade_i_baci_a_92.tsv.bz2", compression = "bz2",
     data = pd.concat([data, df], ignore_index = True)
     del df
 ```
+
+<br>
+
+Here is a more detailed list of six-digit HS codes associated with AI and high-tech products:
+
+Here is a more detailed list of six-digit HS codes associated with AI and high-tech products in the dataset:
+
+- Semiconductors and Electronic Components
+  - 854110: Diodes, other than photosensitive or light-emitting diodes.
+  - 854121: Transistors, other than photosensitive transistors, with a dissipation rate of less than 1 W.
+  - 854129: Other transistors.
+  - 854140: Photosensitive semiconductor devices, including photovoltaic cells, whether or not assembled in modules or made up into panels; light-emitting diodes.
+
+- Instrumentation and Measuring Devices
+  - 903031: Multimeters without a recording device.
+  - 903039: Other instruments for measuring or checking voltage, current, resistance, or power, without a recording device.
+  - 903040: Instruments and apparatus, specially designed for telecommunications (for example, cross-talk meters, gain measuring instruments, distortion factor meters, psophometers).
+
+- Robotics and Automation
+  - 842890: Other lifting, handling, loading, or unloading machinery.
+
+- High-Tech Medical Equipment
+  - 901819: Other electro-diagnostic apparatus (including apparatus for functional exploratory examination or for checking physiological parameters).
+
+- Optical and Photographic Instruments
+  - 900110: Optical fibers, optical fiber bundles and cables.
+  - 900120: Sheets and plates made of polarizing material.
+  - 900190: Lenses, prisms, mirrors, and other optical elements, of any material, unmounted, other than such elements of glass not optically worked.
+
+- High-Tech Laboratory Equipment
+  - 902710: Gas or smoke analysis apparatus.
+  - 902720: Chromatographs and electrophoresis instruments.
+  - 902730: Spectrometers, spectrophotometers, and spectrographs using optical radiations (UV, visible, IR).
+  - 902750: Other instruments and apparatus using optical radiations (UV, visible, IR).
+
+- Printed Circuit Boards
+  - 853400: Printed circuits.
+
+- Sensors and Actuators
+  - 902610: Instruments and apparatus for measuring or checking the flow or level of liquids.
+  - 902620: Instruments and apparatus for measuring or checking pressure.
+
+- Microelectromechanical Systems (MEMS)
+  - 901310: Telescopic sights for fitting to arms; periscopes; telescopes designed to form parts of machines, appliances, instruments, or apparatus of this chapter or Section XVI.
+  - 901380: Other optical devices, appliances, and instruments.
 
 
 <br>
