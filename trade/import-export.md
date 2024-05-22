@@ -273,7 +273,6 @@ for chunk in pd.read_csv("trade_i_baci_a_92.tsv.bz2", compression = "bz2",
 
 <br>
 
-Here is a more detailed list of six-digit HS codes associated with AI and high-tech products:
 
 Here is a more detailed list of six-digit HS codes associated with AI and high-tech products in the dataset:
 
