@@ -11,7 +11,6 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Data Standardization & Valorization
 - Signal Processing
 - Network Science
-- Social Learning
 - Graph Computing & Learning
 - Causal Inference
 - Cyber-Physical Systems
