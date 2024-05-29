@@ -216,6 +216,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 **References**
 - Gao Wang, Abhishek Sarkar, Peter Carbonetto and Matthew Stephens (2020). [A simple new approach to variable selection in regression, with application to genetic fine mapping](https://doi.org/10.1111/rssb.12388). Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(5), 1273-1300.
+- Emil Uffelmann, Qin Qin Huang, Nchangwi Syntia Munung, Jantina de Vries, Yukinori Okada, Alicia R. Martin, Hilary C. Martin, Tuuli Lappalainen & Danielle Posthuma (2021). [Genome-wide association studies](https://www.nature.com/articles/s43586-021-00056-9). Nature Reviews Methods Primers. 1: 59.
 
 <br>
 
