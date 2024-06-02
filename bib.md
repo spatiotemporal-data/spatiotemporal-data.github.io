@@ -216,7 +216,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}}~&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2 \\ \text{s.t.}~& \displaystyle\|\boldsymbol{w}\|_0=L,\,L\in\mathbb{Z}^{+}  \end{aligned}"/></p>
 
-Or see Figure 1.1 in the [non-negative sparse reconstruction](https://hal.science/tel-02376895/document) (Section 1.1, page 2) for an illustration.
+Or see Figure 1.1 in [Section 1.1 Non-negative sparse reconstruction](https://hal.science/tel-02376895/document) (Page 2) for an illustration.
 
 **References**
 - Gao Wang, Abhishek Sarkar, Peter Carbonetto and Matthew Stephens (2020). [A simple new approach to variable selection in regression, with application to genetic fine mapping](https://doi.org/10.1111/rssb.12388). Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(5), 1273-1300.
