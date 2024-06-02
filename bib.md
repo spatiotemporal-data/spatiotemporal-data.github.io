@@ -11,7 +11,7 @@ layout: default
 ### 13th Mile
 #### Sparse Recovery Problem
 
-For a general optimization problem for estimating sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>:
+For a general optimization problem for estimating the sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}~&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{x}\|_2^2 \\ \text{s.t.}~& \begin{cases} \boldsymbol{x}\geq 0 \\ \displaystyle\|\boldsymbol{w}\|_0\leq K,\,K\in\mathbb{Z}^{+} \end{cases} \end{aligned}"/></p>
 with the vector signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/> and a dictionary of elementary functions <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>. There are a lot of solution algorithms in literature:
