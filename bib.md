@@ -8,6 +8,15 @@ layout: default
 
 <br>
 
+### 13th Mile
+#### Sparse Recovery Problem
+
+Given any 
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}~&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{x}\|_2^2 \\ \text{s.t.}~& \begin{cases} \boldsymbol{x}\geq 0 \\ \displaystyle\|\boldsymbol{w}\|_0\leq K,\,K\in\mathbb{Z}^{+} \end{cases} \end{aligned}"/></p>
+
+
+
 ### 12th Mile
 #### Economic Complexity
 
