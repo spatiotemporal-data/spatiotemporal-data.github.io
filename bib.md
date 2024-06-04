@@ -17,7 +17,7 @@ Considering a general optimization problem for estimating the sparse vector <img
 with the vector signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/> and a dictionary of elementary functions <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>. There are a lot of solution algorithms in literature:
 
 - Mehrdad Yaghoobi, Di Wu, Mike E. Davies (2015). [Fast Non-Negative Orthogonal Matching Pursuit](https://doi.org/10.1109/LSP.2015.2393637). IEEE Signal Processing Letters, 22 (9): 1229-1233.
-- [Non-Negative Orthogonal Greedy Algorithms](https://doi.org/10.1109/TSP.2019.2943225). IEEE Transactions on Signal Processing, 67 (21): 5643-5658.
+- Thanh Thi Nguyen, Jérôme Idier, Charles Soussen, El-Hadi Djermoune (2019). [Non-Negative Orthogonal Greedy Algorithms](https://doi.org/10.1109/TSP.2019.2943225). IEEE Transactions on Signal Processing, 67 (21): 5643-5658.
 - Nicolas Nadisic, Arnaud Vandaele, Nicolas Gillis, Jeremy E. Cohen (2020). [Exact Sparse Nonnegative Least Squares](https://doi.org/10.1109/ICASSP40776.2020.9053295). IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
 - Chiara Ravazzi, Francesco Bullo, Fabrizio Dabbene (2022). [Unveiling Oligarchy in Influence Networks From Partial Information](https://doi.org/10.1109/TCNS.2022.3225299). IEEE Transactions on Control of Network Systems, 10 (3): 1279-1290.
 
