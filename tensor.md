@@ -17,6 +17,10 @@ Our team plans to develop a series of tutorials about tensor decomposition for m
   - Tensors in algebra & machine learning
     - Basic structure
   - Tensors in data science
+    - Images & videos
+    - Recommender systems
+    - International trade
+    - Human mobility
 
 
 
