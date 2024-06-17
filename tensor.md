@@ -12,7 +12,7 @@ Our team plans to develop a series of tutorials about tensor decomposition for m
 
 - **Introduction**
   - Tensor decomposition in the past 10-100 years
-  - Tensor decomposition in the past 10 years
+  - Tensor decomposition in the past decade
 - **What are tensors?**
   - Tensors in algebra & machine learning
     - Basic structure
