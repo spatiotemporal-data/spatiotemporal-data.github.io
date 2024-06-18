@@ -15,14 +15,18 @@ Our team plans to develop a series of tutorials about tensor decomposition for m
   - Tensor decomposition in the past decade
 - **What are tensors?**
   - Tensors in algebra & machine learning
-    - Basic structure
+    - Basic structures
+    - Tensor unfolding
+    - Tesor vectorization
   - Tensors in data science
     - Images & videos
     - Recommender systems
     - International trade
     - Human mobility
-
-
+- **Foundation of Tensor Computations**
+  - Kronecker product
+  - Khatri-Rao product
+  - Norms
 
 
 <br>
