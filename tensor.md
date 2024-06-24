@@ -30,3 +30,10 @@ Our team plans to develop a series of tutorials about tensor decomposition for m
 
 
 <br>
+
+**Materials**
+
+- Simon J.D. Prince (2023). Understanding Deep learning, MIT Press. [[Book website](https://udlbook.github.io/udlbook/)]
+- Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong (2020). Mathematics for Machine Learning, Cambridge University Press. [[Book website](https://mml-book.github.io/)]
+
+<br>
