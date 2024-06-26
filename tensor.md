@@ -28,6 +28,9 @@ Our team plans to develop a series of tutorials about tensor decomposition for m
     - Vector norms
     - Frobenius norm
     - Nuclear norm
+  - Matrix Trace
+    - Definition
+    - Property
   - Kronecker product
   - Khatri-Rao product
   - Norms
