@@ -48,7 +48,7 @@ This article summarizes the development of tensor decomposition models and algor
     - Property
   - Derivatives
     - Basic principle
-    - L2-norm
+    - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm
     - Matrix trace
     - Frobenius norm
     - Kronecker product
