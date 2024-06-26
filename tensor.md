@@ -19,11 +19,15 @@ Our team plans to develop a series of tutorials about tensor decomposition for m
     - Tensor unfolding
     - Tesor vectorization
   - Tensors in data science
-    - Images & videos
-    - Recommender systems
+    - Fluid flow
+    - Climate & weather
     - International trade
-    - Human mobility
+    - Urban human mobility
 - **Foundation of Tensor Computations**
+  - Norms
+    - Vector norms
+    - Frobenius norm
+    - Nuclear norm
   - Kronecker product
   - Khatri-Rao product
   - Norms
