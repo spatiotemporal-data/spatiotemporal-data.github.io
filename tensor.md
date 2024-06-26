@@ -32,8 +32,27 @@ Our team plans to develop a series of tutorials about tensor decomposition for m
     - Definition
     - Property
   - Kronecker product
+    - Definition
+    - Basic property
+    - Mixed-product property
+    - Inverse of Kronecker product
+    - Vectorization
+    - Matrix trace
+    - Frobenius norm
   - Khatri-Rao product
-  - Norms
+  - Modal product
+    - Definition
+    - Property
+  - Outer product
+    - Definition
+    - Property
+  - Derivatives
+    - Basic principle
+    - L2-norm
+    - Matrix trace
+    - Frobenius norm
+    - Kronecker product
+    - Modal product
 
 
 <br>
