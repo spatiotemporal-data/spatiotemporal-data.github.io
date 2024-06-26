@@ -4,7 +4,7 @@ layout: default
 
 ### Tensor Decomposition for Machine Learning
 
-Our team plans to develop a series of tutorials about tensor decomposition for machine learning, providing new vision and insight into machine learning community.
+This article summarizes a series of tensor decomposition models and algorithms in the existing literature, providing comprehensive reviews and tutorials from matrix and tensor computations to tensor decomposition techniques across a wide range of scientific areas. In terms of matrix and tensor computations, this article gives a detailed description of algebraic tensor structure, tensor unfolding, Kronecker product, Khatri-Rao product, and norms. In terms of tensor decomposition, this article introduces CP decomposition, Tucker decomposition, tensor-train decomposition, Bayesian tensor factorization, and non-negative tensor factorization, in the meantime presenting the applications of these methods. Since the decomposition of tensors is usually constructed as an optimization problem, this article also gives preliminaries of some methods for solving convex and nonconvex optimization. This work is expected to provide insight into both machine learning and data science communities, drawing strong connections with the core concept ``tensor decomposition". To make this work reproducible and sustainable, we provide sources such as datasets and Python implementation (mainly relying on NumPy).
 
 <br>
 
