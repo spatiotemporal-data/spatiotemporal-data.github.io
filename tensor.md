@@ -28,7 +28,7 @@ This article summarizes the development of tensor decomposition models and algor
     - Vector norms
     - Frobenius norm
     - Nuclear norm
-  - Matrix Trace
+  - Matrix trace
     - Definition
     - Property
   - Kronecker product
