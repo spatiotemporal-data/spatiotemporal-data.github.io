@@ -73,6 +73,7 @@ The concept of a higher-order graph extends the traditional notion of a graph, w
 - Vincent Thibeault, Antoine Allard & Patrick Desrosiers (2024). [The low-rank hypothesis of complex systems](https://www.nature.com/articles/s41567-023-02303-0). Nature Physics. 20: 294-302.
 - Louis Boucherie, Benjamin F. Maier, Sune Lehmann (2024). [Decomposing geographical and universal aspects of human mobility](https://arxiv.org/pdf/2405.08746). arXiv:2405.08746.
 - Raissa M. D’Souza, Mario di Bernardo & Yang-Yu Liu (2023). [Controlling complex networks with complex nodes](https://doi.org/10.1038/s42254-023-00566-3). Nature Reviews Physics. 5: 250–262.
+- PS Chodrow, N Veldt, AR Benson (2021). [Generative hypergraph clustering: From blockmodels to modularity](https://doi.org/10.1126/sciadv.abh1303). Science Advances, 28(7).
 
 <br>
 
