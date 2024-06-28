@@ -9,9 +9,9 @@ layout: default
 <br>
 
 ### 15th Mile
-#### Non-Negative Least Squares
+#### Synthetic Sweden Mobility
 
-
+The Synthetic Sweden Mobility (SySMo) model provides a simplified yet statistically realistic microscopic representation of the real population of Sweden. The agents in this synthetic population contain socioeconomic attributes, household characteristics, and corresponding activity plans for an average weekday. This agent-based modelling approach derives the transportation demand from the agents’ planned activities using various transport modes (e.g., car, public transport, bike, and walking). The dataset is available on [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10648077).
 
 <br>
 
