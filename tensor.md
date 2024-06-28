@@ -4,7 +4,7 @@ layout: default
 
 ### Tensor Decomposition for Machine Learning
 
-This article summarizes the development of tensor decomposition models and algorithms in the literature, providing comprehensive reviews and tutorials from matrix and tensor computations to tensor decomposition techniques across a wide range of scientific areas and applications. Since the decomposition of tensors is usually constructed as an optimization problem, this article also has a preliminary introduction to some popular methods for solving convex and nonconvex optimization. This work is expected to provide insight into both machine learning and data science communities, drawing strong connections with the core concept “*tensor decomposition*". To make this work reproducible and sustainable, we provide sources such as datasets and Python implementation (mainly relying on `NumPy`).
+This article summarizes the development of tensor decomposition models and algorithms in the literature, providing comprehensive reviews and tutorials from matrix and tensor computations to tensor decomposition techniques across a wide range of scientific areas and applications. Since the decomposition of tensors is usually constructed as an optimization problem, this article also has a preliminary introduction to some popular methods for solving convex and nonconvex optimization. This work is expected to provide insight into both machine learning and data science communities, drawing strong connections with the key concepts relating to *tensor decomposition*. To make this work reproducible and sustainable, we provide sources such as datasets and Python implementation (mainly relying on `NumPy`).
 
 <br>
 
