@@ -37,6 +37,7 @@ with the vector signal <img style="display: inline;" src="https://latex.codecogs
 - Thanh Thi Nguyen, Jérôme Idier, Charles Soussen, El-Hadi Djermoune (2019). [Non-Negative Orthogonal Greedy Algorithms](https://doi.org/10.1109/TSP.2019.2943225). IEEE Transactions on Signal Processing, 67 (21): 5643-5658.
 - Nicolas Nadisic, Arnaud Vandaele, Nicolas Gillis, Jeremy E. Cohen (2020). [Exact Sparse Nonnegative Least Squares](https://doi.org/10.1109/ICASSP40776.2020.9053295). IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).
 - Chiara Ravazzi, Francesco Bullo, Fabrizio Dabbene (2022). [Unveiling Oligarchy in Influence Networks From Partial Information](https://doi.org/10.1109/TCNS.2022.3225299). IEEE Transactions on Control of Network Systems, 10 (3): 1279-1290.
+- Thi Thanh Nguyen (2019). [Orthogonal greedy algorithms for non-negative sparse reconstruction](https://hal.science/tel-02376895/document). PhD thesis.
 
 <br>
 
