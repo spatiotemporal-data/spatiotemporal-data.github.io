@@ -315,6 +315,49 @@ print('Running time: %d seconds.'%(end - start))
 ```
 
 
+<br>
+<br>
+<br>
+
+```python
+import numpy as np
+
+def circ(vec):
+    n = vec.shape[0]
+    mat = np.zeros((n, n))
+    mat[:, 0] = vec
+    for i in range(1, n):
+        mat[:, i] = np.append(vec[-i :], vec[: -i], axis = 0)
+    return mat
+
+def sparse_reg(y, A, tau):
+    m, n = A.shape
+    x = np.zeros(n)
+    S = np.array([])
+    r = y.copy()
+    while len(S) < tau:
+        A_tilde = A.copy()
+        if len(S) > 0:
+            A_tilde[:, S] = 0
+        ar = A_tilde.T @ r
+        ell = (np.argwhere(ar == np.amax(ar))).flatten().tolist()
+        S = np.append(S, ell, axis = 0).astype(int)
+        xS = np.linalg.pinv(A[:, S]) @ y
+        r = y - A[:, S] @ xS
+    x[S] = xS
+    return x
+```
+
+```python
+data = np.load('volume.npy')
+y = data[0, : 2 * 144]
+mat = circ(y)
+A = mat[:, 1 :]
+tau = 5
+x = sparse_reg(y, A, tau)
+print(x)
+```
+
 
 <br>
 
