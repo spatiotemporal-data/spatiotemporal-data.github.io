@@ -2,10 +2,6 @@
 layout: default
 ---
 
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data.png" width="720" />
-</p>
-
 This project aims at supporting research for all aspects of spatiotemporal data modeling with machine learning and solving many scientific, mathematical, industrial, and engineering problems in:
 
 - Urban Science
@@ -38,5 +34,11 @@ and provides a series of tutorials on visualizing spatiotemporal data in Python:
 - Service-level mobile traffic data
 
 For those who are interested in broad areas within the scope, we would like to recommend a series of [reading notes](https://spatiotemporal-data.github.io/bib/).
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data.png" width="720" />
+</p>
 
 <br>
