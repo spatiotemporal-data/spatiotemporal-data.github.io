@@ -16,7 +16,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Cyber-Physical Systems
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data.png" width="600" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data.png" width="700" />
 </p>
 
 This project presents some spatiotemporal methods with data-driven machine learning:
