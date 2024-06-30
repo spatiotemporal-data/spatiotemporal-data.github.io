@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data.png" width="720" />
+</p>
+
 This project aims at supporting research for all aspects of spatiotemporal data modeling with machine learning and solving many scientific, mathematical, industrial, and engineering problems in:
 
 - Urban Science
@@ -14,10 +19,6 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Graph Computing & Learning
 - Causal Inference
 - Cyber-Physical Systems
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data.png" width="720" />
-</p>
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
