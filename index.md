@@ -15,6 +15,11 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Causal Inference
 - Cyber-Physical Systems
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data.png" width="600" />
+</p>
+
+
 This project presents some spatiotemporal methods with data-driven machine learning:
 
 - **(Chen et al., 2024)** [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). IEEE Transactions on Knowledge and Data Engineering. 36 (2): 504-517. [[Blog post](https://spatiotemporal-data.github.io/posts/time_varying_model/)]
