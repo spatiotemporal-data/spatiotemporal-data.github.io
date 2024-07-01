@@ -4,7 +4,7 @@ layout: default
 
 This project aims at supporting research for all aspects of spatiotemporal data modeling with machine learning and solving many scientific, mathematical, industrial, and engineering problems in:
 
-- Urban Science
+- Urban Science & Smart Cities
 - Human Mobility Modeling
 - Geospatial Data Analysis
 - Intelligent & Sustainable Urban Systems
