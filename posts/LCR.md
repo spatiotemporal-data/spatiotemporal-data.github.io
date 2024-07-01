@@ -330,11 +330,11 @@ def circ(vec):
         mat[:, i] = np.append(vec[-i :], vec[: -i], axis = 0)
     return mat
 
-def sparse_reg(y, A, tau):
+def sparse_reg(x, A, tau):
     m, n = A.shape
-    x = np.zeros(n)
+    w = np.zeros(n)
     S = np.array([])
-    r = y.copy()
+    r = x.copy()
     while len(S) < tau:
         A_tilde = A.copy()
         if len(S) > 0:
@@ -342,20 +342,43 @@ def sparse_reg(y, A, tau):
         ar = A_tilde.T @ r
         ell = (np.argwhere(ar == np.amax(ar))).flatten().tolist()
         S = np.append(S, ell, axis = 0).astype(int)
-        xS = np.linalg.pinv(A[:, S]) @ y
-        r = y - A[:, S] @ xS
-    x[S] = xS
-    return x
+        wS = np.linalg.pinv(A[:, S]) @ x
+        r = y - A[:, S] @ wS
+    w[S] = wS
+    return w
+
+# def sparse_reg(y, A, tau, maxiter = 50):
+#     m, n = A.shape
+#     x = np.zeros(n)
+#     S = np.array([])
+#     r = y.copy()
+#     for it in range(maxiter):
+#         A_tilde = A.copy()
+#         ar = A_tilde.T @ r
+#         ell = np.argpartition(ar, - 1 * tau)[- 1 * tau :].flatten().tolist()
+#         S = np.append(S, ell, axis = 0).astype(int)
+#         xS = np.linalg.pinv(A[:, S]) @ y
+#         x[S] = xS
+#         S = np.argpartition(x, - tau)[- tau :].flatten().tolist()
+#         xS = np.linalg.pinv(A[:, S]) @ y
+#         x = np.zeros(n)
+#         x[S] = xS
+#         r = y - A[:, S] @ x[S]
+#     return x
 ```
 
 ```python
 data = np.load('volume.npy')
-y = data[0, : 2 * 144]
+y = data[1, :]
 mat = circ(y)
 A = mat[:, 1 :]
 tau = 5
 x = sparse_reg(y, A, tau)
-print(x)
+print('Non-zero entries of kernel x:')
+print(x[x > 0])
+print('Index set of the non-zero entries of kernel x:')
+print(np.where(x > 0)[0])
+print()
 ```
 
 
