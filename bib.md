@@ -44,9 +44,8 @@ with the vector signal <img style="display: inline;" src="https://latex.codecogs
 - Chiara Ravazzi, Francesco Bullo, Fabrizio Dabbene (2022). [Unveiling Oligarchy in Influence Networks From Partial Information](https://doi.org/10.1109/TCNS.2022.3225299). IEEE Transactions on Control of Network Systems, 10 (3): 1279-1290.
 - Thi Thanh Nguyen (2019). [Orthogonal greedy algorithms for non-negative sparse reconstruction](https://hal.science/tel-02376895/document). PhD thesis.
 
-By the way, how to solve the following one?
+The most classical (greedy) method for solving the linear sparse regression is orthogonal matching pursuit (see an introduction [here](https://angms.science/doc/RM/OMP.pdf)).
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}~&\frac{1}{2}\sum_{i\in[n]}\|\boldsymbol{y}_i-\boldsymbol{A}_{i}\boldsymbol{x}\|_2^2 \\ \text{s.t.}~& \begin{cases} \boldsymbol{x}\geq 0 \\ \displaystyle\|\boldsymbol{x}\|_0\leq K,\,K\in\mathbb{Z}^{+} \end{cases} \end{aligned}"/></p>
 
 
 <br>
