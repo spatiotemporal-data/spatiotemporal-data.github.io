@@ -38,7 +38,7 @@ For those who are interested in broad areas within the scope, we would like to r
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data.png" width="720" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/ai4data_w_mob.png" width="720" />
 </p>
 
 <br>
