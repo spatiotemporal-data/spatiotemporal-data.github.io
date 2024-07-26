@@ -25,6 +25,7 @@ pursuit (CoSaMP by [D. Needell and J. A. Tropp in 2008](https://arxiv.org/pdf/08
 - **Initialization**: <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=\boldsymbol{0}"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S=\emptyset"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{r}=\boldsymbol{y}"/>.
 - **while** not stop **do**
   - Find <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell"/> as the index set of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/> largest entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;|\boldsymbol{A}^\top\boldsymbol{y}|"/>.
+  - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S:=S\cup\ell"/>.
 - **end**
 
 <br>
