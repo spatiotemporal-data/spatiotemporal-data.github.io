@@ -28,6 +28,8 @@ pursuit (CoSaMP by [D. Needell and J. A. Tropp in 2008](https://arxiv.org/pdf/08
   - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S:=S\cup\ell"/>.
   - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_S:=\boldsymbol{A}_S^{\dagger}\boldsymbol{y}"/>.
   - Find <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S"/> as the index set of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/> largest entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;|\boldsymbol{x}|"/>.
+  - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_S:=\boldsymbol{A}_S^{\dagger}\boldsymbol{y}"/>.
+  - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{r}=\boldsymbol{y}-\boldsymbol{A}_S\boldsymbol{x}_S"/>.
 - **end**
 
 <br>
