@@ -8,6 +8,14 @@ layout: default
 
 <br>
 
+### 16th Mile
+#### Subspace Pursuit Algorithm
+
+Considering the optimization problem for estimating <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>:
+
+
+<br>
+
 ### 15th Mile
 #### Synthetic Sweden Mobility
 
