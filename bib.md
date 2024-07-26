@@ -14,7 +14,11 @@ layout: default
 Considering the optimization problem for estimating <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}~&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{x}\|_2^2 \\ \text{s.t.}~& \|\boldsymbol{x}\|_0\leq K,\,K\in\mathbb{Z}^{+} \end{aligned}"/></p>
-with the signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/> (or measurement vector), the dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/> (or measurement matrix), and the sparse level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K\in\mathbb{Z}^{+}"/>
+with the signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/> (or measurement vector), the dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/> (or measurement matrix), and the sparse level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K\in\mathbb{Z}^{+}"/>.
+
+The subspace pursuit algorithm, introduced by [W. Dai and O. Milenkovic
+in 2008](https://arxiv.org/pdf/0803.0811), is a classical algorithm in the greedy family. It bears some resemblance with compressive sampling matching
+pursuit (CoSaMP by [D. Needell and J. A. Tropp in 2008](https://arxiv.org/pdf/0803.2392)), except that, instead of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2K"/>, only <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/> indices of largest (in modulus) entries of the residual vector are selected, and that an additional orthogonal projection step is performed at each iteration.
 
 
 <br>
