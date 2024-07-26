@@ -23,6 +23,9 @@ pursuit (CoSaMP by [D. Needell and J. A. Tropp in 2008](https://arxiv.org/pdf/08
 - **Input**: Signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>, and sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K\in\mathbb{Z}^{+}"/>.
 - **Output**: <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/> and index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S"/>.
 - **Initialization**: <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=\boldsymbol{0}"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S=\emptyset"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{r}=\boldsymbol{y}"/>.
+- **while** not stop **do**
+  - Find <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell"/> 
+- **end**
 
 <br>
 
