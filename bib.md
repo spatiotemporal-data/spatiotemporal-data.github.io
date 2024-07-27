@@ -43,7 +43,7 @@ The Synthetic Sweden Mobility (SySMo) model provides a simplified yet statistica
 Going back to the individual mobility trajectory, there would be some opportunities to approach taxi trajectory data such as
 
 - [1 million+ trips collected by 1,3000+ taxi cabs during 5 days in Harbin, China](https://github.com/boathit/deepgtt)
-- [664 electric taxi GPS trajectory data in one day in Shenzhen, China](https://guangwang.me/#/data)
+- [Daily GPS trajectory data of 664 electric taxis in Shenzhen, China](https://guangwang.me/#/data)
 
 
 <br>
