@@ -10,8 +10,8 @@ The oceans play an important role in the global climate system. Exploiting sea s
 
 ## Open Dataset
 
-With the advent of satellite retrievals of sea surface temperature beginning in the early of 1980s, there are a large amount of high-resolution sea surface temperature data available for climate analysis, attracting a lot of attention. These data were interpolated through some statistical methods.
+With the advent of satellite retrievals of sea surface temperature beginning in the early of 1980s, there are a large amount of high-resolution sea surface temperature data available for climate analysis, attracting a lot of attention. [The NOAA 1/4 degree daily Optimum Interpolation Sea Surface Temperature (OISST)](https://www.ncei.noaa.gov/products/climate-data-records/sea-surface-temperature-optimum-interpolation)
 
 
 <br>
-<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on July 29, 2024.)</p>
+<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> and Fuqiang Liu on July 29, 2024.)</p>
