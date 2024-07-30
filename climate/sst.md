@@ -10,7 +10,7 @@ The oceans play an important role in the global climate system. Exploiting sea s
 
 ## Open Dataset
 
-
+With the advent of satellite retrievals of sea surface temperature beginning in the early of 1980s, there are a large amount of high-resolution sea surface temperature data available for climate analysis, attracting a lot of attention. These data were interpolated through some statistical methods.
 
 
 <br>
