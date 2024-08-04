@@ -11,7 +11,7 @@ layout: default
 ### 18th Mile
 #### Tensor Factorization for Knowledge Graph Completion
 
-Knowledge graph completion is a 
+Knowledge graph completion is a kind of link prediction problems.
 
 **References**
 - [TuckER: Tensor Factorization for Knowledge Graph Completion](https://github.com/ibalazevic/TuckER). GitHub.
