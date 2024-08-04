@@ -11,7 +11,9 @@ layout: default
 ### 18th Mile
 #### Tensor Factorization for Knowledge Graph Completion
 
-
+**References**
+- [TuckER: Tensor Factorization for Knowledge Graph Completion](https://github.com/ibalazevic/TuckER). GitHub.
+- Ivana Balazevic, Carl Allen, Timothy M. Hospedales (2019). TuckER: Tensor Factorization for Knowledge Graph Completion. arXiv:1901.09590. [[PDF](https://arxiv.org/pdf/1901.09590)]
 
 <br>
 
