@@ -8,6 +8,14 @@ layout: default
 
 <br>
 
+### 19th Mile
+#### Causal Inference for Geoscience
+
+**References**
+- Jakob Runge (2017). [Causal inference and complex network methods for the geosciences](https://www.belmontforum.org/wp-content/uploads/2018/04/Causal-Inference-and-Complex-Network-Methods-for-the-Geosciences.pdf). Slides.
+
+<br>
+
 ### 18th Mile
 #### Tensor Factorization for Knowledge Graph Completion
 
