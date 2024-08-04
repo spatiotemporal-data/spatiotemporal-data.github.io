@@ -8,6 +8,13 @@ layout: default
 
 <br>
 
+### 18th Mile
+#### Tensor Factorization for Knowledge Graph Completion
+
+
+
+<br>
+
 ### 17th Mile
 #### RESCAL: Tensor-Based Relational Learning
 
