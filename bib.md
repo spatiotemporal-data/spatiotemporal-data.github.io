@@ -8,6 +8,17 @@ layout: default
 
 <br>
 
+### 17th Mile
+#### RESCAL: Tensor-Based Relational Learning
+
+Multi-relational data is everywhere in real-world applications such as computational biology, social networks, and semantic web. This type of data is often represented in the form of graphs or networks where nodes represent entities, and edges represent different types of relationships.
+
+**References**
+
+- Maximilian Nickel, Volker Tresp, Hans-Peter Kriegel (2011). A Three-Way Model for Collective Learning on Multi-Relational Data. ICML 2011. [[PDF](https://www.cip.ifi.lmu.de/~nickel/data/paper-icml2011.pdf)] [[Slides](https://www.cip.ifi.lmu.de/~nickel/data/slides-icml2011.pdf)]
+
+<br>
+
 ### 16th Mile
 #### Subspace Pursuit Algorithm
 
