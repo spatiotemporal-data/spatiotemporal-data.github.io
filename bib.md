@@ -15,8 +15,8 @@ Multi-relational data is everywhere in real-world applications such as computati
 
 Instead of using the classical Tucker and CP tensor decomposition, RESCAL takes the inherent structure of dyadic relational data into account, whose tensor factorization on the tensor variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{X}}:=\{\boldsymbol{X}_k\}_k"/> is
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_k="/></p>
-
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_k=\boldsymbol{A}\boldsymbol{S}_{k}\boldsymbol{A}^\top"/></p>
+where 
 
 **References**
 
