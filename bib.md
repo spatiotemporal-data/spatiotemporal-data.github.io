@@ -34,7 +34,7 @@ decomposition of the binary tensor representation of knowledge graph triples all
 
 Multi-relational data is everywhere in real-world applications such as computational biology, social networks, and semantic web. This type of data is often represented in the form of graphs or networks where nodes represent entities, and edges represent different types of relationships.
 
-Instead of using the classical Tucker and CP tensor decomposition, RESCAL takes the inherent structure of dyadic relational data into account, whose tensor factorization on the tensor variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{X}}:=\{\boldsymbol{X}_k\}_k"/> is
+Instead of using the classical Tucker and CP tensor decomposition, RESCAL takes the inherent structure of dyadic relational data into account, whose tensor factorization on the tensor variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{X}}:=\{\boldsymbol{X}_k\}_k"/> (i.e., frontal tensor slices) is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_k=\boldsymbol{A}\boldsymbol{S}_{k}\boldsymbol{A}^\top"/></p>
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{n\times r}"/> is the global entity factor matrix, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\in\mathbb{R}^{r\times r}"/> specifies the interaction of the latent components. Such kind of methods can be used to solve link prediction, collective classification, and link-based clustering.
