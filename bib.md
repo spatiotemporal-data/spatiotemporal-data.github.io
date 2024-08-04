@@ -21,6 +21,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 **References**
 
 - Maximilian Nickel, Volker Tresp, Hans-Peter Kriegel (2011). A Three-Way Model for Collective Learning on Multi-Relational Data. ICML 2011. [[PDF](https://www.cip.ifi.lmu.de/~nickel/data/paper-icml2011.pdf)] [[Slides](https://www.cip.ifi.lmu.de/~nickel/data/slides-icml2011.pdf)]
+- Maximilian Nickel (2013). [Tensor Factorization for Relational Learning](https://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf). PhD thesis.
 
 <br>
 
