@@ -13,6 +13,11 @@ layout: default
 
 Multi-relational data is everywhere in real-world applications such as computational biology, social networks, and semantic web. This type of data is often represented in the form of graphs or networks where nodes represent entities, and edges represent different types of relationships.
 
+Instead of using the classical Tucker and CP tensor decomposition, RESCAL takes the inherent structure of dyadic relational data into account, whose tensor factorization on the tensor variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{X}}:=\{\boldsymbol{X}_k\}_k"/> is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_k="/></p>
+
+
 **References**
 
 - Maximilian Nickel, Volker Tresp, Hans-Peter Kriegel (2011). A Three-Way Model for Collective Learning on Multi-Relational Data. ICML 2011. [[PDF](https://www.cip.ifi.lmu.de/~nickel/data/paper-icml2011.pdf)] [[Slides](https://www.cip.ifi.lmu.de/~nickel/data/slides-icml2011.pdf)]
