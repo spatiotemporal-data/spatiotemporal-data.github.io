@@ -9,7 +9,7 @@ layout: default
 <br>
 
 ### 19th Mile
-#### Causal Inference for Geoscience
+#### Causal Inference for Geosciences
 
 Learning causal interactions from time series of complex dynamical systems is of great significance in real-world systems. But the questions arise as: 1) How to formulate causal inference for complex dynamical systems? 2) How to detect causal links? 3) How to quantify causal interactions?
 
