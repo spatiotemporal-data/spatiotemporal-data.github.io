@@ -46,6 +46,13 @@ plt.show()
 fig.savefig('sst_2407_1.png', bbox_inches = 'tight')
 ```
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width="500" />
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> Sea surface temperature on July 1, 2024.
+</p>
 
 <br>
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> and Fuqiang Liu on July 29, 2024.)</p>
