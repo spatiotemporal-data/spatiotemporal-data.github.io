@@ -100,4 +100,10 @@ Figure 1 shows the temperature data from July 1 to July 3 in 2024.
 
 <br>
 
+## Conclusion
+
+This post introduces how to visualize the sea surface temperature data in Python. The dataset is publicly available since September 1981, allowing one to identify the climate change and anomalies in the past ~40 years.
+
+<br>
+
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> and Fuqiang Liu on July 29, 2024.)</p>
