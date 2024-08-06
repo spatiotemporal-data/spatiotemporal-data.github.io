@@ -53,7 +53,27 @@ fig.savefig('sst_2407_1.png', bbox_inches = 'tight')
 </p>
 
 <p align = "center">
-<b>Figure 1.</b> Sea surface temperature on July 1, 2024.
+<b>(a)</b> On July 1, 2024.
+</p>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width=550" />
+</p>
+
+<p align = "center">
+<b>(b)</b> On July 2, 2024.
+</p>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width=550" />
+</p>
+
+<p align = "center">
+<b>(c)</b> On July 3, 2024.
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> Sea surface temperature data.
 </p>
 
 <br>
