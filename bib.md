@@ -76,7 +76,7 @@ pursuit (CoSaMP by [D. Needell and J. A. Tropp in 2008](https://arxiv.org/pdf/08
   - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{r}=\boldsymbol{y}-\boldsymbol{A}_S\boldsymbol{x}_S"/>.
 - **end**
 
-The subspace pursuit algorithm is a fixed-cardinality method, rather different from the orthogonal matching pursuit algorithm such that
+The subspace pursuit algorithm is a fixed-cardinality method, rather different from [the classical orthogonal matching pursuit algorithm developed in 1993](https://doi.org/10.1109/ACSSC.1993.342465) such that
 
 - **Input**: Signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>, and sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K\in\mathbb{Z}^{+}"/>.
 - **Output**: <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/> and index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S"/>.
