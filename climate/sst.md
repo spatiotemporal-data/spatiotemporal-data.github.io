@@ -18,7 +18,7 @@ To build an intuitive understanding of sea surface temperature distribution, we 
 - July 2, 2024: `oisst-avhrr-v02r01.20240702.nc`
 - July 3, 2024: `oisst-avhrr-v02r01.20240703.nc`
 
-One is required to download these data files first from the website folder, and then use `netCDF4` to open the dataset. There are a lot of variables, including latitude `lat`, longitude `lon`, and temperature observations `sst`. As the values `-999` refer to the unobserved part, we replace these values by `nan` in the `NumPy` array.
+One is required to download these data files first from the website folder, and then use `netCDF4` to open the dataset. There are a lot of important variables for analysis, including latitude `lat`, longitude `lon`, and temperature observations `sst`. As the values `-999` refer to the unobserved part, we replace these values by `nan` in the `NumPy` array.
 
 <br>
 
@@ -36,7 +36,13 @@ sst[sst == -999] = np.nan
 
 <br>
 
+In the dataset, the daily temperature data is of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;720\times 1440"/>, corresponding to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;0.25^\circ C"/> grids in the global map.
+
+<br>
+
 ## Draw SST
+
+
 
 ```python
 import matplotlib.pyplot as plt
