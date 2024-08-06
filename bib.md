@@ -11,6 +11,8 @@ layout: default
 ### 19th Mile
 #### Causal Inference for Geoscience
 
+Learning causal interactions from time series of complex dynamical systems is of great significance in real-world systems. But the questions arise as: 1) How to formulate causal inference for complex dynamical systems? 2) How to detect causal links? 3) How to quantify causal interactions?
+
 **References**
 - Jakob Runge (2017). [Causal inference and complex network methods for the geosciences](https://www.belmontforum.org/wp-content/uploads/2018/04/Causal-Inference-and-Complex-Network-Methods-for-the-Geosciences.pdf). Slides.
 - Jitkomut Songsiri (2013). [Sparse autoregressive model estimation for learning Granger causality in time series](https://doi.org/10.1109/ICASSP.2013.6638248). 2013 IEEE International Conference on Acoustics, Speech and Signal Processing.
