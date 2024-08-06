@@ -49,7 +49,7 @@ fig.savefig('sst_2407_1.png', bbox_inches = 'tight')
 ```
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width=550" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width="550" />
 </p>
 
 <p align = "center">
@@ -57,7 +57,7 @@ fig.savefig('sst_2407_1.png', bbox_inches = 'tight')
 </p>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width=550" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width="550" />
 </p>
 
 <p align = "center">
@@ -65,7 +65,7 @@ fig.savefig('sst_2407_1.png', bbox_inches = 'tight')
 </p>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width=550" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width="550" />
 </p>
 
 <p align = "center">
