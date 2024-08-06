@@ -26,6 +26,8 @@ sst = dataset['sst'][0, 0, :, :].data
 sst[sst == -999] = np.nan
 ```
 
+<br>
+
 ## Draw SST
 
 ```python
