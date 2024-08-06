@@ -8,7 +8,7 @@ The oceans play an important role in the global climate system. Exploiting sea s
 
 <br>
 
-## Open Dataset with `netCDF4`
+## Open Dataset
 
 With the advent of satellite retrievals of sea surface temperature beginning in the early of 1980s, there are a large amount of high-resolution sea surface temperature data available for climate analysis, attracting a lot of attention. [The NOAA 1/4 degree daily Optimum Interpolation Sea Surface Temperature (OISST)](https://www.ncei.noaa.gov/products/climate-data-records/sea-surface-temperature-optimum-interpolation)...
 
@@ -40,7 +40,7 @@ In the dataset, the daily temperature data is of size <img style="display: inlin
 
 <br>
 
-## Draw SST with `plt.contourf`
+## Visualize SST
 
 For visualization, we use the `contourf` in `matplotlib.pyplot` to draw the matrix-form temperature data.
 
