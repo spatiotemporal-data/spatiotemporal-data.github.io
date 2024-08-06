@@ -36,7 +36,7 @@ sst[sst == -999] = np.nan
 
 <br>
 
-In the dataset, the daily temperature data is of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;720\times 1440"/>, corresponding to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;0.25^\circ C"/> grids in the global map.
+In the dataset, the daily temperature data is of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;720\times 1440"/>, corresponding to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;0.25^\circ\text{C}"/> grids in the global map.
 
 <br>
 
@@ -95,7 +95,7 @@ Figure 1 shows the temperature data from July 1 to July 3 in 2024.
 </p>
 
 <p align = "center">
-<b>Figure 1.</b> Daily sea surface temperature data with optimum interpolation. The unit of temperature data is centigrade (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;^\circ C"/>).
+<b>Figure 1.</b> Daily sea surface temperature data with optimum interpolation. The unit of temperature data is centigrade (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;^\circ\text{C}"/>).
 </p>
 
 <br>
