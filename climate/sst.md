@@ -64,6 +64,12 @@ plt.show()
 fig.savefig('sst_2407_1.png', bbox_inches = 'tight')
 ```
 
+<br>
+
+Figure 1 shows the temperature data from July 1 to July 3 in 2024. 
+
+<br>
+
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width="550" />
 </p>
@@ -89,8 +95,9 @@ fig.savefig('sst_2407_1.png', bbox_inches = 'tight')
 </p>
 
 <p align = "center">
-<b>Figure 1.</b> Sea surface temperature data.
+<b>Figure 1.</b> Daily sea surface temperature data with optimum interpolation. The unit of temperature data is centigrade (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;^\circ C"/>).
 </p>
 
 <br>
+
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> and Fuqiang Liu on July 29, 2024.)</p>
