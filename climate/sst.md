@@ -49,7 +49,7 @@ fig.savefig('sst_2407_1.png', bbox_inches = 'tight')
 ```
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width="500" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sst_2407_1.png" width="600" />
 </p>
 
 <p align = "center">
