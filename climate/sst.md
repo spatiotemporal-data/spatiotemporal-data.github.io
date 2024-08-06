@@ -12,7 +12,15 @@ The oceans play an important role in the global climate system. Exploiting sea s
 
 With the advent of satellite retrievals of sea surface temperature beginning in the early of 1980s, there are a large amount of high-resolution sea surface temperature data available for climate analysis, attracting a lot of attention. [The NOAA 1/4 degree daily Optimum Interpolation Sea Surface Temperature (OISST)](https://www.ncei.noaa.gov/products/climate-data-records/sea-surface-temperature-optimum-interpolation)...
 
-To build an intuitive understanding of sea surface temperature distribution, we consider the latest [sea surface temperature dataset in July, 2024](https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202407/) as an example.
+To build an intuitive understanding of sea surface temperature distribution, we consider the latest [sea surface temperature dataset in July, 2024](https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/202407/) as an example. There dataset include
+
+- July 1, 2024: `oisst-avhrr-v02r01.20240701.nc`
+- July 2, 2024: `oisst-avhrr-v02r01.20240702.nc`
+- July 3, 2024: `oisst-avhrr-v02r01.20240703.nc`
+
+One is required to download these data files first from the website folder, and then use `netCDF4` to open the dataset. There are a lot of variables, including latitude `lat`, longitude `lon`, and temperature observations `sst`. As the values `-999` refer to the unobserved part, we replace these values by `nan` in the `NumPy` array.
+
+<br>
 
 ```python
 import numpy as np
