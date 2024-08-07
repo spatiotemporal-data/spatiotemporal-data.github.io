@@ -52,7 +52,7 @@ data['DOLocationID'] = df['DOLocationID']
 data['month'] =  data['pickup_datetime'].dt.month
 data['day'] = data['pickup_datetime'].dt.day
 data['hour'] = data['pickup_datetime'].dt.hour
-data.head()
+data
 ```
 
 <br>
@@ -67,9 +67,28 @@ pickup_datetime	PULocationID	DOLocationID	month	day	hour
 2	2024-05-01 00:11:31	140	129	5	1	0
 3	2024-05-01 00:48:30	138	48	5	1	0
 4	2024-05-01 00:09:29	4	25	5	1	0
+...	...	...	...	...	...	...
+19733033	2024-04-30 23:34:35	76	38	4	30	23
+19733034	2024-04-30 23:14:38	126	126	4	30	23
+19733035	2024-04-30 23:33:36	126	32	4	30	23
+19733036	2024-04-30 23:53:58	32	31	4	30	23
+19733037	2024-04-30 23:08:31	50	7	4	30	23
+40437576 rows × 6 columns
 ```
 
+<br>
+
 The number of rideshare trip records in April and May 2024 is 40,437,576 in total. The maximum pickup and dropoff location ID is 265, but in fact, there are 262 unique pickup/dropoff location IDs. As mentioned above, one can extract month, day, and hour information from the pickup datetime.
+
+## Constructing Mobility Tensor
+
+According to the pickup location ID, dropoff location ID, and time step with an hourly time resolution, one can construct a mobility tensor with (origin, destination, time) dimensions, while the entries of this tensor are trip counts.
+
+```python
+data = data.groupby(['PULocationID', 'DOLocationID', 'month', 'day', 
+                     'hour']).size().reset_index(name = 'count')
+data.head()
+```
 
 <br>
 
