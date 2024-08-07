@@ -23,6 +23,7 @@ This project presents some spatiotemporal methods with data-driven machine learn
 To advance the development of spatiotemporal data modeling in the research community, this project handles various spatiotemporal data:
 
 - [Analyzing millions of taxi trips in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
+- [Constructing human mobility tensor on NYC rideshare trip data](https://spatiotemporal-data.github.io/NYC-mobility/rideshare/)
 - [Utilizing international import and export trade data from WTO Stats](https://spatiotemporal-data.github.io/trade/import-export/)
 
 and provides a series of tutorials on visualizing spatiotemporal data in Python:
