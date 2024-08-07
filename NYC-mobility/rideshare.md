@@ -8,7 +8,11 @@ Among a large number of open human mobility datasets, [TLC trip record data](htt
 
 ## Rideshare Trip Records
 
-The first procedure is downloading the rideshare trip records from [TLC trip record data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) through selecting certain data files, e.g., `High Volume For-Hire Vehicle Trip Records` in April and May in 2024.
+The first procedure is downloading the rideshare trip records from [TLC trip record data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) through selecting certain data files, e.g., `High Volume For-Hire Vehicle Trip Records` in April and May in 2024:
+
+- `fhvhv_tripdata_2024-04.parquet` (April 2024, with 476.1 MB)
+- `fhvhv_tripdata_2024-05.parquet` (May 2024, with 498.6 MB)
+
 
 
 
