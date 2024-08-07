@@ -153,7 +153,7 @@ The number of taxi zones is 262, and the shapefile is available at [Taxi Zone Sh
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_nyc_2024_april_may.png" width="600" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_nyc_2024_april_may.png" width="700" />
 </p>
 
 <p align = "center">
