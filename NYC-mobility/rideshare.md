@@ -69,6 +69,8 @@ pickup_datetime	PULocationID	DOLocationID	month	day	hour
 4	2024-05-01 00:09:29	4	25	5	1	0
 ```
 
+The number of rideshare trip records in April and May 2024 is 40,437,576 in total. The maximum pickup and dropoff location ID is 265, but in fact, there are 262 unique pickup/dropoff location IDs. As mentioned above, one can extract month, day, and hour information from the pickup datetime.
+
 <br>
 
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on August 7, 2024.)</p>
