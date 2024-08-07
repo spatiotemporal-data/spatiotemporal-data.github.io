@@ -152,6 +152,16 @@ The number of taxi zones is 262, and the shapefile is available at [Taxi Zone Sh
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_nyc_2024_april_may.png" width="600" />
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> Daily taxi pickup and dropoff trips (the first 8 weeks since April 1, 2024) in New York City, USA. There are 37,404,265 trips in total, while the average daily trips are 667,933.
+</p>
+
+<br>
+
 ```python
 import pandas as pd
 import geopandas as gpd
