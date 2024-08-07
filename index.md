@@ -4,17 +4,16 @@ layout: default
 
 This project aims at supporting research for all aspects of spatiotemporal data modeling with machine learning and addressing many scientific, mathematical, industrial, and engineering problems in:
 
-- Urban Science & Smart Cities
-- Human Mobility Modeling
-- Geospatial Data Analysis
-- Intelligent & Sustainable Urban Systems
-- Optimization & Decision Making
-- Data Standardization & Valorization
-- Signal Processing
-- Network Science
-- Graph Computing & Learning
-- Causal Inference
-- Cyber-Physical Systems
+- Urban science & smart cities
+- Human mobility modeling
+- Geospatial data analysis
+- Intelligent & sustainable urban systems
+- Optimization & decision making
+- Data standardization & valorization
+- Signal processing
+- Network science
+- Graph computing & learning
+- Causal inference
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
