@@ -27,7 +27,7 @@ df.head()
 
 <br>
 
-The output are
+As the output is
 
 <br>
 
@@ -39,6 +39,33 @@ hvfhs_license_num	dispatching_base_num	originating_base_num	request_datetime	on_
 3	HV0003	B03404	B03404	2024-05-01 00:25:43	2024-05-01 00:48:00	2024-05-01 00:48:30	2024-05-01 01:10:17	138	48	9.250	...	3.47	2.75	2.5	0.00	25.28	N	N	N	N	N
 4	HV0005	B03406	None	2024-05-01 00:00:08	NaT	2024-05-01 00:09:29	2024-05-01 00:28:51	4	25	4.996	...	2.38	2.75	0.0	6.99	22.24	N	N	N	N	Y
 5 rows × 24 columns
+```
+
+<br>
+
+To construct human mobility tensors, the columns we are interested are `pickup_datetime` (starting time), `PULocationID` (pickup location ID), and `DOLocationID` (dropoff location ID). Therefore, we generate a new dataframe as follows.
+
+<br>
+
+```python
+data = pd.DataFrame()
+data['pickup_datetime'] = df['pickup_datetime']
+data['PULocationID'] = df['PULocationID']
+data['DOLocationID'] = df['DOLocationID']
+data['month'] =  data['pickup_datetime'].dt.month
+data['day'] = data['pickup_datetime'].dt.day
+data['hour'] = data['pickup_datetime'].dt.hour
+data.head()
+```
+
+<br>
+
+As the output is
+
+<br>
+
+```python
+
 ```
 
 <br>
