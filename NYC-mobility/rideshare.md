@@ -15,7 +15,6 @@ The first procedure is downloading the rideshare trip records from [TLC trip rec
 
 These data files in the format of `.parquet` can be easily processed by `pandas` in Python.
 
-<br>
 
 ```python
 import pandas as pd
@@ -29,7 +28,6 @@ df.head()
 
 As the output is
 
-<br>
 
 ```python
 hvfhs_license_num	dispatching_base_num	originating_base_num	request_datetime	on_scene_datetime	pickup_datetime	dropoff_datetime	PULocationID	DOLocationID	trip_miles	...	sales_tax	congestion_surcharge	airport_fee	tips	driver_pay	shared_request_flag	shared_match_flag	access_a_ride_flag	wav_request_flag	wav_match_flag
@@ -45,7 +43,6 @@ hvfhs_license_num	dispatching_base_num	originating_base_num	request_datetime	on_
 
 To construct human mobility tensors, the columns we are interested are `pickup_datetime` (starting time), `PULocationID` (pickup location ID), and `DOLocationID` (dropoff location ID). Therefore, we generate a new dataframe as follows.
 
-<br>
 
 ```python
 data = pd.DataFrame()
@@ -62,7 +59,6 @@ data.head()
 
 As the output is
 
-<br>
 
 ```python
 pickup_datetime	PULocationID	DOLocationID	month	day	hour
