@@ -26,7 +26,7 @@ df.head()
 
 <br>
 
-As the output is
+As a result, the output is
 
 
 ```python
@@ -57,7 +57,7 @@ data
 
 <br>
 
-As the output is
+As a result, the output is
 
 
 ```python
