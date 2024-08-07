@@ -148,7 +148,7 @@ np.savez_compressed('NYC_mob_tensor.npz', tensor)
 
 ## Visualizing Rideshare Trips
 
-The number of taxi zones is 262, and the shapefile is available at [Taxi Zone Shapefile (`.parquet`)](https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip). [Our xxxx](https://github.com/xinychen/visual-spatial-data/tree/main/NYC-mobility/taxi_zones)
+The number of taxi zones is 262, and the shapefile is available at [Taxi Zone Shapefile (`.parquet`)](https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip) (or check out [our GitHub repo](https://github.com/xinychen/visual-spatial-data/tree/main/.NYC-mobility/taxi_zones)).
 
 <br>
 
