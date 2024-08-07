@@ -198,7 +198,7 @@ fig.savefig('pickup_dropoff_trips_nyc_2024_april_may.png', bbox_inches = 'tight'
 **References**
 
 - Xinyu Chen. [NYC taxi data processing](https://transdim.github.io/dataset/NYC-taxi/). Blog post.
-- Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). IEEE Transactions on Knowledge and Data Engineering. 36 (2): 504-517. [[PDF](https://xinychen.github.io/papers/time_varying_model.pdf)] [[Blog post](https://spatiotemporal-data.github.io/posts/time_varying_model/)] [[Data & Python code](https://github.com/xinychen/vars)]
+- Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). IEEE Transactions on Knowledge and Data Engineering. 36 (2): 504-517.
 
 <br>
 
