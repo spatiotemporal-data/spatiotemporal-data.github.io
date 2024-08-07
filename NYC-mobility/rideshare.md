@@ -146,4 +146,10 @@ np.savez_compressed('NYC_mob_tensor.npz', tensor)
 
 <br>
 
+**References**
+
+- Xinyu Chen. [NYC taxi data processing](https://transdim.github.io/dataset/NYC-taxi/). Blog post.
+
+<br>
+
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on August 7, 2024.)</p>
