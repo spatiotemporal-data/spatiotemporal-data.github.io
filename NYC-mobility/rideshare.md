@@ -65,7 +65,12 @@ As the output is
 <br>
 
 ```python
-
+pickup_datetime	PULocationID	DOLocationID	month	day	hour
+0	2024-05-01 00:00:36	138	21	5	1	0
+1	2024-05-01 00:49:40	21	22	5	1	0
+2	2024-05-01 00:11:31	140	129	5	1	0
+3	2024-05-01 00:48:30	138	48	5	1	0
+4	2024-05-01 00:09:29	4	25	5	1	0
 ```
 
 <br>
