@@ -87,7 +87,57 @@ According to the pickup location ID, dropoff location ID, and time step with an 
 ```python
 data = data.groupby(['PULocationID', 'DOLocationID', 'month', 'day', 
                      'hour']).size().reset_index(name = 'count')
-data.head()
+data
+```
+
+<br>
+
+As a result, the output is
+
+```python
+PULocationID	DOLocationID	month	day	hour	count
+0	1	1	4	15	5	1
+1	1	1	5	5	6	1
+2	2	2	4	19	18	1
+3	2	7	4	20	13	1
+4	2	10	5	21	22	1
+...	...	...	...	...	...	...
+14167210	265	265	5	31	10	1
+14167211	265	265	5	31	11	1
+14167212	265	265	5	31	13	2
+14167213	265	265	5	31	14	1
+14167214	265	265	5	31	20	1
+14167215 rows × 6 columns
+```
+
+<br>
+
+By doing so, one can work on the aggregated data to construct a tensor of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;265\times 265\times 1464"/>, and there are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;24\times 61=1464"/> hourly time steps. The `time_step` column are computed as follows.
+
+```python
+import numpy as np
+
+n = len(data)
+a = np.zeros(n)
+for i in range(n):
+    if data['month'][i] == 4:
+        a[i] = 24 * (data['day'][i] - 1) + data['hour'][i]
+    elif data['month'][i] == 5:
+        a[i] = 30 * 24 + 24 * (data['day'][i] - 1) + data['hour'][i]
+data['time_step'] = a
+```
+
+<br>
+
+The resultant tensor is saved as `NYC_mob_tensor.npz` (18.6 MB) in the compressed form.
+
+```python
+m = pd.unique(data['PULocationID']).max()
+t = 24 * 61
+tensor = np.zeros((m, m, t))
+for i in range(len(data)):
+    tensor[data['PULocationID'][i] - 1, data['DOLocationID'][i] - 1, int(data['time_step'][i])] = data['count'][i]
+np.savez_compressed('NYC_mob_tensor.npz', tensor)
 ```
 
 <br>
