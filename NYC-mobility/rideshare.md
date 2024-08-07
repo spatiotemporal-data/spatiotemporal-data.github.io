@@ -148,7 +148,7 @@ np.savez_compressed('NYC_mob_tensor.npz', tensor)
 
 ## Visualizing Rideshare Trips
 
-The number of taxi zones is 262, and the shapefile is available at [Taxi Zone Shapefile (`.parquet`)](https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip) (or check out [visual-spatial-data on GitHub](https://github.com/xinychen/visual-spatial-data/tree/main/.NYC-mobility/taxi_zones)). Figure 1 shows the spatial distributions of daily pickup and dropoff trips. As can be seen, two siginificant taxi zones outside Manhattan---John F. Kennedy International Airport (area #132 in [Queens taxi zones](https://www.nyc.gov/assets/tlc/images/content/pages/about/taxi_zone_map_queens.jpg)) and LaGuardia Airport (area #138 in [Queens taxi zones](https://www.nyc.gov/assets/tlc/images/content/pages/about/taxi_zone_map_queens.jpg))---are airports in New York City.
+The number of taxi zones is 262, and the shapefile is available at [Taxi Zone Shapefile (`.parquet`)](https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip) (or check out [the visual-spatial-data repository on GitHub](https://github.com/xinychen/visual-spatial-data/tree/main/.NYC-mobility/taxi_zones)). Figure 1 shows the spatial distributions of daily pickup and dropoff trips. As can be seen, two siginificant taxi zones outside Manhattan---John F. Kennedy International Airport (area #132 in [Queens taxi zones](https://www.nyc.gov/assets/tlc/images/content/pages/about/taxi_zone_map_queens.jpg)) and LaGuardia Airport (area #138 in [Queens taxi zones](https://www.nyc.gov/assets/tlc/images/content/pages/about/taxi_zone_map_queens.jpg))---are airports in New York City.
 
 <br>
 
