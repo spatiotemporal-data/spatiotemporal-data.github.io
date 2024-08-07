@@ -13,8 +13,33 @@ The first procedure is downloading the rideshare trip records from [TLC trip rec
 - `fhvhv_tripdata_2024-04.parquet` (April 2024, with 476.1 MB)
 - `fhvhv_tripdata_2024-05.parquet` (May 2024, with 498.6 MB)
 
+These data files in the format of `.parquet` can be easily processed by `pandas` in Python.
 
+<br>
 
+```python
+import pandas as pd
+import glob
+
+df = pd.concat([pd.read_parquet(file) for file in glob.glob('NYC-taxi/fhvhv_tripdata_2024-*.parquet')])
+df.head()
+```
+
+<br>
+
+The output are
+
+<br>
+
+```python
+hvfhs_license_num	dispatching_base_num	originating_base_num	request_datetime	on_scene_datetime	pickup_datetime	dropoff_datetime	PULocationID	DOLocationID	trip_miles	...	sales_tax	congestion_surcharge	airport_fee	tips	driver_pay	shared_request_flag	shared_match_flag	access_a_ride_flag	wav_request_flag	wav_match_flag
+0	HV0003	B03404	B03404	2024-04-30 23:55:50	2024-04-30 23:59:00	2024-05-01 00:00:36	2024-05-01 00:38:21	138	21	18.680	...	4.48	0.00	2.5	0.00	47.41	N	N	N	N	N
+1	HV0003	B03404	B03404	2024-05-01 00:41:32	2024-05-01 00:47:40	2024-05-01 00:49:40	2024-05-01 00:57:08	21	22	1.710	...	1.03	0.00	0.0	0.00	6.69	N	N	N	N	N
+2	HV0003	B03404	B03404	2024-05-01 00:09:01	2024-05-01 00:10:51	2024-05-01 00:11:31	2024-05-01 00:33:51	140	129	5.000	...	2.65	0.75	0.0	0.00	19.82	Y	N	N	N	N
+3	HV0003	B03404	B03404	2024-05-01 00:25:43	2024-05-01 00:48:00	2024-05-01 00:48:30	2024-05-01 01:10:17	138	48	9.250	...	3.47	2.75	2.5	0.00	25.28	N	N	N	N	N
+4	HV0005	B03406	None	2024-05-01 00:00:08	NaT	2024-05-01 00:09:29	2024-05-01 00:28:51	4	25	4.996	...	2.38	2.75	0.0	6.99	22.24	N	N	N	N	Y
+5 rows × 24 columns
+```
 
 <br>
 
