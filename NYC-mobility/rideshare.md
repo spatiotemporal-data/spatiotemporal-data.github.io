@@ -136,11 +136,11 @@ data['time_step'] = a
 The resultant tensor is saved as `NYC_mob_tensor.npz` (18.6 MB, available at [visual-spatial-data](https://github.com/xinychen/visual-spatial-data/blob/main/NYC-mobility/NYC_mob_tensor.npz) on GitHub) in the compressed form.
 
 ```python
-m = pd.unique(data['PULocationID']).max()
+m = int(pd.unique(data['PULocationID']).max())
 t = 24 * 61
 tensor = np.zeros((m, m, t))
 for i in range(len(data)):
-    tensor[data['PULocationID'][i] - 1, data['DOLocationID'][i] - 1, int(data['time_step'][i])] = data['count'][i]
+    tensor[int(data['PULocationID'][i]) - 1, int(data['DOLocationID'][i]) - 1, int(data['time_step'][i])] = data['count'][i]
 np.savez_compressed('NYC_mob_tensor.npz', tensor)
 ```
 
