@@ -166,6 +166,7 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 
 nyc = gpd.read_file('taxi_zones/taxi_zones.shp')
+nyc['LocationID'] = nyc['LocationID'].astype(int)
 tensor = np.load('NYC_mob_tensor.npz')['arr_0'][:, :, : 8 * 7 * 24]
 df_count = pd.DataFrame()
 df_count['LocationID'] = np.arange(1, tensor.shape[0] + 1)
