@@ -170,20 +170,20 @@ tensor = np.load('NYC_mob_tensor.npz')['arr_0'][:, :, : 8 * 7 * 24]
 df_count = pd.DataFrame()
 df_count['LocationID'] = np.arange(1, tensor.shape[0] + 1)
 
-fig = plt.figure(figsize = (14, 6))
+fig = plt.figure(figsize = (14, 7))
 for i in [1, 2]:
     ax = fig.add_subplot(1, 2, i)
     if i == 1:
         df_count['count'] = np.sum(np.sum(tensor, axis = 2), axis = 1) / 56
         gdf_count = nyc.set_index('LocationID').join(df_count.set_index('LocationID')).reset_index()
         gdf_count.plot('count', cmap = 'YlOrRd', legend = True, edgecolor = 'white', linewidth = 0.2,
-                       legend_kwds = {'shrink': 0.618, 'label': 'Daily pickup trip count'},
+                       legend_kwds = {'shrink': 0.5, 'label': 'Daily pickup trip count'},
                        vmin = 0, vmax = 1.4e+4, ax = ax)
     elif i == 2:
         df_count['count'] = np.sum(np.sum(tensor, axis = 2), axis = 0) / 56
         gdf_count = nyc.set_index('LocationID').join(df_count.set_index('LocationID')).reset_index()
         gdf_count.plot('count', cmap = 'YlOrRd', legend = True, edgecolor = 'white', linewidth = 0.2,
-                       legend_kwds = {'shrink': 0.618, 'label': 'Daily dropoff trip count'},
+                       legend_kwds = {'shrink': 0.5, 'label': 'Daily dropoff trip count'},
                        vmin = 0, vmax = 1.4e+4, ax = ax)
     plt.xticks([])
     plt.yticks([])
