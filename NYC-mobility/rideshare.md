@@ -22,7 +22,7 @@ These data files in the format of `.parquet` can be easily processed by `pandas`
 import pandas as pd
 import glob
 
-df = pd.concat([pd.read_parquet(file) for file in glob.glob('NYC-taxi/fhvhv_tripdata_2024-*.parquet')])
+df = pd.concat([pd.read_parquet(file) for file in glob.glob('NYC-rideshare/fhvhv_tripdata_2024-*.parquet')])
 df.head()
 ```
 
