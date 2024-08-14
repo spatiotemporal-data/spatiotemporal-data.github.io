@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Convolution Algorithms
+# Time Series Convolution
 
 <br>
 
