@@ -63,6 +63,8 @@ In this case, we compute the inner product between <img style="display: inline;"
 <b>Figure 1.</b> Illustration of the circular convolution between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top"/>.
 </p>
 
+<br>
+
 As can be seen, the circular convolution between two vectors essential takes a linear system. Thus, it provides a way to reformulate the circular convolution as a linear transformation with convolution matrix and circulant matrix.
 
 ### Convolution Matrix
