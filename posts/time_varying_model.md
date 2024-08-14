@@ -12,7 +12,7 @@ Dynamic mechanisms that drive nonlinear systems are universally complex. Straigh
 <br>
 
 ```bibtex
-@article{chen2023discovering,
+@article{chen2024discovering,
   title={Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression},
   author={Chen, Xinyu and Zhang, Chengyuan and Chen, Xiaoxu and Saunier, Nicolas and Sun, Lijun},
   journal={IEEE Transactions on Knowledge and Data Engineering},
