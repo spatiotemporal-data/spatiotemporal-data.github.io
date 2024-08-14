@@ -39,11 +39,19 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 As mentioned above, the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/>, while the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> is of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>. If we follow the definition of circular convolution, then the resulting vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> is of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/>, just as same as the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>.
 
-According to the definition of circular convolution, one can understand such priciples through a simple example. Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3)^\top"/>, the entries of circular convolution
+According to the definition of circular convolution, one can understand such priciples through a simple example. Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top"/>, the circular convolution between two vectors can be written as
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;z_{t}=\sum_{k=1}^{\tilde{\tau}}x_{t-k+1} y_{k},\,\forall t\in\{1,2,\ldots,T\}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\begin{bmatrix}
+\displaystyle\sum_{k=1}^{3}x_{1-k+1}y_k \\
+\displaystyle\sum_{k=1}^{3}x_{2-k+1}y_k \\
+\displaystyle\sum_{k=1}^{3}x_{3-k+1}y_k \\
+\displaystyle\sum_{k=1}^{3}x_{4-k+1}y_k \\
+\end{bmatrix}
+=\begin{bmatrix}
+x_1y_1+x_4y_2+x_3y_3 \\ x_2y_1+x_1y_2+x_4y_3 \\ x_3y_1+x_2y_2+x_1y_3 \\ x_4y_1+x_3y_2+x_2y_3 \\
+\end{bmatrix} \\"/></p>
 
-can be summarized as
+
 
 
 <br>
