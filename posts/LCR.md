@@ -39,6 +39,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 As mentioned above, the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/>, while the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> is of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>. If we follow the definition of circular convolution, then the resulting vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> is of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/>, just same as the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>.
 
 
+
 <br>
 
 ## Python Implementation
