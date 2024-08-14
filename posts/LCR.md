@@ -51,12 +51,12 @@ According to the definition of circular convolution, one can understand such pri
 x_1y_1+x_4y_2+x_3y_3 \\ x_2y_1+x_1y_2+x_4y_3 \\ x_3y_1+x_2y_2+x_1y_3 \\ x_4y_1+x_3y_2+x_2y_3 \\
 \end{bmatrix} \\"/></p>
 
-In this case, we compute the inner product between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_4,x_3)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> as the entry <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_1"/>. The entry <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_2"/> is the inner product between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_2,x_1,x_4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>. According to the principle, one can first select 3 entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> in a reverse direction and then compute the inner product with the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>. Figure 1 shows the basic steps to compute the entries of the circular convolution.
+In this case, we compute the inner product between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_4,x_3)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> as the entry <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_1"/>. The entry <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_2"/> is the inner product between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_2,x_1,x_4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>. According to the principle, one can first select 3 entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> in a reverse direction and then compute the inner product with the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>. Figure 1 shows some basic steps to compute the entries of the circular convolution.
 
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/circular_convolution_steps.png" width="400" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/circular_convolution_steps.png" width="450" />
 </p>
 
 <p align = "center">
