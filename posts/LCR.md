@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Laplacian Convolutional Representation
+# Convolution Algorithms
 
 <br>
 
