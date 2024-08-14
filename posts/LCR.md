@@ -27,7 +27,8 @@ In this study, we build the modeling ideas upon a lot of key concepts in the fie
 
 Convolution is a very powerful operation in several classical deep learning frameworks (e.g., convolutional neural network (CNN)). On the discrete sequences (e.g., vectors), circular convolution is the convolution of two discrete sequences of data, and it plays an important role in maximizing the efficiency of a certain kind of common filtering operation (see [circular convolution](https://en.wikipedia.org/wiki/Circular_convolution) on Wikipedia).
 
-For any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_T)^\top\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,\cdots,y_\tau)^\top\in\mathbb{R}^{\tau}"/> with 
+Formally, for any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_T)^\top\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,\cdots,y_\tau)^\top\in\mathbb{R}^{\tau}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\tau\leq T"/>, the circular convolution of two vectors is defined as follows,
+
 
 <br>
 
