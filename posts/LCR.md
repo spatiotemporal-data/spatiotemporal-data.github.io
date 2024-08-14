@@ -21,7 +21,7 @@ Content:
 
 ## Preliminaries
 
-In this study, we build the modeling ideas upon a lot of key concepts in the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform.
+In this study, we build the modeling ideas of Laplacian convolutional representation (LCR) upon a lot of key concepts in the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform.
 
 ### Circular Convolution
 
