@@ -56,7 +56,7 @@ In this case, we compute the inner product between <img style="display: inline;"
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/circular_convolution_steps.png" width="350" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/circular_convolution_steps.png" width="400" />
 </p>
 
 <p align = "center">
