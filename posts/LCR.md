@@ -33,6 +33,9 @@ Formally, for any vectors <img style="display: inline;" src="https://latex.codec
 
 Elment-wise, we have
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;z_{t}=\sum_{k=1}^{\tilde{\tau}}x_{t-k+1} y_{k},\,\forall t\in\{1,2,\ldots,T\}"/></p>
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_t"/> is the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>th entry of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{t-k+1}=x_{t-k+1+T}"/> for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t+1\leq k"/>.
+
 
 
 <br>
