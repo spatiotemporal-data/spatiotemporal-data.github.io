@@ -4,7 +4,7 @@ layout: default
 
 # Time Series Convolution
 
-<p align="center"><span style="color:blue">A convolutional kernel approach for reinforcing time series imputation and interpreting temporal patterns</span></p>
+<p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing time series imputation and interpreting temporal patterns</span></p>
 
 <br>
 
