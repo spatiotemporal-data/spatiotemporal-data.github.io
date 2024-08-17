@@ -8,7 +8,7 @@ layout: default
 
 <br>
 
-The latest version of LCR model is available at [here](https://xinychen.github.io/papers/Laplacian_convolution.pdf).
+The latest version of LCR model is available at [here](https://doi.org/10.1109/TKDE.2024.3419698).
 
 Content:
 - Motivation
