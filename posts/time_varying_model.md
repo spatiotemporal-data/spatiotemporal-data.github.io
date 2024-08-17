@@ -54,7 +54,7 @@ Typically, time-varying vector autoregression takes a sequence of vector autoreg
 
 whose optimization problem of the time-varying autoregression is given by
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{A}_{t}}~\frac{1}{2}\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-{\color{red}\boldsymbol{A}_{t}}\boldsymbol{z}_{t}\right\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\color{red}\{\boldsymbol{A}_{t}\}}\quad\frac{1}{2}\sum_{t=d+1}^{T}\left\|\boldsymbol{y}_{t}-{\color{red}\boldsymbol{A}_{t}}\boldsymbol{z}_{t}\right\|_2^2"/></p>
 
 with the data pair:
 
