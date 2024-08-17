@@ -8,6 +8,13 @@ layout: default
 
 <br>
 
+### 20th Mile
+#### Revisiting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-Norm Minimization
+
+
+
+<br>
+
 ### 19th Mile
 #### Causal Inference for Geosciences
 
