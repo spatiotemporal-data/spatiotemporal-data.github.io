@@ -12,6 +12,9 @@ layout: default
 #### Revisiting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-Norm Minimization
 
 
+**References**
+- Lijun Ding (2023). [One dimensional least absolute deviation problem](https://threesquirrelsdotblog.com/2023/06/08/one-dimensional-least-absolute-deviation-problem/). Blog post.
+- Gregory Gundersen (2022). [Weighted Least Squares](https://gregorygundersen.com/blog/2022/08/09/weighted-ols/). Blog post.
 
 <br>
 
