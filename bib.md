@@ -31,6 +31,12 @@ Putting the Tikhonov regularization together with least squares, it refers to as
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\alpha\|\boldsymbol{x}\|_2^2"/></p>
 
+Another classical variant is the LASSO:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\lambda\|\boldsymbol{x}\|_1"/></p>
+
+with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>.
+
 
 **References**
 - Steve Brunton (2021). Robust, Interpretable Statistical Models: Sparse Regression with the LASSO. see [YouTube](https://www.youtube.com/watch?v=GaXfqoLR_yI&t=632s). (Note: Original paper by Tibshirani (1996))
