@@ -17,6 +17,7 @@ layout: default
 **References**
 - Lijun Ding (2023). [One dimensional least absolute deviation problem](https://threesquirrelsdotblog.com/2023/06/08/one-dimensional-least-absolute-deviation-problem/). Blog post.
 - Gregory Gundersen (2022). [Weighted Least Squares](https://gregorygundersen.com/blog/2022/08/09/weighted-ols/). Blog post.
+- stephentu's blog (2014). [Subdifferential of a norm](https://stephentu.github.io/blog/convex-analysis/2014/10/01/subdifferential-of-a-norm.html). Blog post.
 
 <br>
 
