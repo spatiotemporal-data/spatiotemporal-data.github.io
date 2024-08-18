@@ -25,17 +25,17 @@ layout: default
 
 First of all, we revisit the classical least squares such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}\quad\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2"/></p>
 
 Putting the Tikhonov regularization together with least squares, it refers to as the Ridge regression used almost everywhere:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\alpha\|\boldsymbol{x}\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}\quad\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\alpha\|\boldsymbol{x}\|_2^2"/></p>
 
 Another classical variant is the LASSO:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\lambda\|\boldsymbol{x}\|_1"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}\quad\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\lambda\|\boldsymbol{x}\|_1"/></p>
 
-with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. It allows one to find a few columns of the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> that are most correlated with the designed outcomes (e.g., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}"/>).
+with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. It allows one to find a few columns of the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> that are most correlated with the designed outcomes (e.g., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}"/>) for making decisions (e.g., why they take actions?).
 
 
 **References**
