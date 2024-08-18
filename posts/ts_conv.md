@@ -90,13 +90,13 @@ As can be seen, the circular convolution between two vectors essential takes a l
 
 ### Convolution Matrix
 
-Following the above notations, for any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{\tau}"/>, the circular convolution can be written as a linear transformation such that
+Following the above notations, for any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{\tau}"/>, suppose <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau<T"/>, the circular convolution can be written as a linear transformation such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{\tau}(\boldsymbol{x})\boldsymbol{y}"/></p>
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}:\mathbb{R}^{T}\to\mathbb{R}^{T\times \tau}"/> denotes the convolution operator. The circulant matrix can be written in such form:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{T-\tau+1} \\ x_2 & x_1 & x_{T} & \cdots & x_{T-\tau+2} \\ x_3 & x_2 & x_1 & \cdots & x_{T-\tau+3} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{T-\tau} \\ \end{bmatrix}\in\mathbb{R}^{T\times\tau}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{T-\tau+1} \\ x_2 & x_1 & x_{T} & \cdots & x_{T-\tau+2} \\ x_3 & x_2 & x_1 & \cdots & x_{T-\tau+3} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{T-\tau} \\ \end{bmatrix}\in\mathbb{R}^{T\times\tau}"/></p>
 
 In signal processing, the aforementioned linear transformation is identified as an important property of circular convolution.
 
