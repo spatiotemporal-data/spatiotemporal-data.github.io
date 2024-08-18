@@ -108,9 +108,22 @@ We takes some principles to write this post, including using programming codes a
 ```python
 import numpy as np
 
+def conv_mat(vec, tau):
+    n = vec.shape[0]
+    mat = np.zeros((n, tau))
+    mat[:, 0] = vec
+    for i in range(1, tau):
+        mat[:, i] = np.append(vec[-i :], vec[: n - i], axis = 0)
+    return mat
+
 x = np.array([0, 1, 2, 3, 4])
 y = np.array([2, -1, 3])
-z = np.convolve(x, y, 'same') # The mode 'same' returns the circular convolution
+mat = conv_mat(x, y.shape[0])
+print('Convolution matrix of x with 3 columns:')
+print(mat)
+print()
+z = mat @ y
+print('Circular convolution of x and y:')
 print(z)
 ```
 
