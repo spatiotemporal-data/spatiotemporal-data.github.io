@@ -123,7 +123,7 @@ Thus, it gives</span>
 
 <br>
 
-We takes some principles to write this post, including using programming codes and intuitive illustrations, as well as the explaination of formulas. In this case, computing the circular convolution can be reproduced with `numpy` as follows.
+We takes some principles to write this post, including using programming codes and intuitive illustrations, as well as the explaination of formulas. In this case, computing the circular convolution can be reproduced with `numpy` as follows, if constructing the convolution matrix on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> first.
 
 <br>
 
