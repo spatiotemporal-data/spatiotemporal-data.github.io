@@ -74,6 +74,9 @@ In this case, we compute the inner product between <img style="display: inline;"
 
 As can be seen, the circular convolution between two vectors essential takes a linear system. Thus, it provides a way to reformulate the circular convolution as a linear transformation with convolution matrix and circulant matrix.
 
+
+<span style="color:gray">**Example 1.** xxxxx</span>
+
 ### Convolution Matrix
 
 Following the above notations, for any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{\tau}"/>, the circular convolution can be written as a linear transformation such that
