@@ -40,6 +40,7 @@ with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&sp
 
 **References**
 - Steve Brunton (2021). Robust, Interpretable Statistical Models: Sparse Regression with the LASSO. see [YouTube](https://www.youtube.com/watch?v=GaXfqoLR_yI&t=632s). (Note: Original paper by Tibshirani (1996))
+- Steve L. Brunton, Joshua L. Proctor, and Nathan Kutz (2016). [Discovering governing equations from data by sparse identification of nonlinear dynamical systems](https://doi.org/10.1073/pnas.1517384113). Proceedings of the National Academy of Sciences. 113 (15), 3932-3937.
 
 <br>
 
