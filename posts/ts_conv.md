@@ -94,7 +94,11 @@ Following the above notations, for any vectors <img style="display: inline;" src
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{\tau}(\boldsymbol{x})\boldsymbol{y}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}:\mathbb{R}^{T}\to\mathbb{R}^{T\times \tau}"/> denotes the convolution operator. In signal processing, this is identified as an important property.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}:\mathbb{R}^{T}\to\mathbb{R}^{T\times \tau}"/> denotes the convolution operator. The circulant matrix can be written in such form:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} \\ x_2 & x_1 & x_{T} & x_3 & x_2 & x_1 \\ \vdots & \vdots & \vdots \\ x_{T} & x_{T-1} & x_{T-2} \\ \end{bmatrix}"/></p>
+
+In signal processing, the aforementioned linear transformation is identified as an important property of circular convolution.
 
 <br>
 
