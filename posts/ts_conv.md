@@ -105,6 +105,8 @@ with the convolution matrix such that </span>
 
 We takes some principles to write this post, including using programming codes and intuitive illustrations, as well the explaination of formulas. In this case, computing the circular convolution can be reproduced with `numpy` as follows.
 
+<br>
+
 ```python
 import numpy as np
 
@@ -126,6 +128,8 @@ z = mat @ y
 print('Circular convolution of x and y:')
 print(z)
 ```
+
+<br>
 
 ## Python Implementation
 
