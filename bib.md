@@ -8,7 +8,7 @@ layout: default
 
 <br>
 
-### 20th Mile
+### 21st Mile
 #### Revisiting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-Norm Minimization
 
 
@@ -19,6 +19,20 @@ layout: default
 - Gregory Gundersen (2022). [Weighted Least Squares](https://gregorygundersen.com/blog/2022/08/09/weighted-ols/). Blog post.
 
 <br>
+
+### 20th Mile
+#### Robust, Interpretable Statistical Models: Sparse Regression with the LASSO
+
+First of all, we revisit the least squares such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2"/></p>
+
+
+
+
+**References**
+- Steve Brunton (2021). Robust, Interpretable Statistical Models: Sparse Regression with the LASSO. see [YouTube](https://www.youtube.com/watch?v=GaXfqoLR_yI&t=632s). (Note: Original paper by Tibshirani (1996))
+
 
 ### 19th Mile
 #### Causal Inference for Geosciences
