@@ -106,7 +106,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}=(5,14,3,7,11)^\top"/></p>
 
 <span style="color:gray">
-with the convolution matrix such that </span>
+with the convolution matrix (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/> refers to the number of columns) such that </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}"/></p>
 
