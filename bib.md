@@ -23,11 +23,11 @@ layout: default
 ### 20th Mile
 #### Robust, Interpretable Statistical Models: Sparse Regression with the LASSO
 
-First of all, we revisit the least squares such that
+First of all, we revisit the classical least squares such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2"/></p>
 
-Putting the Tikhonov regularization together with least squares, it refers to as the Ridge regression:
+Putting the Tikhonov regularization together with least squares, it refers to as the Ridge regression used almost everywhere:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\alpha\|\boldsymbol{x}\|_2^2"/></p>
 
