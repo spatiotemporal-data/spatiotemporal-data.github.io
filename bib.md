@@ -35,7 +35,7 @@ Another classical variant is the LASSO:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}~\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\lambda\|\boldsymbol{x}\|_1"/></p>
 
-with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>.
+with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. It allows one to find a few columns of the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> that are most correlated with the designed outcomes (e.g., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}"/>).
 
 
 **References**
