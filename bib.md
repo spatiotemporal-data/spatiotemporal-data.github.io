@@ -93,7 +93,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 Considering the optimization problem for estimating <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{x}\|_2^2 \\ \text{s.t.}~& \|\boldsymbol{x}\|_0\leq K,\,K\in\mathbb{Z}^{+} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{x}\|_2^2 \\ \text{s.t.}\,& \|\boldsymbol{x}\|_0\leq K,\,K\in\mathbb{Z}^{+} \end{aligned}"/></p>
 
 with the signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/> (or measurement vector), the dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/> (or measurement matrix), and the sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K\in\mathbb{Z}^{+}"/>.
 
@@ -157,7 +157,7 @@ AI increases global access to reliable flood forecasts (see [dataset](https://ze
 
 Considering a general optimization problem for estimating the sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{x}\|_2^2 \\ \text{s.t.}~& \begin{cases} \boldsymbol{x}\geq 0 \\ \displaystyle\|\boldsymbol{x}\|_0\leq K,\,K\in\mathbb{Z}^{+} \end{cases} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{x}\|_2^2 \\ \text{s.t.}\,& \begin{cases} \boldsymbol{x}\geq 0 \\ \displaystyle\|\boldsymbol{x}\|_0\leq K,\,K\in\mathbb{Z}^{+} \end{cases} \end{aligned}"/></p>
 
 with the signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/> and a dictionary of elementary functions <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/> (i.e., dictionary matrix). There are a lot of solution algorithms in literature:
 
@@ -381,7 +381,7 @@ In genetic fine mapping, one critical problem is the variable selection in linea
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;L\in\mathbb{Z}^{+}"/> (<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;L< n"/>) is predefined by the number of correlated variables. The vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}_{\ell},\,\ell\in[L]"/> are the coefficients in this linear regression. This optimization problem can also be written as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}}\,&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2 \\ \text{s.t.}~& \displaystyle\|\boldsymbol{w}\|_0=L,\,L\in\mathbb{Z}^{+}  \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}}\,&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,& \displaystyle\|\boldsymbol{w}\|_0=L,\,L\in\mathbb{Z}^{+}  \end{aligned}"/></p>
 
 Or see Figure 1.1 in [Section 1.1 Non-negative sparse reconstruction](https://hal.science/tel-02376895/document) (Page 2) for an illustration.
 
