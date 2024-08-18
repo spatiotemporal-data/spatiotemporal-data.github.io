@@ -41,6 +41,7 @@ with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&sp
 **References**
 - Steve Brunton (2021). Robust, Interpretable Statistical Models: Sparse Regression with the LASSO. see [YouTube](https://www.youtube.com/watch?v=GaXfqoLR_yI&t=632s). (Note: Original paper by Tibshirani (1996))
 
+<br>
 
 ### 19th Mile
 #### Causal Inference for Geosciences
