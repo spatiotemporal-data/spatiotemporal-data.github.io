@@ -222,10 +222,8 @@ fy = np.fft.fft(y)
 z = np.fft.ifft(fx * fy).real
 print('Fast Fourier transform of x:')
 print(fx)
-print()
 print('Fast Fourier transform of y:')
 print(fy)
-print()
 print('Circular convolution of x and y:')
 print(z)
 ```
@@ -236,11 +234,9 @@ in which the outputs are
 Fast Fourier transform of x:
 [10. +0.j         -2.5+3.4409548j  -2.5+0.81229924j -2.5-0.81229924j
  -2.5-3.4409548j ]
-
 Fast Fourier transform of y:
 [ 4.        +0.j         -0.73606798-0.81229924j  3.73606798+3.4409548j
   3.73606798-3.4409548j  -0.73606798+0.81229924j]
-
 Circular convolution of x and y:
 [ 5. 14.  3.  7. 11.]
 ```
