@@ -278,7 +278,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 ### B. Property
 
-One most intriguing property of circulant matrices is that they are diagonalizable by the discrete Fourier transform matrix. The eigenvalue decomposition of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is given by
+One most intriguing property of circulant matrices is that they are diagonalizable by the discrete Fourier transform matrix. The eigenvalue decomposition of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{T\times T}"/> (on any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^T"/>) is given by
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\boldsymbol{U}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{U}^H"/></p>
 
@@ -286,6 +286,7 @@ with the unitary matrix <img style="display: inline;" src="https://latex.codecog
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \|\mathcal{C}(\boldsymbol{x})\|_*=&\|\boldsymbol{U}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{U}^H\|_{*} \\ =&\|\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\|_* \\ =&\|\mathcal{F}(\boldsymbol{x})\|_1 \end{aligned}"/></p>
 
+where the nuclear norm 
 
 
 ### C. Optimization
