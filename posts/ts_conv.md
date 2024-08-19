@@ -289,6 +289,8 @@ with the unitary matrix <img style="display: inline;" src="https://latex.codecog
 where the discrete Fourier transform <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})"/> refers to as eigenvalues of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>.
 
 
+<br>
+
 ### C. Optimization
 
 ### D. Time Series Imputation
