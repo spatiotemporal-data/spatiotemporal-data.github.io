@@ -278,7 +278,9 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 ### B. Property
 
-One most intriguing property of circulant matrices is that they are diagonalizable by the discrete Fourier transform matrix.
+One most intriguing property of circulant matrices is that they are diagonalizable by the discrete Fourier transform matrix. The eigenvalue decomposition of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is given by
+
+
 
 ### C. Optimization
 
