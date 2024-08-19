@@ -195,6 +195,9 @@ The result shows that the vector <img style="display: inline;" src="https://late
 
 ### Discrete Fourier Transform
 
+Discrete Fourier transform (see [Wikipedia](https://en.wikipedia.org/wiki/Discrete_Fourier_transform)) is important in mathematics and signal processing, showing broad applications in machine learning. The discrete Fourier transform is the most vital discrete transform, used to perform Fourier analysis in many practical applications. 
+
+
 <br>
 <br>
 <br>
