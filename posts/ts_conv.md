@@ -201,7 +201,7 @@ There is a famous fact that has been widely used in signal processing: A convolu
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{F}^{-1}(\mathcal{F}(\boldsymbol{x})\circ\mathcal{F}(\boldsymbol{y}))"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\cdot)"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}^{-1}(\cdot)"/> denote the discrete Fourier transform and the inverse discrete Fourier transform, respectively. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\circ"/> denotes the Hadamard product.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\cdot)"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}^{-1}(\cdot)"/> denote the discrete Fourier transform and the inverse discrete Fourier transform, respectively. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\circ"/> denotes the Hadamard product, i.e., element-wise product.
 
 <br>
 
