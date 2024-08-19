@@ -195,7 +195,7 @@ The result shows that the vector <img style="display: inline;" src="https://late
 
 ### Discrete Fourier Transform
 
-Discrete Fourier transform (see [Wikipedia](https://en.wikipedia.org/wiki/Discrete_Fourier_transform)) is important in mathematics and signal processing, showing broad applications in machine learning. The discrete Fourier transform is the most vital discrete transform, used to perform Fourier analysis in many practical applications. 
+Discrete Fourier transform (see [Wikipedia](https://en.wikipedia.org/wiki/Discrete_Fourier_transform)) is important in mathematics and signal processing, showing broad applications in machine learning. The discrete Fourier transform is the most vital discrete transform, used to perform Fourier analysis in many practical applications. The fast Fourier transform is an efficient algorithm for computing the discrete Fourier tranform (see the [difference between discrete Fourier transform and fast Fourier transform](https://math.stackexchange.com/q/30464/738418)), and it also is the name for any efficient algorithm that can compute the discrete Fourier transform in about <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T\log T)"/> time, instead of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T^2)"/> time.
 
 
 <br>
