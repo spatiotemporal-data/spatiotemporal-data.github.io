@@ -266,7 +266,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/svd_explained.png" width="450" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/svd_explained.png" width="500" />
 </p>
 
 <p align = "center">
