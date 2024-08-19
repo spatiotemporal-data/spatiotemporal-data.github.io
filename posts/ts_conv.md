@@ -73,7 +73,7 @@ In this case, each entry <img style="display: inline;" src="https://latex.codeco
 
 <br>
 
-As can be seen, the circular convolution between two vectors essential takes a linear system. Thus, it provides a way to reformulate the circular convolution as a linear transformation with convolution matrix and circulant matrix.
+As can be seen, circular convolution between two vectors can essentially be viewed as a linear operation. This perspective allows one to reformulate the circular convolution as a linear transformation using a convolution matrix (or a circulant matrix when these two vectors have the same length).
 
 <br>
 
