@@ -219,8 +219,22 @@ while the results of fast Fourier transform are computed by `numpy` as follows,
 ```python
 import numpy as np
 
-
+x = np.array([0, 1, 2, 3, 4])
+y = np.array([2, -1, 3, 0, 0])
+fx = np.fft.fft(x)
+fy = np.fft.fft(y)
+z = np.fft.ifft(fx * fy).real
+print('Fast Fourier transform of x:')
+print(fx)
+print()
+print('Fast Fourier transform of y:')
+print(fy)
+print()
+print('Circular convolution of x and y:')
+print(z)
 ```
+
+in which the results are given by
 
 <br>
 
