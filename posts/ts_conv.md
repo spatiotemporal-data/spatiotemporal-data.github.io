@@ -31,7 +31,7 @@ Content:
 
 In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas from the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform. In the following sections, we will discuss: 1) what are circular convolution, convolution matrix, and circulant matrix? 2) What is the convolution theorem? 3) How can fast Fourier transform be used to compute the circular convolution?
 
-### Circular Convolution
+### A. Circular Convolution
 
 Convolution is a powerful operation in many classical deep learning frameworks, such as convolutional neural networks (CNNs). In the context of discrete sequences (typically vectors), circular convolution refers to the convolution of two discrete sequences of data, and it plays an important role in maximizing the efficiency of certain common filtering operations (see [circular convolution](https://en.wikipedia.org/wiki/Circular_convolution) on Wikipedia).
 
@@ -88,7 +88,7 @@ As can be seen, circular convolution between two vectors can essentially be view
 
 <br>
 
-### Convolution Matrix
+### B. Convolution Matrix
 
 Following the above notations, for any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{\tau}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau<T"/>, the circular convolution can be written as a linear transformation such that
 
@@ -151,7 +151,7 @@ print(z)
 
 <br>
 
-### Circulant Matrix
+### C. Circulant Matrix
 
 Recall that the convolution matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}(\boldsymbol{x})"/> is specified with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> columns (i.e., the length of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>). But in the case of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{T}"/> with same columns, the convolution matrix is a square matrix, which would refer to as the **circulant matrix**. In our study, we hope to claim the importance of circulant matrices and their properties, e.g., the strong connection with circular convolution and discrete Fourier transform, through we do not work on circulant matrix directly.
 
@@ -193,7 +193,7 @@ The result shows that the vector <img style="display: inline;" src="https://late
 
 <br>
 
-### Discrete Fourier Transform
+### D. Discrete Fourier Transform
 
 Discrete Fourier transform (see [Wikipedia](https://en.wikipedia.org/wiki/Discrete_Fourier_transform)) is important in mathematics and signal processing, showing broad applications in machine learning. The discrete Fourier transform is the most vital discrete transform, used to perform Fourier analysis in many practical applications. The fast Fourier transform is an efficient algorithm for computing the discrete Fourier tranform (see the [difference between discrete Fourier transform and fast Fourier transform](https://math.stackexchange.com/q/30464/738418)), and it also is the name for any efficient algorithm that can compute the discrete Fourier transform in about <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T\log T)"/> time, instead of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T^2)"/> time.
 
