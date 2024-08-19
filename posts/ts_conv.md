@@ -280,6 +280,12 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 One most intriguing property of circulant matrices is that they are diagonalizable by the discrete Fourier transform matrix. The eigenvalue decomposition of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is given by
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\boldsymbol{U}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{U}^H"/></p>
+
+with the unitary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{U}"/>, the nuclear norm of the circulant matrix can be reformulated as the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of the discrete Fourier transformed variable:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \|\mathcal{C}(\boldsymbol{x})\|_*=&\|\boldsymbol{U}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{U}^H\|_{*} \\ =&\|\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\|_* \\ =&\|\mathcal{F}(\boldsymbol{x})\|_1 \end{aligned}"/></p>
+
 
 
 ### C. Optimization
