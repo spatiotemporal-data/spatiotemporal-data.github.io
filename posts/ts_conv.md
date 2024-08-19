@@ -252,6 +252,7 @@ Circular convolution of x and y:
 
 ## II. Circulant Matrix Nuclear Norm
 
+Circulant matrices are fundamental in many computational and theoretical aspects of signal processing and machine learning, providing an efficient framework for implementating various algorithms such as circulant matrix nuclear norm minimization. By definition, a circulant matrix is a spcial square matrix where which shifts the previous row to the right by one position, with the last entry wrapping around to the first position. 
 
 
 ### A. Definition
