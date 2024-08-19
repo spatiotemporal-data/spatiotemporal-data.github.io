@@ -513,9 +513,9 @@ PeMS dataset is available at [our GitHub repository](https://github.com/xinychen
 
 Hyperparameters:
 
-- On 30%/50% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\tau=1"/>;
-- On 70% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\tau=2"/>;
-- On 90% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\tau=3"/>.
+- On 30%/50% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=1"/>;
+- On 70% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=2"/>;
+- On 90% missing data, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\lambda=10^{-5}NT"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\gamma=10\lambda"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/>.
 
 <br>
 
