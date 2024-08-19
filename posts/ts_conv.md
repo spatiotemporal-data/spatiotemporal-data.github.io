@@ -208,11 +208,8 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ---
 
 <span style="color:gray">
-**Example 4.** Given any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3,0,0)^\top"/>, the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}"/> can be computed via the use of fast Fourier transform:
+**Example 4.** Given any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3,0,0)^\top"/>, the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}"/> can be computed via the use of fast Fourier transform in `numpy` as follows,
 </span>
-
-
-while the results of fast Fourier transform are computed by `numpy` as follows,
 
 <br>
 
@@ -234,7 +231,20 @@ print('Circular convolution of x and y:')
 print(z)
 ```
 
-in which the results are given by
+in which the outputs are
+
+```python
+Fast Fourier transform of x:
+[10. +0.j         -2.5+3.4409548j  -2.5+0.81229924j -2.5-0.81229924j
+ -2.5-3.4409548j ]
+
+Fast Fourier transform of y:
+[ 4.        +0.j         -0.73606798-0.81229924j  3.73606798+3.4409548j
+  3.73606798-3.4409548j  -0.73606798+0.81229924j]
+
+Circular convolution of x and y:
+[ 5. 14.  3.  7. 11.]
+```
 
 <br>
 
