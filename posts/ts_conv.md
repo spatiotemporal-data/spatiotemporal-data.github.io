@@ -233,8 +233,6 @@ print(z)
 
 in which the outputs are
 
-<br>
-
 ```python
 Fast Fourier transform of x:
 [10. +0.j         -2.5+3.4409548j  -2.5+0.81229924j -2.5-0.81229924j
