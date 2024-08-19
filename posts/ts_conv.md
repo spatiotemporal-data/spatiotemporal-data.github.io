@@ -214,11 +214,15 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 while the results of fast Fourier transform are computed by `numpy` as follows,
 
+<br>
+
 ```python
 import numpy as np
 
 
 ```
+
+<br>
 
 ---
 
