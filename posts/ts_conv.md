@@ -164,6 +164,7 @@ For any vectors <img style="display: inline;" src="https://latex.codecogs.com/sv
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}:\mathbb{R}^{T}\to\mathbb{R}^{T\times T}"/> denotes the circulant operator. The circulant matrix can be written in such a form:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{2} \\ x_2 & x_1 & x_{T} & \cdots & x_{3} \\ x_3 & x_2 & x_1 & \cdots & x_{4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{1} \\ \end{bmatrix}\in\mathbb{R}^{T\times T}"/></p>
+which is a square matrix.
 
 <br>
 
@@ -250,6 +251,8 @@ Circular convolution of x and y:
 <br>
 
 ## II. Circulant Matrix Nuclear Norm
+
+
 
 ### A. Definition
 
