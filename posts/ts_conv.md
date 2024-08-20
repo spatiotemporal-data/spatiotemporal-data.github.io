@@ -375,9 +375,6 @@ In this case, the <img style="display: inline;" src="https://latex.codecogs.com/
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{C}(\boldsymbol{x})\|_{*}=\|\mathcal{F}(\boldsymbol{x})\|_1=\sum_{t=1}^{5}\sqrt{a_t^2+b_t^2}=23.7638"/></p>
 
-
-<br>
-
 ---
 
 <br>
