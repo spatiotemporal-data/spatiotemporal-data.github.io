@@ -131,7 +131,7 @@ This representation shows that the circular convolution is equivalent to a matri
 
 <br>
 
-We takes some principles to write this post, including using programming codes and intuitive illustrations, as well as the explaination of formulas. In this case, computing the circular convolution can be reproduced with `numpy` as follows, if constructing the convolution matrix on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> first.
+In this post, we aim to make the concepts clear and accessible by incorporting programming code, intuitive illustrations, and detailed explanations of the formulas. To demonstrate how circular convolution can be computed, we will use Python's `numpy` library. First, we will construct the convolution matrix on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and then perform the circular convolution as follows.
 
 <br>
 
