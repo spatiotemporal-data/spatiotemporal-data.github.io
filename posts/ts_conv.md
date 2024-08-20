@@ -304,7 +304,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ### D. Time Series Imputation
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/circnnm_volumes_95.png" width="300" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/circnnm_volumes_95.png" width="350" />
 </p>
 
 <p align = "center">
