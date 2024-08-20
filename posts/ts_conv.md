@@ -310,7 +310,7 @@ def circ_mat(vec):
 x = np.array([0, 1, 2, 3, 4])
 mat = circ_mat(x)
 w, s, q = np.linalg.svd(mat, full_matrices = False)
-print('Singular values of the circulant matrix:')
+print('Singular values of C(x):')
 print(s)
 ```
 
@@ -332,6 +332,46 @@ with the unitary matrix <img style="display: inline;" src="https://latex.codecog
 
 where the discrete Fourier transform <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})\in\mathbb{C}^T"/> refers to as eigenvalues of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>.
 
+<br>
+
+---
+
+<span style="color:gray">
+**Example 5.** Given any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the circulant matrix
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
+
+<span style="color:gray">
+The eigenvalues of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> and the fast Fourier transform of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> can be computed using `numpy` as follows.
+</span>
+
+```python
+import numpy as np
+
+x = np.array([0, 1, 2, 3, 4])
+mat = circ_mat(x)
+eigval, eigvec = np.linalg.eig(mat)
+print('Eigenvalues of C(x):')
+print(eigval)
+print('Fast Fourier transform of x:')
+print(np.fft.fft(x))
+```
+
+in which the outputs are
+
+```python
+Eigenvalues of C(x):
+[10. +0.j         -2.5+3.4409548j  -2.5-3.4409548j  -2.5+0.81229924j
+ -2.5-0.81229924j]
+Fast Fourier transform of x:
+[10. +0.j         -2.5+3.4409548j  -2.5+0.81229924j -2.5-0.81229924j
+ -2.5-3.4409548j ]
+```
+
+<br>
+
+---
 
 <br>
 
