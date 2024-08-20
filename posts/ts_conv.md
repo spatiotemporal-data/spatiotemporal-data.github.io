@@ -303,8 +303,9 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 ### D. Time Series Imputation
 
+<span style="color:gray">
 Please reproduce the experiments by following the [Jupyter Notebook](https://github.com/xinychen/LCR/blob/main/univariate-models/CircNNM.ipynb), which is available at the [LCR repository](https://github.com/xinychen/LCR) on GitHub.
-
+<span>
 
 <br>
 <br>
