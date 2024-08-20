@@ -369,6 +369,10 @@ Fast Fourier transform of x:
  -2.5-3.4409548j ]
 ```
 
+<span style="color:gray">
+In this case, the 
+</span>
+
 <br>
 
 ---
