@@ -303,14 +303,19 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 ### D. Time Series Imputation
 
+As shown in Figure 3, we randomly remove 95% observations as missing values, and we only have 14 volume observations (i.e., 14 blue dots) for the reconstruction.
+
+<br>
+
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/circnnm_volumes_95.png" width="350" />
 </p>
 
 <p align = "center">
-<b>Figure 3.</b> Univariate time series imputation on the freeway traffic volume time series. In this case, we randomly remove 95% observations as missing values, and we only have 14 volume observations (i.e., blue dots) for the reconstruction. The blue and red curves correspond to the ground truth time series and reconstructed time series achieved by the circulant matrix nuclear norm minimization.
+<b>Figure 3.</b> Univariate time series imputation on the freeway traffic volume time series. The blue and red curves correspond to the ground truth time series and reconstructed time series achieved by the circulant matrix nuclear norm minimization.
 </p>
 
+<br>
 
 <span style="color:gray">
 Please reproduce the experiments by following the [Jupyter Notebook](https://github.com/xinychen/LCR/blob/main/univariate-models/CircNNM.ipynb), which is available at the [LCR repository](https://github.com/xinychen/LCR) on GitHub.
