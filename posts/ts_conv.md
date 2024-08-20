@@ -275,7 +275,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ---
 
 <span style="color:gray">
-**Example 4.** 
+**Example 5.** Given any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the circulant matrix
 </span>
 ---
 
