@@ -6,8 +6,14 @@ layout: default
 
 ## I. Alternating Direction Method of Multipliers
 
-Alternating Direction Method of Multipliers (ADMM) is an optimization algorithm designed to solve a certain class of problems. It breaks the optimization problems down into smaller, and easier-to-solve subproblems, and in the meanwhile converges to a solution that satisfies both the primal and dual optimization problems. Basically, ADMM combines the ideas from dual decomposition and augmented Lagrangian methods, in which the dual decomposition splits the original optimization problem into two or more subproblems and augmented Lagrangian methods use an augmented Lagrangian function to handle constraints in the problem.
+The Alternating Direction Method of Multipliers (ADMM) is an optimization algorithm designed to solve complex problems by decomposing them into a sequence of easy-to-solve subproblems. ADMM efficiently handles both the primal and dual aspects of the optimization problem, ensuring convergence to a solution that satisfies the original problem's constraints. The method synthesizes concepts from dual decomposition and augmented Lagrangian methods: dual decomposition divides the original problem into two or more subproblems, while the augmented Lagrangian methods use an augmented Lagrangian function to effectively handle constraints within the optimization process. This combination makes ADMM particularly powerful for solving large-scale and constrained optimization problems.
 
-### A. 
+### A. Problem Formulation
+
+Typically, ADMM solves optimization problems of the form
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} min_{\boldsymbol{x},\boldsymbol{z}}\,&f(\boldsymbol{x})+g(\boldsymbol{z}) \\ \text{s.t.}\,&\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}=\boldsymbol{c} \end{aligned}"/></p>
+
+
 
 <br>
