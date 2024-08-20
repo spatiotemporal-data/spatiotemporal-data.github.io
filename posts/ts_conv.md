@@ -370,7 +370,7 @@ Fast Fourier transform of x:
 ```
 
 <span style="color:gray">
-In this case, the 
+In this case, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of the complex valued <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})\in\mathbb{C}^{T}"/> is given by
 </span>
 
 <br>
