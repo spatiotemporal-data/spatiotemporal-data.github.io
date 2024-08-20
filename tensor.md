@@ -57,6 +57,7 @@ This article summarizes the development of tensor decomposition models and algor
     - Frobenius norm
     - Kronecker product
     - Modal product
+- [**Foundation of Optimization**](https://spatiotemporal-data.github.io/tensor4ml/opt_foundation/)
 
 
 <br>
