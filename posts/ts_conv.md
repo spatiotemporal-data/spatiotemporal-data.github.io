@@ -280,13 +280,39 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
 
+<span style="color:gray">
 Thus, the singular values are
+</span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{s}=(10, 4.25325404, 4.25325404, 2.62865556, 2.62865556)^\top"/></p>
 
+<span style="color:gray">
 As a result, we have the nuclear norm as follows,
+</span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{C}(\boldsymbol{x})\|_{*}=\sum_{t=1}^{5}s_t=23.7638"/></p>
+
+<span style="color:gray">
+Please reproduce the results by using the following `numpy` implementation.
+</span>
+
+```python
+import numpy as np
+
+def circ_mat(vec):
+    n = vec.shape[0]
+    mat = np.zeros((n, n))
+    mat[:, 0] = vec
+    for i in range(1, n):
+        mat[:, i] = np.append(vec[-i :], vec[: n - i], axis = 0)
+    return mat
+
+x = np.array([0, 1, 2, 3, 4])
+mat = circ_mat(x)
+w, s, q = np.linalg.svd(mat, full_matrices = False)
+print('Singular values of the circulant matrix:')
+print(s)
+```
 
 ---
 
