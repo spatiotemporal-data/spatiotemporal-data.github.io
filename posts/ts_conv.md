@@ -314,6 +314,8 @@ print('Singular values of the circulant matrix:')
 print(s)
 ```
 
+<br>
+
 ---
 
 <br>
