@@ -127,6 +127,7 @@ As a result, it gives</span>
 <span style="color:gray">
 This representation shows that the circular convolution is equivalent to a matrix-vector multiplication, making it easier to understand, especially in signal processing applications.
 </span>
+
 ---
 
 <br>
