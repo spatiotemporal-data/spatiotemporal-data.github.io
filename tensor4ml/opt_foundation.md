@@ -18,7 +18,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
-### B. Augmented Lagrangian Method
+##### B. Augmented Lagrangian Method
 
 Augmented Lagrangian methods are usually used to solve constrained optimization problems, in which the algorithms replace a constrained optimization problem by a series of unconstrained problems and add penalty terms to the objective function. For the aforementioned constrained problem, the augmented Lagrangian method has the following unconstrained objective function:
 
@@ -34,7 +34,7 @@ In this case, ADMM performs between these updates util convergence.
 
 <br>
 
-### C. LASSO
+##### C. LASSO
 
 The optimization problem of LASSO is
 
