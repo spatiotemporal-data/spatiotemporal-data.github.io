@@ -20,7 +20,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 Augmented Lagrangian methods are usually used to solve constrained optimization problems, in which the algorithms replace a constrained optimization problem by a series of unconstrained problems and add regularization terms to the objective function. For the aforementioned constrained problem, the augmented Lagrangian method has the following unconstrained objective function:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{L}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})\triangleq f(\boldsymbol{x})+g(\boldsymbol{z})+\frac{\lambda}{2}\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{L}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})\triangleq f(\boldsymbol{x})+g(\boldsymbol{z})+\frac{\lambda}{2}\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}\|_2^2+\langle\boldsymbol{w},\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}\rangle"/></p>
 
 
 <br>
