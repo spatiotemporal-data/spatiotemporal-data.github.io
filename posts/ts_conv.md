@@ -346,7 +346,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \|\mathcal{C}(\boldsymbol{x})\|_*=&\|\boldsymbol{U}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{U}^H\|_{*} \\ =&\|\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\|_* \\ =&\|\mathcal{F}(\boldsymbol{x})\|_1 \end{aligned}"/></p>
 
-This relationship highlights the strong connection between circulant matrices and Fourier analysis, enabling efficient computation and analysis in various applications.
+This relationship draws the strong connection between circulant matrices and Fourier analysis, enabling efficient computation and analysis in various applications.
 
 <br>
 
