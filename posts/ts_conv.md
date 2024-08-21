@@ -374,7 +374,9 @@ print('Fast Fourier transform of x:')
 print(np.fft.fft(x))
 ```
 
+<span style="color:gray">
 in which the outputs are
+</span>
 
 ```python
 Eigenvalues of C(x):
@@ -386,7 +388,7 @@ Fast Fourier transform of x:
 ```
 
 <span style="color:gray">
-In this case, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of the complex valued <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})=(a_1+b_1i, a_2+b_2i, \cdots, a_5+b_5i)^\top"/> (the imaginary unit is defined as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;i=\sqrt{-1}"/>) is given by
+In this case, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of the complex valued <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})=(a_1+b_1i, a_2+b_2i, \cdots, a_5+b_5i)^\top"/>---the imaginary unit is defined as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;i=\sqrt{-1}"/>---is given by
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{C}(\boldsymbol{x})\|_{*}=\|\mathcal{F}(\boldsymbol{x})\|_1=\sum_{t=1}^{5}|a_t+b_ti|=\sum_{t=1}^{5}\sqrt{a_t^2+b_t^2}=23.7638"/></p>
