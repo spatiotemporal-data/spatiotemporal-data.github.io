@@ -40,5 +40,8 @@ The optimization problem of LASSO is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \min_{\boldsymbol{x}}\, \frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\gamma\|\boldsymbol{x}\|_1 "/></p>
 
+Using the variable splitting, this can be rewritten to
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \begin{aligned} \min_{\boldsymbol{x},\boldsymbol{z}}\,&\frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\gamma\|\boldsymbol{z}\|_1 \\ \text{s.t.}\,\boldsymbol{x}-\boldsymbol{z}=\boldsymbol{0} \end{aligned}"/></p>
 
 <br>
