@@ -32,7 +32,7 @@ Thus, ADMM solves the original constrained problem by iteratively updating the v
 
 In this case, ADMM performs between these updates util convergence. In terms of the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, it takes
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{z}:=&\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{w}:=&\boldsymbol{w}+\lambda(\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}) \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ =&\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x})+\frac{\lambda}{2}\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}\|_2^2+\langle\boldsymbol{w},\boldsymbol{A}\boldsymbol{x}\rangle \\ =\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x})+ \end{aligned}"/></p>
 
 
 <br>
