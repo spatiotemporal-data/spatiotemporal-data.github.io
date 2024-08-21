@@ -34,6 +34,10 @@ In this case, ADMM performs between these updates util convergence. In terms of 
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ =&\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x})+\frac{\lambda}{2}\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}\|_2^2+\langle\boldsymbol{w},\boldsymbol{A}\boldsymbol{x}\rangle \\ =&\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x})+\frac{\lambda}{2}\langle\boldsymbol{A}\boldsymbol{x},\boldsymbol{A}\boldsymbol{x}\rangle+\lambda\langle\boldsymbol{A}\boldsymbol{x},\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}\rangle+\lambda\langle\boldsymbol{A}\boldsymbol{x},\boldsymbol{w}/\lambda\rangle \\ =&\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x})+\frac{\lambda}{2}\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}+\boldsymbol{w}/\lambda\|_2^2 \end{aligned}"/></p>
 
+In terms of the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>, we have
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ =&\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x})+\frac{\lambda}{2}\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}\|_2^2+\langle\boldsymbol{w},\boldsymbol{A}\boldsymbol{x}\rangle \\ =&\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x})+\frac{\lambda}{2}\langle\boldsymbol{A}\boldsymbol{x},\boldsymbol{A}\boldsymbol{x}\rangle+\lambda\langle\boldsymbol{A}\boldsymbol{x},\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}\rangle+\lambda\langle\boldsymbol{A}\boldsymbol{x},\boldsymbol{w}/\lambda\rangle \\ =&\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x})+\frac{\lambda}{2}\|\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}+\boldsymbol{w}/\lambda\|_2^2 \end{aligned}"/></p>
+
 
 <br>
 
