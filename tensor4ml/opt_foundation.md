@@ -16,7 +16,9 @@ Typically, ADMM solves a class of optimization problems of the form
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}\in\mathbb{R}^{m}"/> are the optimization variables. The objective function has two convex functions <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{x})"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;g(\boldsymbol{z})"/>. In the constraint, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{p\times n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{B}\in\mathbb{R}^{p\times m}"/> are matrices, while <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{c}\in\mathbb{R}^{p}"/> is a vector.
 
-#### Augmented Lagrangian Method
+<br>
+
+### B. Augmented Lagrangian Method
 
 Augmented Lagrangian methods are usually used to solve constrained optimization problems, in which the algorithms replace a constrained optimization problem by a series of unconstrained problems and add penalty terms to the objective function. For the aforementioned constrained problem, the augmented Lagrangian method has the following unconstrained objective function:
 
@@ -29,5 +31,14 @@ Thus, ADMM solves the original constrained problem by iteratively updating the v
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{z}:=&\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{w}:=&\boldsymbol{w}+\lambda(\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}) \end{aligned}"/></p>
 
 In this case, ADMM performs between these updates util convergence.
+
+<br>
+
+### C. LASSO
+
+The optimization problem of LASSO is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \min_{\boldsymbol{x}}\, \frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\gamma\|\boldsymbol{x}\|_1 "/></p>
+
 
 <br>
