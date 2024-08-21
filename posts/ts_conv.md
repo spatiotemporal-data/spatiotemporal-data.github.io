@@ -15,7 +15,8 @@ In this post, we intend to explain the essential ideas of our latent research wo
 
 Content:
 - Motivation
-- Prior art on global trend modeling
+- Preliminaries
+- Prior art on global trend modeling with circulant matrix nuclear norm minimization
 - Local trend modeling with circular convolution
 - LCR: A unified optimization with an efficient implementation
 - Python implementation with `numpy`
@@ -24,7 +25,11 @@ Content:
 
 <br>
 
-## I. Preliminaries
+## I. Motivation
+
+Convolution has been widely used to machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
+
+## II. Preliminaries
 
 In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas from the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform. In the following sections, we will discuss: 1) what are circular convolution, convolution matrix, and circulant matrix? 2) What is the convolution theorem? 3) How can fast Fourier transform be used to compute the circular convolution?
 
