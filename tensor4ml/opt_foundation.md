@@ -28,6 +28,6 @@ Thus, ADMM solves the original constrained problem by iteratively updating the v
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{z}:=&\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{w}:=&\boldsymbol{w}+\lambda(\boldsymbol{A}\boldsymbol{x}+\boldsymbol{B}\boldsymbol{z}-\boldsymbol{c}) \end{aligned}"/></p>
 
-In this iterative process, ADMM performs between these updates util convergence.
+In this case, ADMM performs between these updates util convergence.
 
 <br>
