@@ -67,6 +67,8 @@ where the partial derivative of the augmented Lagrangian function with respect t
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{z})}{\partial\boldsymbol{x}}=&\boldsymbol{A}^\top(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b})+\lambda(\boldsymbol{x}-\boldsymbol{z})+\boldsymbol{w} \\ =&(\boldsymbol{A}^\top\boldsymbol{A}+\lambda\boldsymbol{I})\boldsymbol{x}-\boldsymbol{A}^\top\boldsymbol{b}-\lambda\boldsymbol{z}+\boldsymbol{w} \end{aligned}"/></p>
 
+Letting this partial derivative be a zero vector, the closed-form solution is the least squares.
+
 In terms of the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>, the subproblem is indeed an <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{z}:=&\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ =&\arg\min_{\boldsymbol{z}}\,\gamma\|\boldsymbol{z}\|_1+\frac{\lambda}{2}\|\boldsymbol{z}-\boldsymbol{x}\|_2^2-\langle\boldsymbol{w},\boldsymbol{z}\rangle \\ =&\arg\min_{\boldsymbol{z}}\,\gamma\|\boldsymbol{z}\|_1+\frac{\lambda}{2}\|\boldsymbol{z}-\boldsymbol{x}-\boldsymbol{w}/\lambda\|_2^2 \end{aligned}"/></p>
