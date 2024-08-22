@@ -28,7 +28,7 @@ To advance the development of spatiotemporal data modeling in the research commu
 
 and provides a series of tutorials 
 
-- on tensor decomposition for machine learning (see detailed [pages (coming soom)](xxxx)):
+- on tensor decomposition for machine learning (see detailed [page (coming soom)](xxxx)):
 
   - Foundation of optimization
 
