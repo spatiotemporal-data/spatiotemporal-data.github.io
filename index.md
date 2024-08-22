@@ -26,14 +26,12 @@ To advance the development of spatiotemporal data modeling in the research commu
 - [Constructing human mobility tensor on NYC rideshare trip data](https://spatiotemporal-data.github.io/NYC-mobility/rideshare/)
 - [Utilizing international import and export trade data from WTO Stats](https://spatiotemporal-data.github.io/trade/import-export/)
 
-and provides a series of tutorials 
+and provides a series of tutorials for beginners to understand machine learning and data science, including
 
-- on tensor decomposition for machine learning (see detailed [page (coming soom)](xxxx)):
-
+- Tensor decomposition for machine learning (see detailed [page (coming soom)](xxxx)):
   - Foundation of optimization
 
-- and spatiotemporal data visualization in Python:
-
+- Spatiotemporal data visualization in Python:
   - [High-resolution sea surface temperature data](https://spatiotemporal-data.github.io/climate/sst/)
   - [Global water vapor patterns](https://spatiotemporal-data.github.io/climate/water-vapor/)
   - [Germany energy consumption](https://spatiotemporal-data.github.io/energy/E-usage-data/)
