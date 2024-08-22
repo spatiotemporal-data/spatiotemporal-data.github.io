@@ -440,7 +440,7 @@ while
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z})}=&\lambda\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z}-\boldsymbol{x})-\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{w}) \\ =&\lambda\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z})-\mathcal{P}_{\Omega}^{\perp}(\lambda\boldsymbol{x}+\boldsymbol{w}) \end{aligned}"/></p>
 
-As a result, letting the partial derivative of the augmented Lagrangian function with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}(\boldsymbol{z})"/> be a zero vector, the least squares solution is given by
+As a result, letting the partial derivative of the augmented Lagrangian function with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> be a zero vector, the least squares solution is given by
 
 
 
