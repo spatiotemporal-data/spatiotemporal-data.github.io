@@ -99,9 +99,9 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ =&\arg\min_{\boldsymbol{x}}\,\frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}\rangle \\ =&(\boldsymbol{A}^\top\boldsymbol{A}+\lambda\boldsymbol{I})^{-1}(\boldsymbol{A}^\top\boldsymbol{b}+\lambda\boldsymbol{z}-\boldsymbol{w}) \end{aligned}"/></p>
 
-where the partial derivative of the augmented Lagrangian function with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is
+where the partial derivative of the augmented Lagrangian function with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is given by
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{z})}{\partial\boldsymbol{x}}=&\boldsymbol{A}^\top(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b})+\lambda(\boldsymbol{x}-\boldsymbol{z})+\boldsymbol{w} \\ =&(\boldsymbol{A}^\top\boldsymbol{A}+\lambda\boldsymbol{I})\boldsymbol{x}-\boldsymbol{A}^\top\boldsymbol{b}-\lambda\boldsymbol{z}+\boldsymbol{w} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\boldsymbol{x}}=&\boldsymbol{A}^\top(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b})+\lambda(\boldsymbol{x}-\boldsymbol{z})+\boldsymbol{w} \\ =&(\boldsymbol{A}^\top\boldsymbol{A}+\lambda\boldsymbol{I})\boldsymbol{x}-\boldsymbol{A}^\top\boldsymbol{b}-\lambda\boldsymbol{z}+\boldsymbol{w} \end{aligned}"/></p>
 
 Let this partial derivative be a zero vector, then the closed-form solution is the least squares.
 
