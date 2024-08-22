@@ -410,6 +410,13 @@ For any partially observed time series in the form of a vector <img style="displ
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\epsilon"/> in the constraint represents the tolerance of errors between the reconstructed time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and the partially observed time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>.
 
+In this case, one can rewrite the constraint as a penalty term (weighted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\gamma"/>) in the objective function:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \min_{\boldsymbol{x}}\,&\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{x}-\boldsymbol{y})\|_2"/></p>
+
+
+
+
 <br>
 
 ### D. Time Series Imputation
