@@ -436,6 +436,10 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}(\boldsymbol{z})}=&\gamma\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})+\lambda\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{x})-\mathcal{P}_{\Omega}(\boldsymbol{w}) \\ =&(\gamma+\lambda)\mathcal{P}_{\Omega}(\boldsymbol{z})-\mathcal{P}(\gamma\boldsymbol{y}+\lambda\boldsymbol{x}+\boldsymbol{z}) \end{aligned}"/></p>
 
+while
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z})}=&\lambda\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z}-\boldsymbol{x})-\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{w}) \\ =&\lambda\mathcal{P}_{\Omega}(\boldsymbol{z})-\mathcal{P}(\lambda\boldsymbol{x}+\boldsymbol{z}) \end{aligned}"/></p>
+
 
 <br>
 
