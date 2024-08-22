@@ -4,6 +4,8 @@ layout: default
 
 ### Foundation of Optimization
 
+<br>
+
 #### I. Gradient Descent Methods
 
 ##### A. Gradient Descent
