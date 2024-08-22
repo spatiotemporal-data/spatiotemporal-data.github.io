@@ -120,7 +120,7 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 
 <br>
 
-#### V. Greedy Method for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm Optimization
+#### V. Greedy Methods for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm Optimization
 
 ##### A. Orthogonal Matching Pursuit
 
