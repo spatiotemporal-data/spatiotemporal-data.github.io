@@ -63,5 +63,9 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ =&\arg\min_{\boldsymbol{x}}\,\frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}\rangle \\ =&(\boldsymbol{A}^\top\boldsymbol{A}+\lambda\boldsymbol{I})^{-1}(\boldsymbol{A}^\top\boldsymbol{b}+\lambda\boldsymbol{z}-\boldsymbol{w}) \end{aligned}"/></p>
 
+In terms of the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>, the subproblem is indeed an <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{z}:=&\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ =&\arg\min_{\boldsymbol{z}}\,\gamma\|\boldsymbol{z}\|_1+\frac{\lambda}{2}\|\boldsymbol{z}-\boldsymbol{x}\|_2^2-\langle\boldsymbol{w},\boldsymbol{z}\rangle \\ =&\gamma\|\boldsymbol{z}\|_1+\frac{\lambda}{2}\|\boldsymbol{z}-\boldsymbol{x}-\boldsymbol{w}/\lambda\|_2^2 \end{aligned}"/></p>
+
 
 <br>
