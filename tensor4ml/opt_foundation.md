@@ -111,6 +111,13 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 
 <br>
 
+<span style="color:gray">
+**Example 1.**
+</span>
+
+
+<br>
+
 #### V. Greedy Method for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm Optimization
 
 ##### A. Orthogonal Matching Pursuit
