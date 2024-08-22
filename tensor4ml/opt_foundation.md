@@ -30,7 +30,11 @@ Discuss LASSO regression problems.
 
 ##### A. Alternating Least Squares
 
+Example. Matrix factorization with Panda
+
 ##### B. Alternating Minimization with Conjugate Gradient Descent
+
+Smoothing matrix factorization on Panda
 
 <br>
 
