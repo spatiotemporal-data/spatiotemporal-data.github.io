@@ -109,5 +109,14 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{z}:=&\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ =&\arg\min_{\boldsymbol{z}}\,\gamma\|\boldsymbol{z}\|_1+\frac{\lambda}{2}\|\boldsymbol{z}-\boldsymbol{x}\|_2^2-\langle\boldsymbol{w},\boldsymbol{z}\rangle \\ =&\arg\min_{\boldsymbol{z}}\,\gamma\|\boldsymbol{z}\|_1+\frac{\lambda}{2}\|\boldsymbol{z}-\boldsymbol{x}-\boldsymbol{w}/\lambda\|_2^2 \end{aligned}"/></p>
 
+<br>
+
+#### V. Greedy Method for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm Optimization
+
+##### A. Orthogonal Matching Pursuit
+
+
+##### B. Subspace Pursuit
+
 
 <br>
