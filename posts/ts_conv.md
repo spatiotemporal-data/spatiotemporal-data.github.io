@@ -434,7 +434,7 @@ Thus, the variables <img style="display: inline;" src="https://latex.codecogs.co
 
 In terms of the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>, the partial derivative of the augmented Lagrangian function with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}(\boldsymbol{z})"/> is given by
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}(\boldsymbol{z})}=& \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}(\boldsymbol{z})}=&\gamma\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})+\lambda\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{x})-\mathcal{P}_{\Omega}(\boldsymbol{w}) \\ =& \end{aligned}"/></p>
 
 
 <br>
