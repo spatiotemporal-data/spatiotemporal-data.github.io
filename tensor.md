@@ -17,7 +17,7 @@ This article summarizes the development of tensor decomposition models and algor
 - Introduction
   - Tensor decomposition in the past 10-100 years
   - Tensor decomposition in the past decade
-- What are tensors?
+- What Are Tensors?
   - Tensors in algebra & machine learning
     - Basic structures
     - Tensor unfolding
