@@ -4,7 +4,35 @@ layout: default
 
 ### Foundation of Optimization
 
-#### I. Alternating Direction Method of Multipliers
+#### I. Gradient Descent Methods
+
+##### A. Gradient Descent
+
+##### B. Steepest Gradient Descent
+
+##### C. Conjugate Gradient Descent
+
+##### D. Proximal Gradient Descent
+
+Discuss LASSO regression problems.
+
+<br>
+
+#### II. Power Iteration
+
+##### A. Eigenvalue Decomposition
+
+##### B. Randomized Singular Value Decomposition
+
+#### III. Alternating Minimization
+
+##### A. Alternating Least Squares
+
+##### B. Alternating Minimization with Conjugate Gradient Descent
+
+<br>
+
+#### IV. Alternating Direction Method of Multipliers
 
 The Alternating Direction Method of Multipliers (ADMM) is an optimization algorithm designed to solve complex problems by decomposing them into a sequence of easy-to-solve subproblems. ADMM efficiently handles both the primal and dual aspects of the optimization problem, ensuring convergence to a solution that satisfies the original problem's constraints. The method synthesizes concepts from dual decomposition and augmented Lagrangian methods: dual decomposition divides the original problem into two or more subproblems, while the augmented Lagrangian methods use an augmented Lagrangian function to effectively handle constraints within the optimization process. This combination makes ADMM particularly powerful for solving large-scale and constrained optimization problems.
 
