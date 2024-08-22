@@ -26,7 +26,7 @@ To advance the development of spatiotemporal data modeling in the research commu
 - [Constructing human mobility tensor on NYC rideshare trip data](https://spatiotemporal-data.github.io/NYC-mobility/rideshare/)
 - [Utilizing international import and export trade data from WTO Stats](https://spatiotemporal-data.github.io/trade/import-export/)
 
-and provides a series of tutorials for beginners to understand machine learning and data science, including
+To contribute to the open science, this project provides a series of tutorials for beginners to understand machine learning and data science, including
 
 - Tensor decomposition for machine learning (see detailed [page (coming soom)](xxxx)):
   - Foundation of optimization
