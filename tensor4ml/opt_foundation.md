@@ -24,6 +24,8 @@ Discuss LASSO regression problems.
 
 ##### B. Randomized Singular Value Decomposition
 
+<br>
+
 #### III. Alternating Minimization
 
 ##### A. Alternating Least Squares
