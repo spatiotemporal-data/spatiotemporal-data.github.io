@@ -36,7 +36,6 @@ This article summarizes the development of tensor decomposition models and algor
 **Materials & References**
 
 - Yuejie Chi, Yue M. Lu, and Yuxin Chen (2019). [Nonconvex optimization meets low-rank matrix factorization: An overview](https://doi.org/10.1109/TSP.2019.2937282). IEEE Transactions on Signal Processing, 67(20): 5239-5269.
-- Simon J.D. Prince (2023). Understanding Deep learning, MIT Press. [[Book website](https://udlbook.github.io/udlbook/)]
 - Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong (2020). Mathematics for Machine Learning, Cambridge University Press. [[Book website](https://mml-book.github.io/)]
 
 <br>
