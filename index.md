@@ -30,7 +30,7 @@ and provides a series of tutorials
 
 - on tensor decomposition for machine learning (see detailed [pages (coming soom)](xxxx)):
 
-  - 
+  - Foundation of optimization
 
 - and spatiotemporal data visualization in Python:
 
