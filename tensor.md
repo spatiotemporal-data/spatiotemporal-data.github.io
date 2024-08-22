@@ -12,7 +12,7 @@ This article summarizes the development of tensor decomposition models and algor
 
 <br>
 
-### Content
+### Table of Contents
 
 - **Introduction**
   - Tensor decomposition in the past 10-100 years
