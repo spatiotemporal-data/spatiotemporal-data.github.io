@@ -14,10 +14,10 @@ This article summarizes the development of tensor decomposition models and algor
 
 ### Table of Contents
 
-- **Introduction**
+- Introduction
   - Tensor decomposition in the past 10-100 years
   - Tensor decomposition in the past decade
-- **What are tensors?**
+- What are tensors?
   - Tensors in algebra & machine learning
     - Basic structures
     - Tensor unfolding
@@ -27,7 +27,7 @@ This article summarizes the development of tensor decomposition models and algor
     - Climate & weather
     - International trade
     - Urban human mobility
-- **Foundation of Tensor Computations**
+- Foundation of Tensor Computations
   - Norms
     - Vector norms
     - Frobenius norm
@@ -57,7 +57,7 @@ This article summarizes the development of tensor decomposition models and algor
     - Frobenius norm
     - Kronecker product
     - Modal product
-- [**Foundation of Optimization**](https://spatiotemporal-data.github.io/tensor4ml/opt_foundation/)
+- [Foundation of Optimization](https://spatiotemporal-data.github.io/tensor4ml/opt_foundation/)
 
 
 <br>
