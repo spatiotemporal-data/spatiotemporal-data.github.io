@@ -26,13 +26,19 @@ To advance the development of spatiotemporal data modeling in the research commu
 - [Constructing human mobility tensor on NYC rideshare trip data](https://spatiotemporal-data.github.io/NYC-mobility/rideshare/)
 - [Utilizing international import and export trade data from WTO Stats](https://spatiotemporal-data.github.io/trade/import-export/)
 
-and provides a series of tutorials on visualizing spatiotemporal data in Python:
+and provides a series of tutorials 
 
-- [High-resolution sea surface temperature data](https://spatiotemporal-data.github.io/climate/sst/)
-- [Global water vapor patterns](https://spatiotemporal-data.github.io/climate/water-vapor/)
-- [Germany energy consumption](https://spatiotemporal-data.github.io/energy/E-usage-data/)
-- [Station-level USA temperature data](https://spatiotemporal-data.github.io/climate/daymet/)
-- Service-level mobile traffic data
+- on tensor decomposition for machine learning (see detailed [pages (coming soom)](xxxx)):
+
+  - 
+
+- and spatiotemporal data visualization in Python:
+
+  - [High-resolution sea surface temperature data](https://spatiotemporal-data.github.io/climate/sst/)
+  - [Global water vapor patterns](https://spatiotemporal-data.github.io/climate/water-vapor/)
+  - [Germany energy consumption](https://spatiotemporal-data.github.io/energy/E-usage-data/)
+  - [Station-level USA temperature data](https://spatiotemporal-data.github.io/climate/daymet/)
+  - Service-level mobile traffic data
 
 For those who are interested in broad areas within the scope, we would like to recommend a series of [reading notes](https://spatiotemporal-data.github.io/bib/).
 
