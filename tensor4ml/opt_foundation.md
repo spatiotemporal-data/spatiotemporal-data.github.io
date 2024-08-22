@@ -85,7 +85,7 @@ The optimization problem of LASSO is
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\gamma"/> is the regularization parameter that controls the sparsity of variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. Using the variable splitting, this original problem can be rewritten to an optimization with a constraint:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \begin{aligned} \min_{\boldsymbol{x},\boldsymbol{z}}\,&\frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\gamma\|\boldsymbol{z}\|_1 \\ \text{s.t.}\,&\boldsymbol{x}-\boldsymbol{z}=\boldsymbol{0} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \begin{aligned} \min_{\boldsymbol{x},\boldsymbol{z}}\,&\frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\gamma\|\boldsymbol{z}\|_1 \\ \text{s.t.}\,&\boldsymbol{x}=\boldsymbol{z} \end{aligned}"/></p>
 
 First of all, the augmented Lagrangian function can be written as follows,
 
