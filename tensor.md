@@ -6,9 +6,7 @@ layout: default
 
 <p align="center"><span style="color:gray">Xinyu Chen, Dingyi Zhuang, Jinhua Zhao (2024)</span></p>
 
-<p align="center"><span style="color:gray">Tensor4ML at <a href="https://sites.mit.edu/tensor4ml">MIT sites</a> (official)</span></p>
-
-<p align="center"><span style="color:gray">Tensor4ML on <a href="https://github.com/xinychen/Tensor4ML">GitHub</a></span></p>
+<p align="center"><span style="color:gray">Tensor4ML at <a href="https://sites.mit.edu/tensor4ml">MIT sites</a> (official); on <a href="https://github.com/xinychen/Tensor4ML">GitHub</a></span></p>
 
 <br>
 
