@@ -6,6 +6,8 @@ layout: default
 
 <p align="center"><span style="color:gray">Xinyu Chen, Dingyi Zhuang, Jinhua Zhao (2024)</span></p>
 
+<p align="center"><span style="color:gray"><a href="https://sites.mit.edu/tensor4ml">Tensor4ML at MIT sites</a> (official)</span></p>
+
 <br>
 
 This article summarizes the development of tensor decomposition models and algorithms in the literature, offering comprehensive reviews and tutorials on topics ranging from matrix and tensor computations to tensor decomposition techniques across a wide range of scientific areas and applications. Since the decomposition of tensors is often formulated as an optimization problem, this article also provides a preliminary introduction to some classical methods for solving convex and nonconvex optimization problems. This work aims to offer valuable insights to both the machine learning and data science communities by drawing strong connections with the key concepts related to tensor decomposition. To ensure reproducibility and sustainability, we provide resources such as datasets and Python implementations, primarily utilizing Python’s `numpy` library.
