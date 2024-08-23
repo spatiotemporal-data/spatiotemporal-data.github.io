@@ -81,7 +81,7 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 
 ##### C. LASSO
 
-The optimization problem of LASSO is
+Least Absolute Shrinkage and Selection Operator (LASSO) has wide applications to machine learning. The optimization problem of LASSO is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \min_{\boldsymbol{x}}\, \frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\gamma\|\boldsymbol{x}\|_1 "/></p>
 
