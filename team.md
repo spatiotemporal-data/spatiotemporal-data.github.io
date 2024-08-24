@@ -16,13 +16,16 @@ We have many talented researchers who are reponsible for moving forward this pro
     <img align="middle" src="https://spatiotemporal-data.github.io/images/xinyu24.png" width="130" alt="Circular Image"/>
   </div>
   <div align = "center">
-    Leader: <a href="https://xinychen.github.io/">Xinyu Chen (陈新宇)</a>
+    Core members: <a href="https://xinychen.github.io/">Fuqiang Liu</a>
   </div>
   <div align = "center">
-    Postdoc @MIT (now)
+    Ph.D. candidate @McGill University
   </div>
   <div align = "center">
-    Ph.D. @University of Montreal ('23)
+    Topics: Deep Learning, AI for Science
+  </div>
+  <div align = "center">
+    Role: Research & Education
   </div>
 
 <br>
