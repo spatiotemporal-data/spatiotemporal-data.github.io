@@ -61,7 +61,7 @@ We have many talented researchers responsible for driving this project and its r
     Ph.D. candidate @Central South University
   </div>
   <div align = "center">
-    Role: Feedback on <a href="https://spatiotemporal-data.github.io/posts/ts_conv/">TSConv</a>
+    Role: Feedback on <a href="https://spatiotemporal-data.github.io/posts/ts_conv/">Time Series Convolution</a>
   </div>
 </div>
 
