@@ -22,7 +22,7 @@ We have many talented researchers who are reponsible for moving forward this pro
     Ph.D. candidate @McGill University
   </div>
   <div align = "center">
-    Topics: Deep Learning, AI for Science
+    Interests: Deep Learning, AI for Science
   </div>
   <div align = "center">
     Role: Research & Education (@dataworker)
@@ -36,16 +36,16 @@ We have many talented researchers who are reponsible for moving forward this pro
     <img align="middle" src="https://spatiotemporal-data.github.io/images/DingyiZhuang.jpg" width="130" alt="Circular Image"/>
   </div>
   <div align = "center">
-    <a href="https://openreview.net/profile?id=~Fuqiang_Liu2">Fuqiang Liu (刘福强)</a>
+    <a href="https://zhuangdingyi.github.io/">Dingyi Zhuang (庄丁奕)</a>
   </div>
   <div align = "center">
-    Ph.D. candidate @McGill University
+    Ph.D. candidate @MIT
   </div>
   <div align = "center">
-    Topics: Deep Learning, AI for Science
+    Interests: Bring AI Techniques to Transportation Engineering and Urban Planning
   </div>
   <div align = "center">
-    Role: Research & Education (@dataworker)
+    Role: <a href="https://sites.mit.edu/tensor4ml/">Tensor4ML</a>
   </div>
 
 <br>
