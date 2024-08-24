@@ -24,7 +24,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \begin{cases} f(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2 \\ g(\boldsymbol{x})=\gamma\|\boldsymbol{x}\|_1 \end{cases}"/></p>
 
-
+The gradient of 
 
 <br>
 
