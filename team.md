@@ -27,11 +27,9 @@ We have many talented researchers responsible for driving this project and its r
   <div align = "center">
     Role: Research & Education (@dataworker)
   </div>
-<!-- </div> -->
 
 <br>
 
-<!-- <div align="center" style="color: gray;"> -->
   <div class="image-container">
     <img align="middle" src="https://spatiotemporal-data.github.io/images/DingyiZhuang.jpg" width="130" alt="Circular Image"/>
   </div>
@@ -56,6 +54,9 @@ We have many talented researchers responsible for driving this project and its r
 #### Contributors
 
 <div align="center">
+
+<font color = gray>
+
   <div class="image-container">
     <img align="middle" src="https://spatiotemporal-data.github.io/images/jieling.jpg" width="130" alt="Circular Image"/>
   </div>
@@ -68,6 +69,7 @@ We have many talented researchers responsible for driving this project and its r
   <div align = "center">
     Role: Feedback on <a href="https://spatiotemporal-data.github.io/posts/ts_conv/">Time Series Convolution</a>
   </div>
+</font>
 </div>
 
 <br>
