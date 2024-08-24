@@ -28,7 +28,9 @@ The derivative of <img style="display: inline;" src="https://latex.codecogs.com/
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \nabla_{\boldsymbol{x}}f(\boldsymbol{x})=\frac{\operatorname{d}f(\boldsymbol{x})}{\operatorname{d}\boldsymbol{x}}=\boldsymbol{A}^\top(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}) "/></p>
 
-To elaborate on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm, one great challenge is that the function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;g(\boldsymbol{x})"/> is not differentiable. Thus, the derivative is expressed in terms of a subgradient. Suppose 
+To elaborate on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm, one great challenge is that the function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;g(\boldsymbol{x})"/> is not differentiable. Thus, the derivative is expressed in terms of a subgradient. Suppose a standard <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization problem with a penalty term:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \min_{\boldsymbol{x}}\, \frac{1}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\gamma\|\boldsymbol{x}\|_1 "/></p>
 
 
 <br>
