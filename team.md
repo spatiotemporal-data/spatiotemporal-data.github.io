@@ -50,6 +50,22 @@ We have many talented researchers who are reponsible for moving forward this pro
 
 <br>
 
+<font color = gray>
+
+  <div class="image-container">
+    <img align="middle" src="https://spatiotemporal-data.github.io/images/jieling.jpg" width="130" alt="Circular Image"/>
+  </div>
+  <div align = "center">
+    <a href="https://jieling-jin.github.io/">Jieling Jin (金杰灵)</a>
+  </div>
+  <div align = "center">
+    Ph.D. candidate @Central South University
+  </div>
+  <div align = "center">
+    Role: Feedback on <a href="https://spatiotemporal-data.github.io/posts/ts_conv/">ts_conv</a>
+  </div>
+
+<br>
 
 <br>
 <br>
