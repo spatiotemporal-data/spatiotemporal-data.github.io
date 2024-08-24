@@ -8,6 +8,8 @@ We have many talented researchers who are reponsible for moving forward this pro
 
 <br>
 
+#### Core Members
+
 <div align="center">
 
 <font color = gray>
@@ -16,7 +18,7 @@ We have many talented researchers who are reponsible for moving forward this pro
     <img align="middle" src="https://spatiotemporal-data.github.io/images/fuqiang_liu.jpg" width="130" alt="Circular Image"/>
   </div>
   <div align = "center">
-    Core members: <a href="https://openreview.net/profile?id=~Fuqiang_Liu2">Fuqiang Liu (刘福强)</a>
+    <a href="https://openreview.net/profile?id=~Fuqiang_Liu2">Fuqiang Liu (刘福强)</a>
   </div>
   <div align = "center">
     Ph.D. candidate @McGill University
