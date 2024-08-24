@@ -22,7 +22,7 @@ We have many talented researchers who are reponsible for moving forward this pro
     Ph.D. candidate @McGill University
   </div>
   <div align = "center">
-    Interests: Deep Learning, AI for Science
+    Interests: Deep Learning and AI for Science
   </div>
   <div align = "center">
     Role: Research & Education (@dataworker)
