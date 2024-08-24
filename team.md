@@ -25,7 +25,7 @@ We have many talented researchers who are reponsible for moving forward this pro
     Topics: Deep Learning, AI for Science
   </div>
   <div align = "center">
-    Role: Research & Education
+    Role: Research & Education (@dataworker)
   </div>
 
 <br>
