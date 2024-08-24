@@ -16,7 +16,7 @@ We have many talented researchers who are reponsible for moving forward this pro
     <img align="middle" src="https://spatiotemporal-data.github.io/images/xinyu24.png" width="130" alt="Circular Image"/>
   </div>
   <div align = "center">
-    Core members: <a href="https://xinychen.github.io/">Fuqiang Liu</a>
+    Core members: <a href="https://openreview.net/profile?id=~Fuqiang_Liu2">Fuqiang Liu</a>
   </div>
   <div align = "center">
     Ph.D. candidate @McGill University
