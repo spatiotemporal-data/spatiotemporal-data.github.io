@@ -28,6 +28,7 @@ The derivative of <img style="display: inline;" src="https://latex.codecogs.com/
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \nabla_{\boldsymbol{x}}f(\boldsymbol{x})=\frac{\operatorname{d}f(\boldsymbol{x})}{\operatorname{d}\boldsymbol{x}}=\boldsymbol{A}^\top(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}) "/></p>
 
+To elaborate on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm, one great challenge is that the function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;g(\boldsymbol{x})"/> is not differentiable. Thus, the derivative is expressed in terms of a subgradient. Suppose 
 
 
 <br>
