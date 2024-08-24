@@ -4,7 +4,7 @@ layout: default
 
 ### Team Members
 
-We have many talented researchers who are reponsible for moving forward this project and related topics significantly.
+We have many talented researchers who are reponsible for moving forward this project and the related topics significantly.
 
 <br>
 
