@@ -73,6 +73,3 @@ We have many talented researchers responsible for driving this project and its r
 </div>
 
 <br>
-
-<br>
-<br>
