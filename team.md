@@ -46,6 +46,8 @@ We have many talented researchers responsible for driving this project and its r
   <div align = "center">
     Role: Open Science in <a href="https://sites.mit.edu/tensor4ml/">Tensor4ML</a>
   </div>
+
+</font>
 </div>
 
 <br>
