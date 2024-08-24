@@ -8,7 +8,7 @@ We have many talented researchers responsible for driving this project and its r
 
 #### Core Members
 
-<div align="center" style="color: gray;">
+<!-- <div align="center" style="color: gray;"> -->
   <div class="image-container">
     <img align="middle" src="https://spatiotemporal-data.github.io/images/fuqiang_liu.jpg" width="130" alt="Circular Image"/>
   </div>
@@ -24,11 +24,11 @@ We have many talented researchers responsible for driving this project and its r
   <div align = "center">
     Role: Research & Education (@dataworker)
   </div>
-</div>
+<!-- </div> -->
 
 <br>
 
-<div align="center" style="color: gray;">
+<!-- <div align="center" style="color: gray;"> -->
   <div class="image-container">
     <img align="middle" src="https://spatiotemporal-data.github.io/images/DingyiZhuang.jpg" width="130" alt="Circular Image"/>
   </div>
@@ -44,7 +44,7 @@ We have many talented researchers responsible for driving this project and its r
   <div align = "center">
     Role: Open Science in <a href="https://sites.mit.edu/tensor4ml/">Tensor4ML</a>
   </div>
-</div>
+<!-- </div> -->
 
 <br>
 
