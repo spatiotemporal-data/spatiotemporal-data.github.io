@@ -8,25 +8,7 @@ We have many talented researchers responsible for driving this project and its r
 
 #### Core Members
 
-<div align="center" style="color: gray;">
-  <div class="image-container" style="margin-bottom: 10px;">
-    <img src="https://spatiotemporal-data.github.io/images/fuqiang_liu.jpg" width="130" alt="Circular Image" style="border-radius: 50%;"/>
-  </div>
-  <div>
-    <a href="https://openreview.net/profile?id=~Fuqiang_Liu2" style="text-decoration: none; color: gray;">Fuqiang Liu (刘福强)</a>
-  </div>
-  <div>
-    Ph.D. candidate @McGill University
-  </div>
-  <div>
-    Interests: Deep Learning and AI for Science
-  </div>
-  <div>
-    Role: Research & Education (@dataworker)
-  </div>
-</div>
-
-<!-- <div align="center""> -->
+<div align="center">
   <div align="center" class="image-container">
     <img align="middle" src="https://spatiotemporal-data.github.io/images/fuqiang_liu.jpg" width="130" alt="Circular Image"/>
   </div>
