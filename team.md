@@ -50,6 +50,8 @@ We have many talented researchers who are reponsible for moving forward this pro
 
 <br>
 
+#### Contributors
+
 <font color = gray>
 
   <div class="image-container">
