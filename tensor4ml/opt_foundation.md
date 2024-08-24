@@ -24,7 +24,11 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \begin{cases} f(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2 \\ g(\boldsymbol{x})=\gamma\|\boldsymbol{x}\|_1 \end{cases}"/></p>
 
-The gradient of 
+The derivative of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{x})"/>, namely, gradient, is given by
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \nabla_{\boldsymbol{x}}f(\boldsymbol{x})=\frac{\operatorname{d}f(\boldsymbol{x})}{\operatorname{d}\boldsymbol{x}}=\boldsymbol{A}^\top(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}) "/></p>
+
+
 
 <br>
 
