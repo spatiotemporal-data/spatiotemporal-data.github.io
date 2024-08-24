@@ -26,7 +26,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 The derivative of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{x})"/>, namely, gradient, is given by
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \nabla_{\boldsymbol{x}}f(\boldsymbol{x})=\frac{\operatorname{d}f(\boldsymbol{x})}{\operatorname{d}\boldsymbol{x}}=\boldsymbol{A}^\top(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}) "/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \nabla f(\boldsymbol{x})=\frac{\operatorname{d}f(\boldsymbol{x})}{\operatorname{d}\boldsymbol{x}}=\boldsymbol{A}^\top(\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}) "/></p>
 
 To elaborate on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm, one great challenge is that the function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;g(\boldsymbol{x})"/> is not necessarily differentiable. Thus, the derivative is expressed in terms of a subgradient. Suppose a standard <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization problem with a penalty term:
 
