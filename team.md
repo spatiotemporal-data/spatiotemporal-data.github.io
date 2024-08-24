@@ -29,7 +29,6 @@ We have many talented researchers responsible for driving this project and its r
   </div>
 <!-- </div> -->
 
-<br>
 
 <!-- <div align="center" style="color: gray;"> -->
   <div class="image-container">
