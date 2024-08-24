@@ -16,7 +16,15 @@ layout: default
 
 ##### D. Proximal Gradient Descent
 
-Discuss LASSO regression problems.
+The optimization problem of LASSO is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \min_{\boldsymbol{x}}\, \frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2+\gamma\|\boldsymbol{x}\|_1 "/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\gamma"/> is the regularization parameter that controls the sparsity of variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. The objective function has two terms:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \begin{cases} f(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_2^2 \\ g(\boldsymbol{x})=\gamma\|\boldsymbol{x}\|_1 \end{cases}"/></p>
+
+
 
 <br>
 
