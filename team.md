@@ -9,7 +9,6 @@ We have many talented researchers who are reponsible for moving forward this pro
 #### Core Members
 
 <div align="center">
-
 <font color = gray>
 
   <div class="image-container">
@@ -31,6 +30,7 @@ We have many talented researchers who are reponsible for moving forward this pro
 
 <br>
 
+<div align="center">
 <font color = gray>
 
   <div class="image-container">
@@ -54,6 +54,7 @@ We have many talented researchers who are reponsible for moving forward this pro
 
 #### Contributors
 
+<div align="center">
 <font color = gray>
 
   <div class="image-container">
