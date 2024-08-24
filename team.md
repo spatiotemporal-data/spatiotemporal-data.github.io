@@ -2,11 +2,11 @@
 layout: default
 ---
 
-### Team Members
+## Team Members
 
 We have many talented researchers responsible for driving this project and its related topics forward significantly. Their contributions, in any form, are highly appreciated. Specifically, we categorize the team members as core members, commentators, contributors, and student members based on their contributions and roles.
 
-#### Core Members
+### Core Members
 
 <div align="center">
 
@@ -51,7 +51,7 @@ We have many talented researchers responsible for driving this project and its r
 
 <br>
 
-#### Contributors
+### Contributors
 
 <div align="center">
 
