@@ -27,6 +27,7 @@ We have many talented researchers who are reponsible for moving forward this pro
   <div align = "center">
     Role: Research & Education (@dataworker)
   </div>
+</div>
 
 <br>
 
@@ -47,6 +48,7 @@ We have many talented researchers who are reponsible for moving forward this pro
   <div align = "center">
     Role: Open Science in <a href="https://sites.mit.edu/tensor4ml/">Tensor4ML</a>
   </div>
+</div>
 
 <br>
 
@@ -66,6 +68,7 @@ We have many talented researchers who are reponsible for moving forward this pro
   <div align = "center">
     Role: Feedback on <a href="https://spatiotemporal-data.github.io/posts/ts_conv/">ts_conv</a>
   </div>
+</div>
 
 <br>
 
