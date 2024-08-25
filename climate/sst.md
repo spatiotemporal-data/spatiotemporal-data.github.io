@@ -4,7 +4,7 @@ layout: default
 
 # Sea Surface Temperature Dataset
 
-The oceans play an important role in the global climate system. Exploiting sea surface temperature allows one to sense the climate and understand the dynamical processes of energy exchange at the sea surface. [NOAA (National Oceanic and Atmospheric Administration)](https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/) provides a large amount of sea surface temperature data from September 1, 1981 to the present date.
+The oceans play an important role in the global climate system. Exploiting sea surface temperature allows one to sense the climate and understand the dynamical processes of energy exchange at the sea surface. [NOAA (National Oceanic and Atmospheric Administration)](https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/) provides a large amount of sea surface temperature data from September 1, 1981 to the present date. These original data are processed as the daily optimum interpolation sea surface temperature using statistical interpolation methods ([Huang et al., 2021](https://doi.org/10.1175/JCLI-D-20-0166.1)).
 
 <br>
 
