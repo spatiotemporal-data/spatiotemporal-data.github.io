@@ -449,7 +449,10 @@ As a result, letting the partial derivative of the augmented Lagrangian function
 ```python
 import numpy as np
 
-
+def update_z(y_train, pos_train, x, w, lmbda, gamma):
+    z = x + w / lmbda
+    z[pos_train] = (gamma * y_train + lmbda * z[pos_train]) / (gamma + lmbda) 
+    return z
 ```
 
 
