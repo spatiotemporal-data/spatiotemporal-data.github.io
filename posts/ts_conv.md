@@ -30,7 +30,7 @@ Content:
 Convolution has been widely used to machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
 
 
-Though we have a lot of machine learning algorithms on hand, it is still necessary to resolve the following challenges:
+Though nowadays we have a lot of machine learning algorithms on hand, it is still necessary to resolve the following challenges:
 
 - How to characterize global time series trends?
 - How to characterize local time series trends?
