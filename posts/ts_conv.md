@@ -29,6 +29,15 @@ Content:
 
 Convolution has been widely used to machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
 
+
+Though we have a lot of machine learning algorithms, it is still necessary to resolve the following challenges:
+
+- How to characterize global time series trends?
+- How to characterize local time series trends?
+- How to learn interpretable local and nonlocal patterns as convolutional kernels?
+
+<br>
+
 ## II. Preliminaries
 
 In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas from the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform. In the following sections, we will discuss: 1) what are circular convolution, convolution matrix, and circulant matrix? 2) What is the convolution theorem? 3) How can fast Fourier transform be used to compute the circular convolution?
@@ -485,6 +494,14 @@ As shown in Figure 3, we randomly remove 95% observations as missing values, and
 <span style="color:gray">
 Please reproduce the experiments by following the [Jupyter Notebook](https://github.com/xinychen/LCR/blob/main/univariate-models/CircNNM.ipynb), which is available at the [LCR repository](https://github.com/xinychen/LCR) on GitHub.
 <span>
+
+<br>
+
+
+## IV. Laplacian Convolutional Representation
+
+## V. Learning Interpretable Convolutional Kernel
+
 
 <br>
 <br>
