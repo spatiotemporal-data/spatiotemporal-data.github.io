@@ -481,7 +481,7 @@ def update_z(y_train, pos_train, x, w, lmbda, gamma):
 
 <br>
 
-### E. Time Series Imputation
+### G. Time Series Imputation
 
 As shown in Figure 3, we randomly remove 95% observations as missing values, and we only have 14 volume observations (i.e., 14 blue dots) for the reconstruction.
 
