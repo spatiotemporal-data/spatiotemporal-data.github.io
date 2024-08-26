@@ -40,7 +40,11 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 
 ## II. Preliminaries
 
-In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas from the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform. In the following sections, we will discuss: 1) what are circular convolution, convolution matrix, and circulant matrix? 2) What is the convolution theorem? 3) How can fast Fourier transform be used to compute the circular convolution?
+In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas from the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform. In the following sections, we will discuss: 
+
+- What are circular convolution, convolution matrix, and circulant matrix?
+- What is the convolution theorem?
+- How can fast Fourier transform be used to compute the circular convolution?
 
 ### A. Circular Convolution
 
