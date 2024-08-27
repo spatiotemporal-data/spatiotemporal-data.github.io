@@ -39,7 +39,7 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_global_trends.png" width="700" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_global_trends.png" width="400" />
 </p>
 
 <p align = "center">
@@ -47,7 +47,7 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 </p>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_local_trends.png" width="700" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_local_trends.png" width="400" />
 </p>
 
 <p align = "center">
