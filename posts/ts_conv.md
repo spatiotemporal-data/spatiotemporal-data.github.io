@@ -38,6 +38,17 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_global_trends.png" width="700" />
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> Daily rideshare pickup and dropoff trips during the first 8 weeks since April 1, 2024 in New York City, USA. There are 37,404,265 trips in total, while the average daily trips are 667,933.
+</p>
+
+
+<br>
+
 ## II. Preliminaries
 
 In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas from the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform. In the following sections, we will discuss: 
