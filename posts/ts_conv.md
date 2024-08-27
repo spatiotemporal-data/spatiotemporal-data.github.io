@@ -461,7 +461,7 @@ where the complex-valued variables <img style="display: inline;" src="https://la
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \hat{x}_t:=\frac{\hat{h}_t}{|\hat{h}_t|}\cdot\max\{0,|\hat{h}_t|-T/\lambda\},\,t=1,2,\ldots, T "/></p>
 
-with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\hat{h}_t=\hat{z}_t-\hat{w}_t/\lambda"/>. For reference, this closed-form solution corresponds to Lemma 3.3 in [Yang et al., (2009)](https://doi.org/10.1137/080730421), see Eq. (3.18) and (3.19), which is also called as proximal operator or shrinkage operator in machine learning.
+with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\hat{h}_t=\hat{z}_t-\hat{w}_t/\lambda"/>. For reference, this closed-form solution can be found in Lemma 3.3 in [Yang et al., (2009)](https://doi.org/10.1137/080730421), see Eq. (3.18) and (3.19) for discussing real-valued variables. In the sparsity-induced norm optimization of machine learning, this closed-form solution is also called as proximal operator or shrinkage operator.
 
 
 <br>
