@@ -43,7 +43,15 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 </p>
 
 <p align = "center">
-<b>Figure 1.</b> Daily rideshare pickup and dropoff trips during the first 8 weeks since April 1, 2024 in New York City, USA. There are 37,404,265 trips in total, while the average daily trips are 667,933.
+<b>(a)</b> Global trends
+</p>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_local_trends.png" width="700" />
+</p>
+
+<p align = "center">
+<b>(b)</b> Local trends
 </p>
 
 
