@@ -449,7 +449,12 @@ Thus, the variables <img style="display: inline;" src="https://latex.codecogs.co
 
 ### E. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>-Subproblem
 
-Solving the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> involves discrete Fourier transform, convolution theorem, and L1-norm minimization in complex space.
+Solving the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> involves discrete Fourier transform, convolution theorem, and L1-norm minimization in complex space. The optimization problem with respect to the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> is given by
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_{*}+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}\rangle \\ =&\arg\min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_{*}+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}+\boldsymbol{w}/\lambda\|_2^2 \end{aligned}"/></p>
+
+
+
 
 <br>
 
