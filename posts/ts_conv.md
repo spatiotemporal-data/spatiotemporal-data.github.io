@@ -562,7 +562,7 @@ def circ_opt(y_true, y, lmbda, gamma, maxiter = 50, show_iter = 10):
 
 ## IV. Laplacian Convolutional Representation
 
-## V. Learning Interpretable Convolutional Kernel
+## V. Learning Interpretable Convolutional Kernels
 
 
 <br>
