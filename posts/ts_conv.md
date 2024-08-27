@@ -43,7 +43,7 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 </p>
 
 <p align = "center">
-<b>(a)</b> Global trends
+(a) Global trends
 </p>
 
 <p align="center">
@@ -51,7 +51,7 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 </p>
 
 <p align = "center">
-<b>(b)</b> Local trends
+(b) Local trends
 </p>
 
 <p align = "center">
