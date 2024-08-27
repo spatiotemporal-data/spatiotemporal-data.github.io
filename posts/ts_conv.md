@@ -463,6 +463,19 @@ where the complex-valued variables <img style="display: inline;" src="https://la
 
 with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\hat{h}_t=\hat{z}_t-\hat{w}_t/\lambda"/>. For reference, this closed-form solution can be found in Lemma 3.3 in [Yang et al., (2009)](https://doi.org/10.1137/080730421), see Eq. (3.18) and (3.19) for discussing real-valued variables. In the sparsity-induced norm optimization of machine learning, this closed-form solution is also called as proximal operator or shrinkage operator.
 
+<br>
+
+```python
+import numpy as np
+
+def prox(z, w, lmbda, denominator):
+    T = z.shape[0]
+    h = np.fft.fft(z - w / lmbda)
+    temp = 1 - T/ (lmbda * np.abs(h))
+    temp[temp <= 0] = 0
+    return np.fft.ifft(h * temp).real
+```
+
 
 <br>
 
