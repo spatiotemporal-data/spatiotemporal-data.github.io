@@ -457,6 +457,7 @@ Using discrete Fourier transform, the optimization problem can be converted into
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \hat{\boldsymbol{x}}:=\arg\min_{\hat{\boldsymbol{x}}}\,\|\hat{\boldsymbol{x}}\|_{1}+\frac{\lambda}{2T}\|\hat{\boldsymbol{x}}-\hat{\boldsymbol{z}}+\hat{\boldsymbol{w}}/\lambda\|_2^2 "/></p>
 
+where the variables <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\hat{\boldsymbol{x}},\hat{\boldsymbol{z}},\hat{\boldsymbol{w}}\}=\{\mathcal{F}(\boldsymbol{x}),\mathcal{F}(\boldsymbol{z}),\mathcal{F}(\boldsymbol{w})\}"/> refer to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{{\boldsymbol{x}},{\boldsymbol{z}},{\boldsymbol{w}}\}\}"/> in the frequency domain.
 
 <br>
 
