@@ -468,10 +468,10 @@ with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&sp
 ```python
 import numpy as np
 
-def prox(z, w, lmbda, denominator):
+def update_x(z, w, lmbda):
     T = z.shape[0]
     h = np.fft.fft(z - w / lmbda)
-    temp = 1 - T/ (lmbda * np.abs(h))
+    temp = 1 - T / (lmbda * np.abs(h))
     temp[temp <= 0] = 0
     return np.fft.ifft(h * temp).real
 ```
