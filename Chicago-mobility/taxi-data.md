@@ -26,25 +26,25 @@ layout: default
 
 Taxi data is available since January 2013, TNP rideshare data since November 2018 (see the download pages of [trips (2018 - 2022)](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p/about_data) and [trips (2023 -)](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2023-/n26f-ihde/about_data)). As of 2019 there are three licensed TNPs in Chicago: Uber, Lyft, and Via. The TNP dataset does not identify which company provided each trip.
 
-Notably, despite the [taxi and ridehailing usage in Chicago](https://toddwschneider.com/dashboards/chicago-taxi-ridehailing-data/), one can also check out the [taxi and ridehailing usage in New York City](https://toddwschneider.com/dashboards/nyc-taxi-ridehailing-uber-lyft-data/). Below is a summary of NYC taxi and rideshare trips over the past few years, depending on the data availability at the [TLC trip record data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+Notably, despite the [taxi and ridehailing usage in Chicago](https://toddwschneider.com/dashboards/chicago-taxi-ridehailing-data/), one can also check out the [taxi and ridehailing usage in New York City](https://toddwschneider.com/dashboards/nyc-taxi-ridehailing-uber-lyft-data/). Below is a summary of NYC taxi (e.g., yellow taxi) and rideshare (e.g., high volume for-hire vehicle (HVFHV)) trips over the past few years, depending on the data availability at the [TLC trip record data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
 <br>
 
 | Year    | Taxi trips | Rideshare trips | 
 | ------- | :--------: | :-------------: | 
-| 2011    | 176.9M     |  |
-| 2012    | 171.4M     |  |
-| 2013    | 171.8M     |  |
-| 2014    | 165.4M     |  |
-| 2015    |  |  |
-| 2016    |  |  |
-| 2017    |  |  |
-| 2018    |  |  |
-| 2019    |  |  |
-| 2020    |  |  |
-| 2021    |  |  |
-| 2022    |  |  |
-| 2023    |  |  |
+| 2011    | 176.9M     |                 |
+| 2012    | 171.4M     |                 |
+| 2013    | 171.8M     |                 |
+| 2014    | 165.4M     |                 |
+| 2015    | 146.0M     |                 |
+| 2016    | 131.1M     |                 |
+| 2017    | 113.5M     |                 |
+| 2018    | 102.9M     |                 |
+| 2019    | 84.6M      | 234.6M          |
+| 2020    | 24.6M      | 143.3M          |
+| 2021    | 30.9M      | 174.6M          |
+| 2022    | 39.7M      | 212.4M          |
+| 2023    | 38.3M      | 232.5M          |
 
 
 <br>
