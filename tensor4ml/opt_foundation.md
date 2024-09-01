@@ -67,7 +67,9 @@ Let the objective function of the aforementioned matrix factorization be <img st
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \frac{\partial f}{\partial\boldsymbol{W}}=-\boldsymbol{X}\mathcal{P}_{\Omega}^\top(\boldsymbol{Y}-\boldsymbol{W}^\top\boldsymbol{X})+\rho\boldsymbol{W} \\ \frac{\partial f}{\partial\boldsymbol{X}}=-\boldsymbol{W}\mathcal{P}_{\Omega}(\boldsymbol{Y}-\boldsymbol{W}^\top\boldsymbol{X})+\rho\boldsymbol{X} \end{cases}"/></p>
 
+One can find the optimal solution to each subproblem by letting the partial derivative be zeros,
 
+<br>
 
 Matrix factorization with Panda
 
