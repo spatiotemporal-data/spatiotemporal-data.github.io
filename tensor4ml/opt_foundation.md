@@ -56,6 +56,9 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 **Example 1.** Given matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}=\begin{bmatrix} 1 & 2 \\ 3 & 4 \\ \end{bmatrix}"/>, if the observed index set is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega=\{(1,1), (2,2)\}"/>, then we have
 </span>
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}(\boldsymbol{Y})=\begin{bmatrix} 1 & 0 \\ 0 & 4 \\ \end{bmatrix}"/></p>
+
+
 ---
 
 Matrix factorization with Panda
