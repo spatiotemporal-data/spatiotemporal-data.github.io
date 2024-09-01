@@ -61,6 +61,8 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 ---
 
+<br>
+
 Matrix factorization with Panda
 
 <br>
