@@ -35,17 +35,17 @@ To elaborate on the <img style="display: inline;" src="https://latex.codecogs.co
 
 <br>
 
-#### II. Power Iteration
-
-##### A. Eigenvalue Decomposition
-
-##### B. Randomized Singular Value Decomposition
-
-<br>
-
-#### III. Alternating Minimization
+#### II. Alternating Minimization
 
 ##### A. Alternating Least Squares
+
+Alternating minimization is classical method for solving matrix and tensor factorization problems. For any partially observed matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}\in\mathbb{R}^{N\times T}"/> with the observed index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>, the rank-<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;R"/> matrix factorization can be formulated on the partially observed entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}"/>, and it takes the following form:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{W},\boldsymbol{X}}\,\frac{1}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{Y}-\boldsymbol{W}^\top\boldsymbol{X})\|_F^2+\frac{\rho}{2}"/></p>
+
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;R<\min\{N,T\}"/> is a low rank for the approximation via the use of matrix factorization.
+
 
 Example. Matrix factorization with Panda
 
@@ -55,7 +55,7 @@ Smoothing matrix factorization on Panda
 
 <br>
 
-#### IV. Alternating Direction Method of Multipliers
+#### III. Alternating Direction Method of Multipliers
 
 The Alternating Direction Method of Multipliers (ADMM) is an optimization algorithm designed to solve complex problems by decomposing them into a sequence of easy-to-solve subproblems ([Boyd et al., 2011](http://dx.doi.org/10.1561/2200000016)). ADMM efficiently handles both the primal and dual aspects of the optimization problem, ensuring convergence to a solution that satisfies the original problem's constraints. The method synthesizes concepts from dual decomposition and augmented Lagrangian methods: dual decomposition divides the original problem into two or more subproblems, while the augmented Lagrangian methods use an augmented Lagrangian function to effectively handle constraints within the optimization process. This combination makes ADMM particularly powerful for solving large-scale and constrained optimization problems.
 
@@ -136,7 +136,7 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 <br>
 
 
-#### V. Greedy Methods for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm Optimization
+#### IV. Greedy Methods for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm Optimization
 
 ##### A. Orthogonal Matching Pursuit
 
@@ -146,6 +146,21 @@ In terms of the variable <img style="display: inline;" src="https://latex.codeco
 
 <br>
 
-#### VI. Bayesian Optimization
+#### V. Bayesian Optimization
+
+##### A. Conjugate Priors
+
+##### B. Bayesian Inference
+
+##### C. Bayesian Linear Regression
 
 <br>
+
+#### VI. Power Iteration
+
+##### A. Eigenvalue Decomposition
+
+##### B. Randomized Singular Value Decomposition
+
+<br>
+
