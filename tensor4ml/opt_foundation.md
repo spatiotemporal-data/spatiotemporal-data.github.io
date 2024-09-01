@@ -41,10 +41,9 @@ To elaborate on the <img style="display: inline;" src="https://latex.codecogs.co
 
 Alternating minimization is classical method for solving matrix and tensor factorization problems. For any partially observed matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}\in\mathbb{R}^{N\times T}"/> with the observed index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>, the rank-<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;R"/> matrix factorization can be formulated on the partially observed entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}"/>, and it takes the following form:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{W},\boldsymbol{X}}\,\frac{1}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{Y}-\boldsymbol{W}^\top\boldsymbol{X})\|_F^2+\frac{\rho}{2}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{W},\boldsymbol{X}}\,\frac{1}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{Y}-\boldsymbol{W}^\top\boldsymbol{X})\|_F^2+\frac{\rho}{2}(\|\boldsymbol{W}\|_F^2+\|\boldsymbol{X}\|_F^2)"/></p>
 
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;R<\min\{N,T\}"/> is a low rank for the approximation via the use of matrix factorization.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;R<\min\{N,T\}"/> is a low rank for the approximation via the use of matrix factorization. In particular, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{R\times N}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{R\times T}"/> are factor matrices.
 
 
 Example. Matrix factorization with Panda
