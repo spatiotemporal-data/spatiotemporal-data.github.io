@@ -63,7 +63,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
-Let the objective function of the aforementioned matrix factorization be <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f"/>, then the partial derivatives of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f"/> with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/> are given by
+Let the objective function of the aforementioned matrix factorization be <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f"/> (or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{W},\boldsymbol{X})"/> when mentioning all variables), then the partial derivatives of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f"/> with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/> are given by
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\frac{\partial f}{\partial\boldsymbol{W}}=-\boldsymbol{X}\mathcal{P}_{\Omega}^\top(\boldsymbol{Y}-\boldsymbol{W}^\top\boldsymbol{X})+\rho\boldsymbol{W} "/></p>
 
