@@ -73,7 +73,7 @@ and
 
 respectively. One can find the optimal solution to each subproblem by letting the partial derivative be zeros. In this case, the alternating minimization takes an iterative process by solving two subproblems:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \boldsymbol{W}:=\arg\min_{\boldsymbol{W}}\,f(\boldsymbol{W},\boldsymbol{X}) \\ \boldsymbol{X}:=\arg\min_{\boldsymbol{X}}\,f(\boldsymbol{W},\boldsymbol{X}) \end{cases} "/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \displaystyle\boldsymbol{W}:=\arg\min_{\boldsymbol{W}}\,f(\boldsymbol{W},\boldsymbol{X}) \\ \displaystyle\boldsymbol{X}:=\arg\min_{\boldsymbol{X}}\,f(\boldsymbol{W},\boldsymbol{X}) \end{cases} "/></p>
 
 where 
 
