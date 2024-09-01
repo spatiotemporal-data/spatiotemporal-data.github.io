@@ -53,10 +53,12 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ---
 
 <span style="color:gray">
-Example. Matrix factorization with Panda
+**Example 1.** 
 </span>
 
 ---
+
+Matrix factorization with Panda
 
 <br>
 
