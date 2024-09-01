@@ -43,10 +43,19 @@ Alternating minimization is classical method for solving matrix and tensor facto
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{W},\boldsymbol{X}}\,\frac{1}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{Y}-\boldsymbol{W}^\top\boldsymbol{X})\|_F^2+\frac{\rho}{2}(\|\boldsymbol{W}\|_F^2+\|\boldsymbol{X}\|_F^2)"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;R<\min\{N,T\}"/> is a low rank for the approximation via the use of matrix factorization. In particular, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{R\times N}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{R\times T}"/> are factor matrices.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;R<\min\{N,T\}"/> is a low rank for the approximation via the use of matrix factorization. In particular, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{R\times N}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{R\times T}"/> are factor matrices. To represent the matrix factorization on the observed index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/> of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}:\mathbb{R}^{N\times T}\to\mathbb{R}^{N\times T}"/> denotes the orthogonal projection supported on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>.
 
+<br>
 
+---
+
+<span style="color:gray">
 Example. Matrix factorization with Panda
+</span>
+
+---
+
+<br>
 
 ##### B. Alternating Minimization with Conjugate Gradient Descent
 
