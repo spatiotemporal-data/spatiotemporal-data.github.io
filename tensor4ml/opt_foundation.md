@@ -99,8 +99,8 @@ Since each subproblem in the alternating minimization scheme has least squares s
 <img align="middle" src="https://spatiotemporal-data.github.io/images/gaint_panda_gray.jpg" width="300" />
 </p>
 
-<p align = "center">
-<b>Figure 1.</b> Gaint panda with a gray scale.
+<p align = "center"><span style="color:gray">
+<b>Figure 1.</b> Gaint panda with a gray scale.</span>
 </p>
 
 <br>
