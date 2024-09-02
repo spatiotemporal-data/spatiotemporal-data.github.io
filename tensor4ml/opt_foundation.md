@@ -100,7 +100,7 @@ Since each subproblem in the alternating minimization scheme has least squares s
 </p>
 
 <p align = "center">
-<b>Figure 1.</b> 
+<b>Figure 1.</b> Gaint panda with a gray scale.
 </p>
 
 <br>
