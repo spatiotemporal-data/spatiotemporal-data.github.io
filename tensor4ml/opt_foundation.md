@@ -91,9 +91,31 @@ Since each subproblem in the alternating minimization scheme has least squares s
 
 <span style="color:gray">
 **Example 2.** 
-
-Matrix factorization with Panda
 <span>
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/gaint_panda_gray.jpg" width="450" />
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> 
+</p>
+
+<br>
+
+```python
+import matplotlib.pyplot as plt
+from skimage import io
+
+img = io.imread('gaint_panda_gray.jpg')
+io.imshow(img)
+plt.axis('off')
+plt.show()
+```
+
+<br>
 
 ---
 
