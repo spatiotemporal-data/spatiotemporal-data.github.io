@@ -96,7 +96,7 @@ Since each subproblem in the alternating minimization scheme has least squares s
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/gaint_panda_gray.jpg" width="450" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/gaint_panda_gray.jpg" width="400" />
 </p>
 
 <p align = "center">
