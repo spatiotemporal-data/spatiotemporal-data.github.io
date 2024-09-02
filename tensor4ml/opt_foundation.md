@@ -81,7 +81,7 @@ The closed-form solution to each subproblem is given in the column vector of the
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}\in\mathbb{R}^{R},\,t\in[T]"/> is the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-th column vector of the factor matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{R\times T}"/>. The least squares solution to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}"/> is
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}:=\Bigl(\sum_{i:(i,t)\in\Omega}\boldsymbol{w}_{i}\boldsymbol{w}_i^\top+\rho\boldsymbol{I}_{R}\Bigr)^{-1}\sum_{t:(i,t)\in\Omega}\boldsymbol{x}_{t}y_{i,t}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}:=\Bigl(\sum_{i:(i,t)\in\Omega}\boldsymbol{w}_{i}\boldsymbol{w}_i^\top+\rho\boldsymbol{I}_{R}\Bigr)^{-1}\sum_{i:(i,t)\in\Omega}\boldsymbol{w}_{i}y_{i,t}"/></p>
 
 
 
