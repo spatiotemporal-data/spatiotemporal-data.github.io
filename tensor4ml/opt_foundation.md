@@ -83,7 +83,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}:=\Bigl(\sum_{i:(i,t)\in\Omega}\boldsymbol{w}_{i}\boldsymbol{w}_i^\top+\rho\boldsymbol{I}_{R}\Bigr)^{-1}\sum_{i:(i,t)\in\Omega}\boldsymbol{w}_{i}y_{i,t}"/></p>
 
-
+Since each subproblem in the alternating minimization scheme has least squares solutions, the scheme is also referred to as the alternating least squares.
 
 <br>
 
