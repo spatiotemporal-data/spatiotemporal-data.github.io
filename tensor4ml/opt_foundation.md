@@ -75,9 +75,13 @@ respectively. One can find the optimal solution to each subproblem by letting th
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \displaystyle\boldsymbol{W}:=\arg\min_{\boldsymbol{W}}\,f(\boldsymbol{W},\boldsymbol{X}) \\ \displaystyle\boldsymbol{X}:=\arg\min_{\boldsymbol{X}}\,f(\boldsymbol{W},\boldsymbol{X}) \end{cases} "/></p>
 
-The closed-form solution to each subproblem is given in the column vector of the factor matrix. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_{i},\,\forall i\in[N]"/> is the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space; i"/>-th column of the factor matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{R\times N}"/>, then the least squares solution is
+The closed-form solution to each subproblem is given in the column vector of the factor matrix. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_{i}\in\mathbb{R}^{R},\,\forall i\in[N]"/> is the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space; i"/>-th column vector of the factor matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{R\times N}"/>, then the least squares solution is
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_{i}:=\Bigl(\sum_{t:(i,t)\in\Omega}\boldsymbol{x}_{t}\boldsymbol{x}_t^\top+\rho\boldsymbol{I}_{R}\\Bigr)^{-1}\sum_{t:(i,t)\in\Omega}\boldsymbol{x}_{t}y_{i,t}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_{i}:=\Bigl(\sum_{t:(i,t)\in\Omega}\boldsymbol{x}_{t}\boldsymbol{x}_t^\top+\rho\boldsymbol{I}_{R}\Bigr)^{-1}\sum_{t:(i,t)\in\Omega}\boldsymbol{x}_{t}y_{i,t}"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}\in\mathbb{R}^{R},\,t\in[T]"/> is the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-th column vector of the factor matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{R\times T}"/>. The least squares solution to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}"/> is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}:=\Bigl(\sum_{i:(i,t)\in\Omega}\boldsymbol{w}_{i}\boldsymbol{w}_i^\top+\rho\boldsymbol{I}_{R}\Bigr)^{-1}\sum_{t:(i,t)\in\Omega}\boldsymbol{x}_{t}y_{i,t}"/></p>
 
 
 
