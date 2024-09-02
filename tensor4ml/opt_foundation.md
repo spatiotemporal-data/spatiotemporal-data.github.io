@@ -90,7 +90,7 @@ Since each subproblem in the alternating minimization scheme has least squares s
 ---
 
 <span style="color:gray">
-Matrix factorization with Panda
+**Example 2.** Matrix factorization with Panda
 <span>
 
 ---
