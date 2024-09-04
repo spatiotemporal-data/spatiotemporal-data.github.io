@@ -20,11 +20,10 @@ Content:
 - Prior art on global trend modeling with circulant matrix nuclear norm minimization
 - Laplacian convolutional representation
 - Interpretable convolutional kernels
-<!-- - Local trend modeling with circular convolution
-- LCR: A unified optimization with an efficient implementation
-- Python implementation with `numpy`
-- Univariate traffic volume/speed imputation
-- Multivariate speed field reconstruction -->
+#- Local trend modeling with circular convolution
+#- LCR: A unified optimization with an efficient implementation
+#- Univariate traffic volume/speed imputation
+#- Multivariate speed field reconstruction
 
 <br>
 
