@@ -149,6 +149,10 @@ In signal processing, this linear transformation is a fundamental property of ci
 
 <br>
 
+Illustration of linear transformation (coming soon).
+
+<br>
+
 ---
 
 <span style="color:gray">
@@ -216,6 +220,10 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{2} \\ x_2 & x_1 & x_{T} & \cdots & x_{3} \\ x_3 & x_2 & x_1 & \cdots & x_{4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{1} \\ \end{bmatrix}\in\mathbb{R}^{T\times T}"/></p>
 which forms a square matrix.
+
+<br>
+
+Illustration of linear transformation (coming soon).
 
 <br>
 
