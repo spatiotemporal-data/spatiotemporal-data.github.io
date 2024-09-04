@@ -19,7 +19,7 @@ Content:
 - Preliminaries
 - Prior art on global trend modeling with circulant matrix nuclear norm minimization
 - Laplacian convolutional representation
-- Interpretable convolutional kernels
+- Learning interpretable convolutional kernels
 
 <br>
 
