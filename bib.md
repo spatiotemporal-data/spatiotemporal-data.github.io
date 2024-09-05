@@ -8,7 +8,18 @@ layout: default
 
 <br>
 
-### 22rd Mile
+### 23rd Mile
+#### Slowly Varying Regression under Sparsity
+
+
+
+**References**
+- Dimitris Bertsimas, Vassilis Digalakis, Michael Lingzhi Li, Omar Skali Lami (2024). [Slowly Varying Regression Under Sparsity](https://doi.org/10.1287/opre.2022.0330). Operations Research. [[arXiv](https://arxiv.org/pdf/2102.10773)]
+
+
+<br>
+
+### 22nd Mile
 #### Revisiting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-Norm Minimization
 
 
