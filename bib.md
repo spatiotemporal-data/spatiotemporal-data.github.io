@@ -8,7 +8,7 @@ layout: default
 
 <br>
 
-### 21st Mile
+### 22rd Mile
 #### Revisiting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-Norm Minimization
 
 
@@ -18,6 +18,20 @@ layout: default
 - Lijun Ding (2023). [One dimensional least absolute deviation problem](https://threesquirrelsdotblog.com/2023/06/08/one-dimensional-least-absolute-deviation-problem/). Blog post.
 - Gregory Gundersen (2022). [Weighted Least Squares](https://gregorygundersen.com/blog/2022/08/09/weighted-ols/). Blog post.
 - stephentu's blog (2014). [Subdifferential of a norm](https://stephentu.github.io/blog/convex-analysis/2014/10/01/subdifferential-of-a-norm.html). Blog post.
+
+<br>
+
+### 21st Mile
+#### Relative Squared Error (RSE)
+
+Computes the relative squared error (RSE):
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\text{RSE}=\frac{\sum_{i=1}^{n}(y_i-\hat{y}_i)^2}{\sum_{i=1}^{n}(y_i-\bar{y})^2}"/></p>
+
+
+
+**References**
+- [Relative Squared Error (RSE)](https://lightning.ai/docs/torchmetrics/stable/regression/rse.html).
 
 <br>
 
