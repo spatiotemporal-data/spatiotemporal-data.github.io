@@ -28,7 +28,7 @@ Computes the relative squared error (RSE):
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\text{RSE}=\frac{\sum_{i=1}^{n}(y_i-\hat{y}_i)^2}{\sum_{i=1}^{n}(y_i-\bar{y})^2}"/></p>
 
-
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{n}"/> is a vector of ground truth with mean <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\bar{y}"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\hat{\boldsymbol{y}}\in\mathbb{R}^{n}"/> is the estimates.
 
 **References**
 - [Relative Squared Error (RSE)](https://lightning.ai/docs/torchmetrics/stable/regression/rse.html).
