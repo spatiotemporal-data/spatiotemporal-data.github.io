@@ -144,6 +144,10 @@ In signal processing, this linear transformation is a fundamental property of ci
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_conv_mat.png" width="400" />
+</p>
+
 <p align = "center">
 <b>Figure 3.</b> Illustration of circular convolution as the linear transformation with a convolution matrix.
 </p>
