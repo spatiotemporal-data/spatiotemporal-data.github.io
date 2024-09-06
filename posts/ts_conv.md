@@ -145,7 +145,7 @@ In signal processing, this linear transformation is a fundamental property of ci
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_conv_mat.png" width="400" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_conv_mat.png" width="350" />
 </p>
 
 <p align = "center">
@@ -223,6 +223,10 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 which forms a square matrix.
 
 <br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_circ_mat.png" width="350" />
+</p>
 
 <p align = "center">
 <b>Figure 4.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
