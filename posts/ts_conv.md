@@ -145,7 +145,7 @@ In signal processing, this linear transformation is a fundamental property of ci
 <br>
 
 <p align = "center">
-<b>**Figure 3.</b> Illustration of circular convolution as the linear transformation with a convolution matrix.
+<b>Figure 3.</b> Illustration of circular convolution as the linear transformation with a convolution matrix.
 </p>
 
 <br>
@@ -221,7 +221,7 @@ which forms a square matrix.
 <br>
 
 <p align = "center">
-<b>**Figure 4.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
+<b>Figure 4.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
 </p>
 
 <br>
