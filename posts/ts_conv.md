@@ -580,7 +580,7 @@ Please reproduce the experiments by following the [Jupyter Notebook](https://git
 
 ### A. Convolutional Kernels
 
-Circular convolution ...
+On the univariate time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> in the form of a vector, the circular convolution between time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and convolutional kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\in\mathbb{R}^{T}"/>
 
 <br>
 <br>
