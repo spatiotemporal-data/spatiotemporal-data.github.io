@@ -145,7 +145,7 @@ In signal processing, this linear transformation is a fundamental property of ci
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_conv_mat.png" width="350" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_conv_mat.png" width="320" />
 </p>
 
 <p align = "center">
@@ -225,7 +225,7 @@ which forms a square matrix.
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_circ_mat.png" width="350" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_circ_mat.png" width="320" />
 </p>
 
 <p align = "center">
