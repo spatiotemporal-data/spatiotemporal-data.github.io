@@ -586,6 +586,9 @@ On the univariate time series <img style="display: inline;" src="https://latex.c
 
 is ill-posed because the optimal solution is all entries of kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/> being zeros. To address this challenge, we assume that the first entry of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/> is one and the following <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-1"/> entries are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-\boldsymbol{w}"/> in which <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\in\mathbb{R}^{T-1}"/> is a non-negative vector.
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2 \\ \text{s.t.}\,&\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix} \end{aligned}"/></p>
+
+
 
 
 <br>
