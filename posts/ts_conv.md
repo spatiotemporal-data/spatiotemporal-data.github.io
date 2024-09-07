@@ -596,7 +596,7 @@ where the constraint is of great significance for minimizing the objective funct
 
 Recall that the circular convolution can be converted into a linear transformation with circulant matrix. The loss of circular convolution is equivalent to
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2="/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2=\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2"/></p>
 
 
 
