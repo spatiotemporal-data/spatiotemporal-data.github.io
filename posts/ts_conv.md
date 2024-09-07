@@ -613,7 +613,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/sparse_reg_time_series.png" width="400" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sparse_reg_time_series.png" width="450" />
 </p>
 
 <p align = "center">
