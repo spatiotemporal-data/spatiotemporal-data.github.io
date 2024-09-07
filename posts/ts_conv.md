@@ -594,7 +594,7 @@ where the constraint is of great significance for minimizing the objective funct
 
 ### B. Sparse Linear Regression
 
-Recall that the circular convolution can be converted into a linear transformation with circulant matrix. Considering , the loss of circular convolution is equivalent to
+Recall that the circular convolution can be converted into a linear transformation with circulant matrix. Considering the kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix}"/>, the loss of circular convolution is equivalent to
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2=\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2"/></p>
 
