@@ -607,7 +607,7 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/sparse_reg_time_series.png" width="320" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sparse_reg_time_series.png" width="350" />
 </p>
 
 <p align = "center">
