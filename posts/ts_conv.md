@@ -624,6 +624,8 @@ and the auxiliary matrix <img style="display: inline;" src="https://latex.codeco
 Thus, we have
 </span>
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}=\begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix}-\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}\begin{bmatrix} 0 \\ 0 \\ 0 \\ -1 \\ \end{bmatrix}="/></p>
+
 ---
 
 <br>
