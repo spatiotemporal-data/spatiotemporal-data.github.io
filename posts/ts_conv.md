@@ -582,12 +582,10 @@ Please reproduce the experiments by following the [Jupyter Notebook](https://git
 
 On the univariate time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> in the form of a vector, the circular convolution between time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and convolutional kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\in\mathbb{R}^{T}"/> can be constructed with certain purposes. The expression is formally defined by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\star\boldsymbol{x}\in\mathbb{R}^{T}"/>. When using this kernel to characterize the temporal correlations of time series, one simple yet interesting idea is making the loss of circular convolution, namely, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2"/>, as small as possible. 
 
-<br>
-<br>
-<br>
 
 
-
+<br>
+<br>
 
 
 <br>
