@@ -609,7 +609,7 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 ---
 
 <span style="color:gray">
-**Example 7.** Given vectors ...
+**Example 7.** Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=(1,0,0,0,-1)^\top"/>, 
 </span>
 
 
