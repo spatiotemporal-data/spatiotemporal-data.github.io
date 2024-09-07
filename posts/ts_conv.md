@@ -588,6 +588,7 @@ is ill-posed because the optimal solution is all entries of kernel <img style="d
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2 \\ \text{s.t.}\,&\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix} \end{aligned}"/></p>
 
+where the constraint 
 
 <br>
 
