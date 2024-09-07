@@ -606,6 +606,19 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 
 <br>
 
+
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_w_conv.png" width="450" />
+</p>
+
+<p align = "center">
+<b>Figure 7.</b> Illustration of circular convolution with a structured vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
+</p>
+
+
+<br>
+
 ---
 
 <span style="color:gray">
