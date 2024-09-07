@@ -591,9 +591,6 @@ is ill-posed because the optimal solution is all entries of kernel <img style="d
 
 
 
-<br>
-<br>
-
 
 <br>
 
