@@ -610,7 +610,6 @@ To reinforce the model interpretability, we impose a sparsity constraint on the 
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/> is the sparsity level, i.e., the number of non-zero values.
 
-
 <br>
 
 <p align="center">
@@ -623,6 +622,10 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
+### C. Interpretable Kernels on Human Mobility
+
+
+<br>
 <br>
 
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 17, 2024.)</p>
