@@ -610,7 +610,9 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 
 <span style="color:gray">
 **Example 7.** Given vectors ...
-<gray>
+</span>
+
+
 ---
 
 <br>
