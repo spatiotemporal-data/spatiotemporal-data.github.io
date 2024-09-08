@@ -544,7 +544,7 @@ or
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/shrinkage_operator.png" width="350" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/shrinkage_operator.png" width="300" />
 </p>
 
 <p align = "center">
