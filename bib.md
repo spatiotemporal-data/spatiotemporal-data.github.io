@@ -17,9 +17,9 @@ This work addresses a time series regression problem for features <img style="di
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\beta}_t\in\mathbb{R}^{D},\,t=1,2,\ldots,T"/> are coefficient vectors, which are supposed to represent both sparsity and time-varying behaviors of the system. Thus, the optimization problem has both temporal smoothing (in the objective) and sparsity (in the constraint), e.g.,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\ldots,\boldsymbol{\beta}_T}\,&\sum_{t=1}^{T}\bigl(\|\boldsymbol{y}_t-\boldsymbol{X}_t\boldsymbol{\beta}_t\|_2^2+\lambda_{\beta}\|\boldsymbol{\beta}_t\|_2^2\bigr)+\lambda_{\delta}\sum_{(s,t)\in E}\|\boldsymbol{\beta}_t-\boldsymbol{\beta}_s\|_2^2 \\ \text{s.t.}\,&\begin{cases} |\text{Supp}(\boldsymbol{\beta}_t)|\leq K_L,\,\forall t \\ \bigl|\Cup_{t=1}^{T}\text{Supp}(\boldsymbol{\beta}_t)\bigr|\leq K_G \\ \sum_{(s,t)\in E}|\text{Supp}(\boldsymbol{\beta}_t)\Delta\text{Supp}(\boldsymbol{\beta}_s)|\leq K_C \end{cases} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\ldots,\boldsymbol{\beta}_T}\,&\sum_{t=1}^{T}\bigl(\|\boldsymbol{y}_t-\boldsymbol{X}_t\boldsymbol{\beta}_t\|_2^2+\lambda_{\beta}\|\boldsymbol{\beta}_t\|_2^2\bigr)+\lambda_{\delta}\sum_{(s,t)\in E}\|\boldsymbol{\beta}_t-\boldsymbol{\beta}_s\|_2^2 \\ \text{s.t.}\,&\begin{cases} |\text{Supp}(\boldsymbol{\beta}_t)|\leq K_L,\,\forall t \\ \bigl|\bigcup\limits_{t=1}^{T}\text{Supp}(\boldsymbol{\beta}_t)\bigr|\leq K_G \\ \sum_{(s,t)\in E}|\text{Supp}(\boldsymbol{\beta}_t)\Delta\text{Supp}(\boldsymbol{\beta}_s)|\leq K_C \end{cases} \end{aligned}"/></p>
 
-
+The methodological contribution is 
 
 **References**
 - Dimitris Bertsimas, Vassilis Digalakis, Michael Lingzhi Li, Omar Skali Lami (2024). [Slowly Varying Regression Under Sparsity](https://doi.org/10.1287/opre.2022.0330). Operations Research. [[arXiv](https://arxiv.org/pdf/2102.10773)]
