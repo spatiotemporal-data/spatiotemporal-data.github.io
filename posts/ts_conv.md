@@ -519,6 +519,30 @@ def update_x(z, w, lmbda):
     return np.fft.ifft(h * temp).real
 ```
 
+<br>
+
+---
+
+<span style="color:gray">
+**Soft Thresholding Operator.** For any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{n}"/>, the closed-form solution to the optimization problem
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{y}}\,\|\boldsymbol{y}\|_1+\frac{\alpha}{2}\|\boldsymbol{y}-\boldsymbol{x}\|_2^2"/></p>
+
+<span style="color:gray">
+can be expressed as
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;y_{i}=\frac{x_i}{|x_i|}\cdot\max\{|x_i|-1/\alpha, 0\},\,i=1,2,\cdots,n"/></p>
+
+<span style="color:gray">
+or
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;y_{i}=\begin{cases} x_i-1/\alpha, & \text{if}\,x_i>1/\alpha \\ x_i+1/\alpha, & \text{if}\,x_i<-1/\alpha \\ 0, & \text{otherwise} \end{cases}"/></p>
+
+
+---
 
 <br>
 
