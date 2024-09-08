@@ -663,7 +663,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
-### C. Interpretable Kernels on Human Mobility
+### C. Interpretable Kernels on Human Mobility Data
 
 
 
