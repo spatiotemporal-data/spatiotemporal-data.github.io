@@ -19,6 +19,8 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\ldots,\boldsymbol{\beta}_T}\,&\sum_{t=1}^{T}\bigl(\|\boldsymbol{y}_t-\boldsymbol{X}_t\boldsymbol{\beta}_t\|_2^2+\lambda_{\beta}\|\boldsymbol{\beta}_t\|_2^2\bigr)+\lambda_{\delta}\sum_{(s,t)\in E}\|\boldsymbol{\beta}_t-\boldsymbol{\beta}_s\|_2^2 \\ \text{s.t.}\,&\begin{cases} |\text{Supp}(\boldsymbol{\beta}_t)|\leq K_L,\,\forall t \\ \bigl|\bigcup\limits_{t=1}^{T}\text{Supp}(\boldsymbol{\beta}_t)\bigr|\leq K_G \\ \sum_{(s,t)\in E}|\text{Supp}(\boldsymbol{\beta}_t)\Delta\text{Supp}(\boldsymbol{\beta}_s)|\leq K_C \end{cases} \end{aligned}"/></p>
 
+where the constraint is indeed the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm of vectors. Thus, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K_L,K_G,K_C\in\mathbb{Z}^{+}"/> stand for sparsity levels.
+
 The methodological contribution is 
 
 **References**
