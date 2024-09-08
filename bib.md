@@ -11,6 +11,14 @@ layout: default
 ### 23rd Mile
 #### Slowly Varying Regression under Sparsity
 
+This work addresses a time series regression problem for features <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{N\times D},\,t=1,2,\ldots,T"/> and outcomes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_t\in\mathbb{R}^{N},\,t=1,2,\ldots,T"/>:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_t\approx\boldsymbol{X}_t\boldsymbol{\beta}_t"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\beta}_t\in\mathbb{R}^{D},\,t=1,2,\ldots,T"/> are coefficient vectors, which are supposed to represent both sparsity and time-varying behaviors of the system. Thus, the optimization problem has both temporal smoothing (in the objective) and sparsity (in the constraint), e.g.,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\ldots,\boldsymbol{\beta}_T}\,&\sum_{t=1}^{T}\bigl(\|\boldsymbol{y}_t-\boldsymbol{X}_t\boldsymbol{\beta}_t\|_2^2+\lambda_{\beta}\|\boldsymbol{\beta}_t\|_2^2\bigr) \\ \text{s.t.}\, \end{aligned}"/></p>
+
 
 
 **References**
