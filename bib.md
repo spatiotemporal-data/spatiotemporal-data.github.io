@@ -21,7 +21,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 where the constraint is indeed the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm of vectors. Thus, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K_L,K_G,K_C\in\mathbb{Z}^{+}"/> stand for sparsity levels.
 
-The methodological contribution is 
+The methodological contribution is reformulating this problem as a binary convex optimization problem (w/ a novel relaxation of the objective function), which can be solved efficiently using a cutting plane-type algorithm.
 
 **References**
 - Dimitris Bertsimas, Vassilis Digalakis, Michael Lingzhi Li, Omar Skali Lami (2024). [Slowly Varying Regression Under Sparsity](https://doi.org/10.1287/opre.2022.0330). Operations Research. [[arXiv](https://arxiv.org/pdf/2102.10773)]
