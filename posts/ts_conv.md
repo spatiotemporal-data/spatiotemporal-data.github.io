@@ -611,7 +611,7 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_w_conv.png" width="430" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_w_conv.png" width="420" />
 </p>
 
 <p align = "center">
