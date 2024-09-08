@@ -551,6 +551,8 @@ or
 <b>Figure 6.</b> Illustration of the shrinkage operator for solving the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization problem.
 </p>
 
+<br>
+
 ---
 
 <br>
