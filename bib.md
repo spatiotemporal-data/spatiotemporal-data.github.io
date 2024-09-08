@@ -11,7 +11,7 @@ layout: default
 ### 23rd Mile
 #### Slowly Varying Regression under Sparsity
 
-This work addresses a time series regression problem for features <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{N\times D},\,t=1,2,\ldots,T"/> and outcomes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_t\in\mathbb{R}^{N},\,t=1,2,\ldots,T"/>:
+This work addresses a time series regression problem for features <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{N\times D},\,t=1,2,\ldots,T"/> and outcomes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_t\in\mathbb{R}^{N},\,t=1,2,\ldots,T"/>, taking the following expression:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_t\approx\boldsymbol{X}_t\boldsymbol{\beta}_t"/></p>
 
