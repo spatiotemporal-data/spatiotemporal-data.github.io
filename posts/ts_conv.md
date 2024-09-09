@@ -617,13 +617,13 @@ Please reproduce the experiments by following the [Jupyter Notebook](https://git
 
 ### A. Convolutional Kernels
 
-On the univariate time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> in the form of a vector, the circular convolution between time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and convolutional kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\in\mathbb{R}^{T}"/> can be constructed with certain purposes. The expression is formally defined by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\star\boldsymbol{x}\in\mathbb{R}^{T}"/>. When using this kernel to characterize the temporal correlations of time series, one simple yet interesting idea is making the loss of circular convolution, namely, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2"/>, as small as possible. However, the optimization problem
+On the univariate time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> in the form of a vector, the circular convolution between time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and convolutional kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\in\mathbb{R}^{T}"/> can be constructed with certain purposes. The expression is formally defined by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}\in\mathbb{R}^{T}"/>. When using this kernel to characterize the temporal correlations of time series, one simple yet interesting idea is making the loss of circular convolution, namely, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2"/>, as small as possible. However, the optimization problem
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{\theta}}\,\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{\theta}}\,\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2"/></p>
 
 is ill-posed because the optimal solution is all entries of kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/> being zeros. To address this challenge, we assume that the first entry of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/> is one and the following <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-1"/> entries are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-\boldsymbol{w}"/> in which <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\in\mathbb{R}^{T-1}"/> is a non-negative vector. Thus, the optimization problem becomes
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2 \\ \text{s.t.}\,&\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2 \\ \text{s.t.}\,&\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix} \end{aligned}"/></p>
 
 where the constraint is of great significance for minimizing the objective function.
 
@@ -633,7 +633,7 @@ where the constraint is of great significance for minimizing the objective funct
 
 Recall that the circular convolution can be converted into a linear transformation with circulant matrix. Considering the kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix}"/>, the loss of circular convolution is equivalent to
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{\theta}\star\boldsymbol{x}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2=\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2=\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2"/></p>
 
 where the auxiliary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{T\times (T-1)}"/> is comprised of the last <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-1"/> columns of the circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{T\times T}"/>, namely,
 
@@ -651,7 +651,7 @@ where the auxiliary matrix <img style="display: inline;" src="https://latex.code
 
 <br>
 
-As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\star\boldsymbol{x}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 9 for an illustration), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
+As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 9 for an illustration), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
 
 <br>
 
