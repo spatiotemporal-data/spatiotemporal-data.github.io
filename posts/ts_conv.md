@@ -653,7 +653,7 @@ where the matrix <img style="display: inline;" src="https://latex.codecogs.com/s
 
 <br>
 
-As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 9 for an illustration), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
+As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 9), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
 
 <br>
 
