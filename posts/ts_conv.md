@@ -6,7 +6,7 @@ layout: default
 
 <p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on September 8, 2024)</span></p>
+<p align="center"><span style="color:gray">(Updated on September 9, 2024)</span></p>
 
 <br>
 
@@ -639,7 +639,19 @@ where the auxiliary matrix <img style="display: inline;" src="https://latex.code
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{2} \\ x_{1} & x_{T} & x_{T-1} & \cdots & x_{3} \\ x_{2} & x_{1} & x_{T} & \cdots & x_{4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T-2} & x_{T-3} & x_{T-4} & \cdots & x_{T} \\ x_{T-1} & x_{T-2} & x_{T-3} & \cdots & x_{1} \\ \end{bmatrix}"/></p>
 
-As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\star\boldsymbol{x}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 8 for an illustration), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_circ.png" width="420" />
+</p>
+
+<p align = "center">
+<b>Figure 8.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
+</p>
+
+<br>
+
+As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\star\boldsymbol{x}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 9 for an illustration), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
 
 <br>
 
@@ -650,7 +662,7 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 </p>
 
 <p align = "center">
-<b>Figure 8.</b> Illustration of circular convolution with a structured vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
+<b>Figure 9.</b> Illustration of circular convolution with a structured vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
 </p>
 
 
@@ -693,7 +705,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 </p>
 
 <p align = "center">
-<b>Figure 9.</b> Illustration of learning <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> from the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> with the constructed formula as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\approx\boldsymbol{A}\boldsymbol{w}"/>.
+<b>Figure 10.</b> Illustration of learning <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> from the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> with the constructed formula as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\approx\boldsymbol{A}\boldsymbol{w}"/>.
 </p>
 
 <br>
