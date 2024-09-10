@@ -712,6 +712,15 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
+---
+
+<span style="color:gray">
+**<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm**. For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}"/>
+</span>
+
+---
+
+
 ### C. Interpretable Kernels on Human Mobility Data
 
 
