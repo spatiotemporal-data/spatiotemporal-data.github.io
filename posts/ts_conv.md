@@ -715,11 +715,18 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ---
 
 <span style="color:gray">
-**<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm**. For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}"/>
+**<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm**. For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm is defined as follows,
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \|\boldsymbol{x}\|_0=&\operatorname{card}\{i\mid x_i\neq 0\} \\ =&\operatorname{supp}(\boldsymbol{x}) \end{aligned}"/></p>
+
+<span style="color:gray">
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{card}\{\cdot\}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{supp}(\cdot)"/> denote the cardinality and the support set of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, respectively.
 </span>
 
 ---
 
+<br>
 
 ### C. Interpretable Kernels on Human Mobility Data
 
