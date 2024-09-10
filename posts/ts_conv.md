@@ -721,7 +721,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_0=\operatorname{card}\{i\mid x_i\neq 0\}=|\operatorname{supp}(\boldsymbol{x})|"/></p>
 
 <span style="color:gray">
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{card}\{\cdot\}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{supp}(\cdot)"/> denote the cardinality and the support set of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, respectively.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{card}\{\cdot\}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{supp}(\cdot)"/> denote the cardinality and the support set of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, respectively. For instance, given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the support set is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{supp}(\boldsymbol{x})=\{2,3,4,5\}"/> and the number of nonzero entries is  <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_0=4"/>.
 </span>
 
 ---
