@@ -731,6 +731,11 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ### C. Interpretable Kernels on Human Mobility Data
 
 
+<br>
+
+## VI. Exploring the Impact of Future Research
+
+From a time series analysis perspective, our modeling ideas can guide further research by using the properties of circular convolution and connecting with various signals.
 
 <br>
 <br>
