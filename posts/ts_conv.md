@@ -27,7 +27,7 @@ Content:
 
 ## I. Motivation
 
-Convolution has been widely used to machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
+Convolution is one of the most commonly-used operations in applied mathematics, signal processing, and machine learning, widely used to machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
 
 
 Though nowadays we have a lot of machine learning algorithms on hand, it is still necessary to address the following challenges:
