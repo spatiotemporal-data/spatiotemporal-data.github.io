@@ -13,7 +13,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Signal processing
 - Network science
 - Graph computing & learning
-- Causal inference
+- Causal inference & learning
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
