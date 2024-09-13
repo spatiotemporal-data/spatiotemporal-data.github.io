@@ -36,7 +36,7 @@ To elaborate on the <img style="display: inline;" src="https://latex.codecogs.co
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/shrinkage_operator_minus_plus.png" width="500" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/shrinkage_operator_minus_plus.png" width="550" />
 </p>
 
 <p align = "center">
