@@ -35,6 +35,20 @@ To elaborate on the <img style="display: inline;" src="https://latex.codecogs.co
 
 <br>
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/shrinkage_operator_minus_plus.png" width="500" />
+</p>
+
+<p align = "center">
+<b>Figure 1.</b> Illustration of the shrinkage operator for solving the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization problem.
+</p>
+
+<br>
+
+
+
+<br>
+
 #### II. Alternating Minimization
 
 ##### A. Alternating Least Squares
