@@ -69,7 +69,7 @@ In this study, we build the modeling concepts of Laplacian convolutional represe
 - What is the convolution theorem?
 - How can fast Fourier transform be used to compute the circular convolution?
 
-### A. Circular Convolution
+### II A. Circular Convolution
 
 Convolution is a powerful operation in many classical deep learning frameworks, such as convolutional neural networks (CNNs). In the context of discrete sequences (typically vectors), circular convolution refers to the convolution of two discrete sequences of data, and it plays an important role in maximizing the efficiency of certain common filtering operations (see [circular convolution](https://en.wikipedia.org/wiki/Circular_convolution) on Wikipedia).
 
@@ -132,7 +132,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
-### B. Convolution Matrix
+### II B. Convolution Matrix
 
 Using the notations above, for any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{\tau}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau<T"/>, the circular convolution can be expressed as a linear transformation:
 
@@ -211,7 +211,7 @@ print(z)
 
 <br>
 
-### C. Circulant Matrix
+### II C. Circulant Matrix
 
 Recall that the convolution matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}(\boldsymbol{x})"/> is specified with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> columns, corresponding to the length of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>). In the case of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{T}"/> with same columns, the convolution matrix becoms a square matrix, known as a **circulant matrix**. In this study, we emphasize the importance of circulant matrices and their properties, such as their strong connection with circular convolution and discrete Fourier transform, even through we do not work directly with circulant matrices.
 
@@ -264,7 +264,7 @@ The example shows that the circular convolution of <img style="display: inline;"
 
 <br>
 
-### D. Discrete Fourier Transform
+### II D. Discrete Fourier Transform
 
 Discrete Fourier transform (see [Wikipedia](https://en.wikipedia.org/wiki/Discrete_Fourier_transform)) is a fundamental tool in mathematics and signal processing with widespread applications to machine learning. The discrete Fourier transform is the key discrete transform used for Fourier analysis, enabling the decomposition of a signal into its constituent frequencies. The fast Fourier transform is an efficient algorithm for computing the discrete Fourier tranform (see the [difference between discrete Fourier transform and fast Fourier transform](https://math.stackexchange.com/q/30464/738418)), significantly reducing the time complexity from <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T^2)"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T\log T)"/>, where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> is the number of data points. This efficiency makes fast Fourier transform essential for processing large problems.
 
@@ -329,7 +329,7 @@ Circular convolution of x and y:
 Circulant matrices are fundamental in many computational and theoretical aspects of signal processing and machine learning, providing an efficient framework for implementating various algorithms such as circulant matrix nuclear norm minimization. By definition, a circulant matrix is a spcial square matrix where which shifts the previous row to the right by one position, with the last entry wrapping around to the first position. As we already discussed the circulant matrix above, we will present the circulant matrix nuclear norm, its minimization problem, and applications.
 
 
-### A. Definition
+### III A. Definition
 
 Nuclear norm is a key concept in matrix computations and convex optimization, frequently applied in low-rank matrix approximation and completion problems. For any matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/>, the nuclear norm is defined as the sum of singular values:
 
@@ -397,7 +397,7 @@ print(s)
 
 <br>
 
-### B. Property
+### III B. Property
 
 One of the most intriguing properties of circulant matrices is that they are diagonalizable by the discrete Fourier transform matrix. The eigenvalue decomposition of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{T\times T}"/> (constructed from any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^T"/>) is given by
 
@@ -458,7 +458,7 @@ In this case, the <img style="display: inline;" src="https://latex.codecogs.com/
 
 <br>
 
-### C. Optimization
+### III C. Optimization
 
 For any partially observed time series in the form of a vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^T"/> with the observed index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>, solving the circulant matrix nuclear norm minimization allows one to reconstruct missing values in time series. The problem is formulated as follows,
 
@@ -476,7 +476,7 @@ Since the variable <img style="display: inline;" src="https://latex.codecogs.com
 
 <br>
 
-### D. Solution Algorithm
+### III D. Solution Algorithm
 
 The augmented Lagrangian function is
 
@@ -490,7 +490,7 @@ Thus, the variables <img style="display: inline;" src="https://latex.codecogs.co
 
 <br>
 
-### E. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>-Subproblem
+### III E. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>-Subproblem
 
 Solving the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> involves discrete Fourier transform, convolution theorem, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization in complex space. The optimization problem with respect to the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> is given by
 
@@ -557,7 +557,7 @@ or
 
 <br>
 
-### F. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>-Subproblem
+### III F. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>-Subproblem
 
 In terms of the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>, the partial derivative of the augmented Lagrangian function with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}(\boldsymbol{z})"/> is given by
 
@@ -587,7 +587,7 @@ def update_z(y_train, pos_train, x, w, lmbda, gamma):
 
 <br>
 
-### G. Time Series Imputation
+### III G. Time Series Imputation
 
 As shown in Figure 7, we randomly remove 95% observations as missing values, and we only have 14 volume observations (i.e., 14 blue dots) for the reconstruction. The circulant matrix nuclear norm minimization can capture the global trends from partial observations.
 
@@ -615,7 +615,7 @@ Please reproduce the experiments by following the [Jupyter Notebook](https://git
 
 ## V. Learning Interpretable Convolutional Kernels
 
-### A. Convolutional Kernels
+### V A. Convolutional Kernels
 
 On the univariate time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> in the form of a vector, the circular convolution between time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and convolutional kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\in\mathbb{R}^{T}"/> can be constructed with certain purposes. The expression is formally defined by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}\in\mathbb{R}^{T}"/>. When using this kernel to characterize the temporal correlations of time series, one simple yet interesting idea is making the loss of circular convolution, namely, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2"/>, as small as possible. However, the optimization problem
 
@@ -629,7 +629,7 @@ where the constraint is of great significance for minimizing the objective funct
 
 <br>
 
-### B. Sparse Linear Regression
+### V B. Sparse Linear Regression
 
 Recall that the circular convolution can be converted into a linear transformation with circulant matrix. Considering the kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix}"/>, the loss of circular convolution is equivalent to
 
@@ -728,7 +728,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
-### C. Interpretable Kernels on Human Mobility Data
+### V C. Interpretable Kernels on Human Mobility Data
 
 
 <br>
