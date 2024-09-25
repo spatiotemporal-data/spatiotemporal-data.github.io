@@ -731,6 +731,23 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ### V-C. Interpretable Kernels on Human Mobility Data
 
 
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/pickup_dropoff_trips_chicago_2024_april_may.png" width="600" />
+</p>
+
+<p align = "center">
+<b>Figure 11.</b> Daily average of rideshare trips over 77 zones during the first 8 weeks since April 1, 2024 in the City of Chicago, USA. There are 11,374,540 trips in total, while the daily average is 203,117 trips.
+</p>
+
+<br>
+
+
+
+
+
 <br>
 
 ## VI. Exploring the Impact of Future Research
