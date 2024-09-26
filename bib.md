@@ -184,6 +184,8 @@ Going back to the individual mobility trajectory, there would be some opportunit
 
 AI increases global access to reliable flood forecasts (see [dataset](https://zenodo.org/doi/10.5281/zenodo.8139379)).
 
+Another weather forecasting dataset for consideration: [Rain forecasts world-wide on an expansive data set with over a magnitude more hi-res rain radar data](https://weather4cast.net/neurips2024/challenge/).
+
 **References**
 - Nearing, G., Cohen, D., Dube, V. et al. (2024). [Global prediction of extreme floods in ungauged watersheds](https://doi.org/10.1038/s41586-024-07145-1). Nature, 627: 559–563.
 
