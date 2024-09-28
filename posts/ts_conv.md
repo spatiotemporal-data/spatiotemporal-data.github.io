@@ -4,9 +4,9 @@ layout: default
 
 # Time Series Convolution
 
-<p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations.</span></p>
+<p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The new regression models unlock opportunities to better capture the long-term changes of time series.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on September 22, 2024)</span></p>
+<p align="center"><span style="color:gray">(Updated on September 27, 2024)</span></p>
 
 <br>
 
@@ -35,6 +35,8 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 - How to characterize global time series trends?
 - How to characterize local time series trends?
 - How to learn interpretable local and nonlocal patterns as convolutional kernels?
+
+Sometimes, time series exhibit complicated trends if [they not stationary](https://otexts.com/fpp2/stationarity.html).
 
 <br>
 
