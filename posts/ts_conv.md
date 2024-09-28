@@ -4,7 +4,7 @@ layout: default
 
 # Time Series Convolution
 
-<p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The new regression models unlock opportunities to better capture the long-term changes of time series.</span></p>
+<p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The new regression models unlock opportunities to better capture the long-term changes of real-world time series.</span></p>
 
 <p align="center"><span style="color:gray">(Updated on September 27, 2024)</span></p>
 
