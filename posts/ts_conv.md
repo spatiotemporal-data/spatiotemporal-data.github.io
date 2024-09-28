@@ -36,7 +36,7 @@ Though nowadays we have a lot of machine learning algorithms on hand, it is stil
 - How to characterize local time series trends?
 - How to learn interpretable local and nonlocal patterns as convolutional kernels?
 
-Sometimes, time series exhibit complicated trends if [they not stationary](https://otexts.com/fpp2/stationarity.html).
+Sometimes, time series exhibit complicated trends if [they are not stationary](https://otexts.com/fpp2/stationarity.html).
 
 <br>
 
