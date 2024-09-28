@@ -8,6 +8,16 @@ layout: default
 
 <br>
 
+### 24th Mile
+#### Optimization in Reinforcement Learning
+
+**References**
+
+- Jalaj Bhandari and Daniel Russo (2024). [Global Optimality Guarantees for Policy Gradient Methods](https://doi.org/10.1287/opre.2021.0014). Operations Research, 72(5): 1906 - 1927.
+- Lucia Falconi, Andrea Martinelli, and John Lygeros (2024). [Data-driven optimal control via linear programming: boundedness guarantees](https://doi.org/10.1109/TAC.2024.3465536). IEEE Transactions on Automatic Control.
+
+<br>
+
 ### 23rd Mile
 #### Sparse and Time-Varying Regression
 
@@ -175,6 +185,7 @@ Going back to the individual mobility trajectory, there would be some opportunit
 
 - [1 million+ trips collected by 13,000+ taxi cabs during 5 days in Harbin, China](https://github.com/boathit/deepgtt)
 - [Daily GPS trajectory data of 664 electric taxis in Shenzhen, China](https://guangwang.me/#/data)
+- Takahiro Yabe, Kota Tsubouchi, Toru Shimizu, Yoshihide Sekimoto, Kaoru Sezaki, Esteban Moro & Alex Pentland (2024). [YJMob100K: City-scale and longitudinal dataset of anonymized human mobility trajectories](https://www.nature.com/articles/s41597-024-03237-9). Scientific Data. [[Data](https://zenodo.org/records/13237029)] [[Challenge](https://wp.nyu.edu/humobchallenge2024/)]
 
 
 <br>
