@@ -98,6 +98,7 @@ Learning causal interactions from time series of complex dynamical systems is of
 
 **References**
 - Jakob Runge (2017). [Causal inference and complex network methods for the geosciences](https://www.belmontforum.org/wp-content/uploads/2018/04/Causal-Inference-and-Complex-Network-Methods-for-the-Geosciences.pdf). Slides.
+- Jakob Runge, Andreas Gerhardus, Gherardo Varando, Veronika Eyring & Gustau Camps-Valls (2023). [Causal inference for time series](https://www.nature.com/articles/s43017-023-00431-y). Nature Reviews Earth & Environment, 4: 487–505.
 - Jitkomut Songsiri (2013). [Sparse autoregressive model estimation for learning Granger causality in time series](https://doi.org/10.1109/ICASSP.2013.6638248). 2013 IEEE International Conference on Acoustics, Speech and Signal Processing.
 
 <br>
