@@ -187,6 +187,7 @@ Going back to the individual mobility trajectory, there would be some opportunit
 - [1 million+ trips collected by 13,000+ taxi cabs during 5 days in Harbin, China](https://github.com/boathit/deepgtt)
 - [Daily GPS trajectory data of 664 electric taxis in Shenzhen, China](https://guangwang.me/#/data)
 - Takahiro Yabe, Kota Tsubouchi, Toru Shimizu, Yoshihide Sekimoto, Kaoru Sezaki, Esteban Moro & Alex Pentland (2024). [YJMob100K: City-scale and longitudinal dataset of anonymized human mobility trajectories](https://www.nature.com/articles/s41597-024-03237-9). Scientific Data. [[Data](https://zenodo.org/records/13237029)] [[Challenge](https://wp.nyu.edu/humobchallenge2024/)]
+- [The dataset comprises trajectory data of traffic participants, along with traffic light data, current local weather data, and air quality data from the Application Platform Intelligent Mobility (AIM) Research Intersection](https://zenodo.org/records/11396372)
 
 
 <br>
