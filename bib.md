@@ -8,6 +8,14 @@ layout: default
 
 <br>
 
+### 25th Mile
+#### Mobile Service Usage Data
+
+- Orlando E. Martínez-Durive et al. (2023). [The NetMob23 Dataset: A High-resolution Multi-region Service-level Mobile Data Traffic Cartography](https://arxiv.org/abs/2305.06933). arXiv:2305.06933.
+- André Zanella (2024). [Characterizing Large-Scale Mobile Traffic Measurements for Urban, Social and Networks Sciences](https://dspace.networks.imdea.org/handle/20.500.12761/1852). PhD thesis.
+
+<br>
+
 ### 24th Mile
 #### Optimization in Reinforcement Learning
 
