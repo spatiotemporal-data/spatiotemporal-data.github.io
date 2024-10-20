@@ -8,6 +8,15 @@ layout: default
 
 <br>
 
+### 26th Mile
+#### INFORMS 2024
+
+- [Mehrdad Ghadiri](https://web.mit.edu/mehrdadg/www/), Matthew Fahrbach, Gang Fu, Vahab Mirrokni (2023). [Approximately Optimal Core Shapes for Tensor Decompositions](https://proceedings.mlr.press/v202/ghadiri23a/ghadiri23a.pdf). ICML.
+- Jiachang Liu, Sam Rosen, Chudi Zhong, Cynthia Rudin (2023). [OKRidge: Scalable Optimal k-Sparse Ridge Regression](https://arxiv.org/pdf/2304.06686). NeurIPS 2023.
+
+
+<br>
+
 ### 25th Mile
 #### Mobile Service Usage Data
 
