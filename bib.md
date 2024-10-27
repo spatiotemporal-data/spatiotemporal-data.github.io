@@ -15,7 +15,22 @@ Recall that the sum of squared singular values of <img style="display: inline;" 
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\sum_{i=1}^{I}(\sigma_{i})^2=\|\boldsymbol{X}\|_F^2"/></p>
 
-This means that we can solve a singular value **packing** problem instead of considering the complement of the surrogate loss.
+This means that we can solve a singular value **packing** problem instead of considering the complement of the surrogate loss. Please reproduce it as follows,
+
+<br>
+
+```python
+import numpy as np
+
+X = np.random.rand(100, 100)
+print(np.linalg.norm(X, 'fro') ** 2)
+u, s, v = np.linalg.svd(X, full_matrices = False)
+print(np.linalg.norm(s, 2) ** 2)
+```
+
+<br>
+
+Thus, Tucker packing problem on the non-increasing sequences <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{a}^{(n)}\in\mathbb{R}_{\geq 0}^{I_n}"/> (w.r.t. singular values),
 
 **References**
 
