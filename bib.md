@@ -34,7 +34,7 @@ Thus, Tucker packing problem on the non-increasing sequences <img style="display
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\{R_n\}_{n=1}^{N}}\,&\underbrace{\sum_{n=1}^{N}\sum_{i_n=1}^{R_n}a_{i_n}^{(n)}}_{\text{\color{blue}sum of singular values}} \\ \text{s.t.}\,&\underbrace{\prod_{n=1}^{N}R_n}_{\text{\color{blue}core tensor shape}}+\underbrace{\sum_{n=1}^{N}I_nR_n}_{\text{\color{blue}matrix shapes}}\leq \underbrace{c}_{\text{\color{blue}weight}} \end{aligned}"/></p>
 
-
+The optimization problem can be implemented by using an integer programming solvers, and its solution quality is competitive with the greedy algorithm.
 
 **References**
 
