@@ -38,7 +38,7 @@ Thus, Tucker packing problem on the non-increasing sequences <img style="display
 
 **References**
 
-- [Mehrdad Ghadiri](https://web.mit.edu/mehrdadg/www/), Matthew Fahrbach, Gang Fu, Vahab Mirrokni (2023). [Approximately Optimal Core Shapes for Tensor Decompositions](https://proceedings.mlr.press/v202/ghadiri23a/ghadiri23a.pdf). ICML 2023.
+- [Mehrdad Ghadiri](https://web.mit.edu/mehrdadg/www/), Matthew Fahrbach, Gang Fu, Vahab Mirrokni (2023). [Approximately Optimal Core Shapes for Tensor Decompositions](https://proceedings.mlr.press/v202/ghadiri23a/ghadiri23a.pdf). ICML 2023. [[Python code](https://github.com/fahrbach/approximately-optimal-core-shapes)]
 - Jiachang Liu, Sam Rosen, Chudi Zhong, Cynthia Rudin (2023). [OKRidge: Scalable Optimal k-Sparse Ridge Regression](https://arxiv.org/pdf/2304.06686). NeurIPS 2023.
 
 <br>
