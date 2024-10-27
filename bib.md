@@ -9,7 +9,7 @@ layout: default
 <br>
 
 ### 26th Mile
-#### INFORMS 2024
+#### INFORMS 2024 | Core Tensor Shape Optimization
 
 Recall that the sum of squared singular values of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{N\times D},\,t=1,2,\ldots,T"/> and outcomes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/> is
 
