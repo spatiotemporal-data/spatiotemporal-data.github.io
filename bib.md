@@ -13,7 +13,7 @@ layout: default
 
 Recall that the sum of squared singular values of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{N\times D},\,t=1,2,\ldots,T"/> and outcomes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/> is
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\sum_{i_n=1}^{I_n}(\sigma_{i_n})^2=\|\boldsymbol{X}\|_F^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\sum_{i=1}^{I}(\sigma_{i})^2=\|\boldsymbol{X}\|_F^2"/></p>
 
 This means that we can solve a singular value **packing** problem instead of considering the complement of the surrogate loss.
 
