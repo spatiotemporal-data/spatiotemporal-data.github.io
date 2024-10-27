@@ -11,9 +11,16 @@ layout: default
 ### 26th Mile
 #### INFORMS 2024
 
+Recall that the sum of squared singular values of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{N\times D},\,t=1,2,\ldots,T"/> and outcomes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/> is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\sum_{i_n=1}^{I_n}(\sigma_{i_n})^2=\|\boldsymbol{X}\|_F^2"/></p>
+
+This means that we can solve a singular value **packing** problem instead of considering the complement of the surrogate loss.
+
+**References**
+
 - [Mehrdad Ghadiri](https://web.mit.edu/mehrdadg/www/), Matthew Fahrbach, Gang Fu, Vahab Mirrokni (2023). [Approximately Optimal Core Shapes for Tensor Decompositions](https://proceedings.mlr.press/v202/ghadiri23a/ghadiri23a.pdf). ICML 2023.
 - Jiachang Liu, Sam Rosen, Chudi Zhong, Cynthia Rudin (2023). [OKRidge: Scalable Optimal k-Sparse Ridge Regression](https://arxiv.org/pdf/2304.06686). NeurIPS 2023.
-
 
 <br>
 
