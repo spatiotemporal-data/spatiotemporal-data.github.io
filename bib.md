@@ -30,7 +30,10 @@ print(np.linalg.norm(s, 2) ** 2)
 
 <br>
 
-Thus, Tucker packing problem on the non-increasing sequences <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{a}^{(n)}\in\mathbb{R}_{\geq 0}^{I_n}"/> (w.r.t. singular values),
+Thus, Tucker packing problem on the non-increasing sequences <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{a}^{(n)}\in\mathbb{R}_{\geq 0}^{I_n}"/> (w.r.t. singular values), the optimization problem is given by
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\{R_n\}_{n=1}^{N}}\,&\sum_{n=1}^{N}\sum_{i_n=1}^{R_n}a_{i_n}^{(n)} \\ \text{s.t.}\,&\prod_{n=1}^{N}R_n+\sum_{n=1}^{N}I_nR_n\leq c \end{aligned}"/></p>
+
 
 **References**
 
