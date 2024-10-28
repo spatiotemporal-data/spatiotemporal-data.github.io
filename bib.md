@@ -8,6 +8,18 @@ layout: default
 
 <br>
 
+### 27th Mile
+#### Importance of Sparsity in Interpretable Machine Learning
+
+Sparsity is an important type of model-based interpretability methods. Typically, the practitioner can impose sparsity on the model by limiting the number of nonzero parameters. When the number of nonzero parameters is sufficiently small, a practitioner can interpret the variables corresponding to those parameters as being meaningfully related to the outcome in question and can also interpret the magnitude and direction of the parameters. Two important methods including <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm penalty (e.g., LASSO) and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm constraint (e.g., OMP). Model sparsity is often useful for high-dimensional problems, where the goal is to identify key features for further analysis.
+
+**References**
+
+- W. James Murdoch, Chandan Singh, Karl Kumbier, Reza Abbasi-Asl, and Bin Yu (2019). [Definitions, methods, and applications in interpretable machine learning](https://www.pnas.org/doi/10.1073/pnas.1900654116). PNAS.
+
+
+<br>
+
 ### 26th Mile
 #### INFORMS 2024 | Core Tensor Shape Optimization
 
