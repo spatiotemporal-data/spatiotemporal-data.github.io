@@ -749,7 +749,7 @@ The question is how to learn the vector <img style="display: inline;" src="https
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}"/></p>
 
 <span style="color:gray">
-The solution algorithm of mixed-integer linear programming is given by
+The sparse vector is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(0.44,0,0,0.44)^\top"/>. To reproduce it, the solution algorithm of mixed-integer linear programming is given by
 </span>
 
 <br>
