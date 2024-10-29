@@ -780,7 +780,13 @@ print("Optimal beta:", w.value)
 print("Active indices:", np.nonzero(z.value > 0.5)[0])
 ```
 
-Please install the optimization packages in-ahead, e.g., `pip install gurobipy`.
+Please install the optimization packages in-ahead, e.g., `pip install gurobipy`. You can also check out the optimization solvers in `cvxpy`:
+
+```python
+import cvxpy as cp
+
+print(cp.installed_solvers())
+```
 
 ---
 
