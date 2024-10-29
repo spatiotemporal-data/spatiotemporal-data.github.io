@@ -50,6 +50,8 @@ print("Active indices:", np.nonzero(z.value > 0.5)[0])
 
 <br>
 
+Note that the ["Model too large for size-limited Gurobi license" error](https://support.gurobi.com/hc/en-us/articles/360051597492-How-do-I-resolve-a-Model-too-large-for-size-limited-Gurobi-license-error).
+
 <br>
 
 ### 27th Mile
