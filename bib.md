@@ -11,6 +11,8 @@ layout: default
 ### 28th Mile
 #### Mixed Integer Linear Programming (Example)
 
+- [Mixed Integer Linear Programming with Python](https://readthedocs.org/projects/python-mip/downloads/pdf/latest/)
+
 <br>
 
 ```python
