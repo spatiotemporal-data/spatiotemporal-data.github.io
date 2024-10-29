@@ -782,6 +782,10 @@ print("Optimal beta:", w.value)
 print("Active indices:", np.nonzero(z.value > 0.5)[0])
 ```
 
+<br>
+
+Please install the optimization package in-ahead, i.e., `pip install gurobipy`.
+
 ---
 
 <br>
