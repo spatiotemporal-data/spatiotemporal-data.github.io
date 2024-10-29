@@ -737,7 +737,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ---
 
 <span style="color:gray">
-**Example 8.** Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the auxiliary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> (the last 4 columns of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>) is
+**Example 8.** Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the auxiliary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> (the last 4 columns of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>) is
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
@@ -748,6 +748,39 @@ The question is how to learn the vector <img style="display: inline;" src="https
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}"/></p>
 
+<br>
+
+```python
+import numpy as np
+import cvxpy as cp
+
+x = np.array([0, 1, 2, 3, 4])
+A = circ_mat(x)[:, 1 :]
+tau = 2 # sparsity level
+d = A.shape[1]
+
+# Variables
+w = cp.Variable(d, nonneg=True)
+z = cp.Variable(d, boolean=True)
+
+# Constraints
+constraints = [
+    cp.sum(z) <= k,
+    w <= z,
+    w >= 0
+]
+
+# Objective
+objective = cp.Minimize(cp.sum_squares(x - A @ w))
+
+# Problem
+problem = cp.Problem(objective, constraints)
+problem.solve(solver=cp.GUROBI)  # Ensure to use a solver that supports MIP
+
+# Solution
+print("Optimal beta:", w.value)
+print("Active indices:", np.nonzero(z.value > 0.5)[0])
+```
 
 ---
 
