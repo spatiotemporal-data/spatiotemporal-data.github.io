@@ -752,8 +752,6 @@ The question is how to learn the vector <img style="display: inline;" src="https
 The sparse vector is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(0.44,0,0,0.44)^\top"/>. To reproduce it, the solution algorithm of mixed-integer linear programming is given by
 </span>
 
-<br>
-
 ```python
 import numpy as np
 import cvxpy as cp
@@ -781,8 +779,6 @@ problem.solve(solver=cp.GUROBI)  # Ensure to use a solver that supports MIP
 print("Optimal beta:", w.value)
 print("Active indices:", np.nonzero(z.value > 0.5)[0])
 ```
-
-<br>
 
 Please install the optimization package in-ahead, i.e., `pip install gurobipy`.
 
