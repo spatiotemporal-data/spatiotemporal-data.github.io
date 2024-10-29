@@ -768,11 +768,7 @@ w = cp.Variable(d, nonneg=True)
 z = cp.Variable(d, boolean=True)
 
 # Constraints
-constraints = [
-    cp.sum(z) <= k,
-    w <= z,
-    w >= 0
-]
+constraints = [cp.sum(z) <= k, w <= z, w >= 0]
 
 # Objective
 objective = cp.Minimize(cp.sum_squares(x - A @ w))
