@@ -732,6 +732,8 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 #### V-C. Mixed-Integer Linear Programming
 
+There are often some special-purpose algorithms for solving constrained linear regression problems.
+
 <br>
 
 ---
