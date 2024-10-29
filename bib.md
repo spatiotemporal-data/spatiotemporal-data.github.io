@@ -8,6 +8,48 @@ layout: default
 
 <br>
 
+### 28th Mile
+#### Mixed Integer Linear Programming (Example)
+
+<br>
+
+```python
+import cvxpy as cp
+import numpy as np
+
+# Data
+n, d, k = 100, 50, 3  # n: samples, d: features, k: sparsity level
+X = np.random.randn(n, d)
+y = np.random.randn(n)
+M = 1  # Large constant for enforcing non-zero constraint
+
+# Variables
+beta = cp.Variable(d, nonneg=True)
+z = cp.Variable(d, boolean=True)
+
+# Constraints
+constraints = [
+    cp.sum(z) <= k,
+    beta <= M * z,
+    beta >= 0
+]
+
+# Objective
+objective = cp.Minimize(cp.sum_squares(y - X @ beta))
+
+# Problem
+problem = cp.Problem(objective, constraints)
+problem.solve(solver=cp.GUROBI)  # Ensure to use a solver that supports MIP
+
+# Solution
+print("Optimal beta:", beta.value)
+print("Active indices:", np.nonzero(z.value > 0.5)[0])
+```
+
+<br>
+
+<br>
+
 ### 27th Mile
 #### Importance of Sparsity in Interpretable Machine Learning
 
