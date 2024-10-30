@@ -732,7 +732,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 #### V-C. Mixed-Integer Linear Programming
 
-There are often some special-purpose algorithms for solving constrained linear regression problems.
+There are often some special-purpose algorithms for solving constrained linear regression problems, see [constrained least squares](https://en.wikipedia.org/wiki/Constrained_least_squares). Some examples of constraints include: 1) Non-negative least squares in which the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> must satisfy the vector inequality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\geq 0"/> (each entry must be either positive or zero); 2) Box-constrained least squares in which the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> must satisfy the vector inequalities <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}_{\ell}\leq\boldsymbol{w}\leq \boldsymbol{b}_{u}"/>.
 
 <br>
 
