@@ -16,7 +16,7 @@ In this post, we intend to explain the essential ideas of our latent research wo
 - Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2024). [Correlating time series with interpretable convolutional kernels](https://arxiv.org/abs/2409.01362). arXiv:2409.01362.
 
 
-Content:
+**Content:**
 - Motivation
 - Preliminaries
 - Prior art on global trend modeling with circulant matrix nuclear norm minimization
