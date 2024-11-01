@@ -27,7 +27,7 @@ In this post, we intend to explain the essential ideas of our latent research wo
 
 ## I. Motivation
 
-Convolution is one of the most commonly-used operations in applied mathematics and signal processing, widely used to machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
+Convolution is one of the most commonly-used operations in applied mathematics and signal processing, which has been widely used to several machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
 
 
 Though nowadays we have a lot of machine learning algorithms on hand, it is still necessary to address the following challenges:
