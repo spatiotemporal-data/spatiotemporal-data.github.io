@@ -14,6 +14,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Network science
 - Graph computing & learning
 - Causal inference & learning
+- Computational social science
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
