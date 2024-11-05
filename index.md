@@ -44,7 +44,7 @@ To contribute to the open science, this project provides a series of tutorials f
   - [Station-level USA temperature data](https://spatiotemporal-data.github.io/climate/daymet/)
   - Service-level mobile traffic data
 
-For those who are interested in broad areas within the scope, we would like to recommend a series of [reading notes](https://spatiotemporal-data.github.io/bib/).
+For those who are interested in broad areas within the scope, we would like to recommend a series of [well-documented reading notes](https://spatiotemporal-data.github.io/bib/).
 
 <br>
 
