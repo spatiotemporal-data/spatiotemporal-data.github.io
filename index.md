@@ -33,7 +33,8 @@ To advance the development of spatiotemporal data modeling in the research commu
 
 To contribute to the open science, this project provides a series of tutorials for beginners to understand machine learning and data science, including
 
-- Tensor decomposition for machine learning (see detailed [page (coming soom)](xxxx)):
+- Tensor decomposition for machine learning (see detailed [page at MIT Sites](https://sites.mit.edu/tensor4ml/)):
+  - Foundation of tensor computations
   - Foundation of optimization
 
 - Spatiotemporal data visualization in Python:
