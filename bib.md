@@ -13,7 +13,7 @@ layout: default
 
 The classical linear regression with a <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity penalty can be written as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\beta}}\,&\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}\|_2^2+\lambda\|\boldsymbol{\beta}\|_2^2 \\ \text{s.t.}\,\|\boldsymbol{\beta}\|_0\leq k \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\beta}}\,&\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}\|_2^2+\lambda\|\boldsymbol{\beta}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{\beta}\|_0\leq k \end{aligned}"/></p>
 
 which is equivalent to
 
