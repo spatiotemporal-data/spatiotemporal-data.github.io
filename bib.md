@@ -17,7 +17,7 @@ The classical linear regression with a <img style="display: inline;" src="https:
 
 which is equivalent to
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\beta},\boldsymbol{z}}\,&\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}\|_2^2+\lambda\|\boldsymbol{\beta}\|_2^2 \\ \text{s.t.}\,&\begin{cases} (1-z_j)\beta_{j}=0\quad\text{or}\quad -z_{j}\leq \beta_{j}\leq z_{j} \\ \displaystyle\sum_{j=1}^{p}z_{j}\leq k,\,z_{j}\in\{0,1\} \end{cases} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\beta},\boldsymbol{z}}\,&\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}\|_2^2+\lambda\|\boldsymbol{\beta}\|_2^2 \\ \text{s.t.}\,&\begin{cases} (1-z_j)\beta_{j}=0\quad\text{or}\quad \underbrace{-z_{j}\leq \beta_{j}\leq z_{j}}_{\text{\color{blue}lower/upper bounds}} \\ \displaystyle\sum_{j=1}^{p}z_{j}\leq k,\,z_{j}\in\{0,1\} \end{cases} \end{aligned}"/></p>
 
 **References**
 
