@@ -42,6 +42,43 @@ In the dataset, the daily temperature data is of size <img style="display: inlin
 
 <br>
 
+```python
+import numpy as np
+import netCDF4 as nc
+
+m = 8
+no = 31
+data = np.zeros((720, 1440, no))
+for mo in range(no):
+    if m < 10:
+        if mo + 1 < 10:
+            dataset = nc.Dataset('oisst-avhrr-v02r01.19820{}0{}.nc'.format(m, mo + 1), 'r').variables
+            print(mo + 1)
+        else:
+            dataset = nc.Dataset('oisst-avhrr-v02r01.19820{}{}.nc'.format(m, mo + 1), 'r').variables
+            print(mo + 1)
+    else:
+        if mo + 1 < 10:
+            dataset = nc.Dataset('oisst-avhrr-v02r01.1982{}0{}.nc'.format(m, mo + 1), 'r').variables
+            print(mo + 1)
+        else:
+            dataset = nc.Dataset('oisst-avhrr-v02r01.1982{}{}.nc'.format(m, mo + 1), 'r').variables
+            print(mo + 1)
+    lat = dataset['lat'][:].data
+    lon = dataset['lon'][:].data
+    sst = dataset['sst'][0, 0, :, :].data
+    sst[sst == -999] = np.nan
+    data[:, :, mo] = sst
+np.savez_compressed('lon.npz', lon)
+np.savez_compressed('lat.npz', lon)
+if m < 10:
+    np.savez_compressed('sst_19820{}.npz'.format(m), np.mean(data, axis = 2))
+else:
+    np.savez_compressed('sst_1982{}.npz'.format(m), np.mean(data, axis = 2))
+```
+
+<br>
+
 ## Visualize SST
 
 For visualization, we use the `contourf` in `matplotlib.pyplot` to draw the matrix-form temperature data.
