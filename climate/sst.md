@@ -32,6 +32,8 @@ lat = dataset['lat'][:].data
 lon = dataset['lon'][:].data
 sst = dataset['sst'][0, 0, :, :].data
 sst[sst == -999] = np.nan
+np.savez_compressed('lon.npz', lon)
+np.savez_compressed('lat.npz', lon)
 ```
 
 <br>
