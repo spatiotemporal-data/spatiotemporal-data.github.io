@@ -19,7 +19,7 @@ In this post, we intend to explain the essential ideas of our latent research wo
 **Content:**
 - Motivation
 - Preliminaries
-- Prior art on global trend modeling with circulant matrix nuclear norm minimization
+- Circulant matrix nuclear norm minimization
 - Laplacian convolutional representation
 - Learning interpretable convolutional kernels
 
@@ -326,7 +326,7 @@ Circular convolution of x and y:
 
 <br>
 
-## III. Circulant Matrix Nuclear Norm
+## III. Circulant Matrix Nuclear Norm Minimization
 
 Circulant matrices are fundamental in many computational and theoretical aspects of signal processing and machine learning, providing an efficient framework for implementating various algorithms such as circulant matrix nuclear norm minimization. By definition, a circulant matrix is a spcial square matrix where which shifts the previous row to the right by one position, with the last entry wrapping around to the first position. As we already discussed the circulant matrix above, we will present the circulant matrix nuclear norm, its minimization problem, and applications.
 
