@@ -8,6 +8,14 @@ layout: default
 
 <br>
 
+### 30th Mile
+
+- [Behavioral changes during the COVID-19 pandemic decreased income diversity of urban encounters](https://www.nature.com/articles/s41467-023-37913-y)
+- [COVID-19 is linked to changes in the time–space dimension of human mobility](https://www.nature.com/articles/s41562-023-01660-3)
+- [Evacuation patterns and socioeconomic stratification in the context of wildfires in Chile](https://arxiv.org/pdf/2410.06017)
+
+<br>
+
 ### 29th Mile
 #### INFORMS 2024 | Optimal k-Sparse Ridge Regression
 
