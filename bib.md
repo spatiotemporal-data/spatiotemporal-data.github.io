@@ -25,7 +25,6 @@ layout: default
 - [Student's T Distribution](https://www.youtube.com/watch?v=32CuxWdOlow)
 - [An Introduction to the t Distribution (Includes some mathematical details)](https://www.youtube.com/watch?v=T0xRanwAIiI)
 
-
 <br>
 
 ### 29th Mile
