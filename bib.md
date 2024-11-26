@@ -8,11 +8,23 @@ layout: default
 
 <br>
 
-### 30th Mile
+### 31st Mile
 
 - [Behavioral changes during the COVID-19 pandemic decreased income diversity of urban encounters](https://www.nature.com/articles/s41467-023-37913-y)
 - [COVID-19 is linked to changes in the time–space dimension of human mobility](https://www.nature.com/articles/s41562-023-01660-3)
 - [Evacuation patterns and socioeconomic stratification in the context of wildfires in Chile](https://arxiv.org/pdf/2410.06017)
+
+<br>
+
+### 30th Mile
+#### <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-Statistic & Student <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-Distribution
+
+- [Hypothesis Testing Problems - Z Test & T Statistics - One & Two Tailed Tests 2](https://www.youtube.com/watch?v=zJ8e_wAWUzE)
+- [Introduction to the t Distribution (non-technical)](https://www.youtube.com/watch?v=Uv6nGIgZMVw)
+- [Confidence Intervals for One Mean: Determining the Required Sample Size](https://www.youtube.com/watch?v=7zcbVaVz_P8)
+- [Student's T Distribution](https://www.youtube.com/watch?v=32CuxWdOlow)
+- [An Introduction to the t Distribution (Includes some mathematical details)](https://www.youtube.com/watch?v=T0xRanwAIiI)
+
 
 <br>
 
