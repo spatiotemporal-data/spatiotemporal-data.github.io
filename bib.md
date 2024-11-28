@@ -14,6 +14,7 @@ layout: default
 - [COVID-19 is linked to changes in the time–space dimension of human mobility](https://www.nature.com/articles/s41562-023-01660-3)
 - [Evacuation patterns and socioeconomic stratification in the context of wildfires in Chile](https://arxiv.org/pdf/2410.06017)
 - [Fine tune an LLM](https://github.com/phunterlau/code-in-blog/blob/main/understand_x/understand-x.pdf)
+- [Learning with Combinatorial Optimization Layers: A Probabilistic Approach](https://arxiv.org/pdf/2207.13513)
 
 <br>
 
