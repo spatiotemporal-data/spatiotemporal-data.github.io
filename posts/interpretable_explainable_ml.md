@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# What is Difference between Interpretable Machine Learning and Explainable Machine Learning
+# Interpretable ML vs. Explainable ML
 
 <p align="center"><span style="color:gray">A summary for the core concept in machine learning algorithms.</span></p>
 
