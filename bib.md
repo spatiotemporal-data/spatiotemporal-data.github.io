@@ -8,7 +8,7 @@ layout: default
 
 <br>
 
-### 31st Mile
+### 32nd Mile
 
 - [Behavioral changes during the COVID-19 pandemic decreased income diversity of urban encounters](https://www.nature.com/articles/s41467-023-37913-y)
 - [COVID-19 is linked to changes in the time–space dimension of human mobility](https://www.nature.com/articles/s41562-023-01660-3)
@@ -18,7 +18,8 @@ layout: default
 
 <br>
 
-### 30th Mile
+### 31st Mile
+
 #### <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-Statistic & Student <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-Distribution
 
 - [Hypothesis Testing Problems - Z Test & T Statistics - One & Two Tailed Tests 2](https://www.youtube.com/watch?v=zJ8e_wAWUzE)
@@ -26,6 +27,15 @@ layout: default
 - [Confidence Intervals for One Mean: Determining the Required Sample Size](https://www.youtube.com/watch?v=7zcbVaVz_P8)
 - [Student's T Distribution](https://www.youtube.com/watch?v=32CuxWdOlow)
 - [An Introduction to the t Distribution (Includes some mathematical details)](https://www.youtube.com/watch?v=T0xRanwAIiI)
+
+<br>
+
+### 30th Mile
+#### Interpretable ML vs. Explainable ML
+
+- [Explainable Artificial Intelligence](https://en.wikipedia.org/wiki/Explainable_artificial_intelligence) on Wikipedia.
+- W. James Murdoch, Chandan Singh, Karl Kumbier, and Bin Yu (2019). [Definitions, methods, and applications in interpretable machine learning](https://doi.org/10.1073/pnas.1900654116). PNAS.
+- Christoph Molnar (2024). [Interpretable Machine Learning: A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/).
 
 <br>
 
