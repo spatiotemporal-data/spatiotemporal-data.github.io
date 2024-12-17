@@ -19,6 +19,7 @@ Imagine having the ability to observe water vapor behavior on a global scale, mo
 - [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2012-2014)](https://doi.org/10.5281/zenodo.8226288)
 - [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2015-2017)](https://doi.org/10.5281/zenodo.8226289)
 - [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2018-2020)](https://doi.org/10.5281/zenodo.8226290)
+- [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2021-2022)](https://doi.org/10.5281/zenodo.8226291)
 
 <br>
 
