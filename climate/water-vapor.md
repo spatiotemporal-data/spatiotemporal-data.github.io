@@ -12,6 +12,16 @@ In the realm of Earth observation, the power of data is truly remarkable. One da
 
 Imagine having the ability to observe water vapor behavior on a global scale, month by month, over a span of more than two decades. Thanks to the dedicated work of Leandro Parente, Rolf Simoes, and Tomislav Hengl, such a dataset exists. The dataset takes us on an illuminating journey into Earth’s water vapor patterns from 2000 to 2022.
 
+- [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2000-2002)](https://doi.org/10.5281/zenodo.8226283)
+- [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2003-2005)](https://doi.org/10.5281/zenodo.8226284)
+- [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2006-2008)](https://doi.org/10.5281/zenodo.8226285)
+- [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2009-2011)](https://doi.org/10.5281/zenodo.8226286)
+- [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2012-2014)](https://doi.org/10.5281/zenodo.8226288)
+- [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2015-2017)](https://doi.org/10.5281/zenodo.8226289)
+- [Monthly aggregated Water Vapor MODIS MCD19A2 (1 km): Monthly time-series (2018-2020)](https://doi.org/10.5281/zenodo.8226290)
+
+<br>
+
 ### The Power of Water Vapor Data
 
 Derived from MCD19A2 v061 and utilizing MODIS near-IR bands at 0.94μm, this dataset measures the column of water vapor above the ground. Its applications are as vast as the oceans it helps us understand. From water cycle modeling to vegetation and soil mapping, the insights this dataset provides are invaluable for numerous fields.
