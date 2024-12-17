@@ -33,7 +33,7 @@ layout: default
 ### 30th Mile
 #### Interpretable ML vs. Explainable ML
 
-In the context of AI, there is a subtle difference between terms interpretability and explainability. The interpretability techniques such as sparse linear regression were used to "understand how the underlying AI technology works", while the explainability refer to "the level of understanding how AI-based systems produce with a given result". 
+In the context of AI, there is a subtle difference between terms interpretability and explainability. The interpretability techniques such as sparse linear regression were used to "understand how the underlying AI technology works", while the explainability refer to "the level of understanding how AI-based systems produce with a given result". Main claim from Wikipedia is that "treating the model as a black box and analyzing how marginal changes to the inputs affect the result sometimes provides a sufficient explanation."
 
 **References**
 
