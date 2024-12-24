@@ -64,7 +64,7 @@ Sometimes, time series exhibit complicated trends if [they are not stationary](h
 
 ## II. Preliminaries
 
-In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas from the fields of signal processing and machine learning, including circular convolution, discrete Fourier transform, and fast Fourier transform. In the following sections, we will discuss: 
+In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas, including circular convolution, discrete Fourier transform, and fast Fourier transform, from the fields of signal processing and machine learning. In the following sections, we will discuss: 
 
 - What are circular convolution, convolution matrix, and circulant matrix?
 - What is the convolution theorem?
