@@ -29,8 +29,7 @@ In this post, we intend to explain the essential ideas of our latent research wo
 
 The development of machine learning models in the past decade is truly remarkable. Convolution is one of the most commonly-used operations in applied mathematics and signal processing, which has been widely used to several machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
 
-
-Though nowadays we have a lot of machine learning algorithms on hand, it is still necessary to address the following challenges:
+Nowadays, although we have a lot of machine learning algorithms on hand, it is still necessary to address the following challenges in time series modeling:
 
 - How to characterize global time series trends?
 - How to characterize local time series trends?
