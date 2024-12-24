@@ -44,7 +44,7 @@ Sometimes, time series exhibit complicated trends if [they are not stationary](h
 </p>
 
 <p align = "center">
-(a) Global trends
+(a) Global trends (e.g., long-term daily/weekly periodicity)
 </p>
 
 <p align="center">
@@ -52,7 +52,7 @@ Sometimes, time series exhibit complicated trends if [they are not stationary](h
 </p>
 
 <p align = "center">
-(b) Local trends
+(b) Local trends (e.g., short-term time series trends)
 </p>
 
 <p align = "center">
