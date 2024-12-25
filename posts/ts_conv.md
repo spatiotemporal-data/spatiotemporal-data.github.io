@@ -487,6 +487,8 @@ On the complement of <img style="display: inline;" src="https://latex.codecogs.c
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{x})=\begin{bmatrix} 1 \\ 0 \\ 3 \\ 0 \end{bmatrix}"/></p>
 
+---
+
 <br>
 
 In this case, one can rewrite the constraint as a penalty term (weighted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\gamma"/>) in the objective function:
