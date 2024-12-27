@@ -634,16 +634,6 @@ Please reproduce the experiments by following the [Jupyter Notebook](https://git
 
 <br>
 
-By definition, the Laplacian matrix of circulant graph (see e.g., Figure 8) is a circulant matrix (see the formal definition of circulant matrix in Section II-C). In Figure 8, the Laplacian matrix of the left graph is given by
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;L=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \end{bmatrix}=\mathcal{C}(\boldsymbol{\ell})"/></p>
-
-while the right one is
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;L=\begin{bmatrix} 4 & -1 & -1 & -1 & -1 \\ -1 & 4 & -1 & -1 & -1 \\ -1 & -1 & 4 & -1 & -1 \\ -1 & -1 & -1 & 4 & -1 \\ -1 & -1 & -1 & -1 & 4 \end{bmatrix}=\mathcal{C}(\boldsymbol{\ell})"/></p>
-
-<br>
-
 
 ## IV. Laplacian Convolutional Representation
 
@@ -658,6 +648,18 @@ Laplacian convolutional representation model proposed by [Chen et al., (2024)](h
 <p align = "center">
 <b>Figure 8.</b> Undirected and circulant graphs on the data points <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{x_1,x_2,x_3,x_4,x_5\}"/> with certain degrees. The degrees of the left and right graphs are 2 and 4, respectively.
 </p>
+
+<br>
+
+By definition, the Laplacian matrix of circulant graph (see e.g., Figure 8) is a circulant matrix (see the formal definition of circulant matrix in Section II-C). In Figure 8, the Laplacian matrix of the left graph is given by
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;L=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \end{bmatrix}=\mathcal{C}(\boldsymbol{\ell})\in\mathbb{R}^{5\times 5}"/></p>
+
+while the right one is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;L=\begin{bmatrix} 4 & -1 & -1 & -1 & -1 \\ -1 & 4 & -1 & -1 & -1 \\ -1 & -1 & 4 & -1 & -1 \\ -1 & -1 & -1 & 4 & -1 \\ -1 & -1 & -1 & -1 & 4 \end{bmatrix}=\mathcal{C}(\boldsymbol{\ell})\in\mathbb{R}^{5\times 5}"/></p>
+
+In both two Laplacian matrices, the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\in\mathbb{R}^{5}"/> can represent the structural information of these graphs.
 
 <br>
 
