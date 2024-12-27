@@ -647,7 +647,7 @@ Laplacian convolutional representation model proposed by [Chen et al., (2024)](h
 </p>
 
 <p align = "center">
-<b>Figure 8.</b> Undirected and circulant graphs on the data points <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{x_1,x_2,x_3,x_4,x_5\}"/> with certain degrees.
+<b>Figure 8.</b> Undirected and circulant graphs on the data points <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{x_1,x_2,x_3,x_4,x_5\}"/> with certain degrees. The degrees of the left and right graphs are 2 and 4, respectively.
 </p>
 
 <br>
