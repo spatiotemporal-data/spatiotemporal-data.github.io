@@ -638,6 +638,10 @@ Please reproduce the experiments by following the [Jupyter Notebook](https://git
 
 ## IV. Laplacian Convolutional Representation
 
+Laplacian convolutional representation model proposed by [Chen et al., (2024)](https://doi.org/10.1109/TKDE.2024.3419698) integrates local trends of time series into the global trend modeling via the use of circulant matrix nuclear norm minimization. As shown in Figure 1(b), the transition of time series data points can be naively modeled by smoothing regularization. We started by introducing Laplacian matrix to represent the prescribed relationship among time series data points
+
+<br>
+
 ## V. Learning Interpretable Convolutional Kernels
 
 ### V-A. Convolutional Kernels
