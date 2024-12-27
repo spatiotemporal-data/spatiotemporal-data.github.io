@@ -638,7 +638,20 @@ Please reproduce the experiments by following the [Jupyter Notebook](https://git
 
 ## IV. Laplacian Convolutional Representation
 
-Laplacian convolutional representation model proposed by [Chen et al., (2024)](https://doi.org/10.1109/TKDE.2024.3419698) integrates local trends of time series into the global trend modeling via the use of circulant matrix nuclear norm minimization. As shown in Figure 1(b), the transition of time series data points can be naively modeled by smoothing regularization. We started by introducing Laplacian matrix to represent the prescribed relationship among time series data points
+Laplacian convolutional representation model proposed by [Chen et al., (2024)](https://doi.org/10.1109/TKDE.2024.3419698) integrates local trends of time series into the global trend modeling via the use of circulant matrix nuclear norm minimization. As shown in Figure 1(b), the transition of time series data points can be naively modeled by smoothing regularization. We started by introducing Laplacian matrix to represent the prescribed relationship among time series data points.
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/circulant_graphs.png" width="500" />
+</p>
+
+<p align = "center">
+<b>Figure 8.</b> Circulant graph.
+</p>
+
+<br>
+
 
 <br>
 
