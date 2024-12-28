@@ -669,7 +669,7 @@ In both two Laplacian matrices, the vector <img style="display: inline;" src="ht
 
 In machine learning, one can write the temporal regularization on the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, e.g.,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{L}\boldsymbol{x}\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{L}\boldsymbol{x}\|_2^2"/></p>
 
 
 
