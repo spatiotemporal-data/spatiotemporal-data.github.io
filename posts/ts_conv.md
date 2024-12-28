@@ -667,7 +667,7 @@ In both two Laplacian matrices, the vector <img style="display: inline;" src="ht
 
 ### Reformulating Temporal Regularization with Circular Convolution
 
-
+In machine learning, one can write the temporal regularization on the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>.
 
 
 <br>
