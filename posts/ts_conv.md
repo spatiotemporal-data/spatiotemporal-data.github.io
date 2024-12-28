@@ -665,6 +665,10 @@ In both two Laplacian matrices, the vector <img style="display: inline;" src="ht
 
 <br>
 
+### Reformulating Temporal Regularization with Circular Convolution
+
+
+
 
 <br>
 
