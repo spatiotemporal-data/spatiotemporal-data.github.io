@@ -676,7 +676,7 @@ respectively.
 ---
 
 <span style="color:gray">
-Given any time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, suppose <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/> be the kernel size of an undirected and circulant graph, then the Laplacian kernel is defined as
+**Laplacian Kernel**. Given any time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, suppose <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/> be the kernel size of an undirected and circulant graph, then the Laplacian kernel is defined as
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\triangleq(2\tau,\underbrace{-1,\cdots,-1}_{\tau},0,\cdots,0,\underbrace{-1,\cdots,-1}_{\tau})^\top\in\mathbb{R}^{T}"/></p>
