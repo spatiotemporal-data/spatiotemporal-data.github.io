@@ -663,11 +663,11 @@ while the Laplacian matrix for the right one is
 
 In both two Laplacian matrices, the diagonal entries are the degrees of circulant graphs. The vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\in\mathbb{R}^{5}"/> encodes the structural information of these graphs, capturing their underlying circulant structure. In this work, we define the first column of Laplacian matrices as the Laplacian kernels:
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^\top"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^\top\in\mathbb{R}^{5}"/></p>
 
 and
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(4,-1,-1,-1,-1)^\top"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(4,-1,-1,-1,-1)^\top\in\mathbb{R}^{5}"/></p>
 
 respectively.
 
