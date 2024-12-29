@@ -271,7 +271,7 @@ Instead of using the classical Tucker and CP tensor decomposition, RESCAL takes 
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_k=\boldsymbol{A}\boldsymbol{S}_{k}\boldsymbol{A}^\top"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{n\times r}"/> is the global entity factor matrix, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\in\mathbb{R}^{r\times r}"/> specifies the interaction of the latent components. Such kind of methods can be used to solve link prediction, collective classification, and link-based clustering.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{n\times r}"/> is the global entity factor matrix, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}_{k}\in\mathbb{R}^{r\times r},\forall k"/> specifies the interaction of the latent components. Such kind of methods can be used to solve link prediction, collective classification, and link-based clustering.
 
 **References**
 
