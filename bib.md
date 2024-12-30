@@ -8,6 +8,17 @@ layout: default
 
 <br>
 
+### 33rd Mile
+#### Learning Sparse Nonlinear Dynamics via Mixed-Integer Optimization
+
+Discovering governing equations of com- plex dynamical systems directly from data is a cen- tral problem in scientific machine learning. In recent years, the sparse identification of nonlinear dynamics (SINDy, see [Brunton et al., (2016)](https://doi.org/10.1073/pnas.1517384113)) framework, powered by heuristic sparse regression methods, has become a dominant tool for learning parsimonious models. The optimization problem for learning system equations is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\xi},\boldsymbol{z}}\,&\|\dot{\boldsymbol{X}}_{j}-\boldsymbol{\Theta}(\boldsymbol{X})\boldsymbol{\xi}\|_2^2+\lambda\|\boldsymbol{\xi}\|_2^2 \\ \text{s.t.}\,&\begin{cases} M_i^{\ell}z_{i}\leq \xi_{i}\leq M_i^{u}z_{i} \\ \displaystyle\sum_{i=1}^{D}z_{j}\leq k_j,\,z_{i}\in\{0,1\} \end{cases} \end{aligned}"/></p>
+
+where ...
+
+<br>
+
 ### 32nd Mile
 
 - [Behavioral changes during the COVID-19 pandemic decreased income diversity of urban encounters](https://www.nature.com/articles/s41467-023-37913-y)
