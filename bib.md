@@ -17,6 +17,10 @@ Discovering governing equations of com- plex dynamical systems directly from dat
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;M_i^{\ell},M_{i}^{u}"/> are lower and upper bounds on the coefficients. The full system dynamics are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\xi}"/>.
 
+**References**
+
+- Bertsimas, D., & Gurnee, W. (2023). [Learning sparse nonlinear dynamics via mixed-integer optimization](https://link.springer.com/article/10.1007/s11071-022-08178-9). Nonlinear Dynamics, 111(7), 6585-6604.
+
 <br>
 
 ### 32nd Mile
