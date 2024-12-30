@@ -699,7 +699,7 @@ Since the Laplacian matrix <img style="display: inline;" src="https://latex.code
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}\boldsymbol{x}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{bmatrix}=\begin{bmatrix} 2 \\ -1 \\ 0 \\ 0 \\ -1 \\ \end{bmatrix}\star\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{bmatrix}=\boldsymbol{\ell}\star\boldsymbol{x}"/></p>
 
-As can be seen, this Laplacian kernel can build local correlations for the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>.
+As can be seen, this Laplacian kernel can build local correlations for the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. Thus, the purpose of introducing Laplacian kernels on time series is local trend modeling.
 
 <br>
 
