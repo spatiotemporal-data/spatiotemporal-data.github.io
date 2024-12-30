@@ -711,6 +711,17 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
+---
+
+<span style="color:gray">
+**Example 8.** Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^\top"/>, compute the regularization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})"/> with fast Fourier transform.
+</span>
+
+
+---
+
+<br>
+
 ### IV-C. Global + Local Time Series Trend Modeling
 
 
