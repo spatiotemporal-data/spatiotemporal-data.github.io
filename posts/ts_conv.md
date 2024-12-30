@@ -695,7 +695,11 @@ In machine learning, one can write the temporal regularization on the time serie
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{L}\boldsymbol{x}\|_2^2"/></p>
 
-Since the Laplacian matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}"/> is a circulant matrix, the matrix-vector multiplication <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}\boldsymbol{x}"/> can be reformulated as a circular convolution between Laplacian kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}"/> and the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\star\boldsymbol{x}"/>.
+Since the Laplacian matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}"/> is a circulant matrix, the matrix-vector multiplication <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}\boldsymbol{x}"/> can be reformulated as a circular convolution between Laplacian kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}"/> and the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\star\boldsymbol{x}"/>. For instance, given a Laplacian kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^{\top}"/>, we have
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}\boldsymbol{x}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{bmatrix}=\begin{bmatrix} 2 \\ -1 \\ 0 \\ 0 \\ -1 \\ \end{bmatrix}\star\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{bmatrix}=\color{red!80!black}\boldsymbol{\ell}\star\boldsymbol{x}"/></p>
+
+
 
 <br>
 
