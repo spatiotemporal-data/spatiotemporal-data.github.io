@@ -693,13 +693,27 @@ which is the first column of the Laplacian matrix and the degree matrix is diago
 
 In machine learning, one can write the temporal regularization on the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, e.g.,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{L}\boldsymbol{x}\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{L}\boldsymbol{x}\|_2^2"/></p>
 
 Since the Laplacian matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}"/> is a circulant matrix, the matrix-vector multiplication <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}\boldsymbol{x}"/> can be reformulated as a circular convolution between Laplacian kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}"/> and the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\star\boldsymbol{x}"/>. For instance, given a Laplacian kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^{\top}"/>, we have
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}\boldsymbol{x}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{bmatrix}=\begin{bmatrix} 2 \\ -1 \\ 0 \\ 0 \\ -1 \\ \end{bmatrix}\star\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{bmatrix}=\boldsymbol{\ell}\star\boldsymbol{x}"/></p>
 
-As can be seen, this Laplacian kernel can build local correlations for the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. Thus, the purpose of introducing Laplacian kernels on time series is local trend modeling.
+As can be seen, this Laplacian kernel can build local correlations for the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. Thus, the purpose of introducing Laplacian kernels on time series is local trend modeling with temporal regularization such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2"/></p>
+
+As a matter of fact, we have several motivations and reasons for reformulating temporal regularization with circular convolution. Among them, there are some important properties inspired us a lot. In particular, one of the most useful properties of circular convolution is its relationship with discrete Fourier transform, i.e.,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2=\frac{1}{2T}\|\mathcal{F}(\boldsymbol{\ell})\circ\mathcal{F}(\boldsymbol{x})\|_2^2"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\cdot)"/> denotes the discrete Fourier transform. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\circ"/> is the Hadamard product or element-wise product.
+
+<br>
+
+### IV-C. Global + Local Time Series Trend Modeling
+
+
 
 <br>
 
