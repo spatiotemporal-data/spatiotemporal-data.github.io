@@ -15,7 +15,7 @@ Discovering governing equations of com- plex dynamical systems directly from dat
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\xi},\boldsymbol{z}}\,&\|\dot{\boldsymbol{X}}_{j}-\boldsymbol{\Theta}(\boldsymbol{X})\boldsymbol{\xi}\|_2^2+\lambda\|\boldsymbol{\xi}\|_2^2 \\ \text{s.t.}\,&\begin{cases} M_i^{\ell}z_{i}\leq \xi_{i}\leq M_i^{u}z_{i} \\ \displaystyle\sum_{i=1}^{D}z_{j}\leq k_j,\,z_{i}\in\{0,1\} \end{cases} \end{aligned}"/></p>
 
-where ...
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;M_i^{\ell},M_{i}^{u}"/> are lower and upper bounds on the coefficients. The full system dynamics are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\xi}"/>.
 
 <br>
 
