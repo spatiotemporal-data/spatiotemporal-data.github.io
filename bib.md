@@ -8,6 +8,17 @@ layout: default
 
 <br>
 
+### 34th Mile
+#### Cardinality Minimization, Constraints, and Regularization
+
+
+
+**References**
+
+- Andreas M. Tillmann, Daniel Bienstock, Andrea Lodi, Alexandra Schwartz (2024). [Cardinality Minimization, Constraints, and Regularization: A Survey](https://doi.org/10.1137/21M142770X). SIAM Review, 66(3). [[PDF](https://arxiv.org/pdf/2106.09606)]
+
+<br>
+
 ### 33rd Mile
 #### Learning Sparse Nonlinear Dynamics via Mixed-Integer Optimization
 
