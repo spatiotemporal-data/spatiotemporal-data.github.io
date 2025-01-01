@@ -665,6 +665,6 @@ As we know, the training data in the large time series model is from different a
 
 
 
-Motivation & Principle: 不积硅步，无以至千里。
+Motivation & Principle: "不积硅步，无以至千里。" (Small Steps to Accuracy)
 
 <br>
