@@ -43,7 +43,7 @@ Sometimes, time series exhibit complicated trends if [they are not stationary](h
 <img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_global_trends.png" width="350" />
 </p>
 
-<p align = "center">
+<p align = "center", style="font-size: 15px; color: gray">
 (a) Global trends (e.g., long-term daily/weekly periodicity)
 </p>
 
@@ -51,11 +51,11 @@ Sometimes, time series exhibit complicated trends if [they are not stationary](h
 <img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_local_trends.png" width="350" />
 </p>
 
-<p align = "center">
+<p align = "center", style="font-size: 15px; color: gray">
 (b) Local trends (e.g., short-term time series trends)
 </p>
 
-<p align = "center">
+<p align = "center", style="font-size: 15px; color: gray">
 <b>Figure 1.</b> Illustration of time series trends.
 </p>
 
