@@ -43,7 +43,7 @@ Sometimes, time series exhibit complicated trends if [they are not stationary](h
 <img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_global_trends.png" width="350" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 (a) Global trends (e.g., long-term daily/weekly periodicity)
 </p>
 
@@ -51,11 +51,11 @@ Sometimes, time series exhibit complicated trends if [they are not stationary](h
 <img align="middle" src="https://spatiotemporal-data.github.io/images/time_series_local_trends.png" width="350" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 (b) Local trends (e.g., short-term time series trends)
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 1.</b> Illustration of time series trends.
 </p>
 
@@ -112,7 +112,7 @@ For subsequent entries <img style="display: inline;" src="https://latex.codecogs
 <img align="middle" src="https://spatiotemporal-data.github.io/images/circular_convolution_steps.png" width="450" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 2.</b> Illustration of the circular convolution between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top"/>. (a) Computing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_1"/> involves <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_3"/>. (b) Computing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_2"/> involves <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/>. The figure inspired by [Prince (2023)](https://udlbook.github.io/udlbook/).
 </p>
 
@@ -155,7 +155,7 @@ In signal processing, this linear transformation is a fundamental property of ci
 <img align="middle" src="https://spatiotemporal-data.github.io/images/linear_conv_mat.png" width="320" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 3.</b> Illustration of circular convolution as the linear transformation with a convolution matrix.
 </p>
 
@@ -235,7 +235,7 @@ which forms a square matrix.
 <img align="middle" src="https://spatiotemporal-data.github.io/images/linear_circ_mat.png" width="320" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 4.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
 </p>
 
@@ -348,7 +348,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <img align="middle" src="https://spatiotemporal-data.github.io/images/svd_explained.png" width="500" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 5.</b> Singular value decomposition of matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/>. In the decomposed matrices, the unitary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{m\times t}"/> (or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{n\times t}"/>) consists of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> orthogonal left (or right) singular vectors, while the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> diagonal entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}"/> are singular values such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1\geq s_2\geq\cdots\geq s_t\geq 0"/>. Note that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/> for notational convenience. 
 </p>
 
@@ -572,7 +572,7 @@ or
 <img align="middle" src="https://spatiotemporal-data.github.io/images/shrinkage_operator.png" width="300" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 6.</b> Illustration of the shrinkage operator for solving the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization problem.
 </p>
 
@@ -622,7 +622,7 @@ As shown in Figure 7, we randomly remove 95% observations as missing values, and
 <img align="middle" src="https://spatiotemporal-data.github.io/images/circnnm_volumes_95.png" width="350" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 7.</b> Univariate time series imputation on the freeway traffic volume time series. The blue and red curves correspond to the ground truth time series and reconstructed time series achieved by the circulant matrix nuclear norm minimization.
 </p>
 
@@ -647,7 +647,7 @@ Laplacian convolutional representation model proposed by [Chen et al., (2024)](h
 <img align="middle" src="https://spatiotemporal-data.github.io/images/circulant_graphs.png" width="600" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 8.</b> Undirected and circulant graphs on the data points <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{x_1,x_2,x_3,x_4,x_5\}"/> with certain degrees. The degrees of the left and right graphs are 2 and 4, respectively.
 </p>
 
@@ -762,7 +762,7 @@ where the matrix <img style="display: inline;" src="https://latex.codecogs.com/s
 <img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_circ.png" width="420" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 9.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
 </p>
 
@@ -778,7 +778,7 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 <img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_w_conv.png" width="420" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 10.</b> Illustration of circular convolution with a structured vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
 </p>
 
@@ -821,7 +821,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <img align="middle" src="https://spatiotemporal-data.github.io/images/sparse_reg_time_series.png" width="420" />
 </p>
 
-<p style="font-size: 15px; color: gray" align = "center">
+<p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 11.</b> Illustration of learning <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> from the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> with the constructed formula as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\approx\boldsymbol{A}\boldsymbol{w}"/>.
 </p>
 
