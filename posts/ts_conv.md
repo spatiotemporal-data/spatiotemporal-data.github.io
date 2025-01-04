@@ -329,7 +329,7 @@ Circular convolution of x and y:
 
 <br>
 
-### II-F. Connecting with Hankel Matrix Factorization
+### II-F. Hankel Matrix Factorization & Discrete Fourier Transform
 
 Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the Hankel matrix can be constructed as follows,
 
