@@ -20,7 +20,7 @@ In this post, we intend to explain the essential ideas of our research work:
 
 In **Part I** of this series, we introduce motivations of time series modeling with global and local trends. These time series trends are important for improving the performance of time series imputation. If there is one appropriate interpretable machine learning model, it is also possible to quantify the periodicity of time series. Following the basic motivations, we elaborate on several key concepts in **Part II** such as circular convolution, convolution matrix, circulant matrix, and discrete Fourier transform.
 
-**Part III** and **Part IV** give the modeling ideas from circulant matrix nuclear norm minimization to Laplacian convolutional representation, addressing the critical challenges in time series imputation tasks. The optimization algorithm of both models makes use of fast Fourier transform in a log-linear time complexity. **Part V** presents an interpretable convolutional kernel method in which the sparsity of convolutional kernels is modeled by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity constraints.
+**Part III** and **Part IV** give the modeling ideas of circulant matrix nuclear norm minimization and Laplacian convolutional representation, addressing the critical challenges in time series imputation tasks. The optimization algorithm of both models makes use of fast Fourier transform in a log-linear time complexity. **Part V** presents an interpretable convolutional kernel method in which the sparsity of convolutional kernels is modeled by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity constraints.
 
 <br>
 
