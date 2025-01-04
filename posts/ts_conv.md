@@ -337,7 +337,20 @@ Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.l
 
 where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns.
 
-On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})"/>, if it can be factorized into two matrices 
+On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})"/>, if it can be factorized into two matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{n\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{(T-n+1)\times R}"/>, then one can compute the inverse of Hankel matrix as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \mathcal{H}(\boldsymbol{x})=&\boldsymbol{W}\boldsymbol{Q}^\top \\ \Rightarrow\quad\tilde{\boldsymbol{x}}=&\mathcal{H}^{\dagger}(\boldsymbol{W}\boldsymbol{Q}^{\top}) \\ \Rightarrow\quad\tilde{x}_{t}=&\frac{1}{\rho_t}\sum_{r=1}^{R}\sum_{a+b=t+1}w_{a,r}q_{b,r} \end{aligned}"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\rho_t"/> is the number of entries on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-th antidiagonal of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times (T-n+1)"/> Hankel matrix.
+
+Following the aforementioned formula, it is easy to connect with circular convolution and discrete Fourier transform such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{x}_{t}=\frac{1}{\rho_t}\sum_{r=1}^{R}\tilde{\boldsymbol{w}}_r\star\tilde{\boldsymbol{q}}_r=\frac{1}{\rho_t}\sum_{r=1}^{R}\mathcal{F}^{-1}(\mathcal{F}(\tilde{\boldsymbol{w}}_r)\circ\mathcal{F}(\tilde{\boldsymbol{q}}_r))"/></p>
+
+where we define two vectors:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \tilde{\boldsymbol{w}}_{r}=(w_1,w_2,\cdots,w_{t})^\top \\ \tilde{\boldsymbol{q}}_{r}=(q_1,q_2,\cdots,q_{t})^\top \end{cases}"/></p>
+
 
 <br>
 
