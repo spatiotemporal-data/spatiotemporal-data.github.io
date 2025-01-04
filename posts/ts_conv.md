@@ -6,22 +6,21 @@ layout: default
 
 <p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on December 24, 2024)</span></p>
+<p align="center"><span style="color:gray">(Updated on January 4, 2025)</span></p>
 
 <br>
 
-In this post, we intend to explain the essential ideas of our latent research work:
+In this post, we intend to explain the essential ideas of our research work:
 
 - Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). [Laplacian convolutional representation for traffic time series imputation](https://doi.org/10.1109/TKDE.2024.3419698). IEEE Transactions on Knowledge and Data Engineering. 36 (11): 6490-6502.
 - Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2024). [Correlating time series with interpretable convolutional kernels](https://arxiv.org/abs/2409.01362). arXiv:2409.01362.
 
 
 **Content:**
-- Motivation
-- Preliminaries
-- Circulant matrix nuclear norm minimization
-- Laplacian convolutional representation
-- Learning interpretable convolutional kernels
+
+In **Part I** of this series, we introduce motivations of time series modeling with global and local trends. These time series trends are important for improving the performance of time series imputation. If there is one appropriate interpretable machine learning model, it is also possible to quantify the periodicity of time series. Following the basic motivations, we elaborate on several key concepts in **Part II** such as circular convolution, convolution matrix, circulant matrix, and discrete Fourier transform.
+
+**Part III** and **Part IV** give the modeling ideas from circulant matrix nuclear norm minimization to Laplacian convolutional representation, addressing the critical challenges in time series imputation tasks. The optimization algorithm of both models makes use of fast Fourier transform in a log-linear time complexity. **Part V** presents an interpretable convolutional kernel method in which the sparsity of convolutional kernels is modeled by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity constraints.
 
 <br>
 
