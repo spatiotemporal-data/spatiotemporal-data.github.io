@@ -330,11 +330,11 @@ Circular convolution of x and y:
 
 ### II-F. Hankel Matrix Factorization & Discrete Fourier Transform
 
-Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the Hankel matrix can be constructed as follows,
+The Hankel matrix plays a fundamental role in numerous areas of applied mathematics and signal processing. By definition, a Hankel matrix is a square or rectangular matrix in which each ascending skew-diagonal (from left to right) has the same value. Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the Hankel matrix can be constructed as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_2 & \cdots & x_{T-n+1} \\ x_2 & x_3 & \cdots & x_{T-n+2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{n} & x_{n+1} & \cdots & x_{T} \end{bmatrix}"/></p>
 
-where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns.
+where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns. This matrix is often used to represent signals or time series data, capturing their sequential dependencies and structure.
 
 On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})"/>, if it can be factorized into two matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{n\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{(T-n+1)\times R}"/>, then one can compute the inverse of Hankel matrix as follows,
 
