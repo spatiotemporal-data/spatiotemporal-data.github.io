@@ -343,7 +343,7 @@ On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.c
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\rho_t"/> is the number of entries on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-th antidiagonal of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times (T-n+1)"/> Hankel matrix.
 
-Following the aforementioned formula, it is easy to connect with circular convolution and discrete Fourier transform ([Cai et al., 2019](https://arxiv.org/abs/1910.05859); [Cai et al., 2022](https://arxiv.org/abs/2204.03316)) such that
+Following the aforementioned formula, it is easy to connect the Hankel factorization with circular convolution and discrete Fourier transform ([Cai et al., 2019](https://arxiv.org/abs/1910.05859); [Cai et al., 2022](https://arxiv.org/abs/2204.03316)) such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{x}_{t}=\frac{1}{\rho_t}\sum_{r=1}^{R}\tilde{\boldsymbol{w}}_r\star\tilde{\boldsymbol{q}}_r=\frac{1}{\rho_t}\sum_{r=1}^{R}\mathcal{F}^{-1}(\mathcal{F}(\tilde{\boldsymbol{w}}_r)\circ\mathcal{F}(\tilde{\boldsymbol{q}}_r))"/></p>
 
