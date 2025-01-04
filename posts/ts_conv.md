@@ -368,7 +368,7 @@ If it takes a rank-one factorization such that <img style="display: inline;" src
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \tilde{x}_1&=\frac{1}{1}\sum_{a+b=2}w_aq_b=w_1q_1 \\ \tilde{x}_2&=\frac{1}{2}\sum_{a+b=3}w_aq_b=\frac{1}{2}(w_1q_2+w_2q_1) \\ &=\frac{1}{2}(w_1,w_2)\star(q_1,q_2) \\ \tilde{x}_3&=\frac{1}{3}\sum_{a+b=4}w_aq_b=\frac{1}{3}(w_1q_3+w_2q_2+w_3q_1) \\ &=\frac{1}{3}(w_1,w_2,w_3)\star(q_1,q_2,q_3) \\ \tilde{x}_4&=\frac{1}{3}\sum_{a+b=5}w_aq_b=\frac{1}{3}(w_2q_3+w_3q_2+w_4q_1) \\ &=(w_1,w_2,w_3,w_4)\star(q_1,q_2,q_3,0) \\ \tilde{x}_5&=\frac{1}{2}\sum_{a+b=6}w_aq_b=\frac{1}{2}(w_3q_3+w_4q_2) \\ &=(w_1,w_2,w_3,w_4,0)\star(q_1,q_2,q_3,0,0) \\ \tilde{x}_6&=\frac{1}{1}\sum_{a+b=7}w_aq_b=w_4q_3 \\ &=(w_1,w_2,w_3,w_4,0,0)\star(q_1,q_2,q_3,0,0,0) \end{aligned}"/></p>
 
-which can be converted into circular convolution.
+which can be converted into circular convolution. By doing so, the computing process can be accelerated with fast Fourier transform.
 
 ---
 
