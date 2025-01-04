@@ -329,6 +329,18 @@ Circular convolution of x and y:
 
 <br>
 
+### II-F. Connecting with Hankel Matrix Factorization
+
+Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the Hankel matrix can be constructed as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_2 & \cdots & x_{T-n+1} \\ x_2 & x_3 & \cdots & x_{T-n+2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{n} & x_{n+1} & \cdots & x_{T} \end{bmatrix}"/></p>
+
+where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns.
+
+On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})"/>, if it can be factorized into two matrices 
+
+<br>
+
 ## III. Circulant Matrix Nuclear Norm Minimization
 
 Circulant matrices are fundamental in many computational and theoretical aspects of signal processing and machine learning, providing an efficient framework for implementating various algorithms such as circulant matrix nuclear norm minimization. By definition, a circulant matrix is a spcial square matrix where which shifts the previous row to the right by one position, with the last entry wrapping around to the first position. As we already discussed the circulant matrix above, we will present the circulant matrix nuclear norm, its minimization problem, and applications.
