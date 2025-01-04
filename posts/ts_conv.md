@@ -350,7 +350,7 @@ where we define two vectors:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \tilde{\boldsymbol{w}}_{r}=(w_1,w_2,\cdots,w_{t})^\top \\ \tilde{\boldsymbol{q}}_{r}=(q_1,q_2,\cdots,q_{t})^\top \end{cases}"/></p>
 
-of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>.
+of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>. Notably, they are different from the vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{q}_r\in\mathbb{R}^{T-n+1}"/>.
 
 <br>
 
