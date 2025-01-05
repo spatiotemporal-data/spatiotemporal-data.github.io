@@ -354,7 +354,7 @@ of length <img style="display: inline;" src="https://latex.codecogs.com/svg.late
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r=(w_{1,r},w_{2,r},\cdots,w_{n,r},\underbrace{0,\cdots,0}_{n-t})^\top\in\mathbb{R}^{t}"/></p>
 
-This principle is well-suited to the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{q}}_r"/>.
+This principle is well-suited to the construction of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{q}}_r"/>.
 
 <br>
 
