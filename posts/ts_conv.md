@@ -334,7 +334,9 @@ The Hankel matrix plays a fundamental role in numerous areas of applied mathemat
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_2 & \cdots & x_{T-n+1} \\ x_2 & x_3 & \cdots & x_{T-n+2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{n} & x_{n+1} & \cdots & x_{T} \end{bmatrix}"/></p>
 
-where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns. This matrix is often used to represent signals or time series data, capturing their sequential dependencies and structure, see e.g., [Chen et al. (2024)](https://doi.org/10.1287/ijoc.2022.0197) in our recent work.
+where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns. This matrix is often used to represent signals or time series data, capturing their sequential dependencies and structure, see e.g., [Chen et al. (2024)](https://doi.org/10.1287/ijoc.2022.0197) in our work.
+
+<br>
 
 On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})"/>, if it can be factorized into two matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{n\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{(T-n+1)\times R}"/>, then one can compute the inverse of Hankel matrix as follows,
 
