@@ -18,7 +18,7 @@ In this post, we intend to explain the essential ideas of our research work:
 
 **Content:**
 
-In **Part I** of this series, we introduce motivations of time series modeling with global and local trends. These time series trends are important for improving the performance of time series imputation. If there is one appropriate interpretable machine learning model, it is also possible to quantify the periodicity of time series. Following the basic motivations, we elaborate on several key concepts in **Part II** such as circular convolution, convolution matrix, circulant matrix, and discrete Fourier transform.
+In **Part I** of this series, we introduce motivations of time series modeling with global and local trends. These time series trends are important for improving the performance of time series imputation. If there is one appropriate interpretable machine learning model, it is also possible to quantify the periodicity of time series. Following the basic motivations, we elaborate on several key concepts such as circular convolution, convolution matrix, circulant matrix, and discrete Fourier transform in **Part II**.
 
 **Part III** and **Part IV** give the modeling ideas of circulant matrix nuclear norm minimization and Laplacian convolutional representation, addressing the critical challenges in time series imputation tasks. The optimization algorithm of both models makes use of fast Fourier transform in a log-linear time complexity. **Part V** presents an interpretable convolutional kernel method in which the sparsity of convolutional kernels is modeled by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity constraints.
 
@@ -334,7 +334,7 @@ The Hankel matrix plays a fundamental role in numerous areas of applied mathemat
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_2 & \cdots & x_{T-n+1} \\ x_2 & x_3 & \cdots & x_{T-n+2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{n} & x_{n+1} & \cdots & x_{T} \end{bmatrix}"/></p>
 
-where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns. This matrix is often used to represent signals or time series data, capturing their sequential dependencies and structure.
+where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns. This matrix is often used to represent signals or time series data, capturing their sequential dependencies and structure, see e.g., [Chen et al. (2024)](https://doi.org/10.1287/ijoc.2022.0197) in our recent work.
 
 On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})"/>, if it can be factorized into two matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{n\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{(T-n+1)\times R}"/>, then one can compute the inverse of Hankel matrix as follows,
 
