@@ -770,11 +770,16 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <span style="color:gray">
 <b>Example 9.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^\top"/>, the circular convolution is
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{\ell}\star\boldsymbol{x}=&\mathcal{C}(\boldsymbol{\ell})\boldsymbol{x} \\ =&\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix} \\ =&\begin{bmatrix} \end{bmatrix} \end{aligned}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\star\boldsymbol{x}=\mathcal{C}(\boldsymbol{\ell})\boldsymbol{x}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix} =\begin{bmatrix} -5 \\ 0 \\ 0 \\ 0 \\ 5 \end{bmatrix}"/></p>
 
+and the regularization is
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2=(-5)^2+5^2=50"/></p>
 
-Compute the regularization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2"/> with fast Fourier transform.
+How to compute the regularization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2"/> with fast Fourier transform?
+
+The first step is ...
+
 </span>
 
 
