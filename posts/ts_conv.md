@@ -27,9 +27,9 @@ In **Part I** of this series, we introduce motivations of time series modeling w
 
 ## I. Motivation
 
-The development of machine learning models in the past decade is truly remarkable. Convolution is one of the most commonly-used operations in applied mathematics and signal processing, which has been widely used to several machine learning problems. We hope to revisit the essential ideas of circular convolution and lays an insightful foundation for modeling time series data.
+The development of machine learning models in the past decade is truly remarkable. Convolution is one of the most commonly-used operations in applied mathematics and signal processing, which has been widely applied to several machine learning problems. The aims of this post are revisiting the essential ideas of circular convolution and laying an insightful foundation for modeling time series data.
 
-Nowadays, although we have a lot of machine learning algorithms on hand, it is still necessary to address the following challenges in time series modeling:
+Nowadays, although we have quite a lot of machine learning algorithms on hand, it is still necessary to rethink about the following perspectives in time series modeling:
 
 - How to characterize global time series trends?
 - How to characterize local time series trends?
@@ -64,7 +64,7 @@ Sometimes, time series exhibit complicated trends if [they are not stationary](h
 
 ## II. Preliminaries
 
-In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key ideas, including circular convolution, discrete Fourier transform, and fast Fourier transform, from the fields of signal processing and machine learning. In the following sections, we will discuss: 
+In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key essential ideas, including circular convolution, discrete Fourier transform, and fast Fourier transform, from the field of signal processing. In the following sections, we will discuss: 
 
 - What are circular convolution, convolution matrix, and circulant matrix?
 - What is the convolution theorem?
@@ -147,7 +147,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{T-\tau+2} \\ x_2 & x_1 & x_{T} & \cdots & x_{T-\tau+3} \\ x_3 & x_2 & x_1 & \cdots & x_{T-\tau+4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{T-\tau+1} \\ \end{bmatrix}\in\mathbb{R}^{T\times\tau}"/></p>
 
-In signal processing, this linear transformation is a fundamental property of circular convolution, highlighting its role in efficently implementing filtering operations.
+In the feild of signal processing, this linear transformation is a fundamental property of circular convolution, highlighting its role in efficently implementing filtering operations.
 
 <br>
 
@@ -181,14 +181,14 @@ As a result, it gives</span>
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}\begin{bmatrix} 2 \\ -1 \\ 3 \end{bmatrix}=\begin{bmatrix} 5 \\ 14 \\ 3 \\ 7 \\ 11 \end{bmatrix}"/></p>
 
 <span style="color:gray">
-This representation shows that the circular convolution is equivalent to a matrix-vector multiplication, making it easier to understand, especially in signal processing applications.
+This representation shows that circular convolution is equivalent to a matrix-vector multiplication, making it easier to understand, especially in signal processing applications.
 </span>
 
 ---
 
 <br>
 
-In this post, we aim to make the concepts clear and accessible by incorporting programming code, intuitive illustrations, and detailed explanations of the formulas. To demonstrate how circular convolution can be computed, we will use Python's `numpy` library. First, we will construct the convolution matrix on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and then perform the circular convolution as follows.
+In this post, we aim to make the concepts clear and accessible by incorporting programming code in Python, intuitive illustrations, and detailed explanations of the formulas. To demonstrate how circular convolution can be computed, we will use Python's `numpy` library. First, we will construct the convolution matrix on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and then perform the circular convolution as follows.
 
 <br>
 
@@ -351,9 +351,9 @@ where we define two vectors:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \tilde{\boldsymbol{w}}_{r}=(w_{1,r},w_{2,r},\cdots,w_{t,r})^\top \\ \tilde{\boldsymbol{q}}_{r}=(q_{1,r},q_{2,r},\cdots,q_{t,r})^\top \end{cases}"/></p>
 
-of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>. Notably, they are different from the vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{q}_r\in\mathbb{R}^{T-n+1}"/>. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\leq n"/>, then the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r"/> consists of the first <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r"/>. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t> n"/>, then the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r"/> consists of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n-t"/> zeros, i.e.,
+of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>. Notably, they are different from the vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{q}_r\in\mathbb{R}^{T-n+1}"/>. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\leq n"/>, then the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r"/> consists of the first <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r"/>. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t> n"/>, then the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r"/> consists of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t-n"/> zeros, i.e.,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r=(w_{1,r},w_{2,r},\cdots,w_{n,r},\underbrace{0,\cdots,0}_{n-t})^\top\in\mathbb{R}^{t}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r=(w_{1,r},w_{2,r},\cdots,w_{n,r},\underbrace{0,\cdots,0}_{t-n})^\top\in\mathbb{R}^{t}"/></p>
 
 This principle is well-suited to the construction of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{q}}_r"/>.
 
@@ -565,6 +565,8 @@ Thus, the variables <img style="display: inline;" src="https://latex.codecogs.co
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \displaystyle\boldsymbol{x}:=\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \displaystyle\boldsymbol{z}:=\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{w}:=\boldsymbol{w}+\lambda(\boldsymbol{x}-\boldsymbol{z}) \end{cases}"/></p>
 
+where the dual variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> takes a standard update in the ADMM. In what follows, we give details about how to get the closed-form solution to the variables <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>.
+
 <br>
 
 ### III-E. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>-Subproblem
@@ -601,7 +603,7 @@ def update_x(z, w, lmbda):
 ---
 
 <span style="color:gray">
-**Shrinkage Operator.** For any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{n}"/>, the closed-form solution to the optimization problem
+<b>Shrinkage Operator.</b> For any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{n}"/>, the closed-form solution to the optimization problem
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{y}}\,\|\boldsymbol{y}\|_1+\frac{\alpha}{2}\|\boldsymbol{y}-\boldsymbol{x}\|_2^2"/></p>
@@ -766,7 +768,13 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ---
 
 <span style="color:gray">
-<b>Example 9.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^\top"/>, compute the regularization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})"/> with fast Fourier transform.
+<b>Example 9.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^\top"/>, the circular convolution is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{\ell}\star\boldsymbol{x}=&\mathcal{C}(\boldsymbol{\ell})\boldsymbol{x} \\ =&\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix} \\ =&\begin{bmatrix} \end{bmatrix} \end{aligned}"/></p>
+
+
+
+Compute the regularization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2"/> with fast Fourier transform.
 </span>
 
 
