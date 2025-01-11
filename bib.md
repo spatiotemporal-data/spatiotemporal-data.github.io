@@ -54,6 +54,12 @@ Given population mean <img style="display: inline;" src="https://latex.codecogs.
 
 A high absolute value of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> suggests a statistically significant difference.
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/student_t_test.png" width="400" />
+</p>
+
+<br>
+
 **Supporting Materials**
 
 - [Hypothesis Testing Problems - Z Test & T Statistics - One & Two Tailed Tests 2](https://www.youtube.com/watch?v=zJ8e_wAWUzE)
