@@ -755,7 +755,7 @@ Since the Laplacian matrix <img style="display: inline;" src="https://latex.code
 
 As can be seen, this Laplacian kernel can build local correlations for the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. Thus, the purpose of introducing Laplacian kernels on time series is local trend modeling with temporal regularization such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{L}\boldsymbol{x}\|_2^2=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2"/></p>
 
 As a matter of fact, we have several motivations and reasons for reformulating temporal regularization with circular convolution. Among them, there are some important properties inspired us a lot. In particular, one of the most useful properties of circular convolution is its relationship with discrete Fourier transform, i.e.,
 
@@ -784,9 +784,16 @@ How to compute the regularization <img style="display: inline;" src="https://lat
 </span>
 
 <span style="color:gray">
-The first step is ...
+The first step is the fast Fourier transform on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>:
 </span>
 
+<br>
+
+```python
+import numpy as np
+
+
+```
 
 
 ---
