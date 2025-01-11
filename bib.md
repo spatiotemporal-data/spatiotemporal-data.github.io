@@ -55,7 +55,7 @@ Given population mean <img style="display: inline;" src="https://latex.codecogs.
 A high absolute value of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> suggests a statistically significant difference. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;H_0"/> is the null hypothesis, namely, the population mean is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mu"/>.
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/student_t_test.png" width="400" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/student_t_test.png" width="450" />
 </p>
 
 <br>
