@@ -777,14 +777,10 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 and the regularization is
 </span>
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2=(-5)^2+5^2=50"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2=\frac{1}{2}((-5)^2+5^2)=25"/></p>
 
 <span style="color:gray">
-How to compute the regularization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2"/> with fast Fourier transform?
-</span>
-
-<span style="color:gray">
-The first step is the fast Fourier transform on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>:
+How to compute the regularization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})"/> with fast Fourier transform? 1) Compute the fast Fourier transform on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{\ell})"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})"/>, respectively; 2) Compute the regularization as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=25"/>.
 </span>
 
 <br>
@@ -792,9 +788,15 @@ The first step is the fast Fourier transform on <img style="display: inline;" sr
 ```python
 import numpy as np
 
-
+ell = np.array([0, 1, 2, 3, 4])
+x = np.array([2, -1, 0, 0, -1])
+f_ell = np.fft.fft(ell)
+f_x = np.fft.fft(x)
+print('Regularization R(x):')
+print(np.linalg.norm(f_ell * f_x, 2) ** 2 / (2 * len(x)))
 ```
 
+<br>
 
 ---
 
