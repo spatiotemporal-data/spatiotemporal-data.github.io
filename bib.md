@@ -48,6 +48,14 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 #### <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-Statistic & Student <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-Distribution
 
+Given population mean <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mu"/>, let the sample mean <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\bar{x}"/>, sample standard deviation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s"/>, and sample size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> (small value), the formula of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-statistic for small sample sizes is written as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;t=\frac{\bar{x}-\mu}{s/\sqrt{n}}"/></p>
+
+A high absolute value of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> suggests a statistically significant difference.
+
+**Supporting Materials**
+
 - [Hypothesis Testing Problems - Z Test & T Statistics - One & Two Tailed Tests 2](https://www.youtube.com/watch?v=zJ8e_wAWUzE)
 - [Introduction to the t Distribution (non-technical)](https://www.youtube.com/watch?v=Uv6nGIgZMVw)
 - [Confidence Intervals for One Mean: Determining the Required Sample Size](https://www.youtube.com/watch?v=7zcbVaVz_P8)
