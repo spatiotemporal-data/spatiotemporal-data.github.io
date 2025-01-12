@@ -998,7 +998,7 @@ print(cp.installed_solvers())
 
 ## VI. Insight into Ridesharing Trip Time Series
 
-[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew) and [TNP ridesharing trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p). Figure 11 shows the realistic time series data of ridesharing trips with a strong weekly periodicity, allowing one to examine the usage of interpretable convolutional kernels.
+[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew) and [TNP ridesharing trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p). Figure 12 shows the realistic time series data of ridesharing trips with a strong weekly periodicity, allowing one to examine the usage of interpretable convolutional kernels.
 
 
 
@@ -1011,7 +1011,7 @@ print(cp.installed_solvers())
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 11.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., 336 hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
+<b>Figure 12.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., 336 hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
 </p>
 
 
