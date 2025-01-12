@@ -837,7 +837,7 @@ where the matrix <img style="display: inline;" src="https://latex.codecogs.com/s
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_circ.png" width="370" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_circ.png" width="360" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
@@ -853,7 +853,7 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_w_conv.png" width="370" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_w_conv.png" width="360" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
