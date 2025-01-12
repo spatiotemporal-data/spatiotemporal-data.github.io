@@ -996,13 +996,23 @@ print(cp.installed_solvers())
 
 <br>
 
-## VI. Insight into Climate Systems
+## VI. Insight into Ridesharing Trip Time Series
+
+[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew) and [TNP ridesharing trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p). 
+
 
 
 
 <br>
 
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/chicago_rideshare_ts.png" width="500" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 11.</b> Chicago time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
+</p>
 
 
 
