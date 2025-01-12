@@ -14,6 +14,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Network science
 - Graph computing & learning
 - Causal inference & learning
+- Computational engineering
 - Computational social science
 
 This project presents some spatiotemporal methods with data-driven machine learning:
@@ -22,7 +23,7 @@ This project presents some spatiotemporal methods with data-driven machine learn
 - Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). [Laplacian convolutional representation for traffic time series imputation](https://doi.org/10.1109/TKDE.2024.3419698). IEEE Transactions on Knowledge and Data Engineering. 36 (11): 6490-6502. [[Slides](https://xinychen.github.io/slides/LCR24.pdf)] [[Data & Python code](https://github.com/xinychen/LCR)]
 - Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). IEEE Transactions on Knowledge and Data Engineering. 36 (2): 504-517. [[Blog post](https://spatiotemporal-data.github.io/posts/time_varying_model/)] [[Data & Python code](https://github.com/xinychen/vars)]
 
-There are several easy-to-follow posts that are created to explain the essential ideas of this project:
+In the past decade, the development of artificial intelligence and machine learning has been truly remarkable. There are several easy-to-follow posts that are created to explain the essential ideas of this project and inspire innovations:
 
 - [Time Series Convolution](https://spatiotemporal-data.github.io/posts/ts_conv/). A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. (Under development)
 
