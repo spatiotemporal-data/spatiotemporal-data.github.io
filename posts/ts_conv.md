@@ -968,10 +968,10 @@ d = A.shape[1]
 
 # Variables
 w = cp.Variable(d, nonneg=True)
-z = cp.Variable(d, boolean=True)
+beta = cp.Variable(d, boolean=True)
 
 # Constraints
-constraints = [cp.sum(z) <= tau, w <= z, w >= 0]
+constraints = [cp.sum(beta) <= tau, w <= beta, w >= 0]
 
 # Objective
 objective = cp.Minimize(cp.sum_squares(x - A @ w))
@@ -982,7 +982,7 @@ problem.solve(solver=cp.GUROBI)  # Ensure to use a solver that supports MIP
 
 # Solution
 print("Optimal beta:", w.value)
-print("Active indices:", np.nonzero(z.value > 0.5)[0])
+print("Active indices:", np.nonzero(beta.value > 0.5)[0])
 ```
 
 Please install the optimization packages in-ahead, e.g., `pip install gurobipy`. One can also check out the optimization solvers in `cvxpy`:
