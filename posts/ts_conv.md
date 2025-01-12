@@ -1011,7 +1011,7 @@ print(cp.installed_solvers())
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 11.</b> Chicago time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
+<b>Figure 11.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., 336 hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
 </p>
 
 
