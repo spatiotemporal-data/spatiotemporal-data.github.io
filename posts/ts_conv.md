@@ -345,11 +345,10 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;(\mathcal{H}^{\dagger}(\boldsymbol{Y}))_{t}=\frac{1}{\rho_{t}}\sum_{a+b=t+1}y_{a,b}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\in\{1,2,\cdots, T\}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\rho_t"/> satisfies
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\in\{1,2,\cdots, T\}"/>. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\rho_t"/> is the number of entries on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-th antidiagonal of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times (T-n+1)"/> matrix, satisfying
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\rho_t=\begin{cases} t, & t\leq\min\{n, T-n+1\} \\ T-t+1, & \text{otherwise} \end{cases}"/></p>
 
-in which <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\rho_t"/> is the number of entries on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-th antidiagonal of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times (T-n+1)"/> matrix.
 
 Following the aforementioned formula, it is easy to connect the Hankel factorization with circular convolution and discrete Fourier transform ([Cai et al., 2019](https://arxiv.org/abs/1910.05859); [Cai et al., 2022](https://arxiv.org/abs/2204.03316)) such that
 
