@@ -362,7 +362,7 @@ of length <img style="display: inline;" src="https://latex.codecogs.com/svg.late
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r=(w_{1,r},w_{2,r},\cdots,w_{n,r},\underbrace{0,\cdots,0}_{t-n})^\top\in\mathbb{R}^{t}"/></p>
 
-This principle is well-suited to the construction of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{q}}_r"/>. For any Hankel matrix, it always holds that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{H}(\mathcal{D}(\boldsymbol{x}))\|_F=\|\boldsymbol{x}\|_2"/> in which the operator <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{D}(\cdot)"/> is defined as follows,
+This principle is well-suited to the construction of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{q}}_r"/>. For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, it always holds that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{H}(\mathcal{D}(\boldsymbol{x}))\|_F=\|\boldsymbol{x}\|_2"/> in which the operator <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{D}(\cdot)"/> is defined as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{D}(\boldsymbol{x})=\bigr(x_1,\frac{1}{\sqrt{\rho_2}}x_2,\frac{1}{\sqrt{\rho_3}}x_3,\cdots,\frac{1}{\sqrt{\rho_{T-1}}}x_{T-1},x_T\bigl)^\top\in\mathbb{R}^{T}"/></p>
 
