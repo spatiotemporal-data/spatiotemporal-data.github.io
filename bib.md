@@ -8,7 +8,7 @@ layout: default
 
 <br>
 
-### 34th Mile
+### 35th Mile
 #### Cardinality Minimization, Constraints, and Regularization
 
 
@@ -16,6 +16,31 @@ layout: default
 **References**
 
 - Andreas M. Tillmann, Daniel Bienstock, Andrea Lodi, Alexandra Schwartz (2024). [Cardinality Minimization, Constraints, and Regularization: A Survey](https://doi.org/10.1137/21M142770X). SIAM Review, 66(3). [[PDF](https://arxiv.org/pdf/2106.09606)]
+
+<br>
+
+### 34th Mile
+#### Learning Sparse Nonparametric Directed Acyclic Graphs (DAG)
+
+DAG learning problem: Given a data matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{n\times d}"/> consisting of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> independent and identically distributed observations and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/> column vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x}_{j}\}_{j=1}^{d}"/>, one can learn the DAG <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(\boldsymbol{X})"/> that encodes the dependency between the variables in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/>. One approach is to learn <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f=f(f_1,f_2,\cdots,f_d)"/> such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(f)=\mathcal{G}(\boldsymbol{X})"/> using a well-designed score. Given a loss function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell(y,\hat{y})"/> such as least squares or the negative log-likelihood, the optimization problem can be summarized as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{f}\,&\frac{1}{n}\sum_{j=1}^{d}\ell(\boldsymbol{x}_j,f_j(\boldsymbol{X})) \\ \text{s.t.}\,&\mathcal{G}(f)\in\text{DAG} \end{aligned}"/></p>
+
+Two challenges in this formulation:
+
+- How to enforce the acyclicity constraint that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(f)\in\text{DAG}"/>?
+- How to enforce sparsity in the learned DAG <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(f)"/>?
+
+If one uses MLP in the optimization, then the it becomes
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\theta}\,&\frac{1}{n}\sum_{j=1}^{d}\ell(\boldsymbol{x}_j,\text{MLP}(\boldsymbol{X};\theta_j))+\lambda\|\boldsymbol{A}_{j}^{(1)}\|_{1,1} \\ \text{s.t.}\,&h(W(\theta))=0 \end{aligned}"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\theta=\{\theta_{j}\}_{j=1}^{d}"/> denotes all parameters and the parameters of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;j"/>th MLP are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\theta_j=(A_{j}^{1},A_{j}^{(2)},\cdots, A_{j}^{(h)})"/>.
+
+**References**
+
+- Xun Zheng, Bryon Aragam, Pradeep Ravikumar, Eric P. Xing (2018). [DAGs with NO TEARS: Continuous Optimization for Structure Learning](https://arxiv.org/abs/1803.01422). arXiv:1803.01422.
+- Xun Zheng, Chen Dan, Bryon Aragam, Pradeep Ravikumar, Eric P. Xing (2019). [Learning Sparse Nonparametric DAGs](https://arxiv.org/abs/1909.13189). arXiv:1909.13189.
 
 <br>
 
