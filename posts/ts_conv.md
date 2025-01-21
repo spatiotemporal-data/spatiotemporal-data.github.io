@@ -403,7 +403,7 @@ in which the operator <img style="display: inline;" src="https://latex.codecogs.
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{D}(\boldsymbol{x})=\bigr(x_1,\frac{1}{\sqrt{\rho_2}}x_2,\frac{1}{\sqrt{\rho_3}}x_3,\cdots,\frac{1}{\sqrt{\rho_{T-1}}}x_{T-1},x_T\bigl)^\top\in\mathbb{R}^{T}"/></p>
 
 <span style="color:gray">
-Verify this property on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_6)^\top"/> and let the number of rows of the Hankel matrix be <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;4"/>.
+Verify this property on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_6)^\top"/> if the number of rows of the Hankel matrix is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;4"/>.
 </span>
 
 <br>
