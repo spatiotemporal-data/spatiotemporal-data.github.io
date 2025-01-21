@@ -41,6 +41,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 - Xun Zheng, Bryon Aragam, Pradeep Ravikumar, Eric P. Xing (2018). [DAGs with NO TEARS: Continuous Optimization for Structure Learning](https://arxiv.org/abs/1803.01422). arXiv:1803.01422.
 - Xun Zheng, Chen Dan, Bryon Aragam, Pradeep Ravikumar, Eric P. Xing (2019). [Learning Sparse Nonparametric DAGs](https://arxiv.org/abs/1909.13189). arXiv:1909.13189.
+- Victor Chernozhukov, Christian Hansen, Nathan Kallus, Martin Spindler, Vasilis Syrgkanis (2024). [Applied Causal Inference Powered by ML and AI](https://arxiv.org/abs/2403.02467). arXiv:2403.02467. (See Chapter 7)
 
 <br>
 
