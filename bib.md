@@ -31,7 +31,7 @@ Two challenges in this formulation:
 - How to enforce the acyclicity constraint that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(f)\in\text{DAG}"/>?
 - How to enforce sparsity in the learned DAG <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(f)"/>?
 
-If one uses MLP in the optimization, then the it becomes
+If one uses MLP in the optimization, then it becomes
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\theta}}\,&\frac{1}{n}\sum_{j=1}^{d}\ell(\boldsymbol{x}_j,\text{MLP}(\boldsymbol{X};\boldsymbol{\theta}_j))+\lambda\|\boldsymbol{A}_{j}^{(1)}\|_{1,1} \\ \text{s.t.}\,&h(W(\boldsymbol{\theta}))=0 \end{aligned}"/></p>
 
