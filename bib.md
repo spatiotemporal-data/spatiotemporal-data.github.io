@@ -85,7 +85,7 @@ A high absolute value of <img style="display: inline;" src="https://latex.codeco
 
 <br>
 
-Please check out the details of [the relevance of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-statistics for small sample sizes](https://xinychen.github.io/slides/t_stat.pdf).
+Please check out the details of [the relevance of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-statistics for small sample sizes](https://xinychen.github.io/slides/t_stat.pdf) as the teaching sample.
 
 **Supporting Materials**
 
