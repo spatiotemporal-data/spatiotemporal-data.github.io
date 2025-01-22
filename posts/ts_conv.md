@@ -1111,7 +1111,7 @@ def kernel_mip(data, tau):
 import numpy as np
 import time
 
-tensor = np.load('../Chicago-data/Chicago_rideshare_mob_tensor_24.npz')['arr_0'][:, :, : 14 * 24]
+tensor = np.load('Chicago_rideshare_mob_tensor_24.npz')['arr_0'][:, :, : 14 * 24]
 data = np.sum(np.sum(tensor, axis = 0), axis = 0)
 tau = 3
 
