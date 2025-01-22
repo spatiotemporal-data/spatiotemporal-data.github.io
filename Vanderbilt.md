@@ -95,5 +95,89 @@ Projects can take many forms, including but not limited to:
 - Portfolio (can involve multiple formats and products)
 - Creative writing
 
+<br>
+
+### [Data Science Institute](https://www.vanderbilt.edu/datascience/)
+
+Vanderbilt Data Science is Advancing AI and Data Science through cross-disciplinary research, innovative education, and community impact.
+
+#### Our Vision
+
+Our diverse community of researchers and students develops next-generation models while creating positive change through:
+
+- Cutting-edge research collaborations 
+- Top-ranked education program
+- Community-focused partnerships
+- Ethical AI development
+
+#### Master's Degree in Data Science
+
+Vanderbilt Data Science offers a comprehensive, in-person Data Science program that focuses on real-world applications. Our curriculum is tailored to address the challenges of the Data Science field, ensuring our students are well-prepared for their future careers.
+
+#### AI Days 2025
+
+A 2-day gathering for artificial intelligence featuring expert workshops, hands-on tutorials, industry panels, and our signature AI Showcase. Whether you're new to AI or an experienced practitioner, join us to learn, connect, and shape the future of AI at Vanderbilt.
+
+#### Data Science Research
+
+Vanderbilt Data Science engages in collaborative efforts in many forms for data science projects with industry, academia, and non-profits.
+
+#### Data Science Team
+
+The Data Science (DS) Team supports Vanderbilt Data Science directive by empowering researchers and students to integrate data science tools and techniques into research across all disciplines. We can help you meet your needs through:
+
+Consultations on Research – engage us in discussing potential applications of data science to your research.
+Training on Data Science Skills – attend and participate in our new DS initiatives, seminars, and hands-on workshops.
+Custom Training Opportunities – request a DS team member to give a seminar or hands-on workshop to your students, course, lab group, or organization.
+Collaborative Research Engagements – engage us with your lab or organization on a DS program co-led by DS Team data scientists. Ever semester, the DS Team takes on 2-3 research engagements where we work closely with a research team providing training, support, and project management. Interested researchers should share our goal to enable the lab/team to carry on with data science projects independently in the future. Students from all disciplines are invited to participate as opportunities allow.
+We’re excited to support you in meeting your data science needs!
+
+#### Data Science Mini Grants
+
+Vanderbilt Data Science (VDS) invites affiliated faculty to apply for mini grants for the purpose of furthering their data science related research or education.
+
+Data science research will fall under one of three categories:
+
+- Foundational data science – i.e., the development of data science methods
+- The application of data science to one or more fields in the physical, life and social sciences, engineering, or humanities
+- The study of the impact of data on society and its institutions
+
+Grants may be used for expenses such as purchasing data or licenses for data use, purchasing specialized software or software licenses, bringing visitors to Vanderbilt, hosting workshops at Vanderbilt, supporting the formation of working groups, and travel to conferences or summer schools. Grants may not be used for staff salaries or student stipends and tuition. Most grants are expected to be less than $5k, while grants over $10k will only be awarded in exceptional cases with sufficient justification.
+
+Grants may also be requested in the form of computational resources. Vanderbilt Data Science has dedicated compute nodes (both CPU and GPU) at ACCRE that affiliated faculty may apply for to do their research.
+
+Eligibility: Vanderbilt faculty who are affiliated with Vanderbilt Data Science may apply.
+
+Research Opportunities
+Looking for opportunities to meaningfully contribute to real data science (DS) projects? Vanderbilt's Data Science Institute (DSI) has exciting new opportunities for undergraduates, graduate and researchers interest in working on project teams with the guidance of a staff data scientist to learn technical skills, project management, and best practices – all while creating new solutions!
+
+Pre-Registration Now Open!
+Important Dates:
+
+- Project List Release: Tuesday, December 17th
+- Official Application Period: December 17th - January 3rd
+
+<br>
+
+### [FutureVU](https://www.vanderbilt.edu/futurevu/)
+
+#### What is FutureVU?
+
+FutureVU embodies the university’s core values and holistic approach to Vanderbilt’s teaching, research and service mission, including the advancement of the university’s land resources and human capital in support of the Academic Strategic Plan.
+
+In 2015, FutureVU began as a comprehensive land use planning effort, with the goal of ensuring the Vanderbilt University campus is designed and prepared at every level to support its students, faculty and staff, and to uphold the university’s mission and values.
+
+While academic and student residential building projects on campus are driven by the Academic Strategic Plan, and the academic and research mission of the university, the FutureVU land use plan provides a consistent strategy and guiding principles necessary for the realization of all capital projects and changes to the built environment.
+
+More recently, FutureVU, the overarching campus planning process, was expanded to be a more holistic model, developing the spaces on campus and investing in the initiatives that support the people who live, work and learn in them.
+
+#### A Framework for the Future
+
+FutureVU provides a framework for the future of Vanderbilt, while considering core themes such as inclusion and accessibility, sustainability, transportation and mobility, connectivity and community enhancement, engagement with surrounding communities, and preservation of the historic park-like setting. These themes are guided by values that directly relate to Vanderbilt’s core mission of teaching, research and discovery.
+
+<br>
+
+
+
 
 <br>
