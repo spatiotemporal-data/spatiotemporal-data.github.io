@@ -20,6 +20,31 @@ layout: default
 <br>
 
 ### 34th Mile
+#### Iterative Shrinkage Thresholding Algorithm (ISTA)
+
+In machine learning, the closed-form solution to LASSO is defined upon the soft thresholding operator such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{S}_{\lambda t}(\boldsymbol{\beta})=\arg\min_{\boldsymbol{z}}\,\frac{1}{2t}\|\boldsymbol{\beta}-\boldsymbol{z}\|_2^2+\lambda\|\boldsymbol{z}\|_1"/></p>
+
+element-wise, we have
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;[\mathcal{S}_{\lambda t}(\boldsymbol{\beta})]_{i}=\begin{cases} \beta_i-\lambda t, & \text{if}\, \beta_i>\lambda t \\ \beta_i+\lambda t, & \text{if}\, \beta_i<-\lambda t \\ 0, & \text{otherwise} \end{cases}"/></p>
+
+for all <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;i\in\{1,2,\ldots, n\}"/>.
+
+Considering the optimization problem
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{\beta}}\,\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}\|_2^2+\lambda\|\boldsymbol{\beta}\|_1"/></p>
+
+The proximal gradient update can be written as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\beta}:=\mathcal{S}_{\lambda t}(\boldsymbol{\beta}+t\boldsymbol{X}^\top (\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}))"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> is the step size, and the gradient of the first component in the objective function is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-\boldsymbol{X}^\top(\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta})"/>.
+
+<br>
+
+### 34th Mile
 #### Learning Sparse Nonparametric Directed Acyclic Graphs (DAG)
 
 DAG learning problem: Given a data matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{n\times d}"/> consisting of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> independent and identically distributed observations and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/> column vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x}_{j}\}_{j=1}^{d}"/>, one can learn the DAG <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(\boldsymbol{X})"/> that encodes the dependency between the variables in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/>. One approach is to learn <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f=f(f_1,f_2,\cdots,f_d)"/> such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(f)=\mathcal{G}(\boldsymbol{X})"/> using a well-designed score. Given a loss function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell(y,\hat{y})"/> such as least squares or the negative log-likelihood, the optimization problem can be summarized as follows,
