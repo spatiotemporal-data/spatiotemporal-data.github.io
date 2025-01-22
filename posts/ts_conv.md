@@ -1071,7 +1071,59 @@ Take the time series of Figure 12 as an example, the mixed-integer programming s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(\underbrace{0.34}_{t=1},\cdots, \underbrace{0.33}_{t=168},\cdots,\underbrace{0.34}_{t=335})^\top"/></p>
 
-where the sparsity level is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/> in the constraint <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{w}\|_0\leq\tau"/>, or equivalently <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\sum_{t=1}^{T-1}\beta_{t}\leq\tau"/>. This result basically demonstrates local correlations such as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=1"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;335"/>, as well as the weekly seasonality at <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=168"/>.
+where the sparsity level is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/> in the constraint <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{w}\|_0\leq\tau"/>, or equivalently <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\sum_{t=1}^{T-1}\beta_{t}\leq\tau"/>. This result basically demonstrates local correlations such as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=1"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;335"/>, as well as the weekly seasonality at <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=168"/>. Below is the Python implementation of the mixed-integer programming solver with CPLEX.
+
+<br>
+
+```python
+import numpy as np
+from docplex.mp.model import Model
+
+def kernel_mip(data, tau):
+    model = Model(name = 'Sparse Autoregression')
+    T = data.shape[0]
+    w = [model.continuous_var(lb = 0, name = f'w_{k}') for k in range(T - 1)]
+    beta = [model.binary_var(name = f'beta_{k}') for k in range(T - 1)]
+    error = [data[t] - model.sum(w[k] * data[t - k - 1] for k in range(T - 1)) for t in range(T)]
+    model.minimize(model.sum(r ** 2 for r in error))
+    model.add_constraint(model.sum(beta[k] for k in range(T - 1)) <= tau)
+    for k in range(T - 1):
+        model.add_constraint(w[k] <= beta[k])
+    solution = model.solve()
+    if solution:
+        w_coef = np.array(solution.get_values(w))
+        error = 0
+        for t in range(T):
+            a = data[t]
+            for k in range(T - 1):
+                a -= w_coef[k] * data[t - k - 1]
+            error += a ** 2
+        print('Objective function: {}'.format(error))
+        ind = np.where(w_coef > 0)[0].tolist()
+        print('Support set: ', ind)
+        print('Coefficients w: ', w_coef[ind])
+        print('Cardinality of support set: ', len(ind))
+        return w_coef, ind
+    else:
+        print('No solution found.')
+        return None
+
+import numpy as np
+import time
+
+tensor = np.load('../Chicago-data/Chicago_rideshare_mob_tensor_24.npz')['arr_0'][:, :, : 14 * 24]
+data = np.sum(np.sum(tensor, axis = 0), axis = 0)
+tau = 3
+
+start = time.time()
+w, ind = kernel_mip(data, tau)
+end = time.time()
+print('Running time (s):', end - start)
+```
+
+<br>
+
+For the entire implementation, please check out the [Jupyter Notebook](https://github.com/xinychen/ts-conv/blob/main/Models/Mobility-MIP.ipynb) on GitHub. The processed time series dataset is available at the folder of [Chicago-data](https://github.com/xinychen/ts-conv/tree/main/Chicago-data).
 
 <br>
 
