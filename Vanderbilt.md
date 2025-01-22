@@ -252,6 +252,8 @@ These extracurricular activities include student organizations, club sports, art
 
 We cultivate vibrant, inclusive communities that foster a student’s sense of belonging and wellbeing through collaborative partnerships, transformative learning experiences, and an accessible and holistic network of resources.
 
+<br>
+
 #### The Vanderbilt Community Creed
 
 The Community Creed is a student-initiated statement of the values to which the Vanderbilt community aspires. Individuals who join this community embark on a lifelong journey toward greater intellectual enlightenment and personal growth. By fostering the Creed’s principles, we anchor ourselves to the University’s enduring tradition of excellence, united by a common set of values:
