@@ -64,6 +64,18 @@ Immersion Vanderbilt is a dynamic, two-part program for undergraduate students t
 
 Immersion Vanderbilt is more than just an academic requirement for all undergraduate students–it’s an opportunity to tailor your educational journey to match your passions and career aspirations. This unique opportunity allows students to work closely with faculty mentors, tap into Vanderbilt’s extensive resources, and make a difference in their chosen field.
 
+#### Immersive Experiences
+
+The immersive experience component of Immersion Vanderbilt is designed to complement your academic journey with practical, engaging opportunities that will enrich your learning and prepare you for future success. Your immersive experience is your opportunity to explore, innovate, and connect with real-world challenges and opportunities. 
+
+Immersive experiences offer you the chance to step beyond the classroom and engage deeply with your field of study. Students are encouraged to pursue multiple immersive experiences during their academic career.
+
+Immersive experiences can be completed within or outside of your home school/college in a few different ways:
+
+Part of a pre-approved program of study or tagged class 
+Part of a Vanderbilt-approved study abroad program or part of a cohort run by Vanderbilt faculty and staff
+Independent experience outside of other programs (i.e. an internship, research, independent international opportunity, or community/civic engagement work)
+
 #### Culminating Projects
 
 As the second half of Immersion Vanderbilt, the culminating project is simply what students create informed by their immersive experience(s). Immersion Vanderbilt culminating projects are as unique as the students who create them! 
