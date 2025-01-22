@@ -60,9 +60,13 @@ The new dean and provost will decide the specific programs and degrees offered b
 
 Immersion Vanderbilt is a dynamic, two-part program for undergraduate students that merges academic excellence with real-world experiences, providing a platform for you to dive deeply into a field of interest and make a tangible impact.
 
+<br>
+
 #### Two-Part Program, Endless Possibilities
 
 Immersion Vanderbilt is more than just an academic requirement for all undergraduate students–it’s an opportunity to tailor your educational journey to match your passions and career aspirations. This unique opportunity allows students to work closely with faculty mentors, tap into Vanderbilt’s extensive resources, and make a difference in their chosen field.
+
+<br>
 
 #### Immersive Experiences
 
@@ -72,9 +76,11 @@ Immersive experiences offer you the chance to step beyond the classroom and enga
 
 Immersive experiences can be completed within or outside of your home school/college in a few different ways:
 
-Part of a pre-approved program of study or tagged class 
-Part of a Vanderbilt-approved study abroad program or part of a cohort run by Vanderbilt faculty and staff
-Independent experience outside of other programs (i.e. an internship, research, independent international opportunity, or community/civic engagement work)
+- Part of a pre-approved program of study or tagged class 
+- Part of a Vanderbilt-approved study abroad program or part of a cohort run by Vanderbilt faculty and staff
+- Independent experience outside of other programs (i.e. an internship, research, independent international opportunity, or community/civic engagement work)
+
+<br>
 
 #### Culminating Projects
 
@@ -110,9 +116,13 @@ Our diverse community of researchers and students develops next-generation model
 - Community-focused partnerships
 - Ethical AI development
 
+<br>
+
 #### Master's Degree in Data Science
 
 Vanderbilt Data Science offers a comprehensive, in-person Data Science program that focuses on real-world applications. Our curriculum is tailored to address the challenges of the Data Science field, ensuring our students are well-prepared for their future careers.
+
+<br>
 
 #### AI Days 2025
 
@@ -126,11 +136,14 @@ Vanderbilt Data Science engages in collaborative efforts in many forms for data 
 
 The Data Science (DS) Team supports Vanderbilt Data Science directive by empowering researchers and students to integrate data science tools and techniques into research across all disciplines. We can help you meet your needs through:
 
-Consultations on Research – engage us in discussing potential applications of data science to your research.
-Training on Data Science Skills – attend and participate in our new DS initiatives, seminars, and hands-on workshops.
-Custom Training Opportunities – request a DS team member to give a seminar or hands-on workshop to your students, course, lab group, or organization.
-Collaborative Research Engagements – engage us with your lab or organization on a DS program co-led by DS Team data scientists. Ever semester, the DS Team takes on 2-3 research engagements where we work closely with a research team providing training, support, and project management. Interested researchers should share our goal to enable the lab/team to carry on with data science projects independently in the future. Students from all disciplines are invited to participate as opportunities allow.
+- Consultations on Research – engage us in discussing potential applications of data science to your research.
+- Training on Data Science Skills – attend and participate in our new DS initiatives, seminars, and hands-on workshops.
+- Custom Training Opportunities – request a DS team member to give a seminar or hands-on workshop to your students, course, lab group, or organization.
+- Collaborative Research Engagements – engage us with your lab or organization on a DS program co-led by DS Team data scientists. Ever semester, the DS Team takes on 2-3 research engagements where we work closely with a research team providing training, support, and project management. Interested researchers should share our goal to enable the lab/team to carry on with data science projects independently in the future. Students from all disciplines are invited to participate as opportunities allow.
+
 We’re excited to support you in meeting your data science needs!
+
+<br>
 
 #### Data Science Mini Grants
 
@@ -170,6 +183,8 @@ In 2015, FutureVU began as a comprehensive land use planning effort, with the go
 While academic and student residential building projects on campus are driven by the Academic Strategic Plan, and the academic and research mission of the university, the FutureVU land use plan provides a consistent strategy and guiding principles necessary for the realization of all capital projects and changes to the built environment.
 
 More recently, FutureVU, the overarching campus planning process, was expanded to be a more holistic model, developing the spaces on campus and investing in the initiatives that support the people who live, work and learn in them.
+
+<br>
 
 #### A Framework for the Future
 
@@ -237,6 +252,20 @@ These extracurricular activities include student organizations, club sports, art
 
 We cultivate vibrant, inclusive communities that foster a student’s sense of belonging and wellbeing through collaborative partnerships, transformative learning experiences, and an accessible and holistic network of resources.
 
+#### The Vanderbilt Community Creed
 
+The Community Creed is a student-initiated statement of the values to which the Vanderbilt community aspires. Individuals who join this community embark on a lifelong journey toward greater intellectual enlightenment and personal growth. By fostering the Creed’s principles, we anchor ourselves to the University’s enduring tradition of excellence, united by a common set of values:
+
+- Academic. We strive to pursue intellectual knowledge with curiosity and humility. We engage in a partnership of learning and discovery, where the scholarly exploration of ideas is not only protected, but encouraged.
+
+- Neighborly. We strive to be ambassadors of goodwill within our campus and beyond. We serve, uplift, and empower the members of our global neighborhood.
+
+- Courageous. We strive to be courageous, acting with bold authenticity. We embrace taking risks, challenging assumptions, and persevering in the face of adversity.
+
+- Honest. We strive for honesty in our academic endeavors and relationships with others. We commit to integrity and accountability across all aspects of life—personally, professionally, and academically.
+
+- Open. We strive to openly engage with ideas, experiences, and with one another. We welcome every background and story through celebration of the diversity that enriches our common experience and active participation in constructive conversations about our differences.
+
+- Respectful. We strive to promote a culture of civility grounded in equity, inclusivity, and respect. We hold each other’s passions and perspectives in high regard, endeavoring to live a life of personal growth and service.
 
 <br>
