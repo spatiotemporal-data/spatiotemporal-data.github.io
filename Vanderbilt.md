@@ -26,6 +26,18 @@ The creation of the College of Connected Computing will not negatively affect th
 
 The new, interdisciplinary college will collaborate with all of Vanderbilt’s schools and colleges to advance discoveries and strengthen computing education through a “computing for all” approach.
 
+#### What’s next for the College of Connected Computing?
+
+A faculty task force, in collaboration with Vice Provost for Special Initiatives Duane Watson, the provost and the chancellor, is working to finalize the mission and core values of the new college. As next steps are solidified, updates will be provided regarding faculty, staff and student recruitment, as well as opportunities for collaboration and partnership with industry leaders. 
+
+#### How can the Vanderbilt community get involved?
+
+The College of Connected Computing will emphasize collaboration across all schools and colleges at Vanderbilt. Faculty, staff and students interested in contributing to or learning more about this initiative are encouraged to stay engaged as updates are shared through university communications and events. 
+
+#### What programs will be offered in the College of Connected Computing?
+
+The new dean and provost will decide the specific programs and degrees offered by the College of Connected Computing. The task force is providing suggested programs as part of its work back to Vice Provost for Special Initiatives Duane Watson, the provost and the chancellor. Their goal is to ensure the new college offers innovative and interdisciplinary programs in computer science, artificial intelligence, data science and related fields. The task force is working to identify programs that will meet the growing demand for technology-focused education and align with Vanderbilt’s strengths and commitment to interdisciplinary collaboration. Further details on the programs will be announced as the task force finalizes its recommendations. 
+
 
 
 <br>
