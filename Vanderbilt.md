@@ -2,74 +2,30 @@
 layout: default
 ---
 
-## Team Members
+## Vanderbilt University
 
-We have many talented researchers responsible for driving this project and its related topics forward significantly. Their contributions, in any form, are highly appreciated. Specifically, we categorize the team members as core members, commentators, contributors, and student members based on their contributions and roles.
+### College of Connected Computing
 
-### Core Members
+To provide more students with the skills and credentials needed in a society shaped by technology, Vanderbilt is establishing the College of Connected Computing, the university’s first new college in 40 years. The new, interdisciplinary college will advance breakthrough discoveries and strengthen computing education for every one of our students through a “computing for all” approach.
 
-<div align="center">
+#### Establishing a New College
 
-<font color = gray>
+The College of Connected Computing’s teaching and research in AI, data science and other disciplines will advance those fields and support students and faculty in every one of Vanderbilt’s schools and colleges. Every student and faculty member will have the opportunity to develop fluency in today’s essential technology and to use it to excel in any area they are studying. 
 
-  <div align="center" class="image-container">
-    <img align="middle" src="https://spatiotemporal-data.github.io/images/fuqiang_liu.jpg" width="130" alt="Circular Image"/>
-  </div>
-  <div align = "center">
-    <a href="https://openreview.net/profile?id=~Fuqiang_Liu2">Fuqiang Liu (刘福强)</a>
-  </div>
-  <div align = "center">
-    Ph.D. candidate @McGill University
-  </div>
-  <div align = "center">
-    Interests: Deep Learning and AI for Science
-  </div>
-  <div align = "center">
-    Role: Research & Education (@dataworker)
-  </div>
+A search for the college’s inaugural dean launched in fall 2024. We plan to enroll our first students in this college by the fall of 2026. 
 
-<br>
+#### Why is Vanderbilt creating the College of Connected Computing?
 
-  <div class="image-container">
-    <img align="middle" src="https://spatiotemporal-data.github.io/images/DingyiZhuang.jpg" width="130" alt="Circular Image"/>
-  </div>
-  <div align = "center">
-    <a href="https://zhuangdingyi.github.io/">Dingyi Zhuang (庄丁奕)</a>
-  </div>
-  <div align = "center">
-    Ph.D. candidate @MIT
-  </div>
-  <div align = "center">
-    Interests: Bring AI Techniques to Transportation Engineering and Urban Planning
-  </div>
-  <div align = "center">
-    Role: Open Science in <a href="https://sites.mit.edu/tensor4ml/">Tensor4ML</a>
-  </div>
+Of all the factors shaping society, few are more influential than the rapid emergence of advanced computing, AI and data science. To continue to carry out the university's mission, prepare all of Vanderbilt's students for their careers and advance research across the university, Vanderbilt must contribute even more to the study, understanding and innovative application of these fast-changing disciplines. The aim is to make Vanderbilt a global leader in these fields, ensuring the university's continued academic excellence and capacity for world-changing innovation.
 
-</font>
-</div>
+#### How will the creation of this new college affect current students?
 
-<br>
+The creation of the College of Connected Computing will not negatively affect the requirements, time to completion, or quality of any major that is moved to the new college. Students currently enrolled in a major that ultimately becomes housed in the new school will have uninterrupted access to the same level of world-class faculty and opportunities within the major they have now. As we go through this exciting change, every decision is being informed by best practice with the intention of improving the educational experience for students. More specifics will be communicated as plans develop.
 
-### Contributors
+#### How will this new college connect to other areas of the university?
 
-<div align="center">
+The new, interdisciplinary college will collaborate with all of Vanderbilt’s schools and colleges to advance discoveries and strengthen computing education through a “computing for all” approach.
 
-<font color = gray>
 
-  <div class="image-container">
-    <img align="middle" src="https://spatiotemporal-data.github.io/images/jieling.jpg" width="130" alt="Circular Image"/>
-  </div>
-  <div align = "center">
-    <a href="https://jieling-jin.github.io/">Jieling Jin (金杰灵)</a>
-  </div>
-  <div align = "center">
-    Ph.D. candidate @Central South University
-  </div>
-  <div align = "center">
-    Role: Feedback on <a href="https://spatiotemporal-data.github.io/posts/ts_conv/">Time Series Convolution</a>
-  </div>
-</font>
-</div>
 
 <br>
