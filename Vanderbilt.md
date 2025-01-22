@@ -60,8 +60,28 @@ The new dean and provost will decide the specific programs and degrees offered b
 
 Immersion Vanderbilt is a dynamic, two-part program for undergraduate students that merges academic excellence with real-world experiences, providing a platform for you to dive deeply into a field of interest and make a tangible impact.
 
-#### 
+#### Two-Part Program, Endless Possibilities
 
+Immersion Vanderbilt is more than just an academic requirement for all undergraduate students–it’s an opportunity to tailor your educational journey to match your passions and career aspirations. This unique opportunity allows students to work closely with faculty mentors, tap into Vanderbilt’s extensive resources, and make a difference in their chosen field.
+
+#### Culminating Projects
+
+As the second half of Immersion Vanderbilt, the culminating project is simply what students create informed by their immersive experience(s). Immersion Vanderbilt culminating projects are as unique as the students who create them! 
+
+Spring 2025 Graduates must submit their culminating projects by Monday, April 21, 2025. Faculty have until May 3 to mark Immersion Vanderbilt projects as complete. Every student must submit a culminating project submission form to complete Immersion Vanderbilt and it must be approved by a Vanderbilt faculty member.
+
+Formats for Culminating Projects
+Like immersive experiences, culminating projects can be completed as part of a pre-approved program of study, a tagged class, or as an independent project with support from an Immersion Vanderbilt faculty adviser.  Depending on the project, presenting at a showcase or fair may be required.
+
+Projects can take many forms, including but not limited to:
+
+- Presentation (e.g., conference, research fair, Immersion Vanderbilt showcase)
+- Artwork, installation, or exhibit
+- Media project (e.g., podcast, website, film, recording, etc.)
+- Musical composition
+- Live performance (e.g., theatre, musical, dance, etc.)
+- Portfolio (can involve multiple formats and products)
+- Creative writing
 
 
 <br>
