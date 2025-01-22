@@ -177,6 +177,65 @@ FutureVU provides a framework for the future of Vanderbilt, while considering co
 
 <br>
 
+### [Vanderbilt Center for Sustainability, Energy and Climate](https://www.vanderbilt.edu/climate/)
+
+As one of the defining challenges of the 21st century, climate change poses serious threats to human health, global infrastructure, economic stability and established regulatory frameworks. Discovering innovative solutions to promote sustainability demands an approach that addresses both fundamental research challenges and broad interdisciplinary collaboration.
+
+#### Mission
+
+VSEC advances rigorous, high-level research, educational opportunities, and entrepreneurship—often in partnership with communities, government agencies, industry, national laboratories, and other research institutions—around sustainability, energy and climate. The center also serves as a global hub to engage Vanderbilt University’s world-class expertise in engineering, science, law, policy and education to investigate areas such as:
+
+- Energy Integration
+- Resource Sustainability
+- Climate Change Mitigation and Adaptation
+- Systems Risk, Reliability, and Resilience
+
+<br>
+
+#### Principles
+
+To achieve its goals, the VSEC has developed a framework meant to encompass all its activities, from laboratory research to community events. These core principles include:
+
+- **Community Focus**: Close and purposeful integration of technology, information, social sciences, and the humanities with an emphasis on advancing and equipping urban and rural communities with tools and applications ensures community-focused solutions.
+- **Responsibility and Transparency**: Ensuring that we engage multi-disciplinary teams of university researchers and community members in our discussions and conduct a series of outward-facing and inward-looking workshops and seminars to discuss projects and their benefits while making clear the nature of individual and community data that will be used, and the steps taken to ensure responsible use of technology.
+- **Integrated Research and Immersion**: We will ensure that each of the projects and research work we conduct are tightly integrated with undergraduate and graduate learning and immersion opportunities.
+- **Sustainability and Resilience**: We will focus on meeting the goals of VSEC by attracting external funding and ensuring the ability to sustain the center by being adaptive and managing inevitable changes.
+- **Global Reach**: Fostering international exchange and partnerships to address global issues of climate change, resilience, and sustainability.
+- **Equity and Inclusion**: Ensuring we work towards research mechanisms that consider social challenges of inclusion, equity, and empowerment to communities, and public access to the benefits of innovations developed by VSEC.
+
+<br>
+
+### [I-24 MOTION](https://i24motion.org/)
+
+The Tennessee Department of Transportation's I-24 Mobility Technology Interstate Observation Network (MOTION) is a four-mile section of I-24 in the Nashville-Davidson County Metropolitan area with 294 ultra-high definition cameras. Those images are converted into a digital model of how every vehicle behaves with unparalleled detail. This is all done anonymously using Artificial Intelligence (AI) trajectory algorithms developed by Vanderbilt University.
+
+Vehicle trajectory data allows us to uncover new insights into how traffic flow influences individual vehicle behavior. This groundbreaking understanding of traffic is more important than ever due to the increasing automation capability of individual vehicles, which are beginning to influence traffic flow through their interactions with conventional vehicles. By unlocking a new understanding of how these vehicles influence traffic, vehicle and infrastructure design can be optimized to reduce traffic concerns in the future to improve safety, air quality, and fuel efficiency.
+
+The purpose of I-24 MOTION is to provide an environment for testing advanced traffic management and automated vehicle technologies in real freeway traffic. Automakers and suppliers are investing billions of dollars in adding connectivity and automation features to vehicles, forever changing safety and mobility. These technologies are often developed in the laboratory or closed-course settings. Testing in traffic captures the variability of real-world conditions and human behavior. Complementary congestion management technologies are being installed by TDOT along this same section of interstate as part of the I-24 SMART Corridor project. Read more about the I-24 MOTION project from TDOT.
+
+Using the information gathered on this testbed, I-24 MOTION will provide insights to allow the industry to build better products and allow TDOT to better understand how to make the most out of these products for managing infrastructure assets. The first testbed user is the U.S. Department of Energy’s sponsored research with the CIRCLES Consortium, which is studying the possibility of smoothing traffic by introducing vehicles equipped with advanced driver-assist systems.
+
+<br>
+
+### [CRESP](https://www.cresp.org/)
+
+CRESP carries out its work over four project areas, providing support to the DOE-EM to improve scientific and technical bases for environmental management decisions.
+
+<br>
+
+### [Experience Vanderbilt](https://www.vanderbilt.edu/experience-vanderbilt/)
+
+Experience Vanderbilt (EV) is a student-led, university-supported initiative that provides undergraduate students who qualify for need-based financial aid with funding for extracurricular activities that have fees.
+
+These extracurricular activities include student organizations, club sports, arts and cultural experiences, service trips, outdoor recreation trips, Greek Life, or any official Vanderbilt student organization that has fees associated with participation. EV awarded almost $650,000 for the 2023-2024 academic year through a confidential application available on AnchorLink and a random selection process. Applicants are eligible to receive up to $600 for one of their three ranked experiences. Students also have the opportunity to apply for the EV Event Pass of $100, which can be used to purchase tickets for on-campus events. 
+
+2024-2025 academic year applications will reopen at the beginning of the academic year for first year and transfer students.
+
+<br>
+
+#### Our Mission
+
+We cultivate vibrant, inclusive communities that foster a student’s sense of belonging and wellbeing through collaborative partnerships, transformative learning experiences, and an accessible and holistic network of resources.
 
 
 
