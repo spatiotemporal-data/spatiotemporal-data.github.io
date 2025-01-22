@@ -42,6 +42,11 @@ The proximal gradient update can be written as follows,
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> is the step size, and the gradient of the first component in the objective function is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-\boldsymbol{X}^\top(\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta})"/>.
 
+**References**
+
+- Ryan Tibshirani. [Proximal Gradient Descent (and Acceleration)](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/prox-grad.pdf).
+- Xiaohan Chen, Jialin Liu, Zhangyang Wang, Wotao Yin (2021). [Hyperparameter Tuning is All You Need for LISTA](https://proceedings.neurips.cc/paper/2021/file/60c97bef031ec312b512c08565c1868e-Paper.pdf). NeurIPS 2021.
+
 <br>
 
 ### 34th Mile
