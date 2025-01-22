@@ -8,7 +8,7 @@ layout: default
 
 <br>
 
-### 35th Mile
+### 36th Mile
 #### Cardinality Minimization, Constraints, and Regularization
 
 
@@ -19,7 +19,7 @@ layout: default
 
 <br>
 
-### 34th Mile
+### 35th Mile
 #### Iterative Shrinkage Thresholding Algorithm (ISTA)
 
 In machine learning, the closed-form solution to LASSO is defined upon the soft thresholding operator such that
