@@ -384,6 +384,10 @@ If it takes a rank-one approximation such that <img style="display: inline;" src
 which can be converted into circular convolution. By doing so, the computing process can be accelerated with fast Fourier transform.
 </span>
 
+<br>
+
+<b>Acknowledgement.</b> <a href='https://github.com/yangjm67'>Jinming Yang</a> help correct the notation mistake of circular convolution in this example.
+
 ---
 
 <br>
