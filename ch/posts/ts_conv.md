@@ -25,15 +25,15 @@ layout: default
 
 ## 第一部分 动机
 
-The development of machine learning models in the past decade is truly remarkable. Convolution is one of the most commonly-used operations in applied mathematics and signal processing, which has been widely applied to several machine learning problems. The aims of this post are revisiting the essential ideas of circular convolution and laying an insightful foundation for modeling time series data.
+过去十年中，机器学习模型的发展确实令人瞩目。卷积是应用数学和信号处理中最常用的操作之一，已广泛应用于多个机器学习问题。本文的目的是重新审视循环卷积的基本思想，并为时间序列数据的建模奠定深刻的基础。
 
-Nowadays, although we have quite a lot of machine learning algorithms on hand, it is still necessary to rethink about the following perspectives in time series modeling:
+如今，尽管我们手头上有相当多的机器学习算法，但在时间序列建模中仍然有必要重新思考以下三点：
 
-- How to characterize global time series trends?
-- How to characterize local time series trends?
-- How to learn interpretable local and nonlocal patterns as convolutional kernels?
+- 如何表征全局时间序列趋势？
+- 如何表征局部时间序列趋势？
+- 如何学习可解释的局部和非局部模式作为卷积核？
 
-Sometimes, time series exhibit complicated trends if [they are not stationary](https://otexts.com/fpp2/stationarity.html).
+有时，如果[时间序列不是平稳的](https://otexts.com/fpp2/stationarity.html)，它们会表现出复杂的趋势。
 
 <br>
 
