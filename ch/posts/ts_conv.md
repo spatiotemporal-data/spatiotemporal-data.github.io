@@ -2,15 +2,13 @@
 layout: default
 ---
 
-# Time Series Convolution
+# 时间序列卷积
 
-<p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
-
-<p align="center"><span style="color:gray">(Updated on January 22, 2025)</span></p>
+<p align="center"><span style="color:gray">一种用于增强时间序列趋势建模和时间模式挖掘的卷积核方法，可利用傅里叶变换进行快速计算。同时，可解释的机器学习模型（如稀疏回归）为更好地捕捉现实世界时间序列的长期变化和时间模式提供了途径。</span></p>
 
 <br>
 
-In this post, we intend to explain the essential ideas of our research work:
+本文将讨论近期研究中的基本建模思路：
 
 - Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). [Laplacian convolutional representation for traffic time series imputation](https://doi.org/10.1109/TKDE.2024.3419698). IEEE Transactions on Knowledge and Data Engineering. 36 (11): 6490-6502.
 - Xinyu Chen, Xi-Le Zhao, Chun Cheng (2024). [Forecasting urban traffic states with sparse data using Hankel temporal matrix factorization](https://doi.org/10.1287/ijoc.2022.0197). INFORMS Journal on Computing.
@@ -19,13 +17,13 @@ In this post, we intend to explain the essential ideas of our research work:
 
 **Content:**
 
-In **Part I** of this series, we introduce motivations of time series modeling with global and local trends. These time series trends are important for improving the performance of time series imputation. If there is one appropriate interpretable machine learning model, it is also possible to quantify the periodicity of time series. Following the basic motivations, we elaborate on several key concepts such as circular convolution, convolution matrix, circulant matrix, and discrete Fourier transform in **Part II**.
+在本系列的第一部分中，我们介绍具有全局和局部趋势的时间序列建模动机。这些时间序列趋势对于提高时间序列插补的性能非常重要。如果有一个合适的可解释机器学习模型，还可以量化时间序列的周期性。在基本动机之后，我们在第二部分详细阐述了几个关键概念，如循环卷积、卷积矩阵、循环矩阵和离散傅里叶变换。
 
-**Part III** and **Part IV** give the modeling ideas of circulant matrix nuclear norm minimization and Laplacian convolutional representation, addressing the critical challenges in time series imputation tasks. The optimization algorithm of both models makes use of fast Fourier transform in a log-linear time complexity. **Part V** presents an interpretable convolutional kernel method in which the sparsity of convolutional kernels is modeled by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity constraints.
+第三部分和第四部分介绍了循环矩阵核范数最小化和拉普拉斯卷积表示的建模思想，解决了时间序列插补任务中的关键挑战。这两种模型的优化算法利用快速傅里叶变换，具有对数线性时间复杂度。第五部分提出了一种可解释的卷积核方法，其中卷积核的稀疏性通过<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-范数构造的稀疏约束来建模。
 
 <br>
 
-## I. Motivation
+## 第一部分 动机
 
 The development of machine learning models in the past decade is truly remarkable. Convolution is one of the most commonly-used operations in applied mathematics and signal processing, which has been widely applied to several machine learning problems. The aims of this post are revisiting the essential ideas of circular convolution and laying an insightful foundation for modeling time series data.
 
