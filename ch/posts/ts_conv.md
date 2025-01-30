@@ -42,7 +42,7 @@ layout: default
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-(a) Global trends (e.g., long-term daily/weekly periodicity)
+(a) 全局趋势（例如，长期的每日/每周周期性）
 </p>
 
 <p align="center">
@@ -50,17 +50,17 @@ layout: default
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-(b) Local trends (e.g., short-term time series trends)
+(b) 局部趋势（例如，短期时间序列趋势）
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 1.</b> Illustration of time series trends.
+<b>图1.</b> 时间序列趋势的示意图。
 </p>
 
 
 <br>
 
-## II. Preliminaries
+## 第二部分 基础知识
 
 In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key essential ideas, including circular convolution, discrete Fourier transform, and fast Fourier transform, from the field of signal processing. In the following sections, we will discuss: 
 
