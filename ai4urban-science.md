@@ -6,10 +6,6 @@ AI for Science (see an introduction [here](https://ai4sciencecommunity.github.io
 
 # AI for Urban Science
 
-Hankel matrix factorization problem:
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{W},\boldsymbol{X},\boldsymbol{z}}\,&\frac{1}{2}\|\boldsymbol{y}-\mathcal{H}^{\dagger}(\boldsymbol{W}\boldsymbol{X}^{\top})\|_2^2 \\ \text{s.t.}\,&\boldsymbol{W}\boldsymbol{X}^\top=\mathcal{H}(\boldsymbol{z}) \end{aligned}"/></p>
-
 
 
 **AI for Science**
@@ -62,5 +58,11 @@ Hankel matrix factorization problem:
 
 - [Blog post (Gregory Gundersen)](https://gregorygundersen.com/blog/)
 
+
+<br>
+
+Hankel matrix factorization problem:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{W},\boldsymbol{X},\boldsymbol{z}}\,&\frac{1}{2}\|\boldsymbol{y}-\mathcal{H}^{\dagger}(\boldsymbol{W}\boldsymbol{X}^{\top})\|_2^2 \\ \text{s.t.}\,&\boldsymbol{W}\boldsymbol{X}^\top=\mathcal{H}(\boldsymbol{z}) \end{aligned}"/></p>
 
 <br>
