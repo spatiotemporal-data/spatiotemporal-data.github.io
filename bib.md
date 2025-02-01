@@ -24,27 +24,27 @@ layout: default
 
 <br>
 
-For any positive semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{Y}\in\mathbb{R}^{n\times n}"/>, the optimization problem of rank-one single-factor matrix decomposition with sparse penalty can be formulated as follows,
+For any positive semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}\in\mathbb{R}^{n\times n}"/>, the optimization problem of rank-one single-factor matrix decomposition with sparse penalty can be formulated as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\min_{\boldsymbol{x}}\,\frac{1}{2}\|\boldsymbol{Y}-\boldsymbol{x}\boldsymbol{x}^{\top}\|_F^2+\frac{\lambda}{2}\|\boldsymbol{x}\|_1"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}\,\frac{1}{2}\|\boldsymbol{Y}-\boldsymbol{x}\boldsymbol{x}^{\top}\|_F^2+\frac{\lambda}{2}\|\boldsymbol{x}\|_1"/></p>
 
 can be solved by the following algorithm:
 
-- Initialize <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{x}"/> as the unit vector with equal entries;
+- Initialize <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> as the unit vector with equal entries;
 - Repeat
   - Compute
 
-  <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{x}:=\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})/\|\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})\|_2"/></p>
+  <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}:=\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})/\|\mathcal{S}_{\lambda}(\boldsymbol{Y}\boldsymbol{x})\|_2"/></p>
 
 - Until convergence
-- Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;d=\boldsymbol{x}^{\top}\boldsymbol{Y}\boldsymbol{x}"/> (referring to the singular value);
-- Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;\boldsymbol{x}:=\sqrt{d}\boldsymbol{x}"/>.
+- Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d=\boldsymbol{x}^{\top}\boldsymbol{Y}\boldsymbol{x}"/> (referring to the singular value);
+- Compute <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}:=\sqrt{d}\boldsymbol{x}"/>.
 
 In the algorithm, the soft-thresholding operator is defined as
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?\large&space;[\mathcal{S}_{\lambda}(\boldsymbol{x})]_{i}=\begin{cases} x_{i}-\lambda, & \text{if}\,x_{i}>t \\ x_{i}+\lambda, & \text{if}\,x_{i}<-t \\ 0, & \text{otherwise} \end{cases}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;[\mathcal{S}_{\lambda}(\boldsymbol{x})]_{i}=\begin{cases} x_{i}-\lambda, & \text{if}\,x_{i}>t \\ x_{i}+\lambda, & \text{if}\,x_{i}<-t \\ 0, & \text{otherwise} \end{cases}"/></p>
 
-for all <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?\large&space;i\in\{1,2,\ldots,n\}"/>.
+for all <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;i\in\{1,2,\ldots,n\}"/>.
 
 <br>
 
