@@ -105,7 +105,7 @@ If one uses MLP in the optimization, then it becomes
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{\theta}}\,&\frac{1}{n}\sum_{j=1}^{d}\ell(\boldsymbol{x}_j,\text{MLP}(\boldsymbol{X};\boldsymbol{\theta}_j))+\lambda\|\boldsymbol{A}_{j}^{(1)}\|_{1,1} \\ \text{s.t.}\,&h(W(\boldsymbol{\theta}))=0 \end{aligned}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=\{\boldsymbol{\theta}_{j}\}_{j=1}^{d}"/> denotes all parameters and the parameters of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;j"/>th MLP are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}_j=(\boldsymbol{A}_{j}^{1},\boldsymbol{A}_{j}^{(2)},\cdots, \boldsymbol{A}_{j}^{(h)})"/>.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=\{\boldsymbol{\theta}_{j}\}_{j=1}^{d}"/> denotes all parameters and the parameters of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;j"/>th MLP are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}_j=(\boldsymbol{A}_{j}^{(1)},\boldsymbol{A}_{j}^{(2)},\cdots, \boldsymbol{A}_{j}^{(h)})"/>.
 
 **References**
 
