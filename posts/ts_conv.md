@@ -394,7 +394,7 @@ which can be converted into circular convolution. By doing so, the computing pro
 
 <br>
 
-Figure 5 shows the empirical time complexity of the inverse of Hankel matrix factorization with element-wise multiplication and circular convolution, respectively. If one uses circular convolution with fast Fourier transform, then the computational cost of inverse operations is about 100 fold compared to the element-wise multiplication. It turns out that the element-wise multiplication is more efficient than the circular convolution.
+Figure 5 shows the empirical time complexity of the inverse of Hankel matrix factorization with element-wise multiplication and circular convolution, respectively. If one uses circular convolution with fast Fourier transform, then the computational cost of inverse operations is about 100 fold compared to the element-wise multiplication. It turns out that the element-wise multiplication is more efficient than the circular convolution in this case.
 
 <br>
 
