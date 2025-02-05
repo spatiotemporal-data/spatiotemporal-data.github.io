@@ -401,7 +401,7 @@ Figure 5 shows the empirical time complexity of the inverse of Hankel matrix fac
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 5.</b> Empirical time complexity of the inverse of Hankel matrix factorization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}=\mathcal{H}^{\dagger}(\boldsymbol{w}\boldsymbol{q}^\top)"/>. Note that we set the vector length as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\in\{2^5,2^6,\cdots,2^{13}\}"/> and repeat the numerical experiments 100 times corresponding to each vector length.
+<b>Figure 5.</b> Empirical time complexity of the inverse of Hankel matrix factorization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}=\mathcal{H}^{\dagger}(\boldsymbol{w}\boldsymbol{q}^\top)"/>. Note that we set the vector length as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\in\{2^5,2^6,\cdots,2^{13}\}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T=2n-1"/>. We repeat the numerical experiments 100 times corresponding to each vector length.
 </p>
 
 <br>
