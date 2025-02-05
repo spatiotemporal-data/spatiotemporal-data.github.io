@@ -392,14 +392,14 @@ which can be converted into circular convolution. By doing so, the computing pro
 
 <br>
 
-Figure 5 shows the empirical time complexity of Hankel matrix factorization with both element-wise multiplication and circular convolution. 
+Figure 5 shows the empirical time complexity of the inverse of Hankel matrix factorization with both element-wise multiplication and circular convolution. If one uses circular convolution with fast Fourier transform, then the computational cost of inverse operations is about 100 fold compared to the element-wise multiplication.
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/empirical_time_complexity_hankel.png" width="500" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/empirical_time_complexity_hankel.png" width="550" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 5.</b> Singular value decomposition of matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/>. In the decomposed matrices, the unitary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{m\times t}"/> (or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{n\times t}"/>) consists of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> orthogonal left (or right) singular vectors, while the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> diagonal entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}"/> are singular values such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1\geq s_2\geq\cdots\geq s_t\geq 0"/>. Note that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/> for notational convenience. 
+<b>Figure 5.</b> Empirical time complexity of the inverse of Hankel matrix factorization . Note that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/> for notational convenience. 
 </p>
 
 <br>
