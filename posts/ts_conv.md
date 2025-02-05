@@ -1038,6 +1038,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\sum_{t=1}^{T-1}\beta_t =\|\boldsymbol{\beta}\|_1\leq \tau"/></p>
 
+because the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\beta}"/> is a non-negative vector.
 
 <br>
 
