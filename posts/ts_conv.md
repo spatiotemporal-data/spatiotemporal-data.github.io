@@ -399,8 +399,42 @@ Figure 5 shows the empirical time complexity of the inverse of Hankel matrix fac
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 5.</b> Empirical time complexity of the inverse of Hankel matrix factorization . Note that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/> for notational convenience. 
+<b>Figure 5.</b> Empirical time complexity of the inverse of Hankel matrix factorization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}=\mathcal{H}^{\dagger}(\boldsymbol{w}\boldsymbol{q}^\top)"/>. Note that we set the vector length as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\in\{2^5,2^6,\cdots,2^{13}\}"/> and repeat the numerical experiments 100 times corresponding to each vector length.
 </p>
+
+<br>
+
+```python
+import numpy as np
+
+def inverse_hankel(w, q, fft = False):
+    dim1 = w.shape[0]
+    dim2 = q.shape[0]
+    dim = min(dim1, dim2)
+    T = dim1 + dim2 - 1
+    x_tilde = np.zeros(T)
+    for t in range(T):
+        w_new = np.zeros(t + 1)
+        if t < dim1:
+            w_new[: t + 1] = w[: t + 1]
+        elif t >= dim1:
+            w_new[: dim1] = w
+        q_new = np.zeros(t + 1)
+        if t < dim2:
+            q_new[: t + 1] = q[: t + 1]
+        elif t >= dim2:
+            q_new[: dim2] = q
+        if t < dim:
+            rho = t + 1
+        else:
+            rho = T - (t + 1) + 1
+        if fft == True:
+            vec = np.fft.ifft(np.fft.fft(w_new) * np.fft.fft(q_new)).real
+            x_tilde[t] = vec[t] / rho
+        elif fft == False:
+            x_tilde[t] = np.inner(w_new, np.flip(q_new)) / rho
+    return x_tilde
+```
 
 <br>
 
