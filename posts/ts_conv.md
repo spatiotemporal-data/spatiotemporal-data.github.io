@@ -394,6 +394,13 @@ which can be converted into circular convolution. By doing so, the computing pro
 
 Figure 5 shows the empirical time complexity of Hankel matrix factorization with both element-wise multiplication and circular convolution. 
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/empirical_time_complexity_hankel.png" width="500" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 5.</b> Singular value decomposition of matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/>. In the decomposed matrices, the unitary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{m\times t}"/> (or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{n\times t}"/>) consists of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> orthogonal left (or right) singular vectors, while the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> diagonal entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}"/> are singular values such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1\geq s_2\geq\cdots\geq s_t\geq 0"/>. Note that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/> for notational convenience. 
+</p>
 
 <br>
 
@@ -448,7 +455,7 @@ Nuclear norm is a key concept in matrix computations and convex optimization, fr
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{X}\|_{*}=\sum_{r=1}^{t}s_{r}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_*"/> denotes the nuclear norm. As illustrated in Figure 5, the singular values are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1,s_2,\ldots, s_t"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/>.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_*"/> denotes the nuclear norm. As illustrated in Figure 6, the singular values are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1,s_2,\ldots, s_t"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/>.
 
 <br>
 
@@ -457,7 +464,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 5.</b> Singular value decomposition of matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/>. In the decomposed matrices, the unitary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{m\times t}"/> (or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{n\times t}"/>) consists of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> orthogonal left (or right) singular vectors, while the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> diagonal entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}"/> are singular values such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1\geq s_2\geq\cdots\geq s_t\geq 0"/>. Note that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/> for notational convenience. 
+<b>Figure 6.</b> Singular value decomposition of matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/>. In the decomposed matrices, the unitary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{m\times t}"/> (or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{n\times t}"/>) consists of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> orthogonal left (or right) singular vectors, while the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> diagonal entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}"/> are singular values such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1\geq s_2\geq\cdots\geq s_t\geq 0"/>. Note that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/> for notational convenience. 
 </p>
 
 <br>
@@ -683,7 +690,7 @@ or
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 6.</b> Illustration of the shrinkage operator for solving the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization problem.
+<b>Figure 7.</b> Illustration of the shrinkage operator for solving the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization problem.
 </p>
 
 <br>
@@ -724,7 +731,7 @@ def update_z(y_train, pos_train, x, w, lmbda, gamma):
 
 ### III-G. Time Series Imputation
 
-As shown in Figure 7, we randomly remove 95% observations as missing values, and we only have 14 volume observations (i.e., 14 blue dots) for the reconstruction. The circulant matrix nuclear norm minimization can capture the global trends from partial observations.
+As shown in Figure 8, we randomly remove 95% observations as missing values, and we only have 14 volume observations (i.e., 14 blue dots) for the reconstruction. The circulant matrix nuclear norm minimization can capture the global trends from partial observations.
 
 <br>
 
@@ -733,7 +740,7 @@ As shown in Figure 7, we randomly remove 95% observations as missing values, and
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 7.</b> Univariate time series imputation on the freeway traffic volume time series. The blue and red curves correspond to the ground truth time series and reconstructed time series achieved by the circulant matrix nuclear norm minimization.
+<b>Figure 8.</b> Univariate time series imputation on the freeway traffic volume time series. The blue and red curves correspond to the ground truth time series and reconstructed time series achieved by the circulant matrix nuclear norm minimization.
 </p>
 
 <br>
@@ -758,12 +765,12 @@ Laplacian convolutional representation model proposed by [Chen et al., (2024)](h
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 8.</b> Undirected and circulant graphs on the data points <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{x_1,x_2,x_3,x_4,x_5\}"/> with certain degrees. The degrees of the left and right graphs are 2 and 4, respectively.
+<b>Figure 9.</b> Undirected and circulant graphs on the data points <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{x_1,x_2,x_3,x_4,x_5\}"/> with certain degrees. The degrees of the left and right graphs are 2 and 4, respectively.
 </p>
 
 <br>
 
-By definition, the Laplacian matrix of a circulant graph (see e.g., Figure 8) is a circulant matrix (refer to the formal definition of circulant matrix in Section II-C). In Figure 8, the Laplacian matrix corresponding to the left graph is expressed as
+By definition, the Laplacian matrix of a circulant graph (see e.g., Figure 9) is a circulant matrix (refer to the formal definition of circulant matrix in Section II-C). In Figure 9, the Laplacian matrix corresponding to the left graph is expressed as
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \end{bmatrix}=\mathcal{C}(\boldsymbol{\ell})\in\mathbb{R}^{5\times 5}"/></p>
 
@@ -888,7 +895,7 @@ where the auxiliary matrix <img style="display: inline;" src="https://latex.code
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{2} \\ x_{1} & x_{T} & x_{T-1} & \cdots & x_{3} \\ x_{2} & x_{1} & x_{T} & \cdots & x_{4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T-2} & x_{T-3} & x_{T-4} & \cdots & x_{T} \\ x_{T-1} & x_{T-2} & x_{T-3} & \cdots & x_{1} \\ \end{bmatrix}"/></p>
 
-where the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is separated into the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> (i.e., first column of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>) and the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> (i.e., last <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-1"/> columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>), see Figure 9 and Figure 10 for illustrations.
+where the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is separated into the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> (i.e., first column of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>) and the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> (i.e., last <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-1"/> columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>), see Figure 10 and Figure 11 for illustrations.
 
 <br>
 
@@ -897,12 +904,12 @@ where the matrix <img style="display: inline;" src="https://latex.codecogs.com/s
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 9.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
+<b>Figure 10.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
 </p>
 
 <br>
 
-As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 10), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
+As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 11), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
 
 <br>
 
@@ -913,7 +920,7 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 10.</b> Illustration of circular convolution with a structured vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
+<b>Figure 11.</b> Illustration of circular convolution with a structured vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
 </p>
 
 
@@ -956,7 +963,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 11.</b> Illustration of learning <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> from the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> with the constructed formula as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\approx\boldsymbol{A}\boldsymbol{w}"/>.
+<b>Figure 12.</b> Illustration of learning <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> from the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> with the constructed formula as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\approx\boldsymbol{A}\boldsymbol{w}"/>.
 </p>
 
 <br>
@@ -987,7 +994,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 There are often some special-purpose algorithms for solving constrained linear regression problems, see [constrained least squares](https://en.wikipedia.org/wiki/Constrained_least_squares). Some examples of constraints include: 1) Non-negative least squares in which the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> must satisfy the vector inequality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\geq 0"/> (each entry must be either positive or zero); 2) Box-constrained least squares in which the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> must satisfy the vector inequalities <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}_{\ell}\leq\boldsymbol{w}\leq \boldsymbol{b}_{u}"/>.
 
-In fact, the linear regression with sparsity constraints in the form of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm can be easily converted into a mixed-integer programming problem. Thus, the problem illustrated in Figure 11 is equivalent to
+In fact, the linear regression with sparsity constraints in the form of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm can be easily converted into a mixed-integer programming problem. Thus, the problem illustrated in Figure 12 is equivalent to
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_t\leq \tau \end{cases} \end{aligned}"/></p>
 
@@ -1063,7 +1070,7 @@ print(cp.installed_solvers())
 
 ## VI. Insight into Ridesharing Trip Time Series
 
-[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew) and [TNP ridesharing trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p). Figure 12 shows the realistic time series data of ridesharing trips with a strong weekly periodicity, allowing one to examine the usage of interpretable convolutional kernels.
+[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew) and [TNP ridesharing trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p). Figure 13 shows the realistic time series data of ridesharing trips with a strong weekly periodicity, allowing one to examine the usage of interpretable convolutional kernels.
 
 
 <br>
