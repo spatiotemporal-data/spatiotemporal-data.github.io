@@ -392,6 +392,11 @@ which can be converted into circular convolution. By doing so, the computing pro
 
 <br>
 
+Figure 5 shows the empirical time complexity of Hankel matrix factorization with both element-wise multiplication and circular convolution. 
+
+
+<br>
+
 ---
 
 <span style="color:gray">
@@ -1069,12 +1074,12 @@ print(cp.installed_solvers())
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 12.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2\times 7\times 24=336"/> hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
+<b>Figure 13.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2\times 7\times 24=336"/> hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
 </p>
 
 <br>
 
-Take the time series of Figure 12 as an example, the mixed-integer programming solver in CPLEX produces the temporal kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\triangleq (1,-\boldsymbol{w}^\top)^\top\in\mathbb{R}^{336}"/> with
+Take the time series of Figure 13 as an example, the mixed-integer programming solver in CPLEX produces the temporal kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\triangleq (1,-\boldsymbol{w}^\top)^\top\in\mathbb{R}^{336}"/> with
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(\underbrace{0.34}_{t=1},0,\cdots,0,\underbrace{0.33}_{t=168},0,\cdots,0,\underbrace{0.34}_{t=335})^\top\in\mathbb{R}^{335}"/></p>
 
