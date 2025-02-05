@@ -440,6 +440,10 @@ def inverse_hankel(w, q, fft = False):
 
 <br>
 
+For the entire implementation, please check out [Appendix](https://spatiotemporal-data.github.io/posts/ts_conv_supp/).
+
+<br>
+
 ---
 
 <span style="color:gray">
