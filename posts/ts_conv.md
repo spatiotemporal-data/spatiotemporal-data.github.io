@@ -388,7 +388,7 @@ which can be converted into circular convolution. By doing so, the computing pro
 
 ---
 
-<b>Acknowledgement.</b> <a href='https://github.com/yangjm67'>Jinming Yang</a> help correct the notational mistake of circular convolution in this example.
+<b>Acknowledgement.</b> <a href='https://github.com/yangjm67'>Jinming Yang</a> helped correct the notational mistake of circular convolution in this example.
 
 ---
 
