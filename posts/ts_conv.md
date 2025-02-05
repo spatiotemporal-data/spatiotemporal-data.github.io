@@ -343,7 +343,7 @@ On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.c
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_a"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{q}_b"/> are the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;a"/>-th and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;b"/>-th rows of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}"/>, respectively. Herein, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}^{\dagger}(\cdot)"/> denotes the inverse operator of Hankel matrix. For any matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}"/> of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times (T-n+1)"/>, the inverse operator is given by
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;(\mathcal{H}^{\dagger}(\boldsymbol{Y}))_{t}=\frac{1}{\rho_{t}}\sum_{a+b=t+1}y_{a,b}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;[\mathcal{H}^{\dagger}(\boldsymbol{Y})]_{t}=\frac{1}{\rho_{t}}\sum_{a+b=t+1}y_{a,b}"/></p>
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\in\{1,2,\cdots, T\}"/>. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\rho_t"/> is the number of entries on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-th antidiagonal of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times (T-n+1)"/> matrix, satisfying
 
@@ -394,7 +394,7 @@ which can be converted into circular convolution. By doing so, the computing pro
 
 <br>
 
-Figure 5 shows the empirical time complexity of the inverse of Hankel matrix factorization with both element-wise multiplication and circular convolution. If one uses circular convolution with fast Fourier transform, then the computational cost of inverse operations is about 100 fold compared to the element-wise multiplication.
+Figure 5 shows the empirical time complexity of the inverse of Hankel matrix factorization with element-wise multiplication and circular convolution, respectively. If one uses circular convolution with fast Fourier transform, then the computational cost of inverse operations is about 100 fold compared to the element-wise multiplication. It turns out that the element-wise multiplication is more efficient than the circular convolution.
 
 <br>
 
