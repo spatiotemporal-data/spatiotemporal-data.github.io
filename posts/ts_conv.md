@@ -362,7 +362,7 @@ of length <img style="display: inline;" src="https://latex.codecogs.com/svg.late
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r=(w_{1,r},w_{2,r},\cdots,w_{n,r},\underbrace{0,\cdots,0}_{t-n})^\top\in\mathbb{R}^{t}"/></p>
 
-This principle is well-suited to the construction of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{q}}_r"/>. The time complexity of the aforementioned circular convolution is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(R\cdot t\log t)"/>, and the element-wise multiplication takes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(R\cdot t)"/>.
+This principle is well-suited to the construction of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{q}}_r"/>. In order to compute each <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{x}_t,\forall t\in[n]"/>, the time complexity of the aforementioned circular convolution is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(R\cdot t\log t)"/>, and the element-wise multiplication takes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(R\cdot t)"/>.
 
 <br>
 
