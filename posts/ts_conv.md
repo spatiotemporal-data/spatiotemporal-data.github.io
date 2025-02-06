@@ -394,6 +394,16 @@ which can be converted into circular convolution. By doing so, the computing pro
 
 <br>
 
+---
+
+<span style="color:gray">
+<b>Time complexity.</b> Given the Hankel matrix factorization formula as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}=\mathcal{H}^{\dagger}(\boldsymbol{w}\boldsymbol{q}^\top)"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{q}\in\mathbb{R}^{n}"/>, suppose <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T=2n-1"/>, the number of operations for computing the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}"/> in the element-wise multiplication is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;1+2+\cdots+n=\frac{n(n-1)}{2}"/>, leading to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(n^2)"/> time complexity. Following the inverse of Hankel operations in Example 5, the number of operations is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2(1+2+\cdots+[\frac{n}{2}])=[\frac{n}{2}](1+[\frac{n}{2}])"/> if <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> is odd. Otherwise, the number of operations is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2(1+2+\cdots+\frac{n}{2})-\frac{n}{2}=\frac{n}{2}(1+\frac{n}{2})-\frac{n}{2}"/>.
+</span>
+
+---
+
+<br>
+
 Figure 5 shows the empirical time complexity of the inverse of Hankel matrix factorization with element-wise multiplication and circular convolution, respectively. If one uses circular convolution with fast Fourier transform, then the computational cost of inverse operations is about 100 fold compared to the element-wise multiplication. It turns out that the element-wise multiplication is more efficient than the circular convolution in this case.
 
 <br>
