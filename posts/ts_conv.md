@@ -401,6 +401,7 @@ which can be converted into circular convolution. By doing so, the computing pro
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;1+2+\cdots+n=\frac{n(n-1)}{2}"/></p>
 
+<span style="color:gray">
 leading to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(n^2)"/> time complexity. Following the inverse of Hankel matrix factorization in Example 5, the number of operations is 
 </span>
 
