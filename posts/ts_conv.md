@@ -406,7 +406,7 @@ which can be converted into circular convolution. By doing so, the computing pro
 if <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> is odd. Otherwise, the number of operations is 
 </span>
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;2(1+2+\cdots+\frac{n}{2})-\frac{n}{2}=\frac{n}{2}(1+\frac{n}{2})-\frac{n}{2}"/>.
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;2(1+2+\cdots+\frac{n}{2})-\frac{n}{2}=\frac{n}{2}(1+\frac{n}{2})-\frac{n}{2}"/>
 
 ---
 
