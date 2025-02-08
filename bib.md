@@ -22,8 +22,6 @@ layout: default
 ### 36th Mile
 #### Single-Factor Matrix Decomposition with Sparse Penalty
 
-<br>
-
 For any positive semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}\in\mathbb{R}^{n\times n}"/>, the optimization problem of rank-one single-factor matrix decomposition with sparse penalty can be formulated as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{x}}\,\frac{1}{2}\|\boldsymbol{Y}-\boldsymbol{x}\boldsymbol{x}^{\top}\|_F^2+\frac{\lambda}{2}\|\boldsymbol{x}\|_1"/></p>
