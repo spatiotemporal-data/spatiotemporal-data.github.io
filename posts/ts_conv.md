@@ -6,7 +6,7 @@ layout: default
 
 <p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on February 4, 2025)</span></p>
+<p align="center"><span style="color:gray">(Updated on February 9, 2025)</span></p>
 
 <br>
 
@@ -1046,7 +1046,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 #### V-C. Subspace Pursuit
 
-Subspace Pursuit (SP) is an iterative greedy algorithm used for sparse signal recovery, particularly in the context of compressed sensing. It aims to solve the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm minimization problem, which seeks to find the sparsest solution to an underdetermined system of linear equations. The <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm counts the number of non-zero elements in a vector, making it a natural measure of sparsity.
+Subspace Pursuit (SP), introduced by [W. Dai and O. Milenkovic in 2008](https://arxiv.org/pdf/0803.0811), is an iterative greedy algorithm used for sparse signal recovery, particularly in the context of compressed sensing. It aims to solve the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm minimization problem, which seeks to find the sparsest solution to an underdetermined system of linear equations. The <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm counts the number of non-zero elements in a vector, making it a natural measure of sparsity.
 
 - **Input**: Signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>, and sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/>.
 - **Output**: <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/> and index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S"/>.
