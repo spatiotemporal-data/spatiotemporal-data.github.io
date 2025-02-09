@@ -25,7 +25,7 @@ This project presents some spatiotemporal methods with data-driven machine learn
 
 In the past decade, the development of artificial intelligence and machine learning has been truly remarkable. There are several easy-to-follow posts that are created to explain the essential ideas of this project and inspire innovations:
 
-- [Time Series Convolution](https://spatiotemporal-data.github.io/posts/ts_conv/). A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. (Under development)
+- [Time Series Convolution](https://spatiotemporal-data.github.io/posts/ts_conv/). A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series.
 
 To advance the development of spatiotemporal data modeling in the research community, this project handles various spatiotemporal data:
 
