@@ -1051,7 +1051,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 #### V-C. Subspace Pursuit
 
-
+Subspace Pursuit (SP) is an iterative greedy algorithm used for sparse signal recovery, particularly in the context of compressed sensing. It aims to solve the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm minimization problem, which seeks to find the sparsest solution to an underdetermined system of linear equations. The <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm counts the number of non-zero elements in a vector, making it a natural measure of sparsity.
 
 - **Input**: Signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>, and sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K\in\mathbb{Z}^{+}"/>.
 - **Output**: <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/> and index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S"/>.
@@ -1066,9 +1066,73 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
   - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{r}=\boldsymbol{y}-\boldsymbol{A}_S\boldsymbol{x}_S"/>.
 - **end**
 
+<br>
 
+---
+
+<span style="color:gray">
+<b>Example 12.</b> Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the auxiliary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> (i.e., the last 4 columns of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{5\times 5}"/>) is
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
+
+<span style="color:gray">
+The question is how to learn the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> with sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=2"/> from the following optimization problem:
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}"/></p>
+
+<span style="color:gray">
+In this case, the empirical solution of the decision variable is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(0.44,0,0,0.44)^\top"/>. To reproduce it, the solution algorithm of subspace pursuit is given by
+</span>
+
+```python
+import numpy as np
+
+def circ_mat(vec):
+    n = vec.shape[0]
+    mat = np.zeros((n, n))
+    mat[:, 0] = vec
+    for i in range(1, n):
+        mat[:, i] = np.append(vec[-i :], vec[: n - i], axis = 0)
+    return mat
+
+def SP(x, tau, stop = np.infty, nonnegative = True, type = 3, epsilon = 1e-2):
+    t = x.shape[0]
+    mat = circ_mat(x)
+    A = mat[:, 1 :]
+    r = x
+    w = np.zeros(t - 1)
+    S = np.array([])
+    i = 0
+    while np.linalg.norm(r, 2) > epsilon and i < stop:
+        Ar = A.T @ r
+        S0 = np.argsort(abs(Ar))[- tau :]
+        S = np.append(S[:], S0[:]).astype(int)
+        AS = A[:, S]
+        w[S] = np.linalg.pinv(AS) @ x
+        S = np.argsort(abs(w))[- tau :]
+        w = np.zeros(t - 1)
+        AS = A[:, S]
+        w[S] = np.linalg.pinv(AS) @ x
+        r = x - AS @ w[S]
+        i += 1
+        print('Indices of non-zero coefficients (support set):', S)
+        print('Non-zero entries of sparse temporal kernel:', w[S])
+        print()
+    return w, S, r
+
+x = np.array([0, 1, 2, 3, 4])
+tau = 2 # sparsity level
+w, S, r = SP(x, tau, 10)
+```
 
 <br>
+
+---
+
+<br>
+
 
 #### V-D. Mixed-Integer Programming
 
