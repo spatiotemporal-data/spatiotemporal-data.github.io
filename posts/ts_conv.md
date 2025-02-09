@@ -1046,7 +1046,13 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 #### V-C. Subspace Pursuit
 
-Subspace Pursuit (SP), introduced by [W. Dai and O. Milenkovic in 2008](https://arxiv.org/pdf/0803.0811), is an iterative greedy algorithm used for sparse signal recovery, particularly in the context of compressed sensing. It aims to solve the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm minimization problem, which seeks to find the sparsest solution to an underdetermined system of linear equations. The <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm counts the number of non-zero elements in a vector, making it a natural measure of sparsity.
+Subspace Pursuit (SP), introduced by [W. Dai and O. Milenkovic in 2008](https://arxiv.org/pdf/0803.0811), is an iterative greedy algorithm used for sparse signal recovery, particularly in the context of compressed sensing. It aims to solve the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm minimization problem, which seeks to find the sparsest solution to an underdetermined system of linear equations. The <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm counts the number of non-zero elements in a vector, making it a natural measure of sparsity. Generally speaking, one can use the subspace pursuit algorithm to solve the following optimization problem:
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{x}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{x}\|_0\leq \tau \end{aligned}"/></p>
+
+<br>
+
+**Algorithm.** Subspace Pursuit
 
 - **Input**: Signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>, and sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/>.
 - **Output**: <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/> and index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;S"/>.
