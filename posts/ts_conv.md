@@ -926,11 +926,6 @@ print(np.linalg.norm(f_ell * f_x, 2) ** 2 / (2 * len(x)))
 
 ---
 
-<br>
-
-### IV-C. Global + Local Time Series Trend Modeling
-
-
 
 <br>
 
