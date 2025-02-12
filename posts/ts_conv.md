@@ -951,7 +951,7 @@ Recall that the circular convolution can be converted into a linear transformati
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Theta}=\boldsymbol{I}_{T}-w_1\boldsymbol{F}-w_2\boldsymbol{F}^2-\cdots-w_{T-1}\boldsymbol{F}^{T-1}"/></p>
 
-and which is equivalent to
+which is equivalent to
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=(1,-w_1,-w_2,\cdots,-w_{T-1})^\top=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix}"/></p>
 
