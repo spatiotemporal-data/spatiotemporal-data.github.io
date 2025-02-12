@@ -1010,6 +1010,8 @@ Thus, we can compute the circular convolution <img style="display: inline;" src=
 
 <br>
 
+### V-C. Optimization Problem
+
 To reinforce the model interpretability, we impose a sparsity constraint on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/>. This is extremely important for capturing local and nonlocal correlations of time series. The process of learning interpretable convolutional kernels can be formulated as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}"/></p>
@@ -1044,7 +1046,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
-#### V-C. Subspace Pursuit
+#### V-D. Subspace Pursuit
 
 Subspace Pursuit (SP), introduced by [W. Dai and O. Milenkovic in 2008](https://arxiv.org/pdf/0803.0811), is an iterative greedy algorithm used for sparse signal recovery, particularly in the context of compressed sensing. It aims to solve the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm minimization problem, which seeks to find the sparsest solution to an underdetermined system of linear equations. The <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm counts the number of non-zero elements in a vector, making it a natural measure of sparsity. Generally speaking, one can use the subspace pursuit algorithm to solve the following optimization problem:
 
@@ -1135,7 +1137,7 @@ w, S, r = SP(x, tau, 10)
 <br>
 
 
-#### V-D. Mixed-Integer Programming
+#### V-F. Mixed-Integer Programming
 
 There are often some special-purpose algorithms for solving constrained linear regression problems, see [constrained least squares](https://en.wikipedia.org/wiki/Constrained_least_squares). Some examples of constraints include: 1) Non-negative least squares in which the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> must satisfy the vector inequality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\geq 0"/> (each entry must be either positive or zero); 2) Box-constrained least squares in which the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> must satisfy the vector inequalities <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}_{\ell}\leq\boldsymbol{w}\leq \boldsymbol{b}_{u}"/>.
 
