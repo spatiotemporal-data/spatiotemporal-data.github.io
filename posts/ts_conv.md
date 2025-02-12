@@ -947,7 +947,20 @@ where the constraint is of great significance for minimizing the objective funct
 
 ### V-B. Sparse Linear Regression
 
-Recall that the circular convolution can be converted into a linear transformation with circulant matrix. Considering the kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix}"/>, the loss of circular convolution is equivalent to
+Recall that the circular convolution can be converted into a linear transformation with circulant matrix, namely, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\star\boldsymbol{x}=\mathcal{C}(\boldsymbol{\theta})\boldsymbol{x}"/>. If we let <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Theta}=\mathcal{C}(\boldsymbol{\theta})\in\mathbb{R}^{T\times T}"/>, then this matrix can be expressed as a matrix polynomial such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Theta}=\boldsymbol{I}_{T}-w_1\boldsymbol{F}-w_2\boldsymbol{F}^2-\cdots-w_{T-1}\boldsymbol{F}^{T-1}"/></p>
+
+and which is equivalent to
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=(1,-w_1,-w_2,\cdots,-w_{T-1})^\top=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix}"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{I}_{T}\in\mathbb{R}^{T\times T}"/> is the identity matrix and the time-shift matrix is given by
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{F}=\begin{bmatrix} 0 & 0 & 0 & \cdots & 0 & 1 \\ 1 & 0 & 0 & \cdots & 0 & 0 \\ 0 & 1 & 0 & \cdots & 0 & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & 0 & \cdots & 0 & 0 \\ 0 & 0 & 0 & \cdots & 1 & 0 \\ \end{bmatrix}\in\mathbb{R}^{T\times T}"/></p>
+
+
+As a result, the loss function constructed by circular convolution is
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2=\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2"/></p>
 
