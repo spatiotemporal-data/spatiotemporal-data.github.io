@@ -31,4 +31,4 @@ In **Part I** of this series, we introduce the essential idea of time series aut
 
 <br>
 
-<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on February 15, 2025.)</p>
+<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on February 15, 2025)</p>
