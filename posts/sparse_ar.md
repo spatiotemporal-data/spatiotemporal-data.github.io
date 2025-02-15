@@ -16,6 +16,17 @@ In this post, we intend to explain the essential ideas of our research work:
 
 **Content:**
 
+In **Part I** of this series, we introduce the essential idea of time series autoregression in statistics.
+
+<br>
+
+## I. Univariate Autoregression
+
+### I-A. Time Series & Auto-Correlations
+
+### I-B. Definition of Autoregression
+
+
 
 
 <br>
