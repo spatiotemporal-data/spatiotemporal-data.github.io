@@ -964,7 +964,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 ---
 
 <span style="color:gray">
-<b>Example 11.</b> Any square matrix can be multiplied by itself and the result is a square matrix of the same size. Given a <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;5\times 5"/> time-shift matrix such that 
+<b>Example 11.</b> Any square matrix can be multiplied by itself and the result is a square matrix of the same size. Given a time-shift matrix of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;5\times 5"/> such that 
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{F}=\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}"/></p>
