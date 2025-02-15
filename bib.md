@@ -8,6 +8,15 @@ layout: default
 
 <br>
 
+### 38th Mile
+#### Feature Selection for Reinforcement Learning
+
+
+**References**
+- Parr et al. (2008). [An Analysis of Linear Models, Linear Value-Function Approximation, and Feature Selection for Reinforcement Learning](https://dl.acm.org/doi/10.1145/1390156.1390251). ICML 2008. [[PDF](https://users.cs.duke.edu/~parr/icml08.pdf)]
+
+<br>
+
 ### 37th Mile
 #### Cardinality Minimization, Constraints, and Regularization
 
