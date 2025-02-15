@@ -1338,4 +1338,4 @@ From a time series analysis perspective, our modeling ideas can guide future res
 <br>
 <br>
 
-<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 17, 2024.)</p>
+<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 17, 2024)</p>
