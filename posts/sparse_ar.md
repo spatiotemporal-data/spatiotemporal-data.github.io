@@ -26,6 +26,20 @@ In **Part I** of this series, we introduce the essential idea of time series aut
 
 ### I-B. Definition of Autoregression
 
+## II. Sparse Autoregression
+
+### II-A. Subspace Pursuit
+
+### II-B. Mixed-Integer Programming
+
+## III. Time-Varying Sparse Autoregression
+
+### III-A. Ridesharing Data
+
+### III-B. Formulating Time-Varying Systems
+
+### III-C. Solving the Optimization Problem
+
 
 
 
