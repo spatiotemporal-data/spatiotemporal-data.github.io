@@ -6,11 +6,18 @@ layout: default
 
 <p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression.</span></p>
 
-<br>
-
-
-
+<p align="center"><span style="color:gray">(Updated on February 15, 2025)</span></p>
 
 <br>
 
-<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on December 29, 2024.)</p>
+In this post, we intend to explain the essential ideas of our research work:
+
+- Interpretable time series autoregression.
+
+**Content:**
+
+
+
+<br>
+
+<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on February 15, 2025.)</p>
