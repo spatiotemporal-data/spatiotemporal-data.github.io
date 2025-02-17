@@ -9,6 +9,14 @@ layout: default
 <br>
 
 ### 38th Mile
+#### Probabilistic Artificial Intelligence Book
+
+**References**
+- Andreas Krause, Jonas Hübotter (2025). Probabilistic Artificial Intelligence. arXiv:2502.05244. [[PDF](https://arxiv.org/pdf/2502.05244)]
+
+<br>
+
+### 38th Mile
 #### Feature Selection for Reinforcement Learning
 
 
@@ -20,7 +28,22 @@ layout: default
 ### 37th Mile
 #### Cardinality Minimization, Constraints, and Regularization
 
+This is a review paper for solving the optimization problem that involves the cardinality of variable vectors in constraints or objective function. The problems can be formulated as follows,
 
+- Cardinality minimization problems
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\|\boldsymbol{x}\|_0 \\ \text{s.t.}\,&\boldsymbol{x}\in\mathcal{X}\subset\mathbb{R}^{n} \end{aligned}"/></p>
+
+- Cardinality-constrained problems
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&f(\boldsymbol{x}) \\ \text{s.t.}\,&\|\boldsymbol{x}\|_0\leq k,\quad\boldsymbol{x}\in\mathcal{X}\subset\mathbb{R}^{n} \end{aligned}"/></p>
+
+- Regularized cardinality problems
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\|\boldsymbol{x}\|_0+\rho(\boldsymbol{x}) \\ \text{s.t.}\,&\boldsymbol{x}\in\mathcal{X}\subset\mathbb{R}^{n} \end{aligned}"/></p>
+
+
+These optimization problems have broad applications such as signal and image processing, portfolio selection, and machine learning. 
 
 **References**
 
