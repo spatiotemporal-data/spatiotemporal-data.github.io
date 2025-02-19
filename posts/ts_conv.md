@@ -1265,7 +1265,7 @@ print(cp.installed_solvers())
 
 ## VI. Insight into Ridesharing Trip Time Series
 
-[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew) and [TNP ridesharing trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p). Figure 13 shows the realistic time series data of ridesharing trips with a strong weekly periodicity, allowing one to examine the usage of interpretable convolutional kernels.
+[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew) and [TNP ridesharing trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p). Figure 14 shows the realistic time series data of ridesharing trips with a strong weekly periodicity, allowing one to examine the usage of interpretable convolutional kernels.
 
 
 <br>
@@ -1276,12 +1276,12 @@ print(cp.installed_solvers())
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 13.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2\times 7\times 24=336"/> hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
+<b>Figure 14.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2\times 7\times 24=336"/> hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
 </p>
 
 <br>
 
-Take the time series of Figure 13 as an example, the mixed-integer programming solver in CPLEX produces the temporal kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\triangleq (1,-\boldsymbol{w}^\top)^\top\in\mathbb{R}^{336}"/> with
+Take the time series of Figure 14 as an example, the mixed-integer programming solver in CPLEX produces the temporal kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\triangleq (1,-\boldsymbol{w}^\top)^\top\in\mathbb{R}^{336}"/> with
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(\underbrace{0.34}_{t=1},0,\cdots,0,\underbrace{0.33}_{t=168},0,\cdots,0,\underbrace{0.34}_{t=335})^\top\in\mathbb{R}^{335}"/></p>
 
