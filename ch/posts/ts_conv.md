@@ -15,19 +15,19 @@ layout: default
 - Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2024). [Correlating time series with interpretable convolutional kernels](https://arxiv.org/abs/2409.01362). arXiv:2409.01362.
 
 
-**Content:**
+**内容：**
 
-在本系列的第一部分中，我们介绍具有全局和局部趋势的时间序列建模动机。这些时间序列趋势对于提高时间序列插补的性能非常重要。如果有一个合适的可解释机器学习模型，还可以量化时间序列的周期性。在基本动机之后，我们在第二部分详细阐述了几个关键概念，如循环卷积、卷积矩阵、循环矩阵和离散傅里叶变换。
+在本系列的**第一部分**中，我们介绍了具有全局和局部趋势的时间序列建模动机。这些时间序列趋势对于提高时间序列插补的性能非常重要。如果有一个合适的可解释机器学习模型，还可以量化时间序列的周期性。在基本动机之后，我们在**第二部分**详细阐述了几个关键概念，如循环卷积、卷积矩阵、循环矩阵和离散傅里叶变换。
 
-第三部分和第四部分介绍了循环矩阵核范数最小化和拉普拉斯卷积表示的建模思想，解决了时间序列插补任务中的关键挑战。这两种模型的优化算法利用快速傅里叶变换，具有对数线性时间复杂度。第五部分提出了一种可解释的卷积核方法，其中卷积核的稀疏性通过<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-范数构造的稀疏约束来建模。
+**第三部分**和**第四部分**给出了循环矩阵核范数最小化和拉普拉斯卷积表示的建模思想，解决了时间序列插补任务中的关键挑战。这两种模型的优化算法利用快速傅里叶变换，具有对数线性时间复杂度。**第五部分**提出了一种可解释的卷积核方法，其中卷积核的稀疏性通过<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>范数诱导的稀疏约束进行建模。
 
 <br>
 
-## 第一部分 动机
+## I. 动机
 
-过去十年中，机器学习模型的发展确实令人瞩目。卷积是应用数学和信号处理中最常用的操作之一，已广泛应用于多个机器学习问题。本文的目的是重新审视循环卷积的基本思想，并为时间序列数据的建模奠定深刻的基础。
+过去十年中，机器学习模型的发展确实令人瞩目。卷积是应用数学和信号处理中最常用的操作之一，已广泛应用于多个机器学习问题。本文的目的是重新审视循环卷积的核心思想，并为时间序列数据建模奠定基础。
 
-如今，尽管我们手头上有相当多的机器学习算法，但在时间序列建模中仍然有必要重新思考以下三点：
+如今，尽管我们手头有许多机器学习算法，但在时间序列建模中仍然需要重新思考以下问题：
 
 - 如何表征全局时间序列趋势？
 - 如何表征局部时间序列趋势？
@@ -42,7 +42,7 @@ layout: default
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-(a) 全局趋势（例如，长期的每日/每周周期性）
+(a) 全局趋势（例如，长期日/周周期性）
 </p>
 
 <p align="center">
@@ -54,37 +54,36 @@ layout: default
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>图1.</b> 时间序列趋势的示意图。
+<b>图1.</b> 时间序列趋势示意图。
 </p>
-
 
 <br>
 
-## 第二部分 基础知识
+## II. 预备知识
 
-In this study, we build the modeling concepts of Laplacian convolutional representation (LCR) upon several key essential ideas, including circular convolution, discrete Fourier transform, and fast Fourier transform, from the field of signal processing. In the following sections, we will discuss: 
+在本研究中，我们基于信号处理领域的几个关键思想构建了拉普拉斯卷积表示（LCR）的建模概念，包括循环卷积、离散傅里叶变换和快速傅里叶变换。在接下来的部分中，我们将讨论：
 
-- What are circular convolution, convolution matrix, and circulant matrix?
-- What is the convolution theorem?
-- How can fast Fourier transform be used to compute the circular convolution?
+- 什么是循环卷积、卷积矩阵和循环矩阵？
+- 什么是卷积定理？
+- 如何使用快速傅里叶变换计算循环卷积？
 
-### II-A. Circular Convolution
+### II-A. 循环卷积
 
-Convolution is a powerful operation in many classical deep learning frameworks, such as convolutional neural networks (CNNs). In the context of discrete sequences (typically vectors), circular convolution refers to the convolution of two discrete sequences of data, and it plays an important role in maximizing the efficiency of certain common filtering operations (see [circular convolution](https://en.wikipedia.org/wiki/Circular_convolution) on Wikipedia).
+卷积是许多经典深度学习框架中的强大操作，例如卷积神经网络（CNN）。在离散序列（通常是向量）的上下文中，循环卷积指的是两个离散数据序列的卷积，它在最大化某些常见滤波操作的效率中起着重要作用（参见维基百科上的[循环卷积](https://en.wikipedia.org/wiki/Circular_convolution)）。
 
-By definition, for any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_T)^\top\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,\cdots,y_\tau)^\top\in\mathbb{R}^{\tau}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\leq T"/>, the circular convolution (denoted by the symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\star"/>) of these two vectors is formulated as follows,
+根据定义，对于任何向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_T)^\top\in\mathbb{R}^{T}"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,\cdots,y_\tau)^\top\in\mathbb{R}^{\tau}"/>，其中 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\leq T"/>，这两个向量的循环卷积（用符号 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\star"/> 表示）定义如下：
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T}"/></p>
 
-Elment-wise, we have
+逐元素地，我们有
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;z_{t}=\sum_{k=1}^{\tau}x_{t-k+1} y_{k},\,\forall t\in\{1,2,\ldots,T\}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_t"/> represents the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>th entry of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>. For a cyclical operation, it takes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{t-k+1}=x_{t-k+1+T}"/> when <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t+1\leq k"/>. While the definition of circular convolution might seem complicated for beginners, it becomes much clearer when you consider the concept of a convolution or circulant matrix, as demonstrated in the examples provided below.
+其中 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_t"/> 表示 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> 的第 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> 个元素。对于循环操作，当 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t+1\leq k"/> 时，取 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{t-k+1}=x_{t-k+1+T}"/>。虽然循环卷积的定义对初学者来说可能看起来很复杂，但当你考虑卷积矩阵或循环矩阵的概念时，它会变得更加清晰，如下面的例子所示。
 
-As mentioned above, the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> has a length of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/>, and the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> has a length of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>. According to the definition of circular convolution, the resulting vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> will also have a length of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/>, matching the length of the original vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>.
+如上所述，向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> 的长度为 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/>，向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> 的长度为 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>。根据循环卷积的定义，结果向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> 的长度也将为 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/>，与原始向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> 的长度匹配。
 
-Given any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top\in\mathbb{R}^4"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top\in\mathbb{R}^3"/>, the circular convolution between them can be expressed as follows,
+给定任何向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top\in\mathbb{R}^4"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top\in\mathbb{R}^3"/>，它们之间的循环卷积可以表示为：
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\begin{bmatrix}
 \displaystyle\sum_{k=1}^{3}x_{1-k+1}y_k \\
@@ -96,13 +95,13 @@ Given any vectors <img style="display: inline;" src="https://latex.codecogs.com/
 x_1y_1+x_4y_2+x_3y_3 \\ x_2y_1+x_1y_2+x_4y_3 \\ x_3y_1+x_2y_2+x_1y_3 \\ x_4y_1+x_3y_2+x_2y_3 \\
 \end{bmatrix} \\"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_3"/> according to the definition.
+其中根据定义，<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_3"/>。
 
-In this case, each entry <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_t"/> of the resulting vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> is computed as the inner product between the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> and a reversed and truncated version of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. Specifically, the entry <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_1"/> is obtained by computing the inner product between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_4,x_3)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(y_1,y_2,y_3)^\top"/>, i.e.,
+在这种情况下，结果向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> 的每个元素 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_t"/> 是通过向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> 和向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> 的反转和截断版本的内积计算得到的。具体来说，元素 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_1"/> 是通过计算 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_4,x_3)^\top"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(y_1,y_2,y_3)^\top"/> 的内积得到的，即：
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;z_1=\begin{bmatrix} x_1 & x_4 & x_3 \end{bmatrix} \begin{bmatrix} y_1 \\ y_2 \\ y_3 \end{bmatrix}=x_1y_1+x_4y_2+x_3y_3"/></p>
 
-For subsequent entries <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_2,z_3,z_4"/>, the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is cyclically shifted in reverse and truncated (only preserving the first <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> entries), and the inner product with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> is calculated. Figure 2 illustrates the basic steps for computing each entry of the circular convolution.
+对于后续的元素 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_2,z_3,z_4"/>，向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> 被循环反转并截断（仅保留前 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> 个元素），然后与 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> 计算内积。图2展示了计算循环卷积每个元素的基本步骤。
 
 <br>
 
@@ -111,41 +110,41 @@ For subsequent entries <img style="display: inline;" src="https://latex.codecogs
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 2.</b> Illustration of the circular convolution between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top"/>. (a) Computing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_1"/> involves <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_3"/>. (b) Computing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_2"/> involves <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/>. The figure inspired by [Prince (2023)](https://udlbook.github.io/udlbook/).
+<b>图2.</b> 向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top"/> 之间的循环卷积示意图。(a) 计算 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_1"/> 涉及 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_3"/>。(b) 计算 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_2"/> 涉及 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/>。该图灵感来自 [Prince (2023)](https://udlbook.github.io/udlbook/)。
 </p>
 
 <br>
 
-As can be seen, circular convolution between two vectors can essentially be viewed as a linear operation. This perspective allows one to reformulate the circular convolution as a linear transformation using a convolution matrix (or a circulant matrix when these two vectors have the same length).
+可以看出，两个向量之间的循环卷积本质上可以看作是一个线性操作。这种视角允许我们将循环卷积重新表述为使用卷积矩阵（或当这两个向量长度相同时的循环矩阵）的线性变换。
 
 <br>
 
 ---
 
 <span style="color:gray">
-<b>Example 1.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3)^\top"/>, the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=(5,14,3,7,11)^\top"/> has the following entries:</span>
+<b>示例1.</b> 给定向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3)^\top"/>，循环卷积 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=(5,14,3,7,11)^\top"/> 的元素如下：</span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} z_1=x_1y_1+x_5y_2+x_4y_3=0\times 2+4\times(-1)+3\times 3=5 \\ z_2=x_2y_1+x_1y_2+x_5y_3=1\times 2+0\times(-1)+4\times 3=14 \\ z_3=x_3y_1+x_2y_2+x_1y_3=2\times 2+1\times (-1)+0\times 3=3 \\ z_4=x_4y_1+x_3y_2+x_2y_3=3\times 2+2\times (-1)+1\times 3=7 \\ z_5=x_5y_1+x_4y_2+x_3y_3=4\times 2+3\times (-1)+2\times 3=11 \end{cases}"/></p>
 
 <span style="color:gray">
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_5"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_4"/> according to the definition.
+其中根据定义，<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_5"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_4"/>。
 </span>
 
 ---
 
 <br>
 
-### II-B. Convolution Matrix
+### II-B. 卷积矩阵
 
-Using the notations above, for any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{\tau}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau<T"/>, the circular convolution can be expressed as a linear transformation:
+使用上述符号，对于任何向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{\tau}"/>，其中 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau<T"/>，循环卷积可以表示为线性变换：
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{\tau}(\boldsymbol{x})\boldsymbol{y}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}:\mathbb{R}^{T}\to\mathbb{R}^{T\times \tau}"/> denotes the convolution operator. The convolution matrix can be represented as follows,
+其中 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}:\mathbb{R}^{T}\to\mathbb{R}^{T\times \tau}"/> 表示卷积算子。卷积矩阵可以表示为：
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{T-\tau+2} \\ x_2 & x_1 & x_{T} & \cdots & x_{T-\tau+3} \\ x_3 & x_2 & x_1 & \cdots & x_{T-\tau+4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{T-\tau+1} \\ \end{bmatrix}\in\mathbb{R}^{T\times\tau}"/></p>
 
-In the feild of signal processing, this linear transformation is a fundamental property of circular convolution, highlighting its role in efficently implementing filtering operations.
+在信号处理领域，这种线性变换是循环卷积的基本性质，突出了其在高效实现滤波操作中的作用。
 
 <br>
 
@@ -154,7 +153,7 @@ In the feild of signal processing, this linear transformation is a fundamental p
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 3.</b> Illustration of circular convolution as the linear transformation with a convolution matrix.
+<b>图3.</b> 循环卷积作为卷积矩阵的线性变换示意图。
 </p>
 
 <br>
@@ -162,31 +161,31 @@ In the feild of signal processing, this linear transformation is a fundamental p
 ---
 
 <span style="color:gray">
-<b>Example 2.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3)^\top"/>, the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}"/> can be expressed as:
+<b>示例2.</b> 给定向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> 和 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3)^\top"/>，循环卷积 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}"/> 可以表示为：
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}=(5,14,3,7,11)^\top"/></p>
 
 <span style="color:gray">
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})"/> is the convolution matrix with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/> columns. Specifically, the convolution matrix is structured as follows,
+其中 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})"/> 是具有 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/> 列的卷积矩阵。具体来说，卷积矩阵的结构如下：
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}"/></p>
 
 <span style="color:gray">
-As a result, it gives</span>
+因此，结果为</span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}\begin{bmatrix} 2 \\ -1 \\ 3 \end{bmatrix}=\begin{bmatrix} 5 \\ 14 \\ 3 \\ 7 \\ 11 \end{bmatrix}"/></p>
 
 <span style="color:gray">
-This representation shows that circular convolution is equivalent to a matrix-vector multiplication, making it easier to understand, especially in signal processing applications.
+这种表示表明，循环卷积等价于矩阵-向量乘法，使其更容易理解，特别是在信号处理应用中。
 </span>
 
 ---
 
 <br>
 
-In this post, we aim to make the concepts clear and accessible by incorporting programming code in Python, intuitive illustrations, and detailed explanations of the formulas. To demonstrate how circular convolution can be computed, we will use Python's `numpy` library. First, we will construct the convolution matrix on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and then perform the circular convolution as follows.
+在这篇文章中，我们旨在通过结合Python编程代码、直观的图示和公式的详细解释，使概念清晰易懂。为了演示如何计算循环卷积，我们将使用Python的`numpy`库。首先，我们将在向量 <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> 上构建卷积矩阵，然后执行循环卷积，如下所示。
 
 <br>
 
@@ -214,929 +213,3 @@ print(z)
 
 <br>
 
-### II-C. Circulant Matrix
-
-Recall that the convolution matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}(\boldsymbol{x})"/> is specified with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> columns, corresponding to the length of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>). In the case of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{T}"/> with same columns, the convolution matrix becoms a square matrix, known as a **circulant matrix**. In this study, we emphasize the importance of circulant matrices and their properties, such as their strong connection with circular convolution and discrete Fourier transform, even through we do not work directly with circulant matrices.
-
-For any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{T}"/>, the circular convolution can be expressed as a linear transformation such that
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}:\mathbb{R}^{T}\to\mathbb{R}^{T\times T}"/> denotes the circulant operator. The circulant matrix is defined as:
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{2} \\ x_2 & x_1 & x_{T} & \cdots & x_{3} \\ x_3 & x_2 & x_1 & \cdots & x_{4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{1} \\ \end{bmatrix}\in\mathbb{R}^{T\times T}"/></p>
-which forms a square matrix. It always holds that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{C}(\boldsymbol{x})\|_F=\sqrt{T}\cdot\|\boldsymbol{x}\|_2"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_F"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/> are the Frobenius norm of matrix and the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm of vector, respectively.
-
-<br>
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_circ_mat.png" width="320" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 4.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
-</p>
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 3.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3,0,0)^\top"/>, the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}"/> is identical to
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}=(5,14,3,7,11)^\top"/></p>
-
-<span style="color:gray">
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is the circulant matrix formed from <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, defined as:
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-Thus, the result can be written as follows,
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}\begin{bmatrix} 2 \\ -1 \\ 3 \\ 0 \\ 0 \end{bmatrix}=\begin{bmatrix} 5 \\ 14 \\ 3 \\ 7 \\ 11 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-The example shows that the circular convolution of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(2,-1,3)^\top"/> is equivalent to the circular convolution of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> with its last two entries padded with zeros. Thus, to compute the circular convolution of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{\tau}"/> when <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> is greater than <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>, one can simply append <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-\tau"/> zeros to the end of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> and perform the circular convolution.
-</span>
-
----
-
-<br>
-
-### II-D. Discrete Fourier Transform
-
-Discrete Fourier transform (see [Wikipedia](https://en.wikipedia.org/wiki/Discrete_Fourier_transform)) is a fundamental tool in mathematics and signal processing with widespread applications to machine learning. The discrete Fourier transform is the key discrete transform used for Fourier analysis, enabling the decomposition of a signal into its constituent frequencies. The fast Fourier transform is an efficient algorithm for computing the discrete Fourier tranform (see the [difference between discrete Fourier transform and fast Fourier transform](https://math.stackexchange.com/q/30464/738418)), significantly reducing the time complexity from <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T^2)"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T\log T)"/>, where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> is the number of data points. This efficiency makes fast Fourier transform essential for processing large problems.
-
-A crucial concept in signal processing is the convolution theorem, which states that convolution in the time domain is the multiplication in the frequency domain. This implies that the circular convolution can be efficiently computed using the fast Fourier transform. The convolution theorem for discrete Fourier transform is summarized as follows,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x}\star\boldsymbol{y})=\mathcal{F}(\boldsymbol{x})\circ\mathcal{F}(\boldsymbol{y})"/></p>
-
-or
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{y}=\mathcal{F}^{-1}(\mathcal{F}(\boldsymbol{x})\circ\mathcal{F}(\boldsymbol{y}))"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\cdot)"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}^{-1}(\cdot)"/> denote the discrete Fourier transform and the inverse discrete Fourier transform, respectively. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\circ"/> represents the Hadamard product, i.e., element-wise multiplication.
-
-In fact, this principle underlies many efficient algorithms in signal processing and data analysis, allowing complex operations to be performed efficiently in the frequency domain.
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 4.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3,0,0)^\top"/>, the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}"/> can be computed via the use of fast Fourier transform in `numpy` as follows,
-</span>
-
-
-```python
-import numpy as np
-
-x = np.array([0, 1, 2, 3, 4])
-y = np.array([2, -1, 3, 0, 0])
-fx = np.fft.fft(x)
-fy = np.fft.fft(y)
-z = np.fft.ifft(fx * fy).real
-print('Fast Fourier transform of x:')
-print(fx)
-print('Fast Fourier transform of y:')
-print(fy)
-print('Circular convolution of x and y:')
-print(z)
-```
-
-in which the outputs are
-
-```python
-Fast Fourier transform of x:
-[10. +0.j         -2.5+3.4409548j  -2.5+0.81229924j -2.5-0.81229924j
- -2.5-3.4409548j ]
-Fast Fourier transform of y:
-[ 4.        +0.j         -0.73606798-0.81229924j  3.73606798+3.4409548j
-  3.73606798-3.4409548j  -0.73606798+0.81229924j]
-Circular convolution of x and y:
-[ 5. 14.  3.  7. 11.]
-```
-
-<br>
-
----
-
-<br>
-
-### II-F. Hankel Matrix Factorization & Discrete Fourier Transform
-
-The Hankel matrix plays a fundamental role in numerous areas of applied mathematics and signal processing. By definition, a Hankel matrix is a square or rectangular matrix in which each ascending skew-diagonal (from left to right) has the same value. Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the Hankel matrix can be constructed as follows,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_2 & \cdots & x_{T-n+1} \\ x_2 & x_3 & \cdots & x_{T-n+2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{n} & x_{n+1} & \cdots & x_{T} \end{bmatrix}"/></p>
-
-where the Hankel matrix has <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-n+1"/> columns. This matrix is often used to represent signals or time series data, capturing their sequential dependencies and structure, see e.g., [Chen et al. (2024)](https://doi.org/10.1287/ijoc.2022.0197) in our work.
-
-On the Hankel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})"/>, if it can be approximated by the multiplication of two matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{n\times R}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{(T-n+1)\times R}"/>, then one can compute the inverse of Hankel matrix factorization as follows,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \mathcal{H}(\boldsymbol{x})\approx&\boldsymbol{W}\boldsymbol{Q}^\top \\ \Rightarrow\quad\tilde{\boldsymbol{x}}=&\mathcal{H}^{\dagger}(\boldsymbol{W}\boldsymbol{Q}^{\top}) \\ \Rightarrow\quad\tilde{x}_t=&\frac{1}{\rho_t}\sum_{a+b=t+1}\boldsymbol{w}_{a}^\top\boldsymbol{q}_{b} \\ \Rightarrow\quad\tilde{x}_{t}=&\frac{1}{\rho_t}\sum_{r=1}^{R}\underbrace{\sum_{a+b=t+1}w_{a,r}q_{b,r}}_{\text{\color{red}circular convolution}} \end{aligned}"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_a"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{q}_b"/> are the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;a"/>-th and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;b"/>-th rows of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}"/>, respectively. Herein, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}^{\dagger}(\cdot)"/> denotes the inverse operator of Hankel matrix. For any matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}"/> of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times (T-n+1)"/>, the inverse operator is given by
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;(\mathcal{H}^{\dagger}(\boldsymbol{Y}))_{t}=\frac{1}{\rho_{t}}\sum_{a+b=t+1}y_{a,b}"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\in\{1,2,\cdots, T\}"/>. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\rho_t"/> is the number of entries on the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-th antidiagonal of the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times (T-n+1)"/> matrix, satisfying
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\rho_t=\begin{cases} t, & t\leq\min\{n, T-n+1\} \\ T-t+1, & \text{otherwise} \end{cases}"/></p>
-
-
-Following the aforementioned formula, it is easy to connect the Hankel factorization with circular convolution and discrete Fourier transform ([Cai et al., 2019](https://arxiv.org/abs/1910.05859); [Cai et al., 2022](https://arxiv.org/abs/2204.03316)) such that
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{x}_{t}=\frac{1}{\rho_t}\sum_{r=1}^{R}[\tilde{\boldsymbol{w}}_r\star\tilde{\boldsymbol{q}}_r]_{t}=\frac{1}{\rho_t}\sum_{r=1}^{R}[\mathcal{F}^{-1}(\mathcal{F}(\tilde{\boldsymbol{w}}_r)\circ\mathcal{F}(\tilde{\boldsymbol{q}}_r))]_{t}"/></p>
-
-where we define two vectors:
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \tilde{\boldsymbol{w}}_{r}=(w_{1,r},w_{2,r},\cdots,w_{t,r})^\top \\ \tilde{\boldsymbol{q}}_{r}=(q_{1,r},q_{2,r},\cdots,q_{t,r})^\top \end{cases}"/></p>
-
-of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>. The notation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;[\cdot]_{t}"/> refers to the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>th entry of the vector. Notably, they are different from the vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{q}_r\in\mathbb{R}^{T-n+1}"/>. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\leq n"/>, then the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r"/> consists of the first <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r"/>. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t> n"/>, then the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r"/> consists of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}_r"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t-n"/> zeros, i.e.,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{w}}_r=(w_{1,r},w_{2,r},\cdots,w_{n,r},\underbrace{0,\cdots,0}_{t-n})^\top\in\mathbb{R}^{t}"/></p>
-
-This principle is well-suited to the construction of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{q}}_r"/>.
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 5.</b> Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_6)^\top\in\mathbb{R}^{6}"/>, let the number of rows of the Hankel matrix be <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;4"/>, the Hankel matrix is given by
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_2 & x_3 \\ x_2 & x_3 & x_4 \\ x_3 & x_4 & x_5 \\ x_4 & x_5 & x_6 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-If it takes a rank-one approximation such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})\approx\boldsymbol{w}\boldsymbol{q}^\top"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\in\mathbb{R}^{4}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{q}\in\mathbb{R}^{3}"/>, then the inverse of Hankel matrix factorization can be written as follows,
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \tilde{x}_1&=\frac{1}{1}\sum_{a+b=2}w_aq_b=w_1q_1 \\ \tilde{x}_2&=\frac{1}{2}\sum_{a+b=3}w_aq_b=\frac{1}{2}(w_1q_2+w_2q_1) \\ &=\frac{1}{2}[(w_1,w_2)\star(q_1,q_2)]_{2} \\ \tilde{x}_3&=\frac{1}{3}\sum_{a+b=4}w_aq_b=\frac{1}{3}(w_1q_3+w_2q_2+w_3q_1) \\ &=\frac{1}{3}[(w_1,w_2,w_3)\star(q_1,q_2,q_3)]_{3} \\ \tilde{x}_4&=\frac{1}{3}\sum_{a+b=5}w_aq_b=\frac{1}{3}(w_2q_3+w_3q_2+w_4q_1) \\ &=\frac{1}{3}[(w_1,w_2,w_3,w_4)\star(q_1,q_2,q_3,0)]_{4} \\ \tilde{x}_5&=\frac{1}{2}\sum_{a+b=6}w_aq_b=\frac{1}{2}(w_3q_3+w_4q_2) \\ &=\frac{1}{2}[(w_1,w_2,w_3,w_4,0)\star(q_1,q_2,q_3,0,0)]_{5} \\ \tilde{x}_6&=\frac{1}{1}\sum_{a+b=7}w_aq_b=w_4q_3 \\ &=[(w_1,w_2,w_3,w_4,0,0)\star(q_1,q_2,q_3,0,0,0)]_{6} \end{aligned}"/></p>
-
-<span style="color:gray">
-which can be converted into circular convolution. By doing so, the computing process can be accelerated with fast Fourier transform.
-</span>
-
-<br>
-
-<b>Acknowledgement.</b> <a href='https://github.com/yangjm67'>Jinming Yang</a> help correct the notational mistake of circular convolution in this example.
-
----
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 6.</b> For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, it always holds that 
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{H}(\mathcal{D}(\boldsymbol{x}))\|_F=\|\boldsymbol{x}\|_2"/></p>
-
-<span style="color:gray">
-in which the operator <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{D}(\cdot)"/> is defined as follows,
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{D}(\boldsymbol{x})=\bigr(x_1,\frac{1}{\sqrt{\rho_2}}x_2,\frac{1}{\sqrt{\rho_3}}x_3,\cdots,\frac{1}{\sqrt{\rho_{T-1}}}x_{T-1},x_T\bigl)^\top\in\mathbb{R}^{T}"/></p>
-
-<span style="color:gray">
-Verify this property on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_6)^\top"/> if the number of rows of the Hankel matrix is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;4"/>.
-</span>
-
-<br>
-
-<span style="color:gray">
-According to the defintion, we have
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{D}(\boldsymbol{x})=\bigr(x_1,\frac{1}{\sqrt{2}}x_2,\frac{1}{\sqrt{3}}x_3,\frac{1}{\sqrt{3}}x_4,\frac{1}{\sqrt{2}}x_{5},x_6\bigl)^\top"/></p>
-
-<span style="color:gray">
-The Hankel matrix is given by
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\mathcal{D}(\boldsymbol{x}))=\begin{bmatrix} x_1 & \frac{1}{\sqrt{2}}x_2 & \frac{1}{\sqrt{3}}x_3 \\ \frac{1}{\sqrt{2}}x_2 & \frac{1}{\sqrt{3}}x_3 & \frac{1}{\sqrt{3}}x_4 \\ \frac{1}{\sqrt{3}}x_3 & \frac{1}{\sqrt{3}}x_4 & \frac{1}{\sqrt{2}}x_5 \\ \frac{1}{\sqrt{3}}x_4 & \frac{1}{\sqrt{2}}x_5 & x_6 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-Thus, the Frobenius norm of this Hankel matrix is equivalent to the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>.
-</span>
-
----
-
-<br>
-
-## III. Circulant Matrix Nuclear Norm Minimization
-
-Circulant matrices are fundamental in many computational and theoretical aspects of signal processing and machine learning, providing an efficient framework for implementating various algorithms such as circulant matrix nuclear norm minimization. By definition, a circulant matrix is a spcial square matrix where which shifts the previous row to the right by one position, with the last entry wrapping around to the first position. As we already discussed the circulant matrix above, we will present the circulant matrix nuclear norm, its minimization problem, and applications.
-
-
-### III-A. Definition
-
-Nuclear norm is a key concept in matrix computations and convex optimization, frequently applied in low-rank matrix approximation and completion problems. For any matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/>, the nuclear norm is defined as the sum of singular values:
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{X}\|_{*}=\sum_{r=1}^{t}s_{r}"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_*"/> denotes the nuclear norm. As illustrated in Figure 5, the singular values are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1,s_2,\ldots, s_t"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/>.
-
-<br>
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/svd_explained.png" width="500" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 5.</b> Singular value decomposition of matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/>. In the decomposed matrices, the unitary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{W}\in\mathbb{R}^{m\times t}"/> (or <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Q}\in\mathbb{R}^{n\times t}"/>) consists of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> orthogonal left (or right) singular vectors, while the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> diagonal entries of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}"/> are singular values such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;s_1\geq s_2\geq\cdots\geq s_t\geq 0"/>. Note that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=\min\{m,n\}"/> for notational convenience. 
-</p>
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 7.</b> Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the circulant matrix is
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-Thus, the singular values are
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{s}=(10, 4.25325404, 4.25325404, 2.62865556, 2.62865556)^\top"/></p>
-
-<span style="color:gray">
-As a result, we have the nuclear norm as follows,
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{C}(\boldsymbol{x})\|_{*}=\sum_{t=1}^{5}s_t=23.7638"/></p>
-
-<span style="color:gray">
-Please reproduce the results by using the following `numpy` implementation.
-</span>
-
-```python
-import numpy as np
-
-def circ_mat(vec):
-    n = vec.shape[0]
-    mat = np.zeros((n, n))
-    mat[:, 0] = vec
-    for i in range(1, n):
-        mat[:, i] = np.append(vec[-i :], vec[: n - i], axis = 0)
-    return mat
-
-x = np.array([0, 1, 2, 3, 4])
-mat = circ_mat(x)
-w, s, q = np.linalg.svd(mat, full_matrices = False)
-print('Singular values of C(x):')
-print(s)
-```
-
-<br>
-
----
-
-<br>
-
-### III-B. Property
-
-One of the most intriguing properties of circulant matrices is that they are diagonalizable by the discrete Fourier transform matrix. The eigenvalue decomposition of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{T\times T}"/> (constructed from any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^T"/>) is given by
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\boldsymbol{F}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{F}^H"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{F}"/> is the unitary discrete Fourier transform matrix, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{F}^H"/> is the Hermitian transpose of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{F}"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})"/> is a diagonal matrix containing the eigenvalues of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>. Due to this property, the nuclear norm of the circulant matrix can be formulated as the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of the discrete Fourier transform of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>:
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \|\mathcal{C}(\boldsymbol{x})\|_*=&\|\boldsymbol{F}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{F}^H\|_{*} \\ =&\|\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\|_* \\ =&\|\mathcal{F}(\boldsymbol{x})\|_1 \end{aligned}"/></p>
-
-This relationship draws the strong connection between circulant matrices and Fourier analysis, enabling efficient computation and analysis in various applications, e.g., circulant matrix nuclear norm minimization [(Chen et al., 2024)](https://doi.org/10.1109/TKDE.2024.3419698).
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 8.</b> Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the circulant matrix is
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-The eigenvalues of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> and the fast Fourier transform of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> can be computed using `numpy` as follows.
-</span>
-
-```python
-import numpy as np
-
-x = np.array([0, 1, 2, 3, 4])
-mat = circ_mat(x)
-eigval, eigvec = np.linalg.eig(mat)
-print('Eigenvalues of C(x):')
-print(eigval)
-print('Fast Fourier transform of x:')
-print(np.fft.fft(x))
-```
-
-<span style="color:gray">
-in which the outputs are
-</span>
-
-```python
-Eigenvalues of C(x):
-[10. +0.j         -2.5+3.4409548j  -2.5-3.4409548j  -2.5+0.81229924j
- -2.5-0.81229924j]
-Fast Fourier transform of x:
-[10. +0.j         -2.5+3.4409548j  -2.5+0.81229924j -2.5-0.81229924j
- -2.5-3.4409548j ]
-```
-
-<span style="color:gray">
-In this case, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of the complex valued <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})=(a_1+b_1i, a_2+b_2i, \cdots, a_5+b_5i)^\top"/>---the imaginary unit is defined as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;i=\sqrt{-1}"/>---is given by
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\mathcal{C}(\boldsymbol{x})\|_{*}=\|\mathcal{F}(\boldsymbol{x})\|_1=\sum_{t=1}^{5}|a_t+b_ti|=\sum_{t=1}^{5}\sqrt{a_t^2+b_t^2}=23.7638"/></p>
-
----
-
-<br>
-
-### III-C. Optimization
-
-For any partially observed time series in the form of a vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^T"/> with the observed index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>, solving the circulant matrix nuclear norm minimization allows one to reconstruct missing values in time series. The problem is formulated as follows,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\|\mathcal{C}(\boldsymbol{x})\|_* \\ \text{s.t.}\,&\|\mathcal{P}_{\Omega}(\boldsymbol{x}-\boldsymbol{y})\|_2\leq\epsilon \end{aligned}"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\epsilon"/> in the constraint represents the tolerance of errors between the reconstructed time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and the partially observed time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/>.
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 9.</b> Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(1,2,3,4)^\top"/> and observed index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega=\{2,4\}"/>, the orthogonal projection supported on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/> is
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}(\boldsymbol{x})=\begin{bmatrix} 0 \\ 2 \\ 0 \\ 4 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-On the complement of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>, we have
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{x})=\begin{bmatrix} 1 \\ 0 \\ 3 \\ 0 \end{bmatrix}"/></p>
-
----
-
-<br>
-
-In this case, one can rewrite the constraint as a penalty term (weighted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\gamma"/>) in the objective function:
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{x}-\boldsymbol{y})\|_2^2"/></p>
-
-Since the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is associated with a circulant matrix nuclear norm and a penalty term, the first impluse is using variable separated to convert the problem into the following one:
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})\|_2^2 \\ \text{s.t.}\,&\boldsymbol{x}=\boldsymbol{z} \end{aligned}"/></p>
-
-<br>
-
-### III-D. Solution Algorithm
-
-The augmented Lagrangian function is
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})=\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})\|_2^2+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}-\boldsymbol{z}\rangle"/></p>
-
-where the dual variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\in\mathbb{R}^{T}"/> is an estimate of the Lagrange multiplier, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\lambda"/> is a penalty parameter that controls the convergence rate.
-
-Thus, the variables <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>, and the dual variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> can be updated iteratively as follows,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{cases} \displaystyle\boldsymbol{x}:=\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \displaystyle\boldsymbol{z}:=\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{w}:=\boldsymbol{w}+\lambda(\boldsymbol{x}-\boldsymbol{z}) \end{cases}"/></p>
-
-where the dual variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> takes a standard update in the ADMM. In what follows, we give details about how to get the closed-form solution to the variables <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>.
-
-<br>
-
-### III-E. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>-Subproblem
-
-Solving the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> involves discrete Fourier transform, convolution theorem, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization in complex space. The optimization problem with respect to the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> is given by
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_{*}+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}\rangle \\ =&\arg\min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_{*}+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}+\boldsymbol{w}/\lambda\|_2^2 \end{aligned}"/></p>
-
-Using discrete Fourier transform, the optimization problem can be converted into the following one in complex space [(Chen et al., 2024)](https://doi.org/10.1109/TKDE.2024.3419698):
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \hat{\boldsymbol{x}}:=\arg\min_{\hat{\boldsymbol{x}}}\,\|\hat{\boldsymbol{x}}\|_{1}+\frac{\lambda}{2T}\|\hat{\boldsymbol{x}}-\hat{\boldsymbol{z}}+\hat{\boldsymbol{w}}/\lambda\|_2^2 "/></p>
-
-where the complex-valued variables <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\hat{\boldsymbol{x}},\hat{\boldsymbol{z}},\hat{\boldsymbol{w}}\}=\{\mathcal{F}(\boldsymbol{x}),\mathcal{F}(\boldsymbol{z}),\mathcal{F}(\boldsymbol{w})\}"/> refer to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}\}"/> in the frequency domain. The closed-form solution to the complex-valued variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\hat{\boldsymbol{x}}"/> is
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space; \hat{x}_t:=\frac{\hat{h}_t}{|\hat{h}_t|}\cdot\max\{|\hat{h}_t|-T/\lambda,0\},\,t=1,2,\ldots, T "/></p>
-
-with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\hat{h}_t=\hat{z}_t-\hat{w}_t/\lambda"/>. For reference, this closed-form solution can be found in Lemma 3.3 in [Yang et al., (2009)](https://doi.org/10.1137/080730421), see Eq. (3.18) and (3.19) for discussing real-valued variables. In the sparsity-induced norm optimization of machine learning, this closed-form solution is also called as proximal operator or shrinkage operator.
-
-<br>
-
-```python
-import numpy as np
-
-def update_x(z, w, lmbda):
-    T = z.shape[0]
-    h = np.fft.fft(z - w / lmbda)
-    temp = 1 - T / (lmbda * np.abs(h))
-    temp[temp <= 0] = 0
-    return np.fft.ifft(h * temp).real
-```
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Shrinkage Operator.</b> For any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{n}"/>, the closed-form solution to the optimization problem
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{y}}\,\|\boldsymbol{y}\|_1+\frac{\alpha}{2}\|\boldsymbol{y}-\boldsymbol{x}\|_2^2"/></p>
-
-<span style="color:gray">
-can be expressed as
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;y_{i}=\frac{x_i}{|x_i|}\cdot\max\{|x_i|-1/\alpha, 0\},\,i=1,2,\cdots,n"/></p>
-
-<span style="color:gray">
-or
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;y_{i}=\begin{cases} x_i-1/\alpha, & \text{if}\,x_i>1/\alpha \\ x_i+1/\alpha, & \text{if}\,x_i<-1/\alpha \\ 0, & \text{otherwise} \end{cases}"/></p>
-
-<br>
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/shrinkage_operator.png" width="300" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 6.</b> Illustration of the shrinkage operator for solving the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm minimization problem.
-</p>
-
-<br>
-
----
-
-<br>
-
-### III-F. <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>-Subproblem
-
-In terms of the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/>, the partial derivative of the augmented Lagrangian function with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}(\boldsymbol{z})"/> is given by
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}(\boldsymbol{z})}=&\gamma\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})+\lambda\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{x})-\mathcal{P}_{\Omega}(\boldsymbol{w}) \\ =&(\gamma+\lambda)\mathcal{P}_{\Omega}(\boldsymbol{z})-\mathcal{P}_{\Omega}(\gamma\boldsymbol{y}+\lambda\boldsymbol{x}+\boldsymbol{w}) \end{aligned}"/></p>
-
-while
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z})}=&\lambda\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z}-\boldsymbol{x})-\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{w}) \\ =&\lambda\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z})-\mathcal{P}_{\Omega}^{\perp}(\lambda\boldsymbol{x}+\boldsymbol{w}) \end{aligned}"/></p>
-
-As a result, letting the partial derivative of the augmented Lagrangian function with respect to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> be a zero vector, the least squares solution is given by
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{z}:=&\Bigl\{\boldsymbol{z}\mid \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}(\boldsymbol{z})}+\frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z})}=\boldsymbol{0}\Bigr\} \\ =&\frac{1}{\gamma+\lambda}\mathcal{P}_{\Omega}(\gamma\boldsymbol{y}+\lambda\boldsymbol{x}+\boldsymbol{w})+\frac{1}{\lambda}\mathcal{P}_{\Omega}^{\perp}(\lambda\boldsymbol{x}+\boldsymbol{w}) \end{aligned}"/></p>
-
-where the partial derivative of the augmented Lagrangian function with respect to the variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}"/> is the combination of variables <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}(\boldsymbol{z})"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{P}_{\Omega}^\perp(\boldsymbol{z})"/>.
-
-<br>
-
-```python
-import numpy as np
-
-def update_z(y_train, pos_train, x, w, lmbda, gamma):
-    z = x + w / lmbda
-    z[pos_train] = (gamma * y_train + lmbda * z[pos_train]) / (gamma + lmbda) 
-    return z
-```
-
-
-<br>
-
-### III-G. Time Series Imputation
-
-As shown in Figure 7, we randomly remove 95% observations as missing values, and we only have 14 volume observations (i.e., 14 blue dots) for the reconstruction. The circulant matrix nuclear norm minimization can capture the global trends from partial observations.
-
-<br>
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/circnnm_volumes_95.png" width="350" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 7.</b> Univariate time series imputation on the freeway traffic volume time series. The blue and red curves correspond to the ground truth time series and reconstructed time series achieved by the circulant matrix nuclear norm minimization.
-</p>
-
-<br>
-
-<span style="color:gray">
-Please reproduce the experiments by following the [Jupyter Notebook](https://github.com/xinychen/LCR/blob/main/univariate-models/CircNNM.ipynb), which is available at the [LCR repository](https://github.com/xinychen/LCR) on GitHub. For the supplementary material, please check out [Appendix I(A)](https://spatiotemporal-data.github.io/posts/ts_conv_supp/).
-<span>
-
-<br>
-
-
-## IV. Laplacian Convolutional Representation
-
-### IV-A. Representing Circulant Graphs by Laplacian Kernels, Instead of Laplacian Matrices?
-
-Laplacian convolutional representation model proposed by [Chen et al., (2024)](https://doi.org/10.1109/TKDE.2024.3419698) integrates local trends of time series into the global trend modeling via the use of circulant matrix nuclear norm minimization. As shown in Figure 1(b), the transition of time series data points can be naively modeled by smoothing regularization. We started by introducing Laplacian matrix to represent the prescribed relationship among time series data points.
-
-<br>
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/circulant_graphs.png" width="600" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 8.</b> Undirected and circulant graphs on the data points <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{x_1,x_2,x_3,x_4,x_5\}"/> with certain degrees. The degrees of the left and right graphs are 2 and 4, respectively.
-</p>
-
-<br>
-
-By definition, the Laplacian matrix of a circulant graph (see e.g., Figure 8) is a circulant matrix (refer to the formal definition of circulant matrix in Section II-C). In Figure 8, the Laplacian matrix corresponding to the left graph is expressed as
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \end{bmatrix}=\mathcal{C}(\boldsymbol{\ell})\in\mathbb{R}^{5\times 5}"/></p>
-
-while the Laplacian matrix for the right one is
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}=\begin{bmatrix} 4 & -1 & -1 & -1 & -1 \\ -1 & 4 & -1 & -1 & -1 \\ -1 & -1 & 4 & -1 & -1 \\ -1 & -1 & -1 & 4 & -1 \\ -1 & -1 & -1 & -1 & 4 \end{bmatrix}=\mathcal{C}(\boldsymbol{\ell})\in\mathbb{R}^{5\times 5}"/></p>
-
-In both two Laplacian matrices, the diagonal entries are the degrees of circulant graphs. The vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\in\mathbb{R}^{5}"/> encodes the structural information of these graphs, capturing their underlying circulant structure. In this work, we define the first column of Laplacian matrices as the **Laplacian kernels** [(Chen et al., 2024)](https://doi.org/10.1109/TKDE.2024.3419698):
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^\top\in\mathbb{R}^{5}"/></p>
-
-and
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(4,-1,-1,-1,-1)^\top\in\mathbb{R}^{5}"/></p>
-
-respectively.
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Laplacian Kernel</b>. Given any time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, suppose <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/> be the kernel size of an undirected and circulant graph, then the Laplacian kernel is defined as
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\triangleq(2\tau,\underbrace{-1,\cdots,-1}_{\tau},0,\cdots,0,\underbrace{-1,\cdots,-1}_{\tau})^\top\in\mathbb{R}^{T}"/></p>
-
-<span style="color:gray">
-which is the first column of the Laplacian matrix and the degree matrix is diagonalized with entries <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2\tau"/>.
-</span>
-
----
-
-<br>
-
-### IV-B. Reformulating Temporal Regularization with Circular Convolution
-
-In machine learning, one can write the temporal regularization on the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, e.g.,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{L}\boldsymbol{x}\|_2^2"/></p>
-
-Since the Laplacian matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}"/> is a circulant matrix, the matrix-vector multiplication <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}\boldsymbol{x}"/> can be reformulated as a circular convolution between Laplacian kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}"/> and the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\star\boldsymbol{x}"/>. For instance, given a Laplacian kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^{\top}"/>, we have
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{L}\boldsymbol{x}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{bmatrix}=\begin{bmatrix} 2 \\ -1 \\ 0 \\ 0 \\ -1 \\ \end{bmatrix}\star\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{bmatrix}=\boldsymbol{\ell}\star\boldsymbol{x}"/></p>
-
-As can be seen, this Laplacian kernel can build local correlations for the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>. Thus, the purpose of introducing Laplacian kernels on time series is local trend modeling with temporal regularization such that
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{L}\boldsymbol{x}\|_2^2=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2"/></p>
-
-As a matter of fact, we have several motivations and reasons for reformulating temporal regularization with circular convolution. Among them, there are some important properties inspired us a lot. In particular, one of the most useful properties of circular convolution is its relationship with discrete Fourier transform, i.e.,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2=\frac{1}{2T}\|\mathcal{F}(\boldsymbol{\ell})\circ\mathcal{F}(\boldsymbol{x})\|_2^2"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\cdot)"/> denotes the discrete Fourier transform. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\circ"/> is the Hadamard product or element-wise product.
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 10.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}=(2,-1,0,0,-1)^\top"/>, the circular convolution is
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}\star\boldsymbol{x}=\mathcal{C}(\boldsymbol{\ell})\boldsymbol{x}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix} =\begin{bmatrix} -5 \\ 0 \\ 0 \\ 0 \\ 5 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-and the regularization is
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2=\frac{1}{2}((-5)^2+5^2)=25"/></p>
-
-<span style="color:gray">
-How to compute the regularization <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})"/> with fast Fourier transform? 1) Compute the fast Fourier transform on <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\ell}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{\ell})"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x})"/>, respectively; 2) Compute the regularization as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{R}(\boldsymbol{x})=25"/>.
-</span>
-
-```python
-import numpy as np
-
-ell = np.array([0, 1, 2, 3, 4])
-x = np.array([2, -1, 0, 0, -1])
-f_ell = np.fft.fft(ell)
-f_x = np.fft.fft(x)
-print('Regularization R(x):')
-print(np.linalg.norm(f_ell * f_x, 2) ** 2 / (2 * len(x)))
-```
-
-<br>
-
----
-
-<br>
-
-### IV-C. Global + Local Time Series Trend Modeling
-
-
-
-<br>
-
-## V. Learning Interpretable Convolutional Kernels
-
-### V-A. Convolutional Kernels
-
-On the univariate time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> in the form of a vector, the circular convolution between time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/> and convolutional kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\in\mathbb{R}^{T}"/> can be constructed with certain purposes. The expression is formally defined by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}\in\mathbb{R}^{T}"/>. When using this kernel to characterize the temporal correlations of time series, one simple yet interesting idea is making the loss of circular convolution, namely, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2"/>, as small as possible. However, the optimization problem
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{\theta}}\,\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2"/></p>
-
-is ill-posed because the optimal solution is all entries of kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/> being zeros. To address this challenge, we assume that the first entry of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/> is one and the following <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-1"/> entries are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;-\boldsymbol{w}"/> in which <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\in\mathbb{R}^{T-1}"/> is a non-negative vector. Thus, the optimization problem becomes
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2 \\ \text{s.t.}\,&\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix} \end{aligned}"/></p>
-
-where the constraint is of great significance for minimizing the objective function.
-
-<br>
-
-### V-B. Sparse Linear Regression
-
-Recall that the circular convolution can be converted into a linear transformation with circulant matrix. Considering the kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix}"/>, the loss of circular convolution is equivalent to
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2=\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2"/></p>
-
-where the auxiliary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{T\times (T-1)}"/> is comprised of the last <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-1"/> columns of the circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{T\times T}"/>, namely,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{2} \\ x_{1} & x_{T} & x_{T-1} & \cdots & x_{3} \\ x_{2} & x_{1} & x_{T} & \cdots & x_{4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T-2} & x_{T-3} & x_{T-4} & \cdots & x_{T} \\ x_{T-1} & x_{T-2} & x_{T-3} & \cdots & x_{1} \\ \end{bmatrix}"/></p>
-
-where the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is separated into the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> (i.e., first column of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>) and the matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> (i.e., last <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-1"/> columns of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/>), see Figure 9 and Figure 10 for illustrations.
-
-<br>
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_circ.png" width="360" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 9.</b> Illustration of circular convolution as the linear transformation with a circulant matrix.
-</p>
-
-<br>
-
-As can be seen, one of the most intriguing properties is the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}"/> can be converted into the expression <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}"/> (see Figure 10), which takes the form of a linear regression with the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x},\boldsymbol{A}\}"/>.
-
-<br>
-
-
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/linear_regression_w_conv.png" width="360" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 10.</b> Illustration of circular convolution with a structured vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}"/>.
-</p>
-
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 11.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}=(1,0,0,0,-1)^\top"/>, the circular matrix is
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-and the auxiliary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> is
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-Thus, we can compute the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\star\boldsymbol{\theta}"/> by
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}=\begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix}-\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}\begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \\ \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix}-\begin{bmatrix} 1 \\ 2 \\ 3 \\ 4 \\ 0 \\ \end{bmatrix}=\begin{bmatrix} -1 \\ -1 \\ -1 \\ -1 \\ 4 \end{bmatrix}"/></p>
-
----
-
-<br>
-
-To reinforce the model interpretability, we impose a sparsity constraint on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/>. This is extremely important for capturing local and nonlocal correlations of time series. The process of learning interpretable convolutional kernels can be formulated as follows,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/> is the sparsity level, i.e., the number of nonzero values.
-
-<br>
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/sparse_reg_time_series.png" width="420" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 11.</b> Illustration of learning <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> from the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> with the constructed formula as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\approx\boldsymbol{A}\boldsymbol{w}"/>.
-</p>
-
-<br>
-
----
-
-<span style="color:gray">
-<b><img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-Norm.</b> For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm is defined as follows,
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_0=\operatorname{card}\{i\mid x_i\neq 0\}=|\operatorname{supp}(\boldsymbol{x})|"/></p>
-
-<span style="color:gray">
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{card}\{\cdot\}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{supp}(\cdot)"/> denote the cardinality and the support set of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, respectively. For instance, given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the support set is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{supp}(\boldsymbol{x})=\{2,3,4,5\}"/> and the number of nonzero entries is  <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_0=4"/>.
-</span>
-
----
-
-<br>
-
-#### V-C. Subspace Pursuit
-
-
-
-<br>
-
-#### V-D. Mixed-Integer Programming
-
-There are often some special-purpose algorithms for solving constrained linear regression problems, see [constrained least squares](https://en.wikipedia.org/wiki/Constrained_least_squares). Some examples of constraints include: 1) Non-negative least squares in which the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> must satisfy the vector inequality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}\geq 0"/> (each entry must be either positive or zero); 2) Box-constrained least squares in which the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> must satisfy the vector inequalities <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{b}_{\ell}\leq\boldsymbol{w}\leq \boldsymbol{b}_{u}"/>.
-
-In fact, the linear regression with sparsity constraints in the form of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm can be easily converted into a mixed-integer programming problem. Thus, the problem illustrated in Figure 11 is equivalent to
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_t\leq \tau \end{cases} \end{aligned}"/></p>
-
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\beta}"/> is the binary decision variable. The weight <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\alpha\in\mathbb{R}"/> (possibly a great value for most cases) can control the upper bound of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/>. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\beta_t=1"/>, then the value of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;w_t"/> is ranging between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;0"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\alpha"/>. Otherwise, the value of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;w_t"/> is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;0"/> because both lower and upper bounds are <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;0"/>. In fact, the last constraint can also be written as follows,
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\sum_{t=1}^{T-1}\beta_t =\|\boldsymbol{\beta}\|_1\leq \tau"/></p>
-
-
-<br>
-
----
-
-<span style="color:gray">
-<b>Example 12.</b> Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the auxiliary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> (i.e., the last 4 columns of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{5\times 5}"/>) is
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
-
-<span style="color:gray">
-The question is how to learn the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/> with sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=2"/> from the following optimization problem:
-</span>
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}"/></p>
-
-<span style="color:gray">
-In this case, the empirical solution of the decision variable is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(0.44,0,0,0.44)^\top"/>. To reproduce it, the solution algorithm of mixed-integer programming is given by
-</span>
-
-```python
-import numpy as np
-import cvxpy as cp
-
-x = np.array([0, 1, 2, 3, 4])
-A = circ_mat(x)[:, 1 :]
-tau = 2 # sparsity level
-d = A.shape[1]
-
-# Variables
-w = cp.Variable(d, nonneg=True)
-beta = cp.Variable(d, boolean=True)
-
-# Constraints
-constraints = [cp.sum(beta) <= tau, w <= beta, w >= 0]
-
-# Objective
-objective = cp.Minimize(cp.sum_squares(x - A @ w))
-
-# Problem
-problem = cp.Problem(objective, constraints)
-problem.solve(solver=cp.GUROBI)  # Ensure to use a solver that supports MIP
-
-# Solution
-print("Optimal beta:", w.value)
-print("Active indices:", np.nonzero(beta.value > 0.5)[0])
-```
-
-Please install the optimization packages in-ahead, e.g., `pip install gurobipy`. One can also check out the optimization solvers in `cvxpy`:
-
-```python
-import cvxpy as cp
-
-print(cp.installed_solvers())
-```
-
-<br>
-
----
-
-<br>
-
-
-<br>
-
-## VI. Insight into Ridesharing Trip Time Series
-
-[The City of Chicago's open data portal](https://data.cityofchicago.org/) provides a large amount of human mobility data, including [taxi trips](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew) and [TNP ridesharing trips](https://data.cityofchicago.org/Transportation/Transportation-Network-Providers-Trips-2018-2022-/m6dm-c72p). Figure 12 shows the realistic time series data of ridesharing trips with a strong weekly periodicity, allowing one to examine the usage of interpretable convolutional kernels.
-
-
-<br>
-
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/chicago_rideshare_ts.png" width="500" />
-</p>
-
-<p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 12.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2\times 7\times 24=336"/> hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
-</p>
-
-<br>
-
-Take the time series of Figure 12 as an example, the mixed-integer programming solver in CPLEX produces the temporal kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\triangleq (1,-\boldsymbol{w}^\top)^\top\in\mathbb{R}^{336}"/> with
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(\underbrace{0.34}_{t=1},0,\cdots,0,\underbrace{0.33}_{t=168},0,\cdots,0,\underbrace{0.34}_{t=335})^\top\in\mathbb{R}^{335}"/></p>
-
-where the sparsity level is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/> in the constraint <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{w}\|_0\leq\tau"/>, or equivalently <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{\beta}\|_1\leq\tau"/> on the binary decision variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\beta}"/>. This result basically demonstrates local correlations such as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=1"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;335"/>, as well as the weekly seasonality at <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=168"/>. Below is the Python implementation of the mixed-integer programming solver with CPLEX.
-
-<br>
-
-```python
-import numpy as np
-from docplex.mp.model import Model
-
-def kernel_mip(data, tau):
-    model = Model(name = 'Sparse Autoregression')
-    T = data.shape[0]
-    w = [model.continuous_var(lb = 0, name = f'w_{k}') for k in range(T - 1)]
-    beta = [model.binary_var(name = f'beta_{k}') for k in range(T - 1)]
-    error = [data[t] - model.sum(w[k] * data[t - k - 1] for k in range(T - 1)) for t in range(T)]
-    model.minimize(model.sum(r ** 2 for r in error))
-    model.add_constraint(model.sum(beta[k] for k in range(T - 1)) <= tau)
-    for k in range(T - 1):
-        model.add_constraint(w[k] <= beta[k])
-    solution = model.solve()
-    if solution:
-        w_coef = np.array(solution.get_values(w))
-        error = 0
-        for t in range(T):
-            a = data[t]
-            for k in range(T - 1):
-                a -= w_coef[k] * data[t - k - 1]
-            error += a ** 2
-        print('Objective function: {}'.format(error))
-        ind = np.where(w_coef > 0)[0].tolist()
-        print('Support set: ', ind)
-        print('Coefficients w: ', w_coef[ind])
-        print('Cardinality of support set: ', len(ind))
-        return w_coef, ind
-    else:
-        print('No solution found.')
-        return None
-
-import numpy as np
-import time
-
-tensor = np.load('Chicago_rideshare_mob_tensor_24.npz')['arr_0'][:, :, : 14 * 24]
-data = np.sum(np.sum(tensor, axis = 0), axis = 0)
-tau = 3
-
-start = time.time()
-w, ind = kernel_mip(data, tau)
-end = time.time()
-print('Running time (s):', end - start)
-```
-
-<br>
-
-For the entire implementation, please check out the [Jupyter Notebook](https://github.com/xinychen/ts-conv/blob/main/Models/Mobility-MIP.ipynb) on GitHub. The processed time series dataset is available at the folder of [Chicago-data](https://github.com/xinychen/ts-conv/tree/main/Chicago-data).
-
-<br>
-
-## VII. Concluding Remarks
-
-From a time series analysis perspective, our modeling ideas can guide future research by using the properties of circular convolution and connecting with various signals. Because circular convolution is a core component in many machine learning tasks, this post could provide an example for how to leverage the circular convolution, discrete Fourier transform, and linear regression. While we focused on the time series imputation and the convolutional kernel learning problems, we hope that our modeling ideas will inspire others in the fields machine learning and optimization.
-
-<br>
-<br>
-
-<p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 17, 2024.)</p>
