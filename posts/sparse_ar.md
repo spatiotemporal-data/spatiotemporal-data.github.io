@@ -22,17 +22,23 @@ In **Part I** of this series, we introduce the essential idea of time series aut
 
 ## I. Univariate Autoregression
 
+Time series autoregression is a statistical model used to analyze and forecast time series data. The class of autoregression models is widely used in the fields of economics, finance, weather forecasting, and signal processing.
+
 ### I-A. Time Series & Auto-Correlations
 
 ### I-B. Definition of Autoregression
 
-The <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>th-order univariate autoregression of time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}"/> can be written as follows,
+The essential idea of time series autoregression is that a given data point of a time series is linearly dependent on the previous data points. Mathematically, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>th-order univariate autoregression of time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}"/> can be written as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;x_{t}=\sum_{k=1}^{d}w_{k}x_{t-k}+\epsilon_{t}"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d\in\mathbb{Z}^{+}"/> is the order. Here, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{t}\in\mathbb{R}"/> is the value of the time series at time <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\in\{d+1,d+2,\ldots,T\}"/>. The vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}"/> represents the autoregressive coefficients. The random error <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\epsilon_t\in\mathbb{R},\,\forall t\in\{d+1,d+2,\ldots,T\}"/> is assumed to be normally distributed, following a mean of zero and a constant variance.
+
 
 There is a closed-form solution to the coefficient vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}"/> from the optimization problem such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\sum_{t=d+1}^{T}\Bigl(x_{t}-\sum_{k=1}^{d}w_{k}x_{t-k}\Bigr)^2"/></p>
+
 
 which is equivalent to
 
