@@ -8,7 +8,7 @@ layout: default
 
 <br>
 
-### 38th Mile
+### 39th Mile
 #### Probabilistic Artificial Intelligence Book
 
 **References**
@@ -18,6 +18,9 @@ layout: default
 
 ### 38th Mile
 #### Feature Selection for Reinforcement Learning
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=7Q8oNNsZGcA&t=446s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 **References**
