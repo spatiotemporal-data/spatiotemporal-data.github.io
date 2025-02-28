@@ -1345,7 +1345,19 @@ For the entire implementation, please check out the [Jupyter Notebook](https://g
 
 ## VII. Evaluation on Fluid Flow Data
 
+Fluid flow
 
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_flow_snapshots.png" width="600" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 14.</b> Matrix-variate time snapshots of the fluid flow dataset. This fluid flow dataset has the seasonality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. To demonstrate the periodic patterns, the time snapshots since <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=121"/> are also presented.
+</p>
+
+<br>
 
 <br>
 
