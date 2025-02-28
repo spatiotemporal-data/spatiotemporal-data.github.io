@@ -1354,7 +1354,7 @@ Fluid flow
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 15.</b> Matrix-variate time snapshots of the fluid flow dataset. This fluid flow dataset has the seasonality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. To demonstrate the periodic patterns, the time snapshots since <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=121"/> are also presented.
+<b>Figure 15.</b> Matrix-variate time snapshots of the fluid flow dataset. This fluid flow dataset has the seasonality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. To demonstrate the periodic patterns, the time snapshots since <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t=121"/> are also presented.
 </p>
 
 <br>
