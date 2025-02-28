@@ -1345,7 +1345,7 @@ For the entire implementation, please check out the [Jupyter Notebook](https://g
 
 ## VII. Quantifying Seasonality of Fluid Flow Data
 
-Fluid flow
+Investigating fluid dynamic systems is of great interest for uncovering spatiotemporal coherent structures because dominant patterns exist in the flow field. To analyze the underlying seasonality of fluid dynamics, we aim to learn a sparse convolutional kernel on the cylinder wake dataset (i.e., fluid flow passing a circular cylinder) from the [DMD book](http://dmdbook.com/), see Figure 15 for some snapshots. The dataset is a multidimensional tensor of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;199\times 449\times 150"/>, representing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;199"/>-by-<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;449"/> vorticity fields with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;150"/> time snapshots.
 
 <br>
 
