@@ -1361,6 +1361,11 @@ Fluid flow
 
 As shown in Figure 15, these fluid flow snapshots are in the form of matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{M\times N},t=1,2,\ldots,150"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;M"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> columns, while the dataset is in the form of a tensor such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{X}}\in\mathbb{R}^{M\times N\times T}"/> (element-wise, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{m,n,t}\in\mathbb{R}"/>). Thus, the optimization problem for learning sparse convolutional kernel can be formulated as follows,
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\sum_{m=1}^{M}\sum_{n=1}^{N}\|\boldsymbol{x}_{m,n}-\boldsymbol{A}_{m,n}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \sum_{t=1}^{T-1}\beta_{t}\leq\tau \end{cases} \end{aligned}"/></p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/> is the upper bound of the number of nonzero entries in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/>.
+
+
 
 
 <br>
