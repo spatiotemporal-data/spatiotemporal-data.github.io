@@ -1343,7 +1343,7 @@ For the entire implementation, please check out the [Jupyter Notebook](https://g
 
 <br>
 
-## VII. Evaluation on Fluid Flow Data
+## VII. Quantifying Seasonality of Fluid Flow Data
 
 Fluid flow
 
