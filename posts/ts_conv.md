@@ -23,6 +23,8 @@ In **Part I** of this series, we introduce motivations of time series modeling w
 
 **Part III** and **Part IV** give the modeling ideas of circulant matrix nuclear norm minimization and Laplacian convolutional representation, addressing the critical challenges in time series imputation tasks. The optimization algorithm of both models makes use of fast Fourier transform in a log-linear time complexity. **Part V** presents an interpretable convolutional kernel method in which the sparsity of convolutional kernels is modeled by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity constraints.
 
+For an empirical evaluation, we demonstrate the interpretable convolutional kernels on ridesharing trip time series (see **Part VI**) and fluid flow data (see **Part VII**), respectively. These convolutional kernels allow one to quantify periodicity and seasonality underlying the system. Finally, **Part VIII** concludes the whole post.
+
 <br>
 
 ## I. Motivation
@@ -1341,7 +1343,13 @@ For the entire implementation, please check out the [Jupyter Notebook](https://g
 
 <br>
 
-## VII. Concluding Remarks
+## VII. Evaluation on Fluid Flow Data
+
+
+
+<br>
+
+## VIII. Concluding Remarks
 
 From a time series analysis perspective, our modeling ideas can guide future research by using the properties of circular convolution and connecting with various signals. Because circular convolution is a core component in many machine learning tasks, this post could provide an example for how to leverage the circular convolution, discrete Fourier transform, and linear regression. While we focused on the time series imputation and the convolutional kernel learning problems, we hope that our modeling ideas will inspire others in the fields of machine learning and optimization.
 
