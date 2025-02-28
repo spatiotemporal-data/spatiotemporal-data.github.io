@@ -1354,10 +1354,14 @@ Fluid flow
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 14.</b> Matrix-variate time snapshots of the fluid flow dataset. This fluid flow dataset has the seasonality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. To demonstrate the periodic patterns, the time snapshots since <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=121"/> are also presented.
+<b>Figure 15.</b> Matrix-variate time snapshots of the fluid flow dataset. This fluid flow dataset has the seasonality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. To demonstrate the periodic patterns, the time snapshots since <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=121"/> are also presented.
 </p>
 
 <br>
+
+As shown in Figure 15, these fluid flow snapshots are in the form of matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{M\times N},t=1,2,\ldots,150"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;M"/> rows and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> columns, while the dataset is in the form of a tensor such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{X}}\in\mathbb{R}^{M\times N\times T}"/> (element-wise, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{m,n,t}\in\mathbb{R}"/>). Thus, the optimization problem for learning sparse convolutional kernel can be formulated as follows,
+
+
 
 <br>
 
