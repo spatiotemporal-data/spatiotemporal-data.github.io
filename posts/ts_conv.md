@@ -1350,7 +1350,7 @@ Fluid flow
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_flow_snapshots.png" width="600" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/fluid_flow_snapshots.png" width="650" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
