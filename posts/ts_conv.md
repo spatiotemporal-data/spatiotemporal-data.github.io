@@ -1365,8 +1365,72 @@ As shown in Figure 15, these fluid flow snapshots are in the form of matrices <i
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/> is the upper bound of the number of nonzero entries in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/>.
 
+On the fluid flow dataset, the mixed-integer programming solver in CPLEX produces the temporal kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\triangleq (1,-\boldsymbol{w}^\top)^\top\in\mathbb{R}^{150}"/> with
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(\underbrace{0.34}_{t=1},0,\cdots,0,\underbrace{0.33}_{t=168},0,\cdots,0,\underbrace{0.34}_{t=335})^\top\in\mathbb{R}^{149}"/></p>
 
+where the sparsity level is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=6"/>. This result basically demonstrates the seasonality with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. Below is the Python implementation of the mixed-integer programming solver with CPLEX.
+
+<br>
+
+```python
+import numpy as np
+from docplex.mp.model import Model
+
+def circ_mat(vec):
+    n = vec.shape[0]
+    mat = np.zeros((n, n))
+    mat[:, 0] = vec
+    for i in range(1, n):
+        mat[:, i] = np.append(vec[-i :], vec[: n - i], axis = 0)
+    return mat
+
+def data2para(tensor):
+    M, N, T = tensor.shape
+    C = np.zeros((T - 1, T - 1))
+    D = np.zeros(T - 1)
+    for m in range(M):
+        for n in range(N):
+            A = circ_mat(tensor[m, n, :])[:, 1 :]
+            C += A.T @ A
+            D += A.T @ tensor[m, n, :]
+    return C, D
+
+def kernel_mip(C, D, tau):
+    model = Model(name = 'Sparse Convolutional Kernel')
+    T_minus_1 = D.shape[0]
+    T = T_minus_1 + 1
+    w = [model.continuous_var(lb = 0, name = f'w_{k}') for k in range(T - 1)]
+    beta = [model.binary_var(name = f'beta_{k}') for k in range(T - 1)]
+    model.minimize(model.sum(w[t] * w[k] * C[k, t] - 2 * w[t] * D[t] for k in range(T - 1) for t in range(T - 1)))
+    model.add_constraint(model.sum(beta[k] for k in range(T - 1)) <= tau)
+    model.add_constraint(model.sum(w[k] for k in range(T - 1)) == 1)
+    for k in range(T - 1):
+        model.add_constraint(w[k] <= beta[k])
+    solution = model.solve()
+    if solution:
+        print(solution.get_values(w))
+        w_coef = np.array(solution.get_values(w))
+        ind = np.where(w_coef > 0)[0].tolist()
+        print('Support set: ', ind)
+        print('Coefficients w: ', w_coef[ind])
+        print('Cardinality of support set: ', len(ind))
+        return w_coef, ind
+    else:
+        print('No solution found.')
+        return None
+
+import time
+
+tensor = np.load('tensor.npz')['arr_0']
+C, D = data2para(tensor[:, :, : 150])
+tau = 6
+
+start = time.time()
+w, ind = kernel_mip(C, D, tau)
+end = time.time()
+print('Running time (s):', end - start)
+```
 
 <br>
 
