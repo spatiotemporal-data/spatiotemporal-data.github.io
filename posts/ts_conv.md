@@ -1369,7 +1369,7 @@ On the fluid flow dataset, the mixed-integer programming solver in CPLEX produce
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(\underbrace{0.34}_{t=1},0,\cdots,0,\underbrace{0.16}_{t=30},0,\cdots,0,\underbrace{0.16}_{t=120},0,\cdots,0,\underbrace{0.34}_{t=149})^\top\in\mathbb{R}^{149}"/></p>
 
-where the sparsity level is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=4"/>. This result basically demonstrates the seasonality with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. Below is the Python implementation of the mixed-integer programming solver with CPLEX.
+where the sparsity level is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=4"/>. This result is consistent with the subspace pursuit algorithm. This result basically demonstrates the seasonality with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. Below is the Python implementation of the mixed-integer programming solver with CPLEX.
 
 <br>
 
