@@ -1296,7 +1296,7 @@ import numpy as np
 from docplex.mp.model import Model
 
 def kernel_mip(data, tau):
-    model = Model(name = 'Sparse Autoregression')
+    model = Model(name = 'Sparse Convolutional Kernel')
     T = data.shape[0]
     w = [model.continuous_var(lb = 0, name = f'w_{k}') for k in range(T - 1)]
     beta = [model.binary_var(name = f'beta_{k}') for k in range(T - 1)]
