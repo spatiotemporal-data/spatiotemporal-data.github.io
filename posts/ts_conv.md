@@ -1367,9 +1367,9 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 On the fluid flow dataset, the mixed-integer programming solver in CPLEX produces the temporal kernel <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\triangleq (1,-\boldsymbol{w}^\top)^\top\in\mathbb{R}^{150}"/> with
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(0,\cdots,0,\underbrace{0.50}_{t=30},0,\cdots,0,\underbrace{0.50}_{t=120},0,\cdots,0)^\top\in\mathbb{R}^{149}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(\underbrace{0.34}_{t=1},0,\cdots,0,\underbrace{0.16}_{t=30},0,\cdots,0,\underbrace{0.16}_{t=120},0,\cdots,0,\underbrace{0.34}_{t=149})^\top\in\mathbb{R}^{149}"/></p>
 
-where the sparsity level is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=2"/>. This result basically demonstrates the seasonality with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. Below is the Python implementation of the mixed-integer programming solver with CPLEX.
+where the sparsity level is set as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=4"/>. This result basically demonstrates the seasonality with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Delta t=30"/>. Below is the Python implementation of the mixed-integer programming solver with CPLEX.
 
 <br>
 
@@ -1402,7 +1402,8 @@ def kernel_mip(C, D, tau):
     T = T_minus_1 + 1
     w = [model.continuous_var(lb = 0, name = f'w_{k}') for k in range(T - 1)]
     beta = [model.binary_var(name = f'beta_{k}') for k in range(T - 1)]
-    model.minimize(model.sum(w[t] * w[k] * C[k, t] - 2 * w[t] * D[t] for k in range(T - 1) for t in range(T - 1)))
+    model.minimize(model.sum(w[k] * model.sum(w[t] * C[k, t] for t in range(T - 1)) 
+                             - 2 * w[k] * D[k] for k in range(T - 1)))
     model.add_constraint(model.sum(beta[k] for k in range(T - 1)) <= tau)
     model.add_constraint(model.sum(w[k] for k in range(T - 1)) == 1)
     for k in range(T - 1):
@@ -1424,7 +1425,7 @@ import time
 
 tensor = np.load('tensor.npz')['arr_0']
 C, D = data2para(tensor[:, :, : 150])
-tau = 6
+tau = 4
 
 start = time.time()
 w, ind = kernel_mip(C, D, tau)
