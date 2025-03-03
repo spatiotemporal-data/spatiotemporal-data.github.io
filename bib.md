@@ -8,6 +8,14 @@ layout: default
 
 <br>
 
+### 40th Mile
+#### [Matrix Calculus for Machine Learning and Beyond](https://github.com/mitmath/matrixcalc)
+
+
+
+
+<br>
+
 ### 39th Mile
 #### Probabilistic Artificial Intelligence Book
 
