@@ -8,11 +8,19 @@ layout: default
 
 <br>
 
-### 40th Mile
+### 41st Mile
 #### [Matrix Calculus for Machine Learning and Beyond](https://github.com/mitmath/matrixcalc)
 
 
+<br>
 
+### 40th Mile
+#### Cauchy-Schwarz Regularizers
+
+
+
+**References**
+- Sueda Taner, Ziyi Wang, Christoph Studer (2025). [Cauchy-Schwarz Regularizers](https://arxiv.org/abs/2503.01639). ICLR 2025.
 
 <br>
 
