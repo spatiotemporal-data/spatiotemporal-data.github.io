@@ -26,6 +26,13 @@ Time series autoregression is a statistical model used to analyze and forecast t
 
 ### I-A. Time Series & Auto-Correlations
 
+The first challenge is extracting the temporal correlations from autoregression coefficients if the coefficient vector is densely valued and has both positive and negative entries.
+
+Does this situation appear if you use naive least square? (due to random noise in the observation?)
+
+
+
+
 ### I-B. Definition of Autoregression
 
 The essential idea of time series autoregression is that a given data point of a time series is linearly dependent on the previous data points. Mathematically, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>th-order univariate autoregression of time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}"/> can be written as follows,
