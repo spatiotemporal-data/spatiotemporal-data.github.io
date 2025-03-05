@@ -1103,6 +1103,8 @@ Subspace Pursuit (SP), introduced by [W. Dai and O. Milenkovic in 2008](https://
 
 <br>
 
+---
+
 **Algorithm.** Subspace Pursuit
 
 - **Input**: Signal vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{m}"/>, dictionary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>, and sparsity level <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/>.
@@ -1117,6 +1119,8 @@ Subspace Pursuit (SP), introduced by [W. Dai and O. Milenkovic in 2008](https://
   - Set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;w_i=0"/> for all <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;i\notin S"/>.
   - <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{r}=\boldsymbol{x}-\boldsymbol{A}_S\boldsymbol{w}_S"/>.
 - **end**
+
+---
 
 <br>
 
