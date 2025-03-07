@@ -35,7 +35,9 @@ layout: default
 ### 38th Mile
 #### Sparse Dictionary Learning
 
-Interpretable machine learning provides a data-driven framework for understanding complicated dynamical systems. One important perspective is sparsity to reinforce the interpretability of several state-of-the-art models. Sparse dictionary learning stems from sparse signal processing, which takes the form of linear regression with sparse parameters.
+Interpretable machine learning provides a data-driven framework for understanding complicated dynamical systems. One important perspective is sparsity to reinforce the interpretability of several state-of-the-art models. Sparse dictionary learning stems from sparse signal processing, which takes the form of linear regression with sparse parameters. The optimization problem can be simply summarized as follows,
+
+In a very recent study, researchers developed an interpretable and efficient reinforcement learning model for sparse dictionary learning.
 
 **References**
 - Nicholas Zolman, Urban Fasel, J. Nathan Kutz, Steven L. Brunton (2024). [SINDy-RL: Interpretable and Efficient Model-Based Reinforcement Learning](https://arxiv.org/abs/2403.09110). arXiv:2403.09110.
