@@ -33,11 +33,12 @@ layout: default
 <br>
 
 ### 38th Mile
-#### Feature Selection for Reinforcement Learning
+#### Sparse Dictionary Learning
 
+Interpretable machine learning provides a data-driven framework for understanding complicated dynamical systems. One important perspective is sparsity to reinforce the interpretability of several state-of-the-art models. Sparse dictionary learning stems from sparse signal processing, which takes the form of linear regression with sparse parameters.
 
 **References**
-- Parr et al. (2008). [An Analysis of Linear Models, Linear Value-Function Approximation, and Feature Selection for Reinforcement Learning](https://dl.acm.org/doi/10.1145/1390156.1390251). ICML 2008. [[PDF](https://users.cs.duke.edu/~parr/icml08.pdf)]
+- Nicholas Zolman, Urban Fasel, J. Nathan Kutz, Steven L. Brunton (2024). [SINDy-RL: Interpretable and Efficient Model-Based Reinforcement Learning](https://arxiv.org/abs/2403.09110). arXiv:2403.09110.
 
 <br>
 
