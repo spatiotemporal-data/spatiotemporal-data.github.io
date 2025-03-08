@@ -35,7 +35,23 @@ layout: default
 ### 39th Mile
 #### Nystrom Truncation of Spectral Features
 
-**Parameterizing policy gradient.** If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K:\mathcal{X}\times\mathcal{X}\to\mathbb{R}"/> is a continuous, symmetric, and positive definite kernel, then there exists a sequence of non-negative eigenvalues <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\lambda_i\}_{i=1}^{\infty}"/> and corresponding orthonomal basis
+**Parameterizing policy gradient.** If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K:\mathcal{X}\times\mathcal{X}\to\mathbb{R}"/> is a continuous, symmetric, and positive definite kernel, then there exists a sequence of non-negative eigenvalues <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\lambda_i\}_{i=1}^{\infty}"/> and corresponding orthonomal basis <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\phi_i\}_{i=1}^{\infty}"/> such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;K(s,t)=\sum_{i=1}^{\infty}\lambda_i\phi_i(s)\phi_i(t),\,\forall (s,t)\in\mathcal{X}\times\mathcal{X}"/></p>
+
+For large datasets, computing the full kernel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/> and its eigenvalue decomposition (EVD) is in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(n^3)"/> time and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(n^2)"/> memory. 
+
+The Nystrom method approximates the kernel matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/> by selecting a subset. Let <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K_1"/> be the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;m\times m"/> kernel matrix for the subset and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K_2"/> be the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n\times m"/> kernel matrix between the full dataset and the subset, then the Nystrom approximation of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/> is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;K\approx K_2K_1^{-1}K_2^\top"/></p>
+
+Furthermore, let <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K_1=U\Lambda_1U^\top"/> be the EVD, then
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\Phi}=K_2U\Lambda_1^{-1/2},\quad\tilde{\Lambda}=\Lambda_1"/></p>
+
+corresponding to eigenvectors and eigenvalues. Selecting top-<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;k"/> eigenvalues and eigenvectors, denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\Lambda}_k"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\Phi}_k"/>, respectively. The truncation approximation of the kernel matrix becomes
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;K\approx\tilde{\Phi}_k\tilde{\Lambda}_k\tilde{\Phi}_k^\top"/></p>
 
 **References**
 - Sueda Taner, Ziyi Wang, Christoph Studer (2025). [Cauchy-Schwarz Regularizers](https://arxiv.org/abs/2503.01639). ICLR 2025.
