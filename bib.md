@@ -8,13 +8,13 @@ layout: default
 
 <br>
 
-### 41st Mile
+### 42nd Mile
 #### [Matrix Calculus for Machine Learning and Beyond](https://github.com/mitmath/matrixcalc)
 
 
 <br>
 
-### 40th Mile
+### 41st Mile
 #### Cauchy-Schwarz Regularizers
 
 
@@ -24,11 +24,21 @@ layout: default
 
 <br>
 
-### 39th Mile
+### 40th Mile
 #### Probabilistic Artificial Intelligence Book
 
 **References**
 - Andreas Krause, Jonas Hübotter (2025). Probabilistic Artificial Intelligence. arXiv:2502.05244. [[PDF](https://arxiv.org/pdf/2502.05244)]
+
+<br>
+
+### 39th Mile
+#### Nystrom Truncation of Spectral Features
+
+**Parameterizing policy gradient.** If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K:\mathcal{X}\times\mathcal{X}\to\mathbb{R}"/> is a continuous, symmetric, and positive definite kernel, then there exists a sequence of non-negative eigenvalues <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\lambda_i\}_{i=1}^{\infty}"/> and corresponding orthonomal basis
+
+**References**
+- Sueda Taner, Ziyi Wang, Christoph Studer (2025). [Cauchy-Schwarz Regularizers](https://arxiv.org/abs/2503.01639). ICLR 2025.
 
 <br>
 
