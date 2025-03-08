@@ -54,7 +54,7 @@ corresponding to eigenvectors and eigenvalues. Selecting top-<img style="display
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;K\approx\tilde{\Phi}_k\tilde{\Lambda}_k\tilde{\Phi}_k^\top"/></p>
 
 **References**
-- Sueda Taner, Ziyi Wang, Christoph Studer (2025). [Cauchy-Schwarz Regularizers](https://arxiv.org/abs/2503.01639). ICLR 2025.
+- Na Li (Harvard). [Representation-based Learning and Control for Dynamical Systems](https://www.youtube.com/watch?v=Z7QB8-vu8sY). YouTube.
 
 <br>
 
