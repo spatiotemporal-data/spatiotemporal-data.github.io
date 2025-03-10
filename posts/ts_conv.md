@@ -1128,7 +1128,7 @@ By letting the objective function be <img style="display: inline;" src="https://
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\frac{\mathrm{d}\,f}{\mathrm{d}\,\boldsymbol{w}}=-\boldsymbol{A}^\top\underbrace{(\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w})}_{\triangleq \boldsymbol{r}}"/></p>
 
-Thus, the first step in the iterative process of subspace pursuit can select the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> largest gradients (or derivative values).
+Thus, the first step in the iterative process of subspace pursuit can select the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> largest absolute gradients (or absolute derivative values).
 
 <br>
 
