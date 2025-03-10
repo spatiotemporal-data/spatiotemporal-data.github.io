@@ -19,7 +19,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 
 This project presents some spatiotemporal methods with data-driven machine learning:
 
-- Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2024). [Correlating time series with interpretable convolutional kernels](https://xinychen.github.io/papers/conv_kernel.pdf). *IEEE Transactions on Knowledge and Data Engineering*.
+- Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). [Correlating time series with interpretable convolutional kernels](https://xinychen.github.io/papers/conv_kernel.pdf). *IEEE Transactions on Knowledge and Data Engineering*.
 - Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). [Laplacian convolutional representation for traffic time series imputation](https://doi.org/10.1109/TKDE.2024.3419698). *IEEE Transactions on Knowledge and Data Engineering*. 36 (11): 6490-6502. [[Slides](https://xinychen.github.io/slides/LCR24.pdf)] [[Data & Python code](https://github.com/xinychen/LCR)]
 - Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). *IEEE Transactions on Knowledge and Data Engineering*. 36 (2): 504-517. [[Blog post](https://spatiotemporal-data.github.io/posts/time_varying_model/)] [[Data & Python code](https://github.com/xinychen/vars)]
 
