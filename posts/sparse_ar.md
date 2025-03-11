@@ -80,7 +80,7 @@ The optimization problem is formulated as follows,
 </span>
 
 <span style="color:gray">
-According to the definition of inner product, we have <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}^\top\boldsymbol{y}=\sum_{i=1}^{n}x_iy_i"/>. In contrast, the outer product between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> is given by
+According to the definition of inner product, we have <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}^\top\boldsymbol{y}=\sum_{i=1}^{n}x_iy_i"/>. In contrast, the outer product between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is given by
 </span>
 
 
