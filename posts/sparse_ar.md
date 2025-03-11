@@ -87,7 +87,13 @@ According to the definition of inner product, we have <img style="display: inlin
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\boldsymbol{x}^\top=\begin{bmatrix} y_1x_1 & y_1x_2 & \cdots & y_1x_n \\ y_2x_1 & y_2x_2 & \cdots & y_nx_2 \\ \vdots & \vdots & \ddots & \vdots \\ y_nx_1 & y_nx_2 & \cdots & y_nx_n \\ \end{bmatrix}\in\mathbb{R}^{n\times n}"/></p>
 
 <span style="color:gray">
-Recall that the trace of a square matrix is the sum of diagonal entries, we therefore have <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{tr}(\boldsymbol{y}\boldsymbol{x}^\top)=\sum_{i=1}^{n}y_ix_i=\boldsymbol{y}^\top\boldsymbol{x}=\boldsymbol{x}^\top\boldsymbol{y}"/> as claimed.
+Recall that the trace of a square matrix is the sum of diagonal entries, we therefore have 
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{tr}(\boldsymbol{y}\boldsymbol{x}^\top)=\sum_{i=1}^{n}y_ix_i=\boldsymbol{y}^\top\boldsymbol{x}=\boldsymbol{x}^\top\boldsymbol{y}"/></p>
+
+<span style="color:gray">
+as claimed.
 </span>
 
 
