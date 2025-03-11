@@ -13,6 +13,7 @@ layout: default
 In this post, we intend to explain the essential ideas of our research work:
 
 - Interpretable time series autoregression.
+- Essential idea of sparse autoregression.
 
 **Content:**
 
