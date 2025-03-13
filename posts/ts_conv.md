@@ -90,15 +90,17 @@ As mentioned above, the vector <img style="display: inline;" src="https://latex.
 
 Given any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top\in\mathbb{R}^4"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top\in\mathbb{R}^3"/>, the circular convolution between them can be expressed as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\begin{bmatrix}
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \boldsymbol{z}=&\boldsymbol{x}\star\boldsymbol{y}=\begin{bmatrix}
 \displaystyle\sum_{k=1}^{3}x_{1-k+1}y_k \\
 \displaystyle\sum_{k=1}^{3}x_{2-k+1}y_k \\
 \displaystyle\sum_{k=1}^{3}x_{3-k+1}y_k \\
 \displaystyle\sum_{k=1}^{3}x_{4-k+1}y_k \\
-\end{bmatrix}
-=\begin{bmatrix}
+\end{bmatrix}=\begin{bmatrix}
+x_1y_1+x_0y_2+x_{-1}y_3 \\ x_2y_1+x_1y_2+x_4y_3 \\ x_3y_1+x_2y_2+x_1y_3 \\ x_4y_1+x_3y_2+x_2y_3 \\
+\end{bmatrix} \\
+\Rightarrow\boldsymbol{z}=&\begin{bmatrix}
 x_1y_1+x_4y_2+x_3y_3 \\ x_2y_1+x_1y_2+x_4y_3 \\ x_3y_1+x_2y_2+x_1y_3 \\ x_4y_1+x_3y_2+x_2y_3 \\
-\end{bmatrix} \\"/></p>
+\end{bmatrix} \\ \end{aligned}"/></p>
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_3"/> according to the definition.
 
@@ -115,7 +117,7 @@ For subsequent entries <img style="display: inline;" src="https://latex.codecogs
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 2.</b> Illustration of the circular convolution between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top"/>. (a) Computing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_1"/> involves <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_3"/>. (b) Computing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_2"/> involves <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/>. The figure inspired by [Prince (2023)](https://udlbook.github.io/udlbook/).
+<b>Figure 2.</b> Illustration of the circular convolution between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(y_1,y_2,y_3)^\top"/>. (a) Computing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_1"/> involves <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{-1}=x_3"/>. (b) Computing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;z_2"/> involves <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{0}=x_4"/>. The figure is inspired by [Prince (2023)](https://udlbook.github.io/udlbook/).
 </p>
 
 <br>
