@@ -96,7 +96,7 @@ Given any vectors <img style="display: inline;" src="https://latex.codecogs.com/
 \displaystyle\sum_{k=1}^{3}x_{3-k+1}y_k \\
 \displaystyle\sum_{k=1}^{3}x_{4-k+1}y_k \\
 \end{bmatrix}=\begin{bmatrix}
-x_1y_1+x_0y_2+x_{-1}y_3 \\ x_2y_1+x_1y_2+x_4y_3 \\ x_3y_1+x_2y_2+x_1y_3 \\ x_4y_1+x_3y_2+x_2y_3 \\
+x_1y_1+x_0y_2+x_{-1}y_3 \\ x_2y_1+x_1y_2+x_{0}y_3 \\ x_3y_1+x_2y_2+x_1y_3 \\ x_4y_1+x_3y_2+x_2y_3 \\
 \end{bmatrix} \\
 \Rightarrow\boldsymbol{z}=&\begin{bmatrix}
 x_1y_1+x_4y_2+x_3y_3 \\ x_2y_1+x_1y_2+x_4y_3 \\ x_3y_1+x_2y_2+x_1y_3 \\ x_4y_1+x_3y_2+x_2y_3 \\
