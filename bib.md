@@ -8,11 +8,23 @@ layout: default
 
 <br>
 
-### 42nd Mile
+
+### 43rd Mile
 #### [Matrix Calculus for Machine Learning and Beyond](https://github.com/mitmath/matrixcalc)
 
 
 <br>
+
+### 42nd Mile
+#### Composable Optimization for Robotic Motion Planning and Control
+
+From a perspective of control as optimization, the objective could be what one wants system to do, given the model of one's robot as constraints. This is exactly an optimal control problem such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{x(t),u(t)}\,&J(x(t),u(t))=\int_{0}^{T}L(x(t),u(t))\,\mathrm{d}t \\ \text{s.t.}\,&\begin{cases} \dot{x}=f(x,u) \\ u_{\text{min}}\leq u\leq u_{\text{max}} \end{cases} \end{aligned}"/></p>
+
+
+<br>
+
 
 ### 41st Mile
 #### Cauchy-Schwarz Regularizers
@@ -24,6 +36,7 @@ The main idea is that Cauchy-Schwarz inequality <img style="display: inline;" sr
 
 <br>
 
+
 ### 40th Mile
 #### Probabilistic Artificial Intelligence Book
 
@@ -31,6 +44,7 @@ The main idea is that Cauchy-Schwarz inequality <img style="display: inline;" sr
 - Andreas Krause, Jonas Hübotter (2025). Probabilistic Artificial Intelligence. arXiv:2502.05244. [[PDF](https://arxiv.org/pdf/2502.05244)]
 
 <br>
+
 
 ### 39th Mile
 #### Nystrom Truncation of Spectral Features
@@ -58,6 +72,7 @@ corresponding to eigenvectors and eigenvalues. Selecting top-<img style="display
 
 <br>
 
+
 ### 38th Mile
 #### Sparse Dictionary Learning
 
@@ -69,6 +84,7 @@ In a very recent study, researchers developed an interpretable and efficient rei
 - Nicholas Zolman, Urban Fasel, J. Nathan Kutz, Steven L. Brunton (2024). [SINDy-RL: Interpretable and Efficient Model-Based Reinforcement Learning](https://arxiv.org/abs/2403.09110). arXiv:2403.09110.
 
 <br>
+
 
 ### 37th Mile
 #### Cardinality Minimization, Constraints, and Regularization
@@ -95,6 +111,7 @@ These optimization problems have broad applications such as signal and image pro
 - Andreas M. Tillmann, Daniel Bienstock, Andrea Lodi, Alexandra Schwartz (2024). [Cardinality Minimization, Constraints, and Regularization: A Survey](https://doi.org/10.1137/21M142770X). SIAM Review, 66(3). [[PDF](https://arxiv.org/pdf/2106.09606)]
 
 <br>
+
 
 ### 36th Mile
 #### Single-Factor Matrix Decomposition with Sparse Penalty
@@ -134,6 +151,7 @@ canonical correlation analysis. Biostatistics. [[DOI](https://doi.org/10.1093/bi
 
 <br>
 
+
 ### 35th Mile
 #### Iterative Shrinkage Thresholding Algorithm (ISTA)
 
@@ -164,6 +182,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
+
 ### 34th Mile
 #### Learning Sparse Nonparametric Directed Acyclic Graphs (DAG)
 
@@ -190,6 +209,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
+
 ### 33rd Mile
 #### Learning Sparse Nonlinear Dynamics via Mixed-Integer Optimization
 
@@ -205,6 +225,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <br>
 
+
 ### 32nd Mile
 
 - [Behavioral changes during the COVID-19 pandemic decreased income diversity of urban encounters](https://www.nature.com/articles/s41467-023-37913-y)
@@ -214,6 +235,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 - [Learning with Combinatorial Optimization Layers: A Probabilistic Approach](https://arxiv.org/pdf/2207.13513)
 
 <br>
+
 
 ### 31st Mile
 
@@ -243,6 +265,7 @@ Please check out the details of [the relevance of <img style="display: inline;" 
 
 <br>
 
+
 ### 30th Mile
 #### Interpretable ML vs. Explainable ML
 
@@ -255,6 +278,7 @@ In the context of AI, there is a subtle difference between terms interpretabilit
 - Christoph Molnar (2024). [Interpretable Machine Learning: A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/).
 
 <br>
+
 
 ### 29th Mile
 #### INFORMS 2024 | Optimal k-Sparse Ridge Regression
@@ -272,6 +296,7 @@ which is equivalent to
 - Jiachang Liu, Sam Rosen, Chudi Zhong, Cynthia Rudin (2023). [OKRidge: Scalable Optimal k-Sparse Ridge Regression](https://arxiv.org/pdf/2304.06686). NeurIPS 2023.
 
 <br>
+
 
 ### 28th Mile
 #### Mixed Integer Linear Programming (Example)
@@ -319,6 +344,7 @@ Note that the ["Model too large for size-limited Gurobi license" error](https://
 
 <br>
 
+
 ### 27th Mile
 #### Importance of Sparsity in Interpretable Machine Learning
 
@@ -330,6 +356,7 @@ Sparsity is an important type of model-based interpretability methods. Typically
 
 
 <br>
+
 
 ### 26th Mile
 #### INFORMS 2024 | Core Tensor Shape Optimization
@@ -366,6 +393,7 @@ The optimization problem can be implemented by using an integer programming solv
 
 <br>
 
+
 ### 25th Mile
 #### Mobile Service Usage Data
 
@@ -373,6 +401,7 @@ The optimization problem can be implemented by using an integer programming solv
 - André Zanella (2024). [Characterizing Large-Scale Mobile Traffic Measurements for Urban, Social and Networks Sciences](https://dspace.networks.imdea.org/handle/20.500.12761/1852). PhD thesis.
 
 <br>
+
 
 ### 24th Mile
 #### Optimization in Reinforcement Learning
@@ -383,6 +412,7 @@ The optimization problem can be implemented by using an integer programming solv
 - Lucia Falconi, Andrea Martinelli, and John Lygeros (2024). [Data-driven optimal control via linear programming: boundedness guarantees](https://doi.org/10.1109/TAC.2024.3465536). IEEE Transactions on Automatic Control.
 
 <br>
+
 
 ### 23rd Mile
 #### Sparse and Time-Varying Regression
@@ -405,6 +435,7 @@ The methodological contribution is reformulating this problem as a binary convex
 
 <br>
 
+
 ### 22nd Mile
 #### Revisiting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-Norm Minimization
 
@@ -418,6 +449,7 @@ The methodological contribution is reformulating this problem as a binary convex
 
 <br>
 
+
 ### 21st Mile
 #### Research Seminars
 
@@ -425,6 +457,7 @@ The methodological contribution is reformulating this problem as a binary convex
 - [Param-Intelligence (𝝅) seminar series](https://sites.google.com/view/paramintelligencelab/seminar-series): A dynamic platform for researchers, engineers, and students to explore and discuss the latest advancements in integrating machine learning with scientific computing. Key topics include data-driven modeling, physics-informed neural surrogates, neural operators, and hybrid computational methods, with a strong focus on real-world applications across various fields of computational science and engineering.
 
 <br>
+
 
 ### 20th Mile
 #### Robust, Interpretable Statistical Models: Sparse Regression with the LASSO
@@ -451,6 +484,7 @@ One interesting application is using sparsity-promoting techniques and machine l
 
 <br>
 
+
 ### 19th Mile
 #### Causal Inference for Geosciences
 
@@ -463,6 +497,7 @@ Learning causal interactions from time series of complex dynamical systems is of
 
 <br>
 
+
 ### 18th Mile
 #### Tensor Factorization for Knowledge Graph Completion
 
@@ -474,6 +509,7 @@ decomposition of the binary tensor representation of knowledge graph triples all
 - Ivana Balazevic, Carl Allen, Timothy M. Hospedales (2019). TuckER: Tensor Factorization for Knowledge Graph Completion. arXiv:1901.09590. [[PDF](https://arxiv.org/pdf/1901.09590)]
 
 <br>
+
 
 ### 17th Mile
 #### RESCAL: Tensor-Based Relational Learning
@@ -495,6 +531,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 - Zhanhong Cheng. [factor_matrix_time_series](https://github.com/chengzhanhong/factor_matrix_time_series). GitHub.
 
 <br>
+
 
 ### 16th Mile
 #### Subspace Pursuit Algorithm
@@ -537,6 +574,7 @@ The subspace pursuit algorithm is a fixed-cardinality method, quite different fr
 
 <br>
 
+
 ### 15th Mile
 #### Synthetic Sweden Mobility
 
@@ -552,6 +590,7 @@ Going back to the individual mobility trajectory, there would be some opportunit
 
 <br>
 
+
 ### 14th Mile
 #### Prediction on Extreme Floods
 
@@ -563,6 +602,7 @@ Another weather forecasting dataset for consideration: [Rain forecasts world-wid
 - Nearing, G., Cohen, D., Dube, V. et al. (2024). [Global prediction of extreme floods in ungauged watersheds](https://doi.org/10.1038/s41586-024-07145-1). Nature, 627: 559–563.
 
 <br>
+
 
 ### 13th Mile
 #### Sparse Recovery Problem
@@ -585,6 +625,7 @@ The most classical (greedy) method for solving the linear sparse regression is o
 
 <br>
 
+
 ### 12th Mile
 #### Economic Complexity
 
@@ -593,6 +634,7 @@ The most classical (greedy) method for solving the linear sparse regression is o
 - César A. Hidalgo (2021). [Economic complexity theory and applications](https://doi.org/10.1038/s42254-020-00275-1). Nature Reviews Physics. 3: 92-113.
 
 <br>
+
 
 ### 11th Mile
 #### Time-Varying Autoregressive Models
@@ -604,6 +646,7 @@ Vector autoregression (VAR) has a key assumption that the coeffcients are invari
 - Haslbeck, J. M., Bringmann, L. F., & Waldorp, L. J. (2021). [A tutorial on estimating time-varying vector autoregressive models](https://doi.org/10.1080/00273171.2020.1743630). Multivariate Behavioral Research, 56(1), 120-149.
 
 <br>
+
 
 ### 10th Mile
 #### Higher-Order Graph & Hypergraph
