@@ -17,7 +17,7 @@ layout: default
 ### 41st Mile
 #### Cauchy-Schwarz Regularizers
 
-
+The main idea is that Cauchy-Schwarz inequality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;|\langle\boldsymbol{x},\boldsymbol{y}\rangle|\leq\|\boldsymbol{x}\|_2\|\boldsymbol{y}\|_2"/> can be used to binarize neural networks. Cauchy-Schwarz regularizers are a new class of regularization that can promote discrete-valued vectors, eigenvectors of a given matrix, and orthogonal matrices. These regularizers are effective for quantizing neural network weights and solving underdetermined systems of linear equations.
 
 **References**
 - Sueda Taner, Ziyi Wang, Christoph Studer (2025). [Cauchy-Schwarz Regularizers](https://arxiv.org/abs/2503.01639). ICLR 2025.
