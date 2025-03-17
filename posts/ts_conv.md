@@ -6,7 +6,7 @@ layout: default
 
 <p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on March 10, 2025)</span></p>
+<p align="center"><span style="color:gray">(Updated on March 17, 2025)</span></p>
 
 <br>
 
