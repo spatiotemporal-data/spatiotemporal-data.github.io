@@ -1467,32 +1467,5 @@ From a time series analysis perspective, our modeling ideas can guide future res
 <br>
 <br>
 
----
-
-## Contact
-
-This is a contact page with some basic contact information and a contact form.
-
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-  
-  <label for="name">Name (required)</label><br>
-  <input type="text" id="name" name="name" required><br><br>
-
-  <label for="email">Email (required)</label><br>
-  <input type="email" id="email" name="_replyto" required><br><br>
-
-  <label for="website">Website</label><br>
-  <input type="url" id="website" name="website"><br><br>
-
-  <label for="comment">Comment (required)</label><br>
-  <textarea id="comment" name="message" rows="4" required></textarea><br><br>
-
-  <button type="submit">Submit</button>
-</form>
-
----
-
-<br>
-<br>
 
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 17, 2024)</p>
