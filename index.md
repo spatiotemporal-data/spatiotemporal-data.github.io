@@ -28,6 +28,14 @@ In the past decade, the development of artificial intelligence and machine learn
 <br>
 
 <p align="center">
+<video width="618" class="img-fluid" controls>
+  <source src="https://spatiotemporal-data.github.io/video/chicago_ridesharing_ts_example.mov" type="video/mp4">
+</video>
+</p>
+
+
+
+<p align="center">
 <video width="618" controls>
   <source src="https://spatiotemporal-data.github.io/video/chicago_ridesharing_ts_example.mov" type="video/mp4">
 </video>
