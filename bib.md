@@ -9,13 +9,13 @@ layout: default
 <br>
 
 
-### 43rd Mile
+### 42nd Mile
 #### [Matrix Calculus for Machine Learning and Beyond](https://github.com/mitmath/matrixcalc)
 
 
 <br>
 
-### 42nd Mile
+### 41st Mile
 #### Composable Optimization for Robotic Motion Planning and Control
 
 From a perspective of control as optimization, the objective could be what one wants system to do, given the model of one's robot as constraints. This is exactly an optimal control problem such that
@@ -30,22 +30,13 @@ From a perspective of control as optimization, the objective could be what one w
 <br>
 
 
-### 41st Mile
+### 40th Mile
 #### Cauchy-Schwarz Regularizers
 
 The main idea is that Cauchy-Schwarz inequality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;|\langle\boldsymbol{x},\boldsymbol{y}\rangle|\leq\|\boldsymbol{x}\|_2\|\boldsymbol{y}\|_2"/> can be used to binarize neural networks. Cauchy-Schwarz regularizers are a new class of regularization that can promote discrete-valued vectors, eigenvectors of a given matrix, and orthogonal matrices. These regularizers are effective for quantizing neural network weights and solving underdetermined systems of linear equations.
 
 **References**
 - Sueda Taner, Ziyi Wang, Christoph Studer (2025). [Cauchy-Schwarz Regularizers](https://arxiv.org/abs/2503.01639). ICLR 2025.
-
-<br>
-
-
-### 40th Mile
-#### Probabilistic Artificial Intelligence Book
-
-**References**
-- Andreas Krause, Jonas Hübotter (2025). Probabilistic Artificial Intelligence. arXiv:2502.05244. [[PDF](https://arxiv.org/pdf/2502.05244)]
 
 <br>
 
