@@ -20,7 +20,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 
 In the past decade, the development of artificial intelligence and machine learning has been truly remarkable. There are several easy-to-follow posts that are created to explain the essential ideas of this project and inspire innovations:
 
-🌱 [Time Series Convolution](https://spatiotemporal-data.github.io/posts/ts_conv/). A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series. The content is mainly from our publications below:
+🌱 [Time Series Convolution](https://spatiotemporal-data.github.io/posts/ts_conv/). A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series. The content is mainly from our research work below:
 
   - Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). [Laplacian convolutional representation for traffic time series imputation](https://doi.org/10.1109/TKDE.2024.3419698). *IEEE Transactions on Knowledge and Data Engineering*. 36 (11): 6490-6502.
   - Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). [Correlating time series with interpretable convolutional kernels](https://doi.org/10.1109/TKDE.2025.3550877). *IEEE Transactions on Knowledge and Data Engineering*. Early access.
@@ -38,7 +38,7 @@ In the past decade, the development of artificial intelligence and machine learn
 <br>
 
 
-🌱 [Time-Varying Autoregression](https://spatiotemporal-data.github.io/posts/time_varying_model/). Time-varying autoregression for discovering spatial and temporal patterns of dynamical systems. The system equation includes both time-varying autoregression on the data space and tensor decomposition on the latent space. The content is mainly from our publication below:
+🌱 [Time-Varying Autoregression](https://spatiotemporal-data.github.io/posts/time_varying_model/). Time-varying autoregression for discovering spatial and temporal patterns of dynamical systems. The system equation includes both time-varying autoregression on the data space and tensor decomposition on the latent space. The content is mainly from our research work below:
   - Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). *IEEE Transactions on Knowledge and Data Engineering*. 36 (2): 504-517.
 
 
