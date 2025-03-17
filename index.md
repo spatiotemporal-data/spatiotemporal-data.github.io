@@ -33,14 +33,6 @@ In the past decade, the development of artificial intelligence and machine learn
 </video>
 </p>
 
-
-
-<p align="center">
-<video width="618" controls>
-  <source src="https://spatiotemporal-data.github.io/video/chicago_ridesharing_ts_example.mov" type="video/mp4">
-</video>
-</p>
-
 <p style="font-size: 14px; color: gray" align = "center"> 🔨 Anotating the weekly periodicity of hourly ridesharing trip time series in Chicago since April 1st, 2024.</p>
 
 
