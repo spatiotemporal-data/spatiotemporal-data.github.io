@@ -1467,4 +1467,26 @@ From a time series analysis perspective, our modeling ideas can guide future res
 <br>
 <br>
 
+<section id="comments">
+  <h3>Your Comment Would Help Us!</h3>
+  <form>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+    </div>
+    <button type="submit">Post Comment</button>
+  </form>
+</section>
+
+<br>
+<br>
+
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 17, 2024)</p>
