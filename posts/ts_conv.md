@@ -1464,27 +1464,6 @@ print('Running time (s):', end - start)
 
 From a time series analysis perspective, our modeling ideas can guide future research by using the properties of circular convolution and connecting with various signals. Because circular convolution is a core component in many machine learning tasks, this post could provide an example for how to leverage the circular convolution, discrete Fourier transform, and linear regression. While we focused on the time series imputation and the convolutional kernel learning problems, we hope that our modeling ideas will inspire others in the fields of machine learning and optimization.
 
-<br>
-<br>
-
-<section id="comments">
-  <h3>Your Comment Would Help Us!</h3>
-  <form>
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-      <label for="comment">Comment:</label>
-      <textarea id="comment" name="comment" rows="4" required></textarea>
-    </div>
-    <button type="submit">Post Comment</button>
-  </form>
-</section>
 
 <br>
 <br>
