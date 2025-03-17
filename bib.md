@@ -23,6 +23,10 @@ From a perspective of control as optimization, the objective could be what one w
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{x(t),u(t)}\,&J(x(t),u(t))=\int_{0}^{T}L(x(t),u(t))\,\mathrm{d}t \\ \text{s.t.}\,&\begin{cases} \dot{x}=f(x,u) \\ u_{\text{min}}\leq u\leq u_{\text{max}} \end{cases} \end{aligned}"/></p>
 
 
+**References**
+
+- [MIT Robotics - Zac Manchester - Composable Optimization for Robotic Motion Planning and Control](https://www.youtube.com/watch?v=eSleutHuc0w). YouTube.
+
 <br>
 
 
