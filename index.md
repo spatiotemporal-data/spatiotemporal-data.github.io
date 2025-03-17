@@ -28,7 +28,7 @@ In the past decade, the development of artificial intelligence and machine learn
 <br>
 
 <p align="center">
-<video width="618" class="img-fluid" controls>
+<video width="618" style="max-width: 90%; height: auto;" controls>
   <source src="https://spatiotemporal-data.github.io/video/chicago_ridesharing_ts_example.mov" type="video/mp4">
 </video>
 </p>
