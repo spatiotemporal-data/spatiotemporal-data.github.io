@@ -10,6 +10,17 @@ layout: default
 
 <br>
 
+<p align="center">
+<video style="max-width: 90%; height: auto;" controls>
+  <source src="https://spatiotemporal-data.github.io/video/chicago_ridesharing_ts_example.mov" type="video/mp4">
+</video>
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center"> 🔨 Anotating the weekly periodicity of hourly ridesharing trip time series in Chicago since April 1st, 2024.</p>
+
+
+<br>
+
 In this post, we intend to explain the essential ideas of our research work:
 
 - Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). [Laplacian convolutional representation for traffic time series imputation](https://doi.org/10.1109/TKDE.2024.3419698). *IEEE Transactions on Knowledge and Data Engineering*. 36 (11): 6490-6502.
