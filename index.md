@@ -25,6 +25,7 @@ In the past decade, the development of artificial intelligence and machine learn
   - Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). [Laplacian convolutional representation for traffic time series imputation](https://doi.org/10.1109/TKDE.2024.3419698). *IEEE Transactions on Knowledge and Data Engineering*. 36 (11): 6490-6502.
   - Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). [Correlating time series with interpretable convolutional kernels](https://doi.org/10.1109/TKDE.2025.3550877). *IEEE Transactions on Knowledge and Data Engineering*. Early access.
 
+<p style="font-size: 14px; color: gray"> 🔨 Anotating the hourly ridesharing trip time series in Chicago since April 1st, 2024.</p>
 
 <video width="750" controls>
   <source src="https://spatiotemporal-data.github.io/video/chicago_ridesharing_ts_example.mov" type="video/mp4">
