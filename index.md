@@ -35,7 +35,6 @@ In the past decade, the development of artificial intelligence and machine learn
 
 <p style="font-size: 14px; color: gray" align = "center"> 🔨 Anotating the weekly periodicity of hourly ridesharing trip time series in Chicago since April 1st, 2024.</p>
 
-
 <br>
 
 
