@@ -1467,7 +1467,9 @@ From a time series analysis perspective, our modeling ideas can guide future res
 <br>
 <br>
 
-# Contact
+---
+
+## Contact
 
 This is a contact page with some basic contact information and a contact form.
 
@@ -1488,6 +1490,7 @@ This is a contact page with some basic contact information and a contact form.
   <button type="submit">Submit</button>
 </form>
 
+---
 
 <br>
 <br>
