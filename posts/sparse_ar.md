@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Interpretable Sparse Autoregression
+# Interpretable Time Series Autoregression
 
 <p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression.</span></p>
 
