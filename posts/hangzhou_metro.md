@@ -6,7 +6,7 @@ layout: default
 
 <p align="center"><span style="color:gray">Metro passenger flow dataset consisting of <b>29 million</b> anonymized individual trips across <b>80 stations</b> in January 2019.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on March 11, 2025)</span></p>
+<p align="center"><span style="color:gray">(Updated on March 31, 2025)</span></p>
 
 <br>
 
