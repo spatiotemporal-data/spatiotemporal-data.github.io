@@ -31,7 +31,7 @@ Hangzhou metro system in January 2019 has 81 stations.
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/hz_metro.png" width="450" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/hz_metro.png" width="400" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
