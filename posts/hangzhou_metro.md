@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Hangzhou Metro Passenger Flow
+# Hangzhou Metro Passenger
 
 <p align="center"><span style="color:gray">Metro passenger flow dataset consisting of 29 million anonymized individual trips across 80 stations in January 2019.</span></p>
 
