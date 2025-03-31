@@ -4,7 +4,7 @@ layout: default
 
 # Time Series Convolution
 
-<p align="center"><span style="color:gray">Convolutional kernel approaches for understanding the importance of time series trends and interpreting temporal patterns, allowing one to improve the performance of time series imputation and learn sparse representations of temporal correlations. In the imputation model, fast Fourier transforms accelerate the optimization process with log-linear time complexity. In the interpretable machine learning, sparse regression unlocks opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
+<p align="center"><span style="color:gray">Convolutional kernel approaches for understanding the importance of time series trends and interpreting temporal patterns, allowing one to improve the performance of time series imputation and learn sparse representations of temporal correlations. In the imputation model, fast Fourier transform accelerates the optimization process with log-linear time complexity. In the interpretable machine learning, sparse regression unlocks opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
 
 <p align="center"><span style="color:gray">(Updated on March 31, 2025)</span></p>
 
@@ -30,7 +30,7 @@ In this post, we intend to explain the essential ideas of our research work:
 
 **Content:**
 
-In **Part I** of this series, we introduce motivations of time series modeling with global and local trends. These time series trends are important for improving the performance of time series imputation. If there is one appropriate interpretable machine learning model, it is also possible to quantify the periodicity of time series. Following the basic motivations, we elaborate on several key concepts such as circular convolution, convolution matrix, circulant matrix, and discrete Fourier transform in **Part II**.
+In **Part I** of this series, we introduce motivations of time series modeling with global and local trends. This is because global and local time series trends are important for improving the performance of time series imputation. Despite of this, we were always trying to formulate an appropriate interpretable machine learning model for quantifying the periodicity of time series. To clarify the modeling ideas, we identify some techincal stuff and elaborate on several key concepts such as circular convolution, convolution matrix, circulant matrix, and discrete Fourier transform in **Part II**.
 
 **Part III** and **Part IV** give the modeling ideas of circulant matrix nuclear norm minimization and Laplacian convolutional representation, addressing the critical challenges in time series imputation tasks. The optimization algorithm of both models makes use of fast Fourier transform in a log-linear time complexity. **Part V** presents an interpretable convolutional kernel method in which the sparsity of convolutional kernels is modeled by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity constraints.
 
