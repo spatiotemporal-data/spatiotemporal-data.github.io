@@ -4,9 +4,9 @@ layout: default
 
 # Time Series Convolution
 
-<p align="center"><span style="color:gray">A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
+<p align="center"><span style="color:gray">Convolutional kernel approaches for understanding the importance of time series trends and interpreting temporal patterns, allowing one to improve the performance of time series imputation and learn sparse representations of temporal correlations. In the imputation model, fast Fourier transforms accelerate the optimization process with log-linear time complexity. In the interpretable machine learning, sparse regression unlocks opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on March 17, 2025)</span></p>
+<p align="center"><span style="color:gray">(Updated on March 31, 2025)</span></p>
 
 <br>
 
