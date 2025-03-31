@@ -56,14 +56,6 @@ We used this dataset in our research work:
 1. Xinyu Chen, Lijun Sun (2022). Bayesian temporal factorization for multidimensional time series prediction. IEEE Transactions on Pattern Analysis and Machine Intelligence. 44 (9): 4659-4673.
 </p>
 
-<p style="font-size: 15px; color: gray">
-2. Gower, J.C. and Dijksterhuis, G.B., 2004. Procrustes problems (Vol. 30). OUP Oxford.
-</p>
-
-<p style="font-size: 15px; color: gray">
-3. Eldén, L. and Park, H., 1999. A Procrustes problem on the Stiefel manifold. Numerische Mathematik, 82(4), pp.599-619.
-</p>
-
 
 <br>
 
