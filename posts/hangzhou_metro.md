@@ -10,9 +10,7 @@ layout: default
 
 <br>
 
-In this post, we intend to explain the dataset:
-
-- 
+In this post, we hope to valorize the metro passenger flow dataset for acedemic research, urban development, and policy-making.
 
 **Content:**
 
