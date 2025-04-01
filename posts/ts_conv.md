@@ -40,7 +40,7 @@ For an empirical evaluation, we demonstrate the interpretable convolutional kern
 
 ## I. Motivation
 
-The development of machine learning models in the past decade is truly remarkable. Convolution is one of the most commonly-used operations in applied mathematics and signal processing, which has been widely applied to several machine learning problems. The aims of this post are revisiting the essential ideas of circular convolution and laying an insightful foundation for modeling time series data.
+The development of machine learning models in the past decade has been truly remarkable. Convolution is one of the most commonly-used operations in the fields of applied mathematics and signal processing, which has been widely applied to several machine learning problems. The aims of this post are revisiting the essential ideas of circular convolution and laying an insightful foundation for modeling time series data.
 
 Nowadays, although we have quite a lot of machine learning algorithms on hand, it is still necessary to rethink about the following perspectives in time series modeling:
 
