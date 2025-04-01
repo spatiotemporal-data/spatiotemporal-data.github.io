@@ -4,7 +4,7 @@ layout: default
 
 # Hangzhou Metro Passenger
 
-<p align="center"><span style="color:gray">Metro passenger flow dataset consisting of <b>29 million</b> anonymized individual trips across <b>80 stations</b> in January 2019. The raw data files from January 1, 2019 to January 25, 2019 are available on <a href="https://doi.org/10.5281/zenodo.3145404">Zenodo</a>.</span></p>
+<p align="center"><span style="color:gray">Metro passenger flow dataset consisting of <b>29 million</b> anonymized individual trips across 80 stations in January 2019. The raw data files from January 1, 2019 to January 25, 2019 are available on <a href="https://doi.org/10.5281/zenodo.3145404">Zenodo</a>.</span></p>
 
 <p align="center"><span style="color:gray">(Updated on March 31, 2025)</span></p>
 
@@ -50,6 +50,10 @@ Hangzhou metro system in January 2019 has 81 stations.
 
 <p style="font-size: 14px; color: gray">
 <b>[Chen & Sun, 2022]</b> Xinyu Chen, Lijun Sun (2022). Bayesian temporal factorization for multidimensional time series prediction. IEEE Transactions on Pattern Analysis and Machine Intelligence. 44 (9): 4659-4673.
+</p>
+
+<p style="font-size: 14px; color: gray">
+<b>[Cheng et al., 2022]</b> Zhanhong Cheng, Martin Trépanier, Lijun Sun (2022). Real-time forecasting of metro origin-destination matrices with high-order weighted dynamic mode decomposition. Transportation Science. 56(4):904-918.
 </p>
 
 
