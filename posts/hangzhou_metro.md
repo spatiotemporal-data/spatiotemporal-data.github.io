@@ -49,6 +49,10 @@ Hangzhou metro system in January 2019 has 81 stations.
 **References** (We used this dataset in our research work)
 
 <p style="font-size: 14px; color: gray">
+<b>[Wu et al., 2021]</b> Yuankai Wu, Zhanhong Cheng, Lijun Sun (2021). Individual mobility prediction via attentive marked temporal point processes. arXiv:2109.02715.
+</p>
+
+<p style="font-size: 14px; color: gray">
 <b>[Chen & Sun, 2022]</b> Xinyu Chen, Lijun Sun (2022). Bayesian temporal factorization for multidimensional time series prediction. IEEE Transactions on Pattern Analysis and Machine Intelligence. 44 (9): 4659-4673.
 </p>
 
@@ -57,6 +61,8 @@ Hangzhou metro system in January 2019 has 81 stations.
 </p>
 
 
+
+<br>
 <br>
 
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on March 31, 2025)</p>
