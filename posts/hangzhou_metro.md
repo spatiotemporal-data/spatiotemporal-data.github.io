@@ -4,7 +4,7 @@ layout: default
 
 # Hangzhou Metro Passenger
 
-<p align="center"><span style="color:gray">Metro passenger flow dataset consists of 29 million anonymized individual trips across 80 stations in January 2019. The raw data files containing detailed trip records from January 1 to January 25, 2019, are available on <a href="https://doi.org/10.5281/zenodo.3145404">Zenodo</a>.</span></p>
+<p align="center"><span style="color:gray">The metro passenger flow dataset consists of 29 million anonymized individual trips across 80 stations of Hangzhou in January 2019. The raw data files containing detailed trip records from January 1 to January 25, 2019, are available on <a href="https://doi.org/10.5281/zenodo.3145404">Zenodo</a>. The dataset allows one to discover human mobility patterns and predict future passenger flow.</span></p>
 
 <p align="center"><span style="color:gray">(Updated on March 31, 2025)</span></p>
 
