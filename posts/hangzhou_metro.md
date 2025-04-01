@@ -24,7 +24,7 @@ In **Part I** of this series, we introduce ...
 
 ### I-A. Hangzhou Metro System
 
-The Hangzhou metro system has 3 lines (i.e., stations <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{1,2,\cdots,34\}"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{35,36,\cdots,67\}"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{68,69,\cdots,81\}"/>) and 81 stations in January 2019.
+The Hangzhou metro system has 3 lines in January 2019, including 81 stations <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{1,2,\cdots,34\}"/>, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{35,36,\cdots,67\}"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{68,69,\cdots,81\}"/>.
 
 <br>
 
