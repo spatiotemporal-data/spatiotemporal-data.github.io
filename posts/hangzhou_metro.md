@@ -33,7 +33,7 @@ Hangzhou metro system in January 2019 has 81 stations.
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 1.</b> Illustration of Hangzhou metro systems with three lines in January 2019. Note that the inflow and outflow trips at the station #54 are missing in the whole period.
+<b>Figure 1.</b> Illustration of the Hangzhou metro system with three lines in January 2019. Note that inflow and outflow trips at station #54 are missing for the entire period.
 </p>
 
 <br>
