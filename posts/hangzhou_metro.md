@@ -46,7 +46,9 @@ The Hangzhou metro system has 3 lines in January 2019, including 81 stations <im
 
 <br>
 
-**References** (We used this dataset in our research work)
+## References
+
+We used this dataset in our research work:
 
 <p style="font-size: 14px; color: gray">
 <b>[Wu et al., 2021]</b> Yuankai Wu, Zhanhong Cheng, Lijun Sun (2021). Individual mobility prediction via attentive marked temporal point processes. arXiv:2109.02715.
