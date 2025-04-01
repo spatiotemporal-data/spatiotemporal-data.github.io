@@ -9,7 +9,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Geospatial data analysis
 - Intelligent & sustainable urban systems
 - Optimization & decision making
-- Data standardization & valorization
+- Data standardization & valorization & monetization
 - Signal processing
 - Network science
 - Graph computing & learning
