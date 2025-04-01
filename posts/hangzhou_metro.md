@@ -33,7 +33,7 @@ Hangzhou metro system in January 2019 has 3 lines (i.e., <img style="display: in
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 1.</b> Illustration of the Hangzhou metro system with three lines in January 2019. Note that inflow and outflow trips at station #54 are missing for the entire period.
+<b>Figure 1.</b> Illustration of the Hangzhou metro system with 3 lines in January 2019. Note that inflow and outflow trips at station #54 are missing for the entire period.
 </p>
 
 <br>
