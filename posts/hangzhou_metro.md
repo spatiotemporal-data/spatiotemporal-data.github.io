@@ -59,7 +59,7 @@ We used this dataset in our research work:
 </p>
 
 <p style="font-size: 14px; color: gray">
-<b>[Cheng et al., 2022]</b> Zhanhong Cheng, Martin Trépanier, Lijun Sun (2022). Real-time forecasting of metro origin-destination matrices with high-order weighted dynamic mode decomposition. Transportation Science. 56(4):904-918.
+<b>[Cheng et al., 2022]</b> Zhanhong Cheng, Martin Trépanier, Lijun Sun (2022). Real-time forecasting of metro origin-destination matrices with high-order weighted dynamic mode decomposition. Transportation Science. 56 (4): 904-918.
 </p>
 
 
