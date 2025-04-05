@@ -65,6 +65,5 @@ We used this dataset in our research work:
 
 
 <br>
-<br>
 
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on March 31, 2025)</p>
