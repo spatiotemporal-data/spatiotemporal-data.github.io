@@ -9,11 +9,21 @@ layout: default
 <br>
 
 
-### 42nd Mile
+### 43rd Mile
 #### [Matrix Calculus for Machine Learning and Beyond](https://github.com/mitmath/matrixcalc)
 
 
 <br>
+
+
+### 42nd Mile
+#### Causal Inference, Causal Discovery, and Machine Learning
+
+Causal inference is a framework to answer causal questions from observational and/or experimental data. It is important to infer underlying mechanisms of data (e.g., climate system), learn correlation networks, and recognize patterns. Pearl's causal inference framework assumes an underlying **structural causal model** with an associated acyclic **graph**.
+
+
+<br>
+
 
 ### 41st Mile
 #### Composable Optimization for Robotic Motion Planning and Control
