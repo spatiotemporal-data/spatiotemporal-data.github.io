@@ -21,6 +21,8 @@ layout: default
 
 Causal inference is a framework to answer causal questions from observational and/or experimental data. It is important to infer underlying mechanisms of data (e.g., climate system), learn correlation networks, and recognize patterns. Pearl's causal inference framework assumes an underlying **structural causal model** with an associated acyclic **graph**.
 
+There are two types of tasks in the causal inference framework: 1) Utilizing qualitative causal knowledge in the form of **directed acyclic graphs**; 2) Learning causal graphs based on general assumption.
+
 **References**
 
 - [Causal Inference, Causal Discovery, and Machine Learning with Jakob Runge](https://www.youtube.com/watch?v=R5JMeEy9koA&t=732s). YouTube.
