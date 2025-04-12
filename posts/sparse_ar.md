@@ -56,14 +56,16 @@ However, the challenges arise if there is a sparsity constraint in the form of <
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned}\min_{\boldsymbol{w}}\,&\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq\tau \end{aligned}"/></p>
 
-where the upper bound the constraint is an integer <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/>, which is supposed to be no greater than the order <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>.
+where the upper bound the constraint is an integer <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/>, which is supposed to be no greater than the order <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>. In the constraint, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{w}\|_0"/> counts the number of nonzero entries in the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> is the sparsity level.
 
 
 ## II. Sparse Autoregression
 
-### II-A. Subspace Pursuit
+### II-A. Mixed-Integer Programming
 
-### II-B. Mixed-Integer Programming
+### II-B. Semidefinite Programming
+
+
 
 ## III. Time-Varying Sparse Autoregression
 
