@@ -63,6 +63,8 @@ where the upper bound the constraint is an integer <img style="display: inline;"
 
 ### II-A. Mixed-Integer Programming
 
+
+
 ### II-B. Semidefinite Programming
 
 
