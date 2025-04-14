@@ -8,6 +8,24 @@ layout: default
 
 <br>
 
+### 44th Mile
+#### Sparse Linear Regression
+
+For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_{\gamma,t}\in\mathbb{R}^{m}"/> and matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}_{\gamma,t}\in\mathbb{R}^{m\times n}"/>, the sparse linear regression such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{w}_{\gamma,t}}\,&\sum_{\gamma,t}\|\boldsymbol{y}_{\gamma,t}-\boldsymbol{A}_{\gamma,t}\boldsymbol{w}_{\gamma,t}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \|\boldsymbol{w}_{\gamma,t}\|_0\leq \tau, \\ \operatorname{supp}(\boldsymbol{w}_{\gamma,t})=\operatorname{supp}(\boldsymbol{w}_{p,q}),\forall \gamma\neq p,t\neq q \end{cases} \end{align}"/></p>
+
+There might be two solutions: 
+
+1) Mixed-integer programming such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{w}_{\gamma,t},\boldsymbol{\beta}}\,&\sum_{\gamma,t}\|\boldsymbol{y}_{\gamma,t}-\boldsymbol{A}_{\gamma,t}\boldsymbol{w}_{\gamma,t}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \|\boldsymbol{\beta}\|_1\leq \tau,\,\boldsymbol{\beta}\in\{0,1\}^{n}, \\ -M\cdot\boldsymbol{\beta}\leq\boldsymbol{w}_{\gamma,t}\leq M\cdot\boldsymbol{\beta} \end{cases} \end{align}"/></p>
+
+2) Semidefinite programming such that
+
+
+
+<br>
 
 ### 43rd Mile
 #### [Matrix Calculus for Machine Learning and Beyond](https://github.com/mitmath/matrixcalc)
