@@ -25,7 +25,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 2) Semidefinite programming such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{w}_{\gamma,t},\boldsymbol{\beta}}\,&\sum_{\gamma,t}\|\boldsymbol{y}_{\gamma,t}-\boldsymbol{A}_{\gamma,t}\boldsymbol{w}_{\gamma,t}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \begin{bmatrix} 1 & \boldsymbol{w}_{\gamma,t}^\top \\ \boldsymbol{\beta} & \boldsymbol{X}_{\gamma,t} \\ \end{bmatrix}  \succeq 0, \\ \boldsymbol{X}_{\gamma,t,i}\leq M^2w_{\gamma,t,i},\forall i\in[n], \\ \|\boldsymbol{\beta}\|_1\leq \tau,\,\boldsymbol{\beta}\in\{0,1\}^{n}, \\ \end{cases} \end{align}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{w}_{\gamma,t},\boldsymbol{\beta}}\,&\sum_{\gamma,t}\|\boldsymbol{y}_{\gamma,t}-\boldsymbol{A}_{\gamma,t}\boldsymbol{w}_{\gamma,t}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \begin{bmatrix} 1 & \boldsymbol{w}_{\gamma,t}^\top \\ \boldsymbol{\beta} & x_{\gamma,t} \\ \end{bmatrix}  \succeq 0, \\ \boldsymbol{X}_{\gamma,t,i}\leq M^2w_{\gamma,t,i},\forall i\in[n], \\ \|\boldsymbol{\beta}\|_1\leq \tau,\,\boldsymbol{\beta}\in\{0,1\}^{n}, \\ \end{cases} \end{align}"/></p>
 
 MIP provides exact solution, but it scales poorly with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>. SDP has better scalability, but not exact in most cases.
 
