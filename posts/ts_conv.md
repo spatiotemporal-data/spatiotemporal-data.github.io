@@ -134,7 +134,7 @@ For subsequent entries <img style="display: inline;" src="https://latex.codecogs
 
 <br>
 
-As can be seen, circular convolution between two vectors can essentially be viewed as a linear operation. This perspective allows one to reformulate the circular convolution as a linear transformation using a convolution matrix (or a circulant matrix when these two vectors have the same length).
+As can be seen, circular convolution between two vectors can essentially be viewed as a linear operation. This perspective allows one to reformulate the circular convolution as a linear transformation using a convolution matrix. In the case of two vectors of the same length, the linear transformation is written with a circulant matrix.
 
 <br>
 
@@ -159,11 +159,11 @@ Using the notations above, for any vectors <img style="display: inline;" src="ht
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{\tau}(\boldsymbol{x})\boldsymbol{y}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}:\mathbb{R}^{T}\to\mathbb{R}^{T\times \tau}"/> denotes the convolution operator. The convolution matrix can be represented as follows,
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}:\mathbb{R}^{T}\to\mathbb{R}^{T\times \tau}"/> denotes the convolution operator with the hyperparameter <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> (positive integer). The convolution matrix can be represented as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{\tau}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{T-\tau+2} \\ x_2 & x_1 & x_{T} & \cdots & x_{T-\tau+3} \\ x_3 & x_2 & x_1 & \cdots & x_{T-\tau+4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{T-\tau+1} \\ \end{bmatrix}\in\mathbb{R}^{T\times\tau}"/></p>
 
-In the feild of signal processing, this linear transformation is a fundamental property of circular convolution, highlighting its role in efficently implementing filtering operations.
+In the feild of signal processing, this linear transformation is one of the most fundamental properties of circular convolution, highlighting its role in efficently implementing filtering operations.
 
 <br>
 
@@ -183,10 +183,10 @@ In the feild of signal processing, this linear transformation is a fundamental p
 <b>Example 2.</b> Given vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}=(2,-1,3)^\top"/>, the circular convolution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}"/> can be expressed as:
 </span>
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}=(5,14,3,7,11)^\top"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}"/></p>
 
 <span style="color:gray">
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})"/> is the convolution matrix with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/> columns. Specifically, the convolution matrix is structured as follows,
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})"/> is the convolution matrix with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau=3"/> columns. Specifically, the convolution matrix is given by
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}_{3}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}"/></p>
@@ -204,7 +204,7 @@ This representation shows that circular convolution is equivalent to a matrix-ve
 
 <br>
 
-In this post, we aim to make the concepts clear and accessible by incorporting programming code in Python, intuitive illustrations, and detailed explanations of the formulas. To demonstrate how circular convolution can be computed, we will use Python's `numpy` library. First, we will construct the convolution matrix on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and then perform the circular convolution as follows.
+In this post, we aim to make the concepts clear and accessible by incorporting programming code in Python, intuitive illustrations, and detailed explanations of the formulas. To demonstrate how circular convolution can be computed, we use Python's `numpy` library. First, we construct the convolution matrix on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and then perform the circular convolution as follows.
 
 <br>
 
@@ -266,7 +266,7 @@ which forms a square matrix. It always holds that <img style="display: inline;" 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}=(5,14,3,7,11)^\top"/></p>
 
 <span style="color:gray">
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is the circulant matrix formed from <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, defined as:
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})"/> is the circulant matrix formed from <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> such that
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}"/></p>
@@ -289,7 +289,7 @@ The example shows that the circular convolution of <img style="display: inline;"
 
 Discrete Fourier transform (see [Wikipedia](https://en.wikipedia.org/wiki/Discrete_Fourier_transform)) is a fundamental tool in mathematics and signal processing with widespread applications to machine learning. The discrete Fourier transform is the key discrete transform used for Fourier analysis, enabling the decomposition of a signal into its constituent frequencies. The fast Fourier transform is an efficient algorithm for computing the discrete Fourier tranform (see the [difference between discrete Fourier transform and fast Fourier transform](https://math.stackexchange.com/q/30464/738418)), significantly reducing the time complexity from <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T^2)"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{O}(T\log T)"/>, where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> is the number of data points. This efficiency makes fast Fourier transform essential for processing large problems.
 
-A crucial concept in signal processing is the convolution theorem, which states that convolution in the time domain is the multiplication in the frequency domain. This implies that the circular convolution can be efficiently computed using the fast Fourier transform. The convolution theorem for discrete Fourier transform is summarized as follows,
+A crucial concept in signal processing is the convolution theorem, which states that convolution in the time domain is the multiplication in the frequency domain. This implies that the circular convolution can be efficiently computed by using the fast Fourier transform. The convolution theorem for discrete Fourier transform is summarized as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{F}(\boldsymbol{x}\star\boldsymbol{y})=\mathcal{F}(\boldsymbol{x})\circ\mathcal{F}(\boldsymbol{y})"/></p>
 
@@ -347,7 +347,7 @@ Circular convolution of x and y:
 
 ### II-F. Hankel Matrix Factorization & Discrete Fourier Transform
 
-The Hankel matrix plays a fundamental role in numerous areas of applied mathematics and signal processing. By definition, a Hankel matrix is a square or rectangular matrix in which each ascending skew-diagonal (from left to right) has the same value. Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the Hankel matrix can be constructed as follows,
+Hankel matrix plays a fundamental role in numerous areas of applied mathematics and signal processing. By definition, a Hankel matrix is a square or rectangular matrix in which each ascending skew-diagonal (from left to right) has the same value. Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{T}"/>, the Hankel matrix can be constructed as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{H}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_2 & \cdots & x_{T-n+1} \\ x_2 & x_3 & \cdots & x_{T-n+2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{n} & x_{n+1} & \cdots & x_{T} \end{bmatrix}"/></p>
 
@@ -407,6 +407,10 @@ which can be converted into circular convolution. By doing so, the computing pro
 <b>Acknowledgement.</b> Thank you @<a href='https://github.com/yangjm67'>Jinming Yang</a> for correcting the notational mistake of circular convolution in this example.
 
 ---
+
+<br>
+
+Example 5 verifies the connection between Hankel matrix and circular convolution. The principle of circular convolution can be seamlessly incorporated into the inverse of Hankel matrix factorization.
 
 <br>
 
@@ -527,7 +531,7 @@ Thus, the Frobenius norm of this Hankel matrix is equivalent to the <img style="
 
 ## III. Circulant Matrix Nuclear Norm Minimization
 
-Circulant matrices are fundamental in many computational and theoretical aspects of signal processing and machine learning, providing an efficient framework for implementating various algorithms such as circulant matrix nuclear norm minimization. By definition, a circulant matrix is a spcial square matrix where which shifts the previous row to the right by one position, with the last entry wrapping around to the first position. As we already discussed the circulant matrix above, we will present the circulant matrix nuclear norm, its minimization problem, and applications.
+Circulant matrix is commonly used to many computational and theoretical aspects of signal processing and machine learning, providing an efficient framework for implementating various algorithms such as circulant matrix nuclear norm minimization. By definition, a circulant matrix is a special square matrix where which shifts the previous row to the right by one position, with the last entry wrapping around to the first position. As we already discussed the circulant matrix above, we will present the circulant matrix nuclear norm, its optimization problem, and applications.
 
 
 ### III-A. Definition
@@ -608,7 +612,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \|\mathcal{C}(\boldsymbol{x})\|_*=&\|\boldsymbol{F}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{F}^H\|_{*} \\ =&\|\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\|_* \\ =&\|\mathcal{F}(\boldsymbol{x})\|_1 \end{aligned}"/></p>
 
-This relationship draws the strong connection between circulant matrices and Fourier analysis, enabling efficient computation and analysis in various applications, e.g., circulant matrix nuclear norm minimization [(Chen et al., 2024)](https://doi.org/10.1109/TKDE.2024.3419698).
+This relationship draws a strong connection between circulant matrices and Fourier analysis, enabling efficient computation and analysis in various applications, e.g., circulant matrix nuclear norm minimization [(Chen et al., 2024)](https://doi.org/10.1109/TKDE.2024.3419698).
 
 <br>
 
@@ -661,7 +665,7 @@ In this case, the <img style="display: inline;" src="https://latex.codecogs.com/
 
 ### III-C. Optimization
 
-For any partially observed time series in the form of a vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^T"/> with the observed index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>, solving the circulant matrix nuclear norm minimization allows one to reconstruct missing values in time series. The problem is formulated as follows,
+For any partially observed time series in the form of a vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^T"/> with the observed index set <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>, solving the circulant matrix nuclear norm minimization allows one to reconstruct missing values in time series. The optimization problem is formulated as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned} \min_{\boldsymbol{x}}\,&\|\mathcal{C}(\boldsymbol{x})\|_* \\ \text{s.t.}\,&\|\mathcal{P}_{\Omega}(\boldsymbol{x}-\boldsymbol{y})\|_2\leq\epsilon \end{aligned}"/></p>
 
