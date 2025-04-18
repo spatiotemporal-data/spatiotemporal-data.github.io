@@ -9,8 +9,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Optimization & decision making
 - Data standardization & valorization & monetization
 - Signal processing
-- Computational engineering
-- Computational social science
+- Computational engineering & social science
 
 
 ### Machine Learning Explained Series
