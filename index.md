@@ -11,6 +11,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Signal processing
 - Computational engineering & social science
 
+<br>
 
 ### Machine Learning Explained Series
 
