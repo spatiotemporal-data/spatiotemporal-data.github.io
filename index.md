@@ -52,10 +52,10 @@ To contribute to the open science, this project provides a series of tutorials f
 - Tensor decomposition for machine learning (see [the detailed page](https://sites.mit.edu/tensor4ml/) at MIT Sites).
 
 - Spatiotemporal data visualization in Python.
-  <!-- - [High-resolution sea surface temperature data](https://spatiotemporal-data.github.io/climate/sst/)
+  - [High-resolution sea surface temperature data](https://spatiotemporal-data.github.io/climate/sst/)
   - [Global water vapor patterns](https://spatiotemporal-data.github.io/climate/water-vapor/)
   - [Germany energy consumption](https://spatiotemporal-data.github.io/energy/E-usage-data/)
-  - [Station-level USA temperature data](https://spatiotemporal-data.github.io/climate/daymet/) -->
+  - [Station-level USA temperature data](https://spatiotemporal-data.github.io/climate/daymet/)
 
 📂 For those who are interested in broad areas within the scope, we would like to recommend a series of [well-documented reading notes](https://spatiotemporal-data.github.io/bib/).
 
