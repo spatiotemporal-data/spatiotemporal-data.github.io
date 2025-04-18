@@ -13,6 +13,8 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Computational social science
 
 
+### Machine Learning Explained Series
+
 In the past decade, the development of artificial intelligence and machine learning has been truly remarkable. There are several easy-to-follow posts that are created to explain the essential ideas of this project and inspire innovations:
 
 🌱 [Time Series Convolution](https://spatiotemporal-data.github.io/posts/ts_conv/). A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series. The content is mainly from our research work below.
@@ -38,7 +40,12 @@ In the past decade, the development of artificial intelligence and machine learn
   - Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). *IEEE Transactions on Knowledge and Data Engineering*. 36 (2): 504-517.
 
 
+### Awesome Research Visualization in LaTeX
+
 🌱 [Awesome LaTeX Drawing](https://spatiotemporal-data.github.io/awesome-latex-drawing/). 
+
+
+### Data Science Tutorial Series
 
 To advance the development of spatiotemporal data modeling in the research community, this project handles various spatiotemporal data:
 
