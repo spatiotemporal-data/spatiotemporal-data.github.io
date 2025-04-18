@@ -41,7 +41,7 @@ In the past decade, the development of artificial intelligence and machine learn
 
 <br>
 
-### Awesome Research Visualization in LaTeX
+### Research Visualization in LaTeX
 
 🌱 [Awesome LaTeX Drawing](https://spatiotemporal-data.github.io/awesome-latex-drawing/). 
 
