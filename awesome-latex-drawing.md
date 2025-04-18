@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### Awesome LaTeX Drawing
+# Awesome LaTeX Drawing
 
 <p align="center"><span style="color:gray"> <a href="https://github.com/xinychen/awesome-latex-drawing">GitHub</a></span></p>
 
