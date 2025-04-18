@@ -11,21 +11,21 @@ layout: default
 ### 44th Mile
 #### Sparse Linear Regression
 
-For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_{\gamma,t}\in\mathbb{R}^{m}"/> and matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}_{\gamma,t}\in\mathbb{R}^{m\times n}"/>, the sparse linear regression such that
+For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/> and matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>, the sparse linear regression such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{w}_{\gamma,t}}\,&\sum_{\gamma,t}\|\boldsymbol{y}_{\gamma,t}-\boldsymbol{A}_{\gamma,t}\boldsymbol{w}_{\gamma,t}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \|\boldsymbol{w}_{\gamma,t}\|_0\leq \tau, \\ \operatorname{supp}(\boldsymbol{w}_{\gamma,t})=\operatorname{supp}(\boldsymbol{w}_{p,q}),\forall \gamma\neq p,t\neq q \end{cases} \end{align}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{w}}\,&\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{align}"/></p>
 
 There might be two solutions: 
 
 1) Mixed-integer programming such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{w}_{\gamma,t},\boldsymbol{\beta}}\,&\sum_{\gamma,t}\|\boldsymbol{y}_{\gamma,t}-\boldsymbol{A}_{\gamma,t}\boldsymbol{w}_{\gamma,t}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \|\boldsymbol{\beta}\|_1\leq \tau,\,\boldsymbol{\beta}\in\{0,1\}^{n}, \\ -M\cdot\boldsymbol{\beta}\leq\boldsymbol{w}_{\gamma,t}\leq M\cdot\boldsymbol{\beta} \end{cases} \end{align}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \|\boldsymbol{\beta}\|_1\leq \tau,\,\boldsymbol{\beta}\in\{0,1\}^{n}, \\ -M\cdot\boldsymbol{\beta}\leq\boldsymbol{w}\leq M\cdot\boldsymbol{\beta} \end{cases} \end{align}"/></p>
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;M"/> is a sufficiently large constant.
 
 2) Semidefinite programming such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{X}_{\gamma,t},\boldsymbol{w}_{\gamma,t},\boldsymbol{\beta}}\,&\sum_{\gamma,t}\|\boldsymbol{y}_{\gamma,t}-\boldsymbol{A}_{\gamma,t}\boldsymbol{w}_{\gamma,t}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \begin{bmatrix} 1 & \boldsymbol{w}_{\gamma,t}^\top \\ \boldsymbol{w}_{\gamma,t} & \boldsymbol{X}_{\gamma,t} \\ \end{bmatrix}  \succeq 0, \\ x_{\gamma,t,i}\leq M^2\beta_{i},\forall i\in[n], \\ \|\boldsymbol{\beta}\|_1\leq \tau,\,\boldsymbol{\beta}\in\{0,1\}^{n}, \\ \end{cases} \end{align}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{align} \min_{\boldsymbol{X},\boldsymbol{w},\boldsymbol{\beta}}\,&\|\boldsymbol{y}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \begin{bmatrix} 1 & \boldsymbol{w}^\top \\ \boldsymbol{w} & \boldsymbol{X} \\ \end{bmatrix}  \succeq 0, \\ x_{i}\leq M^2\beta_{i},\forall i\in[n], \\ \|\boldsymbol{\beta}\|_1\leq \tau,\,\boldsymbol{\beta}\in\{0,1\}^{n}, \\ \end{cases} \end{align}"/></p>
 
 MIP provides exact solution, but it scales poorly with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>. SDP has better scalability, but not exact in most cases.
 
