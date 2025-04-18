@@ -39,11 +39,13 @@ In the past decade, the development of artificial intelligence and machine learn
 
   - Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). [Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression](https://doi.org/10.1109/TKDE.2023.3294440). *IEEE Transactions on Knowledge and Data Engineering*. 36 (2): 504-517.
 
+<br>
 
 ### Awesome Research Visualization in LaTeX
 
 🌱 [Awesome LaTeX Drawing](https://spatiotemporal-data.github.io/awesome-latex-drawing/). 
 
+<br>
 
 ### Data Science Tutorial Series
 
