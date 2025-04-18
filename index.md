@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<br>
 
 This project aims at supporting research for all aspects of spatiotemporal data modeling with machine learning and addressing many scientific, mathematical, industrial, and engineering problems in:
 
@@ -13,7 +12,6 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Signal processing
 - Computational engineering & social science
 
-<br>
 
 ### Machine Learning Explained Series
 
