@@ -6,14 +6,10 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 
 - Urban science & smart cities
 - Human mobility modeling
-- Geospatial data analysis
 - Intelligent & sustainable urban systems
 - Optimization & decision making
 - Data standardization & valorization & monetization
 - Signal processing
-- Network science
-- Graph computing & learning
-- Causal inference & learning
 - Computational engineering
 - Computational social science
 
@@ -49,17 +45,17 @@ To advance the development of spatiotemporal data modeling in the research commu
 
 - [Analyzing millions of taxi trips in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
 - [Constructing human mobility tensor on NYC rideshare trip data](https://spatiotemporal-data.github.io/NYC-mobility/rideshare/)
-- [Utilizing international import and export trade data from WTO Stats](https://spatiotemporal-data.github.io/trade/import-export/)
+<!-- - [Utilizing international import and export trade data from WTO Stats](https://spatiotemporal-data.github.io/trade/import-export/) -->
 
 To contribute to the open science, this project provides a series of tutorials for beginners to understand machine learning and data science, including
 
 - Tensor decomposition for machine learning (see [the detailed page](https://sites.mit.edu/tensor4ml/) at MIT Sites).
 
-- Spatiotemporal data visualization in Python:
-  - [High-resolution sea surface temperature data](https://spatiotemporal-data.github.io/climate/sst/)
+- Spatiotemporal data visualization in Python.
+  <!-- - [High-resolution sea surface temperature data](https://spatiotemporal-data.github.io/climate/sst/)
   - [Global water vapor patterns](https://spatiotemporal-data.github.io/climate/water-vapor/)
   - [Germany energy consumption](https://spatiotemporal-data.github.io/energy/E-usage-data/)
-  - [Station-level USA temperature data](https://spatiotemporal-data.github.io/climate/daymet/)
+  - [Station-level USA temperature data](https://spatiotemporal-data.github.io/climate/daymet/) -->
 
 For those who are interested in broad areas within the scope, we would like to recommend a series of [well-documented reading notes](https://spatiotemporal-data.github.io/bib/).
 
