@@ -4,7 +4,7 @@ layout: default
 
 # Awesome LaTeX Drawing
 
-<p align="center"><span style="color:gray"> <a href="https://github.com/xinychen/awesome-latex-drawing">GitHub</a></span></p>
+<p align="center"><span style="color:gray"> Drawing and generating academic graphics in LaTeX for visualization purposes in research.</span></p>
 
 <p align="center"><span style="color:gray">(Updated on April 17, 2025)</span></p>
 
