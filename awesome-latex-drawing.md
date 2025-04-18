@@ -8,6 +8,8 @@ layout: default
 
 <p align="center"><span style="color:gray">(Updated on April 17, 2025)</span></p>
 
+<br>
+
 [awesome-latex-drawing](https://github.com/xinychen/awesome-latex-drawing) is a GitHub repository we created in 2019 for visualization purposes, and we have maintained it with regular updates since then. Initially, our goal was to share the LaTeX code used to generate academic graphics in our publications.
 
 <br>
