@@ -53,16 +53,13 @@ To advance the development of spatiotemporal data modeling in the research commu
 
 To contribute to the open science, this project provides a series of tutorials for beginners to understand machine learning and data science, including
 
-- Tensor decomposition for machine learning (see [the detailed page](https://sites.mit.edu/tensor4ml/) at MIT Sites):
-  - Foundation of tensor computations
-  - Foundation of optimization
+- Tensor decomposition for machine learning (see [the detailed page](https://sites.mit.edu/tensor4ml/) at MIT Sites).
 
 - Spatiotemporal data visualization in Python:
   - [High-resolution sea surface temperature data](https://spatiotemporal-data.github.io/climate/sst/)
   - [Global water vapor patterns](https://spatiotemporal-data.github.io/climate/water-vapor/)
   - [Germany energy consumption](https://spatiotemporal-data.github.io/energy/E-usage-data/)
   - [Station-level USA temperature data](https://spatiotemporal-data.github.io/climate/daymet/)
-  - Service-level mobile traffic data
 
 For those who are interested in broad areas within the scope, we would like to recommend a series of [well-documented reading notes](https://spatiotemporal-data.github.io/bib/).
 
