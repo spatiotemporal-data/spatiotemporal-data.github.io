@@ -27,6 +27,5 @@ layout: default
 - Xinyu Chen, Lijun Sun (2022). [Bayesian temporal factorization for multidimensional time series prediction](https://doi.org/10.1109/TPAMI.2021.3066551). *IEEE Transactions on Pattern Analysis and Machine Intelligence*. 44 (9): 4659-4673.
 
 <br>
-<br>
 
 <p align="left">(Posted by <a href="https://xinychen.github.io/">Xinyu Chen</a> on April 17, 2025)</p>
