@@ -19,7 +19,7 @@ layout: default
 <br>
 
 
-<b>Example 1 (Normalizing a two-dimensional vector).</b> For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2)^\top\in\mathbb{R}^{2}"/>, one can normalize it with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm (denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/>). Formally, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>-norm is defined as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_2=\sqrt{x_1^2+x_2^2}"/>, which is the square root of the sum of squared entries. Thus, we have the normalized vector as follows,
+<b>Example 1 (Normalizing a two-dimensional vector).</b> For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2)^\top\in\mathbb{R}^{2}"/>, one can normalize it with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm (denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/>). Formally, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm of the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is defined as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_2=\sqrt{x_1^2+x_2^2}"/>, which is the square root of the sum of squared entries. Thus, we have the normalized vector as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\frac{\boldsymbol{x}}{\|\boldsymbol{x}\|_2}=\Bigl(\frac{x_1}{\sqrt{x_1^2+x_2^2}},\frac{x_2}{\sqrt{x_1^2+x_2^2}}\Bigr)^\top\in\mathbb{R}^{2}"/></p>
 
@@ -45,6 +45,19 @@ Figure 1 visualizes a certain vector and the corresponding normalized vector in 
 <br>
 
 ---
+
+<br>
+
+<b>Example 2 (Manhattan distance).</b> Manhattan distance (also known as taxicab distance) is a method for measuring the distance between two points in a grid-like space, similar to how a taxi would navigate through city streets. It is calculated by summing the absolute differences of the coordinates between the two points.
+
+For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is defined as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_2=\sum_{i=1}^{n}|x_i|"/>, which is the sum of the absolute values of entries.
+
+which is the square root of the sum of squared entries. Thus, we have the normalized vector as follows,
+
+
+
+
+
 
 
 <br>
