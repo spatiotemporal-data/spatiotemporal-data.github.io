@@ -25,6 +25,7 @@ Example 1
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/unit_vector_black.png" width="300" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/unit_vector_white.png" width="300" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
