@@ -60,7 +60,7 @@ For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg
 Figure 2 visualizes distance between the the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;A"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;B"/>. This is equivalent to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of vector such that
 </span>
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_1=\sum_{i=1}^{7}x_i"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_1=x_1+x_2+\cdots+x_7=\sum_{i=1}^{7}x_i"/></p>
 
 
 <br>
