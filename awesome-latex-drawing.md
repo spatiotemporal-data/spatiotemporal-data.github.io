@@ -66,7 +66,7 @@ Figure 2 visualizes distance between the the point <img style="display: inline;"
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/manhattan_distance.png" width="450" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/manhattan_distance.png" width="400" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
