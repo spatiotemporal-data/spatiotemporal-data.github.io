@@ -44,7 +44,10 @@ Figure 1 visualizes a certain vector and the corresponding normalized vector in 
 
 <br>
 
+---
 
+
+<br>
 
 **Relevant Publications**
 
