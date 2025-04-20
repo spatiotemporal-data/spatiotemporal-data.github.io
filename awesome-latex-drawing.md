@@ -6,7 +6,7 @@ layout: default
 
 <p align="center"><span style="color:gray"> Drawing and generating academic graphics in LaTeX for visualization purposes in research.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on April 17, 2025)</span></p>
+<p align="center"><span style="color:gray">(Updated on April 20, 2025)</span></p>
 
 <br>
 
