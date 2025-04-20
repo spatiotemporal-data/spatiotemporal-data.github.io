@@ -28,7 +28,7 @@ Example 1
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 1.</b> Illustration of xxxx
+<b>Figure 1.</b> Illustration of unit vectors.
 </p>
 
 <br>
