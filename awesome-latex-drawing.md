@@ -29,7 +29,7 @@ Example 1
 </div>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 1.</b> Illustration of unit vectors.
+<b>Figure 1.</b> Illustration of normalized vectors in a certain direction, ensuring <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_2=1"/>.
 </p>
 
 <br>
