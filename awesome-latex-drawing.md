@@ -29,7 +29,7 @@ Example 1
 </div>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 1.</b> Illustration of normalized vectors in a certain direction, ensuring <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_2=1"/>. (<b>Left panel</b>) Dark theme, see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_black.tex">LaTeX code</a> on GitHub. (<b>Left panel</b>) White theme, see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_white.tex">LaTeX code</a> on GitHub.
+<b>Figure 1.</b> Illustration of normalized vectors in a certain direction, ensuring <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_2=1"/>. (<b>Left panel</b>) Dark theme, see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_black.tex">LaTeX code</a> on GitHub. (<b>Right panel</b>) White theme, see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_white.tex">LaTeX code</a> on GitHub.
 </p>
 
 <br>
