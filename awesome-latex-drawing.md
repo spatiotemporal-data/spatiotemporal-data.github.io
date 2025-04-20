@@ -58,7 +58,7 @@ For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 2.</b> Illustration of Manhattan distance on the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_2,\cdots,x_7)^\top"/>.
+<b>Figure 2.</b> Illustration of Manhattan distance from the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;A"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;B"/> with the distance vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_2,\cdots,x_7)^\top"/>.
 </p>
 
 <br>
