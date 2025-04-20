@@ -24,7 +24,7 @@ Example 1
 <br>
 
 <p align="center">
-<img align="middle" src="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_black.png" width="400" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/unit_vector_black.png" width="400" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
