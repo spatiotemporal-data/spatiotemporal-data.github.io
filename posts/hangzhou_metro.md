@@ -50,17 +50,19 @@ The Hangzhou metro system has 3 lines in January 2019, including 81 stations <im
 
 We used this dataset in our research work:
 
-<p style="font-size: 14px; color: gray">
-<b>[Wu et al., 2021]</b> Yuankai Wu, Zhanhong Cheng, Lijun Sun (2021). Individual mobility prediction via attentive marked temporal point processes. arXiv:2109.02715.
-</p>
+<ul style="padding-left: 20px;">
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Yuankai Wu, Zhanhong Cheng, Lijun Sun (2021). Individual mobility prediction via attentive marked temporal point processes. arXiv:2109.02715.
+  </li>
 
-<p style="font-size: 14px; color: gray">
-<b>[Chen & Sun, 2022]</b> Xinyu Chen, Lijun Sun (2022). Bayesian temporal factorization for multidimensional time series prediction. IEEE Transactions on Pattern Analysis and Machine Intelligence. 44 (9): 4659-4673.
-</p>
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Lijun Sun (2022). Bayesian temporal factorization for multidimensional time series prediction. IEEE Transactions on Pattern Analysis and Machine Intelligence. 44 (9): 4659-4673.
+  </li>
 
-<p style="font-size: 14px; color: gray">
-<b>[Cheng et al., 2022]</b> Zhanhong Cheng, Martin Trépanier, Lijun Sun (2022). Real-time forecasting of metro origin-destination matrices with high-order weighted dynamic mode decomposition. Transportation Science. 56 (4): 904-918.
-</p>
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Zhanhong Cheng, Martin Trépanier, Lijun Sun (2022). Real-time forecasting of metro origin-destination matrices with high-order weighted dynamic mode decomposition. Transportation Science. 56 (4): 904-918.
+  </li>
+</ul>
 
 
 
