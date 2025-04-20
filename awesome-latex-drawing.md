@@ -62,7 +62,6 @@ Example 1
   <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
     Xinyu Chen, Lijun Sun (2022). Bayesian temporal factorization for multidimensional time series prediction. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>. 44 (9): 4659-4673. [<a href="https://doi.org/10.1109/TPAMI.2021.3066551">DOI</a>]
   </li>
-
 </ul>
 
 <br>
