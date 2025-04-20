@@ -24,8 +24,8 @@ Example 1
 <br>
 
 <div style="text-align: center;">
-  <img style="display: inline-block; margin: 0 10px;" src="https://spatiotemporal-data.github.io/images/unit_vector_black.png" width="250" />
-  <img style="display: inline-block; margin: 0 20px;" src="https://spatiotemporal-data.github.io/images/unit_vector_white.png" width="250" />
+  <img style="display: inline-block; margin: 0 10px;" src="https://spatiotemporal-data.github.io/images/unit_vector_black.png" width="280" />
+  <img style="display: inline-block; margin: 0 20px;" src="https://spatiotemporal-data.github.io/images/unit_vector_white.png" width="280" />
 </div>
 
 <p style="font-size: 14px; color: gray" align = "center">
