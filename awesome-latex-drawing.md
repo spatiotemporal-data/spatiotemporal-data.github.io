@@ -23,12 +23,10 @@ Example 1
 
 <br>
 
-<!-- <p align="center"> -->
-<div style="display: flex; justify-content: center; gap: 20px;">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/unit_vector_black.png" width="300" />
-<img align="middle" src="https://spatiotemporal-data.github.io/images/unit_vector_white.png" width="300" />
+<div style="text-align: center;">
+  <img style="display: inline-block; margin: 0 10px;" src="https://spatiotemporal-data.github.io/images/unit_vector_black.png" width="250" />
+  <img style="display: inline-block; margin: 0 10px;" src="https://spatiotemporal-data.github.io/images/unit_vector_white.png" width="250" />
 </div>
-<!-- </p> -->
 
 <p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 1.</b> Illustration of unit vectors.
