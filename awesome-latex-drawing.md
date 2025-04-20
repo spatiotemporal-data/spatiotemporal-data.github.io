@@ -19,6 +19,22 @@ layout: default
 
 <br>
 
+Example 1
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_black.png" width="400" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 1.</b> Illustration of xxxx
+</p>
+
+<br>
+
+
+
 **Relevant Publications**
 
 - Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). Correlating time series with interpretable convolutional kernels. *IEEE Transactions on Knowledge and Data Engineering*. [[DOI](https://doi.org/10.1109/TKDE.2025.3550877)]
