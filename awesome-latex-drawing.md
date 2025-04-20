@@ -38,12 +38,32 @@ Example 1
 
 **Relevant Publications**
 
-- Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). Correlating time series with interpretable convolutional kernels. *IEEE Transactions on Knowledge and Data Engineering*. [[DOI](https://doi.org/10.1109/TKDE.2025.3550877)]
-- Xinyu Chen, Chengyuan Zhang, Xi-Le Zhao, Nicolas Saunier, Lijun Sun (2025). Forecasting sparse movement speed of urban road networks with nonstationary temporal matrix factorization. *Transportation Science*. [[DOI](https://pubsonline.informs.org/doi/abs/10.1287/trsc.2024.0629)]
-- Xinyu Chen, Xi-Le Zhao, Chun Cheng (2024). Forecasting urban traffic states with sparse data using Hankel temporal matrix factorization. *INFORMS Journal on Computing*. [[DOI](https://doi.org/10.1287/ijoc.2022.0197)]
-- Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). Laplacian convolutional representation for traffic time series imputation. *IEEE Transactions on Knowledge and Data Engineering*. 36 (11): 6490-6502. [[DOI](https://doi.org/10.1109/TKDE.2024.3419698)]
-- Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression. *IEEE Transactions on Knowledge and Data Engineering*. 36 (2): 504-517. [[DOI](https://doi.org/10.1109/TKDE.2023.3294440)]
-- Xinyu Chen, Lijun Sun (2022). Bayesian temporal factorization for multidimensional time series prediction. *IEEE Transactions on Pattern Analysis and Machine Intelligence*. 44 (9): 4659-4673. [[DOI](https://doi.org/10.1109/TPAMI.2021.3066551)]
+<ul style="padding-left: 20px;">
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). Correlating time series with interpretable convolutional kernels. <em>IEEE Transactions on Knowledge and Data Engineering</em>. [<a href="https://doi.org/10.1109/TKDE.2025.3550877">DOI</a>]
+  </li>
+  
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Chengyuan Zhang, Xi-Le Zhao, Nicolas Saunier, Lijun Sun (2025). Forecasting sparse movement speed of urban road networks with nonstationary temporal matrix factorization. <em>Transportation Science</em>. [<a href="https://pubsonline.informs.org/doi/abs/10.1287/trsc.2024.0629">DOI</a>]
+  </li>
+
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Xi-Le Zhao, Chun Cheng (2024). Forecasting urban traffic states with sparse data using Hankel temporal matrix factorization. <em>INFORMS Journal on Computing</em>. [<a href="https://doi.org/10.1287/ijoc.2022.0197">DOI</a>]
+  </li>
+
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). Laplacian convolutional representation for traffic time series imputation. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (11): 6490-6502. [<a href="https://doi.org/10.1109/TKDE.2024.3419698">DOI</a>]
+  </li>
+
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (2): 504-517. [<a href="https://doi.org/10.1109/TKDE.2023.3294440">DOI</a>]
+  </li>
+
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Lijun Sun (2022). Bayesian temporal factorization for multidimensional time series prediction. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>. 44 (9): 4659-4673. [<a href="https://doi.org/10.1109/TPAMI.2021.3066551">DOI</a>]
+  </li>
+
+</ul>
 
 <br>
 
