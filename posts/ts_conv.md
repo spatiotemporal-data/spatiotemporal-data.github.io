@@ -1152,6 +1152,14 @@ Thus, the first step in the iterative process of subspace pursuit can select the
 
 ---
 
+<b>Acknowledgement.</b> Thank you @Nina Cao for sharing her thoughts on the algorithm.
+
+---
+
+<br>
+
+---
+
 <span style="color:gray">
 <b>Example 13.</b> Given vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(0,1,2,3,4)^\top"/>, the auxiliary matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> (i.e., the last 4 columns of circulant matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{5\times 5}"/>) is
 </span>
