@@ -14,8 +14,8 @@ layout: default
 
 <br>
 
-### Table of Contents
-
+## LaTeX Visualization Examples
+### Normalizing a Two-Dimensional Vector
 
 <br>
 
