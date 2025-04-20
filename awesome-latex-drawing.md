@@ -22,7 +22,7 @@ layout: default
 ---
 
 <span style="color:gray">
-<b>Example 1.</b> For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2)^\top\in\mathbb{R}^{2}"/>, one can normalize it with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm (denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/>). Thus, we have
+<b>Example 1 (Normalizing a two-dimensional vector).</b> For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2)^\top\in\mathbb{R}^{2}"/>, one can normalize it with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm (denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/>). Thus, we have
 </span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\frac{\boldsymbol{x}}{\|\boldsymbol{x}\|_2}=\Bigl(\frac{x_1}{\sqrt{x_1^2+x_2^2}},\frac{x_2}{\sqrt{x_1^2+x_2^2}}\Bigr)^\top\in\mathbb{R}^{2}"/></p>
