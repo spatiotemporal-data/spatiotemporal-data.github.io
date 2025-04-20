@@ -4,7 +4,7 @@ layout: default
 
 # Awesome LaTeX Drawing
 
-<p align="center"><span style="color:gray"> Drawing and generating academic graphics in LaTeX for visualization purposes in research. LaTeX possesses several merits such as mathematical accuracy and code-driven design for reproducibility.</span></p>
+<p align="center"><span style="color:gray"> Drawing and generating academic graphics in LaTeX for visualization purposes in research. LaTeX always demonstrates several merits such as mathematical accuracy and code-driven design for reproducibility.</span></p>
 
 <p align="center"><span style="color:gray">(Updated on April 20, 2025)</span></p>
 
