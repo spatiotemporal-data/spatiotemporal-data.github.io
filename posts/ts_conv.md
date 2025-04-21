@@ -23,9 +23,20 @@ layout: default
 
 In this post, we intend to explain the essential ideas of our research work:
 
-- Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). [Laplacian convolutional representation for traffic time series imputation](https://doi.org/10.1109/TKDE.2024.3419698). *IEEE Transactions on Knowledge and Data Engineering*. 36 (11): 6490-6502.
-- Xinyu Chen, Xi-Le Zhao, Chun Cheng (2024). [Forecasting urban traffic states with sparse data using Hankel temporal matrix factorization](https://doi.org/10.1287/ijoc.2022.0197). *INFORMS Journal on Computing*. Early access.
-- Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). [Correlating time series with interpretable convolutional kernels](https://doi.org/10.1109/TKDE.2025.3550877). *IEEE Transactions on Knowledge and Data Engineering*. Early access.
+<ul style="padding-left: 20px;">
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). <a href="https://doi.org/10.1109/TKDE.2024.3419698">Laplacian convolutional representation for traffic time series imputation</a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (11): 6490-6502.
+  </li>
+
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Xi-Le Zhao, Chun Cheng (2024). <a href="https://doi.org/10.1287/ijoc.2022.0197">Forecasting urban traffic states with sparse data using Hankel temporal matrix factorization</a>. <em>INFORMS Journal on Computing</em>. Early access.
+  </li>
+
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TKDE.2025.3550877">Correlating time series with interpretable convolutional kernels</a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. Early access.
+  </li>
+</ul>
+
 
 
 **Content:**
