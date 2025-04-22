@@ -70,7 +70,7 @@ Figure 2 visualizes distance between the the point <img style="display: inline;"
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 2.</b> Illustration of Manhattan distance from the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;A"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;B"/> with the distance vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_2,\cdots,x_7)^\top"/>. Please see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/manhattan_distance.tex">LaTeX code</a> on GitHub.
+<b>Figure 2.</b> Illustration of Manhattan distance from the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;A"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;B"/> with the distance vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_2,\cdots,x_7)^\top"/>. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/manhattan_distance.tex">LaTeX code</a> on GitHub.
 </p>
 
 <br>
@@ -93,7 +93,7 @@ All functions share the same angular frequency <img style="display: inline;" src
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 3.</b> Illustration of four sequences consisting of sine and cosine functions.
+<b>Figure 3.</b> Illustration of four sequences consisting of sine and cosine functions. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/pgfplots-function/sin_cos_functions.tex">LaTeX code</a> on GitHub.
 </p>
 
 <br>
@@ -111,7 +111,7 @@ All functions share the same angular frequency <img style="display: inline;" src
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 4.</b> Illustration of rolling time series prediction.
+<b>Figure 4.</b> Illustration of rolling time series prediction. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/pgfplots-function/forecasting.tex">LaTeX code</a> on GitHub.
 </p>
 
 <br>
