@@ -1163,7 +1163,7 @@ Thus, the first step in the iterative process of subspace pursuit can select the
 
 ---
 
-<b>Acknowledgement.</b> Thank you @Nina Cao for sharing her thoughts on the algorithm.
+<b>Acknowledgement.</b> Thank you @[Nina Cao](https://www.krellinst.org/csgf/profile/cao2022) for discussing the algorithmic implementation.
 
 ---
 
