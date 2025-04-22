@@ -89,7 +89,7 @@ All functions share the same angular frequency <img style="display: inline;" src
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/sin_cos_functions.png" width="520" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/sin_cos_functions.png" width="540" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
