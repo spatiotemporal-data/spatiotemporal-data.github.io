@@ -102,7 +102,7 @@ All functions share the same angular frequency <img style="display: inline;" src
 
 <br>
 
-<b>Example 4 (Two-step rolling time series prediction).</b> 
+<b>Example 4 (Two-step rolling time series prediction).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\boldsymbol{y}_3\in\mathbb{R}^{n}"/>, 
 
 <br>
 
