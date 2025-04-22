@@ -77,8 +77,14 @@ Figure 2 visualizes distance between the the point <img style="display: inline;"
 
 ---
 
-<b>Example 3 (Sine and cosine functions).</b> 
+<br>
 
+<b>Example 3 (Sine and cosine functions).</b> Figure 3 illustrates four periodic waveforms consisting of sine and cosine functions with vertical offsets:
+
+- Two sine functions <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;y=\sin(2\pi t)"/> shifted upward by 0.75 and 0.25 units (cyan and blue curves, respectively).
+- Two sine functions <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;y=\cos(2\pi t)"/> shifted downward by 0.25 and 0.75 units (red and orange curves, respectively).
+
+All functions share the same angular frequency <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;2\pi"/>, resulting in identical periods of oscillation. The vertical offsets demonstrate how constant terms affect the baseline of trigonometric waveforms while preserving their amplitude and phase relationships. The horizontal axis <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> ranges from 0 to 2, capturing two full cycles of each function.
 
 <br>
 
