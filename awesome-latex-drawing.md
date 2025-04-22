@@ -77,7 +77,7 @@ Figure 2 visualizes distance between the the point <img style="display: inline;"
 
 ---
 
-<b>Example 3 (Sine and cosine functions).</b> Manhattan distance (also known as taxicab distance) is a method for measuring the distance between two points in a grid-like space, similar to how a taxi would navigate through city streets. It is calculated by summing the absolute differences of the coordinates between the two points.
+<b>Example 3 (Sine and cosine functions).</b> 
 
 
 <br>
