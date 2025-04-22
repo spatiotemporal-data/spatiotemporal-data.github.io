@@ -109,7 +109,7 @@ All functions share the same angular frequency <img style="display: inline;" src
 ---
 
 <span style="color:gray">
-Figure 4 demonstrates the scheme of two-step rolling prediction. Herein, cyan and red circles refer to the observed data and predicted data, respectively.
+Figure 4 demonstrates the scheme of two-step rolling prediction, in which cyan and red circles refer to the observed values and predicted values, respectively.
 </span>
 
 <br>
