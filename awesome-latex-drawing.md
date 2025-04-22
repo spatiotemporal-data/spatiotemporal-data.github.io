@@ -100,7 +100,9 @@ All functions share the same angular frequency <img style="display: inline;" src
 
 ---
 
+<br>
 
+<b>Example 4 (Two-step rolling time series prediction).</b> 
 
 
 <br>
