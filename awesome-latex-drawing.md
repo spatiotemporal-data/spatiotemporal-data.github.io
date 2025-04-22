@@ -102,7 +102,15 @@ All functions share the same angular frequency <img style="display: inline;" src
 
 <br>
 
-<b>Example 4 (Two-step rolling time series prediction).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\boldsymbol{y}_3\in\mathbb{R}^{n}"/>, 
+<b>Example 4 (Two-step rolling time series prediction).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\boldsymbol{y}_3\in\mathbb{R}^{n}"/>, the two-step time series prediction scheme expects to estimate <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_4,\boldsymbol{y}_5"/>.
+
+<br>
+
+---
+
+<span style="color:gray">
+Figure 4 demonstrates the scheme of two-step rolling prediction. Herein, cyan and red circles refer to the observed data and predicted data, respectively.
+</span>
 
 <br>
 
