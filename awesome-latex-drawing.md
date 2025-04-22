@@ -104,6 +104,23 @@ All functions share the same angular frequency <img style="display: inline;" src
 
 <b>Example 4 (Two-step rolling time series prediction).</b> 
 
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/forecasting.png" width="400" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 4.</b> Illustration of rolling time series prediction.
+</p>
+
+<br>
+
+---
+
+
+
+
 
 <br>
 
