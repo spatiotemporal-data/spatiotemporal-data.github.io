@@ -8,6 +8,24 @@ layout: default
 
 <br>
 
+### 45th Mile
+#### Physics-Informed Machine Learning
+
+Reviewed machine learning algorithms:
+- Deterministic regression
+  - Linear regression
+  - Decision tree
+  - Machine learning algorithms: Sparse Identification of Nonlinear Dynamics (SINDy)
+  - Neural networks
+- Probabilistic regression (Gaussian process regression)
+- Ensemble methods
+  - Bagging (Random forest)
+  - Boosting (Gradient boosting machine, XGB regressor)
+
+
+
+<br>
+
 ### 44th Mile
 #### Sparse Linear Regression
 
