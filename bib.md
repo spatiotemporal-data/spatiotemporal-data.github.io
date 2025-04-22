@@ -22,7 +22,8 @@ Reviewed machine learning algorithms:
   - Bagging (Random forest)
   - Boosting (Gradient boosting machine, XGB regressor)
 
-
+**References**
+- Navid Zobeiry. [Physics-Informed Machine Learning](https://www.youtube.com/playlist?list=PLJ6U7kzSli-3h6iMQ7Ww_Madv_TleW75E): A nine-lecture series on Physics-Informed Machine Learning (PIML) delivered by Professor Navid Zobeiry. This course introduces the key techniques of PIML and demonstrates how integrating physics-based constraints with machine learning (ML) can help solve complex multi-physics challenges in engineering.
 
 <br>
 
