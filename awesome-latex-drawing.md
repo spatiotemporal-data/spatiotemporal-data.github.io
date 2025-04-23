@@ -147,7 +147,7 @@ Figure 5 demonstrates ...
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 4.</b> Illustration of time series forecasting with missing values. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/matrix/prob.tex">LaTeX code</a> on GitHub.
+<b>Figure 5.</b> Illustration of time series forecasting with missing values. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/matrix/prob.tex">LaTeX code</a> on GitHub.
 </p>
 
 <br>
