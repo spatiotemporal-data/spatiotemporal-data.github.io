@@ -130,14 +130,14 @@ Figure 4 demonstrates the scheme of two-step rolling prediction, in which cyan a
 
 <br>
 
-<b>Example 5 (Time series forecasting with missing vlaues).</b> For any ...
+<b>Example 5 (Time series forecasting with missing vlaues).</b> For any ... Notably, this example is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 1, Chen et al., 2024</a>.
 
 <br>
 
 ---
 
 <span style="color:gray">
-Figure 4 demonstrates the scheme of two-step rolling prediction, in which cyan and red circles refer to the observed values and predicted values, respectively.
+Figure 5 demonstrates ...
 </span>
 
 <br>
