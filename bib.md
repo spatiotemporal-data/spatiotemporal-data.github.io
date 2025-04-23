@@ -13,8 +13,9 @@ layout: default
 
 
 **References**
-- [What Does It Mean For a Matrix to be POSITIVE? The Practical Guide to Semidefinite Programming(1/4)](https://www.youtube.com/watch?v=2uKoKKLgZ4c)
 
+- [What Does It Mean For a Matrix to be POSITIVE? The Practical Guide to Semidefinite Programming(1/4)](https://www.youtube.com/watch?v=2uKoKKLgZ4c)
+- [The Practical Guide to Semidefinite Programming (2/4)](https://www.youtube.com/watch?v=9z2OtPOi8T0)
 
 <br>
 
