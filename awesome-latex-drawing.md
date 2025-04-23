@@ -100,6 +100,7 @@ All functions share the same angular frequency <img style="display: inline;" src
 
 ---
 
+
 <br>
 
 <b>Example 4 (Two-step rolling time series prediction).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\boldsymbol{y}_3\in\mathbb{R}^{n}"/>, the two-step time series prediction scheme expects to estimate <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_4,\boldsymbol{y}_5"/>. Notably, this example is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 5, Chen et al., 2024</a>.
@@ -127,7 +128,31 @@ Figure 4 demonstrates the scheme of two-step rolling prediction, in which cyan a
 ---
 
 
+<br>
 
+<b>Example 5 (Time series forecasting with missing vlaues).</b> For any ...
+
+<br>
+
+---
+
+<span style="color:gray">
+Figure 4 demonstrates the scheme of two-step rolling prediction, in which cyan and red circles refer to the observed values and predicted values, respectively.
+</span>
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/prob.png" width="300" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 4.</b> Illustration of time series forecasting with missing values. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/matrix/prob.tex">LaTeX code</a> on GitHub.
+</p>
+
+<br>
+
+---
 
 
 <br>
