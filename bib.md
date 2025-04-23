@@ -16,8 +16,8 @@ layout: default
 
 - [What Does It Mean For a Matrix to be POSITIVE? The Practical Guide to Semidefinite Programming(1/4)](https://www.youtube.com/watch?v=2uKoKKLgZ4c)
 - [The Practical Guide to Semidefinite Programming (2/4)](https://www.youtube.com/watch?v=9z2OtPOi8T0)
-- [Stability of Linear Dynamical Systems | The Practical Guide to Semidefinite Programming (3/4)](https://www.youtube.com/watch?v=K2Mw3fUYaHI)
-- [Goemans-Williamson Max-Cut Algorithm | The Practical Guide to Semidefinite Programming (4/4)](https://www.youtube.com/watch?v=aFVnWq3RHYU)
+- [Stability of Linear Dynamical Systems: The Practical Guide to Semidefinite Programming (3/4)](https://www.youtube.com/watch?v=K2Mw3fUYaHI)
+- [Goemans-Williamson Max-Cut Algorithm: The Practical Guide to Semidefinite Programming (4/4)](https://www.youtube.com/watch?v=aFVnWq3RHYU)
 
 <br>
 
