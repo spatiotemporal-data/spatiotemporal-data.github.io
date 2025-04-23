@@ -8,6 +8,16 @@ layout: default
 
 <br>
 
+### 46th Mile
+#### Semidefinite Programming
+
+
+**References**
+- [What Does It Mean For a Matrix to be POSITIVE? The Practical Guide to Semidefinite Programming(1/4)](https://www.youtube.com/watch?v=2uKoKKLgZ4c)
+
+
+<br>
+
 ### 45th Mile
 #### Physics-Informed Machine Learning
 
