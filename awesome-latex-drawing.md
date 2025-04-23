@@ -143,7 +143,7 @@ Figure 5 demonstrates ...
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/prob.png" width="250" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/prob.png" width="240" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
