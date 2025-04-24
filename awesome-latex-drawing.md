@@ -110,7 +110,7 @@ All functions share the same angular frequency <img style="display: inline;" src
 ---
 
 <span style="color:gray">
-Figure 4 demonstrates the scheme of two-step rolling prediction, in which cyan and red circles refer to the observed values and predicted values, respectively.
+Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red circles refer to the observed values and predicted values, respectively.
 </span>
 
 <br>
@@ -130,14 +130,14 @@ Figure 4 demonstrates the scheme of two-step rolling prediction, in which cyan a
 
 <br>
 
-<b>Example 5 (Time series forecasting with missing vlaues).</b> For any ... Notably, this example is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 1, Chen et al., 2024</a>.
+<b>Example 5 (Time series forecasting with missing vlaues).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\cdots,\boldsymbol{y}_T\in\mathbb{R}^{n}"/> with missing values, the task of forecasting the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\delta"/> steps ahead is very challenge. In our study, we propose temporal matrix factorization models and use it to learn from partially observed data and make prediction directly. The example we mentioned below is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 1, Chen et al., 2024</a>.
 
 <br>
 
 ---
 
 <span style="color:gray">
-Figure 5 demonstrates ...
+Figure 5 shows the modeling process of forecasting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{y}}_{T+1},\cdots,\tilde{\boldsymbol{y}}_{T+\delta}\in\mathbb{R}^{n}"/>.
 </span>
 
 <br>
