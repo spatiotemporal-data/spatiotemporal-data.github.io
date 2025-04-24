@@ -22,9 +22,7 @@ layout: default
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\frac{\boldsymbol{x}}{\|\boldsymbol{x}\|_2}=\Bigl(\frac{x_1}{\sqrt{x_1^2+x_2^2}},\frac{x_2}{\sqrt{x_1^2+x_2^2}}\Bigr)^\top\in\mathbb{R}^{2}"/></p>
 
-<br>
 
----
 
 <span style="color:gray">
 Figure 1 visualizes a certain vector and the corresponding normalized vector in a two-dimensional Cartesian coordinate system.
@@ -41,9 +39,6 @@ Figure 1 visualizes a certain vector and the corresponding normalized vector in 
 <b>Figure 1.</b> Illustration of normalized vectors in a certain direction, ensuring <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_2=1"/>. (<b>Left panel</b>) Dark theme, see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_black.tex">LaTeX code</a> on GitHub. (<b>Right panel</b>) White theme, see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_white.tex">LaTeX code</a> on GitHub.
 </p>
 
-<br>
-
----
 
 <br>
 
@@ -55,9 +50,7 @@ For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg
 
 which is the sum of the absolute values of entries.
 
-<br>
 
----
 
 <span style="color:gray">
 Figure 2 visualizes distance between the the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;A"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;B"/>. This is equivalent to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of vector such that
@@ -76,9 +69,7 @@ Figure 2 visualizes distance between the the point <img style="display: inline;"
 <b>Figure 2.</b> Illustration of Manhattan distance from the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;A"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;B"/> with the distance vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(x_1,x_2,\cdots,x_7)^\top"/>. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/manhattan_distance.tex">LaTeX code</a> on GitHub.
 </p>
 
-<br>
 
----
 
 <br>
 
@@ -99,18 +90,11 @@ All functions share the same angular frequency <img style="display: inline;" src
 <b>Figure 3.</b> Illustration of four sequences consisting of sine and cosine functions. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/pgfplots-function/sin_cos_functions.tex">LaTeX code</a> on GitHub.
 </p>
 
-<br>
-
----
-
 
 <br>
 
 <b>Example 4 (Two-step rolling time series prediction).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\boldsymbol{y}_3\in\mathbb{R}^{n}"/>, the two-step time series prediction scheme expects to estimate <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_4,\boldsymbol{y}_5"/>. Notably, this example is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 5, Chen et al., 2024</a>.
 
-<br>
-
----
 
 <span style="color:gray">
 Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red circles refer to the observed values and predicted values, respectively.
@@ -126,18 +110,12 @@ Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red 
 <b>Figure 4.</b> Illustration of rolling time series prediction. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/pgfplots-function/forecasting.tex">LaTeX code</a> on GitHub.
 </p>
 
-<br>
-
----
 
 
 <br>
 
 <b>Example 5 (Time series forecasting with missing vlaues).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\cdots,\boldsymbol{y}_T\in\mathbb{R}^{n}"/> with missing values, the task of forecasting the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\delta"/> steps ahead is very challenge. In our study, we propose temporal matrix factorization models and use it to learn from partially observed data and make prediction directly. The example we mentioned below is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 1, Chen et al., 2024</a>.
 
-<br>
-
----
 
 <span style="color:gray">
 Figure 5 shows the modeling process of forecasting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{y}}_{T+1},\cdots,\tilde{\boldsymbol{y}}_{T+\delta}\in\mathbb{R}^{n}"/>.
@@ -155,7 +133,6 @@ Figure 5 shows the modeling process of forecasting <img style="display: inline;"
 
 <br>
 
----
 
 
 
