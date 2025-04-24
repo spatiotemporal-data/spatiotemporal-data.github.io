@@ -133,7 +133,7 @@ Figure 5 shows the modeling process of forecasting <img style="display: inline;"
 
 <br>
 
-
+**Example 6 (Third-order tensor).** In tensor computations, third-order tensor can be denoted by ...
 
 
 
