@@ -167,7 +167,7 @@ Figure 5 shows the modeling process of forecasting <img style="display: inline;"
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 6.</b> Illustration of xxxx. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/TensorFactorization/tensors.tex">LaTeX code</a> on GitHub.
+<b>Figure 6.</b> Illustration of third-order tensor. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/TensorFactorization/tensors.tex">LaTeX code</a> on GitHub.
 </p>
 
 <br>
