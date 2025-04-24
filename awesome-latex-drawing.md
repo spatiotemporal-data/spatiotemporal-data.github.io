@@ -158,6 +158,21 @@ Figure 5 shows the modeling process of forecasting <img style="display: inline;"
 ---
 
 
+
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/tensors.png" width="150" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 6.</b> Illustration of xxxx. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/TensorFactorization/tensors.tex">LaTeX code</a> on GitHub.
+</p>
+
+<br>
+
+
 <br>
 
 **Relevant Publications**
