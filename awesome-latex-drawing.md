@@ -24,9 +24,7 @@ layout: default
 
 
 
-<span style="color:gray">
 Figure 1 visualizes a certain vector and the corresponding normalized vector in a two-dimensional Cartesian coordinate system.
-</span>
 
 <br>
 
@@ -48,13 +46,8 @@ For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_1=\sum_{i=1}^{n}|x_i|"/></p>
 
-which is the sum of the absolute values of entries.
+which is the sum of the absolute values of entries. Figure 2 visualizes distance between the the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;A"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;B"/>. This is equivalent to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of vector such that
 
-
-
-<span style="color:gray">
-Figure 2 visualizes distance between the the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;A"/> to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;B"/>. This is equivalent to <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of vector such that
-</span>
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_1=x_1+x_2+\cdots+x_7=\sum_{i=1}^{7}x_i"/></p>
 
@@ -96,9 +89,7 @@ All functions share the same angular frequency <img style="display: inline;" src
 <b>Example 4 (Two-step rolling time series prediction).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\boldsymbol{y}_3\in\mathbb{R}^{n}"/>, the two-step time series prediction scheme expects to estimate <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_4,\boldsymbol{y}_5"/>. Notably, this example is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 5, Chen et al., 2024</a>.
 
 
-<span style="color:gray">
 Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red circles refer to the observed values and predicted values, respectively.
-</span>
 
 <br>
 
@@ -114,12 +105,8 @@ Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red 
 
 <br>
 
-<b>Example 5 (Time series forecasting with missing vlaues).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\cdots,\boldsymbol{y}_T\in\mathbb{R}^{n}"/> with missing values, the task of forecasting the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\delta"/> steps ahead is very challenge. In our study, we propose temporal matrix factorization models and use it to learn from partially observed data and make prediction directly. The example we mentioned below is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 1, Chen et al., 2024</a>.
+<b>Example 5 (Time series forecasting with missing vlaues).</b> For any time series snapshots <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_1,\boldsymbol{y}_2,\cdots,\boldsymbol{y}_T\in\mathbb{R}^{n}"/> with missing values, the task of forecasting the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\delta"/> steps ahead is very challenge. In our study, we propose temporal matrix factorization models and use it to learn from partially observed data and make prediction directly. The example we mentioned below is from <a href="https://doi.org/10.1287/ijoc.2022.0197">Figure 1, Chen et al., 2024</a>. Figure 5 shows the modeling process of forecasting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{y}}_{T+1},\cdots,\tilde{\boldsymbol{y}}_{T+\delta}\in\mathbb{R}^{n}"/>.
 
-
-<span style="color:gray">
-Figure 5 shows the modeling process of forecasting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{y}}_{T+1},\cdots,\tilde{\boldsymbol{y}}_{T+\delta}\in\mathbb{R}^{n}"/>.
-</span>
 
 <br>
 
