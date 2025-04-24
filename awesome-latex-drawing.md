@@ -163,7 +163,7 @@ Figure 5 shows the modeling process of forecasting <img style="display: inline;"
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/tensors.png" width="200" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/tensors.png" width="250" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
