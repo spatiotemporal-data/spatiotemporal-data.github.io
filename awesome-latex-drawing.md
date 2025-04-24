@@ -50,7 +50,11 @@ Figure 1 visualizes a certain vector and the corresponding normalized vector in 
 
 <b>Example 2 (Manhattan distance).</b> Manhattan distance (also known as taxicab distance) is a method for measuring the distance between two points in a grid-like space, similar to how a taxi would navigate through city streets. It is calculated by summing the absolute differences of the coordinates between the two points.
 
-For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is defined as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_1=\sum_{i=1}^{n}|x_i|"/>, which is the sum of the absolute values of entries.
+For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm of vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is defined as
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_1=\sum_{i=1}^{n}|x_i|"/></p>
+
+which is the sum of the absolute values of entries.
 
 <br>
 
