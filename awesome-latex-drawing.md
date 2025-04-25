@@ -131,7 +131,7 @@ Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red 
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 6.</b> Illustration of third-order tensor. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/TensorFactorization/tensors.tex">LaTeX code</a> on GitHub.
+<b>Figure 6.</b> Illustration of a third-order tensor with multiple dimensions such as origin, destination, and time slot. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/TensorFactorization/tensors.tex">LaTeX code</a> on GitHub.
 </p>
 
 <br>
