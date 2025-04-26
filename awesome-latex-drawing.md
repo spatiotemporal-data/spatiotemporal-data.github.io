@@ -120,7 +120,7 @@ Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red 
 
 <br>
 
-**Example 6 (Third-order tensor).** In tensor computations, third-order tensor can be denoted by ...
+**Example 6 (Third-order tensor).** In tensor computations, third-order tensor can be denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{Y}}\in\mathbb{R}^{m\times n\times f}"/>. Element-wise, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(i,j,t)"/>-th entry of tensor <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{Y}}"/> is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;y_{i,j,t}"/>.
 
 
 
