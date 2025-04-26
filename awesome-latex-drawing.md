@@ -37,6 +37,9 @@ Figure 1 visualizes a certain vector and the corresponding normalized vector in 
 <b>Figure 1.</b> Illustration of normalized vectors in a certain direction, ensuring <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{x}\|_2=1"/>. (<b>Left panel</b>) Dark theme, see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_black.tex">LaTeX code</a> on GitHub. (<b>Right panel</b>) White theme, see <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/norms/unit_vector_white.tex">LaTeX code</a> on GitHub.
 </p>
 
+<br>
+
+---
 
 <br>
 
@@ -63,6 +66,9 @@ which is the sum of the absolute values of entries. Figure 2 visualizes distance
 </p>
 
 
+<br>
+
+---
 
 <br>
 
@@ -83,6 +89,9 @@ All functions share the same angular frequency <img style="display: inline;" src
 <b>Figure 3.</b> Illustration of four sequences consisting of sine and cosine functions. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/pgfplots-function/sin_cos_functions.tex">LaTeX code</a> on GitHub.
 </p>
 
+<br>
+
+---
 
 <br>
 
@@ -102,6 +111,9 @@ Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red 
 </p>
 
 
+<br>
+
+---
 
 <br>
 
@@ -120,6 +132,10 @@ Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red 
 
 <br>
 
+---
+
+<br>
+
 **Example 6 (Third-order tensor).** In tensor computations, third-order tensor of size <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;m\times n\times f"/> can be denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{Y}}\in\mathbb{R}^{m\times n\times f}"/>. Element-wise, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;(i,j,t)"/>-th entry of tensor <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{Y}}"/> is written as <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;y_{i,j,t}"/>, see Figure 6.
 
 
@@ -133,6 +149,10 @@ Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red 
 <p style="font-size: 14px; color: gray" align = "center">
 <b>Figure 6.</b> Illustration of a third-order tensor with multiple dimensions such as origin, destination, and time slot. See <a href="https://github.com/xinychen/awesome-latex-drawing/blob/master/TensorFactorization/tensors.tex">LaTeX code</a> on GitHub.
 </p>
+
+<br>
+
+---
 
 <br>
 
