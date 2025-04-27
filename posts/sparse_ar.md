@@ -464,7 +464,7 @@ layout: default
                     y: {
                         title: {
                             display: true,
-                            text: 'Value'
+                            text: 'Trip count'
                         }
                     }
                 },
