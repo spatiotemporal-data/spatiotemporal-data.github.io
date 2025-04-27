@@ -69,6 +69,7 @@ In the past decade, the development of artificial intelligence and machine learn
 <img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="720" />
 </p>
 
+<p style="font-size: 14px; color: gray" align = "center"> 🔨 Feel free to play with <a href="https://xinychen.github.io/ts_periodicity">data explainer</a>.</p>
 
 
 <br>
