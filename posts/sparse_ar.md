@@ -39,7 +39,7 @@ layout: default
         }
         button {
             padding: 8px 16px;
-            background-color: #4CAF50;
+            background-color:rgb(202, 209, 202);
             color: white;
             border: none;
             border-radius: 4px;
