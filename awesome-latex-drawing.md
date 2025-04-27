@@ -14,6 +14,37 @@ layout: default
 
 <br>
 
+<div id="plot"></div>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<script>
+  // Initialize the echarts instance
+  var myChart = echarts.init(document.getElementById('plot'));
+
+  // Generate some random time series data
+  function generateData() {
+    let data = [];
+    let value = 50;
+    for (let i = 0; i < 30; i++) {
+      value += Math.random() * 10 - 5;
+      data.push([i, Math.round(value)]);
+    }
+    return data;
+  }
+
+  // Specify the configuration items and data for the chart
+  var option = {
+    xAxis: { type: 'value', name: 'Time' },
+    yAxis: { type: 'value', name: 'Value' },
+    series: [{
+      data: generateData(),
+      type: 'line',
+      smooth: true
+    }]
+  };
+
+  // Display the chart using the configuration items and data just specified.
+  myChart.setOption(option);
+</script>
 
 ## LaTeX Visualization Examples
 
