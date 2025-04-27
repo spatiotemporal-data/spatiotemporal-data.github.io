@@ -424,7 +424,7 @@ layout: default
             data: {
                 labels: labels,
                 datasets: [{
-                    label: 'Chicago Ridesharing Trip Time Series',
+                    label: 'Chicago Ridesharing Trips',
                     data: dataPoints,
                     borderColor: 'rgb(75, 192, 192)',
                     tension: 0.1,
@@ -434,42 +434,37 @@ layout: default
             },
             options: {
                 responsive: true,
-                scales: {
-                    x: {
-                        type: 'linear',
-                        position: 'bottom',
-                        ticks: {
-                            stepSize: 12   // 👈 This is the key line you need
-                        }
-                    }
-                },
-                plugins: {
-                    zoom: {
-                        pan: {
-                            enabled: true,
-                            mode: 'x'
-                        },
-                        zoom: {
-                            enabled: true,
-                            mode: 'x'
-                        }
-                    }
-                }
-            },
-            options: {
-                responsive: true,
                 maintainAspectRatio: false,
                 scales: {
                     x: {
                         title: {
                             display: true,
                             text: 'Time (hour)'
+                        },
+                        ticks: {
+                            stepSize: 12,
+                            callback: function(value) {
+                                return value % 12 === 0 ? value : '';
+                            },
+                            autoSkip: false,
+                            maxRotation: 0,
+                            minRotation: 0
+                        },
+                        grid: {
+                            color: function(context) {
+                                return context.tick.value % 12 === 0 ? 
+                                    'rgba(0, 0, 0, 0.1)' : 
+                                    'rgba(0, 0, 0, 0.05)';
+                            },
+                            lineWidth: function(context) {
+                                return context.tick.value % 12 === 0 ? 2 : 1;
+                            }
                         }
                     },
                     y: {
                         title: {
                             display: true,
-                            text: 'Trip count'
+                            text: 'Value'
                         }
                     }
                 },
