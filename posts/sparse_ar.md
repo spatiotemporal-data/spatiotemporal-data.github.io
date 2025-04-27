@@ -41,7 +41,7 @@ layout: default
         }
         .scatter-container {
             position: relative;
-            height: 230px;
+            height: 240px;
             width: 32%;
             margin-bottom: 20px;
         }
