@@ -10,25 +10,41 @@ layout: default
 
 <br>
 
+
+
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Interactive Time Series Visualization</title> -->
+    <title>Time Series and Lag Scatter Plots</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.1"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 100%;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        .chart-container {
+        .chart-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .time-series-container {
             position: relative;
             height: 220px;
             width: 100%;
+            margin-bottom: 20px;
+        }
+        .scatter-container {
+            position: relative;
+            height: 280px;
+            width: 32%;
+            margin-bottom: 20px;
         }
         .controls {
             margin: 10px 0;
@@ -39,7 +55,7 @@ layout: default
         }
         button {
             padding: 8px 16px;
-            background-color:rgb(202, 209, 202);
+            background-color: rgb(202, 209, 202);
             color: white;
             border: none;
             border-radius: 4px;
@@ -54,23 +70,70 @@ layout: default
             background-color: #f8f9fa;
             border-radius: 4px;
         }
+        .lag-control {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .lag-control input {
+            width: 60px;
+            text-align: center;
+        }
     </style>
 </head>
-<body>    
+
+<body>
+    <!-- <h1>Time Series and Lag Scatter Plots</h1> -->
+    
+    <!-- <div class="info">
+        <p>This visualization shows the time series in the top chart and scatter plots of the time series against lagged versions of itself below. Use the controls to adjust the zoom and lag values.</p>
+    </div> -->
     <div class="info">
-        <p>This interactive chart displays the provided time series data. Use the controls below to zoom, pan, or reset the view. <b>Please open it with your laptop for an interactive visualization.</b></p>
+        <p>This interactive chart displays the provided time series data. <b>Please open it with your laptop for an interactive visualization.</b></p>
     </div>
-    
-    <div class="chart-container">
+
+    <!-- First row: Time series chart -->
+    <div class="time-series-container">
         <canvas id="timeSeriesChart"></canvas>
+        <div class="controls">
+            <button id="zoomIn">Zoom In</button>
+            <button id="zoomOut">Zoom Out</button>
+            <button id="panLeft">Pan Left</button>
+            <button id="panRight">Pan Right</button>
+            <button id="resetZoom">Reset Zoom</button>
+        </div>
     </div>
-    
-    <div class="controls">
-        <button id="zoomIn">Zoom In</button>
-        <button id="zoomOut">Zoom Out</button>
-        <button id="panLeft">Pan Left</button>
-        <button id="panRight">Pan Right</button>
-        <button id="resetZoom">Reset Zoom</button>
+
+    <!-- Second row: Three scatter plots -->
+    <div class="chart-row">
+        <!-- First scatter plot -->
+        <div class="scatter-container">
+            <canvas id="scatterChart1"></canvas>
+            <div class="lag-control">
+                <label for="lag1">Lag (k):</label>
+                <input type="number" id="lag1" min="1" max="360" value="1">
+                <button onclick="updateChart(1)">Update</button>
+            </div>
+        </div>
+        
+        <!-- Second scatter plot -->
+        <div class="scatter-container">
+            <canvas id="scatterChart2"></canvas>
+            <div class="lag-control">
+                <label for="lag2">Lag (k):</label>
+                <input type="number" id="lag2" min="1" max="360" value="24">
+                <button onclick="updateChart(2)">Update</button>
+            </div>
+        </div>
+        
+        <!-- Third scatter plot -->
+        <div class="scatter-container">
+            <canvas id="scatterChart3"></canvas>
+            <div class="lag-control">
+                <label for="lag3">Lag (k):</label>
+                <input type="number" id="lag3" min="1" max="360" value="168">
+                <button onclick="updateChart(3)">Update</button>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -418,9 +481,9 @@ layout: default
         const labels = timeSeriesData.map(item => item[0]);
         const dataPoints = timeSeriesData.map(item => item[1]);
 
-        // Create chart
-        const ctx = document.getElementById('timeSeriesChart').getContext('2d');
-        const chart = new Chart(ctx, {
+        // Create time series chart
+        const timeSeriesCtx = document.getElementById('timeSeriesChart').getContext('2d');
+        const timeSeriesChart = new Chart(timeSeriesCtx, {
             type: 'line',
             data: {
                 labels: labels,
@@ -489,33 +552,143 @@ layout: default
             }
         });
 
-        // Add button controls
+        // Add button controls for time series chart
         document.getElementById('zoomIn').addEventListener('click', function() {
-            chart.zoom(1.1);
+            timeSeriesChart.zoom(1.1);
         });
 
         document.getElementById('zoomOut').addEventListener('click', function() {
-            chart.zoom(0.9);
+            timeSeriesChart.zoom(0.9);
         });
 
         document.getElementById('panLeft').addEventListener('click', function() {
-            chart.pan({
+            timeSeriesChart.pan({
                 x: -50
             }, undefined, 'default');
         });
 
         document.getElementById('panRight').addEventListener('click', function() {
-            chart.pan({
+            timeSeriesChart.pan({
                 x: 50
             }, undefined, 'default');
         });
 
         document.getElementById('resetZoom').addEventListener('click', function() {
-            chart.resetZoom();
+            timeSeriesChart.resetZoom();
         });
+
+        // Extract values from time series data
+        const values = timeSeriesData.map(item => item[1]);
+        const maxValue = Math.max(...values);
+        
+        // Create scatter plot data for a given lag
+        function createScatterData(lag) {
+            const scatterData = [];
+            for (let i = lag; i < values.length; i++) {
+                scatterData.push({
+                    x: values[i - lag],
+                    y: values[i]
+                });
+            }
+            return scatterData;
+        }
+
+        // Create y=x line data
+        function createDiagonalData() {
+            return [
+                {x: 0, y: 0},
+                {x: maxValue, y: maxValue}
+            ];
+        }
+
+        // Initialize scatter charts
+        const scatterCharts = [];
+        const initialLags = [1, 24, 168];
+        
+        for (let i = 0; i < 3; i++) {
+            const ctx = document.getElementById(`scatterChart${i+1}`).getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'scatter',
+                data: {
+                    datasets: [
+                        {
+                            label: `Time series at t vs. t-${initialLags[i]}`,
+                            data: createScatterData(initialLags[i]),
+                            backgroundColor: 'rgba(75, 192, 192, 0.5)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            pointRadius: 3
+                        },
+                        {
+                            label: 'y = x',
+                            data: createDiagonalData(),
+                            type: 'line',
+                            borderColor: 'rgba(128, 128, 128, 1)',
+                            borderWidth: 1,
+                            pointRadius: 0,
+                            fill: false,
+                            showLine: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    aspectRatio: 1, // Makes the chart square
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: `Value at t-${initialLags[i]}`
+                            },
+                            min: 0,
+                            max: maxValue
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Value at t'
+                            },
+                            min: 0,
+                            max: maxValue
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `(${context.parsed.x}, ${context.parsed.y})`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            scatterCharts.push(chart);
+        }
+
+        // Update scatter chart with new lag value
+        function updateChart(chartIndex) {
+            const lagInput = document.getElementById(`lag${chartIndex}`);
+            const lag = parseInt(lagInput.value);
+            
+            if (lag < 1 || lag > 360) {
+                alert('Please enter a lag value between 1 and 360');
+                return;
+            }
+            
+            const chart = scatterCharts[chartIndex-1];
+            chart.data.datasets[0].data = createScatterData(lag);
+            chart.data.datasets[0].label = `Time series at t vs. t-${lag}`;
+            chart.options.scales.x.title.text = `Value at t-${lag}`;
+            chart.update();
+        }
     </script>
 </body>
 </html>
+
+
+
 
 
 <br>
