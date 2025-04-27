@@ -482,6 +482,31 @@ This visualization shows the time series in the top chart and scatter plots of t
             [3.360000000000000000e+02, 5.810000000000000000e+03]
         ];
 
+        // Add button controls for time series chart
+        document.getElementById('zoomIn').addEventListener('click', function() {
+            timeSeriesChart.zoom(1.1);
+        });
+
+        document.getElementById('zoomOut').addEventListener('click', function() {
+            timeSeriesChart.zoom(0.9);
+        });
+
+        document.getElementById('panLeft').addEventListener('click', function() {
+            timeSeriesChart.pan({
+                x: -50
+            }, undefined, 'default');
+        });
+
+        document.getElementById('panRight').addEventListener('click', function() {
+            timeSeriesChart.pan({
+                x: 50
+            }, undefined, 'default');
+        });
+
+        document.getElementById('resetZoom').addEventListener('click', function() {
+            timeSeriesChart.resetZoom();
+        });
+
         // Prepare data for Chart.js
         const labels = timeSeriesData.map(item => item[0]);
         const dataPoints = timeSeriesData.map(item => item[1]);
@@ -555,31 +580,6 @@ This visualization shows the time series in the top chart and scatter plots of t
                     }
                 }
             }
-        });
-
-        // Add button controls for time series chart
-        document.getElementById('zoomIn').addEventListener('click', function() {
-            timeSeriesChart.zoom(1.1);
-        });
-
-        document.getElementById('zoomOut').addEventListener('click', function() {
-            timeSeriesChart.zoom(0.9);
-        });
-
-        document.getElementById('panLeft').addEventListener('click', function() {
-            timeSeriesChart.pan({
-                x: -50
-            }, undefined, 'default');
-        });
-
-        document.getElementById('panRight').addEventListener('click', function() {
-            timeSeriesChart.pan({
-                x: 50
-            }, undefined, 'default');
-        });
-
-        document.getElementById('resetZoom').addEventListener('click', function() {
-            timeSeriesChart.resetZoom();
         });
 
         // Extract values from time series data
