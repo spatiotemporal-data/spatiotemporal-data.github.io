@@ -57,9 +57,18 @@ In the past decade, the development of artificial intelligence and machine learn
 
 <br>
 
-### Research Visualization in LaTeX
+### Research Visualization
 
 🌱 [Awesome LaTeX Drawing](https://spatiotemporal-data.github.io/awesome-latex-drawing/). Drawing and generating academic graphics in LaTeX for visualization purposes in research.
+
+🌱 [Interactive Visualization Tool for Time Series Periodicity](https://xinychen.github.io/ts_periodicity). Showing time series periodicity of Chicago ridesharing trips over two weeks (starting April 1, 2024).
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="720" />
+</p>
+
 
 
 <br>
