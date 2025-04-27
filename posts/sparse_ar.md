@@ -14,7 +14,11 @@ layout: default
 
 This visualization shows the time series in the top chart and scatter plots of the time series against lagged versions of itself below. **Please open it with your laptop for an interactive visualization.**
 
+<br>
+
 ---
+
+<br>
 
 <html lang="en">
 <head>
@@ -687,6 +691,8 @@ This visualization shows the time series in the top chart and scatter plots of t
     </script>
 </body>
 </html>
+
+<br>
 
 ---
 
