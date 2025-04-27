@@ -442,9 +442,9 @@ layout: default
                             text: 'Time (hour)'
                         },
                         ticks: {
-                            stepSize: 12,
+                            stepSize: 24,
                             callback: function(value) {
-                                return value % 12 === 0 ? value : '';
+                                return value % 24 === 0 ? value : '';
                             },
                             autoSkip: false,
                             maxRotation: 0,
@@ -452,12 +452,12 @@ layout: default
                         },
                         grid: {
                             color: function(context) {
-                                return context.tick.value % 12 === 0 ? 
+                                return context.tick.value % 24 === 0 ? 
                                     'rgba(0, 0, 0, 0.1)' : 
                                     'rgba(0, 0, 0, 0.05)';
                             },
                             lineWidth: function(context) {
-                                return context.tick.value % 12 === 0 ? 2 : 1;
+                                return context.tick.value % 24 === 0 ? 2 : 1;
                             }
                         }
                     },
