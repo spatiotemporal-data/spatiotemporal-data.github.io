@@ -638,7 +638,7 @@ layout: default
                         x: {
                             title: {
                                 display: true,
-                                text: `Value at t-${initialLags[i]}`
+                                text: `Trip count at t-${initialLags[i]}`
                             },
                             min: 0,
                             max: maxValue
@@ -646,7 +646,7 @@ layout: default
                         y: {
                             title: {
                                 display: true,
-                                text: 'Value at t'
+                                text: 'Trip count at t'
                             },
                             min: 0,
                             max: maxValue
@@ -679,7 +679,7 @@ layout: default
             const chart = scatterCharts[chartIndex-1];
             chart.data.datasets[0].data = createScatterData(lag);
             chart.data.datasets[0].label = `Time series at t vs. t-${lag}`;
-            chart.options.scales.x.title.text = `Value at t-${lag}`;
+            chart.options.scales.x.title.text = `Trip count at t-${lag}`;
             chart.update();
         }
     </script>
