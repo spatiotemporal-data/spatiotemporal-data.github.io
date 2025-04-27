@@ -87,7 +87,7 @@ layout: default
         <p>This visualization shows the time series in the top chart and scatter plots of the time series against lagged versions of itself below. Use the controls to adjust the zoom and lag values.</p>
     </div> -->
     <div class="info">
-        <p>This interactive chart displays the provided time series data. <b>Please open it with your laptop for an interactive visualization.</b></p>
+        <p>This visualization shows the time series in the top chart and scatter plots of the time series against lagged versions of itself below. <b>Please open it with your laptop for an interactive visualization.</b></p>
     </div>
 
     <!-- First row: Time series chart -->
