@@ -14,41 +14,6 @@ layout: default
 
 <br>
 
-		<div id='temperature_visualization_wrapper'>
-			<div class="visualization-wrapper ">
-				<div class="visualization" style="display: flex; justify-content: space-between; text-align: center; font-size: 1.3em;">
-					<div>
-						<div>unnormalized pdf `$ p(\vx) = p(x_1, x_2)$`</div>
-						<div class='visualization_right'></div>
-					</div>
-					<div>
-						<div>Energy `$ U(\vx) = U(x_1, x_2)$`</div>
-						<div class='visualization_left'></div>
-					</div>
-				</div>
-				<div class="controls">
-					<div class="control" style="text-align: left;">
-						Distribution <br />
-						<div class='dataset_control'></div>
-					</div>
-					<div class='control' style="text-align: left;">
-						Show <br />
-						<label>
-							<input type="checkbox" class="show_true_control" checked="checked" /> <span class='true_sample_color'>true samples<br/>from distribution</span>
-						</label>
-					</div>
-					<div class="control">
-						<label>
-							temperature T: <span class="temperature_display" ></span>
-                        	<input type="range" min="0" max="4" value="2" step="1" class="temperature_control" />
-						</label>
-					</div>
-					<div class='control'>
-						Play with a temperature  <br /> and look at different distributions!
-					</div>
-				</div>
-			</div>
-		</div>
 
 ## LaTeX Visualization Examples
 
