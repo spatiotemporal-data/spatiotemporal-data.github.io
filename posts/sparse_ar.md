@@ -469,6 +469,46 @@ layout: default
             }
         });
 
+const ctx = document.getElementById('timeSeriesChart').getContext('2d');
+const timeSeriesChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: timeSeriesData.map(d => d[0]),
+        datasets: [{
+            label: 'Time Series',
+            data: timeSeriesData.map(d => d[1]),
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 2,
+            fill: false,
+            pointRadius: 0
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: {
+                type: 'linear',
+                position: 'bottom',
+                ticks: {
+                    stepSize: 12   // 👈 This is the key line you need
+                }
+            }
+        },
+        plugins: {
+            zoom: {
+                pan: {
+                    enabled: true,
+                    mode: 'x'
+                },
+                zoom: {
+                    enabled: true,
+                    mode: 'x'
+                }
+            }
+        }
+    }
+});
+
         // Add button controls
         document.getElementById('zoomIn').addEventListener('click', function() {
             chart.zoom(1.1);
