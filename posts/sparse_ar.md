@@ -33,6 +33,7 @@ layout: default
         .controls {
             margin: 20px 0;
             display: flex;
+            justify-content: center;
             gap: 10px;
             flex-wrap: wrap;
         }
