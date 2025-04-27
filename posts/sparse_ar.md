@@ -6,7 +6,7 @@ layout: default
 
 <p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on March 11, 2025)</span></p>
+<p align="center"><span style="color:gray">(Updated on April 26, 2025)</span></p>
 
 <br>
 
