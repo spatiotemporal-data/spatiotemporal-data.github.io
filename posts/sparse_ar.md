@@ -15,6 +15,7 @@ layout: default
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Interactive Time Series Visualization</title> -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.1.1/dist/chartjs-plugin-annotation.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.1"></script>
@@ -413,6 +414,32 @@ layout: default
             [3.360000000000000000e+02, 5.810000000000000000e+03]
         ];
 
+// Generate annotations for each 24-hour mark
+const annotations = {};
+for (let i = 24; i <= 360; i += 24) {
+    annotations[`line${i}`] = {
+        type: 'line',
+        scaleID: 'x',
+        value: i,
+        borderColor: 'rgba(255, 0, 0, 0.3)',
+        borderWidth: 1,
+        label: {
+            content: `Day ${i/24}`,
+            enabled: true,
+            position: 'top'
+        }
+    };
+}
+
+// Then add to your chart options:
+options: {
+    plugins: {
+        annotation: {
+            annotations: annotations
+        }
+    }
+}
+
         // Prepare data for Chart.js
         const labels = timeSeriesData.map(item => item[0]);
         const dataPoints = timeSeriesData.map(item => item[1]);
@@ -499,6 +526,22 @@ layout: default
 
 
 <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 In this post, we intend to explain the essential ideas of our research work:
 
