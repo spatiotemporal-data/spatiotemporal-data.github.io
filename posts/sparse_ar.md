@@ -57,7 +57,7 @@ layout: default
 </head>
 <body>    
     <div class="info">
-        <p>This interactive chart displays the provided time series data. Use the controls below to zoom, pan, or reset the view.</p>
+        <p>This interactive chart displays the provided time series data. Use the controls below to zoom, pan, or reset the view. Please open it with your laptop for interactive visualization.</p>
     </div>
     
     <div class="chart-container">
