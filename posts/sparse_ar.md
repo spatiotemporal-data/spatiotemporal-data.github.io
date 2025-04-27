@@ -27,7 +27,7 @@ layout: default
         }
         .chart-container {
             position: relative;
-            height: 250px;
+            height: 220px;
             width: 100%;
         }
         .controls {
