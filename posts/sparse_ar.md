@@ -31,7 +31,7 @@ layout: default
             width: 100%;
         }
         .controls {
-            margin: 20px 0;
+            margin: 10px 0;
             display: flex;
             justify-content: center;
             gap: 10px;
