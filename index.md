@@ -71,7 +71,7 @@ In the past decade, the development of artificial intelligence and machine learn
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  background: #dcdcdc;
+  background: #9a9a9a;
   color: white;
   padding: 10px;
 ">
@@ -81,7 +81,7 @@ In the past decade, the development of artificial intelligence and machine learn
 <img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="600" />
 </p>
 
-<p style="font-size: 14px; color: gray" align = "center"> 🔨 Anotating the time series periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
+<p style="font-size: 14px; color: white" align = "center"> 🔨 Anotating the time series periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
 
 </div>
 
