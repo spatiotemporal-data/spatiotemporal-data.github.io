@@ -88,12 +88,11 @@ In the past decade, the development of artificial intelligence and machine learn
   color: white;
   padding: 20px;
 ">
+<p style="font-size: 14px; color: gray" align = "center"> <b>Time series periodicity explainer</b> </p>
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="500" />
 </p>
-
-<p style="font-size: 14px; color: gray" align = "center"> <a href="https://xinychen.github.io/ts_periodicity"><b>Time series periodicity explainer</b></a>.</p>
 
 </div>
 
