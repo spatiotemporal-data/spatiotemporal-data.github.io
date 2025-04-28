@@ -74,6 +74,17 @@ In the past decade, the development of artificial intelligence and machine learn
 
 <br>
 
+
+<div style="background-color: black; color: white; padding: 10px; border-radius: 5px;">
+This is a black block with white text.
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="720" />
+</p>
+
+</div>
+
+
 ### Data Science Tutorial Series
 
 To advance the development of spatiotemporal data modeling in the research community, this project handles various spatiotemporal data:
