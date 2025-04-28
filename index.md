@@ -75,19 +75,8 @@ In the past decade, the development of artificial intelligence and machine learn
 <br>
 
 
-<div style="background-color: gray; color: white; padding: 10px; border-radius: 5px;">
-This is a black block with white text.
-
-<p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="720" />
-</p>
-
-</div>
-
-<br>
 <br>
 
-<!-- {% raw %} -->
 <div style="
   position: relative;
   left: 50%;
@@ -99,10 +88,16 @@ This is a black block with white text.
   color: white;
   padding: 20px;
 ">
-Full-width block content here.
-</div>
-<!-- {% endraw %} -->
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="500" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center"> <a href="https://xinychen.github.io/ts_periodicity"><b>Time series periodicity explainer</b></a>.</p>
+
+</div>
+
+<br>
 
 ### Data Science Tutorial Series
 
