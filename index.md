@@ -78,13 +78,6 @@ In the past decade, the development of artificial intelligence and machine learn
 <p style="font-size: 14px; color: gray" align = "center"> <a href="https://xinychen.github.io/ts_periodicity"><b>Interactive Visualization Tool for Analyzing Time Series Periodicity</b></a> </p>
 
 <p align="center">
-<video height="200" controls>
-  <source src="https://spatiotemporal-data.github.io/video/chicago_ridesharing_ts_example.mov" type="video/mp4">
-</video> 
-<img src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" height="200" />
-</p>
-
-<p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="600" />
 </p>
 
