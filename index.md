@@ -75,7 +75,7 @@ In the past decade, the development of artificial intelligence and machine learn
 <br>
 
 
-<div style="background-color: black; color: white; padding: 10px; border-radius: 5px;">
+<div style="background-color: gray; color: white; padding: 10px; border-radius: 5px;">
 This is a black block with white text.
 
 <p align="center">
