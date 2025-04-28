@@ -61,8 +61,6 @@ In the past decade, the development of artificial intelligence and machine learn
 
 🌱 [Awesome LaTeX Drawing](https://spatiotemporal-data.github.io/awesome-latex-drawing/). Drawing and generating academic graphics in LaTeX for visualization purposes in research.
 
-🌱 [Interactive Visualization Tool for Time Series Periodicity](https://xinychen.github.io/ts_periodicity). Showing time series periodicity of Chicago ridesharing trips over two weeks (starting April 1, 2024).
-
 
 <br>
 
@@ -77,11 +75,13 @@ In the past decade, the development of artificial intelligence and machine learn
   color: white;
   padding: 10px;
 ">
-<p style="font-size: 14px; color: gray" align = "center"> <a href="https://xinychen.github.io/ts_periodicity"><b>Interactive visualization tool for time series periodicity</b></a> </p>
+<p style="font-size: 14px; color: gray" align = "center"> <a href="https://xinychen.github.io/ts_periodicity"><b>Interactive Visualization Tool for Analyzing Time Series Periodicity</b></a> </p>
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="600" />
 </p>
+
+<p style="font-size: 14px; color: gray" align = "center"> 🔨 Anotating the time series periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
 
 </div>
 
