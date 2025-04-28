@@ -84,6 +84,25 @@ This is a black block with white text.
 
 </div>
 
+<br>
+<br>
+
+<!-- {% raw %} -->
+<div style="
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  background: gray;
+  color: white;
+  padding: 20px;
+">
+Full-width block content here.
+</div>
+<!-- {% endraw %} -->
+
 
 ### Data Science Tutorial Series
 
