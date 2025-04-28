@@ -84,11 +84,11 @@ In the past decade, the development of artificial intelligence and machine learn
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  background: #f5f5f5;
+  background: #dcdcdc;
   color: white;
   padding: 20px;
 ">
-<p style="font-size: 14px; color: gray" align = "center"> <b>Time series periodicity explainer</b> </p>
+<p style="font-size: 14px; color: gray" align = "center"> <a href="https://xinychen.github.io/ts_periodicity"><b>Interactive visualization tool for time series periodicity</b></a> </p>
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="500" />
