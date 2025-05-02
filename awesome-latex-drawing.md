@@ -156,6 +156,8 @@ Figure 4 shows the scheme of two-step rolling prediction, in which cyan and red 
 
 <br>
 
+**Example 7 (Graphical model of time series autoregression).** 
+
 
 <br>
 
