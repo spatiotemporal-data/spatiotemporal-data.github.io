@@ -33,7 +33,7 @@ In this post, we intend to explain the essential ideas of our research work:
   </li>
 
   <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
-    Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TKDE.2025.3550877">Correlating time series with interpretable convolutional kernels</a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. Early access.
+    Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TKDE.2025.3550877">Correlating time series with interpretable convolutional kernels</a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 37 (6): 3272-3283.
   </li>
 </ul>
 
