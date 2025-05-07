@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-This project aims at supporting research for all aspects of spatiotemporal data modeling with machine learning and addressing many scientific, mathematical, industrial, and engineering problems in:
+This project aims at supporting research for all aspects of spatiotemporal data computing with machine learning and addressing many scientific, mathematical, industrial, and engineering problems in:
 
 - Human mobility modeling
 - Intelligent & sustainable urban systems
@@ -89,7 +89,7 @@ In the past decade, the development of artificial intelligence and machine learn
 
 ### Data Science Tutorial Series
 
-To advance the development of spatiotemporal data modeling in the research community, this project handles various spatiotemporal data:
+To advance the development of spatiotemporal data computing in the research community, this project handles various spatiotemporal data:
 
 - [Analyzing millions of taxi trips in the City of Chicago](https://spatiotemporal-data.github.io/Chicago-mobility/taxi-data/)
 - [Constructing human mobility tensor on NYC rideshare trip data](https://spatiotemporal-data.github.io/NYC-mobility/rideshare/)
