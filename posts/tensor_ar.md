@@ -51,8 +51,45 @@ Figure 1 presents the graphical illustration of the above tensor autoregression 
 
 According to the property of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{L}"/>-product in [1], it is possible to draw the connection between tensor autoregression and vector autoregression (see Figure 1).
 
+<br>
 
+---
 
+<span style="color:gray">
+<b><img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{L}"/>-product.</b> For any tensor <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{A}}\in\mathbb{R}^{M\times M\times N}"/> and matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X},\boldsymbol{Y}\in\mathbb{R}^{M\times N}"/>, then a system of linear equations such that
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}=\boldsymbol{\mathcal{A}}\times_{\mathcal{L}}\boldsymbol{X}"/></p>
+
+<span style="color:gray">
+is equivalent to a standard system of linear equations:
+</span>
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_{n}=\boldsymbol{A}_{n}\boldsymbol{x}_{n},n=1,\ldots,N"/></p>
+
+<span style="color:gray">
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}_{n}\in\mathbb{R}^{M\times M}"/> is the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th frontal slice of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{A}}"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{n},\boldsymbol{y}_{n}\in\mathbb{R}^{M}"/> are the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th column of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}"/>, respectively.
+</span>
+
+<br>
+
+---
+
+<br>
+
+Here, for each column of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}_{t}"/>, we can build a sequence of vector autoregressive processes, and they are equivalent to the tensor autoregression. As shown in Figure 2, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;M"/>-by-<img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}_{n}"/> is the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th frontal slice of the coefficient tensor <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{A}}"/>, and the vectors of length <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;M"/> are the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th column of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}_{t}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}_{t-1}"/>, respectively.
+
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/tensor_ar_linear.webp" width="550" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 2.</b> Illustration of a sequence of vector autoregressive processes.
+</p>
+
+<br>
 
 
 <br>
