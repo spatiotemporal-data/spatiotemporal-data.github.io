@@ -35,8 +35,6 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 
 Figure 1 presents the graphical illustration of the above tensor autoregression on the matrix-variate time series. The orange boxes show the matrices at time <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t-1"/>, while the red cube refers to the coefficient tensor. Notably, the red cube has three dimensions.
 
-
-
 <br>
 
 <p align="center">
@@ -48,6 +46,12 @@ Figure 1 presents the graphical illustration of the above tensor autoregression 
 </p>
 
 <br>
+
+### II-B. Connection between Tensor Autoregression and Vector Autoregression
+
+According to the property of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{L}"/>-product in [1], it is possible to draw the connection between tensor autoregression and vector autoregression (see Figure 1).
+
+
 
 
 
