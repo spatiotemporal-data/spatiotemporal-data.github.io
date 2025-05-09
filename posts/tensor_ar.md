@@ -75,8 +75,6 @@ is equivalent to a standard system of linear equations:
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}_{n}\in\mathbb{R}^{M\times M}"/> is the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th frontal slice of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{A}}"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{n},\boldsymbol{y}_{n}\in\mathbb{R}^{M}"/> are the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th column of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}"/>, respectively.
 </span>
 
-<br>
-
 ---
 
 <br>
