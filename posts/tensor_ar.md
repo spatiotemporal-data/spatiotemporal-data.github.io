@@ -93,7 +93,7 @@ Here, for each column of <img style="display: inline;" src="https://latex.codeco
 
 <br>
 
-Therefore, the above tensor autoregression formula can be regarded as an extension of vector autoregression such that
+Therefore, the above tensor autoregression formula can be regarded as an extension of vector autoregression (referring to Eq. (18) in [Chen et al., 2025](https://xinychen.github.io/papers/dynamic_tensor.pdf)) such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_{n,t}=\boldsymbol{A}_{n}\boldsymbol{y}_{n,t-1}+\boldsymbol{\epsilon}_{n,t}"/></p>
 
