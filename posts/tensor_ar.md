@@ -37,6 +37,17 @@ Figure 1 presents the graphical illustration of the above tensor autoregression 
 
 
 
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/tensor_ar_illustration.webp" width="450" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 1.</b> Illustration of tensor autoregression on the matrix-variate time series.
+</p>
+
+<br>
 
 
 
