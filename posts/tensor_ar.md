@@ -27,7 +27,7 @@ For the matrix-variate time series:
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}_{1},\ldots,\boldsymbol{Y}_{T}\in\mathbb{R}^{M\times N}"/></p>
 
-over <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> time steps, the formula of the first-order tensor autoregression [1] can be written as follows,
+over <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> time steps, the formula of the first-order tensor autoregression (see [Cates et al., 2022](https://arxiv.org/abs/2205.12201)) can be written as follows,
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}_{t}=\boldsymbol{\mathcal{A}}\times_{\mathcal{L}}\boldsymbol{Y}_{t-1}+\boldsymbol{E}_{t},t=2,\ldots,T"/></p>
 
@@ -49,7 +49,7 @@ Figure 1 presents the graphical illustration of the above tensor autoregression 
 
 ### II-B. Connection between Tensor Autoregression and Vector Autoregression
 
-According to the property of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{L}"/>-product in [1], it is possible to draw the connection between tensor autoregression and vector autoregression (see Figure 1).
+According to the property of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{L}"/>-product by [Cates et al., 2022](https://arxiv.org/abs/2205.12201), it is possible to draw the connection between tensor autoregression and vector autoregression (see Figure 1).
 
 <br>
 
@@ -91,6 +91,15 @@ Here, for each column of <img style="display: inline;" src="https://latex.codeco
 
 <br>
 
+Therefore, the above tensor autoregression formula can be regarded as an extension of vector autoregression such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_{n,t}=\boldsymbol{A}_{n}\boldsymbol{y}_{n,t-1}+\boldsymbol{\epsilon}_{n,t}"/></p>
+
+By doing so, it is possible to capture the coevolution patterns of matrix-variate time series via the coefficient tensor <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\mathcal{A}}"/>.
+
+## Conclusion
+
+In this post, we introduce a tensor autoregression model and its formula for matrix-variate/multidimensional time series. To understand how the tensor autoregression characterize the matrix-variate time series, we start from the definition of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{L}"/>-product and draw the connection between tensor autoregression and vector autoregression. One significant advantage of the tensor autoregression is that it can preserve the intrinsic representation of the matrix-variate time series.
 
 <br>
 
