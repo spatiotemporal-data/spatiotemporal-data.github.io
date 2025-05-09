@@ -38,7 +38,7 @@ Figure 1 presents the graphical illustration of the above tensor autoregression 
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/tensor_ar_illustration.webp" width="450" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/tensor_ar_illustration.webp" width="550" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
