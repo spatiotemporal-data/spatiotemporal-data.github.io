@@ -14,13 +14,15 @@ In spatiotemporal systems, large amounts of time seires data, such as urban mobi
 
 ### Short Bio
 
+<br>
+
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/xinyu24.png" width="350" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/xinyu24.png" width="250" />
 </p>
 
+<br>
 
-
-Dr. Xinyu Chen
+Dr. Xinyu Chen is now a Postdoctoral Associate at MIT, working with Prof. Jinhua Zhao on addressing a wide range of data-driven machine learning challenges in computational engineering. He is currently involved in the Mens, Manus, and Machina (M3S) project and the Department of Energy (DOE) projects. Prior to joining MIT, he received his Ph.D. degree from the University of Montreal in Canada where he was fortunately supported by the IVADO PhD Excellence Scholarship from the Montreal Institute for Data Valorization. Currently, he focuses on developing theoretical and interpretable machine learning methods for modeling spatiotemporal data and computational social science data. The model development from a machine learning perspective can be summarized as tensor computations for machine learning (Tensor4ML) and optimization for interpretable machine learning (Opt4IML). His research works have been published in the top-tier scientific journals of the fields of Data Science, Machine Learning, Optimization, and Transportation, including IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Knowledge and Data Engineering, INFORMS Journal on Computing, and Transportation Science.
 
 
 
