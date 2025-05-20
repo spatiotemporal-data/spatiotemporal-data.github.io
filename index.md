@@ -78,7 +78,7 @@ In the past decade, the development of artificial intelligence and machine learn
 <p style="font-size: 14px; color: white" align = "center"> Interactive Visualization Tool for Analyzing Time Series Periodicity [<a style="color: white" href="https://xinychen.github.io/ts_periodicity"><b>Link</b></a>] </p>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="600" />
+<a href="https://xinychen.github.io/ts_periodicity"><img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="600" /></a>
 </p>
 
 <p style="font-size: 14px; color: white" align = "center"> 🔨 Anotating the time series periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
