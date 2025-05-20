@@ -75,7 +75,7 @@ In the past decade, the development of artificial intelligence and machine learn
   color: white;
   padding: 10px;
 ">
-<p style="font-size: 14px; color: gray" align = "center"> <a style="color: white" href="https://xinychen.github.io/ts_periodicity"><b>Interactive Visualization Tool for Analyzing Time Series Periodicity</b></a> </p>
+<p style="font-size: 14px; color: white" align = "center"> <a style="color: white" href="https://xinychen.github.io/ts_periodicity"><b>Interactive Visualization Tool for Analyzing Time Series Periodicity</b></a> </p>
 
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/ts_periodicity_tool.png" width="600" />
