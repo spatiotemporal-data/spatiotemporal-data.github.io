@@ -5,7 +5,7 @@ layout: default
 ### Basic Information
 
 - Topic: Machine Learning and Optimization for Understanding Spatiotemporal Systems
-- Date: May 22, 2025
+- Time: 1:30PM - 2:30PM | May 22, 2025
 - Artificial Intelligence Initiative, University of Central Florida, Orlando, USA
 
 ### Abstract
