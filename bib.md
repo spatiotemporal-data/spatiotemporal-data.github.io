@@ -16,6 +16,7 @@ layout: default
 **References**
 
 - [Slides](stellato.io/assets/downloads/presentations/2025/crm_montreal.pdf)
+- [Safe Physics-informed Machine Learning for Dynamics and Control](https://arxiv.org/pdf/2504.12952)
 
 <br>
 
