@@ -8,6 +8,17 @@ layout: default
 
 <br>
 
+### 47th Mile
+#### Exact Verification of First-order Methods via Mixed-Integer Linear Programming
+
+
+
+**References**
+
+- [Slides](stellato.io/assets/downloads/presentations/2025/crm_montreal.pdf)
+
+<br>
+
 ### 46th Mile
 #### Semidefinite Programming
 
