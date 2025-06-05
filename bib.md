@@ -16,12 +16,28 @@ layout: default
 **References**
 
 - [Slides](stellato.io/assets/downloads/presentations/2025/crm_montreal.pdf)
-- [Safe Physics-informed Machine Learning for Dynamics and Control](https://arxiv.org/pdf/2504.12952)
+
+<br>
+
+
+### 47th Mile
+#### Convergence Rates
+
+
 
 <br>
 
 ### 46th Mile
 #### Semidefinite Programming
+
+The basic definition of positive definite matrix is that: For any square matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{n\times n}"/>, if it always holds that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}^\top\boldsymbol{A}\boldsymbol{x}>0"/></p>
+
+with any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/> not being a vector of zeros, then <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\succ 0"/> is a positive definite matrix. Similarly, we can define a positive semidefinite matrix as follows,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\succeq 0 \Leftrightarrow \boldsymbol{x}^\top\boldsymbol{A}\boldsymbol{x}\geq 0"/></p>
+
 
 
 **References**
