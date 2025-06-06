@@ -23,6 +23,9 @@ layout: default
 ### 48th Mile
 #### Convergence Rates
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/convergence_rate.png" width="650" />
+</p>
 
 
 <br>
