@@ -36,7 +36,7 @@ The basic definition of positive definite matrix is that: For any square matrix 
 
 with any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/> not being a vector of zeros, then <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\succ 0"/> is a positive definite matrix. Similarly, we can define a positive semidefinite matrix as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\succeq 0 \Leftrightarrow \boldsymbol{x}^\top\boldsymbol{A}\boldsymbol{x}\geq 0"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\succeq 0 \Leftrightarrow \boldsymbol{x}^\top\boldsymbol{A}\boldsymbol{x}\geq 0,\forall \boldsymbol{x}\neq\boldsymbol{0}"/></p>
 
 
 
