@@ -27,6 +27,11 @@ layout: default
 <img align="middle" src="https://spatiotemporal-data.github.io/images/convergence_rate.png" width="650" />
 </p>
 
+<br>
+
+**References**
+
+- [Rates of convergence](https://bookdown.org/rdpeng/advstatcomp/rates-of-convergence.html)
 
 <br>
 
