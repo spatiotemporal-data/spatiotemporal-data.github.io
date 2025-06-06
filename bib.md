@@ -40,8 +40,6 @@ with any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex
 
 Semidefinite programming is the most exciting development of mathematical programming techniques in 1990s. One can leverage an initial point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{u}_0"/>, following by the governing equation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{u}_{t+1}=\boldsymbol{A}\boldsymbol{u}_{t},t=0,1,2,\ldots"/>, to build a dynamical system as shown below.
 
-<br>
-
 <p align="center">
 <img align="middle" src="https://spatiotemporal-data.github.io/images/dyna_system_Aut_toy.png" width="600" />
 </p>
