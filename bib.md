@@ -38,12 +38,12 @@ with any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\succeq 0 \Leftrightarrow \boldsymbol{x}^\top\boldsymbol{A}\boldsymbol{x}\geq 0,\forall \boldsymbol{x}\neq\boldsymbol{0}"/></p>
 
-Semidefinite programming is the most exciting development of mathematical programming techniques in 1990s. To build a dynamical system, one can leverage an initial point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{u}_0"/>, following by the governing equation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{u}_{t+1}=\boldsymbol{A}\boldsymbol{u}_{t},t=0,1,2,\ldots"/>.
+Semidefinite programming is the most exciting development of mathematical programming techniques in 1990s. One can leverage an initial point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{u}_0"/>, following by the governing equation <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{u}_{t+1}=\boldsymbol{A}\boldsymbol{u}_{t},t=0,1,2,\ldots"/>, to build a dynamical system as shown below.
 
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/dyna_system_Aut_toy.png" width="500" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/dyna_system_Aut_toy.png" width="600" />
 </p>
 
 <br>
