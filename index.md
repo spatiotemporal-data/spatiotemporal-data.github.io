@@ -10,6 +10,7 @@ This project aims at supporting research for all aspects of spatiotemporal data 
 - Optimization & decision making
 - Data standardization & valorization & monetization
 - Signal processing
+- Dynamical systems & control
 - Computational engineering & social science
 
 
