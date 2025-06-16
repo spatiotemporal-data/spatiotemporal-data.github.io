@@ -9,6 +9,13 @@ layout: default
 <br>
 
 
+### 49th Mile
+#### Amazon Deforestation
+
+[Deforestation in the Amazon: past, present and future](https://infoamazonia.org/en/2023/03/21/deforestation-in-the-amazon-past-present-and-future/)
+
+<br>
+
 
 ### 48th Mile
 #### Convergence Rates
