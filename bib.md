@@ -17,6 +17,8 @@ layout: default
 - In 2001, the forest cover of the Amazon occupied over 600 million hectares.
 - Between 2001 and 2020, the deforestation in the Amazon totalled about 54.2 million hectares, the equivalent of 9% of the forest cover.
 
+The Amazon could lose almost half of what it lost in the past two decades.
+
 <br>
 
 
