@@ -12,7 +12,10 @@ layout: default
 ### 49th Mile
 #### Amazon Deforestation
 
-[Deforestation in the Amazon: past, present and future](https://infoamazonia.org/en/2023/03/21/deforestation-in-the-amazon-past-present-and-future/)
+[Deforestation in the Amazon: past, present and future](https://infoamazonia.org/en/2023/03/21/deforestation-in-the-amazon-past-present-and-future/) visually analyzed the deforestation rates of recent years, identifying the main threats (e.g., cattle-raising activity, road network, and navigable rivers) in the present and pointing to measures needed to reverse this process. There are some basic data:
+
+- In 2001, the forest cover of the Amazon occupied over 600 million hectares.
+- Between 2001 and 2020, the deforestation in the Amazon totalled about 54.2 million hectares, the equivalent of 9% of the forest cover.
 
 <br>
 
