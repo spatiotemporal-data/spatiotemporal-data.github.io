@@ -9,6 +9,25 @@ layout: default
 <br>
 
 
+### 50th Mile
+#### Orthogonal Procrustes Problem
+
+Ever heard of the Orthogonal Procrustes Problem (OPP)? It might sound complex, but the optimal solution can be achieved in just two simple steps:
+
+1️⃣ Singular Value Decomposition (SVD)
+2️⃣ Matrix Multiplication
+
+That’s it! This elegant approach helps find the closest orthogonal matrix to a given one, minimizing the Frobenius norm. 📌 Key Takeaways:
+
+1. OPP is a powerful tool for matrix alignment and optimization.
+2. The solution is computationally efficient with SVD at its core.
+3. Python makes implementation a breeze—just a few lines of code!
+
+
+
+<br>
+
+
 ### 49th Mile
 #### Amazon Deforestation
 
