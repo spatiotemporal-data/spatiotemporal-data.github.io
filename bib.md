@@ -23,6 +23,11 @@ That’s it! This elegant approach helps find the closest orthogonal matrix to a
 2. The solution is computationally efficient with SVD at its core.
 3. Python makes implementation a breeze—just a few lines of code!
 
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/opp.png" width="650" />
+</p>
 
 
 <br>
