@@ -59,6 +59,14 @@ In the past decade, the development of artificial intelligence and machine learn
   </li>
 </ul>
 
+<br>
+
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/opp.png" width="650" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center"> Visual approach to understand the optimization of Orthogonal Procrustes Problem (OPP).</p>
+
 
 <br>
 
