@@ -8,6 +8,23 @@ layout: default
 
 <br>
 
+### 51st Mile
+#### Revisiting Interpretable Machine Learning (IML)
+
+**Local** IML methods explain individual predictions of ML models. Popular IML methods are Shapley values and counterfactual explanations. Counterfactual explanations explain predictions in the form of what-if scenarios, they are contrastive and focus on a few reasons. The Shapley values provide an answer on how to fairly share a payout among the players of a collaborative game.
+
+**Global** model-agnostic explanation methods are used to explain the expected model behavior, i.e., how the model behaves on average for a given dataset. A useful distinction of global explanations are feature importance and feature effect. **Feature importance** ranks features based on how relevant they were for the prediction. One of the most popular importance measures is permutation feature importance, originated from random forests. **Feature effect** expresses how a change in a feature changes the predicted outcome. 
+
+There are many challenges in IML methods: 1) uncertainty quantification of the explanation, 2) causal interpretation for reflecting the true causal structure of its underlying phenomena, and 3) feature dependence.
+
+<br>
+
+**References**
+
+- Christoph Molnar,  Giuseppe Casalicchio,  and Bernd Bischl (2020). Interpretable Machine Learning – A Brief History, State-of-the-Art and Challenges. arXiv preprint arXiv:2010.09337.
+
+<br>
+
 
 ### 50th Mile
 #### Orthogonal Procrustes Problem
