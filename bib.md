@@ -8,6 +8,22 @@ layout: default
 
 <br>
 
+### 52nd Mile
+#### Matrix Completion and Decomposition in Phase-Bounded Cones
+
+The nuclear norm minimization for matrix completion
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{X}}\,\|\boldsymbol{X}\|_{*}\quad\text{s.t.}\,\mathcal{P}_{\Omega}(\boldsymbol{X})=\mathcal{P}_{\Omega}(\boldsymbol{Y})"/></p>
+
+is equivalent to the semidefinite programming such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\succeq 0 \Leftrightarrow \boldsymbol{x}^\top\boldsymbol{A}\boldsymbol{x}\geq 0,\forall \boldsymbol{x}\neq\boldsymbol{0}"/></p>
+
+
+
+<br>
+
+
 ### 51st Mile
 #### Revisiting Interpretable Machine Learning (IML)
 
