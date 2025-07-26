@@ -17,7 +17,7 @@ The nuclear norm minimization for matrix completion
 
 is equivalent to the semidefinite programming such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{X},\boldsymbol{W}_1,\boldsymbol{W}_2}\,\frac{1}{2}\text{tr}(\boldsymbol{W}_1+\boldsymbol{W}_2)\quad \begin{bmatrix} \boldsymbol{W}_1 & \boldsymbol{X} \\ \boldsymbol{X}^\top & \boldsymbol{W}_2 \end{bmatrix}\succeq 0,\quad \mathcal{P}_{\Omega}(\boldsymbol{X})=\mathcal{P}_{\Omega}(\boldsymbol{Y})"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{X},\boldsymbol{W}_1,\boldsymbol{W}_2}\,\frac{1}{2}\text{tr}(\boldsymbol{W}_1+\boldsymbol{W}_2)\quad \text{s.t.}\,\begin{bmatrix} \boldsymbol{W}_1 & \boldsymbol{X} \\ \boldsymbol{X}^\top & \boldsymbol{W}_2 \end{bmatrix}\succeq 0,\quad \mathcal{P}_{\Omega}(\boldsymbol{X})=\mathcal{P}_{\Omega}(\boldsymbol{Y})"/></p>
 
 where the feasible set is the positive semidefinite cone. There is a phase-bounded cone for matrix completion with chordal graph pattern, i.e., phase-bounded completions of a completable partial matrix with a block bounded pattern.
 
