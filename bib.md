@@ -17,9 +17,15 @@ The nuclear norm minimization for matrix completion
 
 is equivalent to the semidefinite programming such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\succeq 0 \Leftrightarrow \boldsymbol{x}^\top\boldsymbol{A}\boldsymbol{x}\geq 0,\forall \boldsymbol{x}\neq\boldsymbol{0}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{X},\boldsymbol{W}_1,\boldsymbol{W}_2}\,\frac{1}{2}\text{tr}(\boldsymbol{W}_1+\boldsymbol{W}_2)\quad \begin{bmatrix} \boldsymbol{W}_1 & \boldsymbol{X} \\ \boldsymbol{X}^\top & \boldsymbol{W}_2 \end{bmatrix}\succeq 0,\quad \mathcal{P}_{\Omega}(\boldsymbol{X})=\mathcal{P}_{\Omega}(\boldsymbol{Y})"/></p>
 
+where the 
 
+<br>
+
+**References**
+
+- 
 
 <br>
 
