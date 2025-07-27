@@ -8,6 +8,18 @@ layout: default
 
 <br>
 
+### 53rd Mile
+#### Two Decades of Low-Rank Optimization
+
+Semidefinite programming (SDP) is powerful for solving low-rank optimization. Despite the most classical algorithms of SDP, one can use first-order methods to solve bigger SDPs more efficiently, including dual-scaling method, spectral bundle method, nonlinear programming approaches, dual Cholesky approach, chordal-graph approaches, and iterative solver for the Newton system.
+
+Low-rank matrix optimization can be formulated as
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned}\min_{\boldsymbol{X}}\,&\langle\boldsymbol{C},\boldsymbol{X}\rangle \\ \text{s.t.}\,&\langle\boldsymbol{A}_{i},\boldsymbol{X}\rangle=b_i,\,\forall i=1,2,\ldots,m \\ &\boldsymbol{X}\succeq 0 \end{aligned}"/></p>
+
+
+<br>
+
 ### 52nd Mile
 #### Matrix Completion and Decomposition in Phase-Bounded Cones
 
