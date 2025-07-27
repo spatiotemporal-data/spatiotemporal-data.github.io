@@ -15,6 +15,12 @@ layout: default
 
 <br>
 
+**References**
+
+- Oliver Wyman. [The Challenge of Insuring Vehicles with Autonomous Functions](https://www.oliverwyman.com/our-expertise/insights/2017/dec/risk-journal-vol-7/redefining-business-models/the-challenge-of-insuring-vehicles-with-autonomous-functions.html). [[PDF](https://www.oliverwyman.com/content/dam/oliver-wyman/v2/publications/2017/dec/The_Challenge_of_Insuring_Vehicles_with_Autonomous_Functions.pdf)]
+
+<br>
+
 
 ### 53rd Mile
 #### Two Decades of Low-Rank Optimization
