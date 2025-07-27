@@ -17,7 +17,17 @@ Low-rank matrix optimization can be formulated as
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned}\min_{\boldsymbol{X}}\,&\langle\boldsymbol{C},\boldsymbol{X}\rangle \\ \text{s.t.}\,&\langle\boldsymbol{A}_{i},\boldsymbol{X}\rangle=b_i,\,\forall i=1,2,\ldots,m \\ &\boldsymbol{X}\succeq 0 \end{aligned}"/></p>
 
-There exists an optimal solution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}^{*}"/> with rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;r^{*}"/> satisfying <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;r^{*}<\sqrt{2m}"/>.
+There exists an optimal solution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}^{*}"/> with rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;r^{*}"/> satisfying <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;r^{*}<\sqrt{2m}"/>. For almost all cost matrices <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{C}"/>, the first- and second-order necessary optimality conditions are sufficiently for global optimality.
+
+One idea to verify the global optimality is summarized as follows. Suppose the original SDP feasible set is compact with interior. Consider the rank-constrained SDP, enforcing <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\text{rank}(\boldsymbol{X})\leq r"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;r\geq \lceil \sqrt{2(m+1)}\rceil"/>. Let <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\bar{\boldsymbol{X}}"/> be a local minimum of the rank-constrained SDP. If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\text{rank}(\boldsymbol{X})< r"/>, then <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\bar{\boldsymbol{X}}"/> is optimal for the original SDP.
+
+Benign nonconvexity refers to a property of certain nonconvex optimization problems where, despite the lack of global convexity, the problem exhibits characteristics that make it tractable—meaning efficient optimization methods can still find good (often global) solutions.
+
+<br>
+
+**References**
+
+- Sam Burer (2023). Two decades of low-rank optimization. [[YouTube](https://www.youtube.com/watch?v=wSauUgRIQDg)]
 
 <br>
 
