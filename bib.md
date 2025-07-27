@@ -17,6 +17,7 @@ Low-rank matrix optimization can be formulated as
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned}\min_{\boldsymbol{X}}\,&\langle\boldsymbol{C},\boldsymbol{X}\rangle \\ \text{s.t.}\,&\langle\boldsymbol{A}_{i},\boldsymbol{X}\rangle=b_i,\,\forall i=1,2,\ldots,m \\ &\boldsymbol{X}\succeq 0 \end{aligned}"/></p>
 
+There exists an optimal solution <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}^{*}"/> with rank <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;r^{*}"/> satisfying <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;r^{*}<\sqrt{2m}"/>.
 
 <br>
 
