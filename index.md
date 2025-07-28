@@ -27,7 +27,7 @@ In the past decade, the development of artificial intelligence and machine learn
   margin-right: -50vw;
   width: 100vw;
   background: #F5B427;
-  color: black;
+  color: #40464c;
   padding: 10px;
 ">
 
@@ -40,16 +40,16 @@ In the past decade, the development of artificial intelligence and machine learn
 🌱 <a href="https://spatiotemporal-data.github.io/posts/ts_conv/"><b>Time Series Convolution</b></a>. A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series. The content is mainly from our research work below.
 
 <ul style="padding-left: 20px;">
-  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
-    Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). <a href="https://doi.org/10.1109/TKDE.2024.3419698">Laplacian convolutional representation for traffic time series imputation</a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (11): 6490-6502.
+  <li style="font-size: 14px; color: #40464c; margin-bottom: 15px;">
+    Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). <a href="https://doi.org/10.1109/TKDE.2024.3419698"><b>Laplacian convolutional representation for traffic time series imputation</b></a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (11): 6490-6502.
   </li>
 
-  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
-    Xinyu Chen, Xi-Le Zhao, Chun Cheng (2024). <a href="https://doi.org/10.1287/ijoc.2022.0197">Forecasting urban traffic states with sparse data using Hankel temporal matrix factorization</a>. <em>INFORMS Journal on Computing</em>. Early access.
+  <li style="font-size: 14px; color: #40464c; margin-bottom: 15px;">
+    Xinyu Chen, Xi-Le Zhao, Chun Cheng (2024). <a href="https://doi.org/10.1287/ijoc.2022.0197"><b>Forecasting urban traffic states with sparse data using Hankel temporal matrix factorization</b></a>. <em>INFORMS Journal on Computing</em>. Early access.
   </li>
 
-  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
-    Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TKDE.2025.3550877">Correlating time series with interpretable convolutional kernels</a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 37 (6): 3272-3283.
+  <li style="font-size: 14px; color: #40464c; margin-bottom: 15px;">
+    Xinyu Chen, HanQin Cai, Fuqiang Liu, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TKDE.2025.3550877"><b>Correlating time series with interpretable convolutional kernels</b></a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 37 (6): 3272-3283.
   </li>
 </ul>
 
