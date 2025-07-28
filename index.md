@@ -34,7 +34,7 @@ In the past decade, the development of artificial intelligence and machine learn
 <div style="
   max-width: 740px; /* Optional: Limits how wide it can get */
   margin: 0 auto; /* Centers the text */
-  padding: 10px 10px; /* Small side padding for better readability */
+  padding: 1px 10px; /* Small side padding for better readability */
 ">
 
 🌱 <a href="https://spatiotemporal-data.github.io/posts/ts_conv/"><b>Time Series Convolution</b></a>. A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series. The content is mainly from our research work below.
