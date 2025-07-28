@@ -80,7 +80,7 @@ A convolutional kernel approach for reinforcing the modeling of time series tren
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  background: #F5B427;
+  background: #F58027;
   color: white;
   padding: 10px;
 ">
