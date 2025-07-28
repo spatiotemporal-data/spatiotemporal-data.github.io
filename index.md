@@ -34,7 +34,7 @@ In the past decade, the development of artificial intelligence and machine learn
 
 <div style="
     width: 50%; /* Half of parent width */
-    max-width: 600px; /* Optional: Limits how wide it can get */
+    max-width: 700px; /* Optional: Limits how wide it can get */
     margin: 0 auto; /* Centers the text */
     padding: 0 10px; /* Small side padding for better readability */
   ">
