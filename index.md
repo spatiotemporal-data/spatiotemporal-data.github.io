@@ -31,13 +31,13 @@ In the past decade, the development of artificial intelligence and machine learn
   padding: 10px;
 ">
 
-🌱 <a href="https://spatiotemporal-data.github.io/posts/ts_conv/">Time Series Convolution</a>. A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series. The content is mainly from our research work below.
-
 <div style="
-    max-width: 750px; /* Optional: Limits how wide it can get */
-    margin: 0 auto; /* Centers the text */
-    padding: 10px 10px; /* Small side padding for better readability */
-  ">
+  max-width: 750px; /* Optional: Limits how wide it can get */
+  margin: 0 auto; /* Centers the text */
+  padding: 10px 10px; /* Small side padding for better readability */
+">
+
+🌱 <a href="https://spatiotemporal-data.github.io/posts/ts_conv/"><b>Time Series Convolution</b></a>. A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series. The content is mainly from our research work below.
 
 <ul style="padding-left: 20px;">
   <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
