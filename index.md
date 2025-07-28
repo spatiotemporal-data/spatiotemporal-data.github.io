@@ -93,11 +93,11 @@ In the past decade, the development of artificial intelligence and machine learn
 
 <ul style="padding-left: 20px;">
   <li style="font-size: 15px; color: #626a73; margin-bottom: 15px;">
-    Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). <a href="https://doi.org/10.1109/TKDE.2023.3294440">Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression</a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (2): 504-517.
+    Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). <a href="https://doi.org/10.1109/TKDE.2023.3294440"><b>Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression</b></a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (2): 504-517.
   </li>
 
   <li style="font-size: 15px; color: #626a73; margin-bottom: 15px;">
-    Xinyu Chen, Dingyi Zhuang, HanQin Cai, Shenhao Wang, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TPAMI.2025.3576719">Dynamic autoregressive tensor factorization for pattern discovery of spatiotemporal systems</a>. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>. Early access.
+    Xinyu Chen, Dingyi Zhuang, HanQin Cai, Shenhao Wang, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TPAMI.2025.3576719"><b>Dynamic autoregressive tensor factorization for pattern discovery of spatiotemporal systems</b></a>. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>. Early access.
   </li>
 </ul>
 
