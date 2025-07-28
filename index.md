@@ -32,7 +32,16 @@ In the past decade, the development of artificial intelligence and machine learn
   padding: 10px;
 ">
 
+<div style="
+    width: 50%; /* Half of parent width */
+    max-width: 600px; /* Optional: Limits how wide it can get */
+    margin: 0 auto; /* Centers the text */
+    padding: 0 10px; /* Small side padding for better readability */
+  ">
+
 Xinyu Chen, Zhanhong Cheng, HanQin Cai, Nicolas Saunier, Lijun Sun (2024). <a href="https://doi.org/10.1109/TKDE.2024.3419698">Laplacian convolutional representation for traffic time series imputation</a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (11): 6490-6502.
+
+</div>
 
 </div>
 
