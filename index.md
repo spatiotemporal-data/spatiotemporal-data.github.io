@@ -27,7 +27,7 @@ In the past decade, the development of artificial intelligence and machine learn
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  background: #9933ff;
+  background: #dde1e6;
   color: white;
   padding: 10px;
 ">
