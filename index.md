@@ -71,7 +71,25 @@ In the past decade, the development of artificial intelligence and machine learn
 <br>
 
 
-🌱 [Time-Varying Autoregression](https://spatiotemporal-data.github.io/posts/time_varying_model/). Time-varying autoregression for discovering spatial and temporal patterns of dynamical systems. The system equation includes both time-varying autoregression on the data space and tensor decomposition on the latent space. The content is mainly from our research work below.
+<div style="
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  background: #dde1e6;
+  color: #626a73;
+  padding: 10px;
+">
+
+<div style="
+  max-width: 740px; /* Optional: Limits how wide it can get */
+  margin: 0 auto; /* Centers the text */
+  padding: 1px 10px; /* Small side padding for better readability */
+">
+
+🌱 <a href="https://spatiotemporal-data.github.io/posts/time_varying_model/"><b>Time-Varying Autoregression</b></a>. Time-varying autoregression for discovering spatial and temporal patterns of dynamical systems. The system equation includes both time-varying autoregression on the data space and tensor decomposition on the latent space. The content is mainly from our research work below.
 
 <ul style="padding-left: 20px;">
   <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
@@ -82,6 +100,10 @@ In the past decade, the development of artificial intelligence and machine learn
     Xinyu Chen, Dingyi Zhuang, HanQin Cai, Shenhao Wang, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TPAMI.2025.3576719">Dynamic autoregressive tensor factorization for pattern discovery of spatiotemporal systems</a>. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>. Early access.
   </li>
 </ul>
+
+</div>
+
+</div>
 
 <br>
 
