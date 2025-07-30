@@ -37,7 +37,6 @@ One idea to verify the global optimality is summarized as follows. Suppose the o
 
 Benign nonconvexity refers to a property of certain nonconvex optimization problems where, despite the lack of global convexity, the problem exhibits characteristics that make it tractable—meaning efficient optimization methods can still find good (often global) solutions.
 
-<br>
 
 **References**
 
@@ -58,7 +57,6 @@ is equivalent to the semidefinite programming such that
 
 where the feasible set is the positive semidefinite cone. There is a phase-bounded cone for matrix completion with chordal graph pattern, i.e., phase-bounded completions of a completable partial matrix with a block bounded pattern.
 
-<br>
 
 **References**
 
@@ -76,7 +74,6 @@ where the feasible set is the positive semidefinite cone. There is a phase-bound
 
 There are many challenges in IML methods: 1) uncertainty quantification of the explanation, 2) causal interpretation for reflecting the true causal structure of its underlying phenomena, and 3) feature dependence.
 
-<br>
 
 **References**
 
