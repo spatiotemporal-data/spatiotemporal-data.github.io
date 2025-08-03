@@ -12,6 +12,7 @@ layout: default
 ### 55th Mile
 #### Random Projections for Ordinary Least Squares
 
+For any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Phi}\in\mathbb{R}^{n\times d}"/> (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> observations and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/> features), the linear regression such that
 
 
 **References**
