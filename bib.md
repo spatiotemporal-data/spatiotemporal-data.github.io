@@ -22,11 +22,17 @@ can be replaced by
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\in\mathbb{R}^{s\times n}"/> is an i.i.d. Gaussian matrix. We typically have <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n>s>d"/> (more observations than the feature dimension), and one of the benefits of sketching is to be able to store a reduced representation of the data (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathbb{R}^{s\times d}"/> instead of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathbb{R}^{n\times d}"/>).
 
-A general sketching matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\in\mathbb{R}^{d\times s}"/> of random projection can be introduced to
+A matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\boldsymbol{\Phi}"/> is a subspace embedding for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{n\times d}"/> if
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;(1-\epsilon)\|\boldsymbol{\Phi}\boldsymbol{\theta}\|_2^2\leq \|\boldsymbol{S}\boldsymbol{\Phi}\boldsymbol{\theta}\|_2^2\leq (1+\epsilon)\|\boldsymbol{\Phi}\boldsymbol{\theta}\|_2^2"/></p>
+
+for all <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\theta}\in\mathbb{R}^{d}"/>.
+
+A sketching matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\in\mathbb{R}^{d\times s}"/> of random projection can also be introduced to
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{\eta}\in\mathbb{R}^{s}}\,\|\boldsymbol{y}-\boldsymbol{\Phi}\boldsymbol{S}\boldsymbol{\eta}\|_2^2"/></p>
 
-for the case of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d>n>s"/>. This corresponds to replacing the feature vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\phi(\boldsymbol{x})\in\mathbb{R}^{d}"/> by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}^\top\phi(\boldsymbol{x})\in\mathbb{R}^s"/>.
+for the case of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d>n>s"/> (i.e., underdetermined). This corresponds to replacing the feature vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\phi(\boldsymbol{x})\in\mathbb{R}^{d}"/> by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}^\top\phi(\boldsymbol{x})\in\mathbb{R}^s"/>.
 
 **References**
 
