@@ -391,8 +391,6 @@ In the algorithm, the soft-thresholding operator is defined as
 
 for all <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;i\in\{1,2,\ldots,n\}"/>.
 
-<br>
-
 **References**
 
 - (**Deng et al., 2021**) Correlation tensor decomposition
