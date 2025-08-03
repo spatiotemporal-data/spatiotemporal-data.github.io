@@ -39,6 +39,7 @@ for the case of <img style="display: inline;" src="https://latex.codecogs.com/sv
 - Francis Bach (2025). Learning Theory from First Principles. **Chapter 10.2**. MIT Press. [[PDF](https://www.di.ens.fr/~fbach/ltfp_book.pdf)]
 - Yuji Nakatsukasa, Joel A Tropp (2024). Fast and accurate randomized algorithms for linear systems and eigenvalue problems. SIAM Journal on Matrix Analysis and Applications. 45 (2): 1183-1214.
 - Christopher Musco. [Tutorial on Matrix Sketching](https://www.birs.ca/workshops/2023/23w5108/files/Christopher%20Musco/sketching_tutorial.pdf).
+- Moses Charikar. [Lecture 19: Sparse Subspace Embeddings](https://cs368-stanford.github.io/spring2022/lectures/lec19.pdf). CS369G: Algorithmic Techniques for Big Data.
 
 <br>
 
