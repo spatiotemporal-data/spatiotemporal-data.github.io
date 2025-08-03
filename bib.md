@@ -14,6 +14,13 @@ layout: default
 
 For any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Phi}\in\mathbb{R}^{n\times d}"/> (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> observations and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/> features), the linear regression such that
 
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{\theta}\in\mathbb{R}^{d}}\,\|\boldsymbol{y}-\boldsymbol{\Phi}\boldsymbol{\theta}\|_2^2"/></p>
+
+can be replaced by
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\min_{\boldsymbol{\theta}\in\mathbb{R}^{d}}\,\|\boldsymbol{S}\boldsymbol{y}-\boldsymbol{S}\boldsymbol{\Phi}\boldsymbol{\theta}\|_2^2"/></p>
+
+where 
 
 **References**
 
