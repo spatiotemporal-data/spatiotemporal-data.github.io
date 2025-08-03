@@ -22,7 +22,7 @@ can be replaced by
 
 where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\in\mathbb{R}^{s\times n}"/> is an i.i.d. Gaussian matrix. We typically have <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n>s>d"/> (more observations than the feature dimension), and one of the benefits of sketching is to be able to store a reduced representation of the data (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathbb{R}^{s\times d}"/> instead of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathbb{R}^{n\times d}"/>).
 
-A matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\boldsymbol{\Phi}\in\mathbb{R}^{s\times d}"/> is a subspace embedding for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{n\times d}"/> if
+The matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{S}\boldsymbol{\Phi}\in\mathbb{R}^{s\times d}"/> is a subspace embedding for <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{n\times d}"/> if
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;(1-\epsilon)\|\boldsymbol{\Phi}\boldsymbol{\theta}\|_2^2\leq \|\boldsymbol{S}\boldsymbol{\Phi}\boldsymbol{\theta}\|_2^2\leq (1+\epsilon)\|\boldsymbol{\Phi}\boldsymbol{\theta}\|_2^2"/></p>
 
