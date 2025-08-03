@@ -37,7 +37,7 @@ In the past decade, the development of artificial intelligence and machine learn
   padding: 1px 10px; /* Small side padding for better readability */
 ">
 
-<p style="font-size: 18px;"><a href="https://spatiotemporal-data.github.io/posts/ts_conv/"><b>Time Series Convolution</b></a> 🌱🌱 </p>
+<p style="font-size: 17px;"><a href="https://spatiotemporal-data.github.io/posts/ts_conv/"><b>Time Series Convolution</b></a> 🌱🌱 </p>
 
 A convolutional kernel approach for reinforcing the modeling of time series trends and interpreting temporal patterns, allowing one to leverage Fourier transforms and learn sparse representations. The interpretable machine learning models such as sparse regression unlock opportunities to better capture the long-term changes and temporal patterns of real-world time series. The content is mainly from our research work below.
 
@@ -91,7 +91,7 @@ A convolutional kernel approach for reinforcing the modeling of time series tren
   padding: 1px 10px; /* Small side padding for better readability */
 ">
 
-<p style="font-size: 18px;"><a href="https://spatiotemporal-data.github.io/posts/time_varying_model/"><b>Time-Varying Autoregression</b></a> 🌱🌱 </p>
+<p style="font-size: 17px;"><a href="https://spatiotemporal-data.github.io/posts/time_varying_model/"><b>Time-Varying Autoregression</b></a> 🌱🌱 </p>
 
 Time-varying autoregression for discovering spatial and temporal patterns of dynamical systems. The system equation includes both time-varying autoregression on the data space and tensor decomposition on the latent space. The content is mainly from our research work below.
 
