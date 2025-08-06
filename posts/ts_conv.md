@@ -1198,7 +1198,7 @@ def circ_mat(vec):
         mat[:, i] = np.append(vec[-i :], vec[: n - i], axis = 0)
     return mat
 
-def SP(x, tau, stop = np.infty, nonnegative = True, type = 3, epsilon = 1e-2):
+def SP(x, tau, stop = np.infty, epsilon = 1e-2):
     t = x.shape[0]
     mat = circ_mat(x)
     A = mat[:, 1 :]
