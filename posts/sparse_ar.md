@@ -55,8 +55,13 @@ which is equivalent to
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2=\boldsymbol{A}^{\dagger}\tilde{\boldsymbol{x}}"/></p>
 
 
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/> denotes the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{\dagger}"/> is the the Moore–Penrose inverse of a matrix.
+
+Considering one quick example: 
 
 
+
+<br>
 
 ### I-B. Motivation of Sparse Autoregression
 
