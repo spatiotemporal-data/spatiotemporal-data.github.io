@@ -4,7 +4,7 @@ layout: default
 
 # Interpretable Time Series Autoregression
 
-<p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression.</span></p>
+<p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression. The optimization is used to formulate the identification of dominant and positive auto-correlations.</span></p>
 
 <p align="center"><span style="color:gray">(Updated on April 26, 2025)</span></p>
 
@@ -13,8 +13,8 @@ layout: default
 
 In this post, we intend to explain the essential ideas of our research work:
 
-- Interpretable time series autoregression.
 - Essential idea of sparse autoregression.
+- Interpretable time series autoregression.
 
 **Content:**
 
@@ -24,9 +24,17 @@ In **Part I** of this series, we introduce the essential idea of time series aut
 
 ## I. Univariate Autoregression
 
-Time series autoregression is a statistical model used to analyze and forecast time series data. The class of autoregression models is widely used in the fields of economics, finance, weather forecasting, and signal processing.
+Time series autoregression is a statistical model used to analyze and forecast time series data. The class of autoregression models is widely used in the fields of economics, finance, weather forecasting, and signal processing. Exploring auto-correlations from univariate autoregression is meaningful for understanding time series.
 
 ### I-A. Time Series & Auto-Correlations
+
+
+
+
+
+<br>
+<br>
+<br>
 
 The first challenge is extracting the temporal correlations from autoregression coefficients if the coefficient vector is densely valued and has both positive and negative entries.
 
