@@ -6,15 +6,24 @@ layout: default
 
 <p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression. The optimization is used to formulate the identification of dominant and positive auto-correlations.</span></p>
 
-<p align="center"><span style="color:gray">(Updated on April 26, 2025)</span></p>
+<p align="center"><span style="color:gray">(Updated on August 9, 2025)</span></p>
 
 <br>
 
 
 In this post, we intend to explain the essential ideas of our research work:
 
-- Essential idea of sparse autoregression.
-- Interpretable time series autoregression.
+<ul style="padding-left: 20px;">
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Vassilis Digalakis Jr, Lijun Ding, Dingyi Zhuang, Jinhua Zhao (2025). <a href="https://arxiv.org/abs/2506.22895">Interpretable time series autoregression for periodicity quantification</a>. arXiv preprint arXiv:2506.22895.
+  </li>
+
+  <li style="font-size: 14px; color: gray; margin-bottom: 15px;">
+    Xinyu Chen, Qi Wang, Yunhan Zheng, Nina Cao, HanQin Cai, Jinhua Zhao (2025). <a href="http://arxiv.org/abs/2508.03747">Data-driven discovery of mobility periodicity for understanding urban transportation systems</a>. arXiv preprint arXiv:2508.03747.
+  </li>
+
+</ul>
+
 
 **Content:**
 
