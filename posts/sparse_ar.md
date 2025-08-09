@@ -55,7 +55,15 @@ which is equivalent to
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2=\boldsymbol{A}^{\dagger}\tilde{\boldsymbol{x}}"/></p>
 
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/> denotes the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{\dagger}"/> is the the Moore–Penrose inverse of a matrix.
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/> denotes the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{\dagger}"/> is the the Moore–Penrose inverse of a matrix. While using <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm, the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}"/> consists of the last <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-d"/> entries in the time series vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, i.e.,
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}=(x_{d+1},x_{d+2},\ldots,x_{T})^\top\in\mathbb{R}^{T-d}"/></p>
+
+The matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> is also comprised of the entries in the time series vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, which is given by
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} x_{d} & x_{d-1} & \cdots & x_1 \\ x_{d+1} & x_{d} & \cdots & x_{2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{T-1} & x_{T-2} & \cdots & x_{T-d} \end{bmatrix}\in\mathbb{R}^{(T-d)\times d}"/></p>
+
+In essence, given the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{A},\tilde{\boldsymbol{x}}\}"/>, the univariate autoregression can be easily converted into a linear regression formula. Thus, the closed-form solution is least squares.
 
 Considering one quick example: 
 
