@@ -4,7 +4,7 @@ layout: default
 
 # Interpretable Time Series Autoregression
 
-<p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression. The optimization is used to formulate the identification of dominant and positive auto-correlations.</span></p>
+<p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression. The optimization on sparse autoregression is used to identify dominant and positive auto-correlations of time series (e.g., human mobility and climate variables).</span></p>
 
 <p align="center"><span style="color:gray">(Updated on August 9, 2025)</span></p>
 
