@@ -35,24 +35,8 @@ In **Part I** of this series, we introduce the essential idea of time series aut
 
 Time series autoregression is a statistical model used to analyze and forecast time series data. The class of autoregression models is widely used in the fields of economics, finance, weather forecasting, and signal processing. Exploring auto-correlations from univariate autoregression is meaningful for understanding time series.
 
-### I-A. Time Series & Auto-Correlations
 
-
-
-
-
-<br>
-<br>
-<br>
-
-The first challenge is extracting the temporal correlations from autoregression coefficients if the coefficient vector is densely valued and has both positive and negative entries.
-
-Does this situation appear if you use naive least square? (due to random noise in the observation?)
-
-
-
-
-### I-B. Definition of Autoregression
+### I-A. Definition of Autoregression
 
 The essential idea of time series autoregression is that a given data point of a time series is linearly dependent on the previous data points. Mathematically, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>th-order univariate autoregression of time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}"/> can be written as follows,
 
@@ -69,6 +53,13 @@ There is a closed-form solution to the coefficient vector <img style="display: i
 which is equivalent to
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2=\boldsymbol{A}^{\dagger}\tilde{\boldsymbol{x}}"/></p>
+
+
+
+
+
+### I-B. Motivation of Sparse Autoregression
+
 
 However, the challenges arise if there is a sparsity constraint in the form of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm, for instance,
 
