@@ -63,7 +63,7 @@ The matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.lat
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} x_{d} & x_{d-1} & \cdots & x_1 \\ x_{d+1} & x_{d} & \cdots & x_{2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{T-1} & x_{T-2} & \cdots & x_{T-d} \end{bmatrix}\in\mathbb{R}^{(T-d)\times d}"/></p>
 
-In essence, given the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{A},\tilde{\boldsymbol{x}}\}"/>, the univariate autoregression can be easily converted into a linear regression formula. Thus, the closed-form solution is least squares.
+In essence, given the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{A},\tilde{\boldsymbol{x}}\}"/> constructed by the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, the univariate autoregression can be easily converted into a linear regression formula. Thus, the closed-form solution is least squares.
 
 Considering one quick example: 
 
