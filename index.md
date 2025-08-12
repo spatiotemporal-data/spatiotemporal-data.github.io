@@ -70,6 +70,53 @@ A convolutional kernel approach for reinforcing the modeling of time series tren
 
 <p style="font-size: 14px; color: gray" align = "center"> 🔨 Anotating the weekly periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
 
+
+<br>
+
+
+<div style="
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  background: #FCEDBB;
+  color: #626a73;
+  padding: 10px;
+">
+
+<div style="
+  max-width: 740px; /* Optional: Limits how wide it can get */
+  margin: 0 auto; /* Centers the text */
+  padding: 1px 10px; /* Small side padding for better readability */
+">
+
+<p style="font-size: 17px;"><a href="https://spatiotemporal-data.github.io/posts/sparse_ar/"><b>Sparse Autoregression</b></a> 🌱🌱 </p>
+
+Interpretable time series autoregression for periodicity quantification (ints ⮕ integers).
+
+<div align="center">
+<img src="https://github.com/xinychen/integers/blob/main/graphics/integers.png" alt="logo" width="300px"/>
+</div>
+
+The content is mainly from our research work below.
+
+<ul style="padding-left: 20px;">
+  <li style="font-size: 14.5px; color: #626a73; margin-bottom: 15px;">
+    Xinyu Chen, Chengyuan Zhang, Xiaoxu Chen, Nicolas Saunier, Lijun Sun (2024). <a href="https://doi.org/10.1109/TKDE.2023.3294440"><b>Discovering dynamic patterns from spatiotemporal data with time-varying low-rank autoregression</b></a>. <em>IEEE Transactions on Knowledge and Data Engineering</em>. 36 (2): 504-517.
+  </li>
+
+  <li style="font-size: 14.5px; color: #626a73; margin-bottom: 15px;">
+    Xinyu Chen, Dingyi Zhuang, HanQin Cai, Shenhao Wang, Jinhua Zhao (2025). <a href="https://doi.org/10.1109/TPAMI.2025.3576719"><b>Dynamic autoregressive tensor factorization for pattern discovery of spatiotemporal systems</b></a>. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>. Early access.
+  </li>
+</ul>
+
+</div>
+
+</div>
+
+
 <br>
 
 
