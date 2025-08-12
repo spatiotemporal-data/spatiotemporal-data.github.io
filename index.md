@@ -104,11 +104,11 @@ The content is mainly from our research work below.
 
 <ul style="padding-left: 20px;">
   <li style="font-size: 14.5px; color: #626a73; margin-bottom: 15px;">
-    Xinyu Chen, Qi Wang, Yunhan Zheng, Nina Cao, HanQin Cai, Jinhua Zhao(2025). <a href="https://xinychen.github.io/papers/mobility_periodicity.pdf"><b>Data-driven discovery of mobility periodicity for understanding urban transportation systems</b></a>. arXiv preprint arXiv:2508.03747.
+    Xinyu Chen, Vassilis Digalakis Jr, Lijun Ding, Dingyi Zhuang, Jinhua Zhao (2025). <a href="https://xinychen.github.io/papers/sparse_ar.pdf"><b>Interpretable time series autoregression for periodicity quantification</b></a>. arXiv preprint arXiv:2506.22895.
   </li>
 
   <li style="font-size: 14.5px; color: #626a73; margin-bottom: 15px;">
-    Xinyu Chen, Vassilis Digalakis Jr, Lijun Ding, Dingyi Zhuang, Jinhua Zhao (2025). <a href="https://xinychen.github.io/papers/sparse_ar.pdf"><b>Interpretable time series autoregression for periodicity quantification</b></a>. arXiv preprint arXiv:2506.22895.
+    Xinyu Chen, Qi Wang, Yunhan Zheng, Nina Cao, HanQin Cai, Jinhua Zhao(2025). <a href="https://xinychen.github.io/papers/mobility_periodicity.pdf"><b>Data-driven discovery of mobility periodicity for understanding urban transportation systems</b></a>. arXiv preprint arXiv:2508.03747.
   </li>
 </ul>
 
