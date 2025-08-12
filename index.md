@@ -94,7 +94,7 @@ A convolutional kernel approach for reinforcing the modeling of time series tren
 
 <p style="font-size: 17px;"><a href="https://spatiotemporal-data.github.io/posts/sparse_ar/"><b>Sparse Autoregression</b></a> 🌱🌱 </p>
 
-Interpretable time series autoregression for periodicity quantification (ints ⮕ integers).
+Interpretable time series autoregression for periodicity quantification (ints ⮕ <b>integers</b>).
 
 <div align="center">
 <img src="https://spatiotemporal-data.github.io/images/integers.png" alt="logo" width="300px"/>
