@@ -97,7 +97,7 @@ A convolutional kernel approach for reinforcing the modeling of time series tren
 Interpretable time series autoregression for periodicity quantification (ints ⮕ integers).
 
 <div align="center">
-<img src="https://github.com/xinychen/integers/blob/main/graphics/integers.png" alt="logo" width="300px"/>
+<img src="https://spatiotemporal-data.github.io/images/integers.png" alt="logo" width="300px"/>
 </div>
 
 The content is mainly from our research work below.
