@@ -152,7 +152,7 @@ Time-varying autoregression for discovering spatial and temporal patterns of dyn
 
 <br>
 
-### Data Science Tutorial Series
+### Scientific Data Tutorial Series
 
 To advance the development of spatiotemporal data computing in the research community, this project handles various spatiotemporal data:
 
