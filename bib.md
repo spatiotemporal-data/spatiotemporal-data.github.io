@@ -9,7 +9,7 @@ layout: default
 <br>
 
 
-### 58th Mile
+### 59th Mile
 #### Optimal Sketching Bounds for Sparse Linear Regression
 
 
@@ -17,6 +17,16 @@ layout: default
 **References**
 
 - Tung Mai, Alexander Munteanu, Cameron Musco, Anup B. Rao, Chris Schwiegelshohn, David P. Woodruff (2023). [Optimal Sketching Bounds for Sparse Linear Regression](https://arxiv.org/abs/2304.02261). arXiv:2304.02261.
+
+<br>
+
+### 58th Mile
+#### Sum of Squares (SOS) Technique
+
+SOS is a classical method for solving polynomial optimization. The feasible set with a multivariate polynomial function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{i=0}^{n}a_ix^{i}\geq 0,\forall x"/> if <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{i=0}^{n}q_i^{2}(x), q_i(x)\in\mathbb{R}[x]"/>
+
+can be converted into an SOS form by using semidefinite programming.
+
 
 <br>
 
