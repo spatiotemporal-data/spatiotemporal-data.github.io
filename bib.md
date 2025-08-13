@@ -23,7 +23,15 @@ layout: default
 ### 58th Mile
 #### Sum of Squares (SOS) Technique
 
-SOS is a classical method for solving polynomial optimization. The feasible set with a multivariate polynomial function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{i=0}^{n}a_ix^{i}\geq 0,\forall x"/> if <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{i=0}^{n}q_i^{2}(x), q_i(x)\in\mathbb{R}[x]"/>
+SOS is a classical method for solving polynomial optimization. The feasible set with a multivariate polynomial function
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{i=0}^{n}a_ix^{i}\geq 0,\forall x"/></p>
+
+if 
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{i=0}^{n}q_i^{2}(x), q_i(x)\in\mathbb{R}[x]"/></p>
+
+
 
 can be converted into an SOS form by using semidefinite programming.
 
