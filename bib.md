@@ -37,7 +37,7 @@ SOS can optimize directly over the sum-of-squares cone and its dual, circumventi
 
 **References**
 
-- Pablo A. Parrilo. [Sum of squares techniques and polynomial optimization](https://www.princeton.edu/~aaa/Public/Presentations/CDC_2016_Parrilo_1). [[MIT Course | 6.7230 Algebraic Techniques and Semidefinite Optimization](https://www.mit.edu/~parrilo/)]
+- Pablo A. Parrilo. [Sum of squares techniques and polynomial optimization](https://www.princeton.edu/~aaa/Public/Presentations/CDC_2016_Parrilo_1). [[MIT Course -- 6.7230 Algebraic Techniques and Semidefinite Optimization](https://www.mit.edu/~parrilo/)]
 - Dávid Papp, Sercan Yildiz (2019). [Sum-of-Squares Optimization without Semidefinite Programming](https://doi.org/10.1137/17M1160124). SIAM Journal on Optimization. 29 (1).
 - Yang Zheng, Giovanni Fantuzzi (2023). [Sum-of-squares chordal decomposition of polynomial matrix inequalities](https://doi.org/10.1007/s10107-021-01728-w). Mathematical Programming. Volume 197, pages 71–108.
 
