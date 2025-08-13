@@ -31,7 +31,9 @@ if
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{\alpha=0}^{n}q_{\alpha}^{2}(x), q_{\alpha}(x)\in\mathbb{R}[x]"/></p>
 
-which is an SOS by using semidefinite programming, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=w(x)^\top Qw(x)"/> with a semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;Q"/>.
+becomes an SOS by using semidefinite programming, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=w(x)^\top Qw(x)"/> with a semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;Q"/>. Sometimes, this does not work, e.g., on the polynomial function such that
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x,y)=2x^4+5y^4+2x^3y"/></p>
 
 SOS can optimize directly over the sum-of-squares cone and its dual, circumventing the semidefinite programming (SDP) reformulation, which requires a large number of auxiliary variables when the degree of sum-of-squares polynomials is large.
 
