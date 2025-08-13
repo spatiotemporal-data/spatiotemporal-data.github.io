@@ -25,15 +25,13 @@ layout: default
 
 SOS is a classical method for solving polynomial optimization. The feasible set with a multivariate polynomial function
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{i=0}^{n}a_ix^{i}\geq 0,\forall x"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{\alpha=0}^{n}a_{\alpha}x^{\alpha}\geq 0,\forall x"/></p>
 
 if 
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{i=0}^{n}q_i^{2}(x), q_i(x)\in\mathbb{R}[x]"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{\alpha=0}^{n}q_{\alpha}^{2}(x), q_i(x)\in\mathbb{R}[x]"/></p>
 
-
-
-can be converted into an SOS form by using semidefinite programming.
+which is an SOS by using semidefinite programming, i.e., .
 
 
 <br>
