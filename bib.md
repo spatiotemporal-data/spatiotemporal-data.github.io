@@ -9,6 +9,26 @@ layout: default
 <br>
 
 
+### 57th Mile
+#### Subspace-Conjugate Gradient
+
+Solving multi-term linear equations efficiently in numerical linear algebra is still a challenging problem. For any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}_{k}\in\mathbb{R}^{m\times m},\boldsymbol{B}_{k}\in\mathbb{R}^{n\times n},\,k\in[d]"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{C}\in\mathbb{R}^{m\times n}"/>, the Sylvester equation is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\sum_{k\in[d]}\boldsymbol{A}_k\boldsymbol{X}\boldsymbol{B}_k=\boldsymbol{C}"/></p>
+
+whose closed-form solution is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{vec}(\boldsymbol{X})=\Bigl(\sum_{k\in[d]}\boldsymbol{B}_k^\top\otimes\boldsymbol{A}_k\Bigr)^\dagger\operatorname{vec}(\boldsymbol{C})"/></p>
+
+Recent study proposed a new iterative scheme for symmetric and positive definite operators, significantly advancing methods such as truncated matrix-oriented Conjugate Gradients (CG). The new algorithm capitalizes on the low-rank matrix format of its iterates by fully exploiting the subspace information of the factors as iterations proceed.
+
+**References**
+
+- Davide Palitta, Martina Iannacito, Valeria Simoncini (2025). A subspace-conjugate gradient method for linear matrix equations. 	arXiv:2501.02938.
+
+<br>
+
+
 ### 56th Mile
 #### Characterizing Wikipedia Linking Across the Web
 
