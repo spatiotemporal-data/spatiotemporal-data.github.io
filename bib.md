@@ -24,7 +24,7 @@ Recent study proposed a new iterative scheme for symmetric and positive definite
 
 **References**
 
-- Davide Palitta, Martina Iannacito, Valeria Simoncini (2025). A subspace-conjugate gradient method for linear matrix equations. 	arXiv:2501.02938.
+- Davide Palitta, Martina Iannacito, Valeria Simoncini (2025). [A subspace-conjugate gradient method for linear matrix equations](https://arxiv.org/abs/2501.02938). arXiv:2501.02938.
 
 <br>
 
@@ -40,8 +40,8 @@ Recent study proposed a new iterative scheme for symmetric and positive definite
 
 **References**
 
-- Veniamin Veselovsky, Tiziano Piccardi, Ashton Anderson, Robert West, Akhil Arora (2025). Web2Wiki: Characterizing Wikipedia Linking Across the Web.	arXiv:2505.15837.
-- Cristian Consonni, David Laniado, Alberto Montresor (2019). WikiLinkGraphs: A Complete, Longitudinal and Multi-Language Dataset of the Wikipedia Link Networks. arXiv:1902.04298.
+- Veniamin Veselovsky, Tiziano Piccardi, Ashton Anderson, Robert West, Akhil Arora (2025). [Web2Wiki: Characterizing Wikipedia Linking Across the Web](https://arxiv.org/abs/2505.15837). arXiv:2505.15837.
+- Cristian Consonni, David Laniado, Alberto Montresor (2019). [WikiLinkGraphs: A Complete, Longitudinal and Multi-Language Dataset of the Wikipedia Link Networks](https://arxiv.org/abs/1902.04298). arXiv:1902.04298.
 
 <br>
 
