@@ -29,7 +29,7 @@ SOS is a classical method for solving polynomial optimization. The feasible set 
 
 if 
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{\alpha=0}^{n}q_{\alpha}^{2}(x), q_i(x)\in\mathbb{R}[x]"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{\alpha=0}^{n}q_{\alpha}^{2}(x), q_{\alpha}(x)\in\mathbb{R}[x]"/></p>
 
 which is an SOS by using semidefinite programming, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=w(x)^\topQw(x)"/> with semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;Q"/>.
 
