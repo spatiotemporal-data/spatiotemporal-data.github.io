@@ -12,9 +12,16 @@ layout: default
 ### 56th Mile
 #### Characterizing Wikipedia Linking Across the Web
 
-[Common Crawl](https://commoncrawl.org/) maintains a free, open repository of web crawl data that can be used by anyone.
+[Common Crawl](https://commoncrawl.org/) maintains a free, open repository of web crawl data that can be used by anyone. Using the dataset with 90 million English Wikipedia links spanning 1.68% of Web domains, recent study ([Veselovsky et al, 2025](https://arxiv.org/abs/2505.15837)) reveals three key findings:
 
+- Wikipedia is most frequently cited by news and science websites for informational purposes, while commercial websites reference it less often.
+- The majority of Wikipedia links appear within the main content rather than in boilerplate or user-generated sections, highlighting their role in structured knowledge presentation. 
+- Most links (95%) serve as explanatory references rather than as evidence or attribution, reinforcing Wikipedia’s function as a background knowledge provider.
 
+**References**
+
+- Veniamin Veselovsky, Tiziano Piccardi, Ashton Anderson, Robert West, Akhil Arora (2025). Web2Wiki: Characterizing Wikipedia Linking Across the Web.	arXiv:2505.15837.
+- Cristian Consonni, David Laniado, Alberto Montresor (2019). WikiLinkGraphs: A Complete, Longitudinal and Multi-Language Dataset of the Wikipedia Link Networks. arXiv:1902.04298.
 
 <br>
 
