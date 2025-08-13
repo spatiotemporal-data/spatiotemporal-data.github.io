@@ -12,6 +12,11 @@ layout: default
 ### 58th | Optimal Sketching Bounds for Sparse Linear Regression
 
 
+
+**References**
+
+- Tung Mai, Alexander Munteanu, Cameron Musco, Anup B. Rao, Chris Schwiegelshohn, David P. Woodruff (2023). [Optimal Sketching Bounds for Sparse Linear Regression](https://arxiv.org/abs/2304.02261). arXiv:2304.02261.
+
 <br>
 
 
