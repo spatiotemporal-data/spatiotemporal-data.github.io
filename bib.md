@@ -9,7 +9,7 @@ layout: default
 <br>
 
 
-### 58th | Optimal Sketching Bounds for Sparse Linear Regression
+#### 58th | Optimal Sketching Bounds for Sparse Linear Regression
 
 
 
@@ -20,8 +20,7 @@ layout: default
 <br>
 
 
-### 57th Mile
-#### Subspace-Conjugate Gradient
+#### 57th | Subspace-Conjugate Gradient
 
 Solving multi-term linear equations efficiently in numerical linear algebra is still a challenging problem. For any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}_{k}\in\mathbb{R}^{m\times m},\boldsymbol{B}_{k}\in\mathbb{R}^{n\times n},\,k\in[d]"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{C}\in\mathbb{R}^{m\times n}"/>, the Sylvester equation is
 
@@ -40,8 +39,7 @@ Recent study proposed a new iterative scheme for symmetric and positive definite
 <br>
 
 
-### 56th Mile
-#### Characterizing Wikipedia Linking Across the Web
+#### 56th | Characterizing Wikipedia Linking Across the Web
 
 [Common Crawl](https://commoncrawl.org/) maintains a free, open repository of web crawl data that can be used by anyone. Using the dataset with 90 million English Wikipedia links spanning 1.68% of Web domains, recent study ([Veselovsky et al, 2025](https://arxiv.org/abs/2505.15837)) reveals three key findings:
 
