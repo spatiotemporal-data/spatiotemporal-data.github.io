@@ -31,8 +31,15 @@ if
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{\alpha=0}^{n}q_{\alpha}^{2}(x), q_i(x)\in\mathbb{R}[x]"/></p>
 
-which is an SOS by using semidefinite programming, i.e., .
+which is an SOS by using semidefinite programming, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=w(x)^\topQw(x)"/> with semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;Q"/>.
 
+SOS can optimize directly over the sum-of-squares cone and its dual, circumventing the semidefinite programming (SDP) reformulation, which requires a large number of auxiliary variables when the degree of sum-of-squares polynomials is large.
+
+**References**
+
+- Pablo A. Parrilo. [Sum of squares techniques and polynomial optimization](https://www.princeton.edu/~aaa/Public/Presentations/CDC_2016_Parrilo_1). [[MIT Course | 6.7230 Algebraic Techniques and Semidefinite Optimization](https://www.mit.edu/~parrilo/)]
+- Dávid Papp, Sercan Yildiz (2019). [Sum-of-Squares Optimization without Semidefinite Programming](https://doi.org/10.1137/17M1160124). SIAM Journal on Optimization. 29 (1).
+- Yang Zheng, Giovanni Fantuzzi (2023). [Sum-of-squares chordal decomposition of polynomial matrix inequalities](https://doi.org/10.1007/s10107-021-01728-w). Mathematical Programming. Volume 197, pages 71–108.
 
 <br>
 
