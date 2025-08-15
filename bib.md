@@ -79,6 +79,7 @@ Recent study proposed a new iterative scheme for symmetric and positive definite
 
 - Veniamin Veselovsky, Tiziano Piccardi, Ashton Anderson, Robert West, Akhil Arora (2025). [Web2Wiki: Characterizing Wikipedia Linking Across the Web](https://arxiv.org/abs/2505.15837). arXiv:2505.15837.
 - Cristian Consonni, David Laniado, Alberto Montresor (2019). [WikiLinkGraphs: A Complete, Longitudinal and Multi-Language Dataset of the Wikipedia Link Networks](https://arxiv.org/abs/1902.04298). arXiv:1902.04298.
+- [Interactive Map of Wikipedia - GitHub Pages](https://lmcinnes.github.io/datamapplot_examples/wikipedia/).
 
 <br>
 
