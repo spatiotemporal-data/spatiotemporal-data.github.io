@@ -9,7 +9,7 @@ layout: default
 <br>
 
 
-### 59th Mile
+### 60th Mile
 #### Optimal Sketching Bounds for Sparse Linear Regression
 
 
@@ -19,6 +19,19 @@ layout: default
 - Tung Mai, Alexander Munteanu, Cameron Musco, Anup B. Rao, Chris Schwiegelshohn, David P. Woodruff (2023). [Optimal Sketching Bounds for Sparse Linear Regression](https://arxiv.org/abs/2304.02261). arXiv:2304.02261.
 
 <br>
+
+
+### 59th Mile
+#### Natural Gradient Descent
+
+
+**References**
+
+- Andy Jones. [Natural gradients](https://andrewcharlesjones.github.io/journal/natural-gradients.html). Technical blog.
+- Josh Izaac (2019). [Quantum natural gradient](https://pennylane.ai/qml/demos/tutorial_quantum_natural_gradient/). Blog.
+
+<br>
+
 
 ### 58th Mile
 #### Sum of Squares (SOS) Technique
