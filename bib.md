@@ -8,8 +8,15 @@ layout: default
 
 <br>
 
+### 61th Commit
+#### EUV Lithography Techniques
 
-### 60th Mile
+
+
+<br>
+
+
+### 60th Commit
 #### Optimal Sketching Bounds for Sparse Linear Regression
 
 
@@ -21,7 +28,7 @@ layout: default
 <br>
 
 
-### 59th Mile
+### 59th Commit
 #### Natural Gradient Descent
 
 Suppose an objective function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{x}):\mathbb{R}^{n}\to\mathbb{R}"/> in an optimization problem, the gradient descent is the vector of partial derivatives of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{x})"/> with respect to each variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_i,i=1,2,\ldots,n"/> such that
@@ -38,7 +45,7 @@ Suppose an objective function <img style="display: inline;" src="https://latex.c
 <br>
 
 
-### 58th Mile
+### 58th Commit
 #### Sum of Squares (SOS) Technique
 
 SOS is a classical method for solving polynomial optimization. The feasible set with a multivariate polynomial function
@@ -64,7 +71,7 @@ SOS can optimize directly over the sum-of-squares cone and its dual, circumventi
 <br>
 
 
-### 57th Mile
+### 57th Commit
 #### Subspace-Conjugate Gradient
 
 Solving multi-term linear equations efficiently in numerical linear algebra is still a challenging problem. For any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}_{k}\in\mathbb{R}^{m\times m},\boldsymbol{B}_{k}\in\mathbb{R}^{n\times n},\,k\in[d]"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{C}\in\mathbb{R}^{m\times n}"/>, the Sylvester equation is
@@ -84,7 +91,7 @@ Recent study proposed a new iterative scheme for symmetric and positive definite
 <br>
 
 
-### 56th Mile
+### 56th Commit
 #### Characterizing Wikipedia Linking Across the Web
 
 [Common Crawl](https://commoncrawl.org/) maintains a free, open repository of web crawl data that can be used by anyone. Using the dataset with 90 million English Wikipedia links spanning 1.68% of Web domains, recent study ([Veselovsky et al, 2025](https://arxiv.org/abs/2505.15837)) reveals three key findings:
@@ -102,7 +109,7 @@ Recent study proposed a new iterative scheme for symmetric and positive definite
 <br>
 
 
-### 55th Mile
+### 55th Commit
 #### Random Projections for Ordinary Least Squares
 
 For any <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{n}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{\Phi}\in\mathbb{R}^{n\times d}"/> (i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> observations and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/> features), the linear regression such that
@@ -139,7 +146,7 @@ for the case of <img style="display: inline;" src="https://latex.codecogs.com/sv
 <br>
 
 
-### 54th Mile
+### 54th Commit
 #### The Challenge of Insuring Vehicles with Autonomous Functions
 
 
@@ -153,7 +160,7 @@ for the case of <img style="display: inline;" src="https://latex.codecogs.com/sv
 <br>
 
 
-### 53rd Mile
+### 53rd Commit
 #### Two Decades of Low-Rank Optimization
 
 Semidefinite programming (SDP) is powerful for solving low-rank optimization. Despite the most classical algorithms of SDP, one can use first-order methods to solve bigger SDPs more efficiently, including dual-scaling method, spectral bundle method, nonlinear programming approaches, dual Cholesky approach, chordal-graph approaches, and iterative solver for the Newton system.
@@ -175,7 +182,7 @@ Benign nonconvexity refers to a property of certain nonconvex optimization probl
 
 <br>
 
-### 52nd Mile
+### 52nd Commit
 #### Matrix Completion and Decomposition in Phase-Bounded Cones
 
 The nuclear norm minimization for matrix completion
@@ -196,7 +203,7 @@ where the feasible set is the positive semidefinite cone. There is a phase-bound
 <br>
 
 
-### 51st Mile
+### 51st Commit
 #### Revisiting Interpretable Machine Learning (IML)
 
 **Local** IML methods explain individual predictions of ML models. Popular IML methods are Shapley values and counterfactual explanations. Counterfactual explanations explain predictions in the form of what-if scenarios, they are contrastive and focus on a few reasons. The Shapley values provide an answer on how to fairly share a payout among the players of a collaborative game.
@@ -213,7 +220,7 @@ There are many challenges in IML methods: 1) uncertainty quantification of the e
 <br>
 
 
-### 50th Mile
+### 50th Commit
 #### Orthogonal Procrustes Problem
 
 Ever heard of the Orthogonal Procrustes Problem (OPP)? It might sound complex, but the optimal solution can be achieved in just two simple steps:
@@ -239,7 +246,7 @@ That’s it! This elegant approach helps find the closest orthogonal matrix to a
 <br>
 
 
-### 49th Mile
+### 49th Commit
 #### Amazon Deforestation
 
 [Deforestation in the Amazon: past, present and future](https://infoamazonia.org/en/2023/03/21/deforestation-in-the-amazon-past-present-and-future/) visually analyzed the deforestation rates of recent years, identifying the main threats (e.g., cattle-raising activity, road network, and navigable rivers) in the present and pointing to measures needed to reverse this process. There are some basic data:
@@ -252,7 +259,7 @@ The Amazon could lose almost half of what it lost in the past two decades.
 <br>
 
 
-### 48th Mile
+### 48th Commit
 #### Convergence Rates
 
 <p align="center">
@@ -267,7 +274,7 @@ The Amazon could lose almost half of what it lost in the past two decades.
 
 <br>
 
-### 47th Mile
+### 47th Commit
 #### [The Art of Linear Programming](https://www.youtube.com/watch?v=E72DWgKP_1Y)
 
 Linear programming is an important technique for solving NP-hard problems such as Knapsack (e.g., packing problem), TSP, and Vertex Cover.
@@ -284,7 +291,7 @@ Linear programming is an important technique for solving NP-hard problems such a
 
 <br>
 
-### 46th Mile
+### 46th Commit
 #### Semidefinite Programming
 
 The basic definition of positive definite matrix is that: For any square matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{n\times n}"/>, if it always holds that
@@ -312,7 +319,7 @@ Semidefinite programming is the most exciting development of mathematical progra
 
 <br>
 
-### 45th Mile
+### 45th Commit
 #### Physics-Informed Machine Learning
 
 Reviewed machine learning algorithms:
@@ -331,7 +338,7 @@ Reviewed machine learning algorithms:
 
 <br>
 
-### 44th Mile
+### 44th Commit
 #### Sparse Linear Regression
 
 For any vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/> and matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\in\mathbb{R}^{m\times n}"/>, the sparse linear regression such that
@@ -354,14 +361,14 @@ MIP provides exact solution, but it scales poorly with <img style="display: inli
 
 <br>
 
-### 43rd Mile
+### 43rd Commit
 #### [Matrix Calculus for Machine Learning and Beyond](https://github.com/mitmath/matrixcalc)
 
 
 <br>
 
 
-### 42nd Mile
+### 42nd Commit
 #### Causal Inference, Causal Discovery, and Machine Learning
 
 Causal inference is a framework to answer causal questions from observational and/or experimental data. It is important to infer underlying mechanisms of data (e.g., climate system), learn correlation networks, and recognize patterns. Pearl's causal inference framework assumes an underlying **structural causal model** with an associated acyclic **graph**.
@@ -375,7 +382,7 @@ There are two types of tasks in the causal inference framework: 1) Utilizing qua
 <br>
 
 
-### 41st Mile
+### 41st Commit
 #### Composable Optimization for Robotic Motion Planning and Control
 
 From a perspective of control as optimization, the objective could be what one wants system to do, given the model of one's robot as constraints. This is exactly an optimal control problem such that
@@ -390,7 +397,7 @@ From a perspective of control as optimization, the objective could be what one w
 <br>
 
 
-### 40th Mile
+### 40th Commit
 #### Cauchy-Schwarz Regularizers
 
 The main idea is that Cauchy-Schwarz inequality <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;|\langle\boldsymbol{x},\boldsymbol{y}\rangle|\leq\|\boldsymbol{x}\|_2\|\boldsymbol{y}\|_2"/> can be used to binarize neural networks. Cauchy-Schwarz regularizers are a new class of regularization that can promote discrete-valued vectors, eigenvectors of a given matrix, and orthogonal matrices. These regularizers are effective for quantizing neural network weights and solving underdetermined systems of linear equations.
@@ -401,7 +408,7 @@ The main idea is that Cauchy-Schwarz inequality <img style="display: inline;" sr
 <br>
 
 
-### 39th Mile
+### 39th Commit
 #### Nystrom Truncation of Spectral Features
 
 **Parameterizing policy gradient.** (**Mercer's Theorem**) If <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K:\mathcal{X}\times\mathcal{X}\to\mathbb{R}"/> is a continuous, symmetric, and positive definite kernel, then there exists a sequence of non-negative eigenvalues <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\lambda_i\}_{i=1}^{\infty}"/> and corresponding orthonomal basis <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\phi_i\}_{i=1}^{\infty}"/> such that
@@ -428,7 +435,7 @@ corresponding to eigenvectors and eigenvalues. Selecting top-<img style="display
 <br>
 
 
-### 38th Mile
+### 38th Commit
 #### Sparse Dictionary Learning
 
 Interpretable machine learning provides a data-driven framework for understanding complicated dynamical systems. One important perspective is sparsity to reinforce the interpretability of several state-of-the-art models. Sparse dictionary learning stems from sparse signal processing, which takes the form of linear regression with sparse parameters.
@@ -441,7 +448,7 @@ In a very recent study, researchers developed an interpretable and efficient rei
 <br>
 
 
-### 37th Mile
+### 37th Commit
 #### Cardinality Minimization, Constraints, and Regularization
 
 This is a review paper for solving the optimization problem that involves the cardinality of variable vectors in constraints or objective function. The problems can be formulated as follows,
@@ -468,7 +475,7 @@ These optimization problems have broad applications such as signal and image pro
 <br>
 
 
-### 36th Mile
+### 36th Commit
 #### Single-Factor Matrix Decomposition with Sparse Penalty
 
 For any positive semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}\in\mathbb{R}^{n\times n}"/>, the optimization problem of rank-one single-factor matrix decomposition with sparse penalty can be formulated as follows,
@@ -505,7 +512,7 @@ canonical correlation analysis. Biostatistics. [[DOI](https://doi.org/10.1093/bi
 <br>
 
 
-### 35th Mile
+### 35th Commit
 #### Iterative Shrinkage Thresholding Algorithm (ISTA)
 
 In machine learning, the closed-form solution to LASSO is defined upon the soft thresholding operator such that
@@ -536,7 +543,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 
-### 34th Mile
+### 34th Commit
 #### Learning Sparse Nonparametric Directed Acyclic Graphs (DAG)
 
 DAG learning problem: Given a data matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{n\times d}"/> consisting of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> independent and identically distributed observations and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/> column vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{x}_{j}\}_{j=1}^{d}"/>, one can learn the DAG <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(\boldsymbol{X})"/> that encodes the dependency between the variables in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/>. One approach is to learn <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f=f(f_1,f_2,\cdots,f_d)"/> such that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}(f)=\mathcal{G}(\boldsymbol{X})"/> using a well-designed score. Given a loss function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell(y,\hat{y})"/> such as least squares or the negative log-likelihood, the optimization problem can be summarized as follows,
@@ -563,7 +570,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 
-### 33rd Mile
+### 33rd Commit
 #### Learning Sparse Nonlinear Dynamics via Mixed-Integer Optimization
 
 Discovering governing equations of complex dynamical systems directly from data is a central problem in scientific machine learning. In recent years, the sparse identification of nonlinear dynamics (SINDy, see [Brunton et al., (2016)](https://doi.org/10.1073/pnas.1517384113)) framework, powered by heuristic sparse regression methods, has become a dominant tool for learning parsimonious models. The optimization problem for learning system equations is
@@ -579,7 +586,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 
-### 32nd Mile
+### 32nd Commit
 
 - [Behavioral changes during the COVID-19 pandemic decreased income diversity of urban encounters](https://www.nature.com/articles/s41467-023-37913-y)
 - [COVID-19 is linked to changes in the time–space dimension of human mobility](https://www.nature.com/articles/s41562-023-01660-3)
@@ -590,7 +597,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 
-### 31st Mile
+### 31st Commit
 
 #### <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-Statistic & Student <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>-Distribution
 
@@ -619,7 +626,7 @@ Please check out the details of [the relevance of <img style="display: inline;" 
 <br>
 
 
-### 30th Mile
+### 30th Commit
 #### Interpretable ML vs. Explainable ML
 
 In the context of AI, there is a subtle difference between terms interpretability and explainability. The interpretability techniques such as sparse linear regression were used to "understand how the underlying AI technology works", while the explainability refer to "the level of understanding how AI-based systems produce with a given result". Main claim from Wikipedia is that "treating the model as a black box and analyzing how marginal changes to the inputs affect the result sometimes provides a sufficient explanation."
@@ -633,7 +640,7 @@ In the context of AI, there is a subtle difference between terms interpretabilit
 <br>
 
 
-### 29th Mile
+### 29th Commit
 #### INFORMS 2024 | Optimal k-Sparse Ridge Regression
 
 The classical linear regression with a <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm induced sparsity penalty can be written as follows,
@@ -651,7 +658,7 @@ which is equivalent to
 <br>
 
 
-### 28th Mile
+### 28th Commit
 #### Mixed Integer Linear Programming (Example)
 
 - [Mixed Integer Linear Programming with Python](https://readthedocs.org/projects/python-mip/downloads/pdf/latest/)
@@ -698,7 +705,7 @@ Note that the ["Model too large for size-limited Gurobi license" error](https://
 <br>
 
 
-### 27th Mile
+### 27th Commit
 #### Importance of Sparsity in Interpretable Machine Learning
 
 Sparsity is an important type of model-based interpretability methods. Typically, the practitioner can impose sparsity on the model by limiting the number of nonzero parameters. When the number of nonzero parameters is sufficiently small, a practitioner can interpret the variables corresponding to those parameters as being meaningfully related to the outcome in question and can also interpret the magnitude and direction of the parameters. Two important methods including <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-norm penalty (e.g., LASSO) and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm constraint (e.g., OMP). Model sparsity is often useful for high-dimensional problems, where the goal is to identify key features for further analysis.
@@ -711,7 +718,7 @@ Sparsity is an important type of model-based interpretability methods. Typically
 <br>
 
 
-### 26th Mile
+### 26th Commit
 #### INFORMS 2024 | Core Tensor Shape Optimization
 
 Recall that the sum of squared singular values of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{N\times D},\,t=1,2,\ldots,T"/> and outcomes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}"/> is
@@ -747,7 +754,7 @@ The optimization problem can be implemented by using an integer programming solv
 <br>
 
 
-### 25th Mile
+### 25th Commit
 #### Mobile Service Usage Data
 
 - Orlando E. Martínez-Durive et al. (2023). [The NetMob23 Dataset: A High-resolution Multi-region Service-level Mobile Data Traffic Cartography](https://arxiv.org/abs/2305.06933). arXiv:2305.06933.
@@ -756,7 +763,7 @@ The optimization problem can be implemented by using an integer programming solv
 <br>
 
 
-### 24th Mile
+### 24th Commit
 #### Optimization in Reinforcement Learning
 
 **References**
@@ -767,7 +774,7 @@ The optimization problem can be implemented by using an integer programming solv
 <br>
 
 
-### 23rd Mile
+### 23rd Commit
 #### Sparse and Time-Varying Regression
 
 This work addresses a time series regression problem for features <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}_{t}\in\mathbb{R}^{N\times D},\,t=1,2,\ldots,T"/> and outcomes <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}_t\in\mathbb{R}^{N},\,t=1,2,\ldots,T"/>, taking the following expression:
@@ -789,7 +796,7 @@ The methodological contribution is reformulating this problem as a binary convex
 <br>
 
 
-### 22nd Mile
+### 22nd Commit
 #### Revisiting <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_1"/>-Norm Minimization
 
 
@@ -803,7 +810,7 @@ The methodological contribution is reformulating this problem as a binary convex
 <br>
 
 
-### 21st Mile
+### 21st Commit
 #### Research Seminars
 
 - [Computational Research in Boston and Beyond (CRIBB) seminar series](https://math.mit.edu/crib/): A forum for interactions among scientists and engineers throughout the Boston area working on a range of computational problems. This forum consists of a monthly seminar where individuals present their work.
@@ -812,7 +819,7 @@ The methodological contribution is reformulating this problem as a binary convex
 <br>
 
 
-### 20th Mile
+### 20th Commit
 #### Robust, Interpretable Statistical Models: Sparse Regression with the LASSO
 
 First of all, we revisit the classical least squares such that
@@ -838,7 +845,7 @@ One interesting application is using sparsity-promoting techniques and machine l
 <br>
 
 
-### 19th Mile
+### 19th Commit
 #### Causal Inference for Geosciences
 
 Learning causal interactions from time series of complex dynamical systems is of great significance in real-world systems. But the questions arise as: 1) How to formulate causal inference for complex dynamical systems? 2) How to detect causal links? 3) How to quantify causal interactions?
@@ -851,7 +858,7 @@ Learning causal interactions from time series of complex dynamical systems is of
 <br>
 
 
-### 18th Mile
+### 18th Commit
 #### Tensor Factorization for Knowledge Graph Completion
 
 Knowledge graph completion is a kind of link prediction problems, inferring missing "facts" based on existing ones. Tucker
@@ -864,7 +871,7 @@ decomposition of the binary tensor representation of knowledge graph triples all
 <br>
 
 
-### 17th Mile
+### 17th Commit
 #### RESCAL: Tensor-Based Relational Learning
 
 Multi-relational data is everywhere in real-world applications such as computational biology, social networks, and semantic web. This type of data is often represented in the form of graphs or networks where nodes represent entities, and edges represent different types of relationships.
@@ -886,7 +893,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 
-### 16th Mile
+### 16th Commit
 #### Subspace Pursuit Algorithm
 
 Considering the optimization problem for estimating <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;K"/>-sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>:
@@ -928,7 +935,7 @@ The subspace pursuit algorithm is a fixed-cardinality method, quite different fr
 <br>
 
 
-### 15th Mile
+### 15th Commit
 #### Synthetic Sweden Mobility
 
 The Synthetic Sweden Mobility (SySMo) model provides a simplified yet statistically realistic microscopic representation of the real population of Sweden. The agents in this synthetic population contain socioeconomic attributes, household characteristics, and corresponding activity plans for an average weekday. This agent-based modelling approach derives the transportation demand from the agents’ planned activities using various transport modes (e.g., car, public transport, bike, and walking). The dataset is available on [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10648077).
@@ -944,7 +951,7 @@ Going back to the individual mobility trajectory, there would be some opportunit
 <br>
 
 
-### 14th Mile
+### 14th Commit
 #### Prediction on Extreme Floods
 
 AI increases global access to reliable flood forecasts (see [dataset](https://zenodo.org/doi/10.5281/zenodo.8139379)).
@@ -957,7 +964,7 @@ Another weather forecasting dataset for consideration: [Rain forecasts world-wid
 <br>
 
 
-### 13th Mile
+### 13th Commit
 #### Sparse Recovery Problem
 
 Considering a general optimization problem for estimating the sparse vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{n}"/>:
@@ -979,7 +986,7 @@ The most classical (greedy) method for solving the linear sparse regression is o
 <br>
 
 
-### 12th Mile
+### 12th Commit
 #### Economic Complexity
 
 **References**
@@ -989,7 +996,7 @@ The most classical (greedy) method for solving the linear sparse regression is o
 <br>
 
 
-### 11th Mile
+### 11th Commit
 #### Time-Varying Autoregressive Models
 
 Vector autoregression (VAR) has a key assumption that the coeffcients are invariant across time (i.e., time-invariant), but it is not always true when accounting for psychological phenomena such as the phase transition from a healthy to unhealthy state (or vice versa). Consequently, time-varying vector autoregressive models are of great significance for capturing the parameter changes in response to interventions. From the statistical perspective, there are two types of lagged effects between pairs of variables: **autocorrelations** (e.g., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}\to\boldsymbol{x}_{t+1}"/>) and **cross-lagged effects** (e.g., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{t}\to\boldsymbol{y}_{t+1}"/>). The time-varying autoregressive models can be solved by using generalized additive model and kernel smoothing estimation.
@@ -1001,7 +1008,7 @@ Vector autoregression (VAR) has a key assumption that the coeffcients are invari
 <br>
 
 
-### 10th Mile
+### 10th Commit
 #### Higher-Order Graph & Hypergraph
 
 The concept of a higher-order graph extends the traditional notion of a graph, which consists of nodes and edges, to capture more complex relationships and structures in data. A common formalism for representing higher-order graphs is through hypergraphs, which generalize the concept of a graph to allow for hyperedges connecting multiple nodes. In a hypergraph, each hyperedge connects a subset of nodes, forming higher-order relationships among them.
@@ -1019,7 +1026,7 @@ The concept of a higher-order graph extends the traditional notion of a graph, w
 <br>
 
 
-### 9th Mile
+### 9th Commit
 #### Eigenvalues of Directed Cycles
 
 The graph signal processing possesses an interesting property of directed cycle (see Figure 2 in the [literature](https://arxiv.org/pdf/2303.12211)). The adjacency matrix of a directed cycle has a set of unit eigenvalues as follows.
@@ -1063,7 +1070,7 @@ fig.savefig('eigenvalues_directed_cycle.png', bbox_inches = 'tight')
 <br>
 
 
-### 8th Mile
+### 8th Commit
 #### Graph Filter
 
 Defining graph-aware operator plays an important role for characterizing a signal <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/> with <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> vertices over a graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}"/>. One simple idea is introducing the adjacency matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> so that the operation is <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}\boldsymbol{x}"/>. In that case, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> is a simple operator that accounts for the local connectivity of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}"/>. One example is using the classical unit delay (seems to be time-shift) such that
@@ -1095,7 +1102,7 @@ When applying the polynomial filter to a graph signal <img style="display: inlin
 <br>
 
 
-### 7th Mile
+### 7th Commit
 #### Graph Signals
 
 For any graph <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{G}=\{\mathcal{V},\mathcal{E}\}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}=\{1,2,\ldots,N\}"/> is a finite set of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> vertices, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{E} \subseteq \mathcal{V}\times\mathcal{V}"/> is the set of edges. Graph signals can be formally represented as vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}\in\mathbb{R}^{N}"/> where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{n}"/> (or say <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}(n)"/> in the following) stores the signal value at the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th vertex in <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\mathcal{V}"/>. The graph Fourier transform of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is element-wise defined as follows,
@@ -1122,7 +1129,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 
-### 6th Mile
+### 6th Commit
 #### Graph Signal Processing
 
 Graph signal processing not only focuses on the graph typology (e.g., connection between nodes), but also covers the quantity of nodes (i.e., graph signals) with weighted adjacency information.
@@ -1140,7 +1147,7 @@ Graph signal processing not only focuses on the graph typology (e.g., connection
 <br>
 
 
-### 5th Mile
+### 5th Commit
 #### Clifford Product
 
 In [Grassmann algebra](https://en.wikipedia.org/wiki/Exterior_algebra), the inner product between two vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{x}=x_1\vec{e}_1+x_2\vec{e}_2"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{y}=y_1\vec{e}_1+y_2\vec{e}_2"/> (w/ basis vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_1"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\vec{e}_2"/>) is given by
@@ -1180,7 +1187,7 @@ In particular, [Clifford algebra](https://en.wikipedia.org/wiki/Clifford_algebra
 <br>
 
 
-### 4th Mile
+### 4th Commit
 #### Bayesian Variable Selection
 
 In genetic fine mapping, one critical problem is the variable selection in linear regression. There is a Bayesian variable selection based on the sum of single effects, i.e., the vector with one non-zero element. Given any data <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{X}\in\mathbb{R}^{m\times n}"/> (of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> explanatory variables) and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\in\mathbb{R}^{m}"/>, one can build an optimization problem as follows,
@@ -1200,7 +1207,7 @@ Or see Figure 1.1 in [Section 1.1 Non-negative sparse reconstruction](https://ha
 <br>
 
 
-### 3rd Mile
+### 3rd Commit
 #### Causal Effect Estimation/Imputation
 
 The causal effect estimation problem is usually defined as a matrix completion on the partially observed matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{Y}\in\mathbb{R}^{N\times T}"/> in which <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;N"/> units and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T"/> periods are involved. The observed index set is denoted by <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\Omega"/>. The optimization is from the [classical matrix factorization techniques for recommender systems (see Koren et al.'09)](https://doi.org/10.1109/MC.2009.263):
@@ -1212,7 +1219,7 @@ where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&s
 <br>
 
 
-### 2nd Mile
+### 2nd Commit
 #### Data Standardization in Healthcare
 
 The motivation for discussing the value of standards for health datasets is the risk of algorithmic bias, consequently leading to the possible healthcare inequity. The problem arises from the systemic inequalities in the dataset curation and the unequal opportunities to access the data and research. The aim is to expolore the standards, frameworks, and best practices in health datasets. Some discrete insights throughout the whole paper are summarized as follows,
@@ -1233,7 +1240,7 @@ The motivation for discussing the value of standards for health datasets is the 
 <br>
 
 
-### 1st Mile
+### 1st Commit
 #### Large Time Series Forecasting Models
 
 As we know, the training data in the large time series model is from different areas, this means that the model training process highly depends on the selected datasets across various areas, so one question is how to reduce the model biases if we consider the forecasting scenario as traffic flow or human mobility? Because I guess time series data in different areas should demonstrate different data behaviors. Hopefully, it is interesting to develop domain-specific time series datasets (e.g., [Largest multi-city traffic dataset](https://utd19.ethz.ch/)) and large models (e.g., [TimeGPT](https://docs.nixtla.io/)).
