@@ -24,6 +24,8 @@ layout: default
 ### 59th Mile
 #### Natural Gradient Descent
 
+Suppose an objective function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{x}):\mathbb{R}^{n}\to\mathbb{R}"/> in an optimization problem
+
 
 **References**
 
