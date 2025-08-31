@@ -26,7 +26,7 @@ layout: default
 
 Suppose an objective function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{x}):\mathbb{R}^{n}\to\mathbb{R}"/> in an optimization problem, the gradient descent is the vector of partial derivatives of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(\boldsymbol{x})"/> with respect to each variable <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_i,i=1,2,\ldots,n"/> such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\nabla f(\boldsymbol{x})=\bigl(\frac{\partial f(\boldsymbol{x})}{\partial x_1}, \frac{\partial f(\boldsymbol{x})}{\partial x_2}, \cdots, \frac{\partial f(\boldsymbol{x})}{\partial x_n}\bigr)^\top\in\mathbb{R}^{n}"/></p>
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\nabla f(\boldsymbol{x})=\left(\frac{\partial f(\boldsymbol{x})}{\partial x_1}, \frac{\partial f(\boldsymbol{x})}{\partial x_2}, \cdots, \frac{\partial f(\boldsymbol{x})}{\partial x_n}\right)^\top\in\mathbb{R}^{n}"/></p>
 
 
 
