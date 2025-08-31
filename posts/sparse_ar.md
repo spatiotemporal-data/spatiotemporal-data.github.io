@@ -146,6 +146,14 @@ as claimed.
 ### IV-C. Spatially-Varying Systems
 
 
+## V. Wikipedia Traffic Time Series
+
+### Dataset
+
+Wikipedia traffic time series dataset (see [145k dataset of daily Wikipedia traffic](https://doi.org/10.5281/zenodo.7371038)).
+
+
+
 
 <br>
 
