@@ -35,6 +35,12 @@ Suppose an objective function <img style="display: inline;" src="https://latex.c
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\nabla f(\boldsymbol{x})=\left(\frac{\partial f(\boldsymbol{x})}{\partial x_1}, \frac{\partial f(\boldsymbol{x})}{\partial x_2}, \cdots, \frac{\partial f(\boldsymbol{x})}{\partial x_n}\right)^\top\in\mathbb{R}^{n}"/></p>
 
+The essential idea of gradient descent update is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{\ell+1}=\boldsymbol{x}_{\ell}-\alpha\nabla f(\boldsymbol{x}_{\ell})"/></p>
+
+with a certain learning rate <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\alpha\in\mathbb{R}"/>.
+
 
 
 
