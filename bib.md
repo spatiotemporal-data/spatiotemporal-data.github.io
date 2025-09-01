@@ -45,7 +45,11 @@ Recall that [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) for any
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^{n}"/></p>
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n!=\prod_{k=1}^{n}k"/> denotes the factorial of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>. The function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f^{(n)}(a)"/> denotes the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th derivative of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f"/> evaluated at the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;a"/>.
+where 
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;n!=\prod_{k=1}^{n}k"/> </p>
+
+denotes the factorial of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>. The function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f^{(n)}(a)"/> denotes the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th derivative of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f"/> evaluated at the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;a"/>.
 
 
 **References**
