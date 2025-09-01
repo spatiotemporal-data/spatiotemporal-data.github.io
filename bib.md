@@ -41,6 +41,9 @@ The essential idea of gradient descent update is
 
 with a certain learning rate <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\alpha\in\mathbb{R}"/>.
 
+Recall that [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) for any function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f(x)"/> can be defined as
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;f(x)=\sum_{n=0}^{\infty}"/></p>
 
 
 
