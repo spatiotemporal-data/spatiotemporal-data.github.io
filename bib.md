@@ -37,6 +37,7 @@ Suppose an objective function <img style="display: inline;" src="https://latex.c
 
 
 
+
 **References**
 
 - Andy Jones. [Natural gradients](https://andrewcharlesjones.github.io/journal/natural-gradients.html). Technical blog.
