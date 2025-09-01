@@ -51,6 +51,17 @@ where
 
 denotes the factorial of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>. The function <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f^{(n)}(a)"/> denotes the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/>th derivative of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;f"/> evaluated at the point <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;a"/>.
 
+Based on steepest gradient descent, the optimization problem at the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell+1"/> step is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{\ell+1}=\arg\min_{\boldsymbol{x}}\,f(\boldsymbol{x}_{\ell})+\nabla f(\boldsymbol{x}_{\ell})^\top(\boldsymbol{x}-\boldsymbol{x}_{\ell})+D(\boldsymbol{x},\boldsymbol{x}_{\ell})"/> </p>
+
+for any arbitrary metric <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;D(\boldsymbol{x},\boldsymbol{x}_{\ell})"/> that measures a dissimilarity or distance between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{\ell}"/>. 
+
+In particular, if we use KL divergence <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;D_{KL}(p(y\mid \boldsymbol{x})\mid\mid p(y\mid\boldsymbol{x}_{\ell}))"/> with some data <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;y"/> as the metric, then the update for the natural gradient is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}_{\ell+1}=\boldsymbol{x}_{\ell}-\alpha\boldsymbol{F}^{-1}\nabla f(\boldsymbol{x}_{t})"/> </p>
+
+where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{F}"/> is the Fisher information matrix.
 
 **References**
 
