@@ -11,7 +11,13 @@ layout: default
 ### 61th Commit
 #### EUV Lithography Techniques
 
+In almost every cutting-edge and high-tech device (e.g., that included CPU, GPU, SoC, DRAM, and SSD), the transistors inside microchips are incredibly small with the tiniest features measuring around 10 nanometers (nm). Each of microchips is made from connecting billions of transistors together, while each individual transistor is only nanometers in size.
 
+The photolithography tools can be thought of as nanoscale microchip photocopiers. The state-of-the-art EUV Photolithography System uses Extreme Ultraviolet Light (EUV) and a set of mirrors to copy the design from photomask onto a silicon wafer, taking about 18 seconds to duplicate the same microchip design around 100 times across the entire area of a 300-millimeter wafer.
+
+**References**
+
+- [How does EUV Lithography Work? Inside the Most Advanced Machine Ever Made 🛠️⚙️🤯](https://www.youtube.com/watch?v=B2482h_TNwg). YouTube.
 
 <br>
 
