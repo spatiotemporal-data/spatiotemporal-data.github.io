@@ -88,9 +88,30 @@ if
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x)=\sum_{\alpha=0}^{n}q_{\alpha}^{2}(x), q_{\alpha}(x)\in\mathbb{R}[x]"/></p>
 
-becomes an SOS by using semidefinite programming, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=w(x)^\top Qw(x)"/> with a semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;Q"/>. Sometimes, SOS does not work, e.g., on the polynomial function such that
+becomes an SOS by using semidefinite programming, i.e., <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;p(x)=w(x)^\top Qw(x)"/> with a semidefinite matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;Q"/>. Suppose the polynomial function such that
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;p(x,y)=2x^4+5y^4+2x^3y"/></p>
+
+The SOS is
+
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned}
+&\begin{bmatrix}
+x^2 & xy & y^2
+\end{bmatrix}\begin{bmatrix}
+2 & 1 & -1 \\ 1 & 2 & 0 \\ -1 & 0 & 5 \\
+\end{bmatrix}\begin{bmatrix}
+x^2 \\ xy \\ y^2 \\
+\end{bmatrix} \\
+=&\begin{bmatrix}
+2x^2+xy-y^2 & x^2+2xy & -x^2+5y^2
+\end{bmatrix}\begin{bmatrix}
+x^2 \\ xy \\ y^2 \\
+\end{bmatrix} \\
+=&(2x^4+x^3y-x^2y^2)+(x^3y+2x^2y^2)+(-x^2y^2+5y^4) \\
+=&2x^4+5y^4+2x^3y
+\end{aligned}
+"/></p>
+
 
 SOS can optimize directly over the sum-of-squares cone and its dual, circumventing the semidefinite programming (SDP) reformulation, which requires a large number of auxiliary variables when the degree of sum-of-squares polynomials is large.
 
