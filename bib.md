@@ -10,7 +10,15 @@ layout: default
 
 
 ### 62nd Commit
+#### Time Series Analysis of Activity Patterns
 
+Understanding collective technology adoption patterns (e.g., Wikipedia edit activity logs) can provide valuable inisghts into Wikipedia activities. Given the objective concerning the continuous usage of Wikipedia, time series analysis methods allow to study Wikipedia's temporal patterns of edit activity in terms of user satisfaction, information quality, and productivity enhancements. The alignment is modeled by the global similarity between two time series, which is formulated as a stepwise optimization problem.
+
+Despite of importance of such analysis, unavailability of empirical data is a critical bottleneck.
+
+
+
+<br>
 
 
 ### 61st Commit
