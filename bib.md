@@ -12,7 +12,7 @@ layout: default
 ### 63rd Commit
 #### Why Are Wikipedia Page Views So Important?
 
-Web traffic is often monitored to understand the user behavior on digital platforms, e.g., popularity of products and pages. Analyzing temporal observations allows one to allocate resources, optimizing energy in data centers, and detecting threat/anomaly.
+Wikipedia is the 5th-most-visited website worldwide. Web traffic is often monitored to understand the user behavior on digital platforms, e.g., popularity of products and pages. Analyzing temporal observations allows one to allocate resources, optimizing energy in data centers, and detecting threat/anomaly.
 
 
 <br>
