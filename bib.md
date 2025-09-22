@@ -10,10 +10,14 @@ layout: default
 
 
 ### 63rd Commit
-#### Why Are Wikipedia Page Views So Important?
+#### Detecting Impact on Wikipedia Page Views
 
-Wikipedia is the 5th-most-visited website worldwide. Web traffic is often monitored to understand the user behavior on digital platforms, e.g., popularity of products and pages. Analyzing temporal observations allows one to allocate resources, optimizing energy in data centers, and detecting threat/anomaly.
+Wikipedia is the 5th-most-visited website worldwide. Web traffic is often monitored to understand the user behavior on digital platforms, e.g., popularity of products and pages. Analyzing temporal observations allows one to allocate resources, optimizing energy in data centers, and detecting threat/anomaly. Counterfactual predictions can be used to estimate how various external campaigns or events affect readership on Wikipedia, detecting whether there are significant changes to the existing trends. The core is comparing the counterfactual predictions and actual page views to quantify the causal impact of the intervention.
 
+
+**References**
+
+- Chelsy Xie, X., Johnson, I., & Gomez, A. (2019, May). [Detecting and gauging impact on Wikipedia page views](https://dl.acm.org/doi/pdf/10.1145/3308560.3316751). In Companion Proceedings of The 2019 World Wide Web Conference (pp. 1254-1261).
 
 <br>
 
