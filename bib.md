@@ -9,14 +9,29 @@ layout: default
 <br>
 
 
+### 63rd Commit
+#### Why Wikipedia Page Views So Important?
+
+Web traffic is often monitored to understand the user behavior on digital platforms, e.g., popularity of products and pages. Analyzing temporal observations allows one to allocate resources, optimizing energy in data centers, and detecting threat/anomaly.
+
+
+<br>
+
+
 ### 62nd Commit
 #### Time Series Analysis of Activity Patterns
 
-Understanding collective technology adoption patterns (e.g., Wikipedia edit activity logs) can provide valuable inisghts into Wikipedia activities. Given the objective concerning the continuous usage of Wikipedia, time series analysis methods allow to study Wikipedia's temporal patterns of edit activity in terms of user satisfaction, information quality, and productivity enhancements. The alignment is modeled by the global similarity between two time series, which is formulated as a stepwise optimization problem.
+Understanding collective technology adoption patterns (e.g., Wikipedia edit activity logs) can provide valuable inisghts into digital platform activities. Given the objective concerning the continuous usage of Wikipedia, time series analysis methods allow to study Wikipedia's temporal patterns of edit activity in terms of user satisfaction, information quality, and productivity enhancements. The alignment is modeled by the global similarity between two time series, which is actually formulated as a clustering problem. Each Wikipedia time series was represented as a temporally ordered set
 
-Despite of importance of such analysis, unavailability of empirical data is a critical bottleneck.
+<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{a}=(a_1,a_2,\ldots, a_n)"/></p>
 
+of edit activity levels at <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;n"/> months. In order to segment the time series into sequences of activity and inactivity periods, the data points are marked as either 0 or 1 for active and inactive months, respectively. 
 
+Despite of importance of such analysis, unavailability of large-scale empirical data of Wikipedia life-cycle adoption is a critical bottleneck. In addition, exploring causal relationships of corporate Wikipedia allows to discover a certain temporal activity pattern.
+
+**References**
+
+- Arazy, O., & Croitoru, A. (2010). [The sustainability of corporate wikis: A time-series analysis of activity patterns](https://dl.acm.org/doi/pdf/10.1145/1877725.1877731). ACM Transactions on Management Information Systems (TMIS), 1(1), 1-24.
 
 <br>
 
