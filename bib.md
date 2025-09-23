@@ -18,6 +18,7 @@ Wikipedia is the 5th most-visited website worldwide. Web traffic is often monito
 **References**
 
 - Chelsy Xie, X., Johnson, I., & Gomez, A. (2019, May). [Detecting and gauging impact on Wikipedia page views](https://dl.acm.org/doi/pdf/10.1145/3308560.3316751). In Companion Proceedings of The 2019 World Wide Web Conference (pp. 1254-1261).
+- [Structural Time Series](https://structural-time-series.fastforwardlabs.com/).
 
 <br>
 
