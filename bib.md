@@ -8,6 +8,16 @@ layout: default
 
 <br>
 
+### 64th Commit
+#### Temporal Regularity of Wikipedia Consumption
+
+
+**References**
+
+- Piccardi, T., Gerlach, M., & West, R. (2024, May). [Curious rhythms: Temporal regularities of wikipedia consumption](https://ojs.aaai.org/index.php/ICWSM/article/view/31386). In Proceedings of the International AAAI Conference on Web and Social Media (Vol. 18, pp. 1249-1261).
+
+<br>
+
 
 ### 63rd Commit
 #### Detecting Impact on Wikipedia Page Views
