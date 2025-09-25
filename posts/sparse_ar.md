@@ -131,7 +131,8 @@ layout: default
             <div class="toc-section-main" onclick="scrollToSection('example-1')">Example 1: Mathematical Proof</div>
         </div>
     </div>
-</div>
+
+    <div class="content-main">
 
 
 # Interpretable Time Series Autoregression
@@ -285,6 +286,7 @@ as claimed.
 Wikipedia traffic time series dataset (see [145k dataset of daily Wikipedia traffic](https://doi.org/10.5281/zenodo.7371038)).
 
 
+</div>
 
 
 <br>
