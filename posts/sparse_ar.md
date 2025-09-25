@@ -131,7 +131,7 @@ layout: default
             <div class="toc-section-main" onclick="scrollToSection('example-1')">Example 1: Mathematical Proof</div>
         </div>
     </div>
-
+</div>
 
 
 # Interpretable Time Series Autoregression
