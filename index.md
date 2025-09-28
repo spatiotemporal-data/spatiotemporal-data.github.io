@@ -23,7 +23,7 @@ window.MathJax = {
 </script>
 
 
-This project aims at supporting research for all aspects of spatiotemporal data computing with machine learning and addressing many scientific, mathematical, industrial, and engineering problems in:
+This project aims at supporting interdisciplinary research for diverse aspects of spatiotemporal data computing with machine learning and addressing many scientific, mathematical, industrial, and engineering problems in:
 
 - Human mobility modeling
 - Intelligent & sustainable urban systems
