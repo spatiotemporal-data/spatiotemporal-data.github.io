@@ -282,6 +282,7 @@ $$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}(\boldsymbol{x})\b
 where $\mathcal{C}:\mathbb{R}^{T}\to\mathbb{R}^{T\times T}$ denotes the circulant operator. The circulant matrix is defined as:
 
 $$\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_T & x_{T-1} & \cdots & x_{2} \\ x_2 & x_1 & x_{T} & \cdots & x_{3} \\ x_3 & x_2 & x_1 & \cdots & x_{4} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ x_{T} & x_{T-1} & x_{T-2} & \cdots & x_{1} \\ \end{bmatrix}\in\mathbb{R}^{T\times T}$$
+
 which forms a square matrix. It always holds that $\|\mathcal{C}(\boldsymbol{x})\|_F=\sqrt{T}\cdot\|\boldsymbol{x}\|_2$ where $\|\cdot\|_F$ and $\|\cdot\|_2$ are the Frobenius norm of matrix and the $\ell_2$-norm of vector, respectively.
 
 <br>
