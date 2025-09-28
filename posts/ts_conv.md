@@ -1272,7 +1272,7 @@ $$\boldsymbol{b}_{\ell}\leq\boldsymbol{w}\leq \boldsymbol{b}_{u}$$
 
 In fact, the linear regression with sparsity constraints in the form of $\ell_0$-norm can be easily converted into a mixed-integer programming problem. Thus, the problem illustrated in Figure 12 is equivalent to
 
-$$\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_t\leq \tau \end{cases} \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_t\leq \tau \end{cases} \end{aligned} \tag{27}$$
 
 where $\boldsymbol{\beta}\in\mathbb{R}^{T-1}$ is the binary decision variable. The weight $\alpha\in\mathbb{R}$ (possibly a great value for most cases) can control the upper bound of the vector $\boldsymbol{w}$. If $\beta_t=1$, then the value of $w_t$ is ranging between $0$ and $\alpha$. Otherwise, the value of $w_t$ is $0$ because both lower and upper bounds are $0$. In fact, the last constraint can also be written as follows,
 
@@ -1445,7 +1445,7 @@ $$\boldsymbol{X}_{t}\in\mathbb{R}^{M\times N},\,t=1,2,\ldots,150$$
 
 with $M$ rows and $N$ columns, while the dataset is in the form of a tensor such that $\boldsymbol{\mathcal{X}}\in\mathbb{R}^{M\times N\times T}$ (element-wise, $x_{m,n,t}\in\mathbb{R}$). Thus, the optimization problem for learning sparse convolutional kernel can be formulated as follows,
 
-$$\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\sum_{m=1}^{M}\sum_{n=1}^{N}\|\boldsymbol{x}_{m,n}-\boldsymbol{A}_{m,n}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_{t}\leq\tau \quad\quad\color{blue}\text{(sparsity)} \\ \displaystyle\sum_{t=1}^{T-1}w_{t}=1 \quad\quad\color{blue}\text{(normalization)} \end{cases} \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\sum_{m=1}^{M}\sum_{n=1}^{N}\|\boldsymbol{x}_{m,n}-\boldsymbol{A}_{m,n}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_{t}\leq\tau \quad\quad\color{blue}\text{(sparsity)} \\ \displaystyle\sum_{t=1}^{T-1}w_{t}=1 \quad\quad\color{blue}\text{(normalization)} \end{cases} \end{aligned} \tag{28}$$
 
 where $\tau\in\mathbb{Z}^{+}$ is the upper bound of the number of nonzero entries in $\boldsymbol{w}$.
 
