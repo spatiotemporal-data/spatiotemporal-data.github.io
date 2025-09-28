@@ -16,12 +16,12 @@ window.MathJax = {
 <script>
 window.MathJax = {
   chtml: {
-    scale: 0.9,
-    minScale: 0.8
+    scale: 0.95,
+    minScale: 0.9
   },
   svg: {
-    scale: 0.9,
-    minScale: 0.8
+    scale: 0.95,
+    minScale: 0.9
   },
   tex: {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
