@@ -1266,7 +1266,9 @@ w, S, r = SP(x, tau, 10)
 
 #### V-F. Mixed-Integer Programming
 
-There are often some special-purpose algorithms for solving constrained linear regression problems, see [constrained least squares](https://en.wikipedia.org/wiki/Constrained_least_squares). Some examples of constraints include: 1) Non-negative least squares in which the vector $\boldsymbol{w}$ must satisfy the vector inequality $\boldsymbol{w}\geq 0$ (each entry must be either positive or zero); 2) Box-constrained least squares in which the vector $\boldsymbol{w}$ must satisfy the vector inequalities $\boldsymbol{b}_{\ell}\leq\boldsymbol{w}\leq \boldsymbol{b}_{u}$.
+There are often some special-purpose algorithms for solving constrained linear regression problems, see [constrained least squares](https://en.wikipedia.org/wiki/Constrained_least_squares). Some examples of constraints include: 1) Non-negative least squares in which the vector $\boldsymbol{w}$ must satisfy the vector inequality $\boldsymbol{w}\geq 0$ (each entry must be either positive or zero); 2) Box-constrained least squares in which the vector $\boldsymbol{w}$ must satisfy the vector inequalities 
+
+$$\boldsymbol{b}_{\ell}\leq\boldsymbol{w}\leq \boldsymbol{b}_{u}$$
 
 In fact, the linear regression with sparsity constraints in the form of $\ell_0$-norm can be easily converted into a mixed-integer programming problem. Thus, the problem illustrated in Figure 12 is equivalent to
 
