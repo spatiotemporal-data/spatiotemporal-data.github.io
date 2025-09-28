@@ -535,13 +535,13 @@ For the entire implementation, please check out [Appendix](https://spatiotempora
 <b>Example 6.</b> For any vector $\boldsymbol{x}\in\mathbb{R}^{T}$, it always holds that 
 </span>
 
-$$\|\mathcal{H}(\mathcal{D}(\boldsymbol{x}))\|_F=\|\boldsymbol{x}\|_2$$
+$$\color{gray}\|\mathcal{H}(\mathcal{D}(\boldsymbol{x}))\|_F=\|\boldsymbol{x}\|_2$$
 
 <span style="color:gray">
 in which the operator $\mathcal{D}(\cdot)$ is defined as follows,
 </span>
 
-$$\mathcal{D}(\boldsymbol{x})=\bigr(x_1,\frac{1}{\sqrt{\rho_2}}x_2,\frac{1}{\sqrt{\rho_3}}x_3,\cdots,\frac{1}{\sqrt{\rho_{T-1}}}x_{T-1},x_T\bigl)^\top\in\mathbb{R}^{T}$$
+$$\color{gray}\mathcal{D}(\boldsymbol{x})=\bigr(x_1,\frac{1}{\sqrt{\rho_2}}x_2,\frac{1}{\sqrt{\rho_3}}x_3,\cdots,\frac{1}{\sqrt{\rho_{T-1}}}x_{T-1},x_T\bigl)^\top\in\mathbb{R}^{T}$$
 
 <span style="color:gray">
 Verify this property on the vector $\boldsymbol{x}=(x_1,x_2,\cdots,x_6)^\top$ if the number of rows of the Hankel matrix is set as $4$.
@@ -553,13 +553,13 @@ Verify this property on the vector $\boldsymbol{x}=(x_1,x_2,\cdots,x_6)^\top$ if
 According to the defintion, we have
 </span>
 
-$$\mathcal{D}(\boldsymbol{x})=\bigr(x_1,\frac{1}{\sqrt{2}}x_2,\frac{1}{\sqrt{3}}x_3,\frac{1}{\sqrt{3}}x_4,\frac{1}{\sqrt{2}}x_{5},x_6\bigl)^\top$$
+$$\color{gray}\mathcal{D}(\boldsymbol{x})=\bigr(x_1,\frac{1}{\sqrt{2}}x_2,\frac{1}{\sqrt{3}}x_3,\frac{1}{\sqrt{3}}x_4,\frac{1}{\sqrt{2}}x_{5},x_6\bigl)^\top$$
 
 <span style="color:gray">
 The Hankel matrix is given by
 </span>
 
-$$\mathcal{H}(\mathcal{D}(\boldsymbol{x}))=\begin{bmatrix} x_1 & \frac{1}{\sqrt{2}}x_2 & \frac{1}{\sqrt{3}}x_3 \\ \frac{1}{\sqrt{2}}x_2 & \frac{1}{\sqrt{3}}x_3 & \frac{1}{\sqrt{3}}x_4 \\ \frac{1}{\sqrt{3}}x_3 & \frac{1}{\sqrt{3}}x_4 & \frac{1}{\sqrt{2}}x_5 \\ \frac{1}{\sqrt{3}}x_4 & \frac{1}{\sqrt{2}}x_5 & x_6 \end{bmatrix}$$
+$$\color{gray}\mathcal{H}(\mathcal{D}(\boldsymbol{x}))=\begin{bmatrix} x_1 & \frac{1}{\sqrt{2}}x_2 & \frac{1}{\sqrt{3}}x_3 \\ \frac{1}{\sqrt{2}}x_2 & \frac{1}{\sqrt{3}}x_3 & \frac{1}{\sqrt{3}}x_4 \\ \frac{1}{\sqrt{3}}x_3 & \frac{1}{\sqrt{3}}x_4 & \frac{1}{\sqrt{2}}x_5 \\ \frac{1}{\sqrt{3}}x_4 & \frac{1}{\sqrt{2}}x_5 & x_6 \end{bmatrix}$$
 
 <span style="color:gray">
 Thus, the Frobenius norm of this Hankel matrix is equivalent to the $\ell_2$-norm of the vector $\boldsymbol{x}$.
