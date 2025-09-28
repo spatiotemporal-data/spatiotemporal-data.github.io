@@ -2,6 +2,24 @@
 layout: default
 ---
 
+<script>
+window.MathJax = {
+  chtml: {
+    scale: 0.95,
+    minScale: 0.9
+  },
+  svg: {
+    scale: 0.95,
+    minScale: 0.9
+  },
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+
+
 ## Knowledge Repository
 
 [Xinyu Chen (陈新宇)](https://xinychen.github.io/) created this page since early 2024 with the purpose of fostering research knowledge, vision, insight, and style. In the meantime, it aims to connect random concepts with mathematics and machine learning.
