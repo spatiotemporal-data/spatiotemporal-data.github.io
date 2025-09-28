@@ -1441,7 +1441,7 @@ Investigating fluid dynamic systems is of great interest for uncovering spatiote
 
 As shown in Figure 15, these fluid flow snapshots are in the form of matrices 
 
-$$\boldsymbol{X}_{t}\in\mathbb{R}^{M\times N}$, $t=1,2,\ldots,150$$
+$$\boldsymbol{X}_{t}\in\mathbb{R}^{M\times N},\,t=1,2,\ldots,150$$
 
 with $M$ rows and $N$ columns, while the dataset is in the form of a tensor such that $\boldsymbol{\mathcal{X}}\in\mathbb{R}^{M\times N\times T}$ (element-wise, $x_{m,n,t}\in\mathbb{R}$). Thus, the optimization problem for learning sparse convolutional kernel can be formulated as follows,
 
