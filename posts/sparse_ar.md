@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
 
 # Interpretable Time Series Autoregression
 
@@ -37,6 +42,8 @@ Time series autoregression is a statistical model used to analyze and forecast t
 
 
 ### I-A. Definition of Autoregression
+
+The essential idea of time series autoregression is that a given data point of a time series is linearly dependent on the previous data points. Mathematically, the $d$th-order univariate autoregression of time series $\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}$ can be written as follows,
 
 The essential idea of time series autoregression is that a given data point of a time series is linearly dependent on the previous data points. Mathematically, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>th-order univariate autoregression of time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}"/> can be written as follows,
 
