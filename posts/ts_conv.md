@@ -331,11 +331,11 @@ Discrete Fourier transform (see [Wikipedia](https://en.wikipedia.org/wiki/Discre
 
 A crucial concept in signal processing is the convolution theorem, which states that convolution in the time domain is the multiplication in the frequency domain. This implies that the circular convolution can be efficiently computed by using the fast Fourier transform. The convolution theorem for discrete Fourier transform is summarized as follows,
 
-$$\mathcal{F}(\boldsymbol{x}\star\boldsymbol{y})=\mathcal{F}(\boldsymbol{x})\circ\mathcal{F}(\boldsymbol{y})$$
+$$\mathcal{F}(\boldsymbol{x}\star\boldsymbol{y})=\mathcal{F}(\boldsymbol{x})\circ\mathcal{F}(\boldsymbol{y}) \tag{5}$$
 
 or
 
-$$\boldsymbol{x}\star\boldsymbol{y}=\mathcal{F}^{-1}(\mathcal{F}(\boldsymbol{x})\circ\mathcal{F}(\boldsymbol{y}))$$
+$$\boldsymbol{x}\star\boldsymbol{y}=\mathcal{F}^{-1}(\mathcal{F}(\boldsymbol{x})\circ\mathcal{F}(\boldsymbol{y})) \tag{6}$$
 
 where $\mathcal{F}(\cdot)$ and $\mathcal{F}^{-1}(\cdot)$ denote the discrete Fourier transform and the inverse discrete Fourier transform, respectively. The symbol $\circ$ represents the Hadamard product, i.e., element-wise multiplication.
 
