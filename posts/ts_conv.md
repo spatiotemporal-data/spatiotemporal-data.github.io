@@ -112,7 +112,7 @@ Convolution is one of the most powerful operations in several deep learning fram
 
 By definition, for any vectors $\boldsymbol{x}=(x_1,x_2,\cdots,x_T)^\top\in\mathbb{R}^{T}$ and $\boldsymbol{y}=(y_1,y_2,\cdots,y_\tau)^\top\in\mathbb{R}^{\tau}$ with $\tau\leq T$, the circular convolution (denoted by the "star" symbol $\star$) of these two vectors is formulated as follows,
 
-$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T}$$
+$$\small\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T}$$
 
 Elment-wise, we have the formula to specify a circular convolution operation:
 
