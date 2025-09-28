@@ -112,8 +112,6 @@ Convolution is one of the most powerful operations in several deep learning fram
 
 By definition, for any vectors $\boldsymbol{x}=(x_1,x_2,\cdots,x_T)^\top\in\mathbb{R}^{T}$ and $\boldsymbol{y}=(y_1,y_2,\cdots,y_\tau)^\top\in\mathbb{R}^{\tau}$ with $\tau\leq T$, the circular convolution (denoted by the "star" symbol $\star$) of these two vectors is formulated as follows,
 
-$$\small\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T}$$
-
 $$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T}$$
 
 Elment-wise, we have the formula to specify a circular convolution operation:
@@ -379,7 +377,7 @@ where the Hankel matrix has $n$ rows and $T-n+1$ columns. This matrix is often u
 
 On the Hankel matrix $\mathcal{H}(\boldsymbol{x})$, if it can be approximated by the multiplication of two matrices $\boldsymbol{W}\in\mathbb{R}^{n\times R}$ and $\boldsymbol{Q}\in\mathbb{R}^{(T-n+1)\times R}$, then one can compute the inverse of Hankel matrix factorization as follows,
 
-$$\begin{aligned} \mathcal{H}(\boldsymbol{x})\approx&\boldsymbol{W}\boldsymbol{Q}^\top \\ \Rightarrow\quad\tilde{\boldsymbol{x}}=&\mathcal{H}^{\dagger}(\boldsymbol{W}\boldsymbol{Q}^{\top}) \\ \Rightarrow\quad\tilde{x}_t=&\frac{1}{\rho_t}\sum_{a+b=t+1}\boldsymbol{w}_{a}^\top\boldsymbol{q}_{b} \\ \Rightarrow\quad\tilde{x}_{t}=&\frac{1}{\rho_t}\sum_{r=1}^{R}\underbrace{\sum_{a+b=t+1}w_{a,r}q_{b,r}}_{\text{\color{red}circular convolution}} \end{aligned}$$
+$$\begin{aligned} \mathcal{H}(\boldsymbol{x})\approx&\boldsymbol{W}\boldsymbol{Q}^\top \\ \Rightarrow\quad\tilde{\boldsymbol{x}}=&\mathcal{H}^{\dagger}(\boldsymbol{W}\boldsymbol{Q}^{\top}) \\ \Rightarrow\quad\tilde{x}_t=&\frac{1}{\rho_t}\sum_{a+b=t+1}\boldsymbol{w}_{a}^\top\boldsymbol{q}_{b} \\ \Rightarrow\quad\tilde{x}_{t}=&\frac{1}{\rho_t}\sum_{r=1}^{R}\underbrace{\sum_{a+b=t+1}w_{a,r}q_{b,r}}_{\color{red}\text{circular convolution}} \end{aligned}$$
 
 where $\boldsymbol{w}_a$ and $\boldsymbol{q}_b$ are the $a$-th and $b$-th rows of $\boldsymbol{W}$ and $\boldsymbol{Q}$, respectively. Herein, $\mathcal{H}^{\dagger}(\cdot)$ denotes the inverse operator of Hankel matrix. For any matrix $\boldsymbol{Y}$ of size $n\times (T-n+1)$, the inverse operator is given by
 
@@ -1423,7 +1421,7 @@ Investigating fluid dynamic systems is of great interest for uncovering spatiote
 
 As shown in Figure 15, these fluid flow snapshots are in the form of matrices $\boldsymbol{X}_{t}\in\mathbb{R}^{M\times N},t=1,2,\ldots,150$ with $M$ rows and $N$ columns, while the dataset is in the form of a tensor such that $\boldsymbol{\mathcal{X}}\in\mathbb{R}^{M\times N\times T}$ (element-wise, $x_{m,n,t}\in\mathbb{R}$). Thus, the optimization problem for learning sparse convolutional kernel can be formulated as follows,
 
-$$\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\sum_{m=1}^{M}\sum_{n=1}^{N}\|\boldsymbol{x}_{m,n}-\boldsymbol{A}_{m,n}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_{t}\leq\tau \quad\quad\text{\color{blue}(sparsity)} \\ \displaystyle\sum_{t=1}^{T-1}w_{t}=1 \quad\quad\text{\color{blue}(normalization)} \end{cases} \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\sum_{m=1}^{M}\sum_{n=1}^{N}\|\boldsymbol{x}_{m,n}-\boldsymbol{A}_{m,n}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_{t}\leq\tau \quad\quad\color{blue}\text{(sparsity)} \\ \displaystyle\sum_{t=1}^{T-1}w_{t}=1 \quad\quad\color{blue}\text{(normalization)} \end{cases} \end{aligned}$$
 
 where $\tau\in\mathbb{Z}^{+}$ is the upper bound of the number of nonzero entries in $\boldsymbol{w}$.
 
