@@ -589,7 +589,7 @@ where $\left\|\cdot\right\|_*$ denotes the nuclear norm. As illustrated in Figur
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 6.</b> Singular value decomposition of matrix $\boldsymbol{X}\in\mathbb{R}^{m\times n}$. In the decomposed matrices, the unitary matrix $\boldsymbol{W}\in\mathbb{R}^{m\times t}$ (or $\boldsymbol{Q}\in\mathbb{R}^{n\times t}$) consists of $t$ orthogonal left (or right) singular vectors, while the $t$ diagonal entries of $\boldsymbol{S}$ are singular values such that $s_1\geq s_2\geq\cdots\geq s_t\geq 0$. Note that $t=\min\{m,n\}$ for notational convenience. 
+<b>Figure 6.</b> Singular value decomposition of matrix $\boldsymbol{X}\in\mathbb{R}^{m\times n}$. In the decomposed matrices, the unitary matrix $\boldsymbol{W}\in\mathbb{R}^{m\times t}$ (or $\boldsymbol{Q}\in\mathbb{R}^{n\times t}$) consists of $t$ orthogonal left (or right) singular vectors, while the $t$ diagonal entries of $\boldsymbol{S}$ are singular values such that $s_1\geq s_2\geq\cdots\geq s_t\geq 0$. Note that $t=\min\left\{m,n\right\}$ for notational convenience. 
 </p>
 
 <br>
