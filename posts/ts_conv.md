@@ -1125,7 +1125,7 @@ where $\tau\in\mathbb{Z}^{+}$ is the sparsity level, i.e., the number of nonzero
 <b>$\ell_0$-Norm.</b> For any vector $\boldsymbol{x}\in\mathbb{R}^{T}$, the $\ell_0$-norm is defined as follows,
 </span>
 
-$$\|\boldsymbol{x}\|_0=\operatorname{card}\{i\mid x_i\neq 0\}=|\operatorname{supp}(\boldsymbol{x})|$$
+$$\color{gray}\|\boldsymbol{x}\|_0=\operatorname{card}\{i\mid x_i\neq 0\}=|\operatorname{supp}(\boldsymbol{x})|$$
 
 <span style="color:gray">
 where $\operatorname{card}\{\cdot\}$ and $\operatorname{supp}(\cdot)$ denote the cardinality and the support set of $\boldsymbol{x}$, respectively. For instance, given vector $\boldsymbol{x}=(0,1,2,3,4)^\top$, the support set is $\operatorname{supp}(\boldsymbol{x})=\{2,3,4,5\}$ and the number of nonzero entries is  $\|\boldsymbol{x}\|_0=4$.
