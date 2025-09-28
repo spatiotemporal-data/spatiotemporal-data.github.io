@@ -999,9 +999,9 @@ $$\min_{\boldsymbol{\theta}}\,\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2$$
 
 is ill-posed because the optimal solution is all entries of kernel $\boldsymbol{\theta}$ being zeros. To address this challenge, we assume that the first entry of $\boldsymbol{\theta}$ is one and the following $T-1$ entries are $-\boldsymbol{w}$ in which $\boldsymbol{w}\in\mathbb{R}^{T-1}$ is a non-negative vector. Thus, the optimization problem becomes
 
-$$\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2 \\ \text{s.t.}\,&\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix} \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2 \\ \text{s.t.}\,&\boldsymbol{\theta}=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix} \end{aligned} \tag{22}$$
 
-where the constraint is of great significance for minimizing the objective function.
+where the constraint is significant for minimizing the objective function.
 
 <br>
 
@@ -1009,11 +1009,11 @@ where the constraint is of great significance for minimizing the objective funct
 
 Recall that the circular convolution can be converted into a linear transformation with circulant matrix, namely, $\boldsymbol{\theta}\star\boldsymbol{x}=\mathcal{C}(\boldsymbol{\theta})\boldsymbol{x}$. If we let $\boldsymbol{\Theta}=\mathcal{C}(\boldsymbol{\theta})\in\mathbb{R}^{T\times T}$, then this matrix can be expressed as a matrix polynomial such that
 
-$$\boldsymbol{\Theta}=\boldsymbol{I}_{T}-w_1\boldsymbol{F}-w_2\boldsymbol{F}^2-\cdots-w_{T-1}\boldsymbol{F}^{T-1}$$
+$$\boldsymbol{\Theta}=\boldsymbol{I}_{T}-w_1\boldsymbol{F}-w_2\boldsymbol{F}^2-\cdots-w_{T-1}\boldsymbol{F}^{T-1} \tag{23}$$
 
 which is equivalent to
 
-$$\boldsymbol{\theta}=(1,-w_1,-w_2,\cdots,-w_{T-1})^\top=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix}$$
+$$\boldsymbol{\theta}=(1,-w_1,-w_2,\cdots,-w_{T-1})^\top=\begin{bmatrix} 1 \\ -\boldsymbol{w} \end{bmatrix} \tag{24}$$
 
 where $\boldsymbol{I}_{T}\in\mathbb{R}^{T\times T}$ is the identity matrix and the time-shift matrix is given by
 
@@ -1046,7 +1046,7 @@ $$\boldsymbol{F}^4=\begin{bmatrix} 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 &
 
 As a result, the loss function constructed by circular convolution is
 
-$$\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2=\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2$$
+$$\|\boldsymbol{x}\star\boldsymbol{\theta}\|_2^2=\|\mathcal{C}(\boldsymbol{x})\boldsymbol{\theta}\|_2^2=\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \tag{25}$$
 
 where the auxiliary matrix $\boldsymbol{A}\in\mathbb{R}^{T\times (T-1)}$ is comprised of the last $T-1$ columns of the circulant matrix $\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{T\times T}$, namely,
 
