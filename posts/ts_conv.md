@@ -114,6 +114,8 @@ By definition, for any vectors $\boldsymbol{x}=(x_1,x_2,\cdots,x_T)^\top\in\math
 
 $$\small\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T}$$
 
+$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T}$$
+
 Elment-wise, we have the formula to specify a circular convolution operation:
 
 $$z_{t}=\sum_{k=1}^{\tau}x_{t-k+1} y_{k},\,\forall t\in\{1,2,\ldots,T\}$$
