@@ -18,7 +18,7 @@ window.MathJax = {
 
 <p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression. The optimization on sparse autoregression is used to identify dominant and positive auto-correlations of time series (e.g., human mobility and climate variables).</span></p>
 
-<p align="center"><span style="color:gray">(Updated on August 9, 2025)</span></p>
+<p align="center"><span style="color:gray">(Updated on September 28, 2025)</span></p>
 
 <br>
 
@@ -54,7 +54,7 @@ The essential idea of time series autoregression is that a given data point of a
 
 
 $$
-x_{t}=\sum_{k=1}^{d}w_{k}x_{t-k}+\epsilon_{t} \tag{2}
+x_{t}=\sum_{k=1}^{d}w_{k}x_{t-k}+\epsilon_{t} \tag{1}
 $$
 
 
