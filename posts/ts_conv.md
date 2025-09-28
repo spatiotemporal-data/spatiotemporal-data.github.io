@@ -1438,6 +1438,8 @@ Investigating fluid dynamic systems is of great interest for uncovering spatiote
 
 As shown in Figure 15, these fluid flow snapshots are in the form of matrices $\boldsymbol{X}_{t}\in\mathbb{R}^{M\times N},t=1,2,\ldots,150$ with $M$ rows and $N$ columns, while the dataset is in the form of a tensor such that $\boldsymbol{\mathcal{X}}\in\mathbb{R}^{M\times N\times T}$ (element-wise, $x_{m,n,t}\in\mathbb{R}$). Thus, the optimization problem for learning sparse convolutional kernel can be formulated as follows,
 
+As shown in Figure 15, these fluid flow snapshots are in the form of matrices $\boldsymbol{X}_{t} \in \mathbb{R}^{M \times N}$, $t = 1, 2, \ldots, 150$ with $M$ rows and $N$ columns, while the dataset is in the form of a tensor such that $\boldsymbol{\mathcal{X}} \in \mathbb{R}^{M \times N \times T}$ (element-wise, $x_{m,n,t} \in \mathbb{R}$). Thus, the optimization problem for learning sparse convolutional kernel can be formulated as follows,
+
 $$\begin{aligned} \min_{\boldsymbol{w},\boldsymbol{\beta}}\,&\sum_{m=1}^{M}\sum_{n=1}^{N}\|\boldsymbol{x}_{m,n}-\boldsymbol{A}_{m,n}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{T-1} \\ 0\leq\boldsymbol{w}\leq\alpha\cdot\boldsymbol{\beta} \\ \displaystyle\sum_{t=1}^{T-1}\beta_{t}\leq\tau \quad\quad\color{blue}\text{(sparsity)} \\ \displaystyle\sum_{t=1}^{T-1}w_{t}=1 \quad\quad\color{blue}\text{(normalization)} \end{cases} \end{aligned}$$
 
 where $\tau\in\mathbb{Z}^{+}$ is the upper bound of the number of nonzero entries in $\boldsymbol{w}$.
