@@ -428,7 +428,9 @@ This principle is well-suited to the construction of vector $\tilde{\boldsymbol{
 <b>Example 5.</b> Given vector $\boldsymbol{x}=(x_1,x_2,\cdots,x_6)^\top\in\mathbb{R}^{6}$, let the number of rows of the Hankel matrix be $4$, the Hankel matrix is given by
 </span>
 
+<span style="color:gray">
 $$\mathcal{H}(\boldsymbol{x})=\begin{bmatrix} x_1 & x_2 & x_3 \\ x_2 & x_3 & x_4 \\ x_3 & x_4 & x_5 \\ x_4 & x_5 & x_6 \end{bmatrix}$$
+</span>
 
 <span style="color:gray">
 If it takes a rank-one approximation such that $\mathcal{H}(\boldsymbol{x})\approx\boldsymbol{w}\boldsymbol{q}^\top$ with $\boldsymbol{w}\in\mathbb{R}^{4}$ and $\boldsymbol{q}\in\mathbb{R}^{3}$, then the inverse of Hankel matrix factorization can be written as follows,
