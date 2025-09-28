@@ -182,7 +182,7 @@ As can be seen, circular convolution between two vectors can essentially be view
 <span style="color:gray">
 <b>Example 1.</b> Given vectors $\boldsymbol{x}=(0,1,2,3,4)^\top$ and $\boldsymbol{y}=(2,-1,3)^\top$, the circular convolution $\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=(5,14,3,7,11)^\top$ has the following entries:</span>
 
-$$\begin{cases} z_1=x_1y_1+x_5y_2+x_4y_3=0\times 2+4\times(-1)+3\times 3=5 \\ z_2=x_2y_1+x_1y_2+x_5y_3=1\times 2+0\times(-1)+4\times 3=14 \\ z_3=x_3y_1+x_2y_2+x_1y_3=2\times 2+1\times (-1)+0\times 3=3 \\ z_4=x_4y_1+x_3y_2+x_2y_3=3\times 2+2\times (-1)+1\times 3=7 \\ z_5=x_5y_1+x_4y_2+x_3y_3=4\times 2+3\times (-1)+2\times 3=11 \end{cases}$$
+$$\color{gray}\begin{cases} z_1=x_1y_1+x_5y_2+x_4y_3=0\times 2+4\times(-1)+3\times 3=5 \\ z_2=x_2y_1+x_1y_2+x_5y_3=1\times 2+0\times(-1)+4\times 3=14 \\ z_3=x_3y_1+x_2y_2+x_1y_3=2\times 2+1\times (-1)+0\times 3=3 \\ z_4=x_4y_1+x_3y_2+x_2y_3=3\times 2+2\times (-1)+1\times 3=7 \\ z_5=x_5y_1+x_4y_2+x_3y_3=4\times 2+3\times (-1)+2\times 3=11 \end{cases}$$
 
 <span style="color:gray">
 where $x_{0}=x_5$ and $x_{-1}=x_4$ according to the definition.
@@ -222,18 +222,18 @@ In the feild of signal processing, this linear transformation is one of the most
 <b>Example 2.</b> Given vectors $\boldsymbol{x}=(0,1,2,3,4)^\top$ and $\boldsymbol{y}=(2,-1,3)^\top$, the circular convolution $\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}$ can be expressed as:
 </span>
 
-$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}$$
+$$\color{gray}\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}$$
 
 <span style="color:gray">
 where $\mathcal{C}_{3}(\boldsymbol{x})$ is the convolution matrix with $\tau=3$ columns. Specifically, the convolution matrix is given by
 </span>
 
-$$\mathcal{C}_{3}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}$$
+$$\color{gray}\mathcal{C}_{3}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}$$
 
 <span style="color:gray">
 As a result, it gives</span>
 
-$$\boldsymbol{z}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}\begin{bmatrix} 2 \\ -1 \\ 3 \end{bmatrix}=\begin{bmatrix} 5 \\ 14 \\ 3 \\ 7 \\ 11 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{z}=\mathcal{C}_{3}(\boldsymbol{x})\boldsymbol{y}=\begin{bmatrix} 0 & 4 & 3 \\ 1 & 0 & 4 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \\ 4 & 3 & 2 \end{bmatrix}\begin{bmatrix} 2 \\ -1 \\ 3 \end{bmatrix}=\begin{bmatrix} 5 \\ 14 \\ 3 \\ 7 \\ 11 \end{bmatrix}$$
 
 <span style="color:gray">
 This representation shows that circular convolution is equivalent to a matrix-vector multiplication, making it easier to understand, especially in signal processing applications.
@@ -303,19 +303,19 @@ which forms a square matrix. It always holds that $\|\mathcal{C}(\boldsymbol{x})
 <b>Example 3.</b> Given vectors $\boldsymbol{x}=(0,1,2,3,4)^\top$ and $\boldsymbol{y}=(2,-1,3,0,0)^\top$, the circular convolution $\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}$ is identical to
 </span>
 
-$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}=(5,14,3,7,11)^\top$$
+$$\color{gray}\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}=(5,14,3,7,11)^\top$$
 
 <span style="color:gray">
 where $\mathcal{C}(\boldsymbol{x})$ is the circulant matrix formed from $\boldsymbol{x}$ such that
 </span>
 
-$$\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}$$
+$$\color{gray}\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}$$
 
 <span style="color:gray">
 Thus, the result can be written as follows,
 </span>
 
-$$\boldsymbol{z}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}\begin{bmatrix} 2 \\ -1 \\ 3 \\ 0 \\ 0 \end{bmatrix}=\begin{bmatrix} 5 \\ 14 \\ 3 \\ 7 \\ 11 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{z}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}\begin{bmatrix} 2 \\ -1 \\ 3 \\ 0 \\ 0 \end{bmatrix}=\begin{bmatrix} 5 \\ 14 \\ 3 \\ 7 \\ 11 \end{bmatrix}$$
 
 <span style="color:gray">
 The example shows that the circular convolution of $\boldsymbol{x}$ and $(2,-1,3)^\top$ is equivalent to the circular convolution of $\boldsymbol{x}$ and $\boldsymbol{y}$ with its last two entries padded with zeros. Thus, to compute the circular convolution of $\boldsymbol{x}\in\mathbb{R}^{T}$ and $\boldsymbol{y}\in\mathbb{R}^{\tau}$ when $T$ is greater than $\tau$, one can simply append $T-\tau$ zeros to the end of $\boldsymbol{y}$ and perform the circular convolution.
@@ -600,19 +600,19 @@ where $\Vert\cdot\Vert_*$ denotes the nuclear norm. As illustrated in Figure 6, 
 <b>Example 7.</b> Given vector $\boldsymbol{x}=(0,1,2,3,4)^\top$, the circulant matrix is
 </span>
 
-$$\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}$$
+$$\color{gray}\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}$$
 
 <span style="color:gray">
 Thus, the singular values are
 </span>
 
-$$\boldsymbol{s}=(10, 4.25325404, 4.25325404, 2.62865556, 2.62865556)^\top$$
+$$\color{gray}\boldsymbol{s}=(10, 4.25325404, 4.25325404, 2.62865556, 2.62865556)^\top$$
 
 <span style="color:gray">
 As a result, we have the nuclear norm as follows,
 </span>
 
-$$\left\|\mathcal{C}(\boldsymbol{x})\right\|_{*}=\sum_{t=1}^{5}s_t=23.7638$$
+$$\color{gray}\left\|\mathcal{C}(\boldsymbol{x})\right\|_{*}=\sum_{t=1}^{5}s_t=23.7638$$
 
 <span style="color:gray">
 Please reproduce the results by using the following `numpy` implementation.
@@ -662,7 +662,7 @@ This relationship draws a strong connection between circulant matrices and Fouri
 <b>Example 8.</b> Given vector $\boldsymbol{x}=(0,1,2,3,4)^\top$, the circulant matrix is
 </span>
 
-$$\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}$$
+$$\color{gray}\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}$$
 
 <span style="color:gray">
 The eigenvalues of $\mathcal{C}(\boldsymbol{x})$ and the fast Fourier transform of $\boldsymbol{x}$ can be computed using `numpy` as follows.
@@ -697,7 +697,7 @@ Fast Fourier transform of x:
 In this case, the $\ell_1$-norm of the complex valued $\mathcal{F}(\boldsymbol{x})=(a_1+b_1i, a_2+b_2i, \cdots, a_5+b_5i)^\top$---the imaginary unit is defined as $i=\sqrt{-1}$---is given by
 </span>
 
-$$\|\mathcal{C}(\boldsymbol{x})\|_{*}=\|\mathcal{F}(\boldsymbol{x})\|_1=\sum_{t=1}^{5}|a_t+b_ti|=\sum_{t=1}^{5}\sqrt{a_t^2+b_t^2}=23.7638$$
+$$\color{gray}\|\mathcal{C}(\boldsymbol{x})\|_{*}=\|\mathcal{F}(\boldsymbol{x})\|_1=\sum_{t=1}^{5}|a_t+b_ti|=\sum_{t=1}^{5}\sqrt{a_t^2+b_t^2}=23.7638$$
 
 ---
 
@@ -719,13 +719,13 @@ where $\epsilon$ in the constraint represents the tolerance of errors between th
 <b>Example 9.</b> Given vector $\boldsymbol{x}=(1,2,3,4)^\top$ and observed index set $\Omega=\{2,4\}$, the orthogonal projection supported on $\Omega$ is
 </span>
 
-$$\mathcal{P}_{\Omega}(\boldsymbol{x})=\begin{bmatrix} 0 \\ 2 \\ 0 \\ 4 \end{bmatrix}$$
+$$\color{gray}\mathcal{P}_{\Omega}(\boldsymbol{x})=\begin{bmatrix} 0 \\ 2 \\ 0 \\ 4 \end{bmatrix}$$
 
 <span style="color:gray">
 On the complement of $\Omega$, we have
 </span>
 
-$$\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{x})=\begin{bmatrix} 1 \\ 0 \\ 3 \\ 0 \end{bmatrix}$$
+$$\color{gray}\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{x})=\begin{bmatrix} 1 \\ 0 \\ 3 \\ 0 \end{bmatrix}$$
 
 ---
 
@@ -959,13 +959,13 @@ where $\mathcal{F}(\cdot)$ denotes the discrete Fourier transform. The symbol $\
 <b>Example 10.</b> Given vectors $\boldsymbol{x}=(0,1,2,3,4)^\top$ and $\boldsymbol{\ell}=(2,-1,0,0,-1)^\top$, the circular convolution is
 </span>
 
-$$\boldsymbol{\ell}\star\boldsymbol{x}=\mathcal{C}(\boldsymbol{\ell})\boldsymbol{x}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix} =\begin{bmatrix} -5 \\ 0 \\ 0 \\ 0 \\ 5 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{\ell}\star\boldsymbol{x}=\mathcal{C}(\boldsymbol{\ell})\boldsymbol{x}=\begin{bmatrix} 2 & -1 & 0 & 0 & -1 \\ -1 & 2 & -1 & 0 & 0 \\ 0 & -1 & 2 & -1 & 0 \\ 0 & 0 & -1 & 2 & -1 \\ -1 & 0 & 0 & -1 & 2 \\ \end{bmatrix} \begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix} =\begin{bmatrix} -5 \\ 0 \\ 0 \\ 0 \\ 5 \end{bmatrix}$$
 
 <span style="color:gray">
 and the regularization is
 </span>
 
-$$\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2=\frac{1}{2}((-5)^2+5^2)=25$$
+$$\color{gray}\mathcal{R}(\boldsymbol{x})=\frac{1}{2}\|\boldsymbol{\ell}\star\boldsymbol{x}\|_2^2=\frac{1}{2}((-5)^2+5^2)=25$$
 
 <span style="color:gray">
 How to compute the regularization $\mathcal{R}(\boldsymbol{x})$ with fast Fourier transform? 1) Compute the fast Fourier transform on $\boldsymbol{\ell}$ and $\boldsymbol{x}$ as $\mathcal{F}(\boldsymbol{\ell})$ and $\mathcal{F}(\boldsymbol{x})$, respectively; 2) Compute the regularization as $\mathcal{R}(\boldsymbol{x})=25$.
@@ -1027,17 +1027,17 @@ $$\boldsymbol{F}=\begin{bmatrix} 0 & 0 & 0 & \cdots & 0 & 1 \\ 1 & 0 & 0 & \cdot
 <b>Example 11.</b> Any square matrix can be multiplied by itself and the result is a square matrix of the same size. Given a time-shift matrix of size $5\times 5$ such that 
 </span>
 
-$$\boldsymbol{F}=\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{F}=\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}$$
 
 <span style="color:gray">
 Then, the power of matrix $\boldsymbol{F}$ can be written as follows,
 </span>
 
-$$\boldsymbol{F}^2=\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}=\begin{bmatrix} 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{F}^2=\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}=\begin{bmatrix} 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \end{bmatrix}$$
 
-$$\boldsymbol{F}^3=\begin{bmatrix} 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \end{bmatrix}\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}=\begin{bmatrix} 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{F}^3=\begin{bmatrix} 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \end{bmatrix}\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}=\begin{bmatrix} 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \end{bmatrix}$$
 
-$$\boldsymbol{F}^4=\begin{bmatrix} 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \end{bmatrix}\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}=\begin{bmatrix} 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{F}^4=\begin{bmatrix} 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \end{bmatrix}\begin{bmatrix} 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \end{bmatrix}=\begin{bmatrix} 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \end{bmatrix}$$
 
 ---
 
@@ -1089,19 +1089,19 @@ As can be seen, one of the most intriguing properties is the circular convolutio
 <b>Example 12.</b> Given vectors $\boldsymbol{x}=(0,1,2,3,4)^\top$ and $\boldsymbol{\theta}=(1,0,0,0,-1)^\top$, the circular matrix is
 </span>
 
-$$\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}$$
+$$\color{gray}\mathcal{C}(\boldsymbol{x})=\begin{bmatrix} 0 & 4 & 3 & 2 & 1 \\ 1 & 0 & 4 & 3 & 2 \\ 2 & 1 & 0 & 4 & 3 \\ 3 & 2 & 1 & 0 & 4 \\ 4 & 3 & 2 & 1 & 0 \end{bmatrix}$$
 
 <span style="color:gray">
 and the auxiliary matrix $\boldsymbol{A}$ is
 </span>
 
-$$\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}$$
 
 <span style="color:gray">
 Thus, we can compute the circular convolution $\boldsymbol{x}\star\boldsymbol{\theta}$ by
 </span>
 
-$$\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}=\begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix}-\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}\begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \\ \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix}-\begin{bmatrix} 1 \\ 2 \\ 3 \\ 4 \\ 0 \\ \end{bmatrix}=\begin{bmatrix} -1 \\ -1 \\ -1 \\ -1 \\ 4 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}=\begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix}-\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}\begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \\ \end{bmatrix}=\begin{bmatrix} 0 \\ 1 \\ 2 \\ 3 \\ 4 \\ \end{bmatrix}-\begin{bmatrix} 1 \\ 2 \\ 3 \\ 4 \\ 0 \\ \end{bmatrix}=\begin{bmatrix} -1 \\ -1 \\ -1 \\ -1 \\ 4 \end{bmatrix}$$
 
 ---
 
@@ -1204,13 +1204,13 @@ Thus, the first step in the iterative process of subspace pursuit can select the
 <b>Example 13.</b> Given vector $\boldsymbol{x}=(0,1,2,3,4)^\top$, the auxiliary matrix $\boldsymbol{A}$ (i.e., the last 4 columns of circulant matrix $\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{5\times 5}$) is
 </span>
 
-$$\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}$$
 
 <span style="color:gray">
 The question is how to learn the vector $\boldsymbol{w}$ with sparsity level $\tau=2$ from the following optimization problem:
 </span>
 
-$$\begin{aligned} \min_{\boldsymbol{w}}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}$$
+$$\color{gray}\begin{aligned} \min_{\boldsymbol{w}}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}$$
 
 <span style="color:gray">
 In this case, the empirical solution of the decision variable is $\boldsymbol{w}=(0.44,0,0,0.44)^\top$. To reproduce it, the solution algorithm of subspace pursuit is given by
@@ -1288,13 +1288,13 @@ because the vector $\boldsymbol{\beta}$ is a non-negative vector.
 <b>Example 14.</b> Given vector $\boldsymbol{x}=(0,1,2,3,4)^\top$, the auxiliary matrix $\boldsymbol{A}$ (i.e., the last 4 columns of circulant matrix $\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{5\times 5}$) is
 </span>
 
-$$\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}$$
+$$\color{gray}\boldsymbol{A}=\begin{bmatrix} 4 & 3 & 2 & 1 \\ 0 & 4 & 3 & 2 \\ 1 & 0 & 4 & 3 \\ 2 & 1 & 0 & 4 \\ 3 & 2 & 1 & 0 \end{bmatrix}$$
 
 <span style="color:gray">
 The question is how to learn the vector $\boldsymbol{w}$ with sparsity level $\tau=2$ from the following optimization problem:
 </span>
 
-$$\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}$$
+$$\color{gray}\begin{aligned} \min_{\boldsymbol{w}\geq 0}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq \tau \end{aligned}$$
 
 <span style="color:gray">
 In this case, the empirical solution of the decision variable is $\boldsymbol{w}=(0.44,0,0,0.44)^\top$. To reproduce it, the solution algorithm of mixed-integer programming is given by
