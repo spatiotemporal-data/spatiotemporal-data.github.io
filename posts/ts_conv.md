@@ -612,7 +612,7 @@ $$\boldsymbol{s}=(10, 4.25325404, 4.25325404, 2.62865556, 2.62865556)^\top$$
 As a result, we have the nuclear norm as follows,
 </span>
 
-$$\|\mathcal{C}(\boldsymbol{x})\|_{*}=\sum_{t=1}^{5}s_t=23.7638$$
+$$\left\|\mathcal{C}(\boldsymbol{x})\right\|_{*}=\sum_{t=1}^{5}s_t=23.7638$$
 
 <span style="color:gray">
 Please reproduce the results by using the following `numpy` implementation.
