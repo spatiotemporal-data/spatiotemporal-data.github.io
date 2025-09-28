@@ -2,6 +2,23 @@
 layout: default
 ---
 
+<script>
+window.MathJax = {
+  chtml: {
+    scale: 0.95,
+    minScale: 0.9
+  },
+  svg: {
+    scale: 0.95,
+    minScale: 0.9
+  },
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+
 
 This project aims at supporting research for all aspects of spatiotemporal data computing with machine learning and addressing many scientific, mathematical, industrial, and engineering problems in:
 
