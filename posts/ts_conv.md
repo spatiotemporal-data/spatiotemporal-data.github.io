@@ -794,19 +794,19 @@ def update_x(z, w, lmbda):
 <b>Shrinkage Operator.</b> For any vectors $\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{n}$, the closed-form solution to the optimization problem
 </span>
 
-$$\min_{\boldsymbol{y}}\,\|\boldsymbol{y}\|_1+\frac{\alpha}{2}\|\boldsymbol{y}-\boldsymbol{x}\|_2^2$$
+$$\color{gray}\min_{\boldsymbol{y}}\,\|\boldsymbol{y}\|_1+\frac{\alpha}{2}\|\boldsymbol{y}-\boldsymbol{x}\|_2^2$$
 
 <span style="color:gray">
 can be expressed as
 </span>
 
-$$y_{i}=\frac{x_i}{|x_i|}\cdot\max\{|x_i|-1/\alpha, 0\},\,i=1,2,\cdots,n$$
+$$\color{gray}y_{i}=\frac{x_i}{|x_i|}\cdot\max\{|x_i|-1/\alpha, 0\},\,i=1,2,\cdots,n$$
 
 <span style="color:gray">
 or
 </span>
 
-$$y_{i}=\begin{cases} x_i-1/\alpha, & \text{if}\,x_i>1/\alpha \\ x_i+1/\alpha, & \text{if}\,x_i<-1/\alpha \\ 0, & \text{otherwise} \end{cases}$$
+$$\color{gray}y_{i}=\begin{cases} x_i-1/\alpha, & \text{if}\,x_i>1/\alpha \\ x_i+1/\alpha, & \text{if}\,x_i<-1/\alpha \\ 0, & \text{otherwise} \end{cases}$$
 
 <br>
 
@@ -921,7 +921,7 @@ respectively.
 <b>Laplacian Kernel</b>. Given any time series $\boldsymbol{x}\in\mathbb{R}^{T}$, suppose $\tau\in\mathbb{Z}^{+}$ be the kernel size of an undirected and circulant graph, then the Laplacian kernel is defined as
 </span>
 
-$$\boldsymbol{\ell}\triangleq(2\tau,\underbrace{-1,\cdots,-1}_{\tau},0,\cdots,0,\underbrace{-1,\cdots,-1}_{\tau})^\top\in\mathbb{R}^{T}$$
+$$\color{gray}\boldsymbol{\ell}\triangleq(2\tau,\underbrace{-1,\cdots,-1}_{\tau},0,\cdots,0,\underbrace{-1,\cdots,-1}_{\tau})^\top\in\mathbb{R}^{T}$$
 
 <span style="color:gray">
 which is the first column of the Laplacian matrix and the degree matrix is diagonalized with entries $2\tau$.
