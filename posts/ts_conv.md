@@ -395,11 +395,11 @@ where the Hankel matrix has $n$ rows and $T-n+1$ columns. This matrix is often u
 
 On the Hankel matrix $\mathcal{H}(\boldsymbol{x})$, if it can be approximated by the multiplication of two matrices $\boldsymbol{W}\in\mathbb{R}^{n\times R}$ and $\boldsymbol{Q}\in\mathbb{R}^{(T-n+1)\times R}$, then one can compute the inverse of Hankel matrix factorization as follows,
 
-$$\begin{aligned} \mathcal{H}(\boldsymbol{x})\approx&\boldsymbol{W}\boldsymbol{Q}^\top \\ \Rightarrow\quad\tilde{\boldsymbol{x}}=&\mathcal{H}^{\dagger}(\boldsymbol{W}\boldsymbol{Q}^{\top}) \\ \Rightarrow\quad\tilde{x}_t=&\frac{1}{\rho_t}\sum_{a+b=t+1}\boldsymbol{w}_{a}^\top\boldsymbol{q}_{b} \\ \Rightarrow\quad\tilde{x}_{t}=&\frac{1}{\rho_t}\sum_{r=1}^{R}\underbrace{\sum_{a+b=t+1}w_{a,r}q_{b,r}}_{\color{red}\text{circular convolution}} \end{aligned}$$
+$$\begin{aligned} \mathcal{H}(\boldsymbol{x})\approx&\boldsymbol{W}\boldsymbol{Q}^\top \\ \Rightarrow\quad\tilde{\boldsymbol{x}}=&\mathcal{H}^{\dagger}(\boldsymbol{W}\boldsymbol{Q}^{\top}) \\ \Rightarrow\quad\tilde{x}_t=&\frac{1}{\rho_t}\sum_{a+b=t+1}\boldsymbol{w}_{a}^\top\boldsymbol{q}_{b} \\ \Rightarrow\quad\tilde{x}_{t}=&\frac{1}{\rho_t}\sum_{r=1}^{R}\underbrace{\sum_{a+b=t+1}w_{a,r}q_{b,r}}_{\color{red}\text{circular convolution}} \end{aligned} \tag{7}$$
 
 where $\boldsymbol{w}_a$ and $\boldsymbol{q}_b$ are the $a$-th and $b$-th rows of $\boldsymbol{W}$ and $\boldsymbol{Q}$, respectively. Herein, $\mathcal{H}^{\dagger}(\cdot)$ denotes the inverse operator of Hankel matrix. For any matrix $\boldsymbol{Y}$ of size $n\times (T-n+1)$, the inverse operator is given by
 
-$$[\mathcal{H}^{\dagger}(\boldsymbol{Y})]_{t}=\frac{1}{\rho_{t}}\sum_{a+b=t+1}y_{a,b}$$
+$$[\mathcal{H}^{\dagger}(\boldsymbol{Y})]_{t}=\frac{1}{\rho_{t}}\sum_{a+b=t+1}y_{a,b} \tag{8}$$
 
 where $t\in\{1,2,\cdots, T\}$. $\rho_t$ is the number of entries on the $t$-th antidiagonal of the $n\times (T-n+1)$ matrix, satisfying
 
