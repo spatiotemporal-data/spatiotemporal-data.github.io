@@ -403,12 +403,12 @@ $$[\mathcal{H}^{\dagger}(\boldsymbol{Y})]_{t}=\frac{1}{\rho_{t}}\sum_{a+b=t+1}y_
 
 where $t\in\{1,2,\cdots, T\}$. $\rho_t$ is the number of entries on the $t$-th antidiagonal of the $n\times (T-n+1)$ matrix, satisfying
 
-$$\rho_t=\begin{cases} t, & t\leq\min\{n, T-n+1\} \\ T-t+1, & \text{otherwise} \end{cases}$$
+$$\rho_t=\begin{cases} t, & t\leq\min\{n, T-n+1\} \\ T-t+1, & \text{otherwise} \end{cases} \tag{9}$$
 
 
 Following the aforementioned formula, it is easy to connect the Hankel factorization with circular convolution and discrete Fourier transform ([Cai et al., 2019](https://arxiv.org/abs/1910.05859); [Cai et al., 2022](https://arxiv.org/abs/2204.03316)) such that
 
-$$\tilde{x}_{t}=\frac{1}{\rho_t}\sum_{r=1}^{R}[\tilde{\boldsymbol{w}}_r\star\tilde{\boldsymbol{q}}_r]_{t}=\frac{1}{\rho_t}\sum_{r=1}^{R}[\mathcal{F}^{-1}(\mathcal{F}(\tilde{\boldsymbol{w}}_r)\circ\mathcal{F}(\tilde{\boldsymbol{q}}_r))]_{t}$$
+$$\tilde{x}_{t}=\frac{1}{\rho_t}\sum_{r=1}^{R}[\tilde{\boldsymbol{w}}_r\star\tilde{\boldsymbol{q}}_r]_{t}=\frac{1}{\rho_t}\sum_{r=1}^{R}[\mathcal{F}^{-1}(\mathcal{F}(\tilde{\boldsymbol{w}}_r)\circ\mathcal{F}(\tilde{\boldsymbol{q}}_r))]_{t} \tag{10}$$
 
 where we define two vectors:
 
