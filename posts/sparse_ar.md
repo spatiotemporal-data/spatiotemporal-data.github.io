@@ -52,20 +52,18 @@ Time series autoregression is a statistical model used to analyze and forecast t
 
 The essential idea of time series autoregression is that a given data point of a time series is linearly dependent on the previous data points. Mathematically, the $d$th-order univariate autoregression of time series $\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}$ can be written as follows,
 
-
 $$
 x_{t}=\sum_{k=1}^{d}w_{k}x_{t-k}+\epsilon_{t} \tag{1}
 $$
 
-
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;x_{t}=\sum_{k=1}^{d}w_{k}x_{t-k}+\epsilon_{t}"/></p>
-
-for all <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t\in\{d+1,d+2,\ldots,T\}"/>. The integer <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d\in\mathbb{Z}^{+}"/> is the order. Here, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;x_{t}\in\mathbb{R}"/> is the value of the time series at time <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;t"/>. The vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}"/> represents the autoregressive coefficients. The random error <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\epsilon_t\in\mathbb{R},\,\forall t"/> is assumed to be normally distributed, following a mean of zero and a constant variance.
+for all $t\in\{d+1,d+2,\ldots,T\}$. The integer $d\in\mathbb{Z}^{+}$ is the order. Here, $x_{t}\in\mathbb{R}$ is the value of the time series at time $t$. The vector $\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}$ represents the autoregressive coefficients. The random error $\epsilon_t\in\mathbb{R},\,\forall t$ is assumed to be normally distributed, following a mean of zero and a constant variance.
 
 
-There is a closed-form solution to the coefficient vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}"/> from the optimization problem such that
+There is a closed-form solution to the coefficient vector $\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}$ from the optimization problem such that
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\sum_{t=d+1}^{T}\Bigl(x_{t}-\sum_{k=1}^{d}w_{k}x_{t-k}\Bigr)^2"/></p>
+$$
+\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\sum_{t=d+1}^{T}\Bigl(x_{t}-\sum_{k=1}^{d}w_{k}x_{t-k}\Bigr)^2 \tag{2}
+$$
 
 
 which is equivalent to
