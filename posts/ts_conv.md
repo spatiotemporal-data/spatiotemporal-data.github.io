@@ -277,7 +277,7 @@ Recall that the convolution matrix $\mathcal{C}_{\tau}(\boldsymbol{x})$ is speci
 
 For any vectors $\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{T}$, the circular convolution can be expressed as a linear transformation such that
 
-$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y}$$
+$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}(\boldsymbol{x})\boldsymbol{y} \tag{4}$$
 
 where $\mathcal{C}:\mathbb{R}^{T}\to\mathbb{R}^{T\times T}$ denotes the circulant operator. The circulant matrix is defined as:
 
