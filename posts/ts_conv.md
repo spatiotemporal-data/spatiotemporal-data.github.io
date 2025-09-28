@@ -707,7 +707,7 @@ $$\|\mathcal{C}(\boldsymbol{x})\|_{*}=\|\mathcal{F}(\boldsymbol{x})\|_1=\sum_{t=
 
 For any partially observed time series in the form of a vector $\boldsymbol{y}\in\mathbb{R}^T$ with the observed index set $\Omega$, solving the circulant matrix nuclear norm minimization allows one to reconstruct missing values in time series. The optimization problem is formulated as follows,
 
-$$\begin{aligned} \min_{\boldsymbol{x}}\,&\|\mathcal{C}(\boldsymbol{x})\|_* \\ \text{s.t.}\,&\|\mathcal{P}_{\Omega}(\boldsymbol{x}-\boldsymbol{y})\|_2\leq\epsilon \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{x}}\,&\|\mathcal{C}(\boldsymbol{x})\|_* \\ \text{s.t.}\,&\|\mathcal{P}_{\Omega}(\boldsymbol{x}-\boldsymbol{y})\|_2\leq\epsilon \end{aligned} \tag{14}$$
 
 where $\epsilon$ in the constraint represents the tolerance of errors between the reconstructed time series $\boldsymbol{x}$ and the partially observed time series $\boldsymbol{y}$.
 
