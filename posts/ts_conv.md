@@ -1168,10 +1168,10 @@ $$\begin{aligned} \min_{\boldsymbol{w}}\,&\|\boldsymbol{x}-\boldsymbol{A}\boldsy
 - **Output**: $\tau$-sparse vector $\boldsymbol{w}\in\mathbb{R}^{n}$ and index set $S$.
 - **Initialization**: Sparse vector $\boldsymbol{w}=\boldsymbol{0}$ (i.e., zero vector), index set $S=\emptyset$ (i.e., empty set), and error vector $\boldsymbol{r}=\boldsymbol{x}$.
 - **while** not stop **do**
-  - Find $\ell$ as the index set of the $\tau$ largest entries of $|\boldsymbol{A}^\top\boldsymbol{r}|$.
+  - Find $\ell$ as the index set of the $\tau$ largest entries of $\left|\boldsymbol{A}^\top\boldsymbol{r}\right|$.
   - $S:=S\cup\ell$.
   - $\boldsymbol{w}_S:=\boldsymbol{A}_S^{\dagger}\boldsymbol{x}$ (least squares).
-  - Find $S$ as the index set of the $\tau$ largest entries of $|\boldsymbol{w}|$.
+  - Find $S$ as the index set of the $\tau$ largest entries of $\left|\boldsymbol{w}\right|$.
   - $\boldsymbol{w}_S:=\boldsymbol{A}_S^{\dagger}\boldsymbol{x}$ (least squares again!).
   - Set $w_i=0$ for all $i\notin S$.
   - $\boldsymbol{r}=\boldsymbol{x}-\boldsymbol{A}_S\boldsymbol{w}_S$.
