@@ -451,19 +451,19 @@ Example 5 verifies the connection between Hankel matrix and circular convolution
 <span style="color:gray">
 <b>Time complexity.</b> Given the Hankel matrix factorization formula as $\tilde{\boldsymbol{x}}=\mathcal{H}^{\dagger}(\boldsymbol{w}\boldsymbol{q}^\top)$ where $\boldsymbol{w}\in\mathbb{R}^{n}$ and $\boldsymbol{q}\in\mathbb{R}^{n}$, suppose $T=2n-1$, the number of operations for computing the vector $\tilde{\boldsymbol{x}}$ in the element-wise multiplication is 
 
-$$1+2+\cdots+n=\frac{n(n-1)}{2}$$
+$$\color{gray}1+2+\cdots+n=\frac{n(n-1)}{2}$$
 
 <span style="color:gray">
 leading to $\mathcal{O}(n^2)$ time complexity. Following the inverse of Hankel matrix factorization in Example 5, the number of operations is 
 </span>
 
-$$2(1+2+\cdots+\operatorname{floor}(\frac{n}{2}))=\operatorname{floor}(\frac{n}{2})(1+\operatorname{floor}(\frac{n}{2}))$$
+$$\color{gray}2(1+2+\cdots+\operatorname{floor}(\frac{n}{2}))=\operatorname{floor}(\frac{n}{2})(1+\operatorname{floor}(\frac{n}{2}))$$
 
 <span style="color:gray">
 if $n$ is odd. Otherwise, the number of operations is 
 </span>
 
-$$2(1+2+\cdots+\frac{n}{2})-\frac{n}{2}=\frac{n}{2}(1+\frac{n}{2})-\frac{n}{2}$$
+$$\color{gray}2(1+2+\cdots+\frac{n}{2})-\frac{n}{2}=\frac{n}{2}(1+\frac{n}{2})-\frac{n}{2}$$
 
 ---
 
