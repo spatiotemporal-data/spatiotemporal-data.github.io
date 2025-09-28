@@ -578,7 +578,7 @@ Circulant matrix is commonly used to many computational and theoretical aspects 
 
 Nuclear norm is a key concept in matrix computations and convex optimization, frequently applied in low-rank matrix approximation and completion problems. For any matrix $\boldsymbol{X}\in\mathbb{R}^{m\times n}$, the nuclear norm is defined as the sum of singular values:
 
-$$\left\|\boldsymbol{X}\right\|_{*}=\sum_{r=1}^{t}s_{r}$$
+$$\left\|\boldsymbol{X}\right\|_{*}=\sum_{r=1}^{t}s_{r} \tag{11}$$
 
 where $\Vert\cdot\Vert_*$ denotes the nuclear norm. As illustrated in Figure 6, the singular values are $s_1,s_2,\ldots, s_t$ with $t=\min\lbrace m,n\rbrace$.
 
@@ -646,11 +646,11 @@ print(s)
 
 One of the most intriguing properties of circulant matrices is that they are diagonalizable by the discrete Fourier transform matrix. The eigenvalue decomposition of circulant matrix $\mathcal{C}(\boldsymbol{x})\in\mathbb{R}^{T\times T}$ (constructed from any vector $\boldsymbol{x}\in\mathbb{R}^T$) is given by
 
-$$\mathcal{C}(\boldsymbol{x})=\boldsymbol{F}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{F}^H$$
+$$\mathcal{C}(\boldsymbol{x})=\boldsymbol{F}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{F}^H \tag{12}$$
 
 where $\boldsymbol{F}$ is the unitary discrete Fourier transform matrix, $\boldsymbol{F}^H$ is the Hermitian transpose of $\boldsymbol{F}$, and $\mathcal{F}(\boldsymbol{x})$ is a diagonal matrix containing the eigenvalues of $\mathcal{C}(\boldsymbol{x})$. Due to this property, the nuclear norm of the circulant matrix can be formulated as the $\ell_1$-norm of the discrete Fourier transform of the vector $\boldsymbol{x}$:
 
-$$\begin{aligned} \|\mathcal{C}(\boldsymbol{x})\|_*=&\|\boldsymbol{F}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{F}^H\|_{*} \\ =&\|\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\|_* \\ =&\|\mathcal{F}(\boldsymbol{x})\|_1 \end{aligned}$$
+$$\begin{aligned} \|\mathcal{C}(\boldsymbol{x})\|_*=&\|\boldsymbol{F}\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\boldsymbol{F}^H\|_{*} \\ =&\|\operatorname{diag}(\mathcal{F}(\boldsymbol{x}))\|_* \\ =&\|\mathcal{F}(\boldsymbol{x})\|_1 \end{aligned} \tag{13}$$
 
 This relationship draws a strong connection between circulant matrices and Fourier analysis, enabling efficient computation and analysis in various applications, e.g., circulant matrix nuclear norm minimization [(Chen et al., 2024)](https://doi.org/10.1109/TKDE.2024.3419698).
 
