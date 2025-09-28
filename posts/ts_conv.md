@@ -838,7 +838,7 @@ As a result, letting the partial derivative of the augmented Lagrangian function
 
 $$\begin{aligned} \boldsymbol{z}:=&\Bigl\{\boldsymbol{z}\mid \frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}(\boldsymbol{z})}+\frac{\partial\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})}{\partial\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{z})}=\boldsymbol{0}\Bigr\} \\ =&\frac{1}{\gamma+\lambda}\mathcal{P}_{\Omega}(\gamma\boldsymbol{y}+\lambda\boldsymbol{x}+\boldsymbol{w})+\frac{1}{\lambda}\mathcal{P}_{\Omega}^{\perp}(\lambda\boldsymbol{x}+\boldsymbol{w}) \end{aligned}$$
 
-where the partial derivative of the augmented Lagrangian function with respect to the variable $\boldsymbol{z}$ is the combination of variables $\mathcal{P}_{\Omega}(\boldsymbol{z})$ and $\mathcal{P}_{\Omega}^\perp(\boldsymbol{z})$.
+where the partial derivative of the augmented Lagrangian function with respect to the variable $\boldsymbol{z}$ is the combination of variables $$\mathcal{P}_{\Omega}(\boldsymbol{z})$$ and $$\mathcal{P}_{\Omega}^\perp(\boldsymbol{z})$$.
 
 <br>
 
