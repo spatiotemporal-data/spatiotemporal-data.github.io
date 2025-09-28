@@ -52,7 +52,11 @@ Time series autoregression is a statistical model used to analyze and forecast t
 
 The essential idea of time series autoregression is that a given data point of a time series is linearly dependent on the previous data points. Mathematically, the $d$th-order univariate autoregression of time series $\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}$ can be written as follows,
 
-The essential idea of time series autoregression is that a given data point of a time series is linearly dependent on the previous data points. Mathematically, the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>th-order univariate autoregression of time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}=(x_1,x_2,\cdots,x_{T})^\top\in\mathbb{R}^{T}"/> can be written as follows,
+
+$$
+x_{t}=\sum_{k=1}^{d}w_{k}x_{t-k}+\epsilon_{t} \tag{2}
+$$
+
 
 <p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;x_{t}=\sum_{k=1}^{d}w_{k}x_{t-k}+\epsilon_{t}"/></p>
 
