@@ -142,7 +142,7 @@ The content is mainly from our research work below.
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center"> 
-🔨 Identification of the dominant auto-correlations from time series through sparse autoregression. The sparsity constraint allows one to find the dominant auto-correlated time lags (e.g., $k=1,24,167,168$).
+🔨 Identification of the dominant auto-correlations from time series through sparse autoregression. The sparsity constraint allows one to find the dominant auto-correlated time lags.
 </p>
 
 <br>
