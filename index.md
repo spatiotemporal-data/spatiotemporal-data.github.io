@@ -33,6 +33,7 @@ This project aims at supporting interdisciplinary research for diverse aspects o
 - Dynamical systems & control
 - Computational engineering & social science
 
+<br>
 
 ### Machine Learning Explained Series
 
