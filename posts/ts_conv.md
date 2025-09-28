@@ -2,6 +2,17 @@
 layout: default
 ---
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+
 # Time Series Convolution
 
 <p align="center"><span style="color:gray">Convolutional kernel approaches for understanding the importance of time series trends and interpreting temporal patterns, allowing one to improve the performance of time series imputation and learn sparse representations of temporal correlations. In the imputation model, fast Fourier transform accelerates the optimization process with log-linear time complexity. In the interpretable machine learning, sparse regression unlocks opportunities to better capture the long-term changes and temporal patterns of real-world time series.</span></p>
@@ -16,7 +27,7 @@ layout: default
 </video>
 </p>
 
-<p style="font-size: 14px; color: gray" align = "center"> 🔨 Anotating the weekly periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
+<p style="font-size: 14px; color: gray" align = "center"> 🔨 Annotating the weekly periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
 
 
 <br>
