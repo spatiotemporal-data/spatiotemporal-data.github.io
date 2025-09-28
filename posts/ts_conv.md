@@ -129,11 +129,11 @@ Convolution is one of the most powerful operations in several deep learning fram
 
 By definition, for any vectors $\boldsymbol{x}=(x_1,x_2,\cdots,x_T)^\top\in\mathbb{R}^{T}$ and $\boldsymbol{y}=(y_1,y_2,\cdots,y_\tau)^\top\in\mathbb{R}^{\tau}$ with $\tau\leq T$, the circular convolution (denoted by the "star" symbol $\star$) of these two vectors is formulated as follows,
 
-$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T}$$
+$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}\in\mathbb{R}^{T} \tag{1}$$
 
 Elment-wise, we have the formula to specify a circular convolution operation:
 
-$$z_{t}=\sum_{k=1}^{\tau}x_{t-k+1} y_{k},\,\forall t\in\{1,2,\ldots,T\}$$
+$$z_{t}=\sum_{k=1}^{\tau}x_{t-k+1} y_{k},\,\forall t\in\{1,2,\ldots,T\} \tag{2}$$
 
 where $z_t$ represents the $t$th entry of $\boldsymbol{z}$. For a cyclical operation, it takes $x_{t-k+1}=x_{t-k+1+T}$ when $t+1\leq k$. While the definition of circular convolution might seem to be over-complicated for beginners, it becomes much easier when you consider the concept of a convolution or circulant matrix, as demonstrated in the examples provided below.
 
