@@ -68,7 +68,7 @@ A convolutional kernel approach for reinforcing the modeling of time series tren
 </video>
 </p>
 
-<p style="font-size: 14px; color: gray" align = "center"> 🔨 Anotating the weekly periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
+<p style="font-size: 14px; color: gray" align = "center"> 🔨 Annotating the weekly periodicity of hourly ridesharing trip time series in Chicago since April 1, 2024.</p>
 
 
 <br>
