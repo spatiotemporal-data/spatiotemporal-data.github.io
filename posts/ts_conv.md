@@ -578,9 +578,9 @@ Circulant matrix is commonly used to many computational and theoretical aspects 
 
 Nuclear norm is a key concept in matrix computations and convex optimization, frequently applied in low-rank matrix approximation and completion problems. For any matrix $\boldsymbol{X}\in\mathbb{R}^{m\times n}$, the nuclear norm is defined as the sum of singular values:
 
-$$\|\boldsymbol{X}\|_{*}=\sum_{r=1}^{t}s_{r}$$
+$$\left\|\boldsymbol{X}\right\|_{*}=\sum_{r=1}^{t}s_{r}$$
 
-where $\|\cdot\|_*$ denotes the nuclear norm. As illustrated in Figure 6, the singular values are $s_1,s_2,\ldots, s_t$ with $t=\min\{m,n\}$.
+where $\left\|\cdot\right\|_*$ denotes the nuclear norm. As illustrated in Figure 6, the singular values are $s_1,s_2,\ldots, s_t$ with $t=\min\{m,n\}$.
 
 <br>
 
