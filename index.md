@@ -145,6 +145,10 @@ The content is mainly from our research work below.
 
 <br>
 
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 2.</b> Illustration of the circular convolution between $\boldsymbol{x}=(x_1,x_2,x_3,x_4)^\top$ and $\boldsymbol{y}=(y_1,y_2,y_3)^\top$. (a) Computing $z_1$ involves $x_{0}=x_4$ and $x_{-1}=x_3$. (b) Computing $z_2$ involves $x_{0}=x_4$. The figure is inspired by [Prince (2023)](https://udlbook.github.io/udlbook/) and [But what is convolution?](https://www.youtube.com/watch?v=KuXjwB4LzSA) (created by [3blue1brown](https://www.3blue1brown.com/)).
+</p>
+
 
 <div style="
   position: relative;
