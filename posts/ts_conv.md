@@ -733,11 +733,11 @@ $$\mathcal{P}_{\Omega}^{\perp}(\boldsymbol{x})=\begin{bmatrix} 1 \\ 0 \\ 3 \\ 0 
 
 In this case, one can rewrite the constraint as a penalty term (weighted by $\gamma$) in the objective function:
 
-$$ \min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{x}-\boldsymbol{y})\|_2^2$$
+$$ \min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{x}-\boldsymbol{y})\|_2^2 \tag{15}$$
 
 Since the variable $\boldsymbol{x}$ is associated with a circulant matrix nuclear norm and a penalty term, the first impluse is using variable separated to convert the problem into the following one:
 
-$$\begin{aligned} \min_{\boldsymbol{x},\boldsymbol{z}}\,&\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})\|_2^2 \\ \text{s.t.}\,&\boldsymbol{x}=\boldsymbol{z} \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{x},\boldsymbol{z}}\,&\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})\|_2^2 \\ \text{s.t.}\,&\boldsymbol{x}=\boldsymbol{z} \end{aligned} \tag{16}$$
 
 <br>
 
@@ -745,13 +745,13 @@ $$\begin{aligned} \min_{\boldsymbol{x},\boldsymbol{z}}\,&\|\mathcal{C}(\boldsymb
 
 The augmented Lagrangian function is
 
-$$ \mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})=\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})\|_2^2+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}-\boldsymbol{z}\rangle$$
+$$ \mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w})=\|\mathcal{C}(\boldsymbol{x})\|_*+\frac{\gamma}{2}\|\mathcal{P}_{\Omega}(\boldsymbol{z}-\boldsymbol{y})\|_2^2+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}-\boldsymbol{z}\rangle \tag{16}$$
 
 where the dual variable $\boldsymbol{w}\in\mathbb{R}^{T}$ is an estimate of the Lagrange multiplier, and $\lambda$ is a penalty parameter that controls the convergence rate.
 
 Thus, the variables $\boldsymbol{x}$, $\boldsymbol{z}$, and the dual variable $\boldsymbol{w}$ can be updated iteratively as follows,
 
-$$\begin{cases} \displaystyle\boldsymbol{x}:=\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \displaystyle\boldsymbol{z}:=\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{w}:=\boldsymbol{w}+\lambda(\boldsymbol{x}-\boldsymbol{z}) \end{cases}$$
+$$\begin{cases} \displaystyle\boldsymbol{x}:=\arg\min_{\boldsymbol{x}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \displaystyle\boldsymbol{z}:=\arg\min_{\boldsymbol{z}}\,\mathcal{L}_{\lambda}(\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}) \\ \boldsymbol{w}:=\boldsymbol{w}+\lambda(\boldsymbol{x}-\boldsymbol{z}) \end{cases} \tag{17}$$
 
 where the dual variable $\boldsymbol{w}$ takes a standard update in the ADMM. In what follows, we give details about how to get the closed-form solution to the variables $\boldsymbol{x}$ and $\boldsymbol{z}$.
 
@@ -761,15 +761,15 @@ where the dual variable $\boldsymbol{w}$ takes a standard update in the ADMM. In
 
 Solving the variable $\boldsymbol{z}$ involves discrete Fourier transform, convolution theorem, and $\ell_1$-norm minimization in complex space. The optimization problem with respect to the variable $\boldsymbol{z}$ is given by
 
-$$\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_{*}+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}\rangle \\ =&\arg\min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_{*}+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}+\boldsymbol{w}/\lambda\|_2^2 \end{aligned}$$
+$$\begin{aligned} \boldsymbol{x}:=&\arg\min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_{*}+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}\|_2^2+\langle\boldsymbol{w},\boldsymbol{x}\rangle \\ =&\arg\min_{\boldsymbol{x}}\,\|\mathcal{C}(\boldsymbol{x})\|_{*}+\frac{\lambda}{2}\|\boldsymbol{x}-\boldsymbol{z}+\boldsymbol{w}/\lambda\|_2^2 \end{aligned} \tag{18}$$
 
 Using discrete Fourier transform, the optimization problem can be converted into the following one in complex space [(Chen et al., 2024)](https://doi.org/10.1109/TKDE.2024.3419698):
 
-$$ \hat{\boldsymbol{x}}:=\arg\min_{\hat{\boldsymbol{x}}}\,\|\hat{\boldsymbol{x}}\|_{1}+\frac{\lambda}{2T}\|\hat{\boldsymbol{x}}-\hat{\boldsymbol{z}}+\hat{\boldsymbol{w}}/\lambda\|_2^2 $$
+$$ \hat{\boldsymbol{x}}:=\arg\min_{\hat{\boldsymbol{x}}}\,\|\hat{\boldsymbol{x}}\|_{1}+\frac{\lambda}{2T}\|\hat{\boldsymbol{x}}-\hat{\boldsymbol{z}}+\hat{\boldsymbol{w}}/\lambda\|_2^2  \tag{19}$$
 
 where the complex-valued variables $\{\hat{\boldsymbol{x}},\hat{\boldsymbol{z}},\hat{\boldsymbol{w}}\}=\{\mathcal{F}(\boldsymbol{x}),\mathcal{F}(\boldsymbol{z}),\mathcal{F}(\boldsymbol{w})\}$ refer to $\{\boldsymbol{x},\boldsymbol{z},\boldsymbol{w}\}$ in the frequency domain, or see [nuclear norm minimization of a circulant matrix with fast Fourier transform](https://math.stackexchange.com/q/4562565) on StackExchange Mathematics. The closed-form solution to the complex-valued variable $\hat{\boldsymbol{x}}$ is
 
-$$ \hat{x}_t:=\frac{\hat{h}_t}{|\hat{h}_t|}\cdot\max\{|\hat{h}_t|-T/\lambda,0\},\,t=1,2,\ldots, T $$
+$$ \hat{x}_t:=\frac{\hat{h}_t}{|\hat{h}_t|}\cdot\max\{|\hat{h}_t|-T/\lambda,0\},\,t=1,2,\ldots, T \tag{20}$$
 
 with $\hat{h}_t=\hat{z}_t-\hat{w}_t/\lambda$. For reference, this closed-form solution can be found in Lemma 3.3 in [Yang et al., (2009)](https://doi.org/10.1137/080730421), see Eq. (3.18) and (3.19) for discussing real-valued variables. In the sparsity-induced norm optimization of machine learning, this closed-form solution is also called as proximal operator or shrinkage operator.
 
