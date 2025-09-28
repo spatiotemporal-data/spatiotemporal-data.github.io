@@ -196,7 +196,7 @@ where $x_{0}=x_5$ and $x_{-1}=x_4$ according to the definition.
 
 Using the notations above, for any vectors $\boldsymbol{x}\in\mathbb{R}^{T}$ and $\boldsymbol{y}\in\mathbb{R}^{\tau}$ with $\tau<T$, the circular convolution can be expressed as a linear transformation:
 
-$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{\tau}(\boldsymbol{x})\boldsymbol{y}$$
+$$\boldsymbol{z}=\boldsymbol{x}\star\boldsymbol{y}=\mathcal{C}_{\tau}(\boldsymbol{x})\boldsymbol{y} \tag{3}$$
 
 where $\mathcal{C}_{\tau}:\mathbb{R}^{T}\to\mathbb{R}^{T\times \tau}$ denotes the convolution operator with the hyperparameter $\tau$ (positive integer). The convolution matrix can be represented as follows,
 
