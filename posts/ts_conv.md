@@ -580,7 +580,7 @@ Nuclear norm is a key concept in matrix computations and convex optimization, fr
 
 $$\left\|\boldsymbol{X}\right\|_{*}=\sum_{r=1}^{t}s_{r}$$
 
-where $\left\|\boldsymbol{X}\right\|_*$ denotes the nuclear norm of $\boldsymbol{X}$. As illustrated in Figure 6, the singular values are $s_1,s_2,\ldots, s_t$ with $t=\min\{m,n\}$.
+where $\Vert\cdot\Vert_*$ denotes the nuclear norm. As illustrated in Figure 6, the singular values are $s_1,s_2,\ldots, s_t$ with $t=\min\{m,n\}$.
 
 <br>
 
