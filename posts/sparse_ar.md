@@ -27,7 +27,7 @@ window.MathJax = {
 
 <p align="center"><span style="color:gray">Quantifying periodicity and seasonality of time series with sparse autoregression. The optimization on sparse autoregression is used to identify dominant and positive auto-correlations of time series, including human mobility, climate variables, and Wikipedia page views.</span></p>
 
-<p align="center"><span style="color:gray">integers: Interpretable time series autoregression for periodicity quantification. [<a href="https://github.com/xinychen/integers">GitHub</a>]</span></p>
+<p align="center"><span style="color:gray"><b>integers</b>: Interpretable time series autoregression for periodicity quantification. [<a href="https://github.com/xinychen/integers">GitHub</a>]</span></p>
 
 <p align="center"><span style="color:gray">(Updated on September 28, 2025)</span></p>
 
