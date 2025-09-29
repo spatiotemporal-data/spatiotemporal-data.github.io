@@ -67,7 +67,7 @@ $$
 x_{t}=\sum_{k=1}^{d}w_{k}x_{t-k}+\epsilon_{t} \tag{1}
 $$
 
-for all $t\in\{d+1,d+2,\ldots,T\}$. The integer $d\in\mathbb{Z}^{+}$ is the order. Here, $x_{t}\in\mathbb{R}$ is the value of the time series at time $t$. The vector $\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}$ represents the autoregressive coefficients. The random error $\epsilon_t\in\mathbb{R},\,\forall t$ is assumed to be normally distributed, following a mean of zero and a constant variance.
+for all $$t\in\{d+1,d+2,\ldots,T\}$$. The integer $d\in\mathbb{Z}^{+}$ is the order. Here, $x_{t}\in\mathbb{R}$ is the value of the time series at time $t$. The vector $\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}$ represents the autoregressive coefficients. The random error $\epsilon_t\in\mathbb{R},\,\forall t$ is assumed to be normally distributed, following a mean of zero and a constant variance.
 
 
 There is a closed-form solution to the coefficient vector $\boldsymbol{w}=(w_1,w_2,\cdots,w_{d})^\top\in\mathbb{R}^{d}$ from the optimization problem such that
