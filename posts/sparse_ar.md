@@ -79,7 +79,7 @@ $$
 
 which is equivalent to
 
-$$\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2=\boldsymbol{A}^{\dagger}\tilde{\boldsymbol{x}}$$
+$$\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2=\boldsymbol{A}^{\dagger}\tilde{\boldsymbol{x}} \tag{3}$$
 
 
 where $$\|\cdot\|_2$$ denotes the $$\ell_2$$-norm. The symbol $$\cdot^{\dagger}$$ is the the Moore–Penrose inverse of a matrix. While using $$\ell_2$$-norm, the vector $$\tilde{\boldsymbol{x}}$$ consists of the last $$T-d$$ entries in the time series vector $$\boldsymbol{x}$$, i.e.,
