@@ -58,6 +58,14 @@ In **Part I** of this series, we introduce the essential idea of time series aut
 
 Time series autoregression is a statistical model used to analyze and forecast time series data. The class of autoregression models is widely used in the fields of economics, finance, weather forecasting, and signal processing. Exploring auto-correlations from univariate autoregression is meaningful for understanding time series.
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/Chicago_ridesharing_ts.png" width="420" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+<b>Figure 1.</b> Illustration of trip time series.
+</p>
+
 
 ### I-A. Definition of Autoregression
 
