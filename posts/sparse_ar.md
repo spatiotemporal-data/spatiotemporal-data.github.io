@@ -61,11 +61,11 @@ Time series autoregression is a statistical model used to analyze and forecast t
 <br>
 
 <p align="center">
-<img align="middle" src="https://spatiotemporal-data.github.io/images/Chicago_ridesharing_ts.png" width="550" />
+<img align="middle" src="https://spatiotemporal-data.github.io/images/chicago_rideshare_ts.png" width="500" />
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-<b>Figure 1.</b> Illustration of trip time series.
+<b>Figure 1.</b> Hourly time series of aggregated ridesharing trip counts in the City of Chicago during the first two weeks (i.e., $2\times 7\times 24=336$ hours in total) since April 1, 2024. The time series exhibits weekly periodicity, referring to the regularity of human mobility.
 </p>
 
 <br>
