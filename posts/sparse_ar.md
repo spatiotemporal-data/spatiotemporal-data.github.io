@@ -79,18 +79,18 @@ $$
 
 which is equivalent to
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2=\boldsymbol{A}^{\dagger}\tilde{\boldsymbol{x}}"/></p>
+$$\boldsymbol{w}:=\arg\,\min_{\boldsymbol{w}}\,\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2=\boldsymbol{A}^{\dagger}\tilde{\boldsymbol{x}}$$
 
 
-where <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\cdot\|_2"/> denotes the <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm. The symbol <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\cdot^{\dagger}"/> is the the Moore–Penrose inverse of a matrix. While using <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_2"/>-norm, the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}"/> consists of the last <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;T-d"/> entries in the time series vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, i.e.,
+where $$\|\cdot\|_2$$ denotes the $$\ell_2$$-norm. The symbol $$\cdot^{\dagger}$$ is the the Moore–Penrose inverse of a matrix. While using $$\ell_2$$-norm, the vector $$\tilde{\boldsymbol{x}}$$ consists of the last $$T-d$$ entries in the time series vector $$\boldsymbol{x}$$, i.e.,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\tilde{\boldsymbol{x}}=\begin{bmatrix} x_{d+1} \\ x_{d+2} \\ \vdots \\ x_{T} \end{bmatrix}\in\mathbb{R}^{T-d}"/></p>
+$$\tilde{\boldsymbol{x}}=\begin{bmatrix} x_{d+1} \\ x_{d+2} \\ \vdots \\ x_{T} \end{bmatrix}\in\mathbb{R}^{T-d}$$
 
-The matrix <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}"/> is also comprised of the entries in the time series vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, which is given by
+The matrix $$\boldsymbol{A}$$ is also comprised of the entries in the time series vector $$\boldsymbol{x}$$, which is given by
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{A}=\begin{bmatrix} x_{d} & x_{d-1} & \cdots & x_1 \\ x_{d+1} & x_{d} & \cdots & x_{2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{T-1} & x_{T-2} & \cdots & x_{T-d} \end{bmatrix}\in\mathbb{R}^{(T-d)\times d}"/></p>
+$$\boldsymbol{A}=\begin{bmatrix} x_{d} & x_{d-1} & \cdots & x_1 \\ x_{d+1} & x_{d} & \cdots & x_{2} \\ \vdots & \vdots & \ddots & \vdots \\ x_{T-1} & x_{T-2} & \cdots & x_{T-d} \end{bmatrix}\in\mathbb{R}^{(T-d)\times d}$$
 
-In essence, given the data pair <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\{\boldsymbol{A},\tilde{\boldsymbol{x}}\}"/> constructed by the time series <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/>, the univariate autoregression can be easily converted into a linear regression formula. Thus, the closed-form solution is least squares.
+In essence, given the data pair $$\{\boldsymbol{A},\tilde{\boldsymbol{x}}\}$$ constructed by the time series $$\boldsymbol{x}$$, the univariate autoregression can be easily converted into a linear regression formula. Thus, the closed-form solution is least squares.
 
 Considering one quick example: 
 
@@ -101,11 +101,11 @@ Considering one quick example:
 ### I-B. Motivation of Sparse Autoregression
 
 
-However, the challenges arise if there is a sparsity constraint in the form of <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\ell_0"/>-norm, for instance,
+However, the challenges arise if there is a sparsity constraint in the form of $$\ell_0$$-norm, for instance,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned}\min_{\boldsymbol{w}}\,&\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq\tau \end{aligned}"/></p>
+$$\begin{aligned}\min_{\boldsymbol{w}}\,&\|\tilde{\boldsymbol{x}}-\boldsymbol{A}\boldsymbol{w}\|_2^2 \\ \text{s.t.}\,&\|\boldsymbol{w}\|_0\leq\tau \end{aligned}$$
 
-where the upper bound the constraint is an integer <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau\in\mathbb{Z}^{+}"/>, which is supposed to be no greater than the order <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;d"/>. In the constraint, <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\|\boldsymbol{w}\|_0"/> counts the number of nonzero entries in the vector <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{w}"/>, and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\tau"/> is the sparsity level.
+where the upper bound the constraint is an integer $$\tau\in\mathbb{Z}^{+}$$, which is supposed to be no greater than the order $$d$$. In the constraint, $$\|\boldsymbol{w}\|_0$$ counts the number of nonzero entries in the vector $$\boldsymbol{w}$$, and $$\tau$$ is the sparsity level.
 
 
 ## II. Sparse Autoregression
@@ -122,28 +122,28 @@ where the upper bound the constraint is an integer <img style="display: inline;"
 
 The optimization problem is formulated as follows,
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\begin{aligned}\min_{\boldsymbol{w}_1,\boldsymbol{w}_{2},\ldots,\boldsymbol{w}_{\delta},\boldsymbol{\beta}}\,&\sum_{\gamma=1}^{\delta}\|\tilde{\boldsymbol{x}}_{\gamma}-\boldsymbol{A}_{\gamma}\boldsymbol{w}_{\gamma}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{d} \\ -\alpha\cdot\boldsymbol{\beta}\leq \boldsymbol{w}_{\gamma}\leq\alpha\cdot\boldsymbol{\beta},\,\forall \gamma\in\{1,2,\ldots,\delta\} \\ \displaystyle \sum_{k=1}^{d}\beta_{k}=\|\boldsymbol{\beta}\|_1\leq\tau \end{cases} \end{aligned}"/></p>
+$$\begin{aligned}\min_{\boldsymbol{w}_1,\boldsymbol{w}_{2},\ldots,\boldsymbol{w}_{\delta},\boldsymbol{\beta}}\,&\sum_{\gamma=1}^{\delta}\|\tilde{\boldsymbol{x}}_{\gamma}-\boldsymbol{A}_{\gamma}\boldsymbol{w}_{\gamma}\|_2^2 \\ \text{s.t.}\,&\begin{cases} \boldsymbol{\beta}\in\{0,1\}^{d} \\ -\alpha\cdot\boldsymbol{\beta}\leq \boldsymbol{w}_{\gamma}\leq\alpha\cdot\boldsymbol{\beta},\,\forall \gamma\in\{1,2,\ldots,\delta\} \\ \displaystyle \sum_{k=1}^{d}\beta_{k}=\|\boldsymbol{\beta}\|_1\leq\tau \end{cases} \end{aligned}$$
 
 <br>
 
 ---
 
 <span style="color:gray">
-<b>Example 1.</b> For any vectors <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{n}"/>, verify that <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}^\top\boldsymbol{y}=\operatorname{tr}(\boldsymbol{y}\boldsymbol{x}^\top)"/>.
+<b>Example 1.</b> For any vectors $$\boldsymbol{x},\boldsymbol{y}\in\mathbb{R}^{n}$$, verify that $$\boldsymbol{x}^\top\boldsymbol{y}=\operatorname{tr}(\boldsymbol{y}\boldsymbol{x}^\top)$$.
 </span>
 
 <span style="color:gray">
-According to the definition of inner product, we have <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}^\top\boldsymbol{y}=\sum_{i=1}^{n}x_iy_i"/>. In contrast, the outer product between <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}"/> and <img style="display: inline;" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{x}"/> is given by
+According to the definition of inner product, we have $$\boldsymbol{x}^\top\boldsymbol{y}=\sum_{i=1}^{n}x_iy_i$$. In contrast, the outer product between $$\boldsymbol{y}$$ and $$\boldsymbol{x}$$ is given by
 </span>
 
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\boldsymbol{y}\boldsymbol{x}^\top=\begin{bmatrix} y_1x_1 & y_1x_2 & \cdots & y_1x_n \\ y_2x_1 & y_2x_2 & \cdots & y_nx_2 \\ \vdots & \vdots & \ddots & \vdots \\ y_nx_1 & y_nx_2 & \cdots & y_nx_n \\ \end{bmatrix}\in\mathbb{R}^{n\times n}"/></p>
+$$\boldsymbol{y}\boldsymbol{x}^\top=\begin{bmatrix} y_1x_1 & y_1x_2 & \cdots & y_1x_n \\ y_2x_1 & y_2x_2 & \cdots & y_nx_2 \\ \vdots & \vdots & \ddots & \vdots \\ y_nx_1 & y_nx_2 & \cdots & y_nx_n \\ \end{bmatrix}\in\mathbb{R}^{n\times n}$$
 
 <span style="color:gray">
 Recall that the trace of a square matrix is the sum of diagonal entries, we therefore have 
 </span>
 
-<p align = "center"><img align="middle" src="https://latex.codecogs.com/svg.latex?&space;\operatorname{tr}(\boldsymbol{y}\boldsymbol{x}^\top)=\sum_{i=1}^{n}y_ix_i=\boldsymbol{y}^\top\boldsymbol{x}=\boldsymbol{x}^\top\boldsymbol{y}"/></p>
+$$\operatorname{tr}(\boldsymbol{y}\boldsymbol{x}^\top)=\sum_{i=1}^{n}y_ix_i=\boldsymbol{y}^\top\boldsymbol{x}=\boldsymbol{x}^\top\boldsymbol{y}$$
 
 <span style="color:gray">
 as claimed.
