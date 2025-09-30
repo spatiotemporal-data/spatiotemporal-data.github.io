@@ -41,7 +41,7 @@ window.MathJax = {
 
 
 ### 64th Commit
-#### The Heilmeier Catechism
+#### [The Heilmeier Catechism](https://www.darpa.mil/about/heilmeier-catechism)
 
 1. What are you trying to do? Articulate your objectives using absolutely no jargon.
 2. How is it done today, and what are the limits of current practice?
