@@ -46,7 +46,7 @@ window.MathJax = {
 Granger causality is primarily based on **predictability** in which predictability implies causality under some assumptions. It claims how well past values of a time series $$y_{t}$$ could predict future values of another time series $$x_{t}$$. Let $$\mathcal{H}_{<t}$$ be the history of all relevant information up to time $$t-1$$ for both time series, and $$\mathcal{P}(x_{t}\mid\mathcal{H}_{<t})$$ the optimal prediction of $$x_{t}$$ given $$\mathcal{H}_{<t}$$. If it always holds that
 
 $$
-\operatorname{var}[x_{t}-\mathcal{P}(x_{t}\mid\mathcal{H}_{<t})]<\operatorname{var}[x_{t}-\mathcal{P}(x_{t}\mid \mathcal{H}_{<t}\backslash)]
+\operatorname{var}[x_{t}-\mathcal{P}(x_{t}\mid\mathcal{H}_{<t})]<\operatorname{var}[x_{t}-\mathcal{P}(x_{t}\mid \mathcal{H}_{<t}\backslash y_{<t})]
 $$
 
 
