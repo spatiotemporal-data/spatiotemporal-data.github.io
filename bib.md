@@ -29,13 +29,23 @@ window.MathJax = {
 
 <br>
 
-### 65th Commit
+### 66th Commit
 #### Temporal Regularity of Wikipedia Consumption
 
 
 **References**
 
 - Piccardi, T., Gerlach, M., & West, R. (2024, May). [Curious rhythms: Temporal regularities of wikipedia consumption](https://ojs.aaai.org/index.php/ICWSM/article/view/31386). In Proceedings of the International AAAI Conference on Web and Social Media (Vol. 18, pp. 1249-1261).
+
+<br>
+
+
+### 65th Commit
+#### Definition of Granger Causality
+
+Granger causality is primarily based on *predictability* in which predictability implies causality under some assumptions. It claims 
+
+
 
 <br>
 
