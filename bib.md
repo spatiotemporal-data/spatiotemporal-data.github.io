@@ -49,6 +49,8 @@ $$
 \operatorname{var}[x_{t}-\mathcal{P}(x_{t}\mid\mathcal{H}_{<t})]<\operatorname{var}[x_{t}-\mathcal{P}(x_{t}\mid \mathcal{H}_{<t}\backslash y_{<t})]
 $$
 
+where $$\mathcal{H}_{<t}\backslash y_{<t}$$ indicates excluding the values of $$y_{<t}$$ from $$\mathcal{H}_{<t}$$. The variance of the optimal prediction error of $$x$$ is reduced by including the history information of $y$. Thus, $y$ is "causal" of $x$ if past values of $y$ improve the prediction of $x$.
+
 
 
 <br>
