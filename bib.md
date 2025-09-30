@@ -29,13 +29,28 @@ window.MathJax = {
 
 <br>
 
-### 64th Commit
+### 65th Commit
 #### Temporal Regularity of Wikipedia Consumption
 
 
 **References**
 
 - Piccardi, T., Gerlach, M., & West, R. (2024, May). [Curious rhythms: Temporal regularities of wikipedia consumption](https://ojs.aaai.org/index.php/ICWSM/article/view/31386). In Proceedings of the International AAAI Conference on Web and Social Media (Vol. 18, pp. 1249-1261).
+
+<br>
+
+
+### 64th Commit
+#### The Heilmeier Catechism
+
+1. What are you trying to do? Articulate your objectives using absolutely no jargon.
+2. How is it done today, and what are the limits of current practice?
+3. What is new in your approach and why do you think it will be successful?
+4. Who cares? If you are successful, what difference will it make?
+5. What are the risks?
+6. How much will it cost?
+7. How long will it take?
+8. What are the mid-term and final "exams" to check for success?
 
 <br>
 
