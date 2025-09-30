@@ -43,7 +43,7 @@ window.MathJax = {
 ### 65th Commit
 #### Definition of Granger Causality
 
-Granger causality is primarily based on *predictability* in which predictability implies causality under some assumptions. It claims 
+Granger causality is primarily based on *predictability* in which predictability implies causality under some assumptions. It claims how well past values of a time series $$y_{t}$$ could predict
 
 
 
