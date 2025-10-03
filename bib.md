@@ -56,7 +56,7 @@ In the case of bivariate time series, Granger causality corresponds to nonzero e
 $$
 \begin{aligned}
 a_{x}^{0}x_{t}&=\sum_{k=1}^{d}a_{xx}^{k}x_{t-k}+\sum_{k=1}^{d}a_{xy}^{k}y_{t-k}+e_{t,x} \\
-a_{y}^{0}y_{t}&=
+a_{y}^{0}y_{t}&=\sum_{k=1}^{d}a_{yy}^{k}y_{t-k}+
 \end{aligned}
 $$
 
