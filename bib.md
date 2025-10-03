@@ -62,6 +62,7 @@ $$
 
 where time series $y$ is Granger causal for time series $x$ if and only if $a_{xy}^{k}\neq 0$ for $k\in\{1,2,\ldots,d\}$.
 
+
 **References**
 
 - Shojaie, A., & Fox, E. B. (2022). [Granger causality: A review and recent advances](https://doi.org/10.1146/annurev-statistics-040120-010930). Annual Review of Statistics and Its Application, 9(1), 289-319.
