@@ -52,8 +52,8 @@ $$
 
 measuring how much the solution $\boldsymbol{x}$ of $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$ can change when the value of $\boldsymbol{b}$ changes.
 
-- When $\kappa(\boldsymbol{A})$ is low, small changes in $\boldsymbol{b}$ do not cause large changes in $\boldsymbol{x}$;
-- When $\kappa(\boldsymbol{A})$
+- $\boldsymbol{A}$ is well-conditioned: When $\kappa(\boldsymbol{A})$ is low, small changes in $\boldsymbol{b}$ do not cause large changes in $\boldsymbol{x}$.
+- $\boldsymbol{A}$ is ill-conditioned: When $\kappa(\boldsymbol{A})$ is high, small changes in $\boldsymbol{b}$ can cause large changes in $\boldsymbol{x}$.
 
 
 
