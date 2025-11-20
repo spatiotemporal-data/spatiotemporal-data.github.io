@@ -32,6 +32,8 @@ window.MathJax = {
 ### 67th Commit
 #### [Linear Algebra & Robot Control](https://adamheins.com/blog/linear-algebra-robot-control)
 
+##### Preliminaries
+
 The column space $\mathcal{C}(\boldsymbol{A})$ of a matrix $\boldsymbol{A}$ is the span of its columns, i.e., the set of all linear combinations of the columns of $\boldsymbol{A}$:
 
 $$
@@ -55,6 +57,7 @@ measuring how much the solution $\boldsymbol{x}$ of $\boldsymbol{A}\boldsymbol{x
 - $\boldsymbol{A}$ is well-conditioned: When $\kappa(\boldsymbol{A})$ is low, small changes in $\boldsymbol{b}$ do not cause large changes in $\boldsymbol{x}$.
 - $\boldsymbol{A}$ is ill-conditioned: When $\kappa(\boldsymbol{A})$ is high, small changes in $\boldsymbol{b}$ can cause large changes in $\boldsymbol{x}$.
 
+##### Optimization
 
 
 <br>
