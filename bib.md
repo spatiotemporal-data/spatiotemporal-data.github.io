@@ -38,7 +38,12 @@ $$
 \mathcal{C}(\boldsymbol{A})=\{\boldsymbol{A}\boldsymbol{x}\mid \boldsymbol{x}\in\mathbb{R}^{n}\}
 $$
 
-The nullspace $\mathcal{N}(\boldsymbol{A})$ of a matrix $\boldsymbol{A}$ is the set of all vectors $\boldsymbol{x}$
+The nullspace $\mathcal{N}(\boldsymbol{A})$ of a matrix $\boldsymbol{A}$ is the set of all vectors $\boldsymbol{x}$ for which $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{0}$ such that
+
+$$
+\mathcal{N}(\boldsymbol{A})=\{\boldsymbol{x}\in\mathbb{R}^{n}\mid \boldsymbol{A}\boldsymbol{x}=\boldsymbol{0}\}
+$$
+
 
 
 <br>
