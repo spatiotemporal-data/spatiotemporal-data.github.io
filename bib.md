@@ -30,6 +30,15 @@ window.MathJax = {
 <br>
 
 ### 67th Commit
+#### Navier-Stokes Equations
+
+The equation is given by
+
+$$
+\begin{cases}
+\rho\left(\frac{\partial u}{\partial t}+u\frac{\partial u}{\partial x}+v\frac{\partial u}{\partial y}+w\frac{\partial u}{\partial z}\right)=
+\end{cases}
+$$
 
 
 <br>
