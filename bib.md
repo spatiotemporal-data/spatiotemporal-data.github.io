@@ -30,7 +30,15 @@ window.MathJax = {
 <br>
 
 ### 67th Commit
-#### 
+#### [Linear Algebra & Robot Control](https://adamheins.com/blog/linear-algebra-robot-control)
+
+The column space $\mathcal{C}(\boldsymbol{A})$ of a matrix $\boldsymbol{A}$ is the span of its columns, i.e., the set of all linear combinations of the columns of $\boldsymbol{A}$:
+
+$$
+\mathcal{C}(\boldsymbol{A})=\{\boldsymbol{A}\boldsymbol{x}\mid \boldsymbol{x}\in\mathbb{R}^{n}\}
+$$
+
+The nullspace $\mathcal{N}(\boldsymbol{A})$ of a matrix $\boldsymbol{A}$ is the set of all vectors $\boldsymbol{x}$
 
 
 <br>
