@@ -54,6 +54,7 @@ x_{21} \boldsymbol{Y} & x_{22} \boldsymbol{Y} & \cdots & x_{2 n} \boldsymbol{Y} 
 x_{m 1} \boldsymbol{Y} & x_{m 2} \boldsymbol{Y} & \cdots & x_{m n} \boldsymbol{Y}
 \end{bmatrix} \in \mathbb{R}^{(m p) \times(n q)} \tag{1}
 $$
+
 resulting in an $(mp)\times (nq)$ matrix. As can be seen, the matrix $\boldsymbol{Y}$ would multiply with all entries of $\boldsymbol{X}$ independently, demonstrating that the $(i,j)$-th block of $\boldsymbol{X}\otimes\boldsymbol{Y}$ is defined as $x_{ij}\boldsymbol{Y}\in\mathbb{R}^{p\times q}$. If one considers $\boldsymbol{Y}\otimes\boldsymbol{X}$, then the matrix $\boldsymbol{X}$ would multiply with all entries of $\boldsymbol{Y}$ independently. Although $\boldsymbol{X}\otimes\boldsymbol{Y}$ and $\boldsymbol{Y}\otimes\boldsymbol{X}$ are still of same size, they are not identical. In other words, the Kronecker product $\boldsymbol{X}\otimes\boldsymbol{Y}$ is non-commutative.
 
 
