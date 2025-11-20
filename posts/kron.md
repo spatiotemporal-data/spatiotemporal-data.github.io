@@ -52,7 +52,7 @@ x_{11} \boldsymbol{Y} & x_{12} \boldsymbol{Y} & \cdots & x_{1 n} \boldsymbol{Y} 
 x_{21} \boldsymbol{Y} & x_{22} \boldsymbol{Y} & \cdots & x_{2 n} \boldsymbol{Y} \\
 \vdots & \vdots & \ddots & \vdots \\
 x_{m 1} \boldsymbol{Y} & x_{m 2} \boldsymbol{Y} & \cdots & x_{m n} \boldsymbol{Y}
-\end{bmatrix} \in \mathbb{R}^{(m p) \times(n q)},
+\end{bmatrix} \in \mathbb{R}^{(m p) \times(n q)} \tag{1}
 $$
 
 
