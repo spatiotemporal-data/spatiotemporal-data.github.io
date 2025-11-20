@@ -37,19 +37,19 @@ window.MathJax = {
 The column space $\mathcal{C}(\boldsymbol{A})$ of a matrix $\boldsymbol{A}$ is the span of its columns, i.e., the set of all linear combinations of the columns of $\boldsymbol{A}$:
 
 $$
-\mathcal{C}(\boldsymbol{A})=\{\boldsymbol{A}\boldsymbol{x}\mid \boldsymbol{x}\in\mathbb{R}^{n}\}
+\mathcal{C}(\boldsymbol{A})=\{\boldsymbol{A}\boldsymbol{x}\mid \boldsymbol{x}\in\mathbb{R}^{n}\} \tag{67-1}
 $$
 
 The nullspace $\mathcal{N}(\boldsymbol{A})$ of a matrix $\boldsymbol{A}$ is the set of all vectors $\boldsymbol{x}$ for which $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{0}$ such that
 
 $$
-\mathcal{N}(\boldsymbol{A})=\{\boldsymbol{x}\in\mathbb{R}^{n}\mid \boldsymbol{A}\boldsymbol{x}=\boldsymbol{0}\}
+\mathcal{N}(\boldsymbol{A})=\{\boldsymbol{x}\in\mathbb{R}^{n}\mid \boldsymbol{A}\boldsymbol{x}=\boldsymbol{0}\} \tag{67-2}
 $$
 
 The condition number of a square matrix $\boldsymbol{A}$ is defined as the ratio between the largest and smallest singular values, i.e.,
 
 $$
-\kappa(\boldsymbol{A})=\frac{\sigma_{\text{max}}(\boldsymbol{A})}{\sigma_{\text{min}}(\boldsymbol{A})}
+\kappa(\boldsymbol{A})=\frac{\sigma_{\text{max}}(\boldsymbol{A})}{\sigma_{\text{min}}(\boldsymbol{A})} \tag{67-3}
 $$
 
 measuring how much the solution $\boldsymbol{x}$ of $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$ can change when the value of $\boldsymbol{b}$ changes.
