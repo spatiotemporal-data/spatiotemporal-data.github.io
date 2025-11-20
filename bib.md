@@ -44,6 +44,17 @@ $$
 \mathcal{N}(\boldsymbol{A})=\{\boldsymbol{x}\in\mathbb{R}^{n}\mid \boldsymbol{A}\boldsymbol{x}=\boldsymbol{0}\}
 $$
 
+The condition number of a square matrix $\boldsymbol{A}$ is defined as the ratio between the largest and smallest singular values, i.e.,
+
+$$
+\kappa(\boldsymbol{A})=\frac{\sigma_{\text{max}}(\boldsymbol{A})}{\sigma_{\text{min}}(\boldsymbol{A})}
+$$
+
+measuring how much the solution $\boldsymbol{x}$ of $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$ can change when the value of $\boldsymbol{b}$ changes.
+
+- When $\kappa(\boldsymbol{A})$ is low, small changes in $\boldsymbol{b}$ do not cause large changes in $\boldsymbol{x}$;
+- When $\kappa(\boldsymbol{A})$
+
 
 
 <br>
