@@ -30,33 +30,25 @@ window.MathJax = {
 <br>
 
 ### 67th Commit
+
+
+<br>
+
+### 66th Commit
 #### Temporal Regularity of Wikipedia Consumption
+
+Human life is driven by strong temporal regularities at multiple scales, with events and activities recurring in daily, weekly, month, yearly, or even longer periods. The large-scale and quantitative study of human behavior on digital platforms such as Wikipedia is important for understanding underlying dynamics of platform usage. There are some remarkable findings:
+
+- The consumption habits of individual articles maintain strong diurnal regularities.
+- The prototypical shapes of consumption patterns show a particularly strong distinction between articles preferred during the evening/night and articles preferred during working
+hours.
+- Topical and contextual correlates of Wikipedia articles’ access rhythms show the importance of article topic, reader country, and access device (mobile vs. desktop) for predicting daily attention patterns.
+
 
 
 **References**
 
 - Piccardi, T., Gerlach, M., & West, R. (2024, May). [Curious rhythms: Temporal regularities of wikipedia consumption](https://ojs.aaai.org/index.php/ICWSM/article/view/31386). In Proceedings of the International AAAI Conference on Web and Social Media (Vol. 18, pp. 1249-1261).
-
-<br>
-
-
-### 66th Commit
-#### Common Crawl
-
-High-quality public web crawl data
-
-300 billion web pages spanning 17 years (2008--2025)
-
-2.5 billion pages added each month
-
-AI panic since ChatGPT's web interface launched in November 2022
-
-Website providers (e.g., Cloudflare, Wordpress) saw this as a marketing opportunity
-
-improve the language balance
-
-Better language identification
-
 
 
 <br>
