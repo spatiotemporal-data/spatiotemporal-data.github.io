@@ -41,6 +41,16 @@ $$
 
 So, it is also called robust penalty.
 
+<p align="center">
+<img align="middle" src="https://spatiotemporal-data.github.io/images/quad_vs_huber.png" width="400" />
+</p>
+
+<p style="font-size: 14px; color: gray" align = "center">
+Affine function fitted on 42 points (with two outliers) using quadratic (dashed) and Huber (solid) penalty.
+</p>
+
+
+
 
 
 
