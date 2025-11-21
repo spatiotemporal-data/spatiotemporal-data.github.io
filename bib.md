@@ -70,7 +70,7 @@ begin{aligned}
 \end{aligned} \tag{67-4}
 $$
 
-- Introducing the slack variable $\boldsymbol{s}$:
+- (Damped) Introducing the slack variable $\boldsymbol{s}$:
 
 $$
 \begin{aligned}
