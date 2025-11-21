@@ -59,6 +59,16 @@ measuring how much the solution $\boldsymbol{x}$ of $\boldsymbol{A}\boldsymbol{x
 
 ##### Optimization
 
+There are some optimization problems that have been formulated:
+
+1. Minimizing the $\ell_2$-norm of $\boldsymbol{x}$:
+
+$$
+begin{aligned}
+\min_{\boldsymbol{x}}~&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
+\text{s.t.}~&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}
+\end{aligned}
+$$
 
 
 <br>
