@@ -75,7 +75,7 @@ $$
 $$
 \begin{aligned}
 \min_{\boldsymbol{x},\boldsymbol{s}}\quad&\frac{\alpha}{2}\|\boldsymbol{x}\|_2^2+\frac{1}{2}\|\boldsymbol{s}\|_2^2 \\
-\text{s.t.}\quad&
+\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}+\boldsymbol{s}
 \end{aligned}
 $$
 
