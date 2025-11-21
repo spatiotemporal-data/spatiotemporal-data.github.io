@@ -65,8 +65,8 @@ There are some optimization problems that have been formulated:
 
 $$
 begin{aligned}
-\min_{\boldsymbol{x}}\,&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
-\text{s.t.}\,&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}
+\min_{\boldsymbol{x}}\quad&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
+\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}
 \end{aligned}
 $$
 
@@ -74,7 +74,7 @@ $$
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{x},\boldsymbol{s}}\,&
+\min_{\boldsymbol{x},\boldsymbol{s}}\quad&
 \end{aligned}
 $$
 
