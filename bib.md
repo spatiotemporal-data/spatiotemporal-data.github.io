@@ -95,6 +95,14 @@ $$
 \end{aligned} \tag{67-6}
 $$
 
+- (Damped) Introducing the slack variable $\boldsymbol{s}$ and another vector $\boldsymbol{y}$:
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{x},\boldsymbol{s}}\quad
+\end{aligned}
+$$
+
 
 <br>
 
