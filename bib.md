@@ -67,7 +67,7 @@ $$
 begin{aligned}
 \min_{\boldsymbol{x}}\quad&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
 \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\
-\end{aligned}
+\end{aligned} \tag{67-4}
 $$
 
 - Introducing the slack variable $\boldsymbol{s}$:
@@ -76,10 +76,17 @@ $$
 \begin{aligned}
 \min_{\boldsymbol{x},\boldsymbol{s}}\quad&\frac{\alpha}{2}\|\boldsymbol{x}\|_2^2+\frac{1}{2}\|\boldsymbol{s}\|_2^2 \\
 \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}+\boldsymbol{s} \\
-\end{aligned}
+\end{aligned} \tag{67-5}
 $$
 
-- Finding $\boldsymbol{x}$ which is closest to another vector $\boldsymbol{y}$
+- Finding $\boldsymbol{x}$ which is closest to another vector $\boldsymbol{y}$:
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{x}}\quad&\frac{1}{2}\|\boldsymbol{x}-\boldsymbol{y}\|_2^2 \\
+\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\
+\end{aligned} \tag{67-6}
+$$
 
 
 <br>
