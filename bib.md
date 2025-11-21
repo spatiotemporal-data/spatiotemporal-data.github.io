@@ -65,7 +65,7 @@ There are some optimization problems that have been formulated:
 
 $$
 begin{aligned}
-\min_{\boldsymbol{x}}\quad&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
+&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
 \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}
 \end{aligned}
 $$
@@ -79,6 +79,7 @@ $$
 \end{aligned}
 $$
 
+3. 
 
 
 <br>
