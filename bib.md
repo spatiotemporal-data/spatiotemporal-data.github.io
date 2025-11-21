@@ -64,6 +64,13 @@ There are some optimization problems that have been formulated:
 - Minimizing the $\ell_2$-norm of $\boldsymbol{x}$ (under-determined system):
 
 $$
+\begin{aligned}
+\min_{\boldsymbol{x}}\quad&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
+\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}
+\end{aligned}
+$$
+
+$$
 begin{aligned}
 \min_{\boldsymbol{x}}\quad&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
 \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\
