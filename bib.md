@@ -33,7 +33,7 @@ window.MathJax = {
 ### 68th Commit
 #### [Regression & Statistical Estimation](https://www.cvxgrp.org/nasa/pdf/lecture5.pdf)
 
-Huber penalty function has linear growth for large $u$ that makes approximation less sensitive to outliers:
+Huber penalty function with the Huber threshold $\delta>0$ has linear growth for large $u$ that makes approximation less sensitive to outliers:
 
 $$
 \phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta(2|u|-\delta) &\text{otherwise} \end{cases}
@@ -49,8 +49,16 @@ So, it is also called robust penalty.
 [Excellent example from P.11 the <a href="https://www.cvxgrp.org/nasa/pdf/lecture5.pdf">source</a>] Affine function fitted on 42 points (with two outliers) using quadratic (dashed) and Huber (solid) penalty.
 </p>
 
+Given $\boldsymbol{A}\in\mathbb{R}^{m\times n}$ and $\boldsymbol{b}\in\mathbb{R}^{m}$, when it minimizes residual $\boldsymbol{r}=\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\in\mathbb{R}^{m}$, the optimization can be formulated to the following form:
 
+$$
+\begin{aligned}
+\min_{\boldsymbol{x},\boldsymbol{r}}\quad&\sum_{i=1}^{m}\phi(r_i) \\
+\text{s.t.}\quad&\boldsymbol{r}=\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b} \\
+\end{aligned}
+$$
 
+where 
 
 
 
