@@ -46,7 +46,7 @@ So, it is also called robust penalty.
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-Affine function fitted on 42 points (with two outliers) using quadratic (dashed) and Huber (solid) penalty.
+[Excellent example from P.11 the <a href="https://www.cvxgrp.org/nasa/pdf/lecture5.pdf">source</a>] Affine function fitted on 42 points (with two outliers) using quadratic (dashed) and Huber (solid) penalty.
 </p>
 
 
