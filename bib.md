@@ -61,25 +61,25 @@ measuring how much the solution $\boldsymbol{x}$ of $\boldsymbol{A}\boldsymbol{x
 
 There are some optimization problems that have been formulated:
 
-1. Minimizing the $\ell_2$-norm of $\boldsymbol{x}$ (under-determined system):
+- Minimizing the $\ell_2$-norm of $\boldsymbol{x}$ (under-determined system):
 
 $$
 begin{aligned}
-&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
-\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}
+\min_{\boldsymbol{x}}\quad&\frac{1}{2}\|\boldsymbol{x}\|_2^2 \\
+\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\
 \end{aligned}
 $$
 
-2. Introducing the slack variable $\boldsymbol{s}$:
+- Introducing the slack variable $\boldsymbol{s}$:
 
 $$
 \begin{aligned}
 \min_{\boldsymbol{x},\boldsymbol{s}}\quad&\frac{\alpha}{2}\|\boldsymbol{x}\|_2^2+\frac{1}{2}\|\boldsymbol{s}\|_2^2 \\
-\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}+\boldsymbol{s}
+\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}+\boldsymbol{s} \\
 \end{aligned}
 $$
 
-3. 
+- Finding $\boldsymbol{x}$ which is closest to another vector $\boldsymbol{y}$
 
 
 <br>
