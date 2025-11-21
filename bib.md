@@ -29,6 +29,24 @@ window.MathJax = {
 
 <br>
 
+
+### 68th Commit
+#### [Regression & Statistical Estimation](https://www.cvxgrp.org/nasa/pdf/lecture5.pdf)
+
+Huber penalty function has linear growth for large $u$ that makes approximation less sensitive to outliers:
+
+$$
+\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ M(2|u|-\delta^2) &\text{otherwise} \end{cases}
+$$
+
+So, it is also called robust penalty.
+
+
+
+
+<br>
+
+
 ### 67th Commit
 #### [Linear Algebra & Robot Control](https://adamheins.com/blog/linear-algebra-robot-control)
 
@@ -99,6 +117,7 @@ $$
 
 
 <br>
+
 
 ### 66th Commit
 #### Temporal Regularity of Wikipedia Consumption
