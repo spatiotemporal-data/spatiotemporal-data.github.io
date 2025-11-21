@@ -36,7 +36,7 @@ window.MathJax = {
 Huber penalty function has linear growth for large $u$ that makes approximation less sensitive to outliers:
 
 $$
-\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ M(2|u|-\delta^2) &\text{otherwise} \end{cases}
+\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta(2|u|-\delta) &\text{otherwise} \end{cases}
 $$
 
 So, it is also called robust penalty.
