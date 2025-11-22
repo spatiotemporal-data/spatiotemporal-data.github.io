@@ -71,6 +71,8 @@ $$
 
 with an $\ell_1$-norm induced sparsity penalty and orthogonality constraints on factor matrices.
 
+Estimating these factor matrices can be converted into 
+
 <br>
 
 
