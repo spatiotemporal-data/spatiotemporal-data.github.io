@@ -63,7 +63,7 @@ So, it is also called robust penalty.
 </p>
 
 <p style="font-size: 14px; color: gray" align = "center">
-[Excellent example from page 11 of the <a href="https://www.cvxgrp.org/nasa/pdf/lecture5.pdf">source</a>] Affine function fitted on 42 points (with two outliers) using quadratic (dashed) and Huber (solid) penalty.
+[Excellent example from page 11 of the <a href="https://www.cvxgrp.org/nasa/pdf/lecture5.pdf">slides</a>] Affine function fitted on 42 points (with two outliers) using quadratic (dashed) and Huber (solid) penalty.
 </p>
 
 Given $\boldsymbol{A}\in\mathbb{R}^{m\times n}$ and $\boldsymbol{b}\in\mathbb{R}^{m}$ with $m$ measurements and $n$ regressors, when it minimizes residual $\boldsymbol{r}=\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\in\mathbb{R}^{m}$, the optimization can be formulated to the following form:
