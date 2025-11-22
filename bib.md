@@ -33,8 +33,10 @@ window.MathJax = {
 ### 69th Commit
 #### [Non-Quadratic Losses](https://ee104.stanford.edu/lectures/losses.pdf)
 
+---
+
 <p style="font-size: 14px; color: gray">
-Sanjay Lall and Stephen Boyd. Non-Quadratic Losses. EE104 at Stanford University.
+<b>Source</b>: Sanjay Lall and Stephen Boyd. Non-Quadratic Losses. EE104 at Stanford University.
 </p>
 
 ---
@@ -85,6 +87,11 @@ $$
 $$
 
 where $\boldsymbol{r}$ and $\boldsymbol{r}^{*}$ are *over-estimated* and *under-estimated* residual vectors, respectively.
+
+- For $\tau=\frac{1}{2}$, same penalty for under-estimate and over-estimate.
+- For $\tau>\frac{1}{2}$, higher penalty to under-estimate than over-estimate.
+- For $\tau<\frac{1}{2}$, higher penalty to over-estimate than under-estimate.
+
 
 <br>
 
