@@ -41,7 +41,7 @@ window.MathJax = {
 
 ---
 
-
+The Huber loss has linear growth for large residual $r$ that makes fit less sensitive to outliers. Thus, empirical risk minimization (ERM) with Huber loss is called a **robust** prediction method. 
 
 
 <br>
