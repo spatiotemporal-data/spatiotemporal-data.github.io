@@ -44,7 +44,7 @@ window.MathJax = {
 The Huber loss has linear growth for large residual $r$ that makes fit less sensitive to outliers. Thus, empirical risk minimization (ERM) with Huber loss is called a **robust** prediction method. The log Huber loss is 
 
 $$
-\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta^2(1-2\operatorname{log}(\delta)+\operatorname{log}(u^2)) &\text{otherwise} \end{cases} \tag{68-1}
+\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta^2(1-2\operatorname{log}(\delta)+\operatorname{log}(u^2)) &\text{otherwise} \end{cases} \tag{69-1}
 $$
 
 for any positive parameter $\delta>0$.
