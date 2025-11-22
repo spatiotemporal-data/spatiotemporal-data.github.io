@@ -50,11 +50,22 @@ $$
 for the $\tau$th conditional quantile of response given $\boldsymbol{\mathcal{X}}\in\mathbb{R}^{p_1\times p_2\times \cdots \times p_{K}}$ and $y\in\mathbb{R}$. In the regressor, $\boldsymbol{\mathcal{A}}$ can be parameterized by the Tucker decomposition:
 
 $$
-\boldsymbol{\mathcal{A}}=\boldsymbol{\mathcal{G}}\times_1\boldsymbol{U}_1\times_2\boldsymbol{U}_2\cdots\times_{K}\boldsymbol{U}_{K}
+\boldsymbol{\mathcal{A}}=\boldsymbol{\mathcal{G}}\times_1\boldsymbol{U}_1\times_2\boldsymbol{U}_2\cdots\times_{K}\boldsymbol{U}_{K} \tag{70-2}
 $$
 
-Considering 
+Considering the loss of quantile regression as follows,
 
+$$
+\rho_{\tau}(u)=\begin{cases} \tau u & \text{if $u>0$} \\ (\tau-1)u & \text{otherwise} \end{cases}
+$$
+
+By integrating tensor decomposition into quantile regression, we have
+
+$$
+\min_{\boldsymbol{\mathcal{G}},\boldsymbol{U}_{1},\boldsymbol{U}_2,\cdots,\boldsymbol{U}_{K}}\quad\sum_{i=1}^{n}\rho_{\tau}(y_i-\langle\boldsymbol{\mathcal{G}}\times_1\boldsymbol{U}_1\times_2\boldsymbol{U}_2\cdots\times_{K}\boldsymbol{U}_{K},\boldsymbol{\mathcal{X}}_{i}\rangle)+\lambda\|\boldsymbol{U}_K\otimes\cdots\otimes\boldsymbol{U}_1\|_1
+$$
+
+with an $\ell_1$-norm induced sparsity penalty.
 
 <br>
 
