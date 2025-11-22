@@ -30,6 +30,35 @@ window.MathJax = {
 <br>
 
 
+### 70th Commit
+#### High-Dimensional Quantile Tensor Regression
+
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Source</b>: Wenqi Lu, Zhongyi Zhu, Heng Lian (2020). <a href="https://jmlr.org/papers/v21/20-383.html">High-dimensional Quantile Tensor Regression</a>. Journal of Machine Learning Research 21: 1-31.
+</p>
+
+---
+
+Modern machine learning applications involve tensor data in the form of quantile regression such that
+
+$$
+Q_{\tau}(y\mid\boldsymbol{\mathcal{X}})=\langle\boldsymbol{\mathcal{A}},\boldsymbol{\mathcal{A}}\rangle \tag{70-1}
+$$
+
+for the $\tau$th conditional quantile of response given $\boldsymbol{\mathcal{X}}\in\mathbb{R}^{p_1\times p_2\times \cdots \times p_{K}}$ and $y\in\mathbb{R}$. In the regressor, $\boldsymbol{\mathcal{A}}$ can be parameterized by the Tucker decomposition:
+
+$$
+\boldsymbol{\mathcal{A}}=\boldsymbol{\mathcal{G}}\times_1\boldsymbol{U}_1\times_2\boldsymbol{U}_2\cdots\times_{K}\boldsymbol{U}_{K}
+$$
+
+Considering 
+
+
+<br>
+
+
 ### 69th Commit
 #### [Non-Quadratic Losses](https://ee104.stanford.edu/lectures/losses.pdf)
 
