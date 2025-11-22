@@ -64,7 +64,8 @@ As an alternative, quantile regression for any $\tau\in(0,1)$ takes the followin
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{x},\boldsymbol{r}\geq0,\boldsymbol{r}^{*}\geq0}\quad&
+\min_{\boldsymbol{x},\boldsymbol{r}\geq0,\boldsymbol{r}^{*}\geq0}\quad&\sum_{i=1}^{m}\left(\tau r_{i}+(1-\tau) r_{i}^{*}\right) \\
+\text{s.t.}\quad&
 \end{aligned}
 $$
 
