@@ -53,7 +53,7 @@ window.MathJax = {
 Huber penalty function with the Huber threshold $\delta>0$ has linear growth for large $u$ that makes approximation less sensitive to outliers:
 
 $$
-\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta(2|u|-\delta) &\text{otherwise} \end{cases}
+\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta(2|u|-\delta) &\text{otherwise} \end{cases} \tag{68-1}
 $$
 
 So, it is also called robust penalty.
@@ -72,7 +72,7 @@ $$
 \begin{aligned}
 \min_{\boldsymbol{x},\boldsymbol{r}}\quad&\sum_{i=1}^{m}\phi(r_i) \\
 \text{s.t.}\quad&\boldsymbol{r}=\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b} \\
-\end{aligned}
+\end{aligned} \tag{68-2}
 $$
 
 where $\phi:\mathbb{R}\to\mathbb{R}$ is a convex penalty function. In particular, Huber loss would lead to the robust regression.
@@ -83,7 +83,7 @@ $$
 \begin{aligned}
 \min_{\boldsymbol{x},\boldsymbol{r}\geq0,\boldsymbol{r}^{*}\geq0}\quad&\sum_{i=1}^{m}\left(\tau r_{i}+(1-\tau) r_{i}^{*}\right) \\
 \text{s.t.}\quad&\boldsymbol{r}-\boldsymbol{r}^{*}=\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b} \\
-\end{aligned}
+\end{aligned} \tag{68-3}
 $$
 
 where $\boldsymbol{r}$ and $\boldsymbol{r}^{*}$ are *over-estimated* and *under-estimated* residual vectors, respectively.
