@@ -31,7 +31,7 @@ window.MathJax = {
 
 
 ### 68th Commit
-#### [Regression & Statistical Estimation](https://www.cvxgrp.org/nasa/pdf/lecture5.pdf)
+#### [Regression & Statistical Estimation](https://www.cvxgrp.org/nasa/pdf/lecture5.pdf) ([CVXPY x NASA Course 2024](https://www.cvxgrp.org/nasa/))
 
 Huber penalty function with the Huber threshold $\delta>0$ has linear growth for large $u$ that makes approximation less sensitive to outliers:
 
