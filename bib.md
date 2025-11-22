@@ -33,6 +33,12 @@ window.MathJax = {
 ### 69th Commit
 #### [Non-Quadratic Losses](https://ee104.stanford.edu/lectures/losses.pdf)
 
+<p style="font-size: 14px; color: gray">
+Sanjay Lall and Stephen Boyd. Non-Quadratic Losses. EE104 at Stanford University.
+</p>
+
+---
+
 
 
 
