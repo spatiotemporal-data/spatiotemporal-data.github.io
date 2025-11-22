@@ -65,7 +65,7 @@ As an alternative, quantile regression for any $\tau\in(0,1)$ takes the followin
 $$
 \begin{aligned}
 \min_{\boldsymbol{x},\boldsymbol{r}\geq0,\boldsymbol{r}^{*}\geq0}\quad&\sum_{i=1}^{m}\left(\tau r_{i}+(1-\tau) r_{i}^{*}\right) \\
-\text{s.t.}\quad&
+\text{s.t.}\quad&\boldsymbol{r}-\boldsymbol{r}^{*}=\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b} \\
 \end{aligned}
 $$
 
