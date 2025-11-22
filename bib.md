@@ -92,7 +92,7 @@ $$
 \end{aligned} \tag{68-3}
 $$
 
-where $\boldsymbol{r}$ and $\boldsymbol{r}^{*}$ are *over-estimated* and *under-estimated* residual vectors, respectively.
+where $\boldsymbol{r}$ and $\boldsymbol{r}^{*}$ are over-estimated and under-estimated residual vectors, respectively.
 
 - For $\tau=\frac{1}{2}$, same penalty for under-estimate and over-estimate.
 - For $\tau>\frac{1}{2}$, higher penalty to under-estimate than over-estimate.
