@@ -30,6 +30,15 @@ window.MathJax = {
 <br>
 
 
+### 69th Commit
+#### [Non-Quadratic Losses](https://ee104.stanford.edu/lectures/losses.pdf)
+
+
+
+
+<br>
+
+
 ### 68th Commit
 #### [Regression & Statistical Estimation](https://www.cvxgrp.org/nasa/pdf/lecture5.pdf) ([CVXPY x NASA Course 2024](https://www.cvxgrp.org/nasa/))
 
