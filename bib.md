@@ -84,7 +84,7 @@ $$
 \end{aligned}
 $$
 
-
+where $\boldsymbol{r}$ and $\boldsymbol{r}^{*}$ are *over-estimated* and *under-estimated* residual vectors, respectively.
 
 <br>
 
