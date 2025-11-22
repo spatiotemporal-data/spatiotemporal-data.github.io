@@ -44,7 +44,7 @@ window.MathJax = {
 Modern machine learning applications involve tensor data in the form of quantile regression such that
 
 $$
-Q_{\tau}(y\mid\boldsymbol{\mathcal{X}})=\langle\boldsymbol{\mathcal{A}},\boldsymbol{\mathcal{A}}\rangle \tag{70-1}
+Q_{\tau}(y\mid\boldsymbol{\mathcal{X}})=\langle\boldsymbol{\mathcal{A}},\boldsymbol{\mathcal{X}}\rangle \tag{70-1}
 $$
 
 for the $\tau$th conditional quantile of response given $\boldsymbol{\mathcal{X}}\in\mathbb{R}^{p_1\times p_2\times \cdots \times p_{K}}$ and $y\in\mathbb{R}$. In the regressor, $\boldsymbol{\mathcal{A}}$ can be parameterized by the Tucker decomposition:
