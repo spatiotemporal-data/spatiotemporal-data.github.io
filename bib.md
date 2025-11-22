@@ -58,7 +58,7 @@ $$
 \end{aligned}
 $$
 
-where 
+where $\phi:\mathbb{R}\to\mathbb{R}$ is a convex penalty function.
 
 
 
