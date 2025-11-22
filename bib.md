@@ -58,7 +58,15 @@ $$
 \end{aligned}
 $$
 
-where $\phi:\mathbb{R}\to\mathbb{R}$ is a convex penalty function.
+where $\phi:\mathbb{R}\to\mathbb{R}$ is a convex penalty function. In particular, Huber loss would lead to the robust regression.
+
+As an alternative, quantile regression for any $\tau\in(0,1)$ takes the following form:
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{x},\boldsymbol{r}\geq0,\boldsymbol{r}^{*}\geq0}\quad&
+\end{aligned}
+$$
 
 
 
