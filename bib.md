@@ -65,7 +65,7 @@ $$
 \begin{aligned}
 \min_{\boldsymbol{\mathcal{G}},\boldsymbol{U}_{1},\boldsymbol{U}_2,\cdots,\boldsymbol{U}_{K}}\quad&\sum_{i=1}^{n}\rho_{\tau}(y_i-\langle\boldsymbol{\mathcal{G}}\times_1\boldsymbol{U}_1\times_2\boldsymbol{U}_2\cdots\times_{K}\boldsymbol{U}_{K},\boldsymbol{\mathcal{X}}_{i}\rangle) \\
 &\quad +\lambda\|\boldsymbol{U}_K\otimes\cdots\otimes\boldsymbol{U}_1\|_1 \\
-\text{s.t.}\quad &\boldsymbol{U}_k^\top\boldsymbol{U}_k=\boldsymbol{I}
+\text{s.t.}\quad &\boldsymbol{U}_k^\top\boldsymbol{U}_k=\boldsymbol{I},\quad\forall k\in\{1,2,\ldots,K\}
 \end{aligned} \tag{70-4}
 $$
 
