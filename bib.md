@@ -36,7 +36,7 @@ window.MathJax = {
 ---
 
 <p style="font-size: 14px; color: gray">
-<b>Source</b>: Wenqi Lu, Zhongyi Zhu, Heng Lian (2020). <a href="https://jmlr.org/papers/v21/20-383.html">High-dimensional Quantile Tensor Regression</a>. Journal of Machine Learning Research 21: 1-31.
+<b>Reference</b>: Wenqi Lu, Zhongyi Zhu, Heng Lian (2020). <a href="https://jmlr.org/papers/v21/20-383.html">High-dimensional Quantile Tensor Regression</a>. Journal of Machine Learning Research 21: 1-31.
 </p>
 
 ---
@@ -65,7 +65,7 @@ Considering
 ---
 
 <p style="font-size: 14px; color: gray">
-<b>Source</b>: Sanjay Lall and Stephen Boyd. Non-Quadratic Losses. EE104 at Stanford University.
+<b>Reference</b>: Sanjay Lall and Stephen Boyd. Non-Quadratic Losses. EE104 at Stanford University.
 </p>
 
 ---
