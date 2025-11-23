@@ -50,7 +50,13 @@ $$
 \end{aligned} \tag{71-1}
 $$
 
-taking from the $\epsilon$-loss such that
+taking from the $\epsilon$-insensitive loss function such that
+
+$$
+L_{\epsilon}(y,f(x))=\max(0,|y-f(x)|-\epsilon) \tag{71-2}
+$$
+
+where loss is zero if the absolute error is within $\epsilon$.
 
 
 <br>
