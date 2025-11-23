@@ -50,6 +50,8 @@ $$
 \end{aligned} \tag{71-1}
 $$
 
+taking from the $\epsilon$-loss such that
+
 
 <br>
 
