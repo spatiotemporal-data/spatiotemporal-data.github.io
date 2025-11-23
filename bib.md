@@ -71,7 +71,15 @@ $$
 
 with an $\ell_1$-norm induced sparsity penalty and orthogonality constraints on factor matrices.
 
-Estimating these factor matrices can be converted into 
+Estimating these factor matrices can be converted into the following optimization problem:
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{r},\boldsymbol{U}}\quad&\rho_{\tau}(\boldsymbol{r})+\lambda\|\boldsymbol{U}\|_1 \\
+\text{s.t.}\quad\boldsymbol{r}=\boldsymbol{y}-\boldsymbol{Z}\operatorname{vec}(\boldsymbol{U}),\quad\boldsymbol{U}^\top\boldsymbol{U}=\boldsymbol{I}
+\end{aligned}
+$$
+
 
 <br>
 
