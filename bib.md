@@ -40,7 +40,14 @@ window.MathJax = {
 
 ---
 
+The $\epsilon$-SVR method aims to solve the following optimization problem:
 
+$$
+\begin{aligned}
+\min_{\boldsymbol{w},b,\boldsymbol{\xi},\boldsymbol{\xi}^{*}}\quad&\frac{1}{2}\|\boldsymbol{w}\|_2^2+C\sum_{i=1}^{n}(\xi_i+\xi_i^{*}) \\
+\text{s.t.}\quad&
+\end{aligned}
+$$
 
 
 <br>
