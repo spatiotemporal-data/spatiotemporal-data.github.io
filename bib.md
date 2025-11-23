@@ -44,8 +44,9 @@ The $\epsilon$-SVR method aims to solve the following optimization problem:
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{w},b,\boldsymbol{\xi},\boldsymbol{\xi}^{*}}\quad&\frac{1}{2}\|\boldsymbol{w}\|_2^2+C\sum_{i=1}^{n}(\xi_i+\xi_i^{*}) \\
-\text{s.t.}\quad&
+\min_{\boldsymbol{w},b,\boldsymbol{\xi},\boldsymbol{\xi}^{*}}\quad&\frac{1}{2}\|\boldsymbol{w}\|_2^2+\lambda\sum_{i=1}^{n}(\xi_i+\xi_i^{*}) \\
+\text{s.t.}\quad&y_i-(\boldsymbol{w}^\top\boldsymbol{x}_{i}+b)-\epsilon\geq\xi_{i},\quad\forall i\in\{1,2,\ldots,n\} \\
+&(\boldsymbol{w}^\top\boldsymbol{x}_{i}+b)-y_i-\epsilon\geq\xi_{i}^{*}, \quad\forall i\in\{1,2,\ldots,n\} \\
 \end{aligned} \tag{71-1}
 $$
 
