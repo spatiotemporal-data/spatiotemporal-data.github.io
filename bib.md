@@ -29,6 +29,22 @@ window.MathJax = {
 
 <br>
 
+### 71st Commit
+#### Automatic Lag Selection with Support Vector Regression
+
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Reference</b>: Sebastián Maldonado, Agustín González, Sven Crone (2019). <a href="https://doi.org/10.1016/j.asoc.2019.105616">Automatic time series analysis for electric load forecasting via support vector regression</a>. Applied Soft Computing. 83, 105616.
+</p>
+
+---
+
+
+
+
+<br>
+
 
 ### 70th Commit
 #### High-Dimensional Quantile Tensor Regression
@@ -36,7 +52,7 @@ window.MathJax = {
 ---
 
 <p style="font-size: 14px; color: gray">
-<b>Reference</b>: Wenqi Lu, Zhongyi Zhu, Heng Lian (2020). <a href="https://jmlr.org/papers/v21/20-383.html">High-dimensional Quantile Tensor Regression</a>. Journal of Machine Learning Research 21: 1-31.
+<b>Reference</b>: Wenqi Lu, Zhongyi Zhu, Heng Lian (2020). <a href="https://jmlr.org/papers/v21/20-383.html">High-dimensional Quantile Tensor Regression</a>. Journal of Machine Learning Research. 21: 1-31.
 </p>
 
 ---
