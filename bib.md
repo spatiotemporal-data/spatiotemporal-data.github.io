@@ -32,8 +32,13 @@ window.MathJax = {
 ### 72nd Commit
 #### Local Linear Approximation for Nonconvex Penalties
 
+Nonconvex penalties such as SCAD and MCP for sparse modeling are more flexible than LASSO. Given the decision variables $\boldsymbol{w}\in\mathbb{R}^{d}$, the local linear approximation (LLA, see [Zou & Li, 2008](https://www.jstor.org/stable/20441455)) is
 
+$$
+\rho_{\lambda}(|w_k|)\approx\rho_{\lambda}(|w_k^{*}|)+\rho_{\lambda}^{\prime}(|w_k^{*}|)(|w_k|-|w_k^{*}|)\quad\text{for $w_k\approx w_k^{*}$}
+$$
 
+which is a convex majorant of a concave penalty function $\rho_{\lambda}(\cdot)$ on $[0,\infty)$.
 
 
 <br>
