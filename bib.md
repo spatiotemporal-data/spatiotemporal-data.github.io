@@ -35,7 +35,7 @@ window.MathJax = {
 ---
 
 <p style="font-size: 14px; color: gray">
-<b>Reference</b>: Jianqing Fan, Jinchi Lv, Lei Qi (2011). <a href="https://doi.org/10.1146/annurev-economics-061109-080451">Sparse high-dimensional models in economics</a>. Annual Review of Economics. 3, 291-317.
+<b>Reference</b>: Jianqing Fan, Jinchi Lv, Lei Qi (2011). <a href="https://doi.org/10.1146/annurev-economics-061109-080451">Sparse high-dimensional models in economics</a>. Annual Review of Economics. 3, 291-317. [<a href="https://faculty.marshall.usc.edu/jinchi-lv/publications/ARE-FLQ11.pdf">PDF</a>]
 </p>
 
 ---
@@ -63,10 +63,10 @@ $$
 In the case of SCAD, the derivative is given by
 
 $$
-\rho_{\lambda}^{\prime}(w)=\lambda\left(I\{w\leq\lambda\}+\frac{(a\lambda-w)_{+}}{(a-1)\lambda}I\{w>\lambda\}\right) \quad\text{for some $a>2$} \tag{72-4}
+\rho_{\lambda}^{\prime}(w)=\lambda\left(I\{w\leq\lambda\}+\frac{(a\lambda-w)_{+}}{(a-1)\lambda}I\{w>\lambda\}\right) \tag{72-4}
 $$
 
-where $\rho_{\lambda}(0)=0$ and $a=3.7$ is often used.
+for some $a>2$. Here, $\rho_{\lambda}(0)=0$ and $a=3.7$ is often used.
 
 In the case of MCP, the derivative is given by
 
