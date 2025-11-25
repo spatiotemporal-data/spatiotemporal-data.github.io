@@ -74,7 +74,7 @@ $$
 \rho_{\lambda}^{\prime}(w)=\frac{(a\lambda-w)_{+}}{a} \tag{72-5}
 $$
 
-In fact, if the initial estimate is zero, then $\alpha_k=\lambda$, and the resulting estimate is the LASSO estimate.
+In fact, if the initial estimate is zero, then $\alpha_k=\lambda$, and the resulting estimate is the LASSO estimate. Nonconvex penalties further reduce the bias problem of LASSO by assigning an adapative weighting scheme.
 
 <br>
 
