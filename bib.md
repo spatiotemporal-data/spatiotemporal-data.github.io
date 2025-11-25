@@ -54,7 +54,25 @@ $$
 \min_{\boldsymbol{w}}\quad\frac{1}{2d}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2+\sum_{k=1}^{d}\underbrace{\alpha_k|w_k|}_{\approx\rho_{\lambda}(|w_k|)} \tag{72-2}
 $$
 
+where the weights are
 
+$$
+\alpha_k=\rho_{\lambda}^{\prime}(|w_k^{*}|) \tag{72-3}
+$$
+
+In the case of SCAD, the derivative is given by
+
+$$
+\rho_{\lambda}^{\prime}(w)=\lambda\left(I\{w\leq\lambda\}+\frac{(a\lambda-w)_{+}}{(a-1)\lambda}I\{w>\lambda\}\right) \quad\text{for some $a>2$} \tag{72-4}
+$$
+
+where $\rho_{\lambda}(0)=0$ and $a=3.7$ is often used.
+
+In the case of MCP, the derivative is given by
+
+$$
+\rho_{\lambda}^{\prime}(w)=\frac{(a\lambda-w)_{+}}{a} \tag{72-5}
+$$
 
 
 <br>
