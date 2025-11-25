@@ -29,6 +29,31 @@ window.MathJax = {
 
 <br>
 
+### 73rd Commit
+#### Portfolio Selection (Definition)
+
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Reference</b>: Dimitris Bertsimas, Ryan Cory-Wright (2022). <a href="https://doi.org/10.1287/ijoc.2021.1127">A Scalable Algorithm for Sparse Portfolio Selection</a>. INFORMS Journal on Computing. 34 (3): 1489–1511.
+</p>
+
+---
+
+For a universe of $n$ securities, we estimate a mean $\boldsymbol{\mu}\in\mathbb{R}^{n}$ (or return) and a covariance matrix $\boldsymbol{\Sigma}\in\mathbb{R}^{n\times n}$. The Markowitz model proposed in 1952 selects a portfolio that provides the highest expected return for a given amount of variance. The mean-variance portfolio optimization is formulated as follows,
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{x}\in\mathbb{R}_{+}^{n}}\quad&\frac{\lambda}{2}\boldsymbol{x}^\top\boldsymbol{\Sigma}\boldsymbol{x}-\boldsymbol{\mu}^\top\boldsymbol{x} \\
+\text{s.t.}\quad&\boldsymbol{e}^\top\boldsymbol{x}=1 \\
+\end{aligned} \tag{73-1}
+$$
+
+where $\lambda$ is a parameter that controls the trade-off between the portfolio's risk and return, and $\boldsymbol{e}\in\mathbb{R}^{n}$ denotes the vector of all ones.
+
+<br>
+
+
 ### 72nd Commit
 #### Local Linear Approximation for Nonconvex Penalties
 
