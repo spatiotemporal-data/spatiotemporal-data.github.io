@@ -40,6 +40,14 @@ $$
 
 which is a convex majorant of a concave penalty function $\rho_{\lambda}(\cdot)$ on $[0,\infty)$.
 
+The penalized least-squares (PLS) estimation can therefore be formulated as follows,
+
+$$
+\min_{\boldsymbol{w}}\quad\frac{1}{2d}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2+\sum_{k=1}^{d}\underbrace{\alpha_k|w_k|}{\approx\rho_{\lambda}(|w_k|)} \tag{72-2}
+$$
+
+
+
 
 <br>
 
