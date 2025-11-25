@@ -32,6 +32,14 @@ window.MathJax = {
 ### 72nd Commit
 #### Local Linear Approximation for Nonconvex Penalties
 
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Reference</b>: Jianqing Fan, Jinchi Lv, Lei Qi (2011). <a href="https://doi.org/10.1146/annurev-economics-061109-080451">Sparse high-dimensional models in economics</a>. Annual Review of Economics. 3, 291-317.
+</p>
+
+---
+
 Nonconvex penalties such as SCAD and MCP for sparse modeling are more flexible than LASSO. Given the decision variables $\boldsymbol{w}\in\mathbb{R}^{d}$, the local linear approximation (LLA, see [Zou & Li, 2008](https://www.jstor.org/stable/20441455)) is
 
 $$
