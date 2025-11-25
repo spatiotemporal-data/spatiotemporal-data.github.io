@@ -51,10 +51,10 @@ which is a convex majorant of a concave penalty function $\rho_{\lambda}(\cdot)$
 The penalized least-squares (PLS) estimation can therefore be formulated as follows,
 
 $$
-\min_{\boldsymbol{w}}\quad\frac{1}{2d}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2+\sum_{k=1}^{d}\underbrace{\alpha_k|w_k|}_{\approx\rho_{\lambda}(|w_k|)} \tag{72-2}
+\min_{\boldsymbol{w}}\quad\frac{1}{2n}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2+\sum_{k=1}^{d}\underbrace{\alpha_k|w_k|}_{\approx\rho_{\lambda}(|w_k|)} \tag{72-2}
 $$
 
-where the weights are
+where $\boldsymbol{X}\in\mathbb{R}^{n\times d}$ and $\boldsymbol{y}\in\mathbb{R}^{n}$ are design matrix and response vector, respectively. The weights are
 
 $$
 \alpha_k=\rho_{\lambda}^{\prime}(|w_k^{*}|) \tag{72-3}
