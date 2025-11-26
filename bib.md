@@ -88,7 +88,7 @@ $$
 In the case of SCAD, the derivative is given by
 
 $$
-\rho_{\lambda}^{\prime}(w)=\lambda\left(I\{w\leq\lambda\}+\frac{(a\lambda-w)_{+}}{(a-1)\lambda}I\{w>\lambda\}\right) \tag{72-4}
+\rho_{\lambda}^{\prime}(w)=\lambda\left(\mathbbm{1}I\{w\leq\lambda\}+\frac{(a\lambda-w)_{+}}{(a-1)\lambda}I\{w>\lambda\}\right) \tag{72-4}
 $$
 
 for some $a>2$. Here, $\rho_{\lambda}(0)=0$ and $a=3.7$ is often used.
