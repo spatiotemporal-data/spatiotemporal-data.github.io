@@ -40,7 +40,7 @@ window.MathJax = {
 
 ---
 
-For a universe of $n$ securities, we estimate a mean $\boldsymbol{\mu}\in\mathbb{R}^{n}$ (or return) and a covariance matrix $\boldsymbol{\Sigma}\in\mathbb{R}^{n\times n}$. The Markowitz model proposed in 1952 selects a portfolio that provides the highest expected return for a given amount of variance. The mean-variance portfolio optimization is formulated as follows,
+For a universe of $n$ securities, we estimate a mean $\boldsymbol{\mu}\in\mathbb{R}^{n}$ (or return) and a covariance matrix $\boldsymbol{\Sigma}\in\mathbb{R}^{n\times n}$. The Markowitz model proposed in 1952 selects a portfolio that provides the highest expected return for a given amount of variance. The mean-variance portfolio optimization laid the foundation of modern portfolio theory, which can be formulated as follows,
 
 $$
 \begin{aligned}
