@@ -49,7 +49,7 @@ $$
 \end{aligned} \tag{73-1}
 $$
 
-where $\lambda$ is a parameter that controls the trade-off between the portfolio's risk and return, and $\boldsymbol{e}\in\mathbb{R}^{n}$ denotes the vector of all ones.
+where $\lambda$ is a parameter that controls the trade-off between the portfolio's risk and return, and $\boldsymbol{e}\in\mathbb{R}^{n}$ denotes the vector of all ones. As the decision variables, $\boldsymbol{x}$ denotes the portfolio allocation vector.
 
 <br>
 
