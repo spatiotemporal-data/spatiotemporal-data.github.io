@@ -31,7 +31,7 @@ window.MathJax = {
 
 
 ### 74th Commit
-#### Quadratic Programming over Huber Loss
+#### Quadratic Programming over Huber Loss Function
 
 ---
 
