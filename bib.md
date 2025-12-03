@@ -52,7 +52,7 @@ $$
 
 where $\lambda>0$ is a weight that controls the importance of the regularization term. 
 
-Let $s=\operatorname{supp}(\boldsymbol{w})$ be the support set and $q=|s|$, the closed-form solution to the optimization problem is given by
+Let $s=\operatorname{supp}(\boldsymbol{w})$ be the support set and $q=\operatorname{card}(s)$, the closed-form solution to the optimization problem is given by
 
 $$
 \boldsymbol{w}_{s}=(\boldsymbol{X}_{s}^\top\boldsymbol{X}_{s}+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{s}^\top\boldsymbol{y} \tag{75-2}
