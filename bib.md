@@ -70,6 +70,12 @@ f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{w}_{s}^\top\boldsymb
 \end{aligned} \tag{75-3}
 $$
 
+By using the matrix inverse lemma found in Hager (1989):
+
+$$
+(\boldsymbol{I}_n+\lambda\boldsymbol{X}\boldsymbol{X}^\top)^{-1}=\boldsymbol{I}_n-\boldsymbol{X}(\boldsymbol{I}_{p}/\lambda+\boldsymbol{X}^\top\boldsymbol{X})^{-1}\boldsymbol{X}^\top \tag{75-4}
+$$
+
 
 <br>
 
