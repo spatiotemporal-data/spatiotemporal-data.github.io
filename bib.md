@@ -67,7 +67,7 @@ f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{w}_{s}^\top\boldsymb
 &\quad+\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{s}^\top\boldsymbol{y} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top\boldsymbol{y} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\left(\boldsymbol{I}_{n}-\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top\right)\boldsymbol{y} \\
-=&\frac{1}{2}\boldsymbol{y}^\top
+=&\frac{1}{2}\boldsymbol{y}^\top(\boldsymbol{I}_n+\lambda\boldsymbol{X}\boldsymbol{X}^\top)^{-1}\boldsymbol{y}
 \end{aligned} \tag{75-3}
 $$
 
