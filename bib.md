@@ -83,7 +83,7 @@ $$
 \begin{aligned}
 \min_{\boldsymbol{s}\in\{0,1\}^{p}}\quad&\frac{1}{2}\boldsymbol{y}^\top(\boldsymbol{I}_n+\lambda\boldsymbol{X}_s\boldsymbol{X}_s^\top)^{-1}\boldsymbol{y} \\
 \text{s.t.}\quad&\|\boldsymbol{s}\|_1\leq k
-\end{aligned}
+\end{aligned} \tag{75-5}
 $$
 
 
