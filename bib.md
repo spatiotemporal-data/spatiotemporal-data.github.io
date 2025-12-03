@@ -44,7 +44,7 @@ window.MathJax = {
 For the Huber loss function such that
 
 $$
-\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta^2(1-2\operatorname{log}(\delta)+\operatorname{log}(u^2)) &\text{otherwise} \end{cases} \tag{74-1}
+\phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta(2|u|-\delta) &\text{otherwise} \end{cases} \tag{74-1}
 $$
 
 for any positive Huber threshold $\delta>0$. 
