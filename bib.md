@@ -70,11 +70,22 @@ f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{w}_{s}^\top\boldsymb
 \end{aligned} \tag{75-3}
 $$
 
-By using the matrix inverse lemma found in Hager (1989):
+By using the [matrix inverse lemma found by William W. Hager in 1989](https://doi.org/10.1137/1031049):
 
 $$
 (\boldsymbol{I}_n+\lambda\boldsymbol{X}\boldsymbol{X}^\top)^{-1}=\boldsymbol{I}_n-\boldsymbol{X}(\boldsymbol{I}_{p}/\lambda+\boldsymbol{X}^\top\boldsymbol{X})^{-1}\boldsymbol{X}^\top \tag{75-4}
 $$
+
+Then, the optimization problem of sparse regression can be reformulated as follows,
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{s}}\quad&\frac{1}{2}\boldsymbol{y} \\
+\text{s.t.}\quad\|\boldsymbol{s}\|_1\leq k,\quad\boldsymbol{s}\in\{0,1\}^{p}
+\end{aligned}
+$$
+
+
 
 
 <br>
