@@ -41,7 +41,16 @@ window.MathJax = {
 
 ---
 
+Given design matrix $\boldsymbol{X}\in\mathbb{R}^{n\times p}$ and response vector $\boldsymbol{y}\in\mathbb{R}^{n}$, the problem of linear regression with $\ell_0$-norm sparsity constraint is defined as follows,
 
+$$
+\begin{aligned}
+\min_{\boldsymbol{w}}\quad&\frac{1}{2\lambda}\|\boldsymbol{w}\|_2^2+\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2 \\
+\text{s.t.}\quad&\|\boldsymbol{w}\|_0\leq k
+\end{aligned}\tag{75-1}
+$$
+
+where $\lambda>0$ is a weight that controls the importance of the regularization term. 
 
 
 <br>
