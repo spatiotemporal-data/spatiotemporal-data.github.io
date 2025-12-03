@@ -47,7 +47,7 @@ $$
 \phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta(2|u|-\delta) &\text{otherwise} \end{cases} \tag{74-1}
 $$
 
-for any positive Huber threshold $\delta>0$. Minimizing the Huber loss function is equivalent to the following quadratic programming problem (Exercise 6.3(c) in [Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)):
+with any positive Huber threshold $\delta>0$, minimizing the Huber loss function is equivalent to the following quadratic programming problem (Exercise **6.3(c)** in [Convex Optimization](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)):
 
 $$
 \begin{aligned}
@@ -55,6 +55,8 @@ $$
 \text{s.t.}\quad&-\alpha\leq u-\gamma\leq\alpha,\quad\alpha>0
 \end{aligned} \tag{74-2}
 $$
+
+where $\alpha$ and $\gamma$ are continuous decision variables.
 
 <br>
 
