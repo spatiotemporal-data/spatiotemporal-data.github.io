@@ -71,7 +71,7 @@ f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{w}_{s}^\top\boldsymb
 \end{aligned} \tag{75-3}
 $$
 
-where the last line uses the [matrix inverse lemma found by William W. Hager in 1989](https://doi.org/10.1137/1031049):
+where the last line uses the [matrix inverse lemma found by William W. Hager](https://doi.org/10.1137/1031049)  in 1989:
 
 $$
 (\boldsymbol{I}_n+\lambda\boldsymbol{X}\boldsymbol{X}^\top)^{-1}=\boldsymbol{I}_n-\boldsymbol{X}(\boldsymbol{X}^\top\boldsymbol{X}+\boldsymbol{I}_{p}/\lambda)^{-1}\boldsymbol{X}^\top \tag{75-4}
