@@ -52,6 +52,9 @@ $$
 
 where $\lambda>0$ is a weight that controls the importance of the regularization term. 
 
+Denote $s=\operatorname{supp}(\boldsymbol{w})$ by the support set, 
+
+
 
 <br>
 
