@@ -33,6 +33,14 @@ window.MathJax = {
 ### 75th Commit
 #### A Convex Binary Reformulation of Sparse Linear Regression
 
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Reference</b>: Dimitris Bertsimas, Bart Van Parys (2020). <a href="https://doi.org/10.1214/18-AOS1804">Sparse high-dimensional regression: Exact scalable algorithms and phase transitions</a>. The Annuals of Statistics. 48 (1): 300-323.
+</p>
+
+---
+
 
 
 
