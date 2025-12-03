@@ -53,7 +53,7 @@ $$
 \begin{aligned}
 \min_{\alpha,\gamma}\quad&\gamma^2+\delta\alpha \\
 \text{s.t.}\quad&-\alpha\leq u-\gamma\leq\alpha,\quad\alpha>0
-\end{aligned}
+\end{aligned} \tag{74-2}
 $$
 
 <br>
