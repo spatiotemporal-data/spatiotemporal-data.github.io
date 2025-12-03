@@ -33,6 +33,8 @@ window.MathJax = {
 ### 74th Commit
 #### Quadratic Programming over Huber Loss
 
+---
+
 <p style="font-size: 14px; color: gray">
 <b>Reference</b>: <a href="https://hua-zhou.github.io/teaching/biostatm280-2019spring/slides/26-qp/qp.html">Optimization Examples - Quadratic Programming</a>.
 </p>
@@ -45,7 +47,7 @@ $$
 \phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta^2(1-2\operatorname{log}(\delta)+\operatorname{log}(u^2)) &\text{otherwise} \end{cases} \tag{74-1}
 $$
 
-for any positive Huber threshold $\delta>0$.
+for any positive Huber threshold $\delta>0$. 
 
 <br>
 
