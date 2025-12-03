@@ -81,8 +81,8 @@ Then, the optimization problem of sparse regression can be reformulated as follo
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{s}}\quad&\frac{1}{2}\boldsymbol{y} \\
-\text{s.t.}\quad\|\boldsymbol{s}\|_1\leq k,\quad\boldsymbol{s}\in\{0,1\}^{p}
+\min_{\boldsymbol{s}}\quad&\frac{1}{2}\boldsymbol{y}^\top(\boldsymbol{I}_n+\lambda\boldsymbol{X}\boldsymbol{X}^\top)^{-1}\boldsymbol{y} \\
+\text{s.t.}\quad&\|\boldsymbol{s}\|_1\leq k,\quad\boldsymbol{s}\in\{0,1\}^{p}
 \end{aligned}
 $$
 
