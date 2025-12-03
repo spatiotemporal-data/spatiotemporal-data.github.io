@@ -52,17 +52,17 @@ $$
 
 where $\lambda>0$ is a weight that controls the importance of the regularization term. 
 
-Let $s=\operatorname{supp}(\boldsymbol{w})$ be the support set, the closed-form solution to the optimization problem is given by
+Let $s=\operatorname{supp}(\boldsymbol{w})$ be the support set and $q=|s|$, the closed-form solution to the optimization problem is given by
 
 $$
-\boldsymbol{w}_{s}=(\boldsymbol{X}_{s}^\top\boldsymbol{X}_{s}+\boldsymbol{I}_{|s|}/\lambda)^{-1}\boldsymbol{X}_{s}^\top\boldsymbol{y} \tag{75-2}
+\boldsymbol{w}_{s}=(\boldsymbol{X}_{s}^\top\boldsymbol{X}_{s}+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{s}^\top\boldsymbol{y} \tag{75-2}
 $$
 
 Thus, the objective function can be written as follows,
 
 $$
 \begin{aligned}
-f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{w}_{s}^\top\boldsymbol{X}_{s}^\top\boldsymbol{y}+\frac{1}{2}\boldsymbol{w}_{s}^\top(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{|s|}/\lambda)\boldsymbol{w}_s
+f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{w}_{s}^\top\boldsymbol{X}_{s}^\top\boldsymbol{y}+\frac{1}{2}\boldsymbol{w}_{s}^\top(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{q}/\lambda)\boldsymbol{w}_s
 \end{aligned}
 $$
 
