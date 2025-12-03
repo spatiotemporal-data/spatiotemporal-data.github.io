@@ -67,13 +67,14 @@ f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{w}_{s}^\top\boldsymb
 &\quad+\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{s}^\top\boldsymbol{y} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top\boldsymbol{y} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\left(\boldsymbol{I}_{n}-\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top\right)\boldsymbol{y} \\
+=&\frac{1}{2}\boldsymbol{y}^\top
 \end{aligned} \tag{75-3}
 $$
 
 where the last line uses the [matrix inverse lemma found by William W. Hager in 1989](https://doi.org/10.1137/1031049):
 
 $$
-(\boldsymbol{I}_n+\lambda\boldsymbol{X}\boldsymbol{X}^\top)^{-1}=\boldsymbol{I}_n-\boldsymbol{X}(\boldsymbol{I}_{p}/\lambda+\boldsymbol{X}^\top\boldsymbol{X})^{-1}\boldsymbol{X}^\top \tag{75-4}
+(\boldsymbol{I}_n+\lambda\boldsymbol{X}\boldsymbol{X}^\top)^{-1}=\boldsymbol{I}_n-\boldsymbol{X}(\boldsymbol{X}^\top\boldsymbol{X}+\boldsymbol{I}_{p}/\lambda)^{-1}\boldsymbol{X}^\top \tag{75-4}
 $$
 
 Then, the optimization problem of sparse regression can be reformulated as follows,
