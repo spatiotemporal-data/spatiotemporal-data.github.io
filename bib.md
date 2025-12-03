@@ -47,7 +47,14 @@ $$
 \phi(u)=\begin{cases} u^2 & \text{if $|u|<\delta$} \\ \delta(2|u|-\delta) &\text{otherwise} \end{cases} \tag{74-1}
 $$
 
-for any positive Huber threshold $\delta>0$. 
+for any positive Huber threshold $\delta>0$. Minimizing the Huber loss function is equivalent to the following quadratic programming problem:
+
+$$
+\begin{aligned}
+\min_{\alpha,\gamma}\quad&\gamma^2+\delta\alpha \\
+\text{s.t.}\quad&-\alpha\leq u-\gamma\leq\alpha,\quad\alpha>0
+\end{aligned}
+$$
 
 <br>
 
