@@ -82,7 +82,7 @@ Then, the optimization problem of sparse regression can be reformulated a convex
 $$
 \begin{aligned}
 \min_{\Omega}\quad&\frac{1}{2}\boldsymbol{y}^\top(\boldsymbol{I}_n+\lambda\boldsymbol{X}_{\Omega}\boldsymbol{X}_{\Omega}^\top)^{-1}\boldsymbol{y} \\
-\text{s.t.}\quad&\|\Omega\|_0\leq k
+\text{s.t.}\quad&\operatorname{card}(\Omega)\leq k
 \end{aligned} \tag{75-5}
 $$
 
