@@ -67,7 +67,7 @@ f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{w}_{\Ome
 &\quad+{\color{blue}\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y}} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\left({\color{orange}\boldsymbol{I}_{n}-\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top}\right)\boldsymbol{y} \\
-=&\frac{1}{2}\boldsymbol{y}^\top{\color{orange}(\boldsymbol{I}_n+\lambda\boldsymbol{X}_s\boldsymbol{X}_{\Omega}^\top)^{-1}}\boldsymbol{y}
+=&\frac{1}{2}\boldsymbol{y}^\top{\color{orange}(\boldsymbol{I}_n+\lambda\boldsymbol{X}_{\Omega}\boldsymbol{X}_{\Omega}^\top)^{-1}}\boldsymbol{y}
 \end{aligned} \tag{75-3}
 $$
 
