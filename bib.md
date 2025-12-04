@@ -45,7 +45,7 @@ Given design matrix $\boldsymbol{X}\in\mathbb{R}^{n\times p}$ and response vecto
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{w}}\quad&\frac{1}{2\lambda}\|\boldsymbol{w}\|_2^2+\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2 \\
+\min_{\boldsymbol{w}}\quad&\frac{1}{2}\|\boldsymbol{y}-\boldsymbol{X}\boldsymbol{w}\|_2^2+\frac{1}{2\lambda}\|\boldsymbol{w}\|_2^2 \\
 \text{s.t.}\quad&\|\boldsymbol{w}\|_0\leq k
 \end{aligned}\tag{75-1}
 $$
@@ -62,7 +62,7 @@ Thus, the objective function can be written as follows,
 
 $$
 \begin{aligned}
-f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{w}_{s}^\top\boldsymbol{X}_{s}^\top\boldsymbol{y}+\frac{1}{2}\boldsymbol{w}_{s}^\top(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{q}/\lambda)\boldsymbol{w}_s \\
+f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{w}_{s}^\top\boldsymbol{X}_{s}^\top\boldsymbol{y}}+{\color{blue}\frac{1}{2}\boldsymbol{w}_{s}^\top(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{q}/\lambda)\boldsymbol{w}_s} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top\boldsymbol{y} \\
 &\quad+\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{s}^\top\boldsymbol{y} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top\boldsymbol{y} \\
