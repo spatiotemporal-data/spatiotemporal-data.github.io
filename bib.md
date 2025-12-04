@@ -63,7 +63,7 @@ Thus, the objective function can be written as follows,
 $$
 \begin{aligned}
 f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{w}_{\Omega}^\top\boldsymbol{X}_{\Omega}^\top\boldsymbol{y}}+{\color{blue}\frac{1}{2}\boldsymbol{w}_{\Omega}^\top(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_{q}/\lambda)\boldsymbol{w}_{\Omega}} \\
-=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y}} \\
+=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{y}^\top\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y}} \\
 &\quad+{\color{blue}\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y}} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y} \\
 =&\frac{1}{2}\boldsymbol{y}^\top\left({\color{orange}\boldsymbol{I}_{n}-\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top}\right)\boldsymbol{y} \\
