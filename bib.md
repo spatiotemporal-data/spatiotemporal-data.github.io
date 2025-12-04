@@ -52,22 +52,22 @@ $$
 
 where $\lambda>0$ is a weight that controls the importance of the regularization term. 
 
-Let $s=\operatorname{supp}(\boldsymbol{w})$ be the support set and $q=\operatorname{card}(s)$, the closed-form solution to the optimization problem is given by
+Let $\Omega=\operatorname{supp}(\boldsymbol{w})$ be the support set and $q=\operatorname{card}(\Omega)$, the closed-form solution to the optimization problem is given by
 
 $$
-\boldsymbol{w}_{s}:=(\boldsymbol{X}_{s}^\top\boldsymbol{X}_{s}+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{s}^\top\boldsymbol{y} \tag{75-2}
+\boldsymbol{w}_{\Omega}:=(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y} \tag{75-2}
 $$
 
 Thus, the objective function can be written as follows,
 
 $$
 \begin{aligned}
-f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{w}_{s}^\top\boldsymbol{X}_{s}^\top\boldsymbol{y}}+{\color{blue}\frac{1}{2}\boldsymbol{w}_{s}^\top(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{q}/\lambda)\boldsymbol{w}_s} \\
-=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top\boldsymbol{y}} \\
-&\quad+{\color{blue}\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{s}^\top\boldsymbol{y}} \\
-=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top\boldsymbol{y} \\
-=&\frac{1}{2}\boldsymbol{y}^\top\left({\color{orange}\boldsymbol{I}_{n}-\boldsymbol{X}_s(\boldsymbol{X}_s^\top\boldsymbol{X}_s+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_s^\top}\right)\boldsymbol{y} \\
-=&\frac{1}{2}\boldsymbol{y}^\top{\color{orange}(\boldsymbol{I}_n+\lambda\boldsymbol{X}_s\boldsymbol{X}_s^\top)^{-1}}\boldsymbol{y}
+f=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{w}_{\Omega}^\top\boldsymbol{X}_{\Omega}^\top\boldsymbol{y}}+{\color{blue}\frac{1}{2}\boldsymbol{w}_{\Omega}^\top(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_{q}/\lambda)\boldsymbol{w}_{\Omega}} \\
+=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-{\color{red}\boldsymbol{y}^\top\boldsymbol{X}_s(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y}} \\
+&\quad+{\color{blue}\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_{q}/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y}} \\
+=&\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{y}-\frac{1}{2}\boldsymbol{y}^\top\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top\boldsymbol{y} \\
+=&\frac{1}{2}\boldsymbol{y}^\top\left({\color{orange}\boldsymbol{I}_{n}-\boldsymbol{X}_{\Omega}(\boldsymbol{X}_{\Omega}^\top\boldsymbol{X}_{\Omega}+\boldsymbol{I}_q/\lambda)^{-1}\boldsymbol{X}_{\Omega}^\top}\right)\boldsymbol{y} \\
+=&\frac{1}{2}\boldsymbol{y}^\top{\color{orange}(\boldsymbol{I}_n+\lambda\boldsymbol{X}_s\boldsymbol{X}_{\Omega}^\top)^{-1}}\boldsymbol{y}
 \end{aligned} \tag{75-3}
 $$
 
@@ -81,8 +81,8 @@ Then, the optimization problem of sparse regression can be reformulated a convex
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{s}\in\{0,1\}^{p}}\quad&\frac{1}{2}\boldsymbol{y}^\top(\boldsymbol{I}_n+\lambda\boldsymbol{X}_s\boldsymbol{X}_s^\top)^{-1}\boldsymbol{y} \\
-\text{s.t.}\quad&\|\boldsymbol{s}\|_1\leq k
+\min_{\Omega}\quad&\frac{1}{2}\boldsymbol{y}^\top(\boldsymbol{I}_n+\lambda\boldsymbol{X}_{\Omega}\boldsymbol{X}_{\Omega}^\top)^{-1}\boldsymbol{y} \\
+\text{s.t.}\quad&\|\Omega\|_0\leq k
 \end{aligned} \tag{75-5}
 $$
 
