@@ -66,8 +66,8 @@ Eq. (76-1) can be thus converted into the following quadratic programming subpro
 $$
 \begin{aligned}
 \min_{\boldsymbol{w}}\quad&\frac{1}{2}\boldsymbol{w}^\top H_{\boldsymbol{x}^{k}}\boldsymbol{w}+\nabla f(\boldsymbol{x}^{k})^\top\boldsymbol{w} \\
-\text{s.t.}\quad&g(\boldsymbol{x}^{k})+\partial g(\boldsymbol{x}^{k})^\top\boldsymbol{w}\leq 0 \\
-&h(\boldsymbol{x}^{k})+\partial h(\boldsymbol{x}^{k})^\top\boldsymbol{w}=0
+\text{s.t.}\quad&g(\boldsymbol{x}^{k})+\nabla g(\boldsymbol{x}^{k})^\top\boldsymbol{w}\leq 0 \\
+&h(\boldsymbol{x}^{k})+\nabla h(\boldsymbol{x}^{k})^\top\boldsymbol{w}=0
 \end{aligned} \tag{76-3}
 $$
 
