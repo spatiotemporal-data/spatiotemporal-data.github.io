@@ -45,14 +45,14 @@ Nonlinear programming is a challenging problem in large-scale decision-making pr
 $$
 \begin{aligned}
 \min_{\boldsymbol{x}\in\mathbb{R}^{n}}\quad&\underbrace{f(\boldsymbol{x})}_{\color{red}\text{twice-differentiable}} \\
-\text{s.t.}\quad&\underbrace{g(\boldsymbol{x})\leq0}_{\color{red}\text{inequality}} \quad \underbrace{f(\boldsymbol{x})=0}_{\color{red}\text{inequality}} \\
+\text{s.t.}\quad&\underbrace{g(\boldsymbol{x})\leq0}_{\color{red}\text{inequality}} \quad \underbrace{h(\boldsymbol{x})=0}_{\color{red}\text{inequality}} \\
 \end{aligned} \tag{76-1}
 $$
 
-Indeed, SQP solves this nonlinear programming problem by linearizing the constraints and quadraticizing the Lagrangian
+with $g:\mathbb{R}^{n}\to\mathbb{R}^{m}$ and $h:\mathbb{R}^{n}\to\mathbb{R}^{p}$ describe the inequality and equality constraints, respectively. Indeed, SQP solves this nonlinear programming problem by linearizing the constraints and quadraticizing the Lagrangian
 
 $$
-\mathcal{L}(\boldsymbol{x},\boldsymbol{y}_{I},\boldsymbol{y}_{E})=f(\boldsymbol{x})+\boldsymbol{y}_{I}^\top g(\boldsymbol{x})+\boldsymbol{y}_{E}^\top h(\boldsymbol{x})
+\mathcal{L}(\boldsymbol{x},\boldsymbol{y}_{I},\boldsymbol{y}_{E})=f(\boldsymbol{x})+\boldsymbol{y}_{I}^\top g(\boldsymbol{x})+\boldsymbol{y}_{E}^\top h(\boldsymbol{x}) \tag{76-2}
 $$
 
 around the current iterate $(\boldsymbol{x}^k,\boldsymbol{y}_{I}^k,\boldsymbol{y}_{E}^k)$ with dual variables $\boldsymbol{y}_{I}\in\mathbb{R}_{+}^{m}$ and $\boldsymbol{y}_{E}\in\mathbb{R}^{p}$.
