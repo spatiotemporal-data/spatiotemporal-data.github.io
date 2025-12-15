@@ -40,7 +40,7 @@ window.MathJax = {
 
 ---
 
-Nonlinear programming is a challenging problem in large-scale decision-making processes. Sequential quadratic programming (SQP) methods utilizes quadratic programming to solve complicated problems in which the objective and constraints may be nonlinear and nonconvex. For the nonlinear programming such that
+Nonlinear programming is a challenging problem in large-scale decision-making processes. [Sequential quadratic programming (SQP)](https://en.wikipedia.org/wiki/Sequential_quadratic_programming) methods utilizes quadratic programming to solve complicated problems in which the objective and constraints may be nonlinear and nonconvex. For the nonlinear programming such that
 
 $$
 \begin{aligned}
