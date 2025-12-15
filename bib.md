@@ -62,15 +62,17 @@ $$(\boldsymbol{x}^{k},\boldsymbol{y}_{I}^{k},\boldsymbol{y}_{E}^{k})$$
 with dual variables $\boldsymbol{y}_{I}\in\mathbb{R}_{+}^{m}$ and $\boldsymbol{y}_{E}\in\mathbb{R}^{p}$. Let the Henssian matrix be
 
 $$
-\boldsymbol{H}_{\boldsymbol{x}}\triangleq\nabla_{\boldsymbol{x}}\mathcal{L}(\boldsymbol{x},\boldsymbol{y}_{I},\boldsymbol{y}_{E})
+H_{\boldsymbol{x}}\triangleq\nabla_{\boldsymbol{x}}\mathcal{L}(\boldsymbol{x},\boldsymbol{y}_{I},\boldsymbol{y}_{E})
 $$
 
 Eq. (76-1) can be thus converted into the following quadratic programming subproblem:
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{x}}\quad&\frac{1}{2}\boldsymbol{w}^\top\nabla
-\end{aligned}
+\min_{\boldsymbol{x}}\quad&\frac{1}{2}\boldsymbol{w}^\top H_{\boldsymbol{x}^{k}}\boldsymbol{x}+\nabla f(\boldsymbol{x}^{k})^\top\boldsymbol{w} \\
+\text{s.t.}\quad&g(\boldsymbol{x}^{k})+\partial g(\boldsymbol{x}^{k})^\top\boldsymbol{w}\leq 0 \\
+&h(\boldsymbol{x}^{k})+\partial h(\boldsymbol{x}^{k})\boldsymbol{w}=0
+\end{aligned} \tag{76-3}
 $$
 
 
