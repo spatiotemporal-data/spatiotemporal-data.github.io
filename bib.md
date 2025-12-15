@@ -55,11 +55,7 @@ $$
 \mathcal{L}(\boldsymbol{x},\boldsymbol{y}_{I},\boldsymbol{y}_{E})=f(\boldsymbol{x})+\boldsymbol{y}_{I}^\top g(\boldsymbol{x})+\boldsymbol{y}_{E}^\top h(\boldsymbol{x}) \tag{76-2}
 $$
 
-around the current iterate 
-
-$$(\boldsymbol{x}^{k},\boldsymbol{y}_{I}^{k},\boldsymbol{y}_{E}^{k})$$ 
-
-with dual variables $$\boldsymbol{y}_{I}\in\mathbb{R}_{+}^{m}$ and $\boldsymbol{y}_{E}\in\mathbb{R}^{p}$$. Let the Henssian matrix be
+around the current iterate $$(\boldsymbol{x}^{k},\boldsymbol{y}_{I}^{k},\boldsymbol{y}_{E}^{k})$$ with dual variables $$\boldsymbol{y}_{I}\in\mathbb{R}_{+}^{m}$$ and $$\boldsymbol{y}_{E}\in\mathbb{R}^{p}$$. Let the Henssian matrix be
 
 $$
 H_{\boldsymbol{x}}\triangleq\nabla_{\boldsymbol{x}}\mathcal{L}(\boldsymbol{x},\boldsymbol{y}_{I},\boldsymbol{y}_{E})
