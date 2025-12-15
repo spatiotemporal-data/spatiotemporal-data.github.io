@@ -45,8 +45,8 @@ Nonlinear programming is a challenging problem in large-scale decision-making pr
 $$
 \begin{aligned}
 \min_{\boldsymbol{x}\in\mathbb{R}^{n}}\quad&\underbrace{f(\boldsymbol{x})}_{\color{red}\text{twice-differentiable}} \\
-\text{s.t.}\quad&g(\boldsymbol{x})\leq0 \\
-&f(\boldsymbol{x})=0 \\
+\text{s.t.}\quad&\underbrace{g(\boldsymbol{x})\leq0}_{\color{red}\text{inequality}} \\
+&\underbrace{f(\boldsymbol{x})=0}_{\color{red}\text{inequality}} \\
 \end{aligned} \tag{76-1}
 $$
 
