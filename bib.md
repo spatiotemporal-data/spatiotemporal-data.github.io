@@ -57,6 +57,14 @@ $$
 
 around the current iterate $(\boldsymbol{x}^k,\boldsymbol{y}_{I}^k,\boldsymbol{y}_{E}^k)$ with dual variables $\boldsymbol{y}_{I}\in\mathbb{R}_{+}^{m}$ and $\boldsymbol{y}_{E}\in\mathbb{R}^{p}$.
 
+Eq. (76-1) can be thus converted into the following quadratic programming subproblem:
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{x}}\quad&\frac{1}{2}\boldsymbol{w}^\top\nabla
+\end{aligned}
+$$
+
 
 <br>
 
