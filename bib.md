@@ -52,7 +52,7 @@ $$
 Indeed, SQP solves this nonlinear programming problem by linearizing the constraints and quadraticizing the Lagrangian
 
 $$
-\mathcal{L}(\boldsymbol{x},\boldsymbol{y}_{I},\boldsymbol{y}_{E})=f(\boldsymbol{x})+\boldsymbol{y}_{I}^\top g(\boldsymbol{x})
+\mathcal{L}(\boldsymbol{x},\boldsymbol{y}_{I},\boldsymbol{y}_{E})=f(\boldsymbol{x})+\boldsymbol{y}_{I}^\top g(\boldsymbol{x})+\boldsymbol{y}_{E}^\top h(\boldsymbol{x})
 $$
 
 
