@@ -40,15 +40,17 @@ window.MathJax = {
 
 ---
 
-Nonlinear programming is a challenging problem in large-scale decision-making processes. Sequential quadratic programming methods utilizes quadratic programming to solve complicated problems in which the objective and constraints may be nonlinear and nonconvex. For the nonlinear programming such that
+Nonlinear programming is a challenging problem in large-scale decision-making processes. Sequential quadratic programming (SQP) methods utilizes quadratic programming to solve complicated problems in which the objective and constraints may be nonlinear and nonconvex. For the nonlinear programming such that
 
 $$
 \begin{aligned}
 \min_{\boldsymbol{x}}\quad&\underbrace{f(\boldsymbol{x})}_{\text{\color{red}twice-differentiable}} \\
 \text{s.t.}\quad&g(\boldsymbol{x})\leq0 \\
 &f(\boldsymbol{x})=0 \\
-\end{aligned}
+\end{aligned} \tag{76-1}
 $$
+
+Indeed, SQP solves this nonlinear programming problem by linearizing the constraints and quadraticizing the Lagrangian
 
 
 <br>
