@@ -29,6 +29,30 @@ window.MathJax = {
 
 <br>
 
+### 76th Commit
+#### Sequential Quadratic Programming
+
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Reference</b>: Alex Oshin, Rahul Vodeb Ghosh, Augustinos D. Saravanos, Evangelos A. Theodorou (2025). <a href="https://www.arxiv.org/abs/2512.01565">Deep FlexQP: Accelerated Nonlinear Programming via Deep Unfolding</a>. arXiv:2512.01565.
+</p>
+
+---
+
+Nonlinear programming is a challenging problem in large-scale decision-making processes. Sequential quadratic programming methods utilizes quadratic programming to solve complicated problems in which the objective and constraints may be nonlinear and nonconvex. For the nonlinear programming such that
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{x}}\quad&\underbrace{f(\boldsymbol{x})}_{\text{\color{red}twice-differentiable}} \\
+\text{s.t.}\quad&g(\boldsymbol{x})\leq0 \\
+&f(\boldsymbol{x})=0 \\
+\end{aligned}
+$$
+
+
+<br>
+
 
 ### 75th Commit
 #### A Convex Binary Reformulation of Sparse Linear Regression
