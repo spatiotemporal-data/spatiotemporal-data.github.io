@@ -48,7 +48,7 @@ $$
 \min\quad&\boldsymbol{c}^\top\boldsymbol{x} \\
 \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\
 &\boldsymbol{x}_{i}\in\mathcal{L}_{i}\quad\forall i\in[r]
-\end{aligned}
+\end{aligned} \tag{77-1}
 $$
 
 
