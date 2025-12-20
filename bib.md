@@ -36,7 +36,7 @@ window.MathJax = {
 ---
 
 <p style="font-size: 14px; color: gray">
-<b>Source</b>: <a href="https://sspcdn.blob.core.windows.net/files/Documents/SEP/STS/2024/posters/Wei_Michelle_display.pdf">Solving Second-Order Cone Programs in Matrix Multiplication Time</a>.
+<b>Source</b>: <a href="https://www.cvxpy.org/examples/basic/socp.html">Second-order cone program</a>.
 </p>
 
 ---
