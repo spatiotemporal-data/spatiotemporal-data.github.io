@@ -29,6 +29,32 @@ window.MathJax = {
 
 <br>
 
+
+### 77th Commit
+#### Second-Order Cone Programming
+
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Source</b>: <a href="https://sspcdn.blob.core.windows.net/files/Documents/SEP/STS/2024/posters/Wei_Michelle_display.pdf">Solving Second-Order Cone Programs in Matrix Multiplication Time</a>.
+</p>
+
+---
+
+Given the constraint matrix $$\boldsymbol{A}\in\mathbb{R}^{m\times n}$$, two vectors $$\boldsymbol{b}\in\mathbb{R}^{m},\boldsymbol{c}\in\mathbb{R}^{n}$$, and $$r$$ second-order cones $$\mathcal{L}_{1},\ldots,\mathcal{L}_{r}$$, the problem of second-order cone programming can be formulated as follows,
+
+$$
+\begin{aligned}
+\min\quad&\boldsymbol{c}^\top\boldsymbol{x} \\
+\text{s.t.}\quad&
+\end{aligned}
+$$
+
+
+
+<br>
+
+
 ### 76th Commit
 #### Sequential Quadratic Programming
 
