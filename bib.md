@@ -54,7 +54,7 @@ $$
 where $$\boldsymbol{x}$$ is the concatenation of $$\boldsymbol{x}_i$$ lying inside the domain $$\mathcal{L}\triangleq\mathcal{L}_{1}\times\cdots\times\mathcal{L}_{r}$$ and each $$\mathcal{L}_{i}$$ is the second-order cone. For any vector $$x_0$$ and $$\tilde{\boldsymbol{x}}$$, the second-order cone is defined as follows,
 
 $$
-\mathcal{L}\triangleq\{(x_0,\tilde{\boldsymbol{x}}),\tilde{\boldsymbol{x}}\in\mathbb{R}^{k}:\|\tilde{\boldsymbol{x}}\leq x_0\|\} \tag{77-2}
+\mathcal{L}\triangleq\{(x_0,\tilde{\boldsymbol{x}}),\tilde{\boldsymbol{x}}\in\mathbb{R}^{k}:\|\tilde{\boldsymbol{x}}\|\leq x_0\} \tag{77-2}
 $$
 
 
