@@ -41,7 +41,7 @@ window.MathJax = {
 
 ---
 
-Given the data $$\boldsymbol{f}\in\mathbb{R}^{n}$$, $$\boldsymbol{F}\in\mathbb{R}^{p\times n}$$, and $$\boldsymbol{g}\in\mathbb{R}^{p}$$, in the meantime suppose $$\boldsymbol{A}_{i}\in\mathbb{R}^{n_i\times n}$$, $$\boldsymbol{b}_{i}\in\mathbb{R}^{n_i}$$, $$\boldsymbol{c}_{i}\in\mathbb{R}^{n}$$, and $$d_{i}$$ for all $$i\in\{1,2,\ldots,m\}$$, a second-order cone program is an optimization problem of the form
+Given the data $$\boldsymbol{f}\in\mathbb{R}^{n}$$, $$\boldsymbol{F}\in\mathbb{R}^{p\times n}$$, and $$\boldsymbol{g}\in\mathbb{R}^{p}$$, in the meantime suppose $$\boldsymbol{A}_{i}\in\mathbb{R}^{n_i\times n}$$, $$\boldsymbol{b}_{i}\in\mathbb{R}^{n_i}$$, $$\boldsymbol{c}_{i}\in\mathbb{R}^{n}$$, and $$d_{i}$$ for all $$i\in\{1,2,\ldots,m\}$$, a second-order cone program (SOCP) is an optimization problem of the form
 
 $$
 \begin{aligned}
@@ -51,7 +51,7 @@ $$
 \end{aligned} \tag{77-1}
 $$
 
-An example of a second-order cone program is the robust linear programming such that
+An example of an SOCP is the robust linear programming such that
 
 $$
 \begin{aligned}
