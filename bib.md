@@ -41,20 +41,23 @@ window.MathJax = {
 
 ---
 
-Given the constraint matrix $$\boldsymbol{A}\in\mathbb{R}^{m\times n}$$, two vectors $$\boldsymbol{b}\in\mathbb{R}^{m},\boldsymbol{c}\in\mathbb{R}^{n}$$, and $$r$$ second-order cones $$\mathcal{L}_{1},\ldots,\mathcal{L}_{r}$$, the problem of second-order cone programming can be formulated as follows,
+Given the data $$\boldsymbol{f}\in\mathbb{R}^{n}$$, $$\boldsymbol{F}\in\mathbb{R}^{p\times n}$$, and $$\boldsymbol{g}\in\mathbb{R}^{p}$$, in the meantime suppose $$\boldsymbol{A}_{i}\in\mathbb{R}^{n_i\times n}$$, $$\boldsymbol{b}_{i}\in\mathbb{R}^{n_i}$$, $$\boldsymbol{c}_{i}\in\mathbb{R}^{n}$$, and $$d_{i}$$ for all $$i\in\{1,2,\ldots,m\}$$, a second-order cone program is an optimization problem of the form
 
 $$
 \begin{aligned}
-\min\quad&\boldsymbol{c}^\top\boldsymbol{x} \\
-\text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\
-&\boldsymbol{x}_{i}\in\mathcal{L}_{i}\quad\forall i\in[r]
+\min_{\boldsymbol{x}}\quad&\boldsymbol{f}^{\top}\boldsymbol{x} \\
+\text{s.t.}\quad&\|\boldsymbol{A}_{i}\boldsymbol{x}+\boldsymbol{b}_{i}\|_2\leq\boldsymbol{c}_{i}^\top\boldsymbol{x}+d_i,\quad\forall i \\
+&\boldsymbol{F}\boldsymbol{x}=\boldsymbol{g}
 \end{aligned} \tag{77-1}
 $$
 
-where $$\boldsymbol{x}$$ is the concatenation of $$\boldsymbol{x}_i$$ lying inside the domain $$\mathcal{L}\triangleq\mathcal{L}_{1}\times\cdots\times\mathcal{L}_{r}$$ and each $$\mathcal{L}_{i}$$ is the second-order cone. For any vector $$x_0$$ and $$\tilde{\boldsymbol{x}}$$, the second-order cone is defined as follows,
+An example of a second-order cone program is the robust linear programming such that
 
 $$
-\mathcal{L}\triangleq\{(x_0,\tilde{\boldsymbol{x}}),\tilde{\boldsymbol{x}}\in\mathbb{R}^{k}:\|\tilde{\boldsymbol{x}}\|\leq x_0\} \tag{77-2}
+\begin{aligned}
+\min_{\boldsymbol{x}}\quad&\boldsymbol{c}^\top\boldsymbol{x} \\
+\text{s.t.}\quad&\boldsymbol{a}_{i}^\top\boldsymbol{x}+\|\boldsymbol{x}\|_2\leq b_i,\quad\forall i
+\end{aligned} \tag{77-2}
 $$
 
 
