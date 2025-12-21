@@ -25,7 +25,7 @@ window.MathJax = {
 
 ## Knowledge Repository
 
-[Xinyu Chen (陈新宇)](https://xinychen.github.io/) created this page since early 2024 at MIT with the purpose of fostering research knowledge, vision, insight, and style from an interdisciplinary perspective. In the meantime, it aims to connect random concepts with mathematics and machine learning.
+[Xinyu Chen (陈新宇)](https://xinychen.github.io/) created this page since early 2024 at MIT with the purpose of fostering research knowledge, vision, insight, and style from an interdisciplinary perspective. In the meantime, the knowledge repository aims to connect random concepts with mathematics and machine learning.
 
 <br>
 
