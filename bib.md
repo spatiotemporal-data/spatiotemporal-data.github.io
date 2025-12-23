@@ -194,7 +194,7 @@ with any positive Huber threshold $\delta>0$, minimizing the Huber loss function
 $$
 \begin{aligned}
 \min_{\alpha,\gamma}\quad&\gamma^2+2\delta\alpha \\
-\text{s.t.}\quad&-\alpha\leq u-\gamma\leq\alpha,\quad\alpha>0
+\text{s.t.}\quad&-\alpha\leq u-\gamma\leq\alpha,\quad\alpha\geq 0
 \end{aligned} \tag{74-2}
 $$
 
