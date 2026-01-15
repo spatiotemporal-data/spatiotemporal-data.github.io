@@ -43,6 +43,13 @@ def huber_ar(y, d, delta = 1, solver = cp.OSQP):
     vec = y[d :] # T-d
     mat = np.vstack([y[d-i-1 : t-i-1] for i in range(d)]).T # (T-d) x d
 
+    coef = cp.Variable(d)
+    residual = vec - mat @ coef
+    obj = cp.sum(cp.huber(residual, delta))
+    prob = cp.Problem(cp.Minimize(obj))
+    prob.solve(solver = solver)
+
+    return coef.value
 ```
 
 <br>
