@@ -67,7 +67,7 @@ $$
 or 
 
 $$
-\begin{bmatrix} \hat{y}_{T-h} \\ \hat{y}_{T-h+1} \\ \hat{y}_{T} \end{bmatrix}=
+\begin{bmatrix} \hat{y}_{T-h} \\ \hat{y}_{T-h+1} \vdots \\ \hat{y}_{T} \end{bmatrix}=
 \begin{bmatrix} y_{T-h-1} & y_{T-h-2} & \cdots & y_{T-h-d} \\ 
 \begin{bmatrix} y_{T-h} & y_{T-h-1} & \cdots & y_{T-h-d+1} \\ 
 \vdots & \vdots & \ddots & \vdots \\
