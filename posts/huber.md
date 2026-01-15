@@ -29,7 +29,7 @@ window.MathJax = {
 One can use the `cvxpy` package to solve the optimization of Huber autoregression, which is defined as follows,
 
 $$
-\begin{bmatrix} y_{d+1} \\ y_{d+2} \\ \vdots \\ y_{T} \end{bmatrix}=\begin{bmatrix} y_{d} & y_{d-1} & \cdots & y_{1} \\ y_{d+1} & y_{d} & \cdots & y_{2} \\ \vdots & \vdots & \ddots & \vdots \\ y_{T-1} & y_{T-2} & \cdots & y_{T-d} \end{bmatrix}\begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_d \end{bmatrix}
+\begin{bmatrix} y_{d+1} \\ y_{d+2} \\ \vdots \\ y_{T} \end{bmatrix}=\begin{bmatrix} y_{d} & y_{d-1} & \cdots & y_{1} \\ y_{d+1} & y_{d} & \cdots & y_{2} \\ \vdots & \vdots & \ddots & \vdots \\ y_{T-1} & y_{T-2} & \cdots & y_{T-d} \end{bmatrix}\begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_d \end{bmatrix}+\begin{bmatrix} \varepsilon_{d+1} \\ \varepsilon_{d+2} \\ \vdots \\ \varepsilon_{T} \end{bmatrix}
 $$
 
 <br>
