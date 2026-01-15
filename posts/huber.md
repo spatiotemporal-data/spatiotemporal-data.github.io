@@ -28,6 +28,12 @@ window.MathJax = {
 
 One can use the `cvxpy` package to solve the optimization of Huber autoregression, which is defined as follows,
 
+$$
+\begin{bmatrix} y_{d+1} \\ y_{d+2} \\ \vdots \\ y_{T} \end{bmatrix}=\begin{bmatrix} y_{d} & y_{d-1} & \cdots & y_{1} \\ y_{d+1} & y_{d} & \cdots & y_{2} \\ \vdots & \vdots & \ddots & \vdots \\ y_{T-1} & y_{T-2} & \cdots & y_{T-d} \end{bmatrix}\begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_d \end{bmatrix}
+$$
+
+<br>
+
 ```python
 import cvxpy as cp
 import numpy as np
@@ -36,6 +42,8 @@ def huber_ar(y, d, delta = 1, solver = cp.OSQP):
     t = y.shape[0]
     X = np.vstack([y[d-i-1 : t-i-1] for i in range(d)]).T
 ```
+
+<br>
 
 
 
