@@ -61,7 +61,7 @@ $$
 \hat{y}_{T-h}&=\sum_{k=1}^{d}a_ky_{T-h-k} \\
 &\quad\vdots \\
 \hat{y}_{T}&=\sum_{k=1}^{d}a_ky_{T-k}
-\end{aligned}
+\end{aligned} \tag{2}
 $$
 
 or 
@@ -73,7 +73,7 @@ y_{T-h} & y_{T-h-1} & \cdots & y_{T-h-d+1} \\
 \vdots & \vdots & \ddots & \vdots \\
 y_{T-1} & y_{T-2} & \cdots & y_{T-d} \\ 
 \end{bmatrix}
-\begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_d \end{bmatrix}
+\begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_d \end{bmatrix} \tag{3}
 $$
 
 with the time prediction horizon being $$h\in\mathbb{Z}^{+}$$.
