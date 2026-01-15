@@ -69,9 +69,9 @@ or
 $$
 \begin{bmatrix} \hat{y}_{T-h} \\ \hat{y}_{T-h+1} \vdots \\ \hat{y}_{T} \end{bmatrix}=
 \begin{bmatrix} y_{T-h-1} & y_{T-h-2} & \cdots & y_{T-h-d} \\ 
-\begin{bmatrix} y_{T-h} & y_{T-h-1} & \cdots & y_{T-h-d+1} \\ 
+y_{T-h} & y_{T-h-1} & \cdots & y_{T-h-d+1} \\ 
 \vdots & \vdots & \ddots & \vdots \\
-\begin{bmatrix} y_{T-1} & y_{T-2} & \cdots & y_{T-d} \\ 
+y_{T-1} & y_{T-2} & \cdots & y_{T-d} \\ 
 \end{bmatrix}
 \begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_d \end{bmatrix}
 $$
@@ -85,9 +85,10 @@ with the time prediction horizon being $$h\in\mathbb{Z}^{+}$$.
 def time_series_pred(data, coef, horizon):
     t = data.shape[0]
     d = coef.shape[0]
-    pred = np.zeros(horizon)
-    for i in range(horizon):
-        pred[i] = np.inner(np.flip(data[t - d - i : ]), coef)
+    # pred = np.zeros(horizon)
+    mat = np.vstack([y[d-i-1 : t-i-1] for i in range(d)]).T # h x d
+    # for i in range(horizon):
+    #     pred[i] = np.inner(np.flip(data[t - d - i : ]), coef)
 
 ```
 
