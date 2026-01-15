@@ -64,6 +64,12 @@ $$
 \end{aligned}
 $$
 
+or 
+
+$$
+\begin{bmatrix} \hat{y}_{T-h} \\ \hat{y}_{T-h+1} \\ \hat{y}_{T} \end{bmatrix}=
+$$
+
 with the time prediction horizon being $$h\in\mathbb{Z}^{+}$$.
 
 
@@ -71,11 +77,11 @@ with the time prediction horizon being $$h\in\mathbb{Z}^{+}$$.
 
 ```python
 def time_series_pred(data, coef, horizon):
-    # One-step prediction
+    t = data.shape[0]
     d = coef.shape[0]
     pred = np.zeros(horizon)
-    for t in range(horizon):
-        pred[t] = np.inner(, coef)
+    for i in range(horizon):
+        pred[i] = np.inner(np.flip(data[t - d - i : ]), coef)
 
 ```
 
