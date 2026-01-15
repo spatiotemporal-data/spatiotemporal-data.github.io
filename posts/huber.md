@@ -59,7 +59,7 @@ Then, we define the function for one-step time series prediction with univariate
 $$
 \begin{aligned}
 \hat{y}_{T-h}&=\sum_{k=1}^{d}a_ky_{T-h-k} \\
-&\vdots \\
+&\quad\vdots \\
 \hat{y}_{T}&=\sum_{k=1}^{d}a_ky_{T-k}
 \end{aligned}
 $$
