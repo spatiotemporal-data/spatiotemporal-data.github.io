@@ -54,7 +54,32 @@ def huber_ar(y, d, delta = 1, solver = cp.OSQP):
 
 <br>
 
+Then, we define the function for one-step time series prediction with univariate autoregression:
 
+$$
+\begin{aligned}
+\hat{y}_{T-h}&=\sum_{k=1}^{d}a_ky_{T-h-k} \\
+&\vdots \\
+\hat{y}_{T}&=\sum_{k=1}^{d}a_ky_{T-k}
+\end{aligned}
+$$
+
+with the time prediction horizon being $$h\in\mathbb{Z}^{+}$$.
+
+
+<br>
+
+```python
+def time_series_pred(data, coef, horizon):
+    # One-step prediction
+    d = coef.shape[0]
+    pred = np.zeros(horizon)
+    for t in range(horizon):
+        pred[t] = np.inner(, coef)
+
+```
+
+<br>
 
 
 <br>
