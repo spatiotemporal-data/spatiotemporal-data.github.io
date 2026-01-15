@@ -68,6 +68,12 @@ or
 
 $$
 \begin{bmatrix} \hat{y}_{T-h} \\ \hat{y}_{T-h+1} \\ \hat{y}_{T} \end{bmatrix}=
+\begin{bmatrix} y_{T-h-1} & y_{T-h-2} & \cdots & y_{T-h-d} \\ 
+\begin{bmatrix} y_{T-h} & y_{T-h-1} & \cdots & y_{T-h-d+1} \\ 
+\vdots & \vdots & \ddots & \vdots \\
+\begin{bmatrix} y_{T-1} & y_{T-2} & \cdots & y_{T-d} \\ 
+\end{bmatrix}
+\begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_d \end{bmatrix}
 $$
 
 with the time prediction horizon being $$h\in\mathbb{Z}^{+}$$.
