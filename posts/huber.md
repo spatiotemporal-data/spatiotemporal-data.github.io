@@ -22,7 +22,7 @@ window.MathJax = {
 };
 </script>
 
-# Optimization over Huber Loss Functions
+# Huber Optimization
 
 ### Time Series Forecasting with Huber Autoregression
 
