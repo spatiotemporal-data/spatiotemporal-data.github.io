@@ -22,7 +22,9 @@ window.MathJax = {
 };
 </script>
 
-# Time Series Forecasting with Huber Autoregression
+# Optimization over Huber Loss Functions
+
+### Time Series Forecasting with Huber Autoregression
 
 One can use the `cvxpy` package to solve the optimization of Huber autoregression, which is defined as follows,
 
@@ -32,8 +34,9 @@ import numpy as np
 
 def huber_ar(y, d, delta = 1, solver = cp.OSQP):
     t = y.shape[0]
-    
+    X = np.vstack([y[d-i-1 : t-i-1] for i in range(d)]).T
 ```
+
 
 
 
