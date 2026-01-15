@@ -91,6 +91,30 @@ def time_series_pred(data, coef, horizon):
 
 <br>
 
+------
+
+The baseline model is time series autoregression:
+
+```python
+import numpy as np
+
+def ar(y, d):
+    t = y.shape[0]
+    vec = y[d :] # T-d
+    mat = np.vstack([y[d-i-1 : t-i-1] for i in range(d)]).T # (T-d) x d
+    return np.linalg.pinv(mat) @ vec
+
+def time_series_pred(data, coef, horizon):
+    t = data.shape[0]
+    d = coef.shape[0]
+    mat = np.vstack([data[t-horizon-i-1 : t-i-1] for i in range(d)]).T # h x d
+    return mat @ coef
+```
+
+------
+
+
+
 
 <br>
 <br>
