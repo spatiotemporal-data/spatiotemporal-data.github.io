@@ -85,11 +85,8 @@ with the time prediction horizon being $$h\in\mathbb{Z}^{+}$$.
 def time_series_pred(data, coef, horizon):
     t = data.shape[0]
     d = coef.shape[0]
-    # pred = np.zeros(horizon)
-    mat = np.vstack([y[d-i-1 : t-i-1] for i in range(d)]).T # h x d
-    # for i in range(horizon):
-    #     pred[i] = np.inner(np.flip(data[t - d - i : ]), coef)
-
+    mat = np.vstack([data[t-horizon-i-1 : t-i-1] for i in range(d)]).T # h x d
+    return mat @ coef
 ```
 
 <br>
