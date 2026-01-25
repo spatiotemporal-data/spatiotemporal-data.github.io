@@ -31,14 +31,6 @@ window.MathJax = {
 
 
 ### 78th Commit
-#### L-BFGS (Limited-memory Broyden–Fletcher–Goldfarb–Shanno) Algorithm
-
-L-BFGS (Limited-memory Broyden–Fletcher–Goldfarb–Shanno) algorithm is an iterative optimization method used to find a local minimum of a function $$f(x)$$ without storing the full dense Hessian matrix. Instead, it implicitly approximates the inverse Hessian using a limited history of gradient and position updates from the last $$m$$ iterations.
-
-**Core Update Equation**
-
-At each iteration $$k$$, the algorithm determines a search direction $$d_k$$ and step size $$\alpha_{k}$$ to find the next point $$x_{k+1}$$:
-
 
 
 
