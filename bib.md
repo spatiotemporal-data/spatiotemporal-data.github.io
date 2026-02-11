@@ -37,7 +37,7 @@ window.MathJax = {
 <b>Source</b>: Akif Çördük, Piotr Sielski, Alice Boucher, Kumar Aatish (2025). <a href="https://arxiv.org/abs/2510.20499">GPU-Accelerated Primal Heuristics for Mixed Integer Programming</a>. arXiv:2510.20499. [<a href="https://developer.nvidia.com/blog/learn-how-nvidia-cuopt-accelerates-mixed-integer-optimization-using-primal-heuristics/">Blog post</a>]
 </p>
 
-NVIDIA cuOpt leverages GPU acceleration to implement advanced primal heuristics, such as a GPU-optimized feasibility pump (FP) with first-order PDLP solvers and domain propagation, achieving significant speedups and improved solution quality for large-scale MIP instances, including previously unsolved MIPLIB benchmarks.
+NVIDIA [cuOpt](https://www.nvidia.com/en-us/ai-data-science/products/cuopt/) leverages GPU acceleration to implement advanced primal heuristics, such as a GPU-optimized feasibility pump (FP) with first-order PDLP solvers and domain propagation, achieving significant speedups and improved solution quality for large-scale MIP instances, including previously unsolved MIPLIB benchmarks.
 
 <br>
 
