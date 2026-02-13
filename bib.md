@@ -37,8 +37,13 @@ In linear programming, both objective function and constraints are linear:
 
 $$\begin{aligned} \min_{\boldsymbol{x}}\quad&\boldsymbol{c}^\top\boldsymbol{x} \\ \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\ &\boldsymbol{x}\geq0 \end{aligned}$$
 
-where 
+where the vectors $$\boldsymbol{c},\boldsymbol{b}$$ and the matrix $$\boldsymbol{A}$$ are the parameters specifying the objective function and constraints.
 
+**Example 1**. ($$\ell_1$$-norm regression as linear programming) Minimizing any vector norm of linear regression $$\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}$$ is a convex optimization. We can reformulate minimizing $$\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_1$$ over $$\boldsymbol{x}$$ as a linear programming:
+
+$$\begin{aligned} \min_{\boldsymbol{x},\boldsymbol{t}}\quad&\sum_{i}t_i \\ \text{s.t.}\quad&-t_i\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t_i \end{aligned}$$
+
+with $$t_1,t_2,\ldots,t_n$$ as auxiliary decision variables.
 
 
 ### 78th Commit
