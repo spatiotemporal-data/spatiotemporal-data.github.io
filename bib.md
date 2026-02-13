@@ -45,7 +45,7 @@ $$\begin{aligned} \min_{\boldsymbol{x},\,\boldsymbol{t}}\quad&\sum_{i}t_i \\ \te
 
 with $$t_1,t_2,\ldots,t_n$$ as auxiliary decision variables.
 
-**Example 2**. ($$\ell_{\infty}$$-norm regression as linear programming) Infinity norm for a vector is defined by $$\|\boldsymbol{\varepsilon}\|_{\infty}=\max\,|\boldsymbol{\varepsilon}|$$. We can reformulate minimizing $$\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_{\infty}$$ as a linear programming:
+**Example 2**. ($$\ell_{\infty}$$-norm regression as linear programming) Infinity norm for a vector is defined by $$\|\boldsymbol{\varepsilon}\|_{\infty}=\max\,|\boldsymbol{\varepsilon}|$$. We can reformulate the regression problem as a linear programming:
 
 $$\begin{aligned} \min_{\boldsymbol{x},\,t}\quad& t \\ \text{s.t.}\quad&-t\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t \end{aligned}$$
 
