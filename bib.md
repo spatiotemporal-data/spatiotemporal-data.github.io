@@ -41,9 +41,17 @@ where the vectors $$\boldsymbol{c},\boldsymbol{b}$$ and the matrix $$\boldsymbol
 
 **Example 1**. ($$\ell_1$$-norm regression as linear programming) Minimizing any vector norm of linear regression $$\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}$$ is a convex optimization. We can reformulate minimizing $$\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_1$$ over $$\boldsymbol{x}$$ as a linear programming:
 
-$$\begin{aligned} \min_{\boldsymbol{x},\boldsymbol{t}}\quad&\sum_{i}t_i \\ \text{s.t.}\quad&-t_i\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t_i \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{x},\,\boldsymbol{t}}\quad&\sum_{i}t_i \\ \text{s.t.}\quad&-t_i\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t_i \end{aligned}$$
 
 with $$t_1,t_2,\ldots,t_n$$ as auxiliary decision variables.
+
+**Example 2**. ($$\ell_{\infty}$$-norm regression as linear programming) Infinity norm for a vector is defined by $$\|\boldsymbol{\varepsilon}\|_{\infty}=\max\,|\boldsymbol{\varepsilon}|$$. We can reformulate minimizing $$\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_{\infty}$$ as a linear programming:
+
+$$\begin{aligned} \min_{\boldsymbol{x},\,t}\quad& t \\ \text{s.t.}\quad&-t\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t \end{aligned}$$
+
+with $t$ as a single auxiliary decision variable.
+
+<br>
 
 
 ### 78th Commit
