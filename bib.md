@@ -33,6 +33,14 @@ window.MathJax = {
 ### 79th Commit
 #### Linear Programming Examples
 
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Source</b>: <a href="https://webhomes.maths.ed.ac.uk/hall/NATCOR_2016/GeneralConvexOptimizationI.pdf">Introduction to convex optimization</a>.
+</p>
+
+---
+
 In linear programming, both objective function and constraints are linear:
 
 $$\begin{aligned} \min_{\boldsymbol{x}}\quad&\boldsymbol{c}^\top\boldsymbol{x} \\ \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\ &\boldsymbol{x}\geq0 \end{aligned}$$
