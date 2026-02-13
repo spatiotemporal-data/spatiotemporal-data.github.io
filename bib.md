@@ -30,6 +30,17 @@ window.MathJax = {
 <br>
 
 
+### 79th Commit
+#### Linear Programming Examples
+
+In linear programming, both objective function and constraints are linear:
+
+$$\begin{aligned} \min_{\boldsymbol{x}}\quad&\boldsymbol{c}^\top\boldsymbol{x} \\ \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\ &\boldsymbol{x}\geq0 \end{aligned}$$
+
+where 
+
+
+
 ### 78th Commit
 #### GPU-Accelerated Mixed Integer Programming
 
