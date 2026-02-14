@@ -30,6 +30,20 @@ window.MathJax = {
 <br>
 
 
+### 80th Commit
+#### $\ell_1$- and $\ell_{\infty}$-Norm of Matrices
+
+For any matrix $$\boldsymbol{A}\in\mathbb{R}^{m\times n}$$, the $\ell_1$-norm is defined as:
+
+$$\|\boldsymbol{A}\|_{1}=\max_{1\leq j\leq n}\,\sum_{i=1}^{m}|a_i|$$
+
+While the $\ell_{\infty}$-norm is defined as:
+
+$$\|\boldsymbol{A}\|_{\infty}=\max_{1\leq i\leq m}\,\sum_{j=1}^{n}|a_j|$$
+
+<br>
+
+
 ### 79th Commit
 #### Linear Programming Examples
 
