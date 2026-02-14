@@ -33,6 +33,14 @@ window.MathJax = {
 ### 80th Commit
 #### $\ell_1$- and $\ell_{\infty}$-Norm of Matrices
 
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Source</b>: <a href="https://nucinkis-lab.cc.ic.ac.uk/HELM/workbooks/workbook_30/30_4_matrx_norms.pdf">Matrix norms</a>.
+</p>
+
+---
+
 For any matrix $$\boldsymbol{A}\in\mathbb{R}^{m\times n}$$, the $\ell_1$-norm is defined as:
 
 $$\|\boldsymbol{A}\|_{1}=\max_{1\leq j\leq n}\,\sum_{i=1}^{m}|a_i|$$
