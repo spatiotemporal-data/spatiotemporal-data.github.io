@@ -45,8 +45,8 @@ For any function $y=\langle\phi(\boldsymbol{x}),\boldsymbol{w}\rangle+b$, the op
 
 $$
 \begin{aligned}
-\min_{\boldsymbol{w},\,b,\,{\varepsilon}_i,\,{\varepsilon}_i^{*}}~&\frac{1}{\lambda m}\sum_{i=1}^{m}\left(\tau{\varepsilon}_i+(1-\tau){\varepsilon}_i^{*}\right)+\frac{1}{2}\|\boldsymbol{w}\|_2^2 \\
-\text{s.t.}~&\color{blue}-{\varepsilon}_i^{*}\leq y_i-\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}\rangle-b\leq{\varepsilon}_i,\quad{\varepsilon}_i,{\varepsilon}_i^{*}\geq0,\quad\forall i
+\min_{\boldsymbol{w},\,b,\,{\varepsilon}_i,\,{\varepsilon}_i^{*}}\quad &\frac{1}{\lambda m}\sum_{i=1}^{m}\left(\tau{\varepsilon}_i+(1-\tau){\varepsilon}_i^{*}\right)+\frac{1}{2}\|\boldsymbol{w}\|_2^2 \\
+\text{s.t.}\quad &\color{blue}-{\varepsilon}_i^{*}\leq y_i-\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}\rangle-b\leq{\varepsilon}_i,\quad{\varepsilon}_i,{\varepsilon}_i^{*}\geq0,\quad\forall i
 \end{aligned} \tag{81-2}
 $$
 
