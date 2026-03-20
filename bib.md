@@ -59,7 +59,11 @@ $$
 \end{aligned} \tag{81-3}
 $$
 
+Then we use the kernel expression:
 
+$$
+\boldsymbol{w}=\sum_{i=1}^{m}\alpha_i\phi(\boldsymbol{x}_i)\quad\Rightarrow\quad y=\sum_{i=1}^{m}\alpha_i\cdot k(\boldsymbol{x}_i,\boldsymbol{x})+b \tag{81-4}
+$$
 
 
 <br>
