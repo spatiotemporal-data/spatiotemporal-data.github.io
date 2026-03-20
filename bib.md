@@ -33,6 +33,16 @@ window.MathJax = {
 ### 81st Commit
 #### Nonparametric Quantile Estimation
 
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Source</b>: Takeuchi, I., Le, Q., Sears, T., & Smola, A. (2006). <a href="https://jmlr.org/papers/v7/takeuchi06a.html">Nonparametric quantile estimation</a>. Journal of Machine Learning Research. 7(45): 1231--1264.
+</p>
+
+---
+
+**Main Claims**
+
 The loss of quantile regression with the $\tau$-th conditional quantile, i.e., $\tau\in(0,1)$, is
 
 $$\ell_{\tau}({\varepsilon})=\begin{cases}
