@@ -43,6 +43,8 @@ window.MathJax = {
 
 **Main Claims**
 
+I. Show the relation to support vector regression.
+
 The loss of quantile regression with the $\tau$-th conditional quantile, i.e., $\tau\in(0,1)$, is
 
 $$\ell_{\tau}({\varepsilon})=\begin{cases}
@@ -74,6 +76,25 @@ Then we use the kernel expression:
 $$
 \boldsymbol{w}=\sum_{i=1}^{m}\alpha_i\phi(\boldsymbol{x}_i)\quad\Rightarrow\quad y=\sum_{i=1}^{m}\alpha_i\cdot k(\boldsymbol{x}_i,\boldsymbol{x})+b \tag{81-4}
 $$
+
+II. Linear programming regularization:
+
+$$
+\min_{\alpha_i}~\frac{1}{m}\sum_{i=1}^{m}\ell_{\tau}\Bigl(y_i-\sum_{j=1}^{n}\left(\alpha_jf_{j}(\boldsymbol{x}_i)+b\right)\Bigr)+\lambda\sum_{j=1}^{n}|\alpha_j| \tag{81-5}
+$$
+
+III. Monotonicity and non-crossing quantiles.
+
+Suppose that we want to estimate $n$ conditional quantiles at $0<\tau_1<\tau_2<\cdots<\tau_n<1$. The primal optimization problem is given by
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{w}_h,\,b_h,\,{\varepsilon}_{hi},\,{\varepsilon}_{hi}^{*}}\quad &\sum_{h=1}^{n}\Bigl(\frac{1}{\lambda m}\sum_{i=1}^{m}\left(\tau_h{\varepsilon}_{hi}+(1-\tau_h){\varepsilon}_{hi}^{*}\right)+\frac{1}{2}\|\boldsymbol{w}_h\|_2^2\Bigr) \\
+\text{s.t.}\quad &\color{blue}y_{i}-\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_{h}\rangle-b_h-{\varepsilon}_{hi}+{\varepsilon}_{hi}^{*}=0,\quad{\varepsilon}_{hi},{\varepsilon}_{hi}^{*}\geq0,\quad\forall h,i \\
+&\underbrace{\color{red}\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_{h+1}\rangle+b_{h+1}\geq\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_h\rangle+b_h}_{\text{\color{red}non-crossing constraints}},\quad\forall h,i
+\end{aligned}
+$$
+
 
 
 <br>
