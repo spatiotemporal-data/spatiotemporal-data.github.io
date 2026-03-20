@@ -43,7 +43,7 @@ window.MathJax = {
 
 **Main Claims**
 
-I. Show the relation to support vector regression.
+**I. Show the relation to support vector regression.**
 
 The loss of quantile regression with the $\tau$-th conditional quantile, i.e., $\tau\in(0,1)$, is
 
@@ -77,13 +77,13 @@ $$
 \boldsymbol{w}=\sum_{i=1}^{m}\alpha_i\phi(\boldsymbol{x}_i)\quad\Rightarrow\quad y=\sum_{i=1}^{m}\alpha_i\cdot k(\boldsymbol{x}_i,\boldsymbol{x})+b \tag{81-4}
 $$
 
-II. Linear programming regularization:
+**II. Linear programming regularization.**
 
 $$
 \min_{\alpha_i}~\frac{1}{m}\sum_{i=1}^{m}\ell_{\tau}\Bigl(y_i-\sum_{j=1}^{n}\left(\alpha_jf_{j}(\boldsymbol{x}_i)+b\right)\Bigr)+\lambda\sum_{j=1}^{n}|\alpha_j| \tag{81-5}
 $$
 
-III. Monotonicity and non-crossing quantiles.
+**III. Monotonicity and non-crossing quantiles.**
 
 Suppose that we want to estimate $n$ conditional quantiles at $0<\tau_1<\tau_2<\cdots<\tau_n<1$. The primal optimization problem is given by
 
