@@ -65,7 +65,7 @@ where the dual constraints for $\boldsymbol{\varepsilon}$ and $\boldsymbol{\vare
 $$
 \begin{aligned}
 \min_{\boldsymbol{\alpha}}\quad &\frac{1}{2}\boldsymbol{\alpha}^\top\boldsymbol{K}\boldsymbol{\alpha}-\boldsymbol{\alpha}^\top\boldsymbol{y} \\
-\text{s.t.}\quad &\frac{\tau-1}{\lambda m}\leq\alpha_i\leq\frac{\tau}{\lambda m},\quad\mathbbm{1}_{m}^\top\boldsymbol{\alpha}=0
+\text{s.t.}\quad &\frac{\tau-1}{\lambda m}\leq\alpha_i\leq\frac{\tau}{\lambda m},\quad\mathbb{I}_{m}^\top\boldsymbol{\alpha}=0
 \end{aligned} \tag{81-3}
 $$
 
