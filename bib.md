@@ -30,6 +30,33 @@ window.MathJax = {
 <br>
 
 
+### 81st Commit
+#### Nonparametric Quantile Estimation
+
+The loss of quantile regression with the $\tau$-th conditional quantile, i.e., $\tau\in(0,1)$, is
+
+$$\ell_{\tau}({\varepsilon})=\begin{cases}
+\tau{\varepsilon}, & \text{if}~{\varepsilon}\geq{0}, \\
+(1-\tau){\varepsilon}, & \text{otherwise} \tag{81-1}
+\end{cases}
+$$
+
+For any function $y=\langle\phi(\boldsymbol{x}),\boldsymbol{w}\rangle+b$, the optimization is given by
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{w},\,b,\,{\varepsilon}_i,\,{\varepsilon}_i^{*}}~&\frac{1}{\lambda m}\sum_{i=1}^{m}\left(\tau{\varepsilon}_i+(1-\tau){\varepsilon}_i^{*}\right)+\frac{1}{2}\|\boldsymbol{w}\|_2^2 \\
+\text{s.t.}~&\color{blue}-{\varepsilon}_i^{*}\leq y_i-\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}\rangle-b\leq{\varepsilon}_i,\quad{\varepsilon}_i,{\varepsilon}_i^{*}\geq0,\quad\forall i
+\end{aligned} \tag{81-2}
+$$
+
+
+
+
+
+<br>
+
+
 ### 80th Commit
 #### $\ell_1$- and $\ell_{\infty}$-Norm of Matrices
 
