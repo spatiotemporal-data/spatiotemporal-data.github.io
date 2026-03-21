@@ -90,8 +90,8 @@ Suppose that we want to estimate $n$ conditional quantiles at $0<\tau_1<\tau_2<\
 $$
 \begin{aligned}
 \min_{\boldsymbol{w}_h,\,b_h,\,{\varepsilon}_{hi},\,{\varepsilon}_{hi}^{*}}\quad &\sum_{h=1}^{n}\Bigl(\frac{1}{\lambda m}\sum_{i=1}^{m}\left(\tau_h{\varepsilon}_{hi}+(1-\tau_h){\varepsilon}_{hi}^{*}\right)+\frac{1}{2}\|\boldsymbol{w}_h\|_2^2\Bigr) \\
-\text{s.t.}\quad &\color{blue}y_{i}-\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_{h}\rangle-b_h-{\varepsilon}_{hi}+{\varepsilon}_{hi}^{*}=0,\quad{\varepsilon}_{hi},{\varepsilon}_{hi}^{*}\geq0,\quad\forall h,i \\
-&\underbrace{\color{red}\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_{h+1}\rangle+b_{h+1}\geq\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_h\rangle+b_h}_{\text{non-crossing constraints}},\quad\forall h,i
+\text{s.t.}\quad &\color{blue}y_{i}-\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_{h}\rangle-b_h-{\varepsilon}_{hi}+{\varepsilon}_{hi}^{*}=0,\quad{\varepsilon}_{hi},{\varepsilon}_{hi}^{*}\geq0,&\forall h,i \\
+&\underbrace{\color{red}\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_{h+1}\rangle+b_{h+1}\geq\langle\phi(\boldsymbol{x}_i),\boldsymbol{w}_h\rangle+b_h}_{\text{non-crossing constraints}},&\forall h,i
 \end{aligned} \tag{81-6}
 $$
 
