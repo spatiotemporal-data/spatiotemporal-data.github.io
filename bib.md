@@ -29,6 +29,35 @@ window.MathJax = {
 
 <br>
 
+### 82nd Commit
+#### Sparse Quantile Regression
+
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Source</b>: Lan Wang,Yichao Wu &Runze Li (2012). <a href="https://doi.org/10.1080/01621459.2012.656014">Quantile Regression for Analyzing Heterogeneity in Ultra-High Dimension</a>. Journal of the American Statistical Association. 107(497): 214--222.
+</p>
+
+---
+
+**Main Claims**
+
+**I. Loss functions with sparsity.**
+
+SCAD penalty function:
+
+$$
+\begin{aligned}
+p_{\lambda,a}(x)=&\lambda|x|\mathbb{I}\{0\leq|x|<\lambda\} \\
+&+\frac{a\lambda|x|-(x^2+\lambda^2)/2}{a-1}\mathbb{I}\{\lambda\leq|x|\leq a\lambda\} \\
+&+\frac{(a+1)\lambda^2}{2}\mathbb{I}\{|x|>a\lambda\}
+\end{aligned} \tag{82-1}
+$$
+
+
+
+<br>
+
 
 ### 81st Commit
 #### Nonparametric Quantile Estimation
