@@ -54,6 +54,23 @@ p_{\lambda,a}(x)=&\lambda|x|\mathbb{I}\{0\leq|x|<\lambda\} \\
 \end{aligned} \tag{82-1}
 $$
 
+for any $a>2$.
+
+MCP penalty function:
+
+$$
+p_{\lambda,a}(\beta)=\lambda\Bigl(|\beta|-\frac{\beta^2}{2a\lambda}\Bigr)\mathbb{I}\{0\leq|\beta|<a\lambda\}+\frac{a\lambda^2}{2}\mathbb{I}\{|\beta|>a\lambda\}
+$$
+
+for any $a>1$.
+
+For the function:
+
+$$
+g(\boldsymbol{\beta})=\frac{1}{n}\sum_{i=1}^{n}\rho_{\tau}(y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta})+\lambda\sum_{j=1}^{p}|\beta_j|
+$$
+
+
 
 
 <br>
