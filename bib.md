@@ -124,9 +124,6 @@ $$
 If the weights $w_j^{(t)}$ stable, i.e., $$\displaystyle\sum_{j=1}^{p}(w_{j}^{(t-1)}-w_{j}^{(t)})^2$$ is sufficiently small, then it could claim convergence of the LLA algorithm.
 
 
-
-
-
 <br>
 
 
