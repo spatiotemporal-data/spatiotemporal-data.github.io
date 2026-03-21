@@ -40,7 +40,7 @@ window.MathJax = {
 
 ---
 
-**Main Claims**
+##### Main Claims
 
 **I. Loss functions with sparsity.**
 
