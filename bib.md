@@ -59,7 +59,7 @@ for any $a>2$.
 MCP penalty function:
 
 $$
-p_{\lambda,a}(\beta)=\lambda\Bigl(|\beta|-\frac{\beta^2}{2a\lambda}\Bigr)\mathbb{I}\{0\leq|\beta|<a\lambda\}+\frac{a\lambda^2}{2}\mathbb{I}\{|\beta|>a\lambda\}
+p_{\lambda,a}(\beta)=\lambda\Bigl(|\beta|-\frac{\beta^2}{2a\lambda}\Bigr)\mathbb{I}\{0\leq|\beta|<a\lambda\}+\frac{a\lambda^2}{2}\mathbb{I}\{|\beta|>a\lambda\} \tag{82-2}
 $$
 
 for any $a>1$.
@@ -67,8 +67,62 @@ for any $a>1$.
 For the function:
 
 $$
-g(\boldsymbol{\beta})=\frac{1}{n}\sum_{i=1}^{n}\rho_{\tau}(y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta})+\lambda\sum_{j=1}^{p}|\beta_j|
+g(\boldsymbol{\beta})=\frac{1}{n}\sum_{i=1}^{n}\rho_{\tau}(y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta})+\lambda\sum_{j=1}^{p}|\beta_j| \tag{82-3}
 $$
+
+The subgradient of $g(\boldsymbol{\beta})$ is given by
+
+$$
+\begin{aligned}
+\frac{\partial g(\boldsymbol{\beta})}{\partial\beta_{j}}=&-\frac{\tau}{n}\sum_{i=1}^{n}x_{ij}\mathbbm{1}\{y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta}>0\} \\
+&+\frac{1-\tau}{n}\sum_{i=1}^{n}x_{ij}\mathbbm{1}\{y_{i}-\boldsymbol{x}_i^\top\boldsymbol{\beta}<0\} \\
+&-\frac{1}{n}\sum_{i=1}^{n}x_{ij}v_{i}+\lambda l_j
+\end{aligned} \tag{82-4}
+$$
+
+where
+
+$$
+v_{i}=\begin{cases}
+0, & \text{if}~y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta}\neq0, \\
+c\in[\tau-1,\tau], &\text{otherwise}
+\end{cases}
+$$
+
+**II. Local linear approximation (LLA) algorithms.**
+
+The aforementioned optimization problem can be solved by using the LLA algorithm.
+
+While minimizing
+
+$$
+\min_{\boldsymbol{\beta}}~\frac{1}{n}\sum_{i=1}^{n}\rho_{\tau}(y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta})+\sum_{j=1}^{p}p_{\lambda,a}(|\beta_j|)
+$$
+
+we initialize by setting $\tilde{\beta}_j^{(0)},\,\forall j$. For each step $t\geq1$, we update by solving
+
+$$
+\min_{\boldsymbol{\beta}}~\frac{1}{n}\sum_{i=1}^{n}\rho_{\tau}(y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta})+\sum_{j=1}^{p}w_{j}^{(t-1)}|\beta_j|
+$$
+
+which can be reformulated as a linear programming problem:
+
+$$
+\begin{aligned}
+\min_{\boldsymbol{\xi}^{+}\geq0,\,\boldsymbol{\xi}^{-}\geq0,\,\boldsymbol{\zeta}}~&\frac{1}{n}\sum_{i=1}^{n}\left(\tau\xi_{i}^{+}+(1-\tau)\xi_{i}^{-}\right)+\sum_{j=1}^{p}w_{j}^{(t-1)}\zeta_{j} \\
+\text{s.t.}~&y_{i}-\boldsymbol{x}_i^\top\boldsymbol{\beta}-\xi_{i}^{+}+\xi_{i}^{-}=0,&\forall i \\
+&\zeta_j\geq\beta_j,\,\zeta_j\geq-\beta_j,&\forall j
+\end{aligned}
+$$
+
+The weights are updated by the subgradients:
+
+$$
+w_j^{(t-1)}=\frac{\partial p_{\lambda,a}(|\tilde{\beta}_{j}^{(t-1)}|)}{\partial\tilde{\beta}_{j}^{(t-1)}}\geq0,\quad\text{consider}~w_j^{(0)}=\lambda
+$$
+
+If the weights $w_j^{(t)}$ stable, i.e., $$\displaystyle\sum_{j=1}^{p}(w_{j}^{(t-1)}-w_{j}^{(t)})^2$$ is sufficiently small, then it could claim convergence of the LLA algorithm.
+
 
 
 
