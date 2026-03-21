@@ -74,8 +74,8 @@ The subgradient of $g(\boldsymbol{\beta})$ is given by
 
 $$
 \begin{aligned}
-\frac{\partial g(\boldsymbol{\beta})}{\partial\beta_{j}}=&-\frac{\tau}{n}\sum_{i=1}^{n}x_{ij}\mathbbm{1}\{y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta}>0\} \\
-&+\frac{1-\tau}{n}\sum_{i=1}^{n}x_{ij}\mathbbm{1}\{y_{i}-\boldsymbol{x}_i^\top\boldsymbol{\beta}<0\} \\
+\frac{\partial g(\boldsymbol{\beta})}{\partial\beta_{j}}=&-\frac{\tau}{n}\sum_{i=1}^{n}x_{ij}\mathbb{I}\{y_i-\boldsymbol{x}_i^\top\boldsymbol{\beta}>0\} \\
+&+\frac{1-\tau}{n}\sum_{i=1}^{n}x_{ij}\mathbb{I}\{y_{i}-\boldsymbol{x}_i^\top\boldsymbol{\beta}<0\} \\
 &-\frac{1}{n}\sum_{i=1}^{n}x_{ij}v_{i}+\lambda l_j
 \end{aligned} \tag{82-4}
 $$
