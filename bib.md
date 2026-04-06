@@ -231,19 +231,19 @@ $$\|\boldsymbol{A}\|_{\infty}=\max_{1\leq i\leq m}\,\sum_{j=1}^{n}|a_j|$$
 
 In linear programming, both objective function and constraints are linear:
 
-$$\begin{aligned} \min_{\boldsymbol{x}}\quad&\boldsymbol{c}^\top\boldsymbol{x} \\ \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b} \\ &\boldsymbol{x}\geq0 \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{x}}\quad&\boldsymbol{c}^\top\boldsymbol{x} \\ \text{s.t.}\quad&\boldsymbol{A}\boldsymbol{x}\leq\boldsymbol{b} \\ &\boldsymbol{x}\geq0 \end{aligned} \tag{79-1}$$
 
 where the vectors $$\boldsymbol{c},\boldsymbol{b}$$ and the matrix $$\boldsymbol{A}$$ are the parameters specifying the objective function and constraints.
 
 **Example 1**. ($$\ell_1$$-norm regression as linear programming) Minimizing any vector norm of linear regression $$\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}$$ is a convex optimization. We can reformulate minimizing $$\|\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}\|_1$$ over $$\boldsymbol{x}$$ as a linear programming:
 
-$$\begin{aligned} \min_{\boldsymbol{x},\,\boldsymbol{t}}\quad&\sum_{i}t_i \\ \text{s.t.}\quad&-t_i\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t_i \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{x},\,\boldsymbol{t}}\quad&\sum_{i}t_i \\ \text{s.t.}\quad&-t_i\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t_i \end{aligned} \tag{79-2}$$
 
 with $$t_1,t_2,\ldots,t_n$$ as auxiliary decision variables.
 
 **Example 2**. ($$\ell_{\infty}$$-norm regression as linear programming) Infinity norm for a vector is defined by the "worst-case" maximum absolute value. We can reformulate the regression problem as a linear programming:
 
-$$\begin{aligned} \min_{\boldsymbol{x},\,t}\quad& t \\ \text{s.t.}\quad&-t\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t \end{aligned}$$
+$$\begin{aligned} \min_{\boldsymbol{x},\,t}\quad& t \\ \text{s.t.}\quad&-t\leq[\boldsymbol{A}\boldsymbol{x}-\boldsymbol{b}]_i\leq t \end{aligned} \tag{79-3}$$
 
 with $t$ as a single auxiliary decision variable.
 
