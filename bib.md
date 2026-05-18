@@ -27,7 +27,51 @@ window.MathJax = {
 
 [Xinyu Chen (陈新宇)](https://xinychen.github.io/) created this page since early 2024 at MIT with the purpose of fostering research knowledge, vision, insight, and style from an interdisciplinary perspective. In the meantime, the knowledge repository aims to connect random concepts with mathematics and machine learning.
 
+
 <br>
+
+### 84th Commit
+#### Huber's Location Estimator
+
+
+
+
+<br>
+
+
+### 83rd Commit
+#### Random Matrix Theory for Portfolio Optimization
+
+---
+
+<p style="font-size: 14px; color: gray">
+[1] <a href="https://youtu.be/X8m4mwqOAPA?si=P26iL17cyEzyjmzE">Random Matrix Theory: Why does Wall Street use quantum physics?</a> YouTube.
+</p>
+
+<p style="font-size: 14px; color: gray">
+[2] <a href="https://arxiv.org/abs/1912.12724">Marchenko-Pastur law with relaxed independence conditions</a>. arXiv.
+</p>
+
+---
+
+The Markowitz theory has a curse of dimensions because of $$N(N-1)/2$$ correlations for $$N$$ portfolios. For example, 500 portfolios has 124,750 correlations, involving overwhelming noise. 
+
+In physics, Wigner's leap claims the difficulty to compute exact interations and resolves it by a purely **random matrix**. The **Marchenko-Pastur law** describes what happens to the eigenvalues of purely noise.
+
+Assume that $$\boldsymbol{Y}$$ is a $p\times n$ random matrix whose entries are independent, identically distributed with a probability distribution $G$ on $\mathbb{R}$ with mean 0 and variance 1, and define a random matrix
+
+$$\boldsymbol{S}=\frac{1}{n}\boldsymbol{Y}\boldsymbol{Y}^\top$$
+
+If and only if $p,n\to\infty$ in a way that $p/n\to y\in(0,1]$, then the empirical spectral distribution converges weakly to the Marchenko-Pastur distribution the density:
+
+$$f_{y}(x)=\frac{\sqrt{(b-x)(x-a)}}{2\pi xy}\mathbf{1}_{[a,b]}(x)$$
+
+where $a$ and $b$ are functions of $y$, given by
+
+$$a=a_y=(1-\sqrt{y})^2\quad\quad b=b_y=(1+\sqrt{y})^2$$
+
+<br>
+
 
 ### 82nd Commit
 #### Sparse Quantile Regression
