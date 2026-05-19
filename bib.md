@@ -34,13 +34,21 @@ window.MathJax = {
 ### 84th Commit
 #### Huber's Location Estimator
 
+---
+
+<p style="font-size: 14px; color: gray">
+<b>Source</b>: Stanislav Nagy (2025). <a href="https://doi.org/10.1080/01621459.2012.656014">Robust Statistical Methods</a>. Course note.
+</p>
+
+---
+
 For the location model with the standard normal distribution $\Phi(x)$, we have $$-f_0'(x)/f_{0}(x)=x$$ and
 
 $$
 \tilde{\psi}(x)=[x-a]_{-b}^{b}
 $$
 
-Because of the symmetry of $\Psi$, for each $b>0$, we get
+Because of the symmetry of $\Phi$, for each $b>0$, we get
 
 $$\int_{\mathbb{R}}[x]_{-b}^{b}d\Phi(x)=0$$
 
@@ -48,8 +56,19 @@ which gives $a=0$. The Hampel optimal estimator at the normal location model is 
 
 $$\psi(x)=[x]_{-b}^{b}=\begin{cases} x & \text{if $|x|<b$} \\ \operatorname{sgn}(x)\cdot b & \text{otherwise} \end{cases}$$
 
+This is the Huber's M-estimator of location. The Huber estimator does not take an explicit form; for a random sample $X_1,\ldots,X_n$, it is computed as the solution in $t\in\mathbb{R}$ to
 
+$$
+\sum_{i=1}^{n}\psi(X_i-t)=0
+$$
 
+or equivalently as $t\in\mathbb{R}$ that minimizes the Huber loss $\sum_{i=1}^{n}\rho(X_i-t)$ where
+
+$$
+\rho(x)=\begin{cases} x^2/2 & \text{if $|x|<b$} \\ b(|x|-b/2) & \text{otherwise} \end{cases}
+$$
+
+As $b\to\infty$, we get the squared loss function, and the estimator is just the sample average. As $b\to 0$, we approach the absolute loss and get the sample median.
 
 <br>
 
