@@ -37,7 +37,7 @@ window.MathJax = {
 ---
 
 <p style="font-size: 14px; color: gray">
-<b>Source</b>: Stanislav Nagy (2025). <a href="https://doi.org/10.1080/01621459.2012.656014">Robust Statistical Methods</a>. Course note.
+<b>Source</b>: Stanislav Nagy (2025). <a href="https://www.karlin.mff.cuni.cz/~nagy/NMST444/NMST444.pdf">Robust Statistical Methods</a>. Course note.
 </p>
 
 ---
