@@ -54,7 +54,7 @@ $$\int_{\mathbb{R}}[x]_{-b}^{b}d\Phi(x)=0$$
 
 which gives $a=0$. The Hampel optimal estimator at the normal location model is given by
 
-$$\psi(x)=[x]_{-b}^{b}=\begin{cases} x & \text{if $|x|<b$} \\ \operatorname{sgn}(x)\cdot b & \text{otherwise} \end{cases}$$
+$$\psi(x)=[x]_{-b}^{b}=\begin{cases} x, & \text{if $|x|<b$}, \\ \operatorname{sgn}(x)\cdot b, & \text{otherwise} \end{cases}$$
 
 This is the Huber's M-estimator of location. The Huber estimator does not take an explicit form; for a random sample $X_1,\ldots,X_n$, it is computed as the solution in $t\in\mathbb{R}$ to
 
@@ -65,7 +65,7 @@ $$
 or equivalently as $t\in\mathbb{R}$ that minimizes the Huber loss $\sum_{i=1}^{n}\rho(X_i-t)$ where
 
 $$
-\rho(x)=\begin{cases} x^2/2 & \text{if $|x|<b$} \\ b(|x|-b/2) & \text{otherwise} \end{cases}
+\rho(x)=\begin{cases} x^2/2, & \text{if $|x|<b$}, \\ b(|x|-b/2), & \text{otherwise} \end{cases}
 $$
 
 As $b\to\infty$, we get the squared loss function, and the estimator is just the sample average. As $b\to 0$, we approach the absolute loss and get the sample median.
