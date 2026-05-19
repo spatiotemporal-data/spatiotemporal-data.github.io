@@ -30,10 +30,23 @@ window.MathJax = {
 
 <br>
 
+
 ### 84th Commit
 #### Huber's Location Estimator
 
+For the location model with the standard normal distribution $\Psi(x)$, we have $$-f_0'(x)/f_{0}(x)=x$$ and
 
+$$
+\tilde{\psi}(x)=[x-a]_{-b}^{b}
+$$
+
+Because of the symmetry of $\Psi$, for each $b>0$, we get
+
+$$\int_{\mathbb{R}}[x]_{-b}^{b}\mathbf{d}\Psi(x)=0$$
+
+which gives $a=0$. The Hampel optimal estimator at the normal location model is given by
+
+$$\psi(x)=[x]_{-b}^{b}=\begin{cases} x & \text{if $|x|<b$} \\ \operatorname{sgn}(x)\cdot b & \text{otherwise} \end{cases}$$
 
 
 <br>
