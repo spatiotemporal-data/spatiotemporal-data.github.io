@@ -37,8 +37,13 @@ window.MathJax = {
 ---
 
 <p style="font-size: 14px; color: gray">
-<b>Source</b>: Stanislav Nagy (2025). <a href="https://www.karlin.mff.cuni.cz/~nagy/NMST444/NMST444.pdf">Robust Statistical Methods</a>. Course note.
+[1] Stanislav Nagy (2025). <a href="https://www.karlin.mff.cuni.cz/~nagy/NMST444/NMST444.pdf">Robust Statistical Methods</a>. Course note.
 </p>
+
+<p style="font-size: 14px; color: gray">
+[2] Peter Rousseeuw (2019). <a href="https://cseweb.ucsd.edu/~slovett/workshops/robust-statistics-2019/slides/donoho-univariate.pdf">Robust Statistics Part 1: Introduction and univariate data</a>. Slides.
+</p>
+
 
 ---
 
