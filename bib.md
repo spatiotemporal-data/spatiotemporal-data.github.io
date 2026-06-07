@@ -52,6 +52,17 @@ Recently, we released an YouTube video about covariance matrix, answering why do
 [2] <a href="https://users.cs.utah.edu/~tch/CS4640F2019/resources/A%20geometric%20interpretation%20of%20the%20covariance%20matrix.pdf">A geometric interpretation of the covariance matrix</a>.
 </p>
 
+<p style="font-size: 14px; color: gray">
+[3] <a href="https://comp3204.ecs.soton.ac.uk/lectures/pdf/L3-covariance.pdf">Covariance and Principal Components</a>.
+</p>
+
+<p style="font-size: 14px; color: gray">
+[4] <a href="https://people.bath.ac.uk/man54/SAMBa/ITTs/ITT7/MarkOpmeerSpectralAnalysis.pdf">Eigenvalues of covariance matrices</a>.
+</p>
+
+<p style="font-size: 14px; color: gray">
+[5] <a href="https://se.mathworks.com/matlabcentral/answers/73298-what-does-eigenvalues-expres-in-the-covariance-matrix">what does eigenvalues expres in the covariance matrix?</a>
+</p>
 
 ---
 
