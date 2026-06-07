@@ -30,6 +30,34 @@ window.MathJax = {
 
 <br>
 
+### 85th Commit
+#### Covariance Matrix & Eigenvalue Decomposition
+
+Recently, we released an YouTube video about covariance matrix, answering why does eigenvalue decomposition define the shape of multivariate Gaussian, please check out [YouTube](https://youtu.be/PIAx5dk72Cw) for details. This video explains the geometric relationship between the eigenvalue decomposition of a covariance matrix and the shape of a multivariate Gaussian distribution.
+
+- **Multivariate Gaussian Overview**: The distribution's shape and center are defined by a mean vector and a covariance matrix.
+- **Geometric Interpretation**: When visualizing a bivariate Gaussian, the level sets (points of equal probability density) form ellipsoids.
+- **Empirical Verification**: The video demonstrates this geometry by generating random samples, showing how the data clusters align perfectly with the predicted elliptical shape as the sample size increases.
+- **Correlation Effects**: By comparing positive and negative off-diagonal entries in the covariance matrix, the video illustrates how correlation effectively rotates the ellipse.
+
+**References**:
+
+---
+
+<p style="font-size: 14px; color: gray">
+[1] <a href="https://math.stackexchange.com/questions/23596/why-is-the-eigenvector-of-a-covariance-matrix-equal-to-a-principal-component">Why is the eigenvector of a covariance matrix equal to a principal component?</a>
+</p>
+
+<p style="font-size: 14px; color: gray">
+[2] <a href="https://users.cs.utah.edu/~tch/CS4640F2019/resources/A%20geometric%20interpretation%20of%20the%20covariance%20matrix.pdf">A geometric interpretation of the covariance matrix</a>.
+</p>
+
+
+---
+
+
+<br>
+
 
 ### 84th Commit
 #### Huber's Location Estimator
@@ -43,7 +71,6 @@ window.MathJax = {
 <p style="font-size: 14px; color: gray">
 [2] Peter Rousseeuw (2019). <a href="https://cseweb.ucsd.edu/~slovett/workshops/robust-statistics-2019/slides/donoho-univariate.pdf">Robust Statistics Part 1: Introduction and univariate data</a>. Slides.
 </p>
-
 
 ---
 
