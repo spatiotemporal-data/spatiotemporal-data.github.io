@@ -46,6 +46,11 @@ window.MathJax = {
 [2] <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F13/lectures/10-CG-AnnotatedOnClass.pdf">Conjugate Direction Methods</a>
 </p>
 
+<p style="font-size: 14px; color: gray">
+[3] <a href="https://gregorygundersen.com/blog/2022/03/20/conjugate-gradient-descent/">Conjugate Gradient Descent</a>
+</p>
+
+
 ---
 
 
