@@ -39,15 +39,15 @@ window.MathJax = {
 ---
 
 <p style="font-size: 14px; color: gray">
-[1] <a href="https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf">An Introduction to the Conjugate Gradient Method without the Agonizing Pain</a>
+[1] <a href="https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf">An Introduction to the Conjugate Gradient Method without the Agonizing Pain</a>.
 </p>
 
 <p style="font-size: 14px; color: gray">
-[2] <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F13/lectures/10-CG-AnnotatedOnClass.pdf">Conjugate Direction Methods</a>
+[2] <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F13/lectures/10-CG-AnnotatedOnClass.pdf">Conjugate Direction Methods</a>.
 </p>
 
 <p style="font-size: 14px; color: gray">
-[3] <a href="https://gregorygundersen.com/blog/2022/03/20/conjugate-gradient-descent/">Conjugate Gradient Descent</a>
+[3] <a href="https://gregorygundersen.com/blog/2022/03/20/conjugate-gradient-descent/">Conjugate Gradient Descent</a>.
 </p>
 
 
