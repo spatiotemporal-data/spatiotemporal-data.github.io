@@ -50,6 +50,10 @@ window.MathJax = {
 [3] <a href="https://gregorygundersen.com/blog/2022/03/20/conjugate-gradient-descent/">Conjugate Gradient Descent</a>.
 </p>
 
+<p style="font-size: 14px; color: gray">
+[4] <a href="https://www.damtp.cam.ac.uk/user/hf323/M23-II-NA/Lect19.pdf">Numerical Analysis – Lecture 19</a>.
+</p>
+
 
 ---
 
