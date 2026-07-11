@@ -34,6 +34,15 @@ window.MathJax = {
 ### 86th Commit
 #### Conjugate Gradient Method
 
+Recently, we created a [YouTube](https://youtu.be/KmPgR3Ns0aI) video about Conjugate Gradient (CG) methods. We break down the CG method from scratch — one of the most powerful iterative algorithms for solving quadratic optimization problems and linear systems $\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$.
+
+Topics covered:
+- How quadratic optimization reduces to a linear system
+- Step-by-step derivation of all update equations
+- How to compute the optimal step size ($\alpha_k$) and coefficient ($\beta_k$)
+- Why conjugate directions converge faster than steepest descent
+- Visual walkthrough of CG iterations on a 2D example
+
 **References**:
 
 ---
