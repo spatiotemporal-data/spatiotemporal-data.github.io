@@ -36,7 +36,7 @@ window.MathJax = {
 
 Suppose you want to encourage a vector $\boldsymbol{x}\in\mathbb{R}^{n}$ to be sparse (few nonzero entries), $\ell_0$-norm of $\boldsymbol{x}$, or 
 
-$$\left|\boldsymbol{x}\right|_0$$ 
+$$\left\|\boldsymbol{x}\right\|_0$$ 
 
 is defined as the number of nonzero entries in $\boldsymbol{x}$. In fact, this is a counting function, taking integer values $\{0,1,2,3,\ldots\}$. That makes the function discontinuous, non-differentiable, and combinatorially hard to optimize.
 
