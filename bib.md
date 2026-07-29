@@ -34,7 +34,11 @@ window.MathJax = {
 ### 87th Commit
 #### $\ell_0$-Norm Sparsity Relaxation
 
-Suppose you want to encourage a vector $\boldsymbol{x}\in\mathbb{R}^{n}$ to be sparse (few nonzero entries), $\ell_0$-norm of $\boldsymbol{x}$, or $$\left|\boldsymbol{x}\right|_0$$ is defined as the number of nonzero entries in $\boldsymbol{x}$. In fact, this is a counting function, taking integer values $\{0,1,2,3,\ldots\}$. That makes the function discontinuous, non-differentiable, and combinatorially hard to optimize.
+Suppose you want to encourage a vector $\boldsymbol{x}\in\mathbb{R}^{n}$ to be sparse (few nonzero entries), $\ell_0$-norm of $\boldsymbol{x}$, or 
+
+$$\left|\boldsymbol{x}\right|_0$$ 
+
+is defined as the number of nonzero entries in $\boldsymbol{x}$. In fact, this is a counting function, taking integer values $\{0,1,2,3,\ldots\}$. That makes the function discontinuous, non-differentiable, and combinatorially hard to optimize.
 
 Each hard count in $\ell_0$-norm can be replaced with a smooth log-based approximation such that
 
@@ -42,7 +46,11 @@ $$
 f(\boldsymbol{x})=\sum_{i=1}^{n}\frac{\log(|x_i|+\varepsilon)-\log(\varepsilon)}{-\log(\varepsilon)}
 $$
 
-where $\varepsilon>0$ is a sufficiently small value. If $x_i=0$, the term becomes 0; otherwise, $$\log(|x_i|+\varepsilon)$$ rises quickly away from $\log(\varepsilon)$, so the term jumps toward something close to 1.
+where $\varepsilon>0$ is a sufficiently small value. If $x_i=0$, the term becomes 0; otherwise, 
+
+$$\log(|x_i|+\varepsilon)$$ 
+
+rises quickly away from $\log(\varepsilon)$, so the term jumps toward something close to 1.
 
 ```python
 import numpy as np
