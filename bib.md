@@ -80,8 +80,17 @@ $$
 \frac{c}{|x|+\varepsilon}+(x-y)=0
 $$
 
-
 <br>
+
+**References**:
+
+---
+
+<p style="font-size: 14px; color: gray">
+[1] <a href="https://doi.org/10.1109/TPAMI.2017.2734888">Kronecker-Basis-Representation Based Tensor Sparsity and Its Applications to Tensor Recovery</a>. IEEE Transactions on Pattern Analysis and Machine Intelligence.
+</p>
+
+---
 
 
 ### 86th Commit
