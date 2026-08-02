@@ -63,13 +63,13 @@ print((np.log(x + epsilon) - np.log(epsilon)) / (-np.log(epsilon))) # result: 0.
 Given the aforementioned approximation, the optimization:
 
 $$
-\min_{\boldsymbol{x}}\quad \sum_{i=1}^{n}\frac{\log(|x_i|+\varepsilon)-\log(\varepsilon)}{-\log(\varepsilon)} +\frac{1}{2}\sum_{i=1}^{n}(x_i-y_i)^2
+\min_{\boldsymbol{x}}\quad \sum_{i=1}^{n}\frac{\log(|x_i|+\varepsilon)-\log(\varepsilon)}{-\log(\varepsilon)} +\frac{1}{2}\lambda\sum_{i=1}^{n}(x_i-y_i)^2
 $$
 
 is seperable, and element-wise, we have
 
 $$
-\min_{x}\quad \frac{\log(|x|+\varepsilon)+c}{c} +\frac{1}{2}(x-y)^2
+\min_{x}\quad \frac{\log(|x|+\varepsilon)+c}{c} +\frac{1}{2}\lambda(x-y)^2
 $$
 
 where $c=-\log(\varepsilon)$.
@@ -77,7 +77,7 @@ where $c=-\log(\varepsilon)$.
 Taking the derivative and let it be zero:
 
 $$
-\frac{c}{|x|+\varepsilon}+(x-y)=0
+\frac{c}{|x|+\varepsilon}+\lambda(x-y)=0
 $$
 
 <br>
