@@ -64,7 +64,13 @@ Third, we represent the OD matrix as a weighted bipartite graph $$G=(\mathcal{O}
 
 $$\boldsymbol{A}=\boldsymbol{D}_{r}^{-1/2}\boldsymbol{X}\boldsymbol{D}_{c}^{-1/2}$$
 
-where the degree matrices are $\boldsymbol{D}_{r}=\operatorname{diag}(\boldsymbol{r})$ and $\boldsymbol{D}_{c}=\operatorname{diag}(\boldsymbol{c})$.
+where the degree matrices are $$\boldsymbol{D}_{r}=\operatorname{diag}(\boldsymbol{r})$$ and $$\boldsymbol{D}_{c}=\operatorname{diag}(\boldsymbol{c})$$.
+
+Finally, we define the pairing spectral gap as follows,
+
+$$\gamma_{\text{pair}}(\boldsymbol{X})=1-\sigma_{2}(\boldsymbol{A})$$
+
+where $$\sigma_1\geq\sigma_2\geq\cdots$$ are the singular values of $$\boldsymbol{A}$$.
 
 <br>
 
