@@ -54,13 +54,13 @@ Origin-Destination (OD) mobility network is generally weighted, directed, and no
 
 First, we use count the basic statistics as follows,
 
-$$r=\boldsymbol{X}\boldsymbol{1},\quad c=\boldsymbol{X}^\top\boldsymbol{1},\quad N=\boldsymbol{1}^\top\boldsymbol{X}\boldsymbol{1}$$
+$$\boldsymbol{r}=\boldsymbol{X}\boldsymbol{1},\quad \boldsymbol{c}=\boldsymbol{X}^\top\boldsymbol{1},\quad N=\boldsymbol{1}^\top\boldsymbol{X}\boldsymbol{1}$$
 
 referring to marginals and total.
 
 Second, we identify the active zones by keeping origins with $r_i\geq m$ and destinations with $c_j\geq m$, where $m=5$ to $10$ for instance. Here, origins and destinations are filtered separately, so the matrix does not need to be square after filtering.
 
-
+Third, we represent the OD matrix as a weighted bipartite graph $$G=(\mathcal{O}\cup\mathcal{D},E)$$ where $$\mathcal{O}=\{o_1,\ldots,o_n\}$$ and $$\mathcal{D}=\{d_1,\ldots,d_n\}$$ are origin and destination nodes, respectively. Edge $$(o_i,d_j)$$ has weight $x_{ij}$.
 
 
 <br>
