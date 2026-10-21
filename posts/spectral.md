@@ -58,6 +58,10 @@ $$r=\boldsymbol{X}\boldsymbol{1},\quad c=\boldsymbol{X}^\top\boldsymbol{1},\quad
 
 referring to marginals and total.
 
+Second, we identify the active zones by keeping origins with $r_i\geq m$ and destinations with $c_j\geq m$, where $m=5$ to $10$ for instance. Here, origins and destinations are filtered separately, so the matrix does not need to be square after filtering.
+
+
+
 
 <br>
 <br>
