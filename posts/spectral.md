@@ -60,10 +60,12 @@ referring to marginals and total.
 
 Second, we identify the active zones by keeping origins with $r_i\geq m$ and destinations with $c_j\geq m$, where $m=5$ to $10$ for instance. Here, origins and destinations are filtered separately, so the matrix does not need to be square after filtering.
 
-Third, we represent the OD matrix as a weighted bipartite graph $$G=(\mathcal{O}\cup\mathcal{D},E)$$ where $$\mathcal{O}=\{o_1,\ldots,o_n\}$$ and $$\mathcal{D}=\{d_1,\ldots,d_n\}$$ are origin and destination nodes, respectively. Edge $$(o_i,d_j)$$ has weight $x_{ij}$.
+Third, we represent the OD matrix as a weighted bipartite graph $$G=(\mathcal{O}\cup\mathcal{D},E)$$ where $$\mathcal{O}=\{o_1,\ldots,o_n\}$$ and $$\mathcal{D}=\{d_1,\ldots,d_n\}$$ are origin and destination nodes, respectively. Edge $$(o_i,d_j)$$ has weight $x_{ij}$. The normalized matrix related to OD matrix $$\boldsymbol{X}$$ is
 
+$$\boldsymbol{A}=\boldsymbol{D}_{r}^{-1/2}\boldsymbol{X}\boldsymbol{D}_{c}^{-1/2}$$
 
-<br>
+where the degree matrices are $\boldsymbol{D}_{r}=\operatorname{diag}(\boldsymbol{r})$ and $\boldsymbol{D}_{c}=\operatorname{diag}(\boldsymbol{c})$.
+
 <br>
 
 
