@@ -52,7 +52,7 @@ We are motivated to use the spectral gap to answer the following questions:
 
 Origin-Destination (OD) mobility network is generally weighted, directed, and not regular. Let $$\boldsymbol{X}\in\mathbb{R}^{n\times n}_{\geq0}$$ be the OD matrix for a time window, where $$x_{ij}$$ is the number of trips from origin zone $i$ to destination zone $j$.
 
-First, we use count the basic statistics as follows,
+First, we count the basic statistics as follows,
 
 $$\boldsymbol{r}=\boldsymbol{X}\boldsymbol{1},\quad \boldsymbol{c}=\boldsymbol{X}^\top\boldsymbol{1},\quad N=\boldsymbol{1}^\top\boldsymbol{X}\boldsymbol{1}$$
 
